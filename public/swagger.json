@@ -1,0 +1,54 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "0.0.1",
+        "title": "Hello"
+    },
+    "paths": {
+        "/greetings": {
+            "get": {
+                "description": "Give you a nice salutation",
+                "parameters": [
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "i18n code for language, default to english",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "title": "Data",
+                            "type": "object",
+                            "properties": {
+                                "meta": {
+                                    "type": "string"
+                                },
+                                "greetings": {
+                                    "title": "ArrayOfGreetings",
+                                    "type": "array",
+                                    "items": {
+                                        "title": "Greeting",
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "double"
+                                            },
+                                            "phrase": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

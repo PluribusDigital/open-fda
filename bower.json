@@ -1,0 +1,31 @@
+{
+  "name": "hello",
+  "version": "0.0.0",
+  "authors": [
+    "Ben Morris <github@benmorris.net>",
+	"Jeff Farley <https://twitter.com/EsotericB>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular":                    ">=1 <1.3.0",
+    "angular-bootstrap":		  "~0.12.0",
+    "angular-route":              ">=1 <1.3.0",
+    "angular-resource":           ">=1 <1.3.0",
+    "angular-flash":              "<0.1.13",
+    "angular-mocks":              ">=1 <1.3.0",
+    "bootstrap-sass-official":    "~3.3.4",
+    "d3":                         "~3.5.5",
+    "jquery":                     "~2.1.0"
+  },
+  "devDependencies": {
+
+  }
+}
