@@ -14,6 +14,7 @@
 # ignore Visual Studio project files
 *.sln
 *.suo
+*.pyproj
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
