@@ -1,0 +1,17 @@
+dependencies:
+  post:
+    - bundle exec rake bower:install
+    
+#database:
+#  post:
+#    - bundle exec rake pop
+
+test:
+  override:
+    - rspec
+    
+#deployment:
+#  demo:
+#    branch: master
+#    commands:
+#      - bundle exec cap demo deploy
