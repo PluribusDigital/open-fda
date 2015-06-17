@@ -27,3 +27,6 @@
 # Don't store api keys in source control
 .env
 
+# Python ignores
+**/*.egg-info/
+*.pyc
