@@ -31,3 +31,5 @@
 # Python ignores
 **/*.egg-info/
 *.pyc
+
+/gruve/data
