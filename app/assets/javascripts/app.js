@@ -15,6 +15,9 @@ app.config([
     }).when('/drug', {
         templateUrl: "Drug/Drug.html",
         controller: 'DrugController'
+    }).when('/drug/:product_ndc', {
+        templateUrl: "Drug/Drug.html",
+        controller: 'DrugController'
     })
 }
 ]);

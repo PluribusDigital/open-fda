@@ -1,8 +1,7 @@
-app.controller("DrugController", ['$scope', '$http', function ($scope, $http) {
+app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
   window.DrugControllerScope = $scope;
-  $scope.selectedDrug, $scope.drug = null;
-
+  $scope.selectedProductNDC, $scope.drug = null;
 
   // typeahead search
   $scope.searchDrugs = function(val) {
@@ -12,7 +11,7 @@ app.controller("DrugController", ['$scope', '$http', function ($scope, $http) {
       }
     }).then(function(response){
       return response.data.results.map(function(item){
-        $scope.selectedDrug = item;
+        $scope.selectedProductNDC = item.product_ndc;
         return item.name;
       });
     });
@@ -20,7 +19,17 @@ app.controller("DrugController", ['$scope', '$http', function ($scope, $http) {
 
   // fetch all relevant details for a given drug
   $scope.getDetail = function() {
-    $scope.drug = $scope.selectedDrug;
+    return $http.get('/drugs/' + $scope.selectedProductNDC + '.json', {}
+    ).then(function(response){
+      $scope.drug = response.data;
+      return response.data;
+    });
+  }
+
+  // if we have a drug ID via the route, use that
+  if ($routeParams.product_ndc) {
+    $scope.selectedProductNDC = $routeParams.product_ndc;
+    $scope.getDetail();
   }
 
 }]);
