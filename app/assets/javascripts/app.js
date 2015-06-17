@@ -12,6 +12,9 @@ app.config([
     return $routeProvider.when('/', {
         templateUrl: "Home/Home.html",
         controller: 'HomeController'
+    }).when('/drug', {
+        templateUrl: "Drug/Drug.html",
+        controller: 'DrugController'
     })
 }
 ]);

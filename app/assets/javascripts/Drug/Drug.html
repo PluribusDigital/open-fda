@@ -1,0 +1,8 @@
+<div class="row">
+
+  <div class="col-sm-6">
+    <input type="text" ng-model="asyncSelected" placeholder="Locations loaded via $http" typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" class="form-control">
+    <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+  </div>
+
+</div>
