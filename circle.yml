@@ -1,7 +1,6 @@
 dependencies:
   post:
     - bundle exec rake bower:install
-    - echo "$(cat ~/ssh/config)"
     
 #database:
 #  post:
