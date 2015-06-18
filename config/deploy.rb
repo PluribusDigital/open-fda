@@ -1,4 +1,4 @@
-set :application, 'SNAP'
+set :application, 'open-fda'
 set :repo_url, 'https://github.com/STSILABS/open-fda.git'
 
 # Default branch is :master
