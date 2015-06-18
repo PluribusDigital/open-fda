@@ -44,5 +44,13 @@ group :test, :development do
   gem 'dotenv-rails'
 end
 
+group :deploy do
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano3-nginx'
+  gem 'capistrano-bundler'
+  gem 'capistrano-npm'
+end
+
 # Windows
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

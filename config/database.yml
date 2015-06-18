@@ -79,6 +79,12 @@ test: &test
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+demo:
+  <<: *default
+  database: development
+  username: stsidev
+  
 production:
   <<: *default
   database: hello_production

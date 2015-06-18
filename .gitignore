@@ -33,3 +33,7 @@
 *.pyc
 
 /gruve/data
+
+# Vagrant ignores
+.vagrant
+Vagrantfiile
