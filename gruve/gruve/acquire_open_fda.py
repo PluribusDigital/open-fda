@@ -3,14 +3,7 @@ import sys
 import json
 import time
 import requests
-
-def relativeToAbsolute(path):
-    # where is this script?
-    thisScriptDir = os.path.dirname(__file__)
-
-    # get the expected paths
-    return os.path.join(thisScriptDir, path)
-
+from gruve import io
 
 class AcquireOpenFda():
     def __init__(self):
@@ -21,7 +14,7 @@ class AcquireOpenFda():
     def _findKey(self):
         ''' Looks for the API key in the .env file in the root of the project
         '''
-        envFileName = relativeToAbsolute(r'../../.env')
+        envFileName = io.relativeToAbsolute(r'../../.env')
         if not os.path.exists(envFileName):
             print("ENV file '%s' not found." % envFileName, file=sys.stderr)
             return None
@@ -82,7 +75,7 @@ class AcquireOpenFda():
             data.extend(chunk)
 
             # dump the progress so far
-            fileName = relativeToAbsolute(r'../data/labels'+str(i*100)+'.json')
+            fileName = io.relativeToAbsolute(r'../data/labels'+str(i*100)+'.json')
             with open(fileName, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2)
         
