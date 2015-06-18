@@ -81,7 +81,9 @@ test: &test
 #
 
 demo:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: development
   username: stsidev
   
