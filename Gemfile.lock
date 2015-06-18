@@ -190,6 +190,9 @@ GEM
       rspec-mocks (~> 3.0.0)
       rspec-support (~> 3.0.0)
     rspec-support (3.0.4)
+    rubyXL (3.3.6)
+      nokogiri (>= 1.4.4)
+      rubyzip (>= 1.1.6)
     rubyzip (1.1.6)
     sass (3.2.19)
     sass-rails (4.0.5)
@@ -267,6 +270,7 @@ DEPENDENCIES
   rails_serve_static_assets
   rails_stdout_logging
   rspec-rails (~> 3.0.0)
+  rubyXL
   sass (= 3.2.19)
   sass-rails (~> 4.0.3)
   selenium-webdriver
