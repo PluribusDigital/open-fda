@@ -42,6 +42,7 @@ group :test, :development do
   gem "poltergeist"
   gem "phantomjs"
   gem 'dotenv-rails'
+  gem "pry"
 end
 
 group :deploy do

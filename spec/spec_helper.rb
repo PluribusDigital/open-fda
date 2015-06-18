@@ -34,6 +34,12 @@ RSpec.configure do |config|
     DatabaseCleaner.clean
   end
 
+  # avoid setting type for each, instead set on folder
+  config.infer_spec_type_from_file_location!
+
+  # automatically parse json response body
+  config.include Requests::JsonHelpers, type: :request
+
   config.infer_base_class_for_anonymous_controllers = false
   config.order = "random"
 end

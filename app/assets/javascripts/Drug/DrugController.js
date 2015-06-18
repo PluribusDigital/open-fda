@@ -1,11 +1,11 @@
 app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
 
   window.DrugControllerScope = $scope;
-  $scope.selectedProductNDC, $scope.drug = null;
+  $scope.selectedProductNDC, $scope.drug, $scope.events = null;
 
   // typeahead search
   $scope.searchDrugs = function(val) {
-    return $http.get('/drugs.json', {
+    return $http.get('/api/v1/drugs', {
       params: {
         name: val
       }
@@ -17,13 +17,22 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($
     });
   };
 
-  // fetch all relevant details for a given drug
+  // fetch details for a given drug
   $scope.getDetail = function() {
-    return $http.get('/drugs/' + $scope.selectedProductNDC + '.json', {}
+    // label data
+    $http.get('/api/v1/drugs/' + $scope.selectedProductNDC , {}
     ).then(function(response){
       $scope.drug = response.data;
-      return response.data;
+      return true;
     });
+    // events data
+    $http.get('/api/v1/events?product_ndc="' + $scope.selectedProductNDC + '"' , {}
+    ).then(function(response){
+      console.log(response.data.results);
+      $scope.events = response.data.results;
+      return true;
+    });
+    return true;
   }
 
   // if we have a drug ID via the route, use that

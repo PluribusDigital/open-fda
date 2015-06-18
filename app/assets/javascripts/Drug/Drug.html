@@ -23,3 +23,33 @@
     <h1>{{drug.openfda.brand_name}}</h1>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Adverse Events</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Date Recieved</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="event in events">
+          <td>{{event.receivedate}}</td>
+          <td>
+            <div ng-repeat="reaction in event.patient.reaction">
+            {{reaction.reactionmeddrapt}}
+            </div>
+          </td>
+          <td>
+            <div ng-repeat="pdrug in event.patient.drug">
+            {{pdrug.medicinalproduct}}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
