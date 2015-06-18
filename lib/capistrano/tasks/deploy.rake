@@ -16,7 +16,7 @@ namespace :deploy do
 	end
   end
   
-  desc "Load secrets"
+  desc "Load secrets from S3"
   task :load_secrets do
     on roles(:app) do
 	  within fetch (:release_path) do
