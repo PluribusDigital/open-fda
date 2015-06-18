@@ -15,5 +15,25 @@ namespace :deploy do
       end
 	end
   end
+  
+  desc "Load secrets"
+  task :load_secrets do
+    on roles(:app) do
+	  within fetch (:release_path) do
+	    execute  "aws s3 cp s3://open-fda/config/#{fetch(:stage))} /tmp --recursive"
+	  end
+	end
+  end
+  
+  desc "Populate database"
+  task :db_setup do
+    on roles(:app) do
+	  within fetch(:release_path) do
+	    with rails_env: fetch(:stage) do
+		  execute :rake, "db:reset"
+		end
+	  end
+	end
+  end
 
 end
