@@ -20,7 +20,7 @@ namespace :deploy do
   task :load_secrets do
     on roles(:app) do
 	  within fetch (:release_path) do
-	    execute  "aws s3 cp s3://open-fda/config/#{fetch(:stage))} /tmp --recursive"
+	    execute  "aws s3 cp s3://open-fda/config/#{fetch(:stage)} /tmp --recursive"
 	  end
 	end
   end
