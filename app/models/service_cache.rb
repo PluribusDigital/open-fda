@@ -1,7 +1,8 @@
 class ServiceCache < ActiveRecord::Base
 
   def self.find(key)
-    data = ServiceCache.where(service:self.new.class.to_s, key:key).limit(1).first.data
+    match = ServiceCache.where(service:self.new.class.to_s, key:key).limit(1)
+    return match.present? ? match.first.data : nil
   end
 
   def self.destroy(key)

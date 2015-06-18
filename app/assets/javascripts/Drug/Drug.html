@@ -20,13 +20,17 @@
 
 <div class="row">
   <div class="col-sm-6">
-    <h1>{{drug.openfda.brand_name}}</h1>
+    <h1>{{drug.openfda.brand_name[0]}}</h1>
+  </div>
+  <div class="col-sm-6">
+    <h4>NADAC Pricing Information</h4>
+    {{drug.nadac}}
   </div>
 </div>
 
 <div class="row">
   <div class="col-sm-6">
-    <h2>Adverse Events</h2>
+    <h4>Adverse Events</h4>
     <table class="table">
       <thead>
         <tr>

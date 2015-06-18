@@ -1,7 +1,6 @@
 require 'spec_helper'
 
-RSpec.describe HomeController, :type => :controller do
-
+RSpec.describe HomeController do
 
   it "should get home with 200 (success)" do 
     get :index

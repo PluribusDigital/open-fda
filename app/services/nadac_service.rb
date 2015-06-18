@@ -1,6 +1,7 @@
 class NadacService < ServiceCache
   # DOCS http://www.medicaid.gov/Medicaid-CHIP-Program-Information/By-Topics/Benefits/Prescription-Drugs/Pharmacy-Pricing.html
   # DATA (first file in zip from first link on above page)
+  # Note: Key value is package_ndc
 
   def self.read_workbook
     puts "reading workbook "

@@ -13,8 +13,18 @@ module API::V1
     end
 
     def show
-      @drug = LabelService.product_ndc_search params[:id]
-      render json: @drug
+      drug = LabelService.product_ndc_search params[:id] 
+      # Layer on pricing data
+      drug["nadac"] = [] 
+      drug["openfda"]["package_ndc"].each do |package_ndc|
+        nadac = NadacService.find(package_ndc)
+        drug["nadac"] << {
+          package_ndc:package_ndc, 
+          nadac_per_unit:nadac.nadac_per_unit , 
+          pricing_unit:nadac.pricing_unit
+        } if nadac
+      end
+      render json: drug
     end 
 
   end
