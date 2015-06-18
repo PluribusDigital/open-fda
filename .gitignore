@@ -38,3 +38,9 @@
 # Vagrant ignores
 .vagrant
 Vagrantfiile
+
+# Ignore Rbenv
+.ruby-version
+
+# Ignore VIM swap files
+*.sw*
