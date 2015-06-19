@@ -1,13 +1,15 @@
-app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartInitializer', 
+  function ($scope, $http, $routeParams, chartInitializer) {
 
   window.DrugControllerScope = $scope;
   $scope.selectedProductNDC, $scope.drug, $scope.events = null;
+
 
   // typeahead search
   $scope.searchDrugs = function(val) {
     return $http.get('/api/v1/drugs.json', {
       params: {
-        name: val
+        q: val
       }
     }).then(function(response){
       return response.data.results.map(function(item){

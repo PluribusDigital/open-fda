@@ -1,4 +1,4 @@
-var app = angular.module('hello', [
+var app = angular.module('openFDA', [
     'templates', 'ngRoute', 'ngResource', 'directives', 'angular-flash.service',
     'angular-flash.flash-alert-directive', 'ui.bootstrap'
 ]);
@@ -26,7 +26,7 @@ var directives  = angular.module('directives', []);
 
 // Other packages = 'geochart', 'table', 'treemap', 'wordtree'
 
-app.factory('ChartInitializer', function ($rootScope, $window, $q) {
+app.factory('chartInitializer', function ($rootScope, $window, $q) {
     var deferred = $q.defer();
 
     $window.google.load('visualization', '1',

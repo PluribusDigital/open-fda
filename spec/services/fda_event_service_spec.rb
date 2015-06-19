@@ -30,6 +30,20 @@ RSpec.describe FdaEventService do
       end
     end
 
-  end
+  end # search on product ndc"
+
+  describe "aggregate counts" do 
+
+    it "should get results for a popular drug" do
+      expect( FdaEventService.event_count_by_reaction("lipitor")['results'].length ).to be > 5
+    end
+
+    it "should return results as pair of term & count" do
+      results = FdaEventService.event_count_by_reaction("lipitor")['results']
+      expect( results[0]["term"]  ).to be_a  String
+      expect( results[0]["count"] ).to be_an Integer
+    end    
+
+  end # "aggregate counts"
 
 end
