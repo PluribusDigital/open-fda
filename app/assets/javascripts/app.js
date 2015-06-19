@@ -10,14 +10,14 @@ app.config([
     flashProvider.infoClassnames.push("alert-info");
     flashProvider.successClassnames.push("alert-success");
     return $routeProvider.when('/', {
-        templateUrl: "Home/Home.html",
-        controller: 'HomeController'
-    }).when('/drug', {
         templateUrl: "Drug/Drug.html",
         controller: 'DrugController'
     }).when('/drug/:product_ndc', {
         templateUrl: "Drug/Drug.html",
         controller: 'DrugController'
+    }).when('/about', {
+        templateUrl: "About/About.html",
+        controller: 'AboutController'
     })
 }
 ]);

@@ -67,6 +67,11 @@ RSpec.describe "Drugs API" do
       expect(json["nadac"]).to be_an Array
     end
 
+    it 'should layer on generics data' do 
+      get "/api/v1/drugs/#{@lipitor_ndc}"
+      expect(json["generics_list"]).to be_an Array
+    end
+
   end
 
 end

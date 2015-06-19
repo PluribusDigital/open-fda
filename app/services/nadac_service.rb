@@ -31,26 +31,29 @@ class NadacService < ServiceCache
   end
 
   def self.pricing_per_ndc_list(package_ndc_list)
+    # TODO - determine if we need this method
     result = []
     package_ndc_list.each do |package_ndc|
-      nadac = self.find(package_ndc)
-      result << {
-        package_ndc:package_ndc, 
-        nadac_per_unit:nadac.nadac_per_unit , 
-        pricing_unit:nadac.pricing_unit
-      } if nadac
+      nadac  = self.find(package_ndc)
+      result << nadac[:data].select{|k,v| fields_to_send.include? k } if nadac
     end
-    return result
+    return result.uniq
   end
 
   def self.pricing_per_brand_name(brand_name)
-    self.where_key_value_like("ndc_description", brand_name).map{|e|e[:data]}
+    self.where_key_value_like("ndc_description", brand_name)
+      .map{|e|e[:data].select{|k,v| fields_to_send.include? k }}
+      .uniq
   end
 
 private
 
   def self.data_file
     'data/NADAC 20150617.xlsx'
+  end
+
+  def self.fields_to_send
+    ['package_ndc','nadac_per_unit','pricing_unit','ndc_description']
   end
 
 end

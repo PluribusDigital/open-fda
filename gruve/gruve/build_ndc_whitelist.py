@@ -1,5 +1,6 @@
 import sys
 import csv
+import re
 from gruve import io
 
 class BuildNdcWhiteList():
@@ -8,7 +9,7 @@ class BuildNdcWhiteList():
     cost speradsheet
     '''
     def __init__(self):
-        pass
+        self.titleExceptions = ['and']
 
     # -------------------------------------------------------------------------
 
@@ -48,6 +49,18 @@ class BuildNdcWhiteList():
 
     # -------------------------------------------------------------------------
 
+    def title(self, s):
+        ''' Normalize the proprietary and non-proprietary names 
+        Inspiration: [http://stackoverflow.com/questions/3728655/python-titlecase-a-string-with-exceptions]
+        '''
+        word_list = re.split(' ', s)
+        final = [word_list[0].capitalize()]
+        for word in word_list[1:]:
+            final.append(word.lower()
+                         if word.lower() in self.titleExceptions
+                         else word.capitalize())
+        return " ".join(final)
+
     def map_fda(self, x):
         # the FDA dataset mis-parses some 11 digit NDCs
         ndc = x['PRODUCTNDC']
@@ -56,8 +69,8 @@ class BuildNdcWhiteList():
             ndc = codes[0] + '-0' + codes[1]
 
         return {'product_ndc': ndc,
-                'proprietary_name': x['PROPRIETARYNAME'],
-                'nonproprietary_name': x['NONPROPRIETARYNAME'],
+                'proprietary_name': self.title(x['PROPRIETARYNAME']),
+                'nonproprietary_name': self.title(x['NONPROPRIETARYNAME']),
                 'dea_schedule': x['DEASCHEDULE']
                 }
 
