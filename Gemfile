@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'angular-rails-templates', '~> 0.1.3'
 
+gem 'newrelic_rpm'
+
 group :production, :staging do
   gem "rails_12factor"
   gem "rails_stdout_logging"

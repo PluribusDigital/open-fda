@@ -5,7 +5,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($
 
   // typeahead search
   $scope.searchDrugs = function(val) {
-    return $http.get('/api/v1/drugs', {
+    return $http.get('/api/v1/drugs.json', {
       params: {
         name: val
       }
@@ -28,7 +28,6 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($
     // events data
     $http.get('/api/v1/events?product_ndc="' + $scope.selectedProductNDC + '"' , {}
     ).then(function(response){
-      console.log(response.data.results);
       $scope.events = response.data.results;
       return true;
     });
