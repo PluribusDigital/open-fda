@@ -14,10 +14,10 @@ test:
     - bundle exec rspec
 
 deployment:
-  demo:
-    branch: master
-    commands:
-      - bundle exec cap demo deploy
+  #demo:
+  #  branch: master
+  #  commands:
+  #    - bundle exec cap demo deploy
   elasticbeanstalk:
     branch: master
     commands:
