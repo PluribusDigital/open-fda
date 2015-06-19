@@ -13,10 +13,12 @@ module API::V1
       # Return error code if drug not found
       return render json: {"error"=>{"code"=>"NOT_FOUND", "message"=>"No matches found!"}} unless drug
       brand_name = drug["openfda"]["brand_name"][0]
+      generic_name = drug["openfda"]["generic_name"][0]
       # Layer on pricing data
       drug["nadac"] = NadacService.pricing_per_brand_name(brand_name)
       # Layer on events data
       drug["event_data"] = FdaEventService.event_count_by_reaction(brand_name)['results']
+      drug["generics_list"] = Drug.where(nonproprietary_name: generic_name).map{|e|e.proprietary_name}.uniq.delete_if{|e|e==brand_name}
       render json: drug
     end 
 

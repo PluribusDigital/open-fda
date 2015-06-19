@@ -33,18 +33,20 @@ class NadacService < ServiceCache
   def self.pricing_per_ndc_list(package_ndc_list)
     result = []
     package_ndc_list.each do |package_ndc|
-      nadac = self.find(package_ndc)
-      result << {
+      nadac  = self.find(package_ndc)
+      object = {
         package_ndc:package_ndc, 
         nadac_per_unit:nadac.nadac_per_unit , 
-        pricing_unit:nadac.pricing_unit
-      } if nadac
+        pricing_unit:nadac.pricing_unit }
+      exists = result.select{|r| r[:package_ndc]==object[:package_ndc] && r[:nadac_per_unit]==object[:nadac_per_unit] && r[:pricing_unit]==object[:pricing_unit]}
+      result << object if nadac && !exists
     end
     return result
   end
 
   def self.pricing_per_brand_name(brand_name)
-    self.where_key_value_like("ndc_description", brand_name).map{|e|e[:data]}
+    include_fields = ['package_ndc','nadac_per_unit','pricing_unit','ndc_description']
+    self.where_key_value_like("ndc_description", brand_name).map{|e|e[:data].select{|k,v| include_fields.include? k }}.uniq
   end
 
 private

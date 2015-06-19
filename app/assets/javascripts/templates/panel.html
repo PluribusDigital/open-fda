@@ -1,0 +1,12 @@
+<div class="panel panel-{{panelClass}}" style="{{style}}">
+  <div class="panel-heading">
+    <div class="pull-left" style="padding-right:1em;">
+      <i ng-show="expand" ng-click="expand=false" class="glyphicon glyphicon-minus-sign"></i> 
+      <i ng-hide="expand" ng-click="expand=true" class="glyphicon glyphicon-plus-sign"></i> 
+    </div>
+    <h3 class="panel-title">{{panelTitle}}</h3>
+  </div>
+  <div class="panel-body" ng-show="expand">
+    <div ng-transclude></div>
+  </div> 
+</div>

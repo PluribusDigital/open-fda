@@ -1,28 +1,32 @@
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-md-6">
     <ng-include src="'Drug/search.html'">
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-12">
+
+<div class="row" ng-show="!drug">
+  <div class="col-md-6">
+    <br/>
+    <ng-include src="'Drug/start.html'">
+  </div>
+</div>
+
+<div class="row" ng-show="drug">
+  <div class="col-md-12">
     <h1>{{drug.openfda.brand_name[0]}}</h1>
     <div class="small">
-      {{drug.openfda.generic_name[0]}}
-      (
-        <span ng-repeat="class in drug.openfda.pharm_class_epc">{{class}}</span>
-      )
+      <strong>{{drug.openfda.generic_name[0]}}</strong>
+      ({{drug.openfda.pharm_class_epc.join(",")}})
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-6">
+<div class="row" ng-show="drug">
+  <div class="col-md-6">
     <ng-include src="'Drug/adverseEvents.html'">
   </div>
-  <div class="col-sm-6">
-    <div class="well">
-      <ng-include src="'Drug/pricing.html'">
-    </div>
+  <div class="col-md-6">
+    <ng-include src="'Drug/alternatives.html'">
   </div>
 </div>
