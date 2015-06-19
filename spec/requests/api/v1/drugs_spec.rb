@@ -4,6 +4,9 @@ RSpec.describe "Drugs API" do
 
   before :each do 
     @lipitor_ndc = "0071-0156"
+    Drug.create(proprietary_name: 'Prozac',    product_ndc: '16590-843')
+    Drug.create(proprietary_name: 'Viagra',    product_ndc: '55289-524')
+    Drug.create(proprietary_name: 'Atripla',   product_ndc: '24236-292')
   end
 
   describe "typeahead search" do 

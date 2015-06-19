@@ -2,8 +2,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
   function ($scope, $http, $routeParams, chartInitializer) {
 
   window.DrugControllerScope = $scope;
-  $scope.selectedProductNDC, $scope.drug, $scope.events = null;
-
+  $scope.selectedDrug, $scope.drug, $scope.events = null;
 
   // typeahead search
   $scope.searchDrugs = function(val) {
@@ -13,8 +12,9 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
       }
     }).then(function(response){
       return response.data.results.map(function(item){
-        $scope.selectedProductNDC = item.product_ndc;
-        return item.name;
+        console.log(item);
+        $scope.selectedDrug = item;
+        return item.proprietary_name;
       });
     });
   };
@@ -22,13 +22,13 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
   // fetch details for a given drug
   $scope.getDetail = function() {
     // label data
-    $http.get('/api/v1/drugs/' + $scope.selectedProductNDC , {}
+    $http.get('/api/v1/drugs/' + $scope.selectedDrug.product_ndc , {}
     ).then(function(response){
       $scope.drug = response.data;
       return true;
     });
     // events data
-    $http.get('/api/v1/events?product_ndc="' + $scope.selectedProductNDC + '"' , {}
+    $http.get('/api/v1/events?product_ndc=' + $scope.selectedDrug.product_ndc + '' , {}
     ).then(function(response){
       $scope.events = response.data.results;
       return true;
@@ -38,7 +38,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
 
   // if we have a drug ID via the route, use that
   if ($routeParams.product_ndc) {
-    $scope.selectedProductNDC = $routeParams.product_ndc;
+    $scope.selectedDrug.product_ndc = $routeParams.product_ndc;
     $scope.getDetail();
   }
 

@@ -3,12 +3,9 @@ module API::V1
     
     def index
       q = params[:q] || ""
-      @drugs = [
-        {name: 'Prozac',    product_ndc: '16590-843'},
-        {name: 'Viagra',    product_ndc: '55289-524'},
-        {name: 'Atripla',   product_ndc: '24236-292'}
-      ]
-      @drugs = q.present? ? @drugs.select{|d|d[:name].downcase.include? q.downcase} : []
+      clause = 'lower(proprietary_name) LIKE ?',"%#{q.downcase}%"
+      @drugs = q.present? ? Drug.select('DISTINCT ON (proprietary_name) product_ndc, proprietary_name, nonproprietary_name')
+        .where(clause).limit(100) : []
     end
 
     def show
