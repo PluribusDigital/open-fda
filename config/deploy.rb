@@ -66,7 +66,7 @@ namespace :deploy do
   end
   before "deploy:compile_assets", "deploy:bower_install"
   before "deploy:migrate", "nginx:stop"
-  #after "deploy:migrate", "deploy:db_setup"
+  after "deploy:migrate", "deploy:db_setup"
   after "deploy:published", "deploy:load_secrets"
   after "deploy:published", "deploy:create_app_link"
   after "deploy:finished", "nginx:start"
