@@ -1,3 +1,9 @@
+machine:
+  python:
+    version: 2.7.3
+  services:
+    - docker
+
 dependencies:
   pre:
     # install aws command line tools for elasticbean stalk deployment
