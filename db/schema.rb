@@ -11,11 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150618173749) do
+ActiveRecord::Schema.define(version: 20150619154332) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "hstore"
+
+  create_table "drugs", force: :cascade do |t|
+    t.string   "dea_schedule"
+    t.string   "description"
+    t.integer  "labeler"
+    t.string   "nonproprietary_name"
+    t.integer  "package_code"
+    t.string   "package_ndc"
+    t.decimal  "price_per_unit",      precision: 15, scale: 5
+    t.integer  "product_code"
+    t.string   "product_ndc"
+    t.string   "proprietary_name"
+    t.string   "unit"
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
+  end
 
   create_table "service_caches", force: :cascade do |t|
     t.string   "service"
