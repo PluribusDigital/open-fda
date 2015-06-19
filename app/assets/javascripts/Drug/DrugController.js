@@ -3,6 +3,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
 
   window.DrugControllerScope = $scope;
   $scope.selectedDrug, $scope.drug, $scope.events = null;
+  $scope.selectedLabel = null;
 
   // typeahead search
   $scope.searchDrugs = function(val) {
@@ -12,15 +13,17 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
       }
     }).then(function(response){
       return response.data.results.map(function(item){
-        console.log(item);
-        $scope.selectedDrug = item;
-        return item.proprietary_name;
+        return item;
       });
     });
   };
 
+  $scope.onSelect = function (item, model, label) {
+      $scope.selectedDrug = item;
+  };
+
   // fetch details for a given drug
-  $scope.getDetail = function() {
+  $scope.getDetail = function () {
     // label data
     $http.get('/api/v1/drugs/' + $scope.selectedDrug.product_ndc , {}
     ).then(function(response){

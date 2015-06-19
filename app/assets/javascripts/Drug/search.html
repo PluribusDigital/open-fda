@@ -1,11 +1,19 @@
-<form ng-submit="getDetail()">
+<script type="text/ng-template" id="typeaheadTemplate.html">
+  <a> 
+    <span class="h5">{{match.model.proprietary_name}}</span>
+    <span class="small">({{match.model.nonproprietary_name}})</span>
+  </a>
+</script>
+<form>
 <div class="input-group">
   <input type="text" class="form-control" placeholder="enter drug name (e.g. Lipitor)" 
-    ng-model="drugSearch" 
-    typeahead="drug for drug in searchDrugs($viewValue)" 
-    typeahead-loading="loadingSearchResults" >
+    ng-model="selectedLabel" 
+    typeahead="drug as drug.proprietary_name for drug in searchDrugs($viewValue)" 
+    typeahead-loading="loadingSearchResults"
+    typeahead-template-url="typeaheadTemplate.html"
+    typeahead-on-select="onSelect($item, $model, $label)" >
   <span class="input-group-btn">
-    <button class="btn btn-default" type="button">Go!</button>
+    <button class="btn btn-default" type="submit" ng-click="getDetail()">Go!</button>
   </span>
 </div><!-- /input-group -->
 <i ng-show="loadingSearchResults" class="glyphicon glyphicon-refresh"></i>
