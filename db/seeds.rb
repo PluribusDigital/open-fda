@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+CSV.foreach('data/product_ndc.txt', :col_sep => "\t",:headers => true, ) do |row|
+  row = row.to_hash.delete_if{|k,v|k.blank?}
+	Drug.create(row)
+end

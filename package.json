@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "openFDA",
   "version": "1.0.0",
   "description": "A starting point for STSI prototypes",
   "main": "index.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/STSILABS/hello"
+    "url": "https://github.com/STSILABS/openFDA"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/STSILABS/hello/issues"
+    "url": "https://github.com/STSILABS/openFDA/issues"
   },
-  "homepage": "https://github.com/STSILABS/hello"
+  "homepage": "https://github.com/STSILABS/openFDA"
 }

@@ -1,34 +1,38 @@
-app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartInitializer', 
+  function ($scope, $http, $routeParams, chartInitializer) {
 
   window.DrugControllerScope = $scope;
-  $scope.selectedProductNDC, $scope.drug, $scope.events = null;
+  $scope.selectedDrug, $scope.drug, $scope.events = null;
+  $scope.selectedLabel = null;
 
   // typeahead search
   $scope.searchDrugs = function(val) {
-    return $http.get('/api/v1/drugs', {
+    return $http.get('/api/v1/drugs.json', {
       params: {
-        name: val
+        q: val
       }
     }).then(function(response){
       return response.data.results.map(function(item){
-        $scope.selectedProductNDC = item.product_ndc;
-        return item.name;
+        return item;
       });
     });
   };
 
+  $scope.onSelect = function (item, model, label) {
+      $scope.selectedDrug = item;
+  };
+
   // fetch details for a given drug
-  $scope.getDetail = function() {
+  $scope.getDetail = function () {
     // label data
-    $http.get('/api/v1/drugs/' + $scope.selectedProductNDC , {}
+    $http.get('/api/v1/drugs/' + $scope.selectedDrug.product_ndc , {}
     ).then(function(response){
       $scope.drug = response.data;
       return true;
     });
     // events data
-    $http.get('/api/v1/events?product_ndc="' + $scope.selectedProductNDC + '"' , {}
+    $http.get('/api/v1/events?product_ndc=' + $scope.selectedDrug.product_ndc + '' , {}
     ).then(function(response){
-      console.log(response.data.results);
       $scope.events = response.data.results;
       return true;
     });
@@ -37,7 +41,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', function ($
 
   // if we have a drug ID via the route, use that
   if ($routeParams.product_ndc) {
-    $scope.selectedProductNDC = $routeParams.product_ndc;
+    $scope.selectedDrug.product_ndc = $routeParams.product_ndc;
     $scope.getDetail();
   }
 

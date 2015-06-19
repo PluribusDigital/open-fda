@@ -30,6 +30,23 @@ class NadacService < ServiceCache
     return true
   end
 
+  def self.pricing_per_ndc_list(package_ndc_list)
+    result = []
+    package_ndc_list.each do |package_ndc|
+      nadac = self.find(package_ndc)
+      result << {
+        package_ndc:package_ndc, 
+        nadac_per_unit:nadac.nadac_per_unit , 
+        pricing_unit:nadac.pricing_unit
+      } if nadac
+    end
+    return result
+  end
+
+  def self.pricing_per_brand_name(brand_name)
+    self.where_key_value_like("ndc_description", brand_name).map{|e|e[:data]}
+  end
+
 private
 
   def self.data_file

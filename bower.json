@@ -1,9 +1,11 @@
 {
-  "name": "hello",
+  "name": "openFDA",
   "version": "0.0.0",
   "authors": [
-    "Ben Morris <github@benmorris.net>",
-	"Jeff Farley <https://twitter.com/EsotericB>"
+    "Ben Morris",
+	  "Jeff Farley",
+    "Chris Cassatt",
+    "Jeff Holden"
   ],
   "license": "MIT",
   "private": true,
@@ -16,7 +18,7 @@
   ],
   "dependencies": {
     "angular":                    ">=1 <1.3.0",
-    "angular-bootstrap":		  "~0.12.0",
+    "angular-bootstrap":		      "~0.12.0",
     "angular-route":              ">=1 <1.3.0",
     "angular-resource":           ">=1 <1.3.0",
     "angular-flash":              "<0.1.13",
