@@ -1,20 +1,7 @@
 <div class="row">
-
   <div class="col-sm-6">
-    <form ng-submit="getDetail()">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="enter drug name (e.g. Lipitor)" 
-        ng-model="drugSearch" 
-        typeahead="drug for drug in searchDrugs($viewValue)" 
-        typeahead-loading="loadingSearchResults" >
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-    <i ng-show="loadingSearchResults" class="glyphicon glyphicon-refresh"></i>
-    </form>
+    <ng-include src="'Drug/search.html'">
   </div>
-
 </div>
 
 <div class="row">
@@ -24,68 +11,12 @@
 </div>
 
 <div class="row">
-
-<div class="col-sm-6">
-    <h3>Reported Adverse Events</h3>
-    
-    <table class="table">
-      <tbody>
-        <tr ng-repeat="datum in drug.event_data">
-          <th>{{datum.term}}</th>
-          <td>{{datum.count}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Date Recieved</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="event in events">
-          <td>{{event.receivedate}}</td>
-          <td>
-            <div ng-repeat="reaction in event.patient.reaction">
-            {{reaction.reactionmeddrapt}}
-            </div>
-          </td>
-          <td>
-            <div ng-repeat="pdrug in event.patient.drug">
-            {{pdrug.medicinalproduct}}
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
   <div class="col-sm-6">
-    <h3>Pricing Information</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Packaging</th>
-          <th class="text-right">Price/Unit</th>
-          <th class="text-right">Unit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="price in drug.nadac">
-          <td>{{price.ndc_description}}</td>
-          <td class="text-right">{{price.nadac_per_unit | currency}}</td>
-          <td class="text-right">{{price.pricing_unit}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <small>Source Medicaid NADAC</small>
-  </div><!-- col -->
-
-
+    <ng-include src="'Drug/adverseEvents.html'">
+  </div>
+  <div class="col-sm-6">
+    <div class="well">
+      <ng-include src="'Drug/pricing.html'">
+    </div>
+  </div>
 </div>
-
-<div class="row">
-  
-</div><!-- row -->
