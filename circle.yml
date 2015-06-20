@@ -19,11 +19,11 @@ test:
   override:
     - bundle exec rspec
 
-deployment:
-  demo:
-    branch: master
-    commands:
-      - bundle exec cap demo deploy
+#deployment:
+#  demo:
+#    branch: master
+#    commands:
+#      - bundle exec cap demo deploy
   #elasticbeanstalk:
   #  branch: master
   #  commands:
