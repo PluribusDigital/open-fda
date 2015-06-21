@@ -84,9 +84,9 @@ demo:
   adapter: postgresql
   database: openfda_demo
   username: <%= ENV['POSTGRES_ENV_POSTGRES_USER'] %>
-  password: <%= ENV['POSTGRES_ENV_POSTGRES_PASSWORD'] %>
-  host: <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] %>
-  port: <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] %>
+  #password: <%= ENV['POSTGRES_ENV_POSTGRES_PASSWORD'] %>
+  #host: <%= ENV['POSTGRES_PORT_5432_TCP_ADDR'] %>
+  #port: <%= ENV['POSTGRES_PORT_5432_TCP_PORT'] %>
 
 production:
   <<: *default
