@@ -18,6 +18,9 @@ dependencies:
     # - docker run --link postgres:postgres -it -d -p --name openfda cjcassat/openfda:$CIRCLE_SHA1
     # - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then docker commit postgres cjcassatt/openfda-postgres; fi
 
+database:
+  post:
+    - bundle exec rake db:seed
 
 test:
   override:
