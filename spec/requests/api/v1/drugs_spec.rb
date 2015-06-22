@@ -77,6 +77,11 @@ RSpec.describe "Drugs API" do
       expect(json["same_class_list"]).to be_an Array
     end
 
+    it 'should layer on same recall data' do 
+      get "/api/v1/drugs/#{@lipitor_ndc}"
+      expect(json["recall_list"]).to be_an Array
+    end
+
     it 'should show streamlined field set for same pharma_class data' do 
       get "/api/v1/drugs/#{@lipitor_ndc}"
       expect(json["same_class_list"][0]["product_ndc"]).to be_present

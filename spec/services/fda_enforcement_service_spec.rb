@@ -10,18 +10,18 @@ RSpec.describe FdaEnforcementService do
 
     it "should return results for a specific ndc" do 
       # Lipitor has many events
-      expect( FdaEnforcementService.search_product_ndc(@recall_ndc)['results'].length ).to be > 0
+      expect( FdaEnforcementService.search_product_ndc(@recall_ndc).length ).to be > 0
     end
 
     it "should only have results that include the ndc" do 
-      FdaEnforcementService.search_product_ndc(@recall_ndc)['results'].each do |result|
+      FdaEnforcementService.search_product_ndc(@recall_ndc).each do |result|
         expect( result['openfda']['product_ndc'].include? @recall_ndc )
       end
     end
 
     it "should not return results for an ndc with no recalls" do 
       # Lipitor has many events
-      expect( FdaEnforcementService.search_product_ndc("99999-999")["error"] ).to be_present
+      expect( FdaEnforcementService.search_product_ndc("99999-999").length ).to eq 0
     end
 
   end # search on product ndc"

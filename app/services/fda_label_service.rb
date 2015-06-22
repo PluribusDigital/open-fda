@@ -21,13 +21,9 @@ private
     # maps the returned data to a subset of fields, 
     # so that unused data isn't passed around
     fields_to_keep = %w(product_ndc substance_name manufacturer_name brand_name route pharm_class_epc product_ndc package_ndc generic_name) 
-    if search_result["results"]
-      search_result["results"]
+    pluck_result(search_result)
         .map{ |r| r['openfda'].delete_if{|key,v| !fields_to_keep.include? key} }
         .uniq{ |i| i['brand_name'] }
-    else
-      return []
-    end
   end
 
 end

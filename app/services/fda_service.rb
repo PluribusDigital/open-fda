@@ -3,14 +3,18 @@ class FdaService
 
   include HTTParty
   base_uri 'https://api.fda.gov/'
-
+  
   def self.search(q)
-    url = base_path + "?limit=10&search=" + q.to_s
+    url = base_path + "?api_key=#{api_key}&limit=10&search=" + q.to_s
     url = URI::encode(url)
     self.get(url)
   end
 
 private 
+
+  def self.api_key 
+    ENV['FDA_API_KEY']
+  end
 
   def self.normalize_product_ndc(ndc)
     # split on hyphen
@@ -23,6 +27,10 @@ private
     else
       return ndc
     end
+  end
+
+  def self.pluck_result(search_result)
+    return search_result["results"] || []
   end
 
 end
