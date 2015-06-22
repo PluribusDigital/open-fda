@@ -1,0 +1,67 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "postgres-logs",
+      "host": {
+        "sourcePath": "/var/app/current/postgres-logs"
+      }
+    },
+    {
+      "name": "openfda-logs",
+      "host": {
+        "sourcePath": "/var/app/current/openfda-logs"
+      }
+    } 
+  ],
+  "containerDefinitions": [
+    {
+      "name": "postgres",
+      "image": "postgres:9.4",
+      "environment": [
+        {
+          "name": "POSTGRES_USER",
+          "value": "openfda_<deploy_environment>"
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "value": "<POSTGRES_PASSWORD>"
+        }
+      ],
+      "essential": true,
+      "memory": 1024,
+      "mountPoints": [
+        {
+          "sourceVolume": "posgres",
+          "containerPath": "/var/log",
+          "readOnly": true
+        }
+      ]
+    },
+    {
+      "name": "openfda",
+      "image": "cjcassatt/openfda:<TAG>",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ],
+      "command": [
+        "cd /home/app/webapp && bundle exec rake:setup"
+      ],
+      "links": [
+        "postgres"
+      ],
+      "mountPoints": [
+        {
+          "sourceVolume": "openfda",
+          "containerPath": "/var/logs",
+          "readOnly": true
+        }
+      ]
+    }
+  ]
+}
