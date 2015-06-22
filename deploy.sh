@@ -16,7 +16,7 @@ sed "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" < $DOCKERRUN_FILE.template > $DO
 # elastic beanstalk requires application source to be zipped
 zip $DOCKERRUN_FILE.zip $DOCKERRUN_FILE
 
-aws s3 cp $DOCKERRUN_FILE.zip s3:.zip//$EB_BUCKET/$DOCKERRUN_FILE.zip
+aws s3 cp $DOCKERRUN_FILE.zip s3://$EB_BUCKET/$DOCKERRUN_FILE.zip
 aws elasticbeanstalk create-application-version --application-name open-fda-stsi \
   --version-label $SHA1 --source-bundle S3Bucket=$EB_BUCKET,S3Key=$DOCKERRUN_FILE.zip \
   --region us-east-1
