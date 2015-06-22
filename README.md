@@ -5,9 +5,11 @@ Provides the starting point for STSI prototypes
 Prior to installation, you need the basics:
 * ruby 2.1.5
 * bundler
+* PhantomJS 
+  * See http://phantomjs.org/download.html
+  * Note: the phantom team has not put out an NPM package, which is anticipated in version 2.1 https://github.com/Medium/phantomjs/issues/288
 * nodejs & nodejs-legacy
   * `sudo apt-get install nodejs` and `sudo apt-get install nodejs-legacy`
-
 
 ## Installation
 *Windows Users should perform the following steps using the Git Shell*

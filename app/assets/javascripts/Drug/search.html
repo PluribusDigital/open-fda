@@ -1,12 +1,12 @@
 <script type="text/ng-template" id="typeaheadTemplate.html">
   <a> 
-    <span class="h5">{{match.model.proprietary_name}}</span>
+    <span class="h5 quick-search-result">{{match.model.proprietary_name}}</span>
     <span class="small">({{match.model.nonproprietary_name}})</span>
   </a>
 </script>
 <form>
     <div class="input-group">
-      <input type="text" class="form-control" 
+      <input type="text" class="form-control" name="quickSearch" id="quickSearch"
         placeholder="{{searchPlaceholder}}" 
         ng-model="selectedLabel" 
         typeahead="drug as drug.proprietary_name for drug in searchDrugs($viewValue)" 
