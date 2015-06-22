@@ -1,9 +1,11 @@
-app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartInitializer', 
-  function ($scope, $http, $routeParams, chartInitializer) {
+app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location', 
+  function ($scope, $http, $routeParams, $location) {
 
   window.DrugControllerScope = $scope;
-  $scope.selectedDrug, $scope.drug, $scope.events = null;
+  $scope.selectedDrug = {}
+  $scope.drug, $scope.events = null;
   $scope.selectedLabel = null;
+  $scope.searchPlaceholder = "enter drug name (e.g. Lipitor)";
 
   // typeahead search
   $scope.searchDrugs = function(val) {
@@ -36,7 +38,13 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', 'chartIniti
       $scope.events = response.data.results;
       return true;
     });
+    $scope.searchPlaceholder = "new search"
     return true;
+  }
+
+  // navigate among drugs
+  $scope.navigateToDrug = function(product_ndc) {
+    return $location.path("/drug/" + product_ndc);
   }
 
   // if we have a drug ID via the route, use that

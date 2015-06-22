@@ -1,3 +1,4 @@
+// TODO: clean up / create new directives
 var directives = angular.module('directives');
 
 directives.directive("barChart", ['d3Service', function (d3Service) {

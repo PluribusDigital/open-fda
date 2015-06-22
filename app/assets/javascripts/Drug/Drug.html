@@ -1,34 +1,45 @@
-<div class="row">
-  <div class="col-md-12">
-    <ng-include src="'Drug/search.html'">
-  </div>
-</div>
+<!-- Drug headline -->
+<div class="headline" ng-show="drug">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h1>{{drug.openfda.brand_name[0]}}</h1>
+      </div>
+      <div class="col-sm-3">
+        <div class="subhead">
+          <strong class="text-generic">{{drug.openfda.generic_name[0]}}</strong><br>
+          <span class="text-pharm-class" ng-show="drug.openfda.pharm_class_epc.length > 0">
+          {{drug.openfda.pharm_class_epc.join(",")}}
+          </span>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="search">
+          <ng-include src="'Drug/search.html'">
+        </div>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- headline -->
 
+<div class="container theme-showcase" role="main">
 
-<div class="row" ng-show="!drug">
-  <div class="col-md-8">
-    <br/>
-    <ng-include src="'Drug/start.html'">
-  </div>
-</div>
-
-<div class="row" ng-show="drug">
-  <div class="col-md-12">
-    <h1>{{drug.openfda.brand_name[0]}}</h1>
-    <div class="small">
-      <strong>{{drug.openfda.generic_name[0]}}</strong>
-      <span ng-show="drug.openfda.pharm_class_epc.length > 0">
-      ({{drug.openfda.pharm_class_epc.join(",")}})
-      </span>
+  <div class="row" ng-show="!drug">
+    <div class="col-md-8">
+      <div><ng-include src="'Drug/search.html'"></div>
+      <br>
+      <div><ng-include src="'Drug/start.html'"></div>
     </div>
   </div>
-</div>
 
-<div class="row" ng-show="drug">
-  <div class="col-md-6">
-    <ng-include src="'Drug/adverseEvents.html'">
+  <div class="row" ng-show="drug">
+    <div class="col-md-6">
+      <div><ng-include src="'Drug/labelDetail.html'"></div>
+      <div><ng-include src="'Drug/adverseEvents.html'"></div>
+    </div>
+    <div class="col-md-6">
+      <ng-include src="'Drug/alternatives.html'">
+    </div>
   </div>
-  <div class="col-md-6">
-    <ng-include src="'Drug/alternatives.html'">
-  </div>
-</div>
+
+</div> <!-- container -->

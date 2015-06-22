@@ -1,6 +1,9 @@
+// defines front-end dependencies managed by bower 
+// (in this case bower-rails: https://github.com/rharriso/bower-rails)
+// manage with `rake bower:install`
 {
-  "name": "openFDA",
-  "version": "0.0.0",
+  "name": "openfda",
+  "version": "0.0.1",
   "authors": [
     "Ben Morris",
 	  "Jeff Farley",

@@ -5,22 +5,17 @@
   </a>
 </script>
 <form>
-<div class="row">
-  <div class="col-xs-10">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="enter drug name (e.g. Lipitor)" 
+      <input type="text" class="form-control" 
+        placeholder="{{searchPlaceholder}}" 
         ng-model="selectedLabel" 
         typeahead="drug as drug.proprietary_name for drug in searchDrugs($viewValue)" 
         typeahead-loading="loadingSearchResults"
         typeahead-template-url="typeaheadTemplate.html"
         typeahead-on-select="onSelect($item, $model, $label)" >
       <span class="input-group-btn">
-        <button class="btn btn-default" type="submit" ng-click="getDetail()">Go!</button>
+        <button class="btn btn-default" 
+          type="submit" ng-click="getDetail()" style="padding-top:7px;">Go!</button>
       </span>
     </div><!-- /input-group -->
-  </div><!--col-->
-  <div class="col-xs-2">
-    <i ng-show="loadingSearchResults" class="glyphicon glyphicon-refresh"></i>
-  </div><!--col-->
-</div> <!-- row -->
 </form>
