@@ -33,14 +33,6 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
       $scope.drug = response.data;
       return true;
     });
-    // events data
-    $http.get('/api/v1/events?product_ndc=' + $scope.selectedDrug.product_ndc + '' , {}
-    ).then(function(response){
-      $scope.events = response.data.results;
-      return true;
-    });
-    $scope.searchPlaceholder = "new search"
-    return true;
   }
 
   // navigate among drugs
