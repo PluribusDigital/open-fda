@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	class_name
 0002-8215	Insulin
 0002-8315	Insulin
 0002-8400	Parathyroid Hormone
@@ -40,19 +40,19 @@ Key	Value
 0004-6416	Nonsteroidal Anti-inflammatory Compounds
 0004-6940	Nucleoside Analog
 0005-2500	Calcium
-0006-0266	Dietary Proteins
 0006-0266	Allergens
+0006-0266	Dietary Proteins
 0006-0266	Grain Proteins
+0006-0267	Allergens
 0006-0267	Dietary Proteins
 0006-0267	Grain Proteins
-0006-0267	Allergens
 0006-0705	Quinolones
 0006-3800	Dietary Proteins
-0006-3800	Allergens
 0006-3800	Grain Proteins
-0006-3801	Dietary Proteins
-0006-3801	Grain Proteins
+0006-3800	Allergens
 0006-3801	Allergens
+0006-3801	Grain Proteins
+0006-3801	Dietary Proteins
 0006-3822	Lipopeptides
 0006-3823	Lipopeptides
 0006-3843	Carbapenems
@@ -122,8 +122,8 @@ Key	Value
 0009-7686	Prostaglandins
 0013-0101	Aminosalicylic Acids
 0013-0102	Aminosalicylic Acids
-0013-0132	Nitrogen Mustard Compounds
 0013-0132	Estradiol
+0013-0132	Nitrogen Mustard Compounds
 0013-2150	Estradiol Congeners
 0013-2200	Anthracyclines
 0013-2201	Anthracyclines
@@ -138,17 +138,17 @@ Key	Value
 0023-0106	Aminoglycosides
 0023-2181	Nonsteroidal Anti-inflammatory Compounds
 0023-3205	Prostaglandins
-0023-3240	Allergens
 0023-3240	Glycerol
+0023-3240	Allergens
 0023-3416	Allergens
 0023-3416	Glycerol
 0023-3507	Nonsteroidal Anti-inflammatory Compounds
 0023-3616	Prostaglandins
 0023-3670	Sulfones
-0023-4307	Glycerol
 0023-4307	Allergens
-0023-4491	Glycerol
+0023-4307	Glycerol
 0023-4491	Allergens
+0023-4491	Glycerol
 0023-7824	Polymyxins
 0023-8335	Retinoids
 0023-9155	Retinoids
@@ -168,8 +168,8 @@ Key	Value
 0024-5521	Pyridines
 0024-5831	Catecholamines
 0024-5833	Catecholamines
-0024-5843	Granulocyte Colony-stimulating Factor
 0024-5843	Granulocyte-macrophage Colony-stimulating Factor
+0024-5843	Granulocyte Colony-stimulating Factor
 0024-5844	Granulocyte Colony-stimulating Factor
 0024-5844	Granulocyte-macrophage Colony-stimulating Factor
 0024-5855	Thiazides
@@ -296,18 +296,18 @@ Key	Value
 0054-0228	Nonsteroidal Anti-inflammatory Compounds
 0054-0254	Thiazides
 0054-0255	Thiazides
+0054-0273	Allergens
 0054-0273	Dietary Proteins
 0054-0273	Grain Proteins
-0054-0273	Allergens
+0054-0274	Grain Proteins
 0054-0274	Allergens
 0054-0274	Dietary Proteins
-0054-0274	Grain Proteins
-0054-0275	Grain Proteins
 0054-0275	Dietary Proteins
+0054-0275	Grain Proteins
 0054-0275	Allergens
-0054-0276	Dietary Proteins
-0054-0276	Grain Proteins
 0054-0276	Allergens
+0054-0276	Grain Proteins
+0054-0276	Dietary Proteins
 0054-0338	Ergocalciferols
 0054-0339	Ergocalciferols
 0054-0347	Nitroimidazoles
@@ -325,8 +325,8 @@ Key	Value
 0054-3532	Benzodiazepines
 0054-3542	Progesterone Congeners
 0054-3566	Benzodiazepines
-0054-4084	Purines
 0054-4084	Nucleoside Analog
+0054-4084	Purines
 0054-4120	Calcium
 0054-4146	Azoles
 0054-4496	Folic Acid
@@ -337,8 +337,8 @@ Key	Value
 0054-4604	Progesterone Congeners
 0054-4858	Benzodiazepines
 0054-4859	Benzodiazepines
-0054-8084	Purines
 0054-8084	Nucleoside Analog
+0054-8084	Purines
 0054-8120	Calcium
 0054-8146	Azoles
 0054-8207	Benzodiazepines
@@ -516,9 +516,9 @@ Key	Value
 0071-0418	Nitrates
 0071-0419	Nitrates
 0071-0737	Ppar Alpha
-0074-1564	Grain Proteins
 0074-1564	Dietary Proteins
 0074-1564	Allergens
+0074-1564	Grain Proteins
 0074-1658	Cholecalciferol
 0074-2586	Macrolides
 0074-3005	Nicotinic Acids
@@ -592,8 +592,8 @@ Key	Value
 0078-0314	Thiazides
 0078-0315	Thiazides
 0078-0331	Food Additives
-0078-0331	Plant Proteins
 0078-0331	Dietary Proteins
+0078-0331	Plant Proteins
 0078-0331	Allergens
 0078-0343	Estradiol Congeners
 0078-0344	Estradiol Congeners
@@ -608,62 +608,62 @@ Key	Value
 0078-0378	Progesterone Congeners
 0078-0379	Dihydropyridines
 0078-0380	Allergens
-0078-0380	Fruit Proteins
 0078-0380	Plant Proteins
 0078-0380	Dietary Proteins
+0078-0380	Fruit Proteins
+0078-0381	Fruit Proteins
+0078-0381	Allergens
 0078-0381	Dietary Proteins
 0078-0381	Plant Proteins
-0078-0381	Allergens
-0078-0381	Fruit Proteins
 0078-0382	Fruit Proteins
-0078-0382	Plant Proteins
 0078-0382	Dietary Proteins
+0078-0382	Plant Proteins
 0078-0382	Allergens
 0078-0383	Thiazides
 0078-0384	Dihydropyridines
+0078-0393	Food Additives
 0078-0393	Plant Proteins
 0078-0393	Allergens
-0078-0393	Food Additives
 0078-0393	Dietary Proteins
 0078-0404	Dihydropyridines
 0078-0405	Dihydropyridines
 0078-0406	Dihydropyridines
 0078-0430	Plant Proteins
+0078-0430	Dietary Proteins
 0078-0430	Allergens
 0078-0430	Fruit Proteins
-0078-0430	Dietary Proteins
-0078-0431	Fruit Proteins
 0078-0431	Dietary Proteins
 0078-0431	Allergens
 0078-0431	Plant Proteins
+0078-0431	Fruit Proteins
 0078-0432	Allergens
-0078-0432	Plant Proteins
 0078-0432	Fruit Proteins
 0078-0432	Dietary Proteins
+0078-0432	Plant Proteins
+0078-0433	Dietary Proteins
 0078-0433	Allergens
 0078-0433	Plant Proteins
-0078-0433	Dietary Proteins
 0078-0433	Fruit Proteins
-0078-0434	Plant Proteins
 0078-0434	Allergens
-0078-0434	Fruit Proteins
+0078-0434	Plant Proteins
 0078-0434	Dietary Proteins
+0078-0434	Fruit Proteins
 0078-0436	Nonsteroidal Anti-inflammatory Compounds
-0078-0439	Allergens
-0078-0439	Plant Proteins
 0078-0439	Dietary Proteins
 0078-0439	Fruit Proteins
-0078-0440	Plant Proteins
-0078-0440	Fruit Proteins
-0078-0440	Dietary Proteins
+0078-0439	Plant Proteins
+0078-0439	Allergens
 0078-0440	Allergens
+0078-0440	Fruit Proteins
+0078-0440	Plant Proteins
+0078-0440	Dietary Proteins
 0078-0441	Fruit Proteins
 0078-0441	Allergens
 0078-0441	Dietary Proteins
 0078-0441	Plant Proteins
 0078-0442	Fruit Proteins
-0078-0442	Dietary Proteins
 0078-0442	Plant Proteins
+0078-0442	Dietary Proteins
 0078-0442	Allergens
 0078-0446	Nonsteroidal Anti-inflammatory Compounds
 0078-0471	Thiazides
@@ -674,9 +674,9 @@ Key	Value
 0078-0490	Dihydropyridines
 0078-0491	Dihydropyridines
 0078-0493	Allergens
-0078-0493	Fruit Proteins
 0078-0493	Dietary Proteins
 0078-0493	Plant Proteins
+0078-0493	Fruit Proteins
 0078-0494	Aminoglycosides
 0078-0495	Interleukin-2
 0078-0499	Allylamine
@@ -692,14 +692,14 @@ Key	Value
 0078-0604	Dihydropyridines
 0078-0605	Dihydropyridines
 0078-0606	Dihydropyridines
-0078-0608	Dietary Proteins
 0078-0608	Fruit Proteins
+0078-0608	Dietary Proteins
 0078-0608	Plant Proteins
 0078-0608	Allergens
-0078-0609	Plant Proteins
+0078-0609	Fruit Proteins
 0078-0609	Dietary Proteins
 0078-0609	Allergens
-0078-0609	Fruit Proteins
+0078-0609	Plant Proteins
 0078-0610	Dihydropyridines
 0078-0611	Dihydropyridines
 0078-0612	Dihydropyridines
@@ -712,15 +712,15 @@ Key	Value
 0085-0370	Grain Proteins
 0085-0819	Nitrates
 0085-0854	Allergens
-0085-0854	Grain Proteins
 0085-0854	Dietary Proteins
+0085-0854	Grain Proteins
 0085-1133	Interferon Alfa-2b
 0085-1133	Interferon-alpha
 0085-1168	Interferon Alfa-2b
 0085-1168	Interferon-alpha
 0085-1194	Nucleoside Analog
-0085-1288	Grain Proteins
 0085-1288	Dietary Proteins
+0085-1288	Grain Proteins
 0085-1288	Allergens
 0085-1297	Interferon Alfa-2b
 0085-1297	Interferon-alpha
@@ -730,16 +730,16 @@ Key	Value
 0085-1323	Interferon Alfa-2b
 0085-1323	Interferon-alpha
 0085-1328	Azoles
-0085-1341	Allergens
-0085-1341	Dietary Proteins
 0085-1341	Grain Proteins
+0085-1341	Dietary Proteins
+0085-1341	Allergens
 0085-1351	Nucleoside Analog
 0085-1370	Interferon-alpha
 0085-1370	Interferon Alfa-2b
 0085-1374	Nitrates
 0085-1385	Nucleoside Analog
-0085-1461	Grain Proteins
 0085-1461	Dietary Proteins
+0085-1461	Grain Proteins
 0085-1461	Allergens
 0085-1733	Quinolones
 0085-1737	Quinolones
@@ -751,24 +751,24 @@ Key	Value
 0085-3330	Nitrates
 0085-4324	Azoles
 0085-4331	Azoles
-0085-4333	Allergens
-0085-4333	Grain Proteins
 0085-4333	Dietary Proteins
-0085-4334	Dietary Proteins
-0085-4334	Allergens
+0085-4333	Grain Proteins
+0085-4333	Allergens
 0085-4334	Grain Proteins
+0085-4334	Allergens
+0085-4334	Dietary Proteins
 0085-4350	Interferon-alpha
 0085-4350	Interferon Alfa-2b
 0085-4351	Interferon-alpha
 0085-4351	Interferon Alfa-2b
-0085-4352	Interferon Alfa-2b
 0085-4352	Interferon-alpha
-0085-4353	Interferon-alpha
+0085-4352	Interferon Alfa-2b
 0085-4353	Interferon Alfa-2b
-0085-4354	Interferon Alfa-2b
+0085-4353	Interferon-alpha
 0085-4354	Interferon-alpha
-0085-4355	Interferon Alfa-2b
+0085-4354	Interferon Alfa-2b
 0085-4355	Interferon-alpha
+0085-4355	Interferon Alfa-2b
 0085-4356	Interferon Alfa-2b
 0085-4356	Interferon-alpha
 0087-2775	Thiazides
@@ -841,15 +841,15 @@ Key	Value
 0093-1893	Nonsteroidal Anti-inflammatory Compounds
 0093-2026	Macrolides
 0093-2027	Macrolides
+0093-2046	Ppar Gamma
 0093-2046	Ppar Alpha
 0093-2046	Thiazolidinediones
-0093-2046	Ppar Gamma
-0093-2047	Ppar Alpha
 0093-2047	Thiazolidinediones
+0093-2047	Ppar Alpha
 0093-2047	Ppar Gamma
-0093-2048	Ppar Alpha
-0093-2048	Ppar Gamma
 0093-2048	Thiazolidinediones
+0093-2048	Ppar Gamma
+0093-2048	Ppar Alpha
 0093-2057	Dihydropyridines
 0093-2058	Dihydropyridines
 0093-2059	Dihydropyridines
@@ -879,56 +879,56 @@ Key	Value
 0093-5050	Biguanides
 0093-5173	Dihydropyridines
 0093-5256	Lincosamides
-0093-5275	Allergens
-0093-5275	Fruit Proteins
 0093-5275	Dietary Proteins
+0093-5275	Fruit Proteins
+0093-5275	Allergens
 0093-5275	Plant Proteins
 0093-5276	Dietary Proteins
 0093-5276	Fruit Proteins
 0093-5276	Allergens
 0093-5276	Plant Proteins
-0093-5277	Allergens
-0093-5277	Dietary Proteins
 0093-5277	Plant Proteins
 0093-5277	Fruit Proteins
+0093-5277	Dietary Proteins
+0093-5277	Allergens
 0093-5289	Azoles
 0093-5290	Azoles
+0093-5292	Dietary Proteins
 0093-5292	Plant Proteins
 0093-5292	Fruit Proteins
-0093-5292	Dietary Proteins
 0093-5292	Allergens
 0093-5293	Allergens
-0093-5293	Fruit Proteins
-0093-5293	Dietary Proteins
 0093-5293	Plant Proteins
+0093-5293	Dietary Proteins
+0093-5293	Fruit Proteins
 0093-5295	Fruit Proteins
-0093-5295	Dietary Proteins
 0093-5295	Allergens
 0093-5295	Plant Proteins
-0093-5296	Allergens
+0093-5295	Dietary Proteins
+0093-5296	Plant Proteins
 0093-5296	Dietary Proteins
 0093-5296	Fruit Proteins
-0093-5296	Plant Proteins
-0093-5297	Plant Proteins
-0093-5297	Allergens
+0093-5296	Allergens
 0093-5297	Dietary Proteins
+0093-5297	Plant Proteins
 0093-5297	Fruit Proteins
-0093-5298	Allergens
+0093-5297	Allergens
 0093-5298	Plant Proteins
 0093-5298	Fruit Proteins
+0093-5298	Allergens
 0093-5298	Dietary Proteins
-0093-5346	Allergens
 0093-5346	Fruit Proteins
 0093-5346	Plant Proteins
 0093-5346	Dietary Proteins
+0093-5346	Allergens
+0093-5347	Plant Proteins
+0093-5347	Dietary Proteins
 0093-5347	Allergens
 0093-5347	Fruit Proteins
-0093-5347	Dietary Proteins
-0093-5347	Plant Proteins
-0093-5348	Plant Proteins
-0093-5348	Allergens
-0093-5348	Dietary Proteins
 0093-5348	Fruit Proteins
+0093-5348	Dietary Proteins
+0093-5348	Allergens
+0093-5348	Plant Proteins
 0093-5353	Progesterone
 0093-5354	Progesterone
 0093-5385	Nucleoside Analog
@@ -937,13 +937,13 @@ Key	Value
 0093-5420	Ergolines
 0093-5454	Progesterone Congeners
 0093-5455	Progesterone Congeners
-0093-5552	Allergens
 0093-5552	Fruit Proteins
-0093-5552	Plant Proteins
 0093-5552	Dietary Proteins
-0093-5554	Fruit Proteins
-0093-5554	Allergens
+0093-5552	Allergens
+0093-5552	Plant Proteins
 0093-5554	Dietary Proteins
+0093-5554	Allergens
+0093-5554	Fruit Proteins
 0093-5554	Plant Proteins
 0093-5562	Plant Proteins
 0093-5562	Fruit Proteins
@@ -997,11 +997,11 @@ Key	Value
 0093-7455	Sulfonylurea Compounds
 0093-7456	Sulfonylurea Compounds
 0093-7457	Sulfonylurea Compounds
-0093-7471	Allergens
 0093-7471	Dietary Proteins
 0093-7471	Grain Proteins
-0093-7472	Dietary Proteins
+0093-7471	Allergens
 0093-7472	Grain Proteins
+0093-7472	Dietary Proteins
 0093-7472	Allergens
 0093-7656	Cholecalciferol
 0093-7657	Cholecalciferol
@@ -1036,8 +1036,8 @@ Key	Value
 0113-0083	Nonsteroidal Anti-inflammatory Compounds
 0113-0131	Nonsteroidal Anti-inflammatory Compounds
 0113-0142	Allergens
-0113-0160	Allergens
 0113-0160	Plant Proteins
+0113-0160	Allergens
 0113-0160	Dietary Proteins
 0113-0166	Nonsteroidal Anti-inflammatory Compounds
 0113-0170	Nicotine
@@ -1047,9 +1047,9 @@ Key	Value
 0113-0259	Nonsteroidal Anti-inflammatory Compounds
 0113-0274	Nonsteroidal Anti-inflammatory Compounds
 0113-0277	Nonsteroidal Anti-inflammatory Compounds
-0113-0279	Plant Proteins
 0113-0279	Allergens
 0113-0279	Dietary Proteins
+0113-0279	Plant Proteins
 0113-0302	Bismuth
 0113-0321	Calcium
 0113-0337	Bismuth
@@ -1057,9 +1057,9 @@ Key	Value
 0113-0352	Nicotine
 0113-0368	Nonsteroidal Anti-inflammatory Compounds
 0113-0374	Nonsteroidal Anti-inflammatory Compounds
+0113-0394	Dietary Proteins
 0113-0394	Plant Proteins
 0113-0394	Allergens
-0113-0394	Dietary Proteins
 0113-0409	Xanthines
 0113-0416	Nonsteroidal Anti-inflammatory Compounds
 0113-0422	Nicotine
@@ -1118,14 +1118,14 @@ Key	Value
 0115-1247	Tetracyclines
 0115-1327	Tetracyclines
 0115-1468	Amides
-0115-1469	Allergens
-0115-1469	Grain Proteins
 0115-1469	Dietary Proteins
-0115-1470	Allergens
-0115-1470	Grain Proteins
+0115-1469	Grain Proteins
+0115-1469	Allergens
 0115-1470	Dietary Proteins
-0115-1471	Allergens
+0115-1470	Grain Proteins
+0115-1470	Allergens
 0115-1471	Dietary Proteins
+0115-1471	Allergens
 0115-1471	Grain Proteins
 0115-1474	Nitroimidazoles
 0115-1475	Vitamin D
@@ -1161,14 +1161,14 @@ Key	Value
 0121-4794	Xanthines
 0121-4803	Bismuth
 0126-0065	Allergens
-0132-0079	Glycerol
 0132-0079	Allergens
-0132-0081	Allergens
+0132-0079	Glycerol
 0132-0081	Glycerol
+0132-0081	Allergens
 0132-0185	Allergens
 0132-0185	Glycerol
-0132-0190	Glycerol
 0132-0190	Allergens
+0132-0190	Glycerol
 0132-8743	Iodine
 0135-0070	Calcium
 0135-0071	Calcium
@@ -1261,9 +1261,9 @@ Key	Value
 0143-3367	Benzodiazepines
 0143-3370	Benzodiazepines
 0143-9130	Ppar Alpha
-0143-9637	Dietary Proteins
-0143-9637	Allergens
 0143-9637	Grain Proteins
+0143-9637	Allergens
+0143-9637	Dietary Proteins
 0143-9665	Cephalosporins
 0143-9666	Azoles
 0143-9667	Azoles
@@ -1282,9 +1282,9 @@ Key	Value
 0143-9750	Androstanes
 0143-9768	Cephalosporins
 0143-9772	Nitroimidazoles
+0143-9785	Grain Proteins
 0143-9785	Dietary Proteins
 0143-9785	Allergens
-0143-9785	Grain Proteins
 0143-9803	Tetracyclines
 0143-9856	Cephalosporins
 0143-9857	Cephalosporins
@@ -1344,15 +1344,15 @@ Key	Value
 0168-0204	Amides
 0168-0215	Macrolides
 0168-0216	Macrolides
-0168-0270	Allergens
 0168-0270	Dietary Proteins
+0168-0270	Allergens
 0168-0270	Grain Proteins
-0168-0271	Allergens
 0168-0271	Grain Proteins
+0168-0271	Allergens
 0168-0271	Dietary Proteins
 0168-0272	Allergens
-0168-0272	Dietary Proteins
 0168-0272	Grain Proteins
+0168-0272	Dietary Proteins
 0168-0275	Nitroimidazoles
 0168-0277	Lincosamides
 0168-0312	Azoles
@@ -1409,10 +1409,10 @@ Key	Value
 0173-0740	Cephalosporins
 0173-0741	Cephalosporins
 0173-0750	Nonsteroidal Anti-inflammatory Compounds
-0173-0834	Ppar Gamma
 0173-0834	Thiazolidinediones
-0173-0835	Ppar Gamma
+0173-0834	Ppar Gamma
 0173-0835	Thiazolidinediones
+0173-0835	Ppar Gamma
 0173-0836	Ppar Gamma
 0173-0836	Thiazolidinediones
 0173-0837	Biguanides
@@ -1424,8 +1424,8 @@ Key	Value
 0173-0843	Sulfonylurea Compounds
 0173-0844	Sulfonylurea Compounds
 0173-0845	Sulfonylurea Compounds
-0173-0861	Ppar Gamma
 0173-0861	Thiazolidinediones
+0173-0861	Ppar Gamma
 0173-0863	Thiazolidinediones
 0173-0863	Ppar Gamma
 0173-0864	Ppar Gamma
@@ -1636,9 +1636,9 @@ Key	Value
 0264-3195	Cephalosporins
 0264-3200	Amino Acids
 0264-3205	Amino Acids
+0264-4460	Dietary Proteins
 0264-4460	Vegetable Proteins
 0264-4460	Allergens
-0264-4460	Dietary Proteins
 0264-5535	Nitroimidazoles
 0264-7389	Calcium
 0264-7750	Calcium
@@ -1662,18 +1662,18 @@ Key	Value
 0268-0021	Pollen
 0268-0024	Allergens
 0268-0024	Pollen
-0268-0027	Pollen
 0268-0027	Allergens
-0268-0030	Pollen
+0268-0027	Pollen
 0268-0030	Allergens
+0268-0030	Pollen
 0268-0031	Pollen
 0268-0031	Allergens
 0268-0034	Allergens
 0268-0034	Pollen
-0268-0037	Pollen
 0268-0037	Allergens
-0268-0038	Allergens
+0268-0037	Pollen
 0268-0038	Pollen
+0268-0038	Allergens
 0268-0041	Allergens
 0268-0041	Pollen
 0268-0044	Allergens
@@ -1686,46 +1686,46 @@ Key	Value
 0268-0053	Pollen
 0268-0054	Allergens
 0268-0054	Pollen
-0268-0057	Pollen
 0268-0057	Allergens
+0268-0057	Pollen
 0268-0060	Allergens
 0268-0060	Pollen
 0268-0063	Pollen
 0268-0063	Allergens
-0268-0066	Pollen
 0268-0066	Allergens
+0268-0066	Pollen
 0268-0069	Pollen
 0268-0069	Allergens
-0268-0072	Pollen
 0268-0072	Allergens
+0268-0072	Pollen
 0268-0075	Pollen
 0268-0075	Allergens
-0268-0078	Allergens
 0268-0078	Pollen
-0268-0081	Allergens
+0268-0078	Allergens
 0268-0081	Pollen
+0268-0081	Allergens
 0268-0082	Pollen
 0268-0082	Allergens
-0268-0083	Pollen
 0268-0083	Allergens
+0268-0083	Pollen
 0268-0084	Allergens
 0268-0084	Pollen
 0268-0087	Allergens
 0268-0087	Pollen
-0268-0090	Pollen
 0268-0090	Allergens
+0268-0090	Pollen
 0268-0091	Allergens
 0268-0091	Pollen
-0268-0094	Pollen
 0268-0094	Allergens
+0268-0094	Pollen
 0268-0097	Allergens
 0268-0097	Pollen
 0268-0100	Pollen
 0268-0100	Allergens
 0268-0103	Pollen
 0268-0103	Allergens
-0268-0104	Pollen
 0268-0104	Allergens
+0268-0104	Pollen
 0268-0107	Allergens
 0268-0107	Pollen
 0268-0110	Pollen
@@ -1742,128 +1742,128 @@ Key	Value
 0268-0125	Allergens
 0268-0128	Allergens
 0268-0128	Pollen
-0268-0129	Pollen
 0268-0129	Allergens
-0268-0130	Pollen
+0268-0129	Pollen
 0268-0130	Allergens
+0268-0130	Pollen
 0268-0131	Allergens
 0268-0131	Pollen
 0268-0134	Allergens
 0268-0134	Pollen
-0268-0137	Pollen
 0268-0137	Allergens
-0268-0140	Allergens
+0268-0137	Pollen
 0268-0140	Pollen
-0268-0141	Pollen
+0268-0140	Allergens
 0268-0141	Allergens
+0268-0141	Pollen
 0268-0144	Allergens
 0268-0144	Pollen
 0268-0145	Allergens
 0268-0145	Pollen
-0268-0146	Pollen
 0268-0146	Allergens
-0268-0147	Pollen
+0268-0146	Pollen
 0268-0147	Allergens
+0268-0147	Pollen
 0268-0150	Pollen
 0268-0150	Allergens
 0268-0153	Pollen
 0268-0153	Allergens
-0268-0156	Pollen
 0268-0156	Allergens
-0268-0157	Allergens
+0268-0156	Pollen
 0268-0157	Pollen
-0268-0160	Allergens
+0268-0157	Allergens
 0268-0160	Pollen
-0268-0161	Allergens
+0268-0160	Allergens
 0268-0161	Pollen
+0268-0161	Allergens
 0268-0164	Allergens
 0268-0164	Pollen
 0268-0167	Pollen
 0268-0167	Allergens
-0268-0170	Allergens
 0268-0170	Pollen
-0268-0173	Pollen
+0268-0170	Allergens
 0268-0173	Allergens
+0268-0173	Pollen
 0268-0174	Pollen
 0268-0174	Allergens
-0268-0177	Pollen
 0268-0177	Allergens
+0268-0177	Pollen
 0268-0180	Allergens
 0268-0180	Pollen
-0268-0183	Allergens
 0268-0183	Pollen
-0268-0186	Allergens
+0268-0183	Allergens
 0268-0186	Pollen
-0268-0189	Pollen
+0268-0186	Allergens
 0268-0189	Allergens
-0268-0192	Allergens
+0268-0189	Pollen
 0268-0192	Pollen
+0268-0192	Allergens
 0268-0193	Pollen
 0268-0193	Allergens
-0268-0196	Allergens
 0268-0196	Pollen
-0268-0199	Allergens
+0268-0196	Allergens
 0268-0199	Pollen
+0268-0199	Allergens
 0268-0202	Allergens
 0268-0202	Pollen
-0268-0205	Allergens
 0268-0205	Pollen
-0268-0279	Pollen
+0268-0205	Allergens
 0268-0279	Allergens
+0268-0279	Pollen
 0268-0280	Pollen
 0268-0280	Allergens
-0268-0281	Pollen
 0268-0281	Allergens
+0268-0281	Pollen
 0268-0282	Pollen
 0268-0282	Allergens
-0268-0283	Allergens
 0268-0283	Pollen
-0268-0284	Pollen
+0268-0283	Allergens
 0268-0284	Allergens
-0268-0285	Pollen
+0268-0284	Pollen
 0268-0285	Allergens
-0268-0286	Allergens
+0268-0285	Pollen
 0268-0286	Pollen
+0268-0286	Allergens
 0268-0287	Allergens
 0268-0287	Pollen
 0268-0288	Pollen
 0268-0288	Allergens
 0268-0289	Allergens
 0268-0289	Pollen
-0268-0290	Allergens
 0268-0290	Pollen
-0268-0291	Pollen
+0268-0290	Allergens
 0268-0291	Allergens
+0268-0291	Pollen
 0268-0292	Allergens
 0268-0292	Pollen
-0268-0293	Allergens
 0268-0293	Pollen
-0268-1088	Pollen
+0268-0293	Allergens
 0268-1088	Allergens
+0268-1088	Pollen
 0268-3050	Allergens
 0268-3050	Pollen
-0268-3051	Pollen
 0268-3051	Allergens
-0268-3052	Pollen
+0268-3051	Pollen
 0268-3052	Allergens
-0268-3053	Pollen
+0268-3052	Pollen
 0268-3053	Allergens
-0268-3054	Pollen
+0268-3053	Pollen
 0268-3054	Allergens
-0268-3055	Pollen
+0268-3054	Pollen
 0268-3055	Allergens
-0268-3056	Pollen
+0268-3055	Pollen
 0268-3056	Allergens
+0268-3056	Pollen
 0268-3057	Allergens
 0268-3057	Pollen
 0268-3058	Allergens
 0268-3058	Pollen
-0268-3059	Allergens
 0268-3059	Pollen
+0268-3059	Allergens
 0268-3060	Pollen
 0268-3060	Allergens
-0268-3061	Pollen
 0268-3061	Allergens
+0268-3061	Pollen
 0268-3062	Pollen
 0268-3062	Allergens
 0268-3063	Pollen
@@ -1916,12 +1916,12 @@ Key	Value
 0338-0507	Aminoglycosides
 0338-0509	Aminoglycosides
 0338-0511	Aminoglycosides
-0338-0519	Dietary Proteins
 0338-0519	Allergens
+0338-0519	Dietary Proteins
 0338-0519	Vegetable Proteins
-0338-0520	Dietary Proteins
 0338-0520	Allergens
 0338-0520	Vegetable Proteins
+0338-0520	Dietary Proteins
 0338-0549	Heparin
 0338-0550	Heparin
 0338-0552	Heparin
@@ -1994,9 +1994,9 @@ Key	Value
 0363-0169	Nonsteroidal Anti-inflammatory Compounds
 0363-0456	Nicotine
 0363-0955	Pyrethrins
+0378-0048	Thiazolidinediones
 0378-0048	Ppar Gamma
 0378-0048	Ppar Alpha
-0378-0048	Thiazolidinediones
 0378-0076	Nonsteroidal Anti-inflammatory Compounds
 0378-0093	Nonsteroidal Anti-inflammatory Compounds
 0378-0141	Thiazides
@@ -2012,17 +2012,17 @@ Key	Value
 0378-0210	Sulfonylurea Compounds
 0378-0215	Sulfonylurea Compounds
 0378-0217	Sulfonylurea Compounds
-0378-0228	Ppar Alpha
 0378-0228	Ppar Gamma
 0378-0228	Thiazolidinediones
+0378-0228	Ppar Alpha
 0378-0253	Nucleoside Analog
 0378-0261	Azoles
 0378-0271	Benzodiazepines
 0378-0302	Nucleoside Analog
 0378-0313	Nonsteroidal Anti-inflammatory Compounds
 0378-0318	Thiazolidinediones
-0378-0318	Ppar Gamma
 0378-0318	Ppar Alpha
+0378-0318	Ppar Gamma
 0378-0345	Benzodiazepines
 0378-0353	Dihydropyridines
 0378-0355	Nonsteroidal Anti-inflammatory Compounds
@@ -2044,8 +2044,8 @@ Key	Value
 0378-0618	Phenothiazines
 0378-0711	Thiazides
 0378-0810	Thiazides
-0378-1005	Nucleoside Analog
 0378-1005	Purines
+0378-1005	Nucleoside Analog
 0378-1012	Thiazides
 0378-1020	Dihydropyridines
 0378-1066	Nonsteroidal Anti-inflammatory Compounds
@@ -2055,12 +2055,12 @@ Key	Value
 0378-1134	Nonsteroidal Anti-inflammatory Compounds
 0378-1352	Thiazides
 0378-1355	Thiazides
-0378-1403	Allergens
 0378-1403	Dietary Proteins
 0378-1403	Grain Proteins
-0378-1404	Dietary Proteins
+0378-1403	Allergens
 0378-1404	Grain Proteins
 0378-1404	Allergens
+0378-1404	Dietary Proteins
 0378-1430	Dihydropyridines
 0378-1452	Estradiol Congeners
 0378-1454	Estradiol Congeners
@@ -2136,11 +2136,11 @@ Key	Value
 0378-3611	Triiodothyronine
 0378-3612	Triiodothyronine
 0378-3613	Triiodothyronine
+0378-3701	Allergens
 0378-3701	Grain Proteins
 0378-3701	Dietary Proteins
-0378-3701	Allergens
-0378-3702	Dietary Proteins
 0378-3702	Grain Proteins
+0378-3702	Dietary Proteins
 0378-3702	Allergens
 0378-4001	Benzodiazepines
 0378-4003	Benzodiazepines
@@ -2272,74 +2272,74 @@ Key	Value
 0378-9116	Nitrates
 0378-9645	Prostaglandins
 0404-0703	Nonsteroidal Anti-inflammatory Compounds
-0406-0127	Dietary Proteins
-0406-0127	Allergens
 0406-0127	Plant Proteins
 0406-0127	Fruit Proteins
+0406-0127	Allergens
+0406-0127	Dietary Proteins
 0406-0136	Dietary Proteins
 0406-0136	Plant Proteins
-0406-0136	Fruit Proteins
 0406-0136	Allergens
-0406-0154	Dietary Proteins
-0406-0154	Fruit Proteins
+0406-0136	Fruit Proteins
 0406-0154	Allergens
 0406-0154	Plant Proteins
+0406-0154	Fruit Proteins
+0406-0154	Dietary Proteins
 0406-1142	Allergens
-0406-1142	Dietary Proteins
 0406-1142	Plant Proteins
 0406-1142	Fruit Proteins
+0406-1142	Dietary Proteins
 0406-1144	Fruit Proteins
-0406-1144	Dietary Proteins
 0406-1144	Allergens
+0406-1144	Dietary Proteins
 0406-1144	Plant Proteins
+0406-1146	Allergens
 0406-1146	Plant Proteins
 0406-1146	Fruit Proteins
-0406-1146	Allergens
 0406-1146	Dietary Proteins
-0406-1445	Fruit Proteins
-0406-1445	Plant Proteins
 0406-1445	Dietary Proteins
+0406-1445	Plant Proteins
+0406-1445	Fruit Proteins
 0406-1445	Allergens
-0406-1473	Dietary Proteins
 0406-1473	Fruit Proteins
 0406-1473	Allergens
 0406-1473	Plant Proteins
-0406-3005	Allergens
-0406-3005	Plant Proteins
-0406-3005	Fruit Proteins
+0406-1473	Dietary Proteins
 0406-3005	Dietary Proteins
-0406-3010	Plant Proteins
+0406-3005	Plant Proteins
+0406-3005	Allergens
+0406-3005	Fruit Proteins
 0406-3010	Dietary Proteins
+0406-3010	Plant Proteins
 0406-3010	Fruit Proteins
 0406-3010	Allergens
 0406-9914	Benzodiazepines
 0406-9915	Benzodiazepines
 0406-9916	Benzodiazepines
 0406-9917	Benzodiazepines
-0406-9923	Allergens
 0406-9923	Grain Proteins
+0406-9923	Allergens
 0406-9923	Dietary Proteins
-0406-9924	Allergens
-0406-9924	Dietary Proteins
 0406-9924	Grain Proteins
-0406-9925	Dietary Proteins
-0406-9925	Grain Proteins
+0406-9924	Dietary Proteins
+0406-9924	Allergens
 0406-9925	Allergens
-0406-9926	Allergens
-0406-9926	Dietary Proteins
+0406-9925	Grain Proteins
+0406-9925	Dietary Proteins
 0406-9926	Grain Proteins
-0406-9931	Grain Proteins
+0406-9926	Dietary Proteins
+0406-9926	Allergens
 0406-9931	Allergens
+0406-9931	Grain Proteins
 0406-9931	Dietary Proteins
-0406-9932	Grain Proteins
 0406-9932	Allergens
 0406-9932	Dietary Proteins
+0406-9932	Grain Proteins
 0406-9933	Grain Proteins
 0406-9933	Dietary Proteins
 0406-9933	Allergens
-0406-9934	Allergens
-0406-9934	Grain Proteins
 0406-9934	Dietary Proteins
+0406-9934	Grain Proteins
+0406-9934	Allergens
 0406-9959	Benzodiazepines
 0406-9960	Benzodiazepines
 0409-0106	Lipopeptides
@@ -2545,16 +2545,16 @@ Key	Value
 0409-9302	Amides
 0409-9303	Amides
 0409-9366	Amides
-0409-9786	Dietary Proteins
-0409-9786	Egg Proteins, Dietary
 0409-9786	Allergens
-0409-9789	Allergens
+0409-9786	Egg Proteins, Dietary
+0409-9786	Dietary Proteins
 0409-9789	Egg Proteins, Dietary
 0409-9789	Dietary Proteins
+0409-9789	Allergens
 0409-9790	Allergens
 0409-9790	Glycerol
-0409-9791	Allergens
 0409-9791	Glycerol
+0409-9791	Allergens
 0430-0112	Tetracyclines
 0430-0114	Tetracyclines
 0430-0115	Tetracyclines
@@ -2614,9 +2614,9 @@ Key	Value
 0517-0735	Dihydropyridines
 0517-0740	Ergolines
 0517-0750	Progesterone
+0517-0790	Dietary Proteins
 0517-0790	Allergens
 0517-0790	Grain Proteins
-0517-0790	Dietary Proteins
 0517-0830	Prostaglandins
 0517-1045	Carnitine
 0517-1071	Catecholamines
@@ -2632,10 +2632,10 @@ Key	Value
 0517-3900	Calcium
 0517-3950	Calcium
 0517-4810	Nitrates
-0517-6610	Dietary Proteins
+0517-6610	Fruit Proteins
 0517-6610	Allergens
 0517-6610	Plant Proteins
-0517-6610	Fruit Proteins
+0517-6610	Dietary Proteins
 0517-8880	Nonsteroidal Anti-inflammatory Compounds
 0527-1050	Sulfonamides
 0527-1312	Nonsteroidal Anti-inflammatory Compounds
@@ -2833,14 +2833,14 @@ Key	Value
 0573-0290	Nonsteroidal Anti-inflammatory Compounds
 0573-2868	Allergens
 0573-2868	Glycerol
-0573-2869	Allergens
 0573-2869	Glycerol
+0573-2869	Allergens
 0573-2880	Plant Proteins
 0573-2880	Dietary Proteins
 0573-2880	Allergens
-0573-2883	Dietary Proteins
 0573-2883	Allergens
 0573-2883	Plant Proteins
+0573-2883	Dietary Proteins
 0574-0014	Macrolides
 0574-0016	Lincosamides
 0574-0106	Ergolines
@@ -2946,15 +2946,15 @@ Key	Value
 0591-3194	Dihydropyridines
 0591-3196	Azoles
 0591-3197	Azoles
+0591-3205	Thiazolidinediones
 0591-3205	Ppar Alpha
 0591-3205	Ppar Gamma
-0591-3205	Thiazolidinediones
-0591-3206	Ppar Alpha
 0591-3206	Thiazolidinediones
+0591-3206	Ppar Alpha
 0591-3206	Ppar Gamma
 0591-3207	Thiazolidinediones
-0591-3207	Ppar Gamma
 0591-3207	Ppar Alpha
+0591-3207	Ppar Gamma
 0591-3219	Nonsteroidal Anti-inflammatory Compounds
 0591-3221	Androstanes
 0591-3223	Androstanes
@@ -3013,9 +3013,9 @@ Key	Value
 0597-0146	Biguanides
 0597-0147	Biguanides
 0597-0148	Biguanides
-0597-0192	Allergens
-0597-0192	Dietary Proteins
 0597-0192	Plant Proteins
+0597-0192	Dietary Proteins
+0597-0192	Allergens
 0597-0192	Fruit Proteins
 0603-0024	Nonsteroidal Anti-inflammatory Compounds
 0603-0026	Nonsteroidal Anti-inflammatory Compounds
@@ -3023,18 +3023,18 @@ Key	Value
 0603-0169	Nonsteroidal Anti-inflammatory Compounds
 0603-0181	Calcium
 0603-0235	Bismuth
-0603-0524	Allergens
-0603-0524	Plant Proteins
 0603-0524	Dietary Proteins
+0603-0524	Plant Proteins
+0603-0524	Allergens
 0603-0599	Iodine
-0603-0648	Dietary Proteins
 0603-0648	Allergens
-0603-0648	Plant Proteins
+0603-0648	Dietary Proteins
 0603-0648	Vegetable Proteins
-0603-0649	Plant Proteins
-0603-0649	Dietary Proteins
-0603-0649	Vegetable Proteins
+0603-0648	Plant Proteins
 0603-0649	Allergens
+0603-0649	Vegetable Proteins
+0603-0649	Dietary Proteins
+0603-0649	Plant Proteins
 0603-1393	Amides
 0603-1394	Amides
 0603-1449	Vitamin D
@@ -3242,16 +3242,16 @@ Key	Value
 0713-0526	Phenothiazines
 0713-0536	Phenothiazines
 0713-0633	Nitroimidazoles
-0713-0634	Allergens
 0713-0634	Grain Proteins
+0713-0634	Allergens
 0713-0634	Dietary Proteins
-0713-0635	Dietary Proteins
-0713-0635	Allergens
 0713-0635	Grain Proteins
+0713-0635	Allergens
+0713-0635	Dietary Proteins
 0713-0637	Nitroimidazoles
-0713-0701	Allergens
 0713-0701	Dietary Proteins
 0713-0701	Grain Proteins
+0713-0701	Allergens
 0781-1008	Thiazides
 0781-1030	Phenothiazines
 0781-1032	Phenothiazines
@@ -3420,25 +3420,25 @@ Key	Value
 0781-5420	Thiazolidinediones
 0781-5420	Ppar Alpha
 0781-5420	Ppar Gamma
-0781-5421	Ppar Gamma
 0781-5421	Ppar Alpha
+0781-5421	Ppar Gamma
 0781-5421	Thiazolidinediones
-0781-5422	Thiazolidinediones
 0781-5422	Ppar Alpha
 0781-5422	Ppar Gamma
-0781-5425	Grain Proteins
+0781-5422	Thiazolidinediones
 0781-5425	Dietary Proteins
+0781-5425	Grain Proteins
 0781-5425	Allergens
 0781-5426	Grain Proteins
 0781-5426	Allergens
 0781-5426	Dietary Proteins
 0781-5438	Cephalosporins
 0781-5439	Cephalosporins
-0781-5485	Allergens
 0781-5485	Grain Proteins
+0781-5485	Allergens
 0781-5485	Dietary Proteins
-0781-5486	Grain Proteins
 0781-5486	Dietary Proteins
+0781-5486	Grain Proteins
 0781-5486	Allergens
 0781-5620	Nucleoside Analog
 0781-5621	Nucleoside Analog
@@ -3449,22 +3449,22 @@ Key	Value
 0781-5635	Sulfonylurea Compounds
 0781-5667	Azoles
 0781-5668	Azoles
-0781-5748	Dietary Proteins
-0781-5748	Fruit Proteins
 0781-5748	Plant Proteins
 0781-5748	Allergens
+0781-5748	Fruit Proteins
+0781-5748	Dietary Proteins
+0781-5749	Dietary Proteins
 0781-5749	Allergens
 0781-5749	Fruit Proteins
-0781-5749	Dietary Proteins
 0781-5749	Plant Proteins
 0781-5753	Dietary Proteins
-0781-5753	Fruit Proteins
-0781-5753	Plant Proteins
 0781-5753	Allergens
+0781-5753	Plant Proteins
+0781-5753	Fruit Proteins
 0781-5754	Dietary Proteins
 0781-5754	Plant Proteins
-0781-5754	Allergens
 0781-5754	Fruit Proteins
+0781-5754	Allergens
 0781-5790	Quinolones
 0781-5791	Quinolones
 0781-5792	Quinolones
@@ -3571,10 +3571,10 @@ Key	Value
 0904-2151	Nitrates
 0904-2154	Nitrates
 0904-2500	Calcium
-0904-2666	Allergens
 0904-2666	Glycerol
-0904-2667	Allergens
+0904-2666	Allergens
 0904-2667	Glycerol
+0904-2667	Allergens
 0904-2725	Sulfonamides
 0904-2728	Sulfonamides
 0904-2970	Aminoglycosides
@@ -3767,12 +3767,12 @@ Key	Value
 10122-0326	Dihydropyridines
 10122-0820	Aminoglycosides
 10147-0750	Azoles
-10147-0921	Grain Proteins
 10147-0921	Allergens
+10147-0921	Grain Proteins
 10147-0921	Dietary Proteins
 10147-0922	Dietary Proteins
-10147-0922	Grain Proteins
 10147-0922	Allergens
+10147-0922	Grain Proteins
 10147-0941	Quinolones
 10147-1700	Azoles
 10337-0358	Azoles
@@ -3860,17 +3860,17 @@ Key	Value
 13668-0105	Nitrates
 13668-0106	Nitrates
 13668-0119	Ppar Gamma
-13668-0119	Ppar Alpha
 13668-0119	Thiazolidinediones
+13668-0119	Ppar Alpha
 13668-0120	Ppar Alpha
-13668-0120	Ppar Gamma
 13668-0120	Thiazolidinediones
+13668-0120	Ppar Gamma
 13668-0132	Dihydropyridines
 13668-0133	Dihydropyridines
 13668-0134	Dihydropyridines
-13668-0140	Ppar Gamma
 13668-0140	Ppar Alpha
 13668-0140	Thiazolidinediones
+13668-0140	Ppar Gamma
 13668-0201	Quinolones
 13668-0280	Biguanides
 13668-0281	Biguanides
@@ -3920,8 +3920,8 @@ Key	Value
 15127-0550	Bismuth
 15127-0551	Bismuth
 15127-0555	Bismuth
-15127-0590	Glycerol
 15127-0590	Allergens
+15127-0590	Glycerol
 15127-0738	Nonsteroidal Anti-inflammatory Compounds
 15127-0857	Nonsteroidal Anti-inflammatory Compounds
 15127-0874	Nonsteroidal Anti-inflammatory Compounds
@@ -4002,14 +4002,14 @@ Key	Value
 16729-0001	Sulfonylurea Compounds
 16729-0002	Sulfonylurea Compounds
 16729-0003	Sulfonylurea Compounds
+16729-0020	Ppar Alpha
 16729-0020	Thiazolidinediones
 16729-0020	Ppar Gamma
-16729-0020	Ppar Alpha
 16729-0021	Ppar Alpha
 16729-0021	Thiazolidinediones
 16729-0021	Ppar Gamma
-16729-0022	Ppar Alpha
 16729-0022	Thiazolidinediones
+16729-0022	Ppar Alpha
 16729-0022	Ppar Gamma
 16729-0136	Benzodiazepines
 16729-0137	Benzodiazepines
@@ -4081,30 +4081,30 @@ Key	Value
 18860-0490	Estradiol Congeners
 18860-0752	Calcium
 18860-0852	Calcium
-22840-0033	Antigens, Dermatophagoides
 22840-0033	Insect Proteins
+22840-0033	Antigens, Dermatophagoides
 22840-0033	Allergens
 22840-0034	Insect Proteins
-22840-0034	Allergens
 22840-0034	Antigens, Dermatophagoides
-22840-0035	Allergens
+22840-0034	Allergens
 22840-0035	Antigens, Dermatophagoides
 22840-0035	Insect Proteins
+22840-0035	Allergens
 22840-0036	Insect Proteins
-22840-0036	Allergens
 22840-0036	Antigens, Dermatophagoides
-22840-0037	Antigens, Dermatophagoides
+22840-0036	Allergens
 22840-0037	Allergens
+22840-0037	Antigens, Dermatophagoides
 22840-0037	Insect Proteins
 22840-0038	Allergens
 22840-0038	Insect Proteins
 22840-0038	Antigens, Dermatophagoides
-22840-0039	Insect Proteins
 22840-0039	Antigens, Dermatophagoides
 22840-0039	Allergens
+22840-0039	Insect Proteins
+22840-0040	Insect Proteins
 22840-0040	Antigens, Dermatophagoides
 22840-0040	Allergens
-22840-0040	Insect Proteins
 23155-0005	Nonsteroidal Anti-inflammatory Compounds
 23155-0006	Nonsteroidal Anti-inflammatory Compounds
 23155-0010	Nonsteroidal Anti-inflammatory Compounds
@@ -4164,12 +4164,12 @@ Key	Value
 23155-0233	Sulfonylurea Compounds
 23155-0234	Sulfonylurea Compounds
 23155-0235	Sulfonylurea Compounds
-23155-0244	Grain Proteins
 23155-0244	Dietary Proteins
+23155-0244	Grain Proteins
 23155-0244	Allergens
+23155-0245	Allergens
 23155-0245	Grain Proteins
 23155-0245	Dietary Proteins
-23155-0245	Allergens
 23155-0290	Aminoglycosides
 23155-0294	Phenothiazines
 23155-0340	Rifamycins
@@ -4201,14 +4201,14 @@ Key	Value
 24208-0439	Nonsteroidal Anti-inflammatory Compounds
 24208-0444	Quinolones
 24208-0446	Quinolones
-24208-0454	Glycerol
 24208-0454	Allergens
+24208-0454	Glycerol
 24208-0457	Nonsteroidal Anti-inflammatory Compounds
 24208-0463	Prostaglandins
-24208-0478	Glycerol
 24208-0478	Allergens
-24208-0495	Allergens
+24208-0478	Glycerol
 24208-0495	Glycerol
+24208-0495	Allergens
 24208-0535	Nucleoside Analog
 24208-0561	Allergens
 24208-0580	Aminoglycosides
@@ -4438,15 +4438,15 @@ Key	Value
 33342-0024	Nucleoside Analog
 33342-0025	Nucleoside Analog
 33342-0026	Nucleoside Analog
-33342-0054	Thiazolidinediones
 33342-0054	Ppar Gamma
 33342-0054	Ppar Alpha
-33342-0055	Ppar Alpha
+33342-0054	Thiazolidinediones
 33342-0055	Thiazolidinediones
 33342-0055	Ppar Gamma
-33342-0056	Ppar Alpha
+33342-0055	Ppar Alpha
 33342-0056	Thiazolidinediones
 33342-0056	Ppar Gamma
+33342-0056	Ppar Alpha
 33342-0057	Thiazides
 33342-0058	Thiazides
 33342-0074	Thiazides
@@ -4455,23 +4455,23 @@ Key	Value
 33342-0077	Thiazides
 33342-0078	Thiazides
 33342-0087	Dietary Proteins
-33342-0087	Grain Proteins
 33342-0087	Allergens
-33342-0088	Allergens
+33342-0087	Grain Proteins
 33342-0088	Dietary Proteins
+33342-0088	Allergens
 33342-0088	Grain Proteins
-33342-0093	Allergens
 33342-0093	Dietary Proteins
 33342-0093	Grain Proteins
-33342-0094	Allergens
-33342-0094	Dietary Proteins
+33342-0093	Allergens
 33342-0094	Grain Proteins
+33342-0094	Dietary Proteins
+33342-0094	Allergens
 35378-0002	Catecholamines
 35378-0004	Allergens
+35378-0006	Food Additives
+35378-0006	Plant Proteins
 35378-0006	Allergens
 35378-0006	Dietary Proteins
-35378-0006	Plant Proteins
-35378-0006	Food Additives
 35573-0103	Fatty Acids, Omega-3
 35573-0200	Fatty Acids, Omega-3
 36800-0011	Iodine
@@ -4512,9 +4512,9 @@ Key	Value
 36800-0374	Nonsteroidal Anti-inflammatory Compounds
 36800-0375	Nicotine
 36800-0381	Aminoglycosides
+36800-0394	Dietary Proteins
 36800-0394	Plant Proteins
 36800-0394	Allergens
-36800-0394	Dietary Proteins
 36800-0409	Xanthines
 36800-0417	Nonsteroidal Anti-inflammatory Compounds
 36800-0422	Nicotine
@@ -4549,8 +4549,8 @@ Key	Value
 36800-0854	Nicotine
 36800-0873	Nicotine
 36800-0897	Nonsteroidal Anti-inflammatory Compounds
-36800-0944	Glycerol
 36800-0944	Allergens
+36800-0944	Glycerol
 36800-0955	Pyrethrins
 36800-0957	Nicotine
 37000-0016	Bismuth
@@ -4566,9 +4566,9 @@ Key	Value
 37205-0122	Allergens
 37205-0145	Nonsteroidal Anti-inflammatory Compounds
 37205-0160	Azoles
-37205-0178	Allergens
 37205-0178	Grain Proteins
 37205-0178	Dietary Proteins
+37205-0178	Allergens
 37205-0186	Iodine
 37205-0195	Xanthines
 37205-0199	Nonsteroidal Anti-inflammatory Compounds
@@ -4586,8 +4586,8 @@ Key	Value
 37205-0283	Nonsteroidal Anti-inflammatory Compounds
 37205-0296	Azoles
 37205-0302	Bismuth
-37205-0317	Allergens
 37205-0317	Glycerol
+37205-0317	Allergens
 37205-0320	Glycerol
 37205-0320	Allergens
 37205-0328	Nonsteroidal Anti-inflammatory Compounds
@@ -4692,9 +4692,9 @@ Key	Value
 42023-0112	Estradiol Congeners
 42023-0116	Oxytocin
 42023-0120	Triiodothyronine
+42023-0129	Dietary Proteins
 42023-0129	Grain Proteins
 42023-0129	Allergens
-42023-0129	Dietary Proteins
 42023-0130	Oxytocin
 42023-0131	Polymyxins
 42023-0134	Estradiol Congeners
@@ -4764,32 +4764,32 @@ Key	Value
 43406-0002	Vegetable Proteins
 43406-0003	Calcium
 43406-0004	Calcium
-43406-0005	Bee Venoms
 43406-0005	Allergens
+43406-0005	Bee Venoms
 43406-0009	Calcium
 43406-0025	Nitrates
-43406-0032	Plant Proteins
 43406-0032	Allergens
+43406-0032	Plant Proteins
+43406-0037	Seed Storage Proteins
 43406-0037	Allergens
 43406-0037	Plant Proteins
-43406-0037	Seed Storage Proteins
 43406-0049	Calcium
 43406-0051	Calcium
-43406-0052	Meat Proteins
 43406-0052	Dietary Proteins
+43406-0052	Meat Proteins
 43406-0052	Allergens
 43406-0053	Allergens
+43406-0069	Dietary Proteins
 43406-0069	Vegetable Proteins
 43406-0069	Allergens
-43406-0069	Dietary Proteins
 43406-0071	Allergens
 43406-0075	Allergens
 43406-0075	Bee Venoms
 43406-0078	Allergens
-43406-0078	Meat Proteins
 43406-0078	Dietary Proteins
-43406-0095	Allergens
+43406-0078	Meat Proteins
 43406-0095	Bee Venoms
+43406-0095	Allergens
 43406-0113	Bee Venoms
 43406-0113	Allergens
 43406-0131	Allergens
@@ -4845,63 +4845,63 @@ Key	Value
 43598-0321	Dihydropyridines
 43598-0322	Dihydropyridines
 43598-0323	Dihydropyridines
-43689-0002	Allergens
-43689-0002	Plant Proteins
 43689-0002	Dietary Proteins
 43689-0002	Seed Storage Proteins
+43689-0002	Plant Proteins
+43689-0002	Allergens
 43689-0004	Copper
-43689-0007	Vegetable Proteins
-43689-0007	Plant Proteins
 43689-0007	Dietary Proteins
 43689-0007	Allergens
+43689-0007	Plant Proteins
+43689-0007	Vegetable Proteins
 43689-0009	Calcium
 43695-0003	Calcium
 43695-0004	Plant Proteins
-43695-0004	Allergens
 43695-0004	Seed Storage Proteins
-43742-0003	Dietary Proteins
+43695-0004	Allergens
 43742-0003	Meat Proteins
 43742-0003	Allergens
+43742-0003	Dietary Proteins
 43742-0004	Adrenocorticotropic Hormone
 43742-0008	Nitrates
+43742-0031	Dietary Proteins
 43742-0031	Plant Proteins
 43742-0031	Allergens
-43742-0031	Dietary Proteins
 43742-0032	Allergens
 43742-0037	Fungal Proteins
 43742-0037	Allergens
 43742-0039	Catecholamines
-43742-0051	Allergens
 43742-0051	Pollen
-43742-0052	Dietary Proteins
-43742-0052	Allergens
+43742-0051	Allergens
 43742-0052	Grain Proteins
+43742-0052	Allergens
+43742-0052	Dietary Proteins
 43742-0053	Nicotinic Acids
 43742-0056	Calcium
 43742-0064	Nonsteroidal Anti-inflammatory Compounds
-43742-0065	Allergens
 43742-0065	Fruit Proteins
 43742-0065	Dietary Proteins
+43742-0065	Allergens
 43742-0074	Allergens
 43742-0085	Calcium
 43742-0088	Amino Acids
-43742-0095	Vegetable Proteins
 43742-0095	Allergens
+43742-0095	Vegetable Proteins
 43742-0095	Dietary Proteins
 43742-0131	Allergens
 43742-0131	Plant Proteins
 43742-0132	Allergens
 43742-0168	Catecholamines
 43742-0172	Calcium
-43742-0173	Allergens
 43742-0173	Fungal Proteins
+43742-0173	Allergens
 43742-0186	Catecholamines
 43742-0187	Calcium
 43742-0406	Calcium
-43742-0472	Allergens
 43742-0472	Bee Venoms
-43742-0485	Allergens
+43742-0472	Allergens
 43742-0485	Fungal Proteins
+43742-0485	Allergens
 43742-0487	Bee Venoms
 43742-0487	Allergens
 43772-0005	Calcium
@@ -4914,29 +4914,29 @@ Key	Value
 43772-0032	Calcium
 43772-0037	Calcium
 43772-0039	Catecholamines
-43846-0007	Dietary Proteins
 43846-0007	Allergens
-43846-0007	Vegetable Proteins
+43846-0007	Dietary Proteins
 43846-0007	Plant Proteins
+43846-0007	Vegetable Proteins
 43846-0008	Allergens
-43846-0013	Dietary Proteins
 43846-0013	Vegetable Proteins
-43846-0013	Allergens
+43846-0013	Dietary Proteins
 43846-0013	Plant Proteins
-43846-0029	Plant Proteins
-43846-0029	Allergens
-43846-0029	Dietary Proteins
+43846-0013	Allergens
 43846-0029	Vegetable Proteins
-43853-0002	Meat Proteins
-43853-0002	Dietary Proteins
+43846-0029	Allergens
+43846-0029	Plant Proteins
+43846-0029	Dietary Proteins
 43853-0002	Allergens
+43853-0002	Dietary Proteins
+43853-0002	Meat Proteins
 43853-0005	Dietary Proteins
-43853-0005	Meat Proteins
 43853-0005	Allergens
+43853-0005	Meat Proteins
 43853-0006	Calcium
 43853-0007	Meat Proteins
-43853-0007	Allergens
 43853-0007	Dietary Proteins
+43853-0007	Allergens
 43857-0002	Allergens
 43857-0003	Allergens
 43857-0004	Allergens
@@ -4944,9 +4944,9 @@ Key	Value
 43857-0007	Pollen
 43857-0007	Allergens
 43857-0009	Calcium
+43857-0024	Allergens
 43857-0024	Plant Proteins
 43857-0024	Dietary Proteins
-43857-0024	Allergens
 43857-0025	Allergens
 43857-0029	Calcium
 43857-0037	Calcium
@@ -4963,21 +4963,21 @@ Key	Value
 43857-0065	Bee Venoms
 43857-0065	Allergens
 43857-0066	Triiodothyronine
-43857-0069	Allergens
 43857-0069	Pollen
+43857-0069	Allergens
 43857-0085	Allergens
 43857-0085	Meat Proteins
 43857-0085	Dietary Proteins
 43857-0093	Calcium
 43857-0096	Fungal Proteins
 43857-0096	Allergens
-43857-0113	Plant Proteins
 43857-0113	Allergens
+43857-0113	Plant Proteins
 43857-0113	Seed Storage Proteins
 43857-0115	Calcium
-43857-0116	Meat Proteins
 43857-0116	Allergens
 43857-0116	Dietary Proteins
+43857-0116	Meat Proteins
 43857-0121	Calcium
 43857-0131	Allergens
 43857-0131	Bee Venoms
@@ -4985,24 +4985,24 @@ Key	Value
 43857-0145	Pollen
 43857-0145	Allergens
 43857-0168	Dietary Proteins
-43857-0168	Allergens
 43857-0168	Plant Proteins
+43857-0168	Allergens
 43857-0169	Seed Storage Proteins
 43857-0169	Allergens
 43857-0169	Plant Proteins
 43857-0172	Copper
 43857-0173	Allergens
 43857-0173	Pollen
-43857-0185	Fungal Proteins
 43857-0185	Allergens
-43857-0186	Dietary Proteins
-43857-0186	Vegetable Proteins
+43857-0185	Fungal Proteins
 43857-0186	Plant Proteins
+43857-0186	Vegetable Proteins
+43857-0186	Dietary Proteins
 43857-0186	Allergens
 43857-0258	Dietary Proteins
-43857-0258	Vegetable Proteins
 43857-0258	Allergens
 43857-0258	Plant Proteins
+43857-0258	Vegetable Proteins
 43857-0259	Androstanes
 43857-0299	Allergens
 43857-0299	Bee Venoms
@@ -5064,12 +5064,12 @@ Key	Value
 44567-0722	Cephalosporins
 44911-0004	Allergens
 44911-0004	Bee Venoms
-44911-0005	Allergens
 44911-0005	Seed Storage Proteins
 44911-0005	Plant Proteins
+44911-0005	Allergens
+44911-0006	Dietary Proteins
 44911-0006	Grain Proteins
 44911-0006	Allergens
-44911-0006	Dietary Proteins
 44911-0007	Calcium
 44911-0009	Copper
 44911-0023	Allergens
@@ -5077,10 +5077,10 @@ Key	Value
 44911-0024	Fungal Proteins
 44911-0024	Allergens
 44911-0031	Calcium
-44911-0032	Allergens
 44911-0032	Pollen
-44911-0037	Seed Storage Proteins
+44911-0032	Allergens
 44911-0037	Allergens
+44911-0037	Seed Storage Proteins
 44911-0037	Plant Proteins
 44911-0039	Allergens
 44911-0039	Dietary Proteins
@@ -5093,8 +5093,8 @@ Key	Value
 44911-0056	Seed Storage Proteins
 44911-0056	Allergens
 44911-0062	Dietary Proteins
-44911-0062	Meat Proteins
 44911-0062	Allergens
+44911-0062	Meat Proteins
 44911-0065	Allergens
 44911-0066	Allergens
 44911-0067	Calcium
@@ -5102,15 +5102,15 @@ Key	Value
 44911-0069	Allergens
 44911-0069	Dietary Proteins
 44911-0071	Nitrates
-44911-0074	Plant Proteins
 44911-0074	Allergens
+44911-0074	Plant Proteins
 44911-0075	Allergens
 44911-0085	Calcium
 44911-0087	Copper
 44911-0096	Calcium
 44911-0115	Copper
-44911-0121	Allergens
 44911-0121	Fungal Proteins
+44911-0121	Allergens
 44946-1020	Vitamin B 12
 44946-1021	Vitamin B 12
 44946-1022	Vitamin B 12
@@ -5133,8 +5133,8 @@ Key	Value
 45802-0098	Aminosalicylic Acids
 45802-0110	Nicotine
 45802-0119	Dietary Proteins
-45802-0119	Grain Proteins
 45802-0119	Allergens
+45802-0119	Grain Proteins
 45802-0132	Ppar Alpha
 45802-0133	Nonsteroidal Anti-inflammatory Compounds
 45802-0140	Nonsteroidal Anti-inflammatory Compounds
@@ -5142,9 +5142,9 @@ Key	Value
 45802-0183	Retinoids
 45802-0206	Nicotine
 45802-0210	Nitrates
-45802-0257	Grain Proteins
 45802-0257	Allergens
 45802-0257	Dietary Proteins
+45802-0257	Grain Proteins
 45802-0263	Lincosamides
 45802-0269	Pyrethrins
 45802-0315	Ppar Alpha
@@ -5190,16 +5190,16 @@ Key	Value
 45963-0752	Sulfonylurea Compounds
 45963-0753	Sulfonylurea Compounds
 45963-0811	Nonsteroidal Anti-inflammatory Compounds
-45963-0833	Plant Proteins
 45963-0833	Allergens
-45963-0833	Dietary Proteins
 45963-0833	Fruit Proteins
-45984-0002	Dietary Proteins
+45963-0833	Dietary Proteins
+45963-0833	Plant Proteins
 45984-0002	Allergens
 45984-0002	Egg Proteins, Dietary
-45984-0003	Egg Proteins, Dietary
+45984-0002	Dietary Proteins
 45984-0003	Allergens
 45984-0003	Dietary Proteins
+45984-0003	Egg Proteins, Dietary
 45984-0004	Allergens
 46122-0010	Nonsteroidal Anti-inflammatory Compounds
 46122-0030	Allergens
@@ -5229,10 +5229,10 @@ Key	Value
 47242-0031	Seed Storage Proteins
 47242-0031	Plant Proteins
 47242-0051	Calcium
-47242-0071	Allergens
-47242-0071	Plant Proteins
-47242-0071	Seed Storage Proteins
 47242-0071	Dietary Proteins
+47242-0071	Plant Proteins
+47242-0071	Allergens
+47242-0071	Seed Storage Proteins
 47335-0046	Platinum-containing Compounds
 47335-0047	Platinum-containing Compounds
 47335-0049	Anthracyclines
@@ -5243,12 +5243,12 @@ Key	Value
 47335-0151	Platinum-containing Compounds
 47335-0176	Platinum-containing Compounds
 47335-0178	Platinum-containing Compounds
+47335-0231	Grain Proteins
 47335-0231	Allergens
 47335-0231	Dietary Proteins
-47335-0231	Grain Proteins
 47335-0232	Grain Proteins
-47335-0232	Allergens
 47335-0232	Dietary Proteins
+47335-0232	Allergens
 47335-0284	Platinum-containing Compounds
 47335-0289	Xanthines
 47335-0290	Xanthines
@@ -5303,171 +5303,171 @@ Key	Value
 49230-0640	Calcium
 49230-0643	Calcium
 49281-0752	Antigens, Bacterial
-49288-0001	Allergens
 49288-0001	Fungal Proteins
+49288-0001	Allergens
 49288-0002	Fungal Proteins
 49288-0002	Allergens
 49288-0003	Allergens
 49288-0003	Fungal Proteins
-49288-0004	Allergens
 49288-0004	Fungal Proteins
+49288-0004	Allergens
 49288-0005	Allergens
 49288-0005	Fungal Proteins
-49288-0006	Allergens
 49288-0006	Fungal Proteins
+49288-0006	Allergens
 49288-0007	Allergens
 49288-0007	Fungal Proteins
 49288-0008	Allergens
 49288-0008	Fungal Proteins
+49288-0009	Allergens
+49288-0009	Plant Proteins
 49288-0009	Food Additives
 49288-0009	Dietary Proteins
-49288-0009	Plant Proteins
-49288-0009	Allergens
+49288-0010	Allergens
 49288-0010	Plant Proteins
 49288-0010	Dietary Proteins
 49288-0010	Food Additives
-49288-0010	Allergens
-49288-0011	Dietary Proteins
 49288-0011	Plant Proteins
-49288-0011	Allergens
+49288-0011	Dietary Proteins
 49288-0011	Food Additives
+49288-0011	Allergens
+49288-0012	Plant Proteins
+49288-0012	Food Additives
 49288-0012	Allergens
 49288-0012	Dietary Proteins
-49288-0012	Food Additives
-49288-0012	Plant Proteins
 49288-0013	Plant Proteins
-49288-0013	Dietary Proteins
-49288-0013	Food Additives
 49288-0013	Allergens
-49288-0014	Allergens
+49288-0013	Food Additives
+49288-0013	Dietary Proteins
 49288-0014	Pollen
-49288-0015	Allergens
+49288-0014	Allergens
 49288-0015	Pollen
-49288-0016	Allergens
+49288-0015	Allergens
 49288-0016	Pollen
-49288-0017	Pollen
+49288-0016	Allergens
 49288-0017	Allergens
+49288-0017	Pollen
 49288-0018	Allergens
 49288-0018	Pollen
 49288-0019	Pollen
 49288-0019	Allergens
-49288-0020	Allergens
 49288-0020	Pollen
-49288-0021	Allergens
+49288-0020	Allergens
 49288-0021	Pollen
+49288-0021	Allergens
 49288-0022	Pollen
 49288-0022	Allergens
 49288-0023	Allergens
 49288-0023	Pollen
 49288-0024	Pollen
 49288-0024	Allergens
-49288-0025	Pollen
 49288-0025	Allergens
+49288-0025	Pollen
 49288-0026	Pollen
 49288-0026	Allergens
-49288-0027	Pollen
 49288-0027	Allergens
+49288-0027	Pollen
 49288-0028	Allergens
 49288-0028	Pollen
-49288-0029	Pollen
 49288-0029	Allergens
-49288-0030	Fungal Proteins
+49288-0029	Pollen
 49288-0030	Allergens
+49288-0030	Fungal Proteins
 49288-0031	Allergens
 49288-0031	Fungal Proteins
 49288-0032	Fungal Proteins
 49288-0032	Allergens
 49288-0033	Allergens
 49288-0033	Fungal Proteins
-49288-0034	Pollen
 49288-0034	Allergens
-49288-0035	Fungal Proteins
+49288-0034	Pollen
 49288-0035	Allergens
-49288-0036	Fungal Proteins
+49288-0035	Fungal Proteins
 49288-0036	Allergens
+49288-0036	Fungal Proteins
 49288-0037	Fungal Proteins
 49288-0037	Allergens
 49288-0038	Fungal Proteins
 49288-0038	Allergens
 49288-0039	Allergens
 49288-0039	Fungal Proteins
-49288-0040	Dietary Proteins
 49288-0040	Allergens
-49288-0040	Food Additives
 49288-0040	Plant Proteins
+49288-0040	Dietary Proteins
+49288-0040	Food Additives
 49288-0041	Plant Proteins
-49288-0041	Dietary Proteins
-49288-0041	Allergens
 49288-0041	Food Additives
-49288-0042	Plant Proteins
+49288-0041	Allergens
+49288-0041	Dietary Proteins
 49288-0042	Food Additives
-49288-0042	Dietary Proteins
 49288-0042	Allergens
+49288-0042	Dietary Proteins
+49288-0042	Plant Proteins
 49288-0043	Allergens
+49288-0043	Food Additives
 49288-0043	Dietary Proteins
 49288-0043	Plant Proteins
-49288-0043	Food Additives
 49288-0044	Food Additives
 49288-0044	Dietary Proteins
 49288-0044	Allergens
 49288-0044	Plant Proteins
 49288-0045	Food Additives
-49288-0045	Dietary Proteins
 49288-0045	Plant Proteins
 49288-0045	Allergens
-49288-0046	Food Additives
+49288-0045	Dietary Proteins
+49288-0046	Plant Proteins
 49288-0046	Dietary Proteins
 49288-0046	Allergens
-49288-0046	Plant Proteins
+49288-0046	Food Additives
 49288-0047	Dietary Proteins
-49288-0047	Food Additives
 49288-0047	Plant Proteins
 49288-0047	Allergens
-49288-0048	Food Additives
+49288-0047	Food Additives
 49288-0048	Plant Proteins
 49288-0048	Dietary Proteins
+49288-0048	Food Additives
 49288-0048	Allergens
-49288-0049	Dietary Proteins
+49288-0049	Plant Proteins
 49288-0049	Allergens
 49288-0049	Food Additives
-49288-0049	Plant Proteins
+49288-0049	Dietary Proteins
+49288-0050	Allergens
+49288-0050	Dietary Proteins
 49288-0050	Plant Proteins
 49288-0050	Food Additives
-49288-0050	Dietary Proteins
-49288-0050	Allergens
 49288-0051	Plant Proteins
-49288-0051	Allergens
 49288-0051	Dietary Proteins
+49288-0051	Allergens
 49288-0051	Food Additives
 49288-0052	Dietary Proteins
-49288-0052	Plant Proteins
 49288-0052	Allergens
 49288-0052	Food Additives
+49288-0052	Plant Proteins
+49288-0053	Plant Proteins
+49288-0053	Food Additives
 49288-0053	Allergens
 49288-0053	Dietary Proteins
-49288-0053	Food Additives
-49288-0053	Plant Proteins
 49288-0054	Allergens
-49288-0054	Dietary Proteins
 49288-0054	Plant Proteins
+49288-0054	Dietary Proteins
 49288-0054	Food Additives
 49288-0055	Plant Proteins
 49288-0055	Allergens
-49288-0055	Dietary Proteins
 49288-0055	Food Additives
-49288-0056	Allergens
+49288-0055	Dietary Proteins
 49288-0056	Pollen
-49288-0057	Allergens
+49288-0056	Allergens
 49288-0057	Pollen
-49288-0058	Pollen
+49288-0057	Allergens
 49288-0058	Allergens
+49288-0058	Pollen
 49288-0059	Pollen
 49288-0059	Allergens
 49288-0060	Allergens
 49288-0060	Pollen
 49288-0061	Allergens
-49288-0061	Plant Proteins
 49288-0061	Dietary Proteins
+49288-0061	Plant Proteins
 49288-0061	Food Additives
 49288-0062	Allergens
 49288-0062	Pollen
@@ -5475,59 +5475,59 @@ Key	Value
 49288-0063	Pollen
 49288-0064	Allergens
 49288-0064	Fungal Proteins
-49288-0065	Fungal Proteins
 49288-0065	Allergens
+49288-0065	Fungal Proteins
 49288-0066	Allergens
 49288-0066	Fungal Proteins
 49288-0067	Allergens
 49288-0067	Pollen
 49288-0068	Pollen
 49288-0068	Allergens
-49288-0069	Allergens
 49288-0069	Pollen
-49288-0070	Poultry Proteins
+49288-0069	Allergens
 49288-0070	Allergens
+49288-0070	Poultry Proteins
 49288-0070	Dietary Proteins
-49288-0071	Food Additives
 49288-0071	Allergens
-49288-0071	Plant Proteins
 49288-0071	Dietary Proteins
-49288-0072	Pollen
+49288-0071	Food Additives
+49288-0071	Plant Proteins
 49288-0072	Allergens
+49288-0072	Pollen
 49288-0073	Pollen
 49288-0073	Allergens
 49288-0074	Pollen
 49288-0074	Allergens
 49288-0075	Allergens
 49288-0075	Pollen
-49288-0076	Pollen
 49288-0076	Allergens
-49288-0077	Pollen
+49288-0076	Pollen
 49288-0077	Allergens
-49288-0078	Allergens
+49288-0077	Pollen
 49288-0078	Pollen
+49288-0078	Allergens
 49288-0080	Allergens
 49288-0080	Pollen
 49288-0081	Pollen
 49288-0081	Allergens
-49288-0082	Allergens
 49288-0082	Pollen
-49288-0083	Allergens
+49288-0082	Allergens
 49288-0083	Pollen
+49288-0083	Allergens
 49288-0084	Allergens
 49288-0084	Pollen
 49288-0085	Allergens
 49288-0085	Pollen
-49288-0086	Allergens
 49288-0086	Pollen
-49288-0087	Fungal Proteins
+49288-0086	Allergens
 49288-0087	Allergens
+49288-0087	Fungal Proteins
 49288-0088	Allergens
 49288-0088	Fungal Proteins
-49288-0089	Fungal Proteins
 49288-0089	Allergens
-49288-0090	Fungal Proteins
+49288-0089	Fungal Proteins
 49288-0090	Allergens
+49288-0090	Fungal Proteins
 49288-0091	Fungal Proteins
 49288-0091	Allergens
 49288-0092	Allergens
@@ -5536,184 +5536,184 @@ Key	Value
 49288-0093	Allergens
 49288-0094	Fungal Proteins
 49288-0094	Allergens
-49288-0095	Allergens
 49288-0095	Fungal Proteins
-49288-0096	Allergens
+49288-0095	Allergens
 49288-0096	Fungal Proteins
-49288-0097	Fungal Proteins
+49288-0096	Allergens
 49288-0097	Allergens
-49288-0098	Allergens
+49288-0097	Fungal Proteins
 49288-0098	Fungal Proteins
-49288-0099	Allergens
+49288-0098	Allergens
 49288-0099	Plant Proteins
-49288-0099	Food Additives
 49288-0099	Dietary Proteins
-49288-0100	Plant Proteins
+49288-0099	Food Additives
+49288-0099	Allergens
 49288-0100	Dietary Proteins
 49288-0100	Seed Storage Proteins
 49288-0100	Allergens
+49288-0100	Plant Proteins
 49288-0101	Plant Proteins
+49288-0101	Dietary Proteins
 49288-0101	Allergens
 49288-0101	Food Additives
-49288-0101	Dietary Proteins
-49288-0102	Plant Proteins
-49288-0102	Dietary Proteins
 49288-0102	Food Additives
 49288-0102	Allergens
-49288-0104	Food Additives
+49288-0102	Dietary Proteins
+49288-0102	Plant Proteins
 49288-0104	Plant Proteins
+49288-0104	Food Additives
 49288-0104	Dietary Proteins
 49288-0104	Allergens
-49288-0105	Dietary Proteins
 49288-0105	Plant Proteins
-49288-0105	Allergens
 49288-0105	Food Additives
-49288-0107	Food Additives
+49288-0105	Allergens
+49288-0105	Dietary Proteins
+49288-0107	Plant Proteins
 49288-0107	Dietary Proteins
 49288-0107	Allergens
-49288-0107	Plant Proteins
+49288-0107	Food Additives
 49288-0108	Dietary Proteins
-49288-0108	Allergens
 49288-0108	Plant Proteins
+49288-0108	Allergens
 49288-0108	Food Additives
-49288-0110	Plant Proteins
-49288-0110	Food Additives
-49288-0110	Dietary Proteins
 49288-0110	Allergens
-49288-0112	Plant Proteins
+49288-0110	Food Additives
+49288-0110	Plant Proteins
+49288-0110	Dietary Proteins
 49288-0112	Dietary Proteins
 49288-0112	Food Additives
 49288-0112	Allergens
+49288-0112	Plant Proteins
 49288-0113	Allergens
 49288-0113	Dietary Proteins
 49288-0113	Poultry Proteins
+49288-0114	Dietary Proteins
 49288-0114	Plant Proteins
 49288-0114	Food Additives
-49288-0114	Dietary Proteins
 49288-0114	Allergens
+49288-0115	Dietary Proteins
+49288-0115	Food Additives
 49288-0115	Allergens
 49288-0115	Plant Proteins
-49288-0115	Food Additives
-49288-0115	Dietary Proteins
+49288-0116	Seed Storage Proteins
 49288-0116	Plant Proteins
 49288-0116	Allergens
-49288-0116	Seed Storage Proteins
 49288-0116	Dietary Proteins
-49288-0117	Allergens
 49288-0117	Dietary Proteins
+49288-0117	Allergens
 49288-0117	Food Additives
 49288-0117	Plant Proteins
-49288-0118	Plant Proteins
-49288-0118	Dietary Proteins
-49288-0118	Food Additives
 49288-0118	Allergens
-49288-0120	Allergens
-49288-0120	Food Additives
-49288-0120	Dietary Proteins
+49288-0118	Food Additives
+49288-0118	Dietary Proteins
+49288-0118	Plant Proteins
 49288-0120	Plant Proteins
-49288-0121	Allergens
+49288-0120	Dietary Proteins
+49288-0120	Food Additives
+49288-0120	Allergens
 49288-0121	Salivary Proteins and Peptides
 49288-0121	Dander
-49288-0122	Salivary Proteins and Peptides
-49288-0122	Dander
+49288-0121	Allergens
 49288-0122	Allergens
+49288-0122	Dander
+49288-0122	Salivary Proteins and Peptides
 49288-0123	Fur
 49288-0123	Allergens
 49288-0123	Salivary Proteins and Peptides
-49288-0124	Fur
 49288-0124	Salivary Proteins and Peptides
+49288-0124	Fur
 49288-0124	Allergens
-49288-0125	Allergens
-49288-0125	Salivary Proteins and Peptides
 49288-0125	Fur
-49288-0126	Fur
+49288-0125	Salivary Proteins and Peptides
+49288-0125	Allergens
 49288-0126	Salivary Proteins and Peptides
 49288-0126	Allergens
-49288-0127	Allergens
-49288-0127	Salivary Proteins and Peptides
+49288-0126	Fur
 49288-0127	Fur
+49288-0127	Salivary Proteins and Peptides
+49288-0127	Allergens
 49288-0128	Allergens
 49288-0128	Pollen
-49288-0129	Allergens
 49288-0129	Pollen
+49288-0129	Allergens
 49288-0130	Allergens
 49288-0130	Pollen
 49288-0131	Allergens
 49288-0131	Pollen
 49288-0132	Allergens
 49288-0132	Pollen
-49288-0133	Pollen
 49288-0133	Allergens
-49288-0134	Pollen
+49288-0133	Pollen
 49288-0134	Allergens
-49288-0135	Allergens
+49288-0134	Pollen
 49288-0135	Pollen
+49288-0135	Allergens
 49288-0136	Allergens
 49288-0136	Pollen
 49288-0137	Allergens
 49288-0137	Pollen
 49288-0138	Pollen
 49288-0138	Allergens
-49288-0139	Pollen
 49288-0139	Allergens
-49288-0140	Pollen
+49288-0139	Pollen
 49288-0140	Allergens
-49288-0141	Allergens
+49288-0140	Pollen
 49288-0141	Pollen
-49288-0142	Allergens
+49288-0141	Allergens
 49288-0142	Pollen
+49288-0142	Allergens
 49288-0143	Fungal Proteins
 49288-0143	Allergens
 49288-0144	Allergens
 49288-0144	Pollen
-49288-0145	Pollen
 49288-0145	Allergens
+49288-0145	Pollen
 49288-0146	Allergens
 49288-0146	Pollen
-49288-0152	Dietary Proteins
 49288-0152	Plant Proteins
 49288-0152	Food Additives
+49288-0152	Dietary Proteins
 49288-0152	Allergens
 49288-0153	Allergens
 49288-0153	Pollen
-49288-0155	Allergens
 49288-0155	Food Additives
-49288-0155	Dietary Proteins
 49288-0155	Plant Proteins
+49288-0155	Dietary Proteins
+49288-0155	Allergens
 49288-0156	Pollen
 49288-0156	Allergens
 49288-0157	Allergens
 49288-0157	Pollen
-49288-0158	Fungal Proteins
 49288-0158	Allergens
-49288-0159	Fungal Proteins
+49288-0158	Fungal Proteins
 49288-0159	Allergens
-49288-0161	Allergens
-49288-0161	Dietary Proteins
+49288-0159	Fungal Proteins
 49288-0161	Food Additives
 49288-0161	Plant Proteins
-49288-0162	Plant Proteins
-49288-0162	Allergens
-49288-0162	Food Additives
+49288-0161	Dietary Proteins
+49288-0161	Allergens
 49288-0162	Dietary Proteins
-49288-0163	Poultry Proteins
+49288-0162	Food Additives
+49288-0162	Allergens
+49288-0162	Plant Proteins
 49288-0163	Allergens
 49288-0163	Dietary Proteins
-49288-0164	Allergens
-49288-0164	Fur
+49288-0163	Poultry Proteins
 49288-0164	Salivary Proteins and Peptides
+49288-0164	Fur
+49288-0164	Allergens
+49288-0165	Allergens
 49288-0165	Fur
 49288-0165	Salivary Proteins and Peptides
-49288-0165	Allergens
+49288-0166	Allergens
 49288-0166	Salivary Proteins and Peptides
 49288-0166	Fur
-49288-0166	Allergens
 49288-0167	Salivary Proteins and Peptides
 49288-0167	Fur
 49288-0167	Allergens
-49288-0168	Salivary Proteins and Peptides
 49288-0168	Allergens
 49288-0168	Fur
+49288-0168	Salivary Proteins and Peptides
 49288-0169	Allergens
 49288-0169	Pollen
 49288-0170	Allergens
@@ -5721,88 +5721,88 @@ Key	Value
 49288-0172	Antigens, Dermatophagoides
 49288-0172	Allergens
 49288-0172	Insect Proteins
-49288-0173	Allergens
 49288-0173	Insect Proteins
+49288-0173	Allergens
 49288-0173	Antigens, Dermatophagoides
+49288-0174	Antigens, Dermatophagoides
 49288-0174	Insect Proteins
 49288-0174	Allergens
-49288-0174	Antigens, Dermatophagoides
 49288-0175	Allergens
-49288-0175	Insect Proteins
 49288-0175	Antigens, Dermatophagoides
+49288-0175	Insect Proteins
 49288-0176	Allergens
-49288-0176	Insect Proteins
 49288-0176	Antigens, Dermatophagoides
+49288-0176	Insect Proteins
 49288-0177	Insect Proteins
-49288-0177	Allergens
 49288-0177	Antigens, Dermatophagoides
-49288-0178	Allergens
+49288-0177	Allergens
 49288-0178	Pollen
+49288-0178	Allergens
 49288-0179	Pollen
 49288-0179	Allergens
 49288-0182	Allergens
-49288-0182	Insect Proteins
 49288-0182	Antigens, Dermatophagoides
-49288-0183	Allergens
+49288-0182	Insect Proteins
 49288-0183	Pollen
+49288-0183	Allergens
 49288-0184	Allergens
 49288-0184	Pollen
-49288-0185	Pollen
 49288-0185	Allergens
-49288-0186	Fungal Proteins
+49288-0185	Pollen
 49288-0186	Allergens
+49288-0186	Fungal Proteins
 49288-0187	Fungal Proteins
 49288-0187	Allergens
-49288-0188	Dietary Proteins
-49288-0188	Poultry Proteins
 49288-0188	Allergens
-49288-0189	Dietary Proteins
-49288-0189	Allergens
+49288-0188	Poultry Proteins
+49288-0188	Dietary Proteins
 49288-0189	Poultry Proteins
+49288-0189	Allergens
+49288-0189	Dietary Proteins
 49288-0190	Pollen
 49288-0190	Allergens
-49288-0191	Pollen
 49288-0191	Allergens
-49288-0192	Allergens
+49288-0191	Pollen
 49288-0192	Pollen
+49288-0192	Allergens
 49288-0193	Allergens
 49288-0193	Pollen
 49288-0194	Fungal Proteins
 49288-0194	Allergens
-49288-0195	Allergens
 49288-0195	Pollen
-49288-0196	Allergens
-49288-0196	Food Additives
-49288-0196	Plant Proteins
+49288-0195	Allergens
 49288-0196	Dietary Proteins
+49288-0196	Food Additives
+49288-0196	Allergens
+49288-0196	Plant Proteins
 49288-0197	Allergens
 49288-0197	Fungal Proteins
 49288-0198	Allergens
 49288-0198	Fungal Proteins
-49288-0199	Allergens
-49288-0199	Dietary Proteins
 49288-0199	Plant Proteins
 49288-0199	Food Additives
-49288-0201	Plant Proteins
-49288-0201	Dietary Proteins
+49288-0199	Dietary Proteins
+49288-0199	Allergens
 49288-0201	Seed Storage Proteins
+49288-0201	Dietary Proteins
+49288-0201	Plant Proteins
 49288-0201	Allergens
 49288-0202	Pollen
 49288-0202	Allergens
-49288-0203	Allergens
 49288-0203	Pollen
-49288-0204	Allergens
+49288-0203	Allergens
 49288-0204	Pollen
-49288-0205	Pollen
+49288-0204	Allergens
 49288-0205	Allergens
+49288-0205	Pollen
 49288-0206	Salivary Proteins and Peptides
 49288-0206	Fur
 49288-0206	Allergens
-49288-0207	Fur
 49288-0207	Salivary Proteins and Peptides
 49288-0207	Allergens
-49288-0208	Pollen
+49288-0207	Fur
 49288-0208	Allergens
+49288-0208	Pollen
 49288-0209	Allergens
 49288-0209	Pollen
 49288-0210	Fungal Proteins
@@ -5813,243 +5813,243 @@ Key	Value
 49288-0212	Allergens
 49288-0213	Fungal Proteins
 49288-0213	Allergens
-49288-0214	Fungal Proteins
 49288-0214	Allergens
-49288-0215	Allergens
+49288-0214	Fungal Proteins
 49288-0215	Fungal Proteins
+49288-0215	Allergens
 49288-0216	Allergens
 49288-0216	Fungal Proteins
-49288-0217	Fungal Proteins
 49288-0217	Allergens
-49288-0218	Allergens
-49288-0218	Plant Proteins
+49288-0217	Fungal Proteins
 49288-0218	Dietary Proteins
 49288-0218	Food Additives
-49288-0219	Dietary Proteins
+49288-0218	Allergens
+49288-0218	Plant Proteins
 49288-0219	Food Additives
-49288-0219	Plant Proteins
+49288-0219	Dietary Proteins
 49288-0219	Allergens
-49288-0220	Dietary Proteins
+49288-0219	Plant Proteins
 49288-0220	Allergens
+49288-0220	Dietary Proteins
 49288-0220	Poultry Proteins
-49288-0221	Plant Proteins
+49288-0221	Allergens
 49288-0221	Food Additives
 49288-0221	Dietary Proteins
-49288-0221	Allergens
+49288-0221	Plant Proteins
 49288-0222	Food Additives
-49288-0222	Dietary Proteins
 49288-0222	Plant Proteins
 49288-0222	Allergens
-49288-0223	Plant Proteins
-49288-0223	Allergens
-49288-0223	Dietary Proteins
+49288-0222	Dietary Proteins
 49288-0223	Food Additives
-49288-0224	Allergens
+49288-0223	Plant Proteins
+49288-0223	Dietary Proteins
+49288-0223	Allergens
 49288-0224	Fur
+49288-0224	Allergens
 49288-0224	Salivary Proteins and Peptides
+49288-0225	Fur
 49288-0225	Salivary Proteins and Peptides
 49288-0225	Allergens
-49288-0225	Fur
 49288-0226	Allergens
 49288-0226	Pollen
 49288-0227	Allergens
 49288-0227	Pollen
-49288-0228	Fungal Proteins
 49288-0228	Allergens
+49288-0228	Fungal Proteins
 49288-0229	Salivary Proteins and Peptides
 49288-0229	Allergens
 49288-0229	Fur
 49288-0230	Fur
-49288-0230	Allergens
 49288-0230	Salivary Proteins and Peptides
-49288-0231	Dietary Proteins
-49288-0231	Allergens
+49288-0230	Allergens
 49288-0231	Plant Proteins
 49288-0231	Food Additives
-49288-0232	Allergens
+49288-0231	Allergens
+49288-0231	Dietary Proteins
 49288-0232	Pollen
+49288-0232	Allergens
 49288-0233	Allergens
 49288-0233	Pollen
 49288-0234	Allergens
 49288-0234	Pollen
-49288-0235	Pollen
 49288-0235	Allergens
-49288-0236	Allergens
+49288-0235	Pollen
 49288-0236	Pollen
+49288-0236	Allergens
 49288-0238	Pollen
 49288-0238	Allergens
-49288-0239	Allergens
 49288-0239	Pollen
-49288-0240	Allergens
+49288-0239	Allergens
 49288-0240	Pollen
-49288-0241	Pollen
+49288-0240	Allergens
 49288-0241	Allergens
+49288-0241	Pollen
 49288-0242	Allergens
 49288-0242	Pollen
 49288-0243	Allergens
 49288-0243	Pollen
-49288-0244	Fungal Proteins
 49288-0244	Allergens
-49288-0245	Fungal Proteins
+49288-0244	Fungal Proteins
 49288-0245	Allergens
-49288-0246	Allergens
+49288-0245	Fungal Proteins
 49288-0246	Fungal Proteins
-49288-0247	Fungal Proteins
+49288-0246	Allergens
 49288-0247	Allergens
+49288-0247	Fungal Proteins
 49288-0248	Allergens
 49288-0248	Fungal Proteins
-49288-0249	Allergens
 49288-0249	Fungal Proteins
-49288-0254	Food Additives
-49288-0254	Plant Proteins
+49288-0249	Allergens
 49288-0254	Dietary Proteins
+49288-0254	Plant Proteins
+49288-0254	Food Additives
 49288-0254	Allergens
-49288-0255	Salivary Proteins and Peptides
 49288-0255	Fur
+49288-0255	Salivary Proteins and Peptides
 49288-0255	Allergens
+49288-0256	Fur
 49288-0256	Allergens
 49288-0256	Salivary Proteins and Peptides
-49288-0256	Fur
-49288-0257	Salivary Proteins and Peptides
-49288-0257	Fur
 49288-0257	Allergens
+49288-0257	Fur
+49288-0257	Salivary Proteins and Peptides
 49288-0258	Allergens
-49288-0258	Salivary Proteins and Peptides
 49288-0258	Fur
+49288-0258	Salivary Proteins and Peptides
 49288-0259	Allergens
 49288-0259	Salivary Proteins and Peptides
 49288-0259	Fur
 49288-0260	Allergens
 49288-0260	Pollen
-49288-0261	Allergens
 49288-0261	Pollen
-49288-0262	Pollen
+49288-0261	Allergens
 49288-0262	Allergens
-49288-0263	Pollen
+49288-0262	Pollen
 49288-0263	Allergens
+49288-0263	Pollen
 49288-0264	Allergens
 49288-0264	Pollen
 49288-0265	Pollen
 49288-0265	Allergens
 49288-0266	Allergens
 49288-0266	Pollen
-49288-0267	Allergens
 49288-0267	Pollen
-49288-0268	Pollen
+49288-0267	Allergens
 49288-0268	Allergens
-49288-0269	Allergens
+49288-0268	Pollen
 49288-0269	Pollen
+49288-0269	Allergens
 49288-0270	Pollen
 49288-0270	Allergens
-49288-0271	Allergens
 49288-0271	Pollen
+49288-0271	Allergens
 49288-0273	Allergens
 49288-0273	Pollen
 49288-0274	Pollen
 49288-0274	Allergens
-49288-0275	Allergens
 49288-0275	Pollen
-49288-0276	Allergens
+49288-0275	Allergens
 49288-0276	Pollen
+49288-0276	Allergens
 49288-0277	Allergens
 49288-0277	Pollen
-49288-0278	Allergens
 49288-0278	Fungal Proteins
-49288-0279	Fungal Proteins
+49288-0278	Allergens
 49288-0279	Allergens
-49288-0280	Allergens
+49288-0279	Fungal Proteins
 49288-0280	Fungal Proteins
+49288-0280	Allergens
 49288-0281	Pollen
 49288-0281	Allergens
-49288-0282	Allergens
 49288-0282	Pollen
-49288-0283	Pollen
+49288-0282	Allergens
 49288-0283	Allergens
-49288-0284	Pollen
+49288-0283	Pollen
 49288-0284	Allergens
-49288-0286	Dietary Proteins
+49288-0284	Pollen
 49288-0286	Food Additives
-49288-0286	Allergens
 49288-0286	Plant Proteins
-49288-0287	Poultry Proteins
-49288-0287	Allergens
+49288-0286	Allergens
+49288-0286	Dietary Proteins
 49288-0287	Dietary Proteins
+49288-0287	Allergens
+49288-0287	Poultry Proteins
 49288-0288	Food Additives
-49288-0288	Allergens
-49288-0288	Plant Proteins
 49288-0288	Dietary Proteins
-49288-0289	Plant Proteins
-49288-0289	Food Additives
+49288-0288	Plant Proteins
+49288-0288	Allergens
 49288-0289	Allergens
 49288-0289	Dietary Proteins
+49288-0289	Food Additives
+49288-0289	Plant Proteins
+49288-0290	Allergens
 49288-0290	Food Additives
 49288-0290	Dietary Proteins
 49288-0290	Plant Proteins
-49288-0290	Allergens
-49288-0292	Plant Proteins
-49288-0292	Allergens
-49288-0292	Dietary Proteins
 49288-0292	Food Additives
+49288-0292	Plant Proteins
+49288-0292	Dietary Proteins
+49288-0292	Allergens
 49288-0293	Fungal Proteins
 49288-0293	Allergens
 49288-0294	Fungal Proteins
 49288-0294	Allergens
-49288-0295	Fungal Proteins
 49288-0295	Allergens
-49288-0296	Allergens
+49288-0295	Fungal Proteins
 49288-0296	Fungal Proteins
-49288-0297	Fungal Proteins
+49288-0296	Allergens
 49288-0297	Allergens
-49288-0298	Allergens
+49288-0297	Fungal Proteins
 49288-0298	Fungal Proteins
+49288-0298	Allergens
 49288-0299	Fungal Proteins
 49288-0299	Allergens
 49288-0300	Allergens
-49288-0300	Plant Proteins
 49288-0300	Dietary Proteins
+49288-0300	Plant Proteins
 49288-0300	Food Additives
+49288-0301	Dietary Proteins
 49288-0301	Poultry Proteins
 49288-0301	Allergens
-49288-0301	Dietary Proteins
 49288-0302	Allergens
 49288-0302	Dietary Proteins
 49288-0302	Poultry Proteins
+49288-0303	Food Additives
+49288-0303	Allergens
 49288-0303	Plant Proteins
 49288-0303	Dietary Proteins
-49288-0303	Allergens
-49288-0303	Food Additives
-49288-0304	Plant Proteins
-49288-0304	Food Additives
-49288-0304	Dietary Proteins
 49288-0304	Allergens
-49288-0305	Plant Proteins
-49288-0305	Dietary Proteins
+49288-0304	Dietary Proteins
+49288-0304	Food Additives
+49288-0304	Plant Proteins
 49288-0305	Allergens
 49288-0305	Food Additives
-49288-0306	Dietary Proteins
+49288-0305	Plant Proteins
+49288-0305	Dietary Proteins
 49288-0306	Plant Proteins
+49288-0306	Dietary Proteins
 49288-0306	Allergens
 49288-0306	Food Additives
 49288-0307	Pollen
 49288-0307	Allergens
-49288-0308	Pollen
 49288-0308	Allergens
+49288-0308	Pollen
 49288-0309	Allergens
 49288-0309	Pollen
-49288-0310	Pollen
 49288-0310	Allergens
-49288-0311	Pollen
+49288-0310	Pollen
 49288-0311	Allergens
-49288-0312	Allergens
+49288-0311	Pollen
 49288-0312	Fungal Proteins
+49288-0312	Allergens
 49288-0313	Allergens
 49288-0313	Fungal Proteins
 49288-0314	Allergens
 49288-0314	Fungal Proteins
-49288-0316	Allergens
-49288-0316	Plant Proteins
-49288-0316	Dietary Proteins
 49288-0316	Food Additives
+49288-0316	Allergens
+49288-0316	Dietary Proteins
+49288-0316	Plant Proteins
 49288-0317	Allergens
 49288-0317	Pollen
 49288-0318	Fungal Proteins
@@ -6058,394 +6058,394 @@ Key	Value
 49288-0319	Fungal Proteins
 49288-0320	Fungal Proteins
 49288-0320	Allergens
-49288-0321	Allergens
 49288-0321	Pollen
+49288-0321	Allergens
 49288-0322	Allergens
 49288-0322	Pollen
 49288-0323	Pollen
 49288-0323	Allergens
 49288-0324	Pollen
 49288-0324	Allergens
-49288-0325	Pollen
 49288-0325	Allergens
+49288-0325	Pollen
 49288-0326	Fungal Proteins
 49288-0326	Allergens
 49288-0327	Fungal Proteins
 49288-0327	Allergens
-49288-0328	Allergens
 49288-0328	Fungal Proteins
-49288-0329	Food Additives
-49288-0329	Allergens
-49288-0329	Plant Proteins
+49288-0328	Allergens
 49288-0329	Dietary Proteins
+49288-0329	Allergens
+49288-0329	Food Additives
+49288-0329	Plant Proteins
 49288-0330	Pollen
 49288-0330	Allergens
 49288-0331	Allergens
 49288-0331	Pollen
-49288-0332	Pollen
 49288-0332	Allergens
+49288-0332	Pollen
 49288-0333	Dietary Proteins
 49288-0333	Plant Proteins
-49288-0333	Allergens
 49288-0333	Food Additives
+49288-0333	Allergens
 49288-0334	Dietary Proteins
 49288-0334	Plant Proteins
-49288-0334	Allergens
 49288-0334	Food Additives
+49288-0334	Allergens
 49288-0335	Dietary Proteins
-49288-0335	Plant Proteins
 49288-0335	Allergens
+49288-0335	Plant Proteins
 49288-0335	Food Additives
-49288-0337	Pollen
 49288-0337	Allergens
-49288-0338	Pollen
+49288-0337	Pollen
 49288-0338	Allergens
+49288-0338	Pollen
 49288-0339	Allergens
 49288-0339	Pollen
-49288-0340	Pollen
 49288-0340	Allergens
+49288-0340	Pollen
 49288-0341	Allergens
 49288-0341	Pollen
-49288-0342	Fungal Proteins
 49288-0342	Allergens
-49288-0345	Dietary Proteins
+49288-0342	Fungal Proteins
+49288-0345	Allergens
 49288-0345	Plant Proteins
 49288-0345	Food Additives
-49288-0345	Allergens
-49288-0346	Pollen
+49288-0345	Dietary Proteins
 49288-0346	Allergens
-49288-0347	Pollen
+49288-0346	Pollen
 49288-0347	Allergens
+49288-0347	Pollen
 49288-0348	Pollen
 49288-0348	Allergens
 49288-0349	Pollen
 49288-0349	Allergens
-49288-0350	Pollen
 49288-0350	Allergens
+49288-0350	Pollen
 49288-0351	Pollen
 49288-0351	Allergens
 49288-0352	Allergens
 49288-0352	Pollen
-49288-0353	Allergens
 49288-0353	Pollen
-49288-0354	Pollen
+49288-0353	Allergens
 49288-0354	Allergens
-49288-0355	Pollen
+49288-0354	Pollen
 49288-0355	Allergens
-49288-0356	Pollen
+49288-0355	Pollen
 49288-0356	Allergens
-49288-0357	Allergens
+49288-0356	Pollen
 49288-0357	Pollen
+49288-0357	Allergens
 49288-0358	Allergens
 49288-0358	Pollen
 49288-0359	Allergens
 49288-0359	Pollen
 49288-0360	Pollen
 49288-0360	Allergens
-49288-0361	Allergens
 49288-0361	Pollen
-49288-0362	Allergens
+49288-0361	Allergens
 49288-0362	Pollen
-49288-0363	Allergens
+49288-0362	Allergens
 49288-0363	Fungal Proteins
-49288-0364	Allergens
+49288-0363	Allergens
 49288-0364	Fungal Proteins
-49288-0365	Allergens
+49288-0364	Allergens
 49288-0365	Fungal Proteins
+49288-0365	Allergens
 49288-0366	Fungal Proteins
 49288-0366	Allergens
-49288-0367	Allergens
 49288-0367	Fungal Proteins
+49288-0367	Allergens
 49288-0368	Allergens
 49288-0368	Fungal Proteins
-49288-0369	Fungal Proteins
 49288-0369	Allergens
-49288-0370	Allergens
+49288-0369	Fungal Proteins
 49288-0370	Fungal Proteins
-49288-0371	Fungal Proteins
+49288-0370	Allergens
 49288-0371	Allergens
-49288-0372	Allergens
+49288-0371	Fungal Proteins
 49288-0372	Fungal Proteins
+49288-0372	Allergens
 49288-0373	Allergens
 49288-0373	Fungal Proteins
-49288-0374	Food Additives
-49288-0374	Allergens
-49288-0374	Dietary Proteins
 49288-0374	Plant Proteins
+49288-0374	Dietary Proteins
+49288-0374	Allergens
+49288-0374	Food Additives
 49288-0375	Allergens
-49288-0375	Poultry Proteins
 49288-0375	Dietary Proteins
-49288-0376	Plant Proteins
-49288-0376	Food Additives
+49288-0375	Poultry Proteins
 49288-0376	Allergens
+49288-0376	Food Additives
 49288-0376	Dietary Proteins
-49288-0377	Plant Proteins
-49288-0377	Allergens
+49288-0376	Plant Proteins
 49288-0377	Dietary Proteins
 49288-0377	Food Additives
+49288-0377	Plant Proteins
+49288-0377	Allergens
 49288-0378	Dietary Proteins
-49288-0378	Plant Proteins
-49288-0378	Food Additives
 49288-0378	Allergens
-49288-0379	Food Additives
+49288-0378	Food Additives
+49288-0378	Plant Proteins
+49288-0379	Plant Proteins
 49288-0379	Dietary Proteins
 49288-0379	Allergens
-49288-0379	Plant Proteins
-49288-0380	Plant Proteins
+49288-0379	Food Additives
 49288-0380	Allergens
-49288-0380	Food Additives
 49288-0380	Dietary Proteins
-49288-0381	Food Additives
+49288-0380	Food Additives
+49288-0380	Plant Proteins
 49288-0381	Allergens
-49288-0381	Dietary Proteins
 49288-0381	Plant Proteins
-49288-0382	Food Additives
+49288-0381	Dietary Proteins
+49288-0381	Food Additives
 49288-0382	Dietary Proteins
-49288-0382	Plant Proteins
 49288-0382	Allergens
-49288-0383	Food Additives
+49288-0382	Plant Proteins
+49288-0382	Food Additives
 49288-0383	Dietary Proteins
+49288-0383	Food Additives
 49288-0383	Plant Proteins
 49288-0383	Allergens
+49288-0384	Food Additives
+49288-0384	Dietary Proteins
 49288-0384	Plant Proteins
 49288-0384	Allergens
-49288-0384	Dietary Proteins
-49288-0384	Food Additives
-49288-0385	Plant Proteins
 49288-0385	Food Additives
-49288-0385	Allergens
+49288-0385	Plant Proteins
 49288-0385	Dietary Proteins
+49288-0385	Allergens
 49288-0386	Plant Proteins
 49288-0386	Allergens
-49288-0386	Food Additives
 49288-0386	Dietary Proteins
-49288-0388	Food Additives
+49288-0386	Food Additives
 49288-0388	Dietary Proteins
 49288-0388	Plant Proteins
 49288-0388	Allergens
-49288-0389	Plant Proteins
-49288-0389	Dietary Proteins
+49288-0388	Food Additives
 49288-0389	Allergens
 49288-0389	Food Additives
-49288-0391	Pollen
+49288-0389	Plant Proteins
+49288-0389	Dietary Proteins
 49288-0391	Allergens
+49288-0391	Pollen
 49288-0392	Allergens
 49288-0392	Pollen
 49288-0393	Pollen
 49288-0393	Allergens
-49288-0396	Allergens
 49288-0396	Pollen
-49288-0397	Allergens
+49288-0396	Allergens
 49288-0397	Pollen
-49288-0398	Pollen
+49288-0397	Allergens
 49288-0398	Allergens
+49288-0398	Pollen
 49288-0399	Allergens
 49288-0399	Pollen
 49288-0400	Pollen
 49288-0400	Allergens
-49288-0401	Allergens
 49288-0401	Pollen
-49288-0402	Allergens
+49288-0401	Allergens
 49288-0402	Pollen
-49288-0404	Dietary Proteins
+49288-0402	Allergens
 49288-0404	Plant Proteins
-49288-0404	Food Additives
 49288-0404	Allergens
-49288-0405	Plant Proteins
-49288-0405	Allergens
+49288-0404	Dietary Proteins
+49288-0404	Food Additives
 49288-0405	Dietary Proteins
+49288-0405	Allergens
 49288-0405	Food Additives
-49288-0406	Food Additives
+49288-0405	Plant Proteins
 49288-0406	Plant Proteins
 49288-0406	Dietary Proteins
+49288-0406	Food Additives
 49288-0406	Allergens
-49288-0407	Food Additives
 49288-0407	Plant Proteins
+49288-0407	Food Additives
 49288-0407	Dietary Proteins
 49288-0407	Allergens
 49288-0408	Allergens
 49288-0408	Pollen
 49288-0409	Allergens
 49288-0409	Pollen
-49288-0410	Allergens
 49288-0410	Pollen
+49288-0410	Allergens
 49288-0411	Pollen
 49288-0411	Allergens
 49288-0412	Pollen
 49288-0412	Allergens
-49288-0413	Allergens
 49288-0413	Pollen
-49288-0414	Pollen
+49288-0413	Allergens
 49288-0414	Allergens
-49288-0415	Pollen
+49288-0414	Pollen
 49288-0415	Allergens
+49288-0415	Pollen
 49288-0416	Allergens
 49288-0416	Fungal Proteins
 49288-0417	Fungal Proteins
 49288-0417	Allergens
 49288-0418	Allergens
 49288-0418	Pollen
-49288-0419	Pollen
 49288-0419	Allergens
-49288-0420	Allergens
+49288-0419	Pollen
 49288-0420	Pollen
-49288-0421	Pollen
+49288-0420	Allergens
 49288-0421	Allergens
-49288-0422	Pollen
+49288-0421	Pollen
 49288-0422	Allergens
-49288-0423	Allergens
+49288-0422	Pollen
 49288-0423	Pollen
+49288-0423	Allergens
 49288-0424	Pollen
 49288-0424	Allergens
 49288-0425	Pollen
 49288-0425	Allergens
-49288-0427	Pollen
 49288-0427	Allergens
-49288-0429	Plant Proteins
+49288-0427	Pollen
 49288-0429	Allergens
-49288-0429	Food Additives
 49288-0429	Dietary Proteins
+49288-0429	Food Additives
+49288-0429	Plant Proteins
 49288-0430	Allergens
 49288-0430	Pollen
-49288-0431	Pollen
 49288-0431	Allergens
-49288-0432	Allergens
+49288-0431	Pollen
 49288-0432	Pollen
+49288-0432	Allergens
 49288-0433	Allergens
 49288-0433	Pollen
 49288-0434	Fungal Proteins
 49288-0434	Allergens
-49288-0435	Fungal Proteins
 49288-0435	Allergens
-49288-0436	Fungal Proteins
+49288-0435	Fungal Proteins
 49288-0436	Allergens
+49288-0436	Fungal Proteins
+49288-0437	Dietary Proteins
 49288-0437	Allergens
 49288-0437	Poultry Proteins
-49288-0437	Dietary Proteins
-49288-0438	Plant Proteins
-49288-0438	Allergens
-49288-0438	Food Additives
 49288-0438	Dietary Proteins
-49288-0439	Plant Proteins
-49288-0439	Dietary Proteins
+49288-0438	Plant Proteins
+49288-0438	Food Additives
+49288-0438	Allergens
 49288-0439	Food Additives
+49288-0439	Plant Proteins
 49288-0439	Allergens
+49288-0439	Dietary Proteins
 49288-0440	Plant Proteins
 49288-0440	Food Additives
-49288-0440	Dietary Proteins
 49288-0440	Allergens
-49288-0441	Plant Proteins
-49288-0441	Dietary Proteins
+49288-0440	Dietary Proteins
 49288-0441	Allergens
 49288-0441	Food Additives
+49288-0441	Dietary Proteins
+49288-0441	Plant Proteins
+49288-0442	Plant Proteins
+49288-0442	Allergens
 49288-0442	Food Additives
 49288-0442	Dietary Proteins
-49288-0442	Allergens
-49288-0442	Plant Proteins
-49288-0443	Fur
-49288-0443	Salivary Proteins and Peptides
 49288-0443	Allergens
-49288-0444	Salivary Proteins and Peptides
+49288-0443	Salivary Proteins and Peptides
+49288-0443	Fur
 49288-0444	Fur
+49288-0444	Salivary Proteins and Peptides
 49288-0444	Allergens
-49288-0446	Pollen
 49288-0446	Allergens
+49288-0446	Pollen
 49288-0447	Allergens
 49288-0447	Pollen
-49288-0449	Allergens
 49288-0449	Pollen
-49288-0450	Pollen
+49288-0449	Allergens
 49288-0450	Allergens
+49288-0450	Pollen
 49288-0451	Pollen
 49288-0451	Allergens
-49288-0452	Pollen
 49288-0452	Allergens
+49288-0452	Pollen
 49288-0453	Allergens
 49288-0453	Pollen
-49288-0454	Allergens
 49288-0454	Pollen
+49288-0454	Allergens
 49288-0455	Allergens
 49288-0455	Pollen
 49288-0456	Allergens
 49288-0456	Pollen
 49288-0457	Allergens
 49288-0457	Pollen
-49288-0458	Allergens
 49288-0458	Pollen
-49288-0459	Pollen
+49288-0458	Allergens
 49288-0459	Allergens
-49288-0460	Pollen
+49288-0459	Pollen
 49288-0460	Allergens
-49288-0462	Fungal Proteins
+49288-0460	Pollen
 49288-0462	Allergens
-49288-0463	Fungal Proteins
+49288-0462	Fungal Proteins
 49288-0463	Allergens
+49288-0463	Fungal Proteins
 49288-0464	Fungal Proteins
 49288-0464	Allergens
 49288-0465	Allergens
 49288-0465	Fungal Proteins
 49288-0466	Fungal Proteins
 49288-0466	Allergens
-49288-0467	Fungal Proteins
 49288-0467	Allergens
+49288-0467	Fungal Proteins
 49288-0468	Allergens
 49288-0468	Fungal Proteins
 49288-0469	Allergens
 49288-0469	Fungal Proteins
-49288-0470	Fungal Proteins
 49288-0470	Allergens
+49288-0470	Fungal Proteins
 49288-0471	Allergens
 49288-0471	Fungal Proteins
-49288-0472	Fungal Proteins
 49288-0472	Allergens
-49288-0474	Dietary Proteins
-49288-0474	Allergens
-49288-0474	Plant Proteins
+49288-0472	Fungal Proteins
 49288-0474	Food Additives
-49288-0475	Dietary Proteins
-49288-0475	Food Additives
-49288-0475	Plant Proteins
+49288-0474	Dietary Proteins
+49288-0474	Plant Proteins
+49288-0474	Allergens
 49288-0475	Allergens
+49288-0475	Dietary Proteins
+49288-0475	Plant Proteins
+49288-0475	Food Additives
 49288-0479	Dietary Proteins
 49288-0479	Food Additives
 49288-0479	Plant Proteins
 49288-0479	Allergens
-49288-0480	Dietary Proteins
 49288-0480	Food Additives
+49288-0480	Dietary Proteins
 49288-0480	Plant Proteins
 49288-0480	Allergens
+49288-0481	Plant Proteins
 49288-0481	Allergens
 49288-0481	Dietary Proteins
 49288-0481	Food Additives
-49288-0481	Plant Proteins
+49288-0483	Plant Proteins
+49288-0483	Food Additives
 49288-0483	Allergens
 49288-0483	Dietary Proteins
-49288-0483	Food Additives
-49288-0483	Plant Proteins
-49288-0484	Allergens
 49288-0484	Pollen
-49288-0485	Allergens
+49288-0484	Allergens
 49288-0485	Pollen
-49288-0486	Allergens
+49288-0485	Allergens
 49288-0486	Pollen
-49288-0487	Allergens
+49288-0486	Allergens
 49288-0487	Pollen
-49288-0488	Allergens
+49288-0487	Allergens
 49288-0488	Pollen
+49288-0488	Allergens
 49288-0489	Allergens
 49288-0489	Pollen
 49288-0490	Pollen
 49288-0490	Allergens
-49288-0491	Allergens
 49288-0491	Pollen
+49288-0491	Allergens
 49288-0492	Allergens
 49288-0492	Pollen
-49288-0493	Plant Proteins
-49288-0493	Allergens
 49288-0493	Dietary Proteins
+49288-0493	Allergens
+49288-0493	Plant Proteins
 49288-0493	Food Additives
-49288-0494	Allergens
 49288-0494	Pollen
+49288-0494	Allergens
 49288-0495	Allergens
 49288-0495	Pollen
 49288-0496	Allergens
@@ -6454,138 +6454,138 @@ Key	Value
 49288-0497	Allergens
 49288-0498	Pollen
 49288-0498	Allergens
-49288-0499	Pollen
 49288-0499	Allergens
+49288-0499	Pollen
 49288-0560	Pollen
 49288-0560	Allergens
 49288-0561	Pollen
 49288-0561	Allergens
 49288-0562	Allergens
 49288-0562	Fungal Proteins
-49288-0563	Allergens
 49288-0563	Fungal Proteins
-49288-0564	Allergens
+49288-0563	Allergens
 49288-0564	Fungal Proteins
+49288-0564	Allergens
 49288-0565	Plant Proteins
+49288-0565	Allergens
 49288-0565	Food Additives
 49288-0565	Dietary Proteins
-49288-0565	Allergens
 49288-0566	Plant Proteins
+49288-0566	Food Additives
 49288-0566	Allergens
 49288-0566	Dietary Proteins
-49288-0566	Food Additives
-49288-0570	Dietary Proteins
 49288-0570	Allergens
+49288-0570	Dietary Proteins
 49288-0570	Poultry Proteins
-49288-0571	Plant Proteins
+49288-0571	Food Additives
 49288-0571	Allergens
 49288-0571	Dietary Proteins
-49288-0571	Food Additives
-49288-0572	Food Additives
+49288-0571	Plant Proteins
 49288-0572	Plant Proteins
-49288-0572	Dietary Proteins
+49288-0572	Food Additives
 49288-0572	Allergens
-49288-0573	Pollen
+49288-0572	Dietary Proteins
 49288-0573	Allergens
+49288-0573	Pollen
 49288-0574	Pollen
 49288-0574	Allergens
 49288-0575	Allergens
 49288-0575	Pollen
-49288-0576	Fungal Proteins
 49288-0576	Allergens
-49288-0577	Allergens
+49288-0576	Fungal Proteins
 49288-0577	Fungal Proteins
-49288-0578	Fungal Proteins
+49288-0577	Allergens
 49288-0578	Allergens
+49288-0578	Fungal Proteins
 49288-0579	Fungal Proteins
 49288-0579	Allergens
-49288-0580	Fungal Proteins
 49288-0580	Allergens
-49288-0584	Allergens
+49288-0580	Fungal Proteins
 49288-0584	Pollen
-49288-0585	Allergens
+49288-0584	Allergens
 49288-0585	Fungal Proteins
-49288-0586	Fungal Proteins
+49288-0585	Allergens
 49288-0586	Allergens
-49288-0587	Fungal Proteins
+49288-0586	Fungal Proteins
 49288-0587	Allergens
+49288-0587	Fungal Proteins
 49288-0588	Allergens
 49288-0588	Pollen
 49288-0589	Pollen
 49288-0589	Allergens
-49288-0590	Pollen
 49288-0590	Allergens
-49288-0591	Plant Proteins
-49288-0591	Allergens
+49288-0590	Pollen
 49288-0591	Dietary Proteins
 49288-0591	Food Additives
+49288-0591	Allergens
+49288-0591	Plant Proteins
+49288-0592	Allergens
 49288-0592	Dietary Proteins
 49288-0592	Poultry Proteins
-49288-0592	Allergens
-49288-0593	Pollen
 49288-0593	Allergens
+49288-0593	Pollen
 49288-0594	Allergens
 49288-0594	Fungal Proteins
-49288-0595	Plant Proteins
-49288-0595	Allergens
 49288-0595	Dietary Proteins
+49288-0595	Allergens
 49288-0595	Food Additives
+49288-0595	Plant Proteins
 49288-0596	Plant Proteins
 49288-0596	Food Additives
-49288-0596	Dietary Proteins
 49288-0596	Allergens
+49288-0596	Dietary Proteins
 49288-0597	Allergens
+49288-0597	Plant Proteins
 49288-0597	Food Additives
 49288-0597	Dietary Proteins
-49288-0597	Plant Proteins
-49288-0598	Dietary Proteins
-49288-0598	Plant Proteins
-49288-0598	Allergens
 49288-0598	Food Additives
-49288-0600	Pollen
+49288-0598	Dietary Proteins
+49288-0598	Allergens
+49288-0598	Plant Proteins
 49288-0600	Allergens
+49288-0600	Pollen
 49288-0601	Pollen
 49288-0601	Allergens
-49288-0602	Pollen
 49288-0602	Allergens
-49288-0603	Pollen
+49288-0602	Pollen
 49288-0603	Allergens
-49288-0605	Pollen
+49288-0603	Pollen
 49288-0605	Allergens
+49288-0605	Pollen
 49288-0606	Allergens
 49288-0606	Pollen
-49288-0607	Allergens
 49288-0607	Fungal Proteins
+49288-0607	Allergens
 49288-0608	Allergens
 49288-0608	Pollen
 49288-0609	Allergens
 49288-0609	Pollen
 49288-0610	Pollen
 49288-0610	Allergens
-49288-0611	Pollen
 49288-0611	Allergens
-49288-0612	Allergens
+49288-0611	Pollen
 49288-0612	Pollen
+49288-0612	Allergens
 49288-0613	Allergens
 49288-0613	Pollen
 49288-0614	Allergens
 49288-0614	Pollen
 49288-0615	Allergens
 49288-0615	Pollen
-49288-0616	Allergens
 49288-0616	Pollen
-49288-0617	Allergens
+49288-0616	Allergens
 49288-0617	Plant Proteins
 49288-0617	Dietary Proteins
 49288-0617	Food Additives
-49288-0618	Fungal Proteins
+49288-0617	Allergens
 49288-0618	Allergens
+49288-0618	Fungal Proteins
 49288-0619	Allergens
 49288-0619	Fungal Proteins
 49288-0620	Fungal Proteins
 49288-0620	Allergens
-49288-0621	Fungal Proteins
 49288-0621	Allergens
+49288-0621	Fungal Proteins
 49288-0622	Pollen
 49288-0622	Allergens
 49288-0623	Pollen
@@ -6596,34 +6596,34 @@ Key	Value
 49288-0625	Pollen
 49288-0626	Pollen
 49288-0626	Allergens
-49288-0627	Allergens
 49288-0627	Pollen
+49288-0627	Allergens
 49288-0628	Allergens
 49288-0628	Pollen
 49288-0629	Pollen
 49288-0629	Allergens
 49288-0630	Allergens
 49288-0630	Pollen
-49288-0631	Allergens
 49288-0631	Pollen
+49288-0631	Allergens
 49288-0633	Pollen
 49288-0633	Allergens
 49288-0634	Pollen
 49288-0634	Allergens
 49288-0635	Fungal Proteins
 49288-0635	Allergens
-49288-0636	Allergens
 49288-0636	Pollen
+49288-0636	Allergens
 49288-0637	Allergens
 49288-0637	Fungal Proteins
 49288-0638	Allergens
 49288-0638	Fungal Proteins
-49288-0639	Fungal Proteins
 49288-0639	Allergens
+49288-0639	Fungal Proteins
 49288-0640	Allergens
 49288-0640	Pollen
-49288-0641	Pollen
 49288-0641	Allergens
+49288-0641	Pollen
 49288-0642	Pollen
 49288-0642	Allergens
 49288-0644	Pollen
@@ -6632,197 +6632,197 @@ Key	Value
 49288-0645	Allergens
 49288-0646	Pollen
 49288-0646	Allergens
-49288-0647	Fungal Proteins
 49288-0647	Allergens
+49288-0647	Fungal Proteins
 49288-0648	Fungal Proteins
 49288-0648	Allergens
 49288-0649	Allergens
 49288-0649	Fungal Proteins
-49288-0650	Fungal Proteins
 49288-0650	Allergens
+49288-0650	Fungal Proteins
 49288-0651	Fungal Proteins
 49288-0651	Allergens
 49288-0652	Pollen
 49288-0652	Allergens
-49288-0653	Allergens
 49288-0653	Pollen
+49288-0653	Allergens
 49288-0654	Pollen
 49288-0654	Allergens
-49288-0656	Allergens
 49288-0656	Pollen
-49288-0657	Allergens
+49288-0656	Allergens
 49288-0657	Pollen
-49288-0658	Pollen
+49288-0657	Allergens
 49288-0658	Allergens
-49288-0659	Pollen
+49288-0658	Pollen
 49288-0659	Allergens
-49288-0660	Pollen
+49288-0659	Pollen
 49288-0660	Allergens
-49288-0661	Pollen
+49288-0660	Pollen
 49288-0661	Allergens
+49288-0661	Pollen
 49288-0662	Allergens
 49288-0662	Pollen
 49288-0663	Pollen
 49288-0663	Allergens
-49288-0664	Pollen
 49288-0664	Allergens
-49288-0665	Pollen
+49288-0664	Pollen
 49288-0665	Allergens
-49288-0666	Allergens
+49288-0665	Pollen
 49288-0666	Pollen
+49288-0666	Allergens
 49288-0667	Allergens
 49288-0667	Pollen
-49288-0668	Allergens
 49288-0668	Pollen
-49288-0669	Allergens
+49288-0668	Allergens
 49288-0669	Pollen
-49288-0670	Pollen
+49288-0669	Allergens
 49288-0670	Allergens
-49288-0671	Pollen
+49288-0670	Pollen
 49288-0671	Allergens
-49288-0672	Allergens
+49288-0671	Pollen
 49288-0672	Pollen
-49288-0673	Pollen
+49288-0672	Allergens
 49288-0673	Allergens
-49288-0674	Pollen
+49288-0673	Pollen
 49288-0674	Allergens
+49288-0674	Pollen
 49288-0675	Pollen
 49288-0675	Allergens
-49288-0676	Pollen
 49288-0676	Allergens
-49288-0677	Pollen
+49288-0676	Pollen
 49288-0677	Allergens
+49288-0677	Pollen
 49288-0678	Pollen
 49288-0678	Allergens
 49288-0679	Allergens
 49288-0679	Pollen
-49288-0680	Pollen
 49288-0680	Allergens
-49288-0681	Allergens
+49288-0680	Pollen
 49288-0681	Pollen
-49288-0682	Pollen
+49288-0681	Allergens
 49288-0682	Allergens
-49288-0683	Allergens
+49288-0682	Pollen
 49288-0683	Pollen
-49288-0684	Pollen
+49288-0683	Allergens
 49288-0684	Allergens
+49288-0684	Pollen
 49288-0685	Pollen
 49288-0685	Allergens
 49288-0686	Allergens
 49288-0686	Pollen
-49288-0687	Pollen
 49288-0687	Allergens
+49288-0687	Pollen
 49288-0688	Allergens
 49288-0688	Pollen
-49288-0689	Allergens
 49288-0689	Pollen
+49288-0689	Allergens
 49288-0690	Pollen
 49288-0690	Allergens
-49288-0691	Allergens
 49288-0691	Pollen
-49288-0692	Allergens
+49288-0691	Allergens
 49288-0692	Pollen
-49288-0693	Allergens
+49288-0692	Allergens
 49288-0693	Pollen
+49288-0693	Allergens
 49288-0694	Pollen
 49288-0694	Allergens
-49288-0695	Allergens
 49288-0695	Pollen
+49288-0695	Allergens
 49288-0696	Allergens
 49288-0696	Pollen
-49288-0697	Pollen
 49288-0697	Allergens
-49288-0698	Pollen
+49288-0697	Pollen
 49288-0698	Allergens
-49288-0699	Allergens
+49288-0698	Pollen
 49288-0699	Pollen
-49288-0700	Allergens
+49288-0699	Allergens
 49288-0700	Pollen
+49288-0700	Allergens
 49288-0701	Allergens
 49288-0701	Pollen
-49288-0702	Allergens
 49288-0702	Pollen
+49288-0702	Allergens
 49288-0703	Pollen
 49288-0703	Allergens
 49288-0704	Pollen
 49288-0704	Allergens
-49288-0705	Allergens
 49288-0705	Pollen
+49288-0705	Allergens
 49288-0706	Pollen
 49288-0706	Allergens
 49288-0707	Allergens
 49288-0707	Pollen
-49288-0708	Pollen
 49288-0708	Allergens
+49288-0708	Pollen
 49288-0709	Allergens
 49288-0709	Pollen
 49288-0710	Allergens
 49288-0710	Pollen
-49288-0711	Pollen
 49288-0711	Allergens
-49288-0712	Allergens
+49288-0711	Pollen
 49288-0712	Pollen
+49288-0712	Allergens
 49288-0713	Allergens
 49288-0713	Pollen
-49288-0772	Pollen
 49288-0772	Allergens
-49288-0777	Allergens
+49288-0772	Pollen
 49288-0777	Insect Proteins
 49288-0777	Antigens, Dermatophagoides
+49288-0777	Allergens
+49288-0778	Allergens
 49288-0778	Insect Proteins
 49288-0778	Antigens, Dermatophagoides
-49288-0778	Allergens
-49288-0779	Insect Proteins
-49288-0779	Allergens
 49288-0779	Antigens, Dermatophagoides
+49288-0779	Allergens
+49288-0779	Insect Proteins
+49288-0780	Allergens
 49288-0780	Antigens, Dermatophagoides
 49288-0780	Insect Proteins
-49288-0780	Allergens
-49288-0781	Insect Proteins
 49288-0781	Allergens
+49288-0781	Insect Proteins
 49288-0781	Antigens, Dermatophagoides
 49288-0813	Antigens, Dermatophagoides
 49288-0813	Insect Proteins
 49288-0813	Allergens
-49288-0814	Insect Proteins
 49288-0814	Allergens
 49288-0814	Antigens, Dermatophagoides
+49288-0814	Insect Proteins
 49288-0815	Insect Proteins
 49288-0815	Antigens, Dermatophagoides
 49288-0815	Allergens
 49288-0817	Allergens
 49288-0817	Insect Proteins
 49288-0817	Antigens, Dermatophagoides
+49288-0818	Allergens
 49288-0818	Insect Proteins
 49288-0818	Antigens, Dermatophagoides
-49288-0818	Allergens
 49288-0831	Allergens
-49288-0831	Antigens, Dermatophagoides
 49288-0831	Insect Proteins
-49288-0832	Allergens
-49288-0832	Antigens, Dermatophagoides
+49288-0831	Antigens, Dermatophagoides
 49288-0832	Insect Proteins
-49288-0833	Insect Proteins
-49288-0833	Allergens
+49288-0832	Antigens, Dermatophagoides
+49288-0832	Allergens
 49288-0833	Antigens, Dermatophagoides
+49288-0833	Allergens
+49288-0833	Insect Proteins
 49288-0834	Allergens
 49288-0834	Insect Proteins
 49288-0834	Antigens, Dermatophagoides
+49288-0835	Insect Proteins
 49288-0835	Allergens
 49288-0835	Antigens, Dermatophagoides
-49288-0835	Insect Proteins
 49291-0002	Allergens
 49291-0003	Allergens
 49304-0002	Allergens
 49304-0003	Calcium
-49304-0006	Seed Storage Proteins
 49304-0006	Dietary Proteins
-49304-0006	Allergens
 49304-0006	Plant Proteins
-49304-0013	Allergens
+49304-0006	Seed Storage Proteins
+49304-0006	Allergens
 49304-0013	Plant Proteins
-49304-0013	Dietary Proteins
+49304-0013	Allergens
 49304-0013	Food Additives
+49304-0013	Dietary Proteins
 49348-0001	Nonsteroidal Anti-inflammatory Compounds
 49348-0055	Calcium
 49348-0097	Nonsteroidal Anti-inflammatory Compounds
@@ -6845,8 +6845,8 @@ Key	Value
 49348-0280	Calcium
 49348-0306	Nonsteroidal Anti-inflammatory Compounds
 49348-0338	Bismuth
-49348-0345	Allergens
 49348-0345	Plant Proteins
+49348-0345	Allergens
 49348-0345	Dietary Proteins
 49348-0362	Calcium
 49348-0374	Nonsteroidal Anti-inflammatory Compounds
@@ -6978,13 +6978,13 @@ Key	Value
 49884-0340	Nucleoside Analog
 49884-0412	Bile Acids and Salts
 49884-0413	Bile Acids and Salts
-49884-0428	Plant Proteins
-49884-0428	Fruit Proteins
 49884-0428	Allergens
 49884-0428	Dietary Proteins
+49884-0428	Plant Proteins
+49884-0428	Fruit Proteins
 49884-0430	Fruit Proteins
-49884-0430	Dietary Proteins
 49884-0430	Allergens
+49884-0430	Dietary Proteins
 49884-0430	Plant Proteins
 49884-0494	Cardiac Glycosides
 49884-0511	Tetracyclines
@@ -6996,13 +6996,13 @@ Key	Value
 49884-0576	Dihydropyridines
 49884-0577	Dihydropyridines
 49884-0578	Allergens
-49884-0578	Grain Proteins
 49884-0578	Dietary Proteins
-49884-0579	Allergens
-49884-0579	Grain Proteins
+49884-0578	Grain Proteins
 49884-0579	Dietary Proteins
-49884-0580	Grain Proteins
+49884-0579	Grain Proteins
+49884-0579	Allergens
 49884-0580	Allergens
+49884-0580	Grain Proteins
 49884-0580	Dietary Proteins
 49884-0581	Grain Proteins
 49884-0581	Dietary Proteins
@@ -7033,10 +7033,10 @@ Key	Value
 49884-0949	Progesterone Congeners
 49884-0952	Dihydropyridines
 49884-0953	Dihydropyridines
-49892-0002	Plant Proteins
 49892-0002	Allergens
-49892-0002	Dietary Proteins
+49892-0002	Plant Proteins
 49892-0002	Food Additives
+49892-0002	Dietary Proteins
 49908-0167	Allergens
 49908-0173	Sulfonamides
 49908-0273	Sulfonamides
@@ -7059,17 +7059,17 @@ Key	Value
 50169-0006	Calcium
 50169-0007	Calcium
 50181-0003	Meat Proteins
-50181-0003	Allergens
 50181-0003	Dietary Proteins
-50181-0007	Bee Venoms
+50181-0003	Allergens
 50181-0007	Allergens
+50181-0007	Bee Venoms
+50181-0008	Seed Storage Proteins
 50181-0008	Plant Proteins
 50181-0008	Allergens
-50181-0008	Seed Storage Proteins
 50181-0009	Adrenocorticotropic Hormone
+50181-0013	Allergens
 50181-0013	Seed Storage Proteins
 50181-0013	Plant Proteins
-50181-0013	Allergens
 50181-0023	Estradiol Congeners
 50181-0024	Allergens
 50181-0029	Allergens
@@ -7083,8 +7083,8 @@ Key	Value
 50242-0074	Recombinant Human Growth Hormones
 50242-0075	Recombinant Human Growth Hormones
 50242-0076	Recombinant Human Growth Hormones
-50242-0100	Recombinant Proteins
 50242-0100	Deoxyribonuclease I
+50242-0100	Recombinant Proteins
 50383-0024	Quinolones
 50383-0025	Quinolones
 50383-0171	Carnitine
@@ -7129,9 +7129,9 @@ Key	Value
 50436-0264	Nonsteroidal Anti-inflammatory Compounds
 50436-0310	Nonsteroidal Anti-inflammatory Compounds
 50436-0597	Nucleoside Analog
-50441-0002	Dietary Proteins
 50441-0002	Vegetable Proteins
 50441-0002	Allergens
+50441-0002	Dietary Proteins
 50441-0003	Allergens
 50441-0003	Bee Venoms
 50458-0098	Glycosaminoglycans
@@ -7144,9 +7144,9 @@ Key	Value
 50458-0253	Dietary Proteins
 50458-0253	Allergens
 50458-0253	Grain Proteins
-50458-0254	Dietary Proteins
-50458-0254	Grain Proteins
 50458-0254	Allergens
+50458-0254	Grain Proteins
+50458-0254	Dietary Proteins
 50458-0290	Azoles
 50458-0295	Azoles
 50458-0401	Carbapenems
@@ -7154,22 +7154,22 @@ Key	Value
 50458-0531	Azoles
 50458-0535	Azoles
 50458-0536	Azoles
-50458-0585	Fruit Proteins
 50458-0585	Plant Proteins
+50458-0585	Fruit Proteins
 50458-0585	Allergens
 50458-0585	Dietary Proteins
-50458-0586	Dietary Proteins
 50458-0586	Plant Proteins
-50458-0586	Fruit Proteins
 50458-0586	Allergens
+50458-0586	Fruit Proteins
+50458-0586	Dietary Proteins
 50458-0587	Plant Proteins
-50458-0587	Dietary Proteins
-50458-0587	Fruit Proteins
 50458-0587	Allergens
+50458-0587	Fruit Proteins
+50458-0587	Dietary Proteins
 50458-0588	Allergens
 50458-0588	Plant Proteins
-50458-0588	Fruit Proteins
 50458-0588	Dietary Proteins
+50458-0588	Fruit Proteins
 50458-0680	Azoles
 50458-0920	Quinolones
 50458-0925	Quinolones
@@ -7183,15 +7183,15 @@ Key	Value
 50742-0154	Biguanides
 50742-0155	Biguanides
 50742-0156	Biguanides
-50813-0002	Bee Venoms
 50813-0002	Allergens
+50813-0002	Bee Venoms
 50813-0003	Allergens
-50813-0004	Fungal Proteins
 50813-0004	Allergens
+50813-0004	Fungal Proteins
 50813-0005	Bee Venoms
 50813-0005	Allergens
-50813-0007	Allergens
 50813-0007	Bee Venoms
+50813-0007	Allergens
 50813-0008	Allergens
 50813-0008	Fungal Proteins
 50813-0009	Allergens
@@ -7199,54 +7199,54 @@ Key	Value
 50845-0002	Calcium
 50845-0023	Allergens
 50845-0023	Fungal Proteins
-50845-0025	Allergens
 50845-0025	Bee Venoms
-50845-0029	Dietary Proteins
+50845-0025	Allergens
 50845-0029	Allergens
-50845-0029	Plant Proteins
+50845-0029	Dietary Proteins
 50845-0029	Seed Storage Proteins
+50845-0029	Plant Proteins
 50845-0031	Bee Venoms
 50845-0031	Allergens
-50845-0032	Bee Venoms
 50845-0032	Allergens
+50845-0032	Bee Venoms
 50845-0037	Amino Acids
 50845-0039	Amino Acids
 50845-0053	Calcium
-50845-0056	Allergens
 50845-0056	Dietary Proteins
 50845-0056	Vegetable Proteins
+50845-0056	Allergens
 50845-0067	Calcium
 50845-0071	Calcium
+50845-0074	Dietary Proteins
 50845-0074	Allergens
 50845-0074	Meat Proteins
-50845-0074	Dietary Proteins
 50845-0095	Amino Acids
-50845-0113	Dietary Proteins
 50845-0113	Meat Proteins
+50845-0113	Dietary Proteins
 50845-0113	Allergens
-50845-0131	Seed Storage Proteins
 50845-0131	Allergens
 50845-0131	Dietary Proteins
 50845-0131	Plant Proteins
+50845-0131	Seed Storage Proteins
 50845-0132	Dietary Proteins
-50845-0132	Fungal Proteins
 50845-0132	Allergens
+50845-0132	Fungal Proteins
 50845-0135	Bee Venoms
 50845-0135	Allergens
-50845-0168	Meat Proteins
-50845-0168	Allergens
 50845-0168	Dietary Proteins
+50845-0168	Allergens
+50845-0168	Meat Proteins
 50845-0169	Allergens
 50845-0169	Bee Venoms
-50845-0172	Allergens
 50845-0172	Dietary Proteins
+50845-0172	Allergens
 50845-0172	Meat Proteins
 50845-0173	Dietary Proteins
-50845-0173	Allergens
 50845-0173	Meat Proteins
-50845-0187	Dietary Proteins
-50845-0187	Allergens
+50845-0173	Allergens
 50845-0187	Egg Proteins, Dietary
+50845-0187	Allergens
+50845-0187	Dietary Proteins
 50967-0219	Calcium
 50967-0620	Xanthines
 50991-0323	Vitamin B 12
@@ -7315,14 +7315,14 @@ Key	Value
 51079-0487	Phenothiazines
 51079-0488	Phenothiazines
 51079-0513	Ppar Gamma
-51079-0513	Ppar Alpha
 51079-0513	Thiazolidinediones
+51079-0513	Ppar Alpha
+51079-0514	Ppar Alpha
 51079-0514	Thiazolidinediones
 51079-0514	Ppar Gamma
-51079-0514	Ppar Alpha
-51079-0515	Thiazolidinediones
 51079-0515	Ppar Gamma
 51079-0515	Ppar Alpha
+51079-0515	Thiazolidinediones
 51079-0516	Phenothiazines
 51079-0517	Phenothiazines
 51079-0518	Phenothiazines
@@ -7345,8 +7345,8 @@ Key	Value
 51079-0598	Lincosamides
 51079-0599	Ppar Alpha
 51079-0608	Ppar Alpha
-51079-0620	Nucleoside Analog
 51079-0620	Purines
+51079-0620	Nucleoside Analog
 51079-0621	Allergens
 51079-0622	Allergens
 51079-0623	Methylated Sulfonamides
@@ -7377,14 +7377,14 @@ Key	Value
 51079-0897	Dihydropyridines
 51079-0935	Thiazides
 51096-0002	Meat Proteins
-51096-0002	Allergens
 51096-0002	Dietary Proteins
-51096-0003	Seed Storage Proteins
+51096-0002	Allergens
 51096-0003	Allergens
 51096-0003	Plant Proteins
-51096-0004	Nut Proteins
+51096-0003	Seed Storage Proteins
 51096-0004	Allergens
 51096-0004	Dietary Proteins
+51096-0004	Nut Proteins
 51096-0006	Adrenocorticotropic Hormone
 51096-0007	Calcium
 51141-0066	Aminoglycosides
@@ -7444,15 +7444,15 @@ Key	Value
 51672-1303	Azoles
 51672-1304	Azoles
 51672-1305	Grain Proteins
-51672-1305	Dietary Proteins
 51672-1305	Allergens
+51672-1305	Dietary Proteins
 51672-1308	Azoles
 51672-1311	Dietary Proteins
-51672-1311	Grain Proteins
 51672-1311	Allergens
-51672-1315	Dietary Proteins
+51672-1311	Grain Proteins
 51672-1315	Grain Proteins
 51672-1315	Allergens
+51672-1315	Dietary Proteins
 51672-1330	Azoles
 51672-1346	Sulfonamides
 51672-2001	Azoles
@@ -7489,8 +7489,8 @@ Key	Value
 51672-4155	Retinoids
 51672-5278	Vitamin D
 51672-5295	Nitroimidazoles
-51730-0002	Allergens
 51730-0002	Bee Venoms
+51730-0002	Allergens
 51862-0131	Xanthines
 51862-0151	Vitamin D
 51862-0152	Vitamin D
@@ -7503,17 +7503,17 @@ Key	Value
 51991-0073	Barbiturates
 51991-0074	Nonsteroidal Anti-inflammatory Compounds
 51991-0331	Non-nucleoside Analog
-51991-0354	Dietary Proteins
 51991-0354	Grain Proteins
 51991-0354	Allergens
-51991-0355	Grain Proteins
+51991-0354	Dietary Proteins
 51991-0355	Allergens
+51991-0355	Grain Proteins
 51991-0355	Dietary Proteins
-51991-0362	Allergens
-51991-0362	Dietary Proteins
 51991-0362	Grain Proteins
-51991-0363	Allergens
+51991-0362	Dietary Proteins
+51991-0362	Allergens
 51991-0363	Grain Proteins
+51991-0363	Allergens
 51991-0363	Dietary Proteins
 51991-0474	Progesterone Congeners
 51991-0526	Allylamine
@@ -7523,19 +7523,19 @@ Key	Value
 51991-0708	Ppar Alpha
 51991-0708	Thiazolidinediones
 51991-0709	Ppar Gamma
-51991-0709	Ppar Alpha
 51991-0709	Thiazolidinediones
+51991-0709	Ppar Alpha
 51991-0710	Thiazolidinediones
 51991-0710	Ppar Alpha
 51991-0710	Ppar Gamma
-51991-0712	Dietary Proteins
 51991-0712	Fruit Proteins
-51991-0712	Allergens
+51991-0712	Dietary Proteins
 51991-0712	Plant Proteins
-51991-0713	Plant Proteins
-51991-0713	Dietary Proteins
-51991-0713	Fruit Proteins
+51991-0712	Allergens
 51991-0713	Allergens
+51991-0713	Dietary Proteins
+51991-0713	Plant Proteins
+51991-0713	Fruit Proteins
 51991-0738	Aminoglycosides
 52015-0080	Macrolides
 52054-0803	Catecholamines
@@ -7561,22 +7561,22 @@ Key	Value
 52544-0079	Vitamin D
 52544-0080	Barbiturates
 52544-0082	Barbiturates
+52544-0092	Allergens
 52544-0092	Grain Proteins
 52544-0092	Dietary Proteins
-52544-0092	Allergens
 52544-0149	Iron
-52544-0153	Allergens
-52544-0153	Grain Proteins
 52544-0153	Dietary Proteins
+52544-0153	Grain Proteins
+52544-0153	Allergens
 52544-0154	Allergens
-52544-0154	Grain Proteins
 52544-0154	Dietary Proteins
+52544-0154	Grain Proteins
 52544-0156	Grain Proteins
-52544-0156	Dietary Proteins
 52544-0156	Allergens
-52544-0188	Grain Proteins
+52544-0156	Dietary Proteins
 52544-0188	Dietary Proteins
 52544-0188	Allergens
+52544-0188	Grain Proteins
 52544-0189	Grain Proteins
 52544-0189	Dietary Proteins
 52544-0189	Allergens
@@ -7606,9 +7606,9 @@ Key	Value
 52544-0958	Barbiturates
 52565-0009	Amides
 52565-0022	Azoles
+52654-0004	Food Additives
 52654-0004	Dietary Proteins
 52654-0004	Allergens
-52654-0004	Food Additives
 52747-0110	Allergens
 52747-0620	Calcium
 52747-0621	Calcium
@@ -7618,46 +7618,46 @@ Key	Value
 52747-0901	Vitamin B 12
 52747-0902	Vitamin B 12
 52747-0903	Calcium
-53014-0530	Dietary Proteins
-53014-0530	Fruit Proteins
 53014-0530	Allergens
+53014-0530	Fruit Proteins
 53014-0530	Plant Proteins
-53014-0531	Plant Proteins
-53014-0531	Dietary Proteins
+53014-0530	Dietary Proteins
 53014-0531	Fruit Proteins
 53014-0531	Allergens
-53014-0532	Plant Proteins
-53014-0532	Dietary Proteins
+53014-0531	Dietary Proteins
+53014-0531	Plant Proteins
 53014-0532	Fruit Proteins
+53014-0532	Plant Proteins
 53014-0532	Allergens
+53014-0532	Dietary Proteins
 53014-0579	Dietary Proteins
 53014-0579	Fruit Proteins
 53014-0579	Allergens
 53014-0579	Plant Proteins
 53014-0580	Fruit Proteins
 53014-0580	Allergens
-53014-0580	Plant Proteins
 53014-0580	Dietary Proteins
-53014-0581	Dietary Proteins
+53014-0580	Plant Proteins
 53014-0581	Fruit Proteins
+53014-0581	Dietary Proteins
 53014-0581	Plant Proteins
 53014-0581	Allergens
-53014-0582	Fruit Proteins
 53014-0582	Dietary Proteins
-53014-0582	Plant Proteins
 53014-0582	Allergens
+53014-0582	Plant Proteins
+53014-0582	Fruit Proteins
 53014-0583	Dietary Proteins
 53014-0583	Allergens
-53014-0583	Fruit Proteins
 53014-0583	Plant Proteins
-53014-0584	Plant Proteins
-53014-0584	Dietary Proteins
-53014-0584	Fruit Proteins
+53014-0583	Fruit Proteins
 53014-0584	Allergens
-53014-0594	Dietary Proteins
-53014-0594	Fruit Proteins
+53014-0584	Fruit Proteins
+53014-0584	Dietary Proteins
+53014-0584	Plant Proteins
 53014-0594	Allergens
 53014-0594	Plant Proteins
+53014-0594	Dietary Proteins
+53014-0594	Fruit Proteins
 53150-0209	Non-nucleoside Analog
 53150-0247	Anthracyclines
 53150-0250	Anthracyclines
@@ -7668,29 +7668,29 @@ Key	Value
 53150-0336	Anthracyclines
 53150-0386	Anthracyclines
 53150-0411	Anthracyclines
-53150-0415	Dietary Proteins
 53150-0415	Grain Proteins
+53150-0415	Dietary Proteins
 53150-0415	Allergens
-53150-0422	Allergens
-53150-0422	Grain Proteins
 53150-0422	Dietary Proteins
+53150-0422	Grain Proteins
+53150-0422	Allergens
+53150-0485	Grain Proteins
 53150-0485	Allergens
 53150-0485	Dietary Proteins
-53150-0485	Grain Proteins
-53150-0489	Allergens
 53150-0489	Dietary Proteins
 53150-0489	Grain Proteins
+53150-0489	Allergens
 53150-0697	Calcium
 53270-0053	Virus-specific Hyperimmune Globulins
 53270-0053	Immunoglobulins
-53270-0054	Immunoglobulins
 53270-0054	Virus-specific Hyperimmune Globulins
-53329-0051	Grain Proteins
+53270-0054	Immunoglobulins
 53329-0051	Allergens
 53329-0051	Dietary Proteins
+53329-0051	Grain Proteins
+53329-0053	Grain Proteins
 53329-0053	Allergens
 53329-0053	Dietary Proteins
-53329-0053	Grain Proteins
 53329-0079	Azoles
 53329-0080	Azoles
 53329-0162	Azoles
@@ -7728,9 +7728,9 @@ Key	Value
 53489-0148	Phenothiazines
 53489-0149	Phenothiazines
 53489-0150	Phenothiazines
+53489-0281	Dietary Proteins
 53489-0281	Allergens
 53489-0281	Grain Proteins
-53489-0281	Dietary Proteins
 53489-0368	Dihydropyridines
 53489-0369	Dihydropyridines
 53489-0370	Dihydropyridines
@@ -7743,10 +7743,10 @@ Key	Value
 53489-0649	Benzodiazepines
 53489-0650	Benzodiazepines
 53489-0651	Benzodiazepines
-53499-0172	Plant Proteins
-53499-0172	Dietary Proteins
 53499-0172	Allergens
 53499-0172	Seed Storage Proteins
+53499-0172	Dietary Proteins
+53499-0172	Plant Proteins
 53746-0077	Estrogens, Conjugated (usp)
 53746-0078	Estrogens, Conjugated (usp)
 53746-0140	Nonsteroidal Anti-inflammatory Compounds
@@ -7787,15 +7787,15 @@ Key	Value
 54092-0476	Aminosalicylic Acids
 54092-0700	Alpha-glucosidases
 54458-0881	Calcium
-54458-0883	Ppar Alpha
 54458-0883	Thiazolidinediones
 54458-0883	Ppar Gamma
+54458-0883	Ppar Alpha
+54458-0884	Thiazolidinediones
 54458-0884	Ppar Gamma
 54458-0884	Ppar Alpha
-54458-0884	Thiazolidinediones
+54458-0885	Ppar Gamma
 54458-0885	Thiazolidinediones
 54458-0885	Ppar Alpha
-54458-0885	Ppar Gamma
 54458-0887	Nonsteroidal Anti-inflammatory Compounds
 54458-0895	Dihydropyridines
 54458-0903	Dihydropyridines
@@ -7855,8 +7855,8 @@ Key	Value
 54868-1461	Xanthines
 54868-3169	Tetracyclines
 54879-0007	Sulfonamides
-54973-0603	Bee Venoms
 54973-0603	Allergens
+54973-0603	Bee Venoms
 55056-0406	Progesterone
 55056-1601	Progesterone
 55111-0112	Quinolones
@@ -7950,8 +7950,8 @@ Key	Value
 55154-0913	Thyroxine
 55154-0914	Thyroxine
 55154-6978	Amides
-55390-0007	Dietary Proteins
 55390-0007	Allergens
+55390-0007	Dietary Proteins
 55390-0007	Grain Proteins
 55390-0009	Folic Acid
 55390-0012	Azoles
@@ -7984,8 +7984,8 @@ Key	Value
 55513-0478	Erythropoietin
 55513-0530	Granulocyte Colony-stimulating Factor
 55513-0530	Granulocyte-macrophage Colony-stimulating Factor
-55513-0546	Granulocyte-macrophage Colony-stimulating Factor
 55513-0546	Granulocyte Colony-stimulating Factor
+55513-0546	Granulocyte-macrophage Colony-stimulating Factor
 55513-0823	Erythropoietin
 55513-0924	Granulocyte-macrophage Colony-stimulating Factor
 55513-0924	Granulocyte Colony-stimulating Factor
@@ -8034,37 +8034,37 @@ Key	Value
 57520-0004	Fungal Proteins
 57520-0023	Progesterone
 57520-0024	Allergens
-57520-0024	Plant Proteins
 57520-0024	Dietary Proteins
 57520-0024	Vegetable Proteins
+57520-0024	Plant Proteins
 57520-0025	Catecholamines
-57520-0029	Allergens
 57520-0029	Pollen
+57520-0029	Allergens
+57520-0039	Meat Proteins
 57520-0039	Dietary Proteins
 57520-0039	Allergens
-57520-0039	Meat Proteins
-57520-0046	Fungal Proteins
 57520-0046	Allergens
+57520-0046	Fungal Proteins
 57520-0051	Dietary Proteins
-57520-0051	Allergens
 57520-0051	Vegetable Proteins
-57520-0052	Allergens
+57520-0051	Allergens
 57520-0052	Plant Proteins
+57520-0052	Allergens
 57520-0054	Androstanes
 57520-0064	Dietary Proteins
 57520-0064	Allergens
 57520-0064	Meat Proteins
 57520-0066	Nonsteroidal Anti-inflammatory Compounds
+57520-0067	Dietary Proteins
 57520-0067	Meat Proteins
 57520-0067	Allergens
-57520-0067	Dietary Proteins
 57520-0075	Allergens
 57520-0085	Copper
 57520-0088	Allergens
 57520-0095	Allergens
 57520-0096	Progesterone
-57520-0115	Dietary Proteins
 57520-0115	Allergens
+57520-0115	Dietary Proteins
 57520-0115	Plant Proteins
 57520-0131	Calcium
 57520-0182	Vitamin B 12
@@ -8073,33 +8073,33 @@ Key	Value
 57520-0258	Fungal Proteins
 57520-0258	Allergens
 57520-0259	Allergens
-57520-0259	Plant Proteins
 57520-0259	Seed Storage Proteins
+57520-0259	Plant Proteins
 57520-0299	Plant Proteins
-57520-0299	Allergens
 57520-0299	Dietary Proteins
+57520-0299	Allergens
 57520-0310	Calcium
 57520-0409	Calcium
 57520-0430	Calcium
 57520-0555	Carnitine
-57520-0574	Allergens
 57520-0574	Dietary Proteins
+57520-0574	Allergens
 57520-0574	Plant Proteins
 57520-0575	Allergens
 57520-0575	Bee Venoms
-57520-0597	Allergens
 57520-0597	Bee Venoms
+57520-0597	Allergens
 57520-0713	Allergens
-57520-0777	Allergens
 57520-0777	Bee Venoms
+57520-0777	Allergens
 57520-0781	Calcium
 57520-0998	Adrenocorticotropic Hormone
 57605-0002	Meat Proteins
 57605-0002	Allergens
 57605-0002	Dietary Proteins
-57605-0003	Allergens
 57605-0003	Meat Proteins
 57605-0003	Dietary Proteins
+57605-0003	Allergens
 57664-0055	Dihydropyridines
 57664-0056	Dihydropyridines
 57664-0057	Dihydropyridines
@@ -8111,30 +8111,30 @@ Key	Value
 57664-0146	Phenothiazines
 57664-0185	Phenothiazines
 57664-0195	Thiazides
+57664-0228	Dietary Proteins
 57664-0228	Allergens
 57664-0228	Fruit Proteins
 57664-0228	Plant Proteins
-57664-0228	Dietary Proteins
-57664-0229	Dietary Proteins
 57664-0229	Plant Proteins
-57664-0229	Fruit Proteins
 57664-0229	Allergens
+57664-0229	Dietary Proteins
+57664-0229	Fruit Proteins
+57664-0230	Allergens
 57664-0230	Fruit Proteins
 57664-0230	Plant Proteins
 57664-0230	Dietary Proteins
-57664-0230	Allergens
 57664-0239	Nitrofurans
 57664-0273	Benzodiazepines
 57664-0274	Benzodiazepines
 57664-0275	Benzodiazepines
-57664-0368	Plant Proteins
 57664-0368	Fruit Proteins
-57664-0368	Allergens
 57664-0368	Dietary Proteins
+57664-0368	Plant Proteins
+57664-0368	Allergens
 57664-0369	Dietary Proteins
-57664-0369	Fruit Proteins
 57664-0369	Allergens
 57664-0369	Plant Proteins
+57664-0369	Fruit Proteins
 57664-0391	Nonsteroidal Anti-inflammatory Compounds
 57664-0397	Biguanides
 57664-0398	Sulfonylurea Compounds
@@ -8155,24 +8155,24 @@ Key	Value
 57844-0324	Ppar Alpha
 57844-0691	Ppar Alpha
 57844-0692	Ppar Alpha
-57955-0002	Allergens
 57955-0002	Bee Venoms
-57955-0005	Allergens
+57955-0002	Allergens
 57955-0005	Bee Venoms
-57955-0008	Allergens
-57955-0008	Vegetable Proteins
+57955-0005	Allergens
 57955-0008	Dietary Proteins
-57955-0023	Plant Proteins
+57955-0008	Vegetable Proteins
+57955-0008	Allergens
 57955-0023	Allergens
+57955-0023	Plant Proteins
 57955-0023	Seed Storage Proteins
 57955-0024	Allergens
 57955-0032	Calcium
 57955-0049	Catecholamines
 57955-0052	Allergens
 57955-0052	Bee Venoms
-57955-0062	Plant Proteins
-57955-0062	Seed Storage Proteins
 57955-0062	Allergens
+57955-0062	Seed Storage Proteins
+57955-0062	Plant Proteins
 57955-0064	Calcium
 57955-0065	Nitrates
 57955-0066	Calcium
@@ -8185,25 +8185,25 @@ Key	Value
 57955-0087	Calcium
 57955-0095	Bee Venoms
 57955-0095	Allergens
-57955-0113	Vegetable Proteins
 57955-0113	Allergens
-57955-0113	Dietary Proteins
+57955-0113	Vegetable Proteins
 57955-0113	Plant Proteins
+57955-0113	Dietary Proteins
 57955-0131	Calcium
-57955-0168	Bee Venoms
 57955-0168	Allergens
+57955-0168	Bee Venoms
 57955-0172	Nitrates
-57955-0173	Grain Proteins
 57955-0173	Allergens
 57955-0173	Dietary Proteins
-58118-0031	Grain Proteins
+57955-0173	Grain Proteins
 58118-0031	Allergens
 58118-0031	Dietary Proteins
+58118-0031	Grain Proteins
 58118-0178	Biguanides
-58232-0049	Dietary Proteins
-58232-0049	Allergens
-58232-0049	Grain Proteins
 58232-0049	Plant Proteins
+58232-0049	Dietary Proteins
+58232-0049	Grain Proteins
+58232-0049	Allergens
 58407-0534	Barbiturates
 58468-0030	Thyrotropin
 58468-0040	Alpha-glucosidases
@@ -8247,10 +8247,10 @@ Key	Value
 58980-0336	Sulfonamides
 58980-0340	Sulfonamides
 58980-0402	Allergens
-58980-0409	Glycerol
 58980-0409	Allergens
-58980-0410	Allergens
+58980-0409	Glycerol
 58980-0410	Glycerol
+58980-0410	Allergens
 58980-0501	Vitamin D
 58980-0502	Vitamin D
 58980-0503	Vitamin D
@@ -8271,8 +8271,8 @@ Key	Value
 59088-0864	Allergens
 59088-0924	Azoles
 59088-0997	Amides
-59148-0023	Radioactive Tracers
 59148-0023	Urea
+59148-0023	Radioactive Tracers
 59148-0023	Carbon Radioisotopes
 59528-0317	Nicotinic Acids
 59528-0416	Calcium
@@ -8293,102 +8293,102 @@ Key	Value
 59630-0485	Ppar Alpha
 59630-0574	Biguanides
 59630-0575	Biguanides
-59630-0750	Dietary Proteins
 59630-0750	Fruit Proteins
-59630-0750	Allergens
+59630-0750	Dietary Proteins
 59630-0750	Plant Proteins
-59630-0755	Plant Proteins
+59630-0750	Allergens
 59630-0755	Fruit Proteins
+59630-0755	Plant Proteins
 59630-0755	Allergens
 59630-0755	Dietary Proteins
-59630-0760	Fruit Proteins
-59630-0760	Dietary Proteins
 59630-0760	Allergens
+59630-0760	Dietary Proteins
 59630-0760	Plant Proteins
-59630-0761	Dietary Proteins
-59630-0761	Plant Proteins
+59630-0760	Fruit Proteins
 59630-0761	Allergens
 59630-0761	Fruit Proteins
-59630-0762	Dietary Proteins
-59630-0762	Fruit Proteins
-59630-0762	Allergens
+59630-0761	Plant Proteins
+59630-0761	Dietary Proteins
 59630-0762	Plant Proteins
+59630-0762	Fruit Proteins
+59630-0762	Dietary Proteins
+59630-0762	Allergens
 59630-0777	Nonsteroidal Anti-inflammatory Compounds
 59630-0820	Cephalosporins
 59630-0821	Cephalosporins
 59630-0850	Nonsteroidal Anti-inflammatory Compounds
 59667-0002	Fungal Proteins
 59667-0002	Allergens
-59667-0003	Allergens
+59667-0003	Plant Proteins
 59667-0003	Dietary Proteins
 59667-0003	Seed Storage Proteins
-59667-0003	Plant Proteins
-59667-0010	Seed Storage Proteins
-59667-0010	Allergens
+59667-0003	Allergens
 59667-0010	Plant Proteins
+59667-0010	Allergens
+59667-0010	Seed Storage Proteins
+59667-0011	Plant Proteins
 59667-0011	Allergens
 59667-0011	Seed Storage Proteins
-59667-0011	Plant Proteins
 59667-0012	Allergens
 59667-0012	Seed Storage Proteins
 59667-0012	Plant Proteins
-59667-0013	Allergens
 59667-0013	Plant Proteins
+59667-0013	Allergens
 59667-0013	Seed Storage Proteins
-59667-0014	Seed Storage Proteins
 59667-0014	Plant Proteins
 59667-0014	Allergens
+59667-0014	Seed Storage Proteins
 59667-0015	Plant Proteins
 59667-0015	Allergens
 59667-0015	Seed Storage Proteins
-59667-0016	Allergens
-59667-0016	Seed Storage Proteins
 59667-0016	Plant Proteins
+59667-0016	Seed Storage Proteins
+59667-0016	Allergens
 59667-0017	Seed Storage Proteins
-59667-0017	Plant Proteins
 59667-0017	Allergens
+59667-0017	Plant Proteins
 59667-0018	Seed Storage Proteins
-59667-0018	Allergens
 59667-0018	Plant Proteins
+59667-0018	Allergens
+59667-0019	Seed Storage Proteins
 59667-0019	Plant Proteins
 59667-0019	Allergens
-59667-0019	Seed Storage Proteins
-59667-0020	Plant Proteins
-59667-0020	Allergens
 59667-0020	Seed Storage Proteins
-59667-0021	Allergens
-59667-0021	Seed Storage Proteins
+59667-0020	Allergens
+59667-0020	Plant Proteins
 59667-0021	Plant Proteins
+59667-0021	Seed Storage Proteins
+59667-0021	Allergens
+59667-0022	Plant Proteins
 59667-0022	Seed Storage Proteins
 59667-0022	Allergens
-59667-0022	Plant Proteins
-59667-0023	Seed Storage Proteins
-59667-0023	Plant Proteins
 59667-0023	Allergens
+59667-0023	Plant Proteins
+59667-0023	Seed Storage Proteins
 59667-0024	Pollen
 59667-0024	Allergens
-59667-0025	Pollen
 59667-0025	Allergens
-59667-0026	Pollen
+59667-0025	Pollen
 59667-0026	Allergens
-59667-0027	Allergens
+59667-0026	Pollen
 59667-0027	Pollen
-59667-0028	Allergens
+59667-0027	Allergens
 59667-0028	Pollen
+59667-0028	Allergens
 59667-0029	Pollen
 59667-0029	Allergens
 59667-0030	Allergens
 59667-0030	Pollen
 59667-0031	Pollen
 59667-0031	Allergens
-59667-0032	Pollen
 59667-0032	Allergens
+59667-0032	Pollen
 59667-0033	Allergens
 59667-0033	Pollen
 59667-0034	Allergens
 59667-0034	Pollen
-59667-0035	Pollen
 59667-0035	Allergens
+59667-0035	Pollen
 59667-0036	Allergens
 59667-0036	Pollen
 59667-0037	Pollen
@@ -8399,8 +8399,8 @@ Key	Value
 59667-0039	Allergens
 59667-0040	Allergens
 59667-0040	Pollen
-59667-0041	Pollen
 59667-0041	Allergens
+59667-0041	Pollen
 59667-0042	Allergens
 59667-0042	Pollen
 59667-0043	Allergens
@@ -8420,11 +8420,11 @@ Key	Value
 59667-0057	Allergens
 59667-0058	Allergens
 59667-0059	Allergens
+59667-0060	Plant Proteins
 59667-0060	Allergens
 59667-0060	Seed Storage Proteins
-59667-0060	Plant Proteins
-59667-0061	Plant Proteins
 59667-0061	Allergens
+59667-0061	Plant Proteins
 59667-0061	Seed Storage Proteins
 59667-0062	Seed Storage Proteins
 59667-0062	Plant Proteins
@@ -8435,159 +8435,159 @@ Key	Value
 59667-0064	Seed Storage Proteins
 59667-0064	Plant Proteins
 59667-0064	Allergens
+59667-0065	Plant Proteins
 59667-0065	Allergens
 59667-0065	Seed Storage Proteins
-59667-0065	Plant Proteins
-59667-0066	Plant Proteins
-59667-0066	Seed Storage Proteins
 59667-0066	Allergens
-59667-0067	Seed Storage Proteins
+59667-0066	Seed Storage Proteins
+59667-0066	Plant Proteins
 59667-0067	Plant Proteins
 59667-0067	Allergens
+59667-0067	Seed Storage Proteins
 59667-0068	Allergens
 59667-0068	Plant Proteins
 59667-0068	Seed Storage Proteins
-59667-0069	Plant Proteins
 59667-0069	Seed Storage Proteins
 59667-0069	Allergens
+59667-0069	Plant Proteins
+59667-0070	Allergens
 59667-0070	Plant Proteins
 59667-0070	Seed Storage Proteins
-59667-0070	Allergens
 59667-0071	Plant Proteins
 59667-0071	Allergens
 59667-0071	Seed Storage Proteins
-59667-0072	Plant Proteins
 59667-0072	Allergens
+59667-0072	Plant Proteins
 59667-0072	Seed Storage Proteins
 59667-0073	Seed Storage Proteins
 59667-0073	Allergens
 59667-0073	Plant Proteins
-59667-0075	Allergens
-59667-0075	Seed Storage Proteins
 59667-0075	Plant Proteins
+59667-0075	Seed Storage Proteins
+59667-0075	Allergens
 59667-0076	Allergens
 59667-0076	Seed Storage Proteins
 59667-0076	Plant Proteins
-59667-0077	Seed Storage Proteins
-59667-0077	Plant Proteins
 59667-0077	Allergens
-59667-0078	Allergens
-59667-0078	Plant Proteins
+59667-0077	Plant Proteins
+59667-0077	Seed Storage Proteins
 59667-0078	Seed Storage Proteins
+59667-0078	Plant Proteins
+59667-0078	Allergens
+59667-0079	Seed Storage Proteins
 59667-0079	Plant Proteins
 59667-0079	Allergens
-59667-0079	Seed Storage Proteins
 59667-0080	Allergens
 59667-0080	Plant Proteins
 59667-0080	Seed Storage Proteins
-59667-0081	Allergens
 59667-0081	Seed Storage Proteins
 59667-0081	Plant Proteins
+59667-0081	Allergens
+59667-0082	Seed Storage Proteins
 59667-0082	Plant Proteins
 59667-0082	Allergens
-59667-0082	Seed Storage Proteins
-59667-0083	Allergens
-59667-0083	Plant Proteins
 59667-0083	Seed Storage Proteins
+59667-0083	Plant Proteins
+59667-0083	Allergens
 59667-0084	Seed Storage Proteins
 59667-0084	Allergens
 59667-0084	Plant Proteins
 59667-0085	Seed Storage Proteins
-59667-0085	Allergens
 59667-0085	Plant Proteins
+59667-0085	Allergens
 59667-0086	Plant Proteins
-59667-0086	Allergens
 59667-0086	Seed Storage Proteins
+59667-0086	Allergens
 59667-0087	Seed Storage Proteins
 59667-0087	Allergens
 59667-0087	Plant Proteins
-59667-0088	Seed Storage Proteins
-59667-0088	Plant Proteins
 59667-0088	Allergens
-59667-0089	Allergens
-59667-0089	Plant Proteins
-59667-0089	Food Additives
+59667-0088	Plant Proteins
+59667-0088	Seed Storage Proteins
 59667-0089	Dietary Proteins
-59667-0090	Allergens
+59667-0089	Food Additives
+59667-0089	Plant Proteins
+59667-0089	Allergens
 59667-0090	Food Additives
-59667-0090	Dietary Proteins
 59667-0090	Plant Proteins
-59667-0091	Dietary Proteins
-59667-0091	Plant Proteins
+59667-0090	Dietary Proteins
+59667-0090	Allergens
 59667-0091	Food Additives
+59667-0091	Plant Proteins
+59667-0091	Dietary Proteins
 59667-0091	Allergens
 59667-0092	Allergens
+59667-0092	Food Additives
 59667-0092	Dietary Proteins
 59667-0092	Plant Proteins
-59667-0092	Food Additives
 59667-0093	Food Additives
-59667-0093	Dietary Proteins
-59667-0093	Plant Proteins
 59667-0093	Allergens
+59667-0093	Plant Proteins
+59667-0093	Dietary Proteins
 59667-0094	Plant Proteins
 59667-0094	Allergens
-59667-0094	Dietary Proteins
 59667-0094	Food Additives
+59667-0094	Dietary Proteins
+59667-0095	Plant Proteins
 59667-0095	Dietary Proteins
 59667-0095	Food Additives
-59667-0095	Plant Proteins
 59667-0095	Allergens
 59667-0096	Dietary Proteins
-59667-0096	Plant Proteins
-59667-0096	Food Additives
 59667-0096	Allergens
-59667-0098	Allergens
-59667-0098	Dietary Proteins
-59667-0098	Plant Proteins
+59667-0096	Food Additives
+59667-0096	Plant Proteins
 59667-0098	Food Additives
+59667-0098	Allergens
+59667-0098	Plant Proteins
+59667-0098	Dietary Proteins
+59667-0099	Allergens
 59667-0099	Food Additives
 59667-0099	Dietary Proteins
 59667-0099	Plant Proteins
-59667-0099	Allergens
-59667-0100	Food Additives
 59667-0100	Dietary Proteins
-59667-0100	Allergens
+59667-0100	Food Additives
 59667-0100	Plant Proteins
-59667-0101	Food Additives
+59667-0100	Allergens
+59667-0101	Dietary Proteins
 59667-0101	Allergens
 59667-0101	Plant Proteins
-59667-0101	Dietary Proteins
+59667-0101	Food Additives
 59667-0102	Dietary Proteins
 59667-0102	Food Additives
 59667-0102	Plant Proteins
 59667-0102	Allergens
-59667-0103	Food Additives
 59667-0103	Plant Proteins
-59667-0103	Dietary Proteins
 59667-0103	Allergens
+59667-0103	Dietary Proteins
+59667-0103	Food Additives
+59667-0104	Food Additives
 59667-0104	Dietary Proteins
 59667-0104	Allergens
 59667-0104	Plant Proteins
-59667-0104	Food Additives
-59667-0105	Plant Proteins
+59667-0105	Food Additives
 59667-0105	Dietary Proteins
 59667-0105	Allergens
-59667-0105	Food Additives
+59667-0105	Plant Proteins
 59667-0106	Food Additives
-59667-0106	Plant Proteins
-59667-0106	Allergens
 59667-0106	Dietary Proteins
+59667-0106	Allergens
+59667-0106	Plant Proteins
 59667-0107	Dietary Proteins
 59667-0107	Allergens
 59667-0107	Plant Proteins
 59667-0107	Food Additives
-59667-0108	Dietary Proteins
 59667-0108	Food Additives
+59667-0108	Dietary Proteins
 59667-0108	Allergens
 59667-0108	Plant Proteins
-59667-0109	Food Additives
 59667-0109	Allergens
-59667-0109	Plant Proteins
 59667-0109	Dietary Proteins
-59667-0110	Plant Proteins
+59667-0109	Food Additives
+59667-0109	Plant Proteins
+59667-0110	Food Additives
 59667-0110	Dietary Proteins
 59667-0110	Allergens
-59667-0110	Food Additives
+59667-0110	Plant Proteins
 59676-0278	Non-nucleoside Analog
 59676-0302	Erythropoietin
 59676-0303	Erythropoietin
@@ -8781,18 +8781,18 @@ Key	Value
 60505-3583	Nucleoside Analog
 60505-3603	Thiazides
 60505-3604	Thiazides
-60505-3698	Dietary Proteins
 60505-3698	Grain Proteins
+60505-3698	Dietary Proteins
 60505-3698	Allergens
-60505-3699	Dietary Proteins
 60505-3699	Allergens
 60505-3699	Grain Proteins
+60505-3699	Dietary Proteins
 60505-3723	Allergens
 60505-3723	Grain Proteins
 60505-3723	Dietary Proteins
-60505-3724	Grain Proteins
 60505-3724	Dietary Proteins
 60505-3724	Allergens
+60505-3724	Grain Proteins
 60505-3788	Non-nucleoside Analog
 60505-3806	Thiazides
 60505-3807	Thiazides
@@ -8855,24 +8855,24 @@ Key	Value
 61062-0008	Allergens
 61062-0009	Nicotinic Acids
 61096-0002	Vegetable Proteins
-61096-0002	Allergens
 61096-0002	Dietary Proteins
+61096-0002	Allergens
 61096-0003	Allergens
 61096-0003	Bee Venoms
 61096-0004	Bee Venoms
 61096-0004	Allergens
 61096-0005	Calcium
+61096-0006	Food Additives
 61096-0006	Allergens
 61096-0006	Plant Proteins
-61096-0006	Food Additives
 61096-0006	Dietary Proteins
-61096-0007	Bee Venoms
 61096-0007	Allergens
+61096-0007	Bee Venoms
+61096-0023	Dietary Proteins
 61096-0023	Meat Proteins
 61096-0023	Allergens
-61096-0023	Dietary Proteins
-61096-0031	Allergens
 61096-0031	Bee Venoms
+61096-0031	Allergens
 61269-0210	Ppar Alpha
 61269-0212	Ppar Alpha
 61314-0012	Quinolones
@@ -8911,14 +8911,14 @@ Key	Value
 61570-0048	Aminoglycosides
 61570-0131	Sulfonamides
 61570-0260	Streptogramins
+61657-0003	Allergens
 61657-0003	Plant Proteins
 61657-0003	Dietary Proteins
-61657-0003	Allergens
 61657-0006	Calcium
 61657-0052	Allergens
 61657-0052	Bee Venoms
-61657-0527	Fungal Proteins
 61657-0527	Allergens
+61657-0527	Fungal Proteins
 61703-0309	Vinca Alkaloids
 61703-0339	Platinum-containing Compounds
 61703-0341	Vinca Alkaloids
@@ -8968,8 +8968,8 @@ Key	Value
 62011-0048	Nicotine
 62011-0050	Nicotine
 62011-0070	Nonsteroidal Anti-inflammatory Compounds
-62011-0100	Glycerol
 62011-0100	Allergens
+62011-0100	Glycerol
 62011-0112	Pyrethrins
 62011-0118	Iodine
 62011-0131	Calcium
@@ -9015,29 +9015,29 @@ Key	Value
 62175-0261	Dihydropyridines
 62175-0262	Dihydropyridines
 62175-0310	Fruit Proteins
-62175-0310	Dietary Proteins
-62175-0310	Allergens
 62175-0310	Plant Proteins
+62175-0310	Allergens
+62175-0310	Dietary Proteins
 62175-0311	Plant Proteins
 62175-0311	Dietary Proteins
 62175-0311	Allergens
 62175-0311	Fruit Proteins
-62175-0312	Plant Proteins
-62175-0312	Fruit Proteins
 62175-0312	Allergens
+62175-0312	Fruit Proteins
+62175-0312	Plant Proteins
 62175-0312	Dietary Proteins
-62175-0313	Plant Proteins
 62175-0313	Dietary Proteins
-62175-0313	Allergens
+62175-0313	Plant Proteins
 62175-0313	Fruit Proteins
+62175-0313	Allergens
 62175-0361	Nitrates
 62175-0362	Nitrates
 62175-0890	Calcium
 62175-0891	Calcium
 62175-0892	Calcium
 62175-0897	Calcium
-62185-0005	Grain Proteins
 62185-0005	Dietary Proteins
+62185-0005	Grain Proteins
 62185-0005	Allergens
 62185-0006	Allergens
 62185-0006	Fungal Proteins
@@ -9085,8 +9085,8 @@ Key	Value
 62856-0500	Heparin, Low-molecular-weight
 62856-0601	Retinoids
 62856-0602	Retinoids
-62856-0603	Diphtheria Toxin
 62856-0603	Interleukin-2
+62856-0603	Diphtheria Toxin
 62856-0603	Recombinant Fusion Proteins
 62856-0604	Retinoids
 62856-0750	Heparin, Low-molecular-weight
@@ -9112,21 +9112,21 @@ Key	Value
 63304-0239	Cholecalciferol
 63304-0240	Cholecalciferol
 63304-0241	Cholecalciferol
-63304-0254	Thiazolidinediones
-63304-0254	Ppar Gamma
 63304-0254	Ppar Alpha
-63304-0255	Ppar Gamma
+63304-0254	Ppar Gamma
+63304-0254	Thiazolidinediones
 63304-0255	Thiazolidinediones
+63304-0255	Ppar Gamma
 63304-0255	Ppar Alpha
 63304-0261	Ppar Gamma
 63304-0261	Thiazolidinediones
 63304-0261	Ppar Alpha
 63304-0311	Thiazolidinediones
-63304-0311	Ppar Alpha
 63304-0311	Ppar Gamma
-63304-0312	Thiazolidinediones
+63304-0311	Ppar Alpha
 63304-0312	Ppar Gamma
 63304-0312	Ppar Alpha
+63304-0312	Thiazolidinediones
 63304-0313	Thiazolidinediones
 63304-0313	Ppar Alpha
 63304-0313	Ppar Gamma
@@ -9195,9 +9195,9 @@ Key	Value
 63323-0103	Platinum-containing Compounds
 63323-0105	Nucleoside Analog
 63323-0130	Tetracyclines
-63323-0143	Plant Proteins
 63323-0143	Dietary Proteins
 63323-0143	Allergens
+63323-0143	Plant Proteins
 63323-0143	Fruit Proteins
 63323-0145	Deoxyuridine
 63323-0161	Nonsteroidal Anti-inflammatory Compounds
@@ -9217,8 +9217,8 @@ Key	Value
 63323-0260	Amides
 63323-0261	Progesterone
 63323-0262	Heparin
-63323-0272	Dietary Proteins
 63323-0272	Allergens
+63323-0272	Dietary Proteins
 63323-0272	Grain Proteins
 63323-0276	Heparin
 63323-0278	Vinca Alkaloids
@@ -9293,8 +9293,8 @@ Key	Value
 63323-0461	Catecholamines
 63323-0462	Catecholamines
 63323-0463	Catecholamines
-63323-0464	Amides
 63323-0464	Catecholamines
+63323-0464	Amides
 63323-0465	Catecholamines
 63323-0466	Amides
 63323-0466	Catecholamines
@@ -9326,9 +9326,9 @@ Key	Value
 63323-0491	Amides
 63323-0492	Amides
 63323-0493	Amides
+63323-0494	Dietary Proteins
 63323-0494	Allergens
 63323-0494	Grain Proteins
-63323-0494	Dietary Proteins
 63323-0495	Amides
 63323-0496	Amides
 63323-0497	Amides
@@ -9351,9 +9351,9 @@ Key	Value
 63323-0731	Cholecalciferol
 63323-0883	Anthracyclines
 63323-0915	Heparin
+63459-0177	Plant Proteins
 63459-0177	Dietary Proteins
 63459-0177	Allergens
-63459-0177	Plant Proteins
 63459-0910	Granulocyte Colony-stimulating Factor
 63459-0910	Granulocyte-macrophage Colony-stimulating Factor
 63459-0912	Granulocyte Colony-stimulating Factor
@@ -9455,8 +9455,8 @@ Key	Value
 63824-0763	Allergens
 63824-0764	Allergens
 63824-0780	Allergens
-63824-0781	Allergens
 63824-0781	Glycerol
+63824-0781	Allergens
 63824-0810	Allergens
 63824-0820	Allergens
 63868-0047	Calcium
@@ -9471,9 +9471,9 @@ Key	Value
 63868-0196	Nicotine
 63868-0197	Azoles
 63868-0198	Azoles
+63868-0208	Dietary Proteins
 63868-0208	Plant Proteins
 63868-0208	Allergens
-63868-0208	Dietary Proteins
 63868-0228	Nonsteroidal Anti-inflammatory Compounds
 63868-0230	Iodine
 63868-0354	Nonsteroidal Anti-inflammatory Compounds
@@ -9491,15 +9491,15 @@ Key	Value
 63868-0965	Allergens
 63868-0967	Glycerol
 63868-0967	Allergens
-63868-0969	Glycerol
 63868-0969	Allergens
+63868-0969	Glycerol
 63868-0974	Azoles
 63868-0977	Nonsteroidal Anti-inflammatory Compounds
 63868-0979	Nonsteroidal Anti-inflammatory Compounds
 64011-0124	Lincosamides
 64011-0215	Estradiol Congeners
-64011-0243	Allergens
 64011-0243	Dietary Proteins
+64011-0243	Allergens
 64011-0243	Grain Proteins
 64125-0130	Thiazides
 64125-0131	Thiazides
@@ -9509,9 +9509,9 @@ Key	Value
 64249-0002	Calcium
 64249-0003	Bee Venoms
 64249-0003	Allergens
+64249-0004	Food Additives
 64249-0004	Allergens
 64249-0004	Plant Proteins
-64249-0004	Food Additives
 64249-0004	Dietary Proteins
 64376-0128	Nucleoside Analog
 64376-0129	Nucleoside Analog
@@ -9544,16 +9544,16 @@ Key	Value
 64455-0192	Nitrates
 64455-0993	Nucleoside Analog
 64455-0994	Nucleoside Analog
-64578-0056	Allergens
-64578-0056	Dietary Proteins
 64578-0056	Fruit Proteins
+64578-0056	Dietary Proteins
+64578-0056	Allergens
 64578-0062	Calcium
 64578-0067	Nonsteroidal Anti-inflammatory Compounds
-64578-0071	Fungal Proteins
 64578-0071	Allergens
+64578-0071	Fungal Proteins
+64578-0078	Plant Proteins
 64578-0078	Allergens
 64578-0078	Dietary Proteins
-64578-0078	Plant Proteins
 64578-0087	Calcium
 64578-0093	Allergens
 64661-0711	Calcium
@@ -9615,49 +9615,49 @@ Key	Value
 64720-0335	Tetracyclines
 64725-0008	Pyridines
 64764-0121	Thiazolidinediones
-64764-0121	Ppar Gamma
 64764-0121	Ppar Alpha
-64764-0123	Ppar Alpha
+64764-0121	Ppar Gamma
 64764-0123	Thiazolidinediones
 64764-0123	Ppar Gamma
+64764-0123	Ppar Alpha
+64764-0124	Ppar Gamma
 64764-0124	Thiazolidinediones
 64764-0124	Ppar Alpha
-64764-0124	Ppar Gamma
-64764-0125	Dietary Proteins
 64764-0125	Allergens
+64764-0125	Dietary Proteins
 64764-0125	Grain Proteins
-64764-0151	Ppar Gamma
 64764-0151	Ppar Alpha
+64764-0151	Ppar Gamma
 64764-0151	Thiazolidinediones
 64764-0155	Biguanides
 64764-0158	Biguanides
+64764-0250	Dietary Proteins
 64764-0250	Grain Proteins
 64764-0250	Allergens
-64764-0250	Dietary Proteins
-64764-0251	Thiazolidinediones
-64764-0251	Ppar Alpha
 64764-0251	Ppar Gamma
-64764-0253	Ppar Gamma
+64764-0251	Ppar Alpha
+64764-0251	Thiazolidinediones
 64764-0253	Thiazolidinediones
 64764-0253	Ppar Alpha
-64764-0254	Ppar Gamma
+64764-0253	Ppar Gamma
 64764-0254	Ppar Alpha
+64764-0254	Ppar Gamma
 64764-0254	Thiazolidinediones
-64764-0301	Ppar Gamma
 64764-0301	Ppar Alpha
 64764-0301	Thiazolidinediones
+64764-0301	Ppar Gamma
 64764-0302	Sulfonylurea Compounds
 64764-0304	Sulfonylurea Compounds
 64764-0310	Biguanides
 64764-0335	Biguanides
 64764-0337	Biguanides
 64764-0451	Ppar Alpha
-64764-0451	Thiazolidinediones
 64764-0451	Ppar Gamma
+64764-0451	Thiazolidinediones
 64764-0510	Biguanides
-64764-0625	Grain Proteins
-64764-0625	Dietary Proteins
 64764-0625	Allergens
+64764-0625	Dietary Proteins
+64764-0625	Grain Proteins
 64950-0230	Polyenes
 64980-0130	Carnitine
 64980-0139	Bile Acids and Salts
@@ -9681,88 +9681,88 @@ Key	Value
 64980-0511	Lincosamides
 65044-0537	Pollen
 65044-0537	Allergens
-65044-0538	Pollen
 65044-0538	Allergens
+65044-0538	Pollen
 65044-0545	Pollen
 65044-0545	Allergens
-65044-0546	Allergens
 65044-0546	Pollen
+65044-0546	Allergens
 65044-0547	Pollen
 65044-0547	Allergens
 65044-0548	Pollen
 65044-0548	Allergens
-65044-0611	Allergens
 65044-0611	Pollen
-65044-0612	Pollen
+65044-0611	Allergens
 65044-0612	Allergens
-65044-0613	Allergens
+65044-0612	Pollen
 65044-0613	Pollen
+65044-0613	Allergens
 65044-0614	Pollen
 65044-0614	Allergens
 65044-0718	Pollen
 65044-0718	Allergens
 65044-0719	Allergens
 65044-0719	Pollen
-65044-0720	Allergens
 65044-0720	Pollen
+65044-0720	Allergens
 65044-0721	Pollen
 65044-0721	Allergens
 65044-0777	Allergens
 65044-0777	Pollen
 65044-0778	Allergens
 65044-0778	Pollen
-65044-0779	Pollen
 65044-0779	Allergens
-65044-0780	Allergens
+65044-0779	Pollen
 65044-0780	Pollen
-65044-0787	Pollen
+65044-0780	Allergens
 65044-0787	Allergens
-65044-0788	Allergens
+65044-0787	Pollen
 65044-0788	Pollen
+65044-0788	Allergens
 65044-0789	Allergens
 65044-0789	Pollen
-65044-0790	Allergens
 65044-0790	Pollen
-65044-0825	Allergens
+65044-0790	Allergens
 65044-0825	Pollen
+65044-0825	Allergens
 65044-0826	Pollen
 65044-0826	Allergens
-65044-0827	Allergens
 65044-0827	Pollen
+65044-0827	Allergens
 65044-0828	Pollen
 65044-0828	Allergens
 65044-0831	Pollen
 65044-0831	Allergens
-65044-0832	Allergens
 65044-0832	Pollen
+65044-0832	Allergens
 65044-0833	Pollen
 65044-0833	Allergens
-65044-0834	Allergens
 65044-0834	Pollen
-65044-0841	Allergens
+65044-0834	Allergens
 65044-0841	Pollen
-65044-0842	Allergens
+65044-0841	Allergens
 65044-0842	Pollen
-65044-0843	Allergens
+65044-0842	Allergens
 65044-0843	Pollen
+65044-0843	Allergens
 65044-0844	Pollen
 65044-0844	Allergens
 65044-0845	Pollen
 65044-0845	Allergens
-65044-0846	Pollen
 65044-0846	Allergens
-65044-0847	Pollen
+65044-0846	Pollen
 65044-0847	Allergens
-65044-0848	Pollen
+65044-0847	Pollen
 65044-0848	Allergens
-65044-0850	Allergens
+65044-0848	Pollen
 65044-0850	Pollen
+65044-0850	Allergens
 65044-0851	Allergens
 65044-0851	Pollen
-65044-0852	Pollen
 65044-0852	Allergens
-65044-0853	Pollen
+65044-0852	Pollen
 65044-0853	Allergens
+65044-0853	Pollen
 65162-0174	Biguanides
 65162-0175	Biguanides
 65162-0177	Biguanides
@@ -9804,8 +9804,8 @@ Key	Value
 65293-0416	Benzodiazepines
 65293-0417	Benzodiazepines
 65483-0116	Interleukin-2
-65483-0590	Nucleoside Analog
 65483-0590	Purines
+65483-0590	Nucleoside Analog
 65517-0005	Allergens
 65517-0008	Iodine
 65517-0009	Iodine
@@ -9813,10 +9813,10 @@ Key	Value
 65649-0101	Aminosalicylic Acids
 65649-0102	Aminosalicylic Acids
 65649-0103	Aminosalicylic Acids
-65649-0231	Purines
 65649-0231	Nucleoside Analog
-65649-0241	Purines
+65649-0231	Purines
 65649-0241	Nucleoside Analog
+65649-0241	Purines
 65649-0301	Rifamycins
 65649-0303	Rifamycins
 65649-0311	Thiazides
@@ -9897,14 +9897,14 @@ Key	Value
 65862-0457	Benzodiazepines
 65862-0496	Sulfonamides
 65862-0512	Ppar Gamma
-65862-0512	Ppar Alpha
 65862-0512	Thiazolidinediones
+65862-0512	Ppar Alpha
 65862-0513	Thiazolidinediones
 65862-0513	Ppar Gamma
 65862-0513	Ppar Alpha
-65862-0514	Ppar Alpha
 65862-0514	Thiazolidinediones
 65862-0514	Ppar Gamma
+65862-0514	Ppar Alpha
 65862-0515	Nonsteroidal Anti-inflammatory Compounds
 65862-0516	Nonsteroidal Anti-inflammatory Compounds
 65862-0520	Nonsteroidal Anti-inflammatory Compounds
@@ -9936,19 +9936,19 @@ Key	Value
 65862-0587	Dihydropyridines
 65862-0596	Lincosamides
 65862-0597	Nucleoside Analog
+65862-0599	Grain Proteins
 65862-0599	Dietary Proteins
 65862-0599	Allergens
-65862-0599	Grain Proteins
-65862-0600	Grain Proteins
 65862-0600	Dietary Proteins
 65862-0600	Allergens
+65862-0600	Grain Proteins
 65862-0603	Quinolones
 65862-0625	Allergens
 65862-0625	Dietary Proteins
 65862-0625	Grain Proteins
 65862-0626	Grain Proteins
-65862-0626	Allergens
 65862-0626	Dietary Proteins
+65862-0626	Allergens
 65862-0629	Thiazides
 65862-0630	Thiazides
 65862-0673	Dihydropyridines
@@ -9981,18 +9981,18 @@ Key	Value
 66530-0256	Retinoids
 66530-0257	Retinoids
 66579-0008	Allergens
-66579-0009	Seed Storage Proteins
-66579-0009	Allergens
-66579-0009	Plant Proteins
 66579-0009	Dietary Proteins
+66579-0009	Seed Storage Proteins
+66579-0009	Plant Proteins
+66579-0009	Allergens
 66579-0013	Allergens
 66579-0023	Dietary Proteins
 66579-0023	Allergens
 66579-0023	Plant Proteins
 66579-0049	Nitrates
-66579-0056	Seed Storage Proteins
-66579-0056	Plant Proteins
 66579-0056	Allergens
+66579-0056	Plant Proteins
+66579-0056	Seed Storage Proteins
 66579-0064	Allergens
 66579-0069	Calcium
 66582-0320	Calcium
@@ -10084,13 +10084,13 @@ Key	Value
 67386-0820	Catecholamines
 67386-0821	Catecholamines
 67386-0822	Catecholamines
-67405-0100	Dietary Proteins
 67405-0100	Allergens
+67405-0100	Dietary Proteins
 67405-0100	Grain Proteins
 67405-0110	Nitroimidazoles
+67405-0275	Allergens
 67405-0275	Grain Proteins
 67405-0275	Dietary Proteins
-67405-0275	Allergens
 67405-0300	Grain Proteins
 67405-0300	Allergens
 67405-0300	Dietary Proteins
@@ -10116,12 +10116,12 @@ Key	Value
 67457-0342	Glycopeptides
 67457-0357	Anthracyclines
 67457-0358	Anthracyclines
-67457-0381	Allergens
 67457-0381	Dietary Proteins
+67457-0381	Allergens
 67457-0381	Grain Proteins
-67457-0382	Allergens
-67457-0382	Grain Proteins
 67457-0382	Dietary Proteins
+67457-0382	Grain Proteins
+67457-0382	Allergens
 67457-0393	Anthracyclines
 67457-0394	Anthracyclines
 67457-0395	Anthracyclines
@@ -10166,17 +10166,17 @@ Key	Value
 67618-0151	Iodine
 67618-0152	Iodine
 67618-0153	Iodine
-67767-0200	Dietary Proteins
-67767-0200	Allergens
-67767-0200	Fruit Proteins
 67767-0200	Plant Proteins
-67767-0201	Dietary Proteins
-67767-0201	Fruit Proteins
+67767-0200	Fruit Proteins
+67767-0200	Allergens
+67767-0200	Dietary Proteins
 67767-0201	Allergens
 67767-0201	Plant Proteins
-67767-0202	Plant Proteins
+67767-0201	Fruit Proteins
+67767-0201	Dietary Proteins
 67767-0202	Allergens
 67767-0202	Fruit Proteins
+67767-0202	Plant Proteins
 67767-0202	Dietary Proteins
 67877-0119	Nonsteroidal Anti-inflammatory Compounds
 67877-0120	Nonsteroidal Anti-inflammatory Compounds
@@ -10281,8 +10281,8 @@ Key	Value
 68084-0215	Nucleoside Analog
 68084-0225	Pyridines
 68084-0226	Pyridines
-68084-0229	Purines
 68084-0229	Nucleoside Analog
+68084-0229	Purines
 68084-0243	Lincosamides
 68084-0244	Lincosamides
 68084-0258	Dihydropyridines
@@ -10368,23 +10368,23 @@ Key	Value
 68084-0604	Vasopressins
 68084-0606	Vasopressins
 68084-0607	Phenothiazines
+68084-0613	Ppar Gamma
 68084-0613	Thiazolidinediones
 68084-0613	Ppar Alpha
-68084-0613	Ppar Gamma
 68084-0614	Ppar Alpha
-68084-0614	Ppar Gamma
 68084-0614	Thiazolidinediones
+68084-0614	Ppar Gamma
 68084-0615	Thiazolidinediones
 68084-0615	Ppar Gamma
 68084-0615	Ppar Alpha
-68084-0629	Ppar Alpha
 68084-0629	Thiazolidinediones
+68084-0629	Ppar Alpha
 68084-0629	Ppar Gamma
 68084-0630	Thiazolidinediones
-68084-0630	Ppar Alpha
 68084-0630	Ppar Gamma
-68084-0631	Thiazolidinediones
+68084-0630	Ppar Alpha
 68084-0631	Ppar Alpha
+68084-0631	Thiazolidinediones
 68084-0631	Ppar Gamma
 68084-0633	Nucleoside Analog
 68084-0634	Nucleoside Analog
@@ -10392,9 +10392,9 @@ Key	Value
 68084-0636	Ppar Alpha
 68084-0642	Azoles
 68084-0647	Benzodiazepines
+68084-0649	Thiazolidinediones
 68084-0649	Ppar Alpha
 68084-0649	Ppar Gamma
-68084-0649	Thiazolidinediones
 68084-0651	Macrolides
 68084-0652	Thiazolidinediones
 68084-0652	Ppar Gamma
@@ -10424,30 +10424,30 @@ Key	Value
 68084-0772	Nonsteroidal Anti-inflammatory Compounds
 68084-0788	Sulfonylurea Compounds
 68084-0799	Aminosalicylic Acids
-68084-0805	Allergens
 68084-0805	Fruit Proteins
-68084-0805	Plant Proteins
+68084-0805	Allergens
 68084-0805	Dietary Proteins
+68084-0805	Plant Proteins
 68084-0807	Sulfonylurea Compounds
+68084-0816	Allergens
 68084-0816	Fruit Proteins
 68084-0816	Dietary Proteins
-68084-0816	Allergens
 68084-0816	Plant Proteins
-68084-0823	Fruit Proteins
-68084-0823	Allergens
 68084-0823	Dietary Proteins
 68084-0823	Plant Proteins
-68084-0829	Dietary Proteins
-68084-0829	Fruit Proteins
-68084-0829	Allergens
+68084-0823	Allergens
+68084-0823	Fruit Proteins
 68084-0829	Plant Proteins
-68084-0833	Fruit Proteins
+68084-0829	Allergens
+68084-0829	Fruit Proteins
+68084-0829	Dietary Proteins
 68084-0833	Allergens
 68084-0833	Dietary Proteins
 68084-0833	Plant Proteins
+68084-0833	Fruit Proteins
 68084-0860	Fruit Proteins
-68084-0860	Plant Proteins
 68084-0860	Allergens
+68084-0860	Plant Proteins
 68084-0860	Dietary Proteins
 68094-0171	Organometallic Compounds
 68094-0250	Progesterone Congeners
@@ -10557,8 +10557,8 @@ Key	Value
 68308-0710	Tetracyclines
 68308-0715	Tetracyclines
 68308-0775	Tetracyclines
-68382-0003	Purines
 68382-0003	Nucleoside Analog
+68382-0003	Purines
 68382-0015	Quinolones
 68382-0016	Quinolones
 68382-0017	Quinolones
@@ -10616,12 +10616,12 @@ Key	Value
 68462-0188	Nonsteroidal Anti-inflammatory Compounds
 68462-0189	Nonsteroidal Anti-inflammatory Compounds
 68462-0190	Nonsteroidal Anti-inflammatory Compounds
-68462-0192	Allergens
 68462-0192	Dietary Proteins
+68462-0192	Allergens
 68462-0192	Grain Proteins
-68462-0225	Grain Proteins
-68462-0225	Dietary Proteins
 68462-0225	Allergens
+68462-0225	Dietary Proteins
+68462-0225	Grain Proteins
 68462-0233	Dihydropyridines
 68462-0234	Dihydropyridines
 68462-0235	Dihydropyridines
@@ -10635,23 +10635,23 @@ Key	Value
 68462-0359	Nonsteroidal Anti-inflammatory Compounds
 68462-0380	Xanthines
 68462-0381	Benzothiazoles
-68462-0385	Dietary Proteins
 68462-0385	Allergens
 68462-0385	Grain Proteins
+68462-0385	Dietary Proteins
 68462-0403	Retinoids
 68462-0406	Nonsteroidal Anti-inflammatory Compounds
 68462-0435	Calcium
+68462-0465	Allergens
 68462-0465	Dietary Proteins
 68462-0465	Grain Proteins
-68462-0465	Allergens
 68462-0466	Grain Proteins
-68462-0466	Dietary Proteins
 68462-0466	Allergens
+68462-0466	Dietary Proteins
 68462-0467	Grain Proteins
 68462-0467	Dietary Proteins
 68462-0467	Allergens
-68462-0468	Grain Proteins
 68462-0468	Allergens
+68462-0468	Grain Proteins
 68462-0468	Dietary Proteins
 68462-0473	Bile Acids and Salts
 68462-0474	Bile Acids and Salts
@@ -10708,21 +10708,21 @@ Key	Value
 68788-2029	Benzodiazepines
 68968-0514	Progesterone Congeners
 68968-0525	Progesterone Congeners
-68968-5552	Plant Proteins
-68968-5552	Fruit Proteins
 68968-5552	Allergens
+68968-5552	Fruit Proteins
+68968-5552	Plant Proteins
 68968-5552	Dietary Proteins
-68968-5553	Dietary Proteins
-68968-5553	Allergens
-68968-5553	Plant Proteins
 68968-5553	Fruit Proteins
+68968-5553	Plant Proteins
+68968-5553	Allergens
+68968-5553	Dietary Proteins
+68968-5554	Dietary Proteins
 68968-5554	Fruit Proteins
 68968-5554	Allergens
-68968-5554	Dietary Proteins
 68968-5554	Plant Proteins
-68968-5555	Allergens
-68968-5555	Fruit Proteins
 68968-5555	Plant Proteins
+68968-5555	Fruit Proteins
+68968-5555	Allergens
 68968-5555	Dietary Proteins
 68968-6610	Estradiol Congeners
 68968-6637	Estradiol Congeners
@@ -10735,19 +10735,19 @@ Key	Value
 69097-0154	Nucleoside Analog
 69097-0158	Nonsteroidal Anti-inflammatory Compounds
 69097-0159	Nonsteroidal Anti-inflammatory Compounds
-69152-0007	Allergens
 69152-0007	Seed Storage Proteins
 69152-0007	Plant Proteins
-69152-0024	Seed Storage Proteins
-69152-0024	Plant Proteins
+69152-0007	Allergens
 69152-0024	Allergens
-69152-0031	Allergens
+69152-0024	Plant Proteins
+69152-0024	Seed Storage Proteins
 69152-0031	Vegetable Proteins
+69152-0031	Allergens
 69152-0031	Dietary Proteins
-69152-0065	Plant Proteins
-69152-0065	Allergens
 69152-0065	Vegetable Proteins
+69152-0065	Allergens
 69152-0065	Dietary Proteins
+69152-0065	Plant Proteins
 69152-0113	Calcium
 69238-1076	Purines
 69238-1076	Nucleoside Analog

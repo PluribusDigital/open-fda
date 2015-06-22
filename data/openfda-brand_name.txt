@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	name
 0002-1200	Amyvid
 0002-1407	Quinidine Gluconate
 0002-3227	Strattera
@@ -2383,8 +2383,8 @@ Key	Value
 0113-0081	Good Sense Miconazole 3
 0113-0083	Good Sense Ibuprofen Cold and Sinus
 0113-0084	Good Sense First Aid Antibiotic
-0113-0090	Good Sense Daytime Night Time
 0113-0090	Good Sense Daytime Nighttime
+0113-0090	Good Sense Daytime Night Time
 0113-0094	Good Sense Nasal Decongestant PE
 0113-0096	Good Sense flu and Severe Cold and Cough Daytime
 0113-0105	Good Sense Pain Relief Childrens
@@ -4602,8 +4602,8 @@ Key	Value
 0363-0132	Pain and Fever Infants
 0363-0168	All Day Pain Relief
 0363-0169	All Day Pain Relief
-0363-0173	Complete Lice Treatment kit
 0363-0173	Stop Lice Complete Lice Treatment
+0363-0173	Complete Lice Treatment kit
 0363-0178	Wal-act
 0363-0224	Calamine
 0363-0281	Pain and Fever Childrens
@@ -11474,8 +11474,8 @@ Key	Value
 36800-0083	Topcare Ibuprofen Cold and Sinus
 36800-0086	Topcare Laxative
 36800-0089	Topcare Bacitracin Zinc
-36800-0090	Topcare day Time Nite Time
 36800-0090	Topcare Daytime Nitetime Multi Symptom Relief
+36800-0090	Topcare day Time Nite Time
 36800-0091	Body
 36800-0092	Topcare Childrens Loratadine
 36800-0094	Topcare Nasal Decongestant PE
@@ -11713,8 +11713,8 @@ Key	Value
 36800-0550	Gas Relief Extra Strength
 36800-0552	Topcare Cough DM
 36800-0557	Topcare Childrens Pain and Fever
-36800-0567	Topcare Day Time Nite Time Cold and Flu Relief
 36800-0567	Topcare day Time Nite Time Cold and flu Relief
+36800-0567	Topcare Day Time Nite Time Cold and Flu Relief
 36800-0571	Topcare Fexofenadine Hydrochloride
 36800-0578	Topcare Tussin dm Sugar Free Cough and Chest Congestion
 36800-0579	Topcare Fever Reducer
@@ -14087,20 +14087,20 @@ Key	Value
 49221-0025	Medical AIR
 49230-0188	Delflex
 49230-0188	Delflex Neutral pH
-49230-0191	Delflex
 49230-0191	Delflex Neutral pH
+49230-0191	Delflex
 49230-0194	Delflex
 49230-0194	Delflex Neutral pH
 49230-0197	Delflex
 49230-0197	Delflex Neutral pH
-49230-0200	Delflex
 49230-0200	Delflex Neutral pH
+49230-0200	Delflex
 49230-0203	Delflex Neutral pH
 49230-0203	Delflex
 49230-0206	Delflex Neutral pH
 49230-0206	Delflex
-49230-0209	Delflex Neutral pH
 49230-0209	Delflex
+49230-0209	Delflex Neutral pH
 49230-0212	Delflex
 49230-0212	Delflex Neutral pH
 49230-0300	Sodium Chloride
@@ -20690,8 +20690,8 @@ Key	Value
 63323-0493	Xylocaine MPF
 63323-0494	Valproate Sodium
 63323-0495	Xylocaine
-63323-0496	Xylocaine
 63323-0496	Xylocaine MPF
+63323-0496	Xylocaine
 63323-0497	Xylocaine
 63323-0498	Xylocaine
 63323-0506	Dexamethasone Sodium Phosphate
@@ -21083,8 +21083,8 @@ Key	Value
 63824-0110	Delsym Cough Plus Cold Night Time
 63824-0112	Delsym Cough Plus Cold Day Time
 63824-0122	Mucinex Nasal Moisture Smart
-63824-0123	Mucinex Nasal Full Force
 63824-0123	Mucinex Full Force
+63824-0123	Mucinex Nasal Full Force
 63824-0124	Mucinex Moisture Smart
 63824-0125	Mucinex Full Force
 63824-0126	Mucinex Sinus-max Moisture Smart
@@ -24770,8 +24770,8 @@ Key	Value
 76439-0141	Losartan Potassium
 76439-0142	Losartan Potassium
 76439-0201	Virt-vite Forte
-76439-0205	L-methyl-b6-b12
 76439-0205	L-methylfolate Calcium
+76439-0205	L-methyl-b6-b12
 76439-0206	L-methylfolate Calcium
 76439-0207	L-methyl MC
 76439-0208	L-methyl MC NAC

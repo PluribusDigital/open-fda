@@ -10,32 +10,44 @@ class ExtractOpenFdaFeatures():
         self.source = AcquireOpenFda()
         self.whiteList = BuildNdcWhiteList()
         self.features = [{'feature':Feature('openfda.manufacturer_name'),
+                          'column': 'name',
                           'transform': []},
                          {'feature':Feature('openfda.pharm_class_cs'),
+                          'column': 'class_name',
                           'transform': [self.whiteList.title,
                                         self.trimPharmClassCs]},
                          {'feature':Feature('openfda.pharm_class_epc'),
+                          'column': 'class_name',
                           'transform': [self.whiteList.title, 
                                         self.trimPharmClass3]},
                          {'feature':Feature('openfda.pharm_class_moa'),
+                          'column': 'class_name',
                           'transform': [self.whiteList.title,
                                         self.trimPharmClass3]},
                          {'feature':Feature('openfda.pharm_class_pe'),
+                          'column': 'class_name',
                           'transform': [self.whiteList.title,
                                         self.trimPharmClass2]},
                          {'feature':Feature('openfda.product_type'),
-                          'transform': []},
+                          'column': 'type_name',
+                          'transform': [self.titleCaseIgnoreSmall]},
                          {'feature':Feature('openfda.route'),
-                          'transform': []},
+                          'column': 'route',
+                          'transform': [self.whiteList.title]},
                          {'feature':Feature('openfda.substance_name'),
+                          'column': 'name',
                           'transform': [self.titleCaseIgnoreSmall]},
                          {'feature':Feature('openfda.brand_name'),
+                          'column': 'name',
                           'transform': [self.titleCaseIgnoreSmall]},
                          {'feature':Feature('openfda.generic_name'),
+                          'column': 'name',
                           'transform': [self.titleCaseIgnoreSmall]},
                          {'feature':Feature('active_ingredient'),
+                          'column': 'text',
                           'transform': []},
                          {'feature':Feature('inactive_ingredient'),
+                          'column': 'text',
                           'transform': []}
                         ]
 
@@ -80,7 +92,7 @@ class ExtractOpenFdaFeatures():
             fileName = io.relativeToAbsolute('../../data/'+baseName+'.txt')
 
             with open(fileName, 'w', encoding='utf-8') as f:
-                print('Key\tValue', file=f)
+                print('product_ndc', op['column'], sep='\t', file=f)
                 for pair in sorted(feature.data, key=itemgetter(0)):
                     value = pair[1]
                     for fn in op['transform']:

@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	name
 0002-1200	Eli Lilly and Company
 0002-1407	Eli Lilly and Company
 0002-3227	Eli Lilly and Company
@@ -5607,8 +5607,8 @@ Key	Value
 0409-2585	Hospira, Inc
 0409-2587	Hospira, Inc.
 0409-2596	Hospira, Inc.
-0409-2687	Hospira, Inc.
 0409-2687	Hospira, Inc
+0409-2687	Hospira, Inc.
 0409-2689	Hospira, Inc
 0409-2720	Hospira, Inc.
 0409-2721	Hospira, Inc.
@@ -5616,8 +5616,8 @@ Key	Value
 0409-2775	Hospira, Inc.
 0409-2776	Hospira, Inc.
 0409-2987	Hospira, Inc
-0409-2988	Hospira, Inc.
 0409-2988	Hospira, Inc
+0409-2988	Hospira, Inc.
 0409-2998	Hospira, Inc
 0409-2998	Hospira, Inc.
 0409-3024	Hospira, Inc.
@@ -7785,10 +7785,10 @@ Key	Value
 0703-5145	Teva Parenteral Medicines, Inc.
 0703-5233	Teva Parenteral Medicines, Inc.
 0703-5653	Teva Parenteral Medicines, Inc
-0703-5656	Teva Parenteral Medicines, Inc.
 0703-5656	Teva Parenteral Medicines, Inc
-0703-5657	Teva Parenteral Medicines, Inc.
+0703-5656	Teva Parenteral Medicines, Inc.
 0703-5657	Teva Parenteral Medicines, Inc
+0703-5657	Teva Parenteral Medicines, Inc.
 0703-5747	Teva Parenteral Medicines, Inc.
 0703-5748	Teva Parenteral Medicines, Inc.
 0703-5775	Teva Parenteral Medicines, Inc.
@@ -8486,8 +8486,8 @@ Key	Value
 0884-6600	Pedinol Pharmacal, Inc.
 0884-7308	Pedinol Pharmacal, Inc.
 0884-8211	Pedinol Pharmacal, Inc.
-0884-8411	Pedinol Pharmacal Inc.
 0884-8411	Pedinol Pharmacal, Inc.
+0884-8411	Pedinol Pharmacal Inc.
 0904-0004	MAJOR Pharmaceuticals Inc.
 0904-0005	MAJOR Pharmaceuticals Inc.
 0904-0012	Major Pharmaceuticals
@@ -9913,8 +9913,8 @@ Key	Value
 16252-0598	Cobalt Laboratories
 16252-0599	Cobalt Laboratories
 16252-0599	Cobalt Laboratories Inc.
-16252-0601	Cobalt Laboratories
 16252-0601	Cobalt Laboratories Inc.
+16252-0601	Cobalt Laboratories
 16477-0106	Laser Pharmaceuticals, LLC
 16477-0121	Laser Pharmaceuticals, LLC
 16477-0136	Laser Pharmaceuticals LLC
@@ -20483,8 +20483,8 @@ Key	Value
 63323-0137	Fresenius Kabi USA, LLC
 63323-0139	APP Pharmaceuticals, LLC
 63323-0140	Fresenius Kabi USA, LLC
-63323-0142	Fresenius Kabi USA, LLC
 63323-0142	APP Pharmaceuticals, LLC
+63323-0142	Fresenius Kabi USA, LLC
 63323-0143	Fresenius Kabi USA, LLC
 63323-0145	APP Pharmaceuticals, LLC
 63323-0147	Fresenius Kabi USA, LLC
@@ -20493,8 +20493,8 @@ Key	Value
 63323-0165	Fresenius Kabi USA, LLC
 63323-0170	Fresenius Kabi USA, LLC
 63323-0172	APP Pharmaceuticals, LLC
-63323-0173	APP Pharmaceuticals, LLC
 63323-0173	Fresenius Kabi USA, LLC
+63323-0173	APP Pharmaceuticals, LLC
 63323-0174	APP Pharmaceuticals, LLC
 63323-0180	APP Pharmaceuticals, LLC
 63323-0184	APP Pharmaceuticals, LLC
@@ -20524,8 +20524,8 @@ Key	Value
 63323-0265	Fresenius Kabi USA, LLC
 63323-0268	APP Pharmaceuticals, LLC
 63323-0269	Fresenius Kabi USA, LLC
-63323-0270	APP Pharmaceuticals, LLC
 63323-0270	Fresenius Kabi USA, LLC
+63323-0270	APP Pharmaceuticals, LLC
 63323-0272	APP Pharmaceuticals, LLC
 63323-0273	APP Pharmaceuticals, LLC
 63323-0276	Fresenius Kabi USA, LLC
@@ -20557,8 +20557,8 @@ Key	Value
 63323-0309	APP Pharmaceuticals, LLC
 63323-0311	APP Pharmaceuticals, LLC
 63323-0314	APP Pharmaceuticals, LLC
-63323-0315	Fresenius Kabi USA, LLC
 63323-0315	APP Pharmaceuticals, LLC
+63323-0315	Fresenius Kabi USA, LLC
 63323-0317	Fresenius Kabi USA, LLC
 63323-0318	Fresenius Kabi USA, LLC
 63323-0319	Fresenius Kabi USA, LLC
@@ -20660,18 +20660,18 @@ Key	Value
 63323-0489	APP Pharmaceuticals, LLC
 63323-0490	APP Pharmaceuticals, LLC
 63323-0491	APP Pharmaceuticals, LLC
-63323-0492	APP Pharmaceuticals, LLC
 63323-0492	Fresenius Kabi USA, LLC
+63323-0492	APP Pharmaceuticals, LLC
 63323-0493	Fresenius Kabi USA, LLC
 63323-0494	Fresenius Kabi USA, LLC
 63323-0495	APP Pharmaceuticals, LLC
-63323-0496	Fresenius Kabi USA, LLC
 63323-0496	APP Pharmaceuticals, LLC
+63323-0496	Fresenius Kabi USA, LLC
 63323-0497	APP Pharmaceuticals, LLC
 63323-0498	APP Pharmaceuticals, LLC
 63323-0506	APP Pharmaceuticals, LLC
-63323-0507	APP Pharmaceuticals, LLC
 63323-0507	Fresenius Kabi USA, LLC
+63323-0507	APP Pharmaceuticals, LLC
 63323-0508	Fresenius Kabi USA, LLC
 63323-0508	APP Pharmaceuticals, LLC
 63323-0513	APP Pharmaceuticals, LLC
@@ -20696,8 +20696,8 @@ Key	Value
 63323-0650	APP Pharmaceuticals, LLC
 63323-0651	Fresenius Kabi USA, LLC
 63323-0652	Fresenius Kabi USA, LLC
-63323-0658	Fresenius Kabi USA, LLC
 63323-0658	APP Pharmaceuticals, LLC
+63323-0658	Fresenius Kabi USA, LLC
 63323-0659	Fresenius Kabi USA, LLC
 63323-0660	Fresenius Kabi USA, LLC
 63323-0664	APP Pharmaceuticals, LLC
@@ -20717,8 +20717,8 @@ Key	Value
 63323-0735	APP Pharmaceuticals, LLC
 63323-0738	APP Pharmaceuticals, LLC
 63323-0739	APP Pharmaceuticals, LLC
-63323-0762	Fresenius Kabi USA, LLC
 63323-0762	APP Pharmaceuticals, LLC
+63323-0762	Fresenius Kabi USA, LLC
 63323-0763	APP Pharmaceuticals, LLC
 63323-0763	Fresenius Kabi USA, LLC
 63323-0772	APP Pharmaceuticals, LLC

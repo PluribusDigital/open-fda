@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150619154332) do
+ActiveRecord::Schema.define(version: 20150622202617) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,12 +33,68 @@ ActiveRecord::Schema.define(version: 20150619154332) do
     t.datetime "updated_at",                                   null: false
   end
 
+  create_table "manufacturers", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pharma_class_chemicals", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "class_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pharma_class_establisheds", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "class_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pharma_class_methods", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "class_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "pharma_class_physiologics", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "class_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "product_types", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "type_name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "routes", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "route"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
   create_table "service_caches", force: :cascade do |t|
     t.string   "service"
     t.string   "key"
     t.hstore   "data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "substances", force: :cascade do |t|
+    t.string   "product_ndc"
+    t.string   "name"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

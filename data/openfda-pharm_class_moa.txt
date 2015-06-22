@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	class_name
 0002-1200	Positron Emitting Activity
 0002-1407	Cytochrome P450 2d6 Inhibitors
 0002-3227	Norepinephrine Uptake Inhibitors
@@ -12,8 +12,8 @@ Key	Value
 0002-3240	Serotonin Uptake Inhibitors
 0002-3250	Norepinephrine Uptake Inhibitors
 0002-3251	Norepinephrine Uptake Inhibitors
-0002-3270	Norepinephrine Uptake Inhibitors
 0002-3270	Serotonin Uptake Inhibitors
+0002-3270	Norepinephrine Uptake Inhibitors
 0002-4165	Selective Estrogen Receptor Modulators
 0002-4462	Phosphodiesterase 5 Inhibitors
 0002-4463	Phosphodiesterase 5 Inhibitors
@@ -125,23 +125,23 @@ Key	Value
 0007-3370	Adrenergic Beta2-antagonists
 0007-3370	Adrenergic Alpha-antagonists
 0007-3371	Adrenergic Beta2-antagonists
-0007-3371	Adrenergic Beta1-antagonists
 0007-3371	Adrenergic Alpha-antagonists
-0007-3372	Adrenergic Alpha-antagonists
+0007-3371	Adrenergic Beta1-antagonists
 0007-3372	Adrenergic Beta2-antagonists
 0007-3372	Adrenergic Beta1-antagonists
+0007-3372	Adrenergic Alpha-antagonists
 0007-3373	Adrenergic Alpha-antagonists
 0007-3373	Adrenergic Beta1-antagonists
 0007-3373	Adrenergic Beta2-antagonists
 0007-4139	Adrenergic Beta1-antagonists
 0007-4139	Adrenergic Alpha-antagonists
 0007-4139	Adrenergic Beta2-antagonists
-0007-4140	Adrenergic Beta1-antagonists
 0007-4140	Adrenergic Beta2-antagonists
+0007-4140	Adrenergic Beta1-antagonists
 0007-4140	Adrenergic Alpha-antagonists
-0007-4141	Adrenergic Alpha-antagonists
-0007-4141	Adrenergic Beta2-antagonists
 0007-4141	Adrenergic Beta1-antagonists
+0007-4141	Adrenergic Beta2-antagonists
+0007-4141	Adrenergic Alpha-antagonists
 0007-4142	Adrenergic Beta1-antagonists
 0007-4142	Adrenergic Beta2-antagonists
 0007-4142	Adrenergic Alpha-antagonists
@@ -152,14 +152,14 @@ Key	Value
 0007-4407	Thrombin Inhibitors
 0007-4640	Thrombopoietin Receptor Interactions
 0007-4640	Thrombopoietin Receptor Agonists
-0007-4641	Thrombopoietin Receptor Interactions
 0007-4641	Thrombopoietin Receptor Agonists
+0007-4641	Thrombopoietin Receptor Interactions
 0007-4642	Thrombopoietin Receptor Agonists
 0007-4642	Thrombopoietin Receptor Interactions
-0007-4643	Thrombopoietin Receptor Agonists
 0007-4643	Thrombopoietin Receptor Interactions
-0007-4646	Thrombopoietin Receptor Interactions
+0007-4643	Thrombopoietin Receptor Agonists
 0007-4646	Thrombopoietin Receptor Agonists
+0007-4646	Thrombopoietin Receptor Interactions
 0007-4882	Dopamine Agonists
 0007-4883	Dopamine Agonists
 0007-4885	Dopamine Agonists
@@ -184,10 +184,10 @@ Key	Value
 0008-1041	Mtor Inhibitors
 0008-1042	Mtor Inhibitors
 0008-1123	Selective Estrogen Receptor Modulators
-0008-1211	Serotonin Uptake Inhibitors
 0008-1211	Norepinephrine Uptake Inhibitors
-0008-1222	Serotonin Uptake Inhibitors
+0008-1211	Serotonin Uptake Inhibitors
 0008-1222	Norepinephrine Uptake Inhibitors
+0008-1222	Serotonin Uptake Inhibitors
 0008-2001	Proton Pump Inhibitors
 0008-4001	Proton Pump Inhibitors
 0009-0003	Corticosteroid Hormone Receptor Agonists
@@ -291,24 +291,24 @@ Key	Value
 0024-5801	Histamine H1 Receptor Antagonists
 0024-5810	Dopamine Uptake Inhibitors
 0024-5810	Norepinephrine Uptake Inhibitors
-0024-5811	Norepinephrine Uptake Inhibitors
 0024-5811	Dopamine Uptake Inhibitors
-0024-5812	Dopamine Uptake Inhibitors
+0024-5811	Norepinephrine Uptake Inhibitors
 0024-5812	Norepinephrine Uptake Inhibitors
+0024-5812	Dopamine Uptake Inhibitors
 0024-5820	Nucleic Acid Synthesis Inhibitors
-0024-5831	Adrenergic Alpha-agonists
 0024-5831	Adrenergic Beta-agonists
-0024-5833	Adrenergic Beta-agonists
+0024-5831	Adrenergic Alpha-agonists
 0024-5833	Adrenergic Alpha-agonists
+0024-5833	Adrenergic Beta-agonists
 0024-5850	Angiotensin 2 Receptor Antagonists
 0024-5851	Angiotensin 2 Receptor Antagonists
 0024-5852	Angiotensin 2 Receptor Antagonists
 0024-5858	Topoisomerase Inhibitors
 0024-5860	Nucleic Acid Synthesis Inhibitors
-0025-0061	Cholinergic Muscarinic Antagonists
 0025-0061	Cholinergic Antagonists
-0025-0066	Cholinergic Antagonists
+0025-0061	Cholinergic Muscarinic Antagonists
 0025-0066	Cholinergic Muscarinic Antagonists
+0025-0066	Cholinergic Antagonists
 0025-0166	Gonadotropin Releasing Hormone Receptor Agonists
 0025-1001	Aldosterone Antagonists
 0025-1011	Aldosterone Antagonists
@@ -340,8 +340,8 @@ Key	Value
 0031-2247	Histamine H1 Receptor Antagonists
 0031-2249	Histamine H1 Receptor Antagonists
 0031-2293	Adrenergic Alpha1-agonists
-0031-8649	Sigma-1 Receptor Agonists
 0031-8649	Uncompetitive Nmda Receptor Antagonists
+0031-8649	Sigma-1 Receptor Agonists
 0031-8692	Histamine H1 Receptor Antagonists
 0031-8693	Histamine H1 Receptor Antagonists
 0031-8694	Sigma-1 Receptor Agonists
@@ -353,31 +353,31 @@ Key	Value
 0031-8713	Uncompetitive Nmda Receptor Antagonists
 0031-8715	Sigma-1 Receptor Agonists
 0031-8715	Uncompetitive Nmda Receptor Antagonists
-0031-8716	Uncompetitive Nmda Receptor Antagonists
 0031-8716	Sigma-1 Receptor Agonists
+0031-8716	Uncompetitive Nmda Receptor Antagonists
 0031-8717	Sigma-1 Receptor Agonists
 0031-8717	Uncompetitive Nmda Receptor Antagonists
 0031-8719	Sigma-1 Receptor Agonists
 0031-8719	Uncompetitive Nmda Receptor Antagonists
 0031-8721	Uncompetitive Nmda Receptor Antagonists
 0031-8721	Sigma-1 Receptor Agonists
-0031-8722	Sigma-1 Receptor Agonists
 0031-8722	Uncompetitive Nmda Receptor Antagonists
+0031-8722	Sigma-1 Receptor Agonists
 0031-8731	Adrenergic Alpha1-agonists
 0031-8732	Histamine H1 Receptor Antagonists
-0031-8734	Sigma-1 Receptor Agonists
 0031-8734	Uncompetitive Nmda Receptor Antagonists
+0031-8734	Sigma-1 Receptor Agonists
 0031-8735	Histamine H1 Receptor Antagonists
-0031-8736	Sigma-1 Receptor Agonists
 0031-8736	Uncompetitive Nmda Receptor Antagonists
-0031-8737	Sigma-1 Receptor Agonists
+0031-8736	Sigma-1 Receptor Agonists
 0031-8737	Uncompetitive Nmda Receptor Antagonists
-0031-8738	Sigma-1 Receptor Agonists
+0031-8737	Sigma-1 Receptor Agonists
 0031-8738	Uncompetitive Nmda Receptor Antagonists
-0031-8740	Sigma-1 Receptor Agonists
+0031-8738	Sigma-1 Receptor Agonists
 0031-8740	Uncompetitive Nmda Receptor Antagonists
-0031-8741	Uncompetitive Nmda Receptor Antagonists
+0031-8740	Sigma-1 Receptor Agonists
 0031-8741	Sigma-1 Receptor Agonists
+0031-8741	Uncompetitive Nmda Receptor Antagonists
 0031-8742	Uncompetitive Nmda Receptor Antagonists
 0031-8742	Sigma-1 Receptor Agonists
 0032-1101	Angiotensin-converting Enzyme Inhibitors
@@ -507,13 +507,13 @@ Key	Value
 0054-3026	Reduction Activity
 0054-3027	Reduction Activity
 0054-3028	Reduction Activity
-0054-3090	Partial Opioid Agonists
 0054-3090	Competitive Opioid Antagonists
+0054-3090	Partial Opioid Agonists
 0054-3117	Phosphate Chelating Activity
 0054-3176	Corticosteroid Hormone Receptor Agonists
 0054-3177	Corticosteroid Hormone Receptor Agonists
-0054-3194	Cholinergic Muscarinic Antagonists
 0054-3194	Cholinergic Antagonists
+0054-3194	Cholinergic Muscarinic Antagonists
 0054-3270	Corticosteroid Hormone Receptor Agonists
 0054-3486	Osmotic Activity
 0054-3486	Acidifying Activity
@@ -553,8 +553,8 @@ Key	Value
 0054-8180	Corticosteroid Hormone Receptor Agonists
 0054-8181	Corticosteroid Hormone Receptor Agonists
 0054-8183	Corticosteroid Hormone Receptor Agonists
-0054-8486	Osmotic Activity
 0054-8486	Acidifying Activity
+0054-8486	Osmotic Activity
 0054-8550	Folic Acid Metabolism Inhibitors
 0054-8553	Full Opioid Agonists
 0054-8554	Full Opioid Agonists
@@ -573,10 +573,10 @@ Key	Value
 0056-0470	Non-nucleoside Reverse Transcriptase Inhibitors
 0056-0474	Non-nucleoside Reverse Transcriptase Inhibitors
 0056-0510	Non-nucleoside Reverse Transcriptase Inhibitors
-0062-2080	Serotonin 1b Receptor Agonists
 0062-2080	Serotonin 1d Receptor Agonists
-0062-2085	Serotonin 1b Receptor Agonists
+0062-2080	Serotonin 1b Receptor Agonists
 0062-2085	Serotonin 1d Receptor Agonists
+0062-2085	Serotonin 1b Receptor Agonists
 0065-0002	Cyclooxygenase Inhibitors
 0065-0092	Dyes
 0065-0096	Corticosteroid Hormone Receptor Agonists
@@ -659,12 +659,12 @@ Key	Value
 0067-8105	Sigma-1 Receptor Agonists
 0067-8105	Uncompetitive Nmda Receptor Antagonists
 0067-8106	Histamine H1 Receptor Antagonists
-0067-8115	Sigma-1 Receptor Agonists
 0067-8115	Uncompetitive Nmda Receptor Antagonists
+0067-8115	Sigma-1 Receptor Agonists
 0067-8116	Histamine H1 Receptor Antagonists
 0067-8117	Adrenergic Alpha1-agonists
-0067-8118	Uncompetitive Nmda Receptor Antagonists
 0067-8118	Sigma-1 Receptor Agonists
+0067-8118	Uncompetitive Nmda Receptor Antagonists
 0068-0037	Cholinergic Antagonists
 0069-0075	Topoisomerase Inhibitors
 0069-0080	Topoisomerase Inhibitors
@@ -673,8 +673,8 @@ Key	Value
 0069-0121	Histamine H2 Receptor Antagonists
 0069-0125	Histamine H2 Receptor Antagonists
 0069-0126	Histamine H2 Receptor Antagonists
-0069-0138	Serotonin 1d Receptor Agonists
 0069-0138	Serotonin 1b Receptor Agonists
+0069-0138	Serotonin 1d Receptor Agonists
 0069-0145	Receptor Tyrosine Kinase Inhibitors
 0069-0146	Folic Acid Metabolism Inhibitors
 0069-0147	Folic Acid Metabolism Inhibitors
@@ -758,8 +758,8 @@ Key	Value
 0069-5420	Histamine Receptor Antagonists
 0069-5430	Histamine Receptor Antagonists
 0069-5440	Histamine Receptor Antagonists
-0069-8140	Receptor Tyrosine Kinase Inhibitors
 0069-8140	Cytochrome P450 3a4 Inhibitors
+0069-8140	Receptor Tyrosine Kinase Inhibitors
 0069-8141	Receptor Tyrosine Kinase Inhibitors
 0069-8141	Cytochrome P450 3a4 Inhibitors
 0069-9321	Nucleic Acid Synthesis Inhibitors
@@ -795,23 +795,23 @@ Key	Value
 0074-3063	Calcium Channel Antagonists
 0074-3064	Calcium Channel Antagonists
 0074-3069	Calcium Channel Antagonists
-0074-3163	P-glycoprotein Inhibitors
-0074-3163	Cytochrome P450 3a4 Inhibitors
 0074-3163	Cytochrome P450 3a Inhibitors
-0074-3165	Cytochrome P450 3a4 Inhibitors
-0074-3165	Cytochrome P450 3a Inhibitors
+0074-3163	Cytochrome P450 3a4 Inhibitors
+0074-3163	P-glycoprotein Inhibitors
 0074-3165	P-glycoprotein Inhibitors
-0074-3188	Cytochrome P450 3a4 Inhibitors
-0074-3188	Cytochrome P450 3a Inhibitors
+0074-3165	Cytochrome P450 3a Inhibitors
+0074-3165	Cytochrome P450 3a4 Inhibitors
 0074-3188	P-glycoprotein Inhibitors
+0074-3188	Cytochrome P450 3a Inhibitors
+0074-3188	Cytochrome P450 3a4 Inhibitors
 0074-3287	Angiotensin-converting Enzyme Inhibitors
 0074-3288	Angiotensin-converting Enzyme Inhibitors
 0074-3289	Angiotensin-converting Enzyme Inhibitors
 0074-3290	Angiotensin-converting Enzyme Inhibitors
 0074-3333	Hiv Protease Inhibitors
 0074-3368	Cytochrome P450 3a Inhibitors
-0074-3368	P-glycoprotein Inhibitors
 0074-3368	Cytochrome P450 3a4 Inhibitors
+0074-3368	P-glycoprotein Inhibitors
 0074-3956	Hiv Protease Inhibitors
 0074-6122	Peroxisome Proliferator-activated Receptor Alpha Agonists
 0074-6123	Peroxisome Proliferator-activated Receptor Alpha Agonists
@@ -985,8 +985,8 @@ Key	Value
 0093-0012	Proton Pump Inhibitors
 0093-0017	Angiotensin-converting Enzyme Inhibitors
 0093-0041	Selective Estrogen Receptor Modulators
-0093-0051	Adrenergic Beta1-antagonists
 0093-0051	Adrenergic Beta2-antagonists
+0093-0051	Adrenergic Beta1-antagonists
 0093-0051	Adrenergic Alpha-antagonists
 0093-0058	Full Opioid Agonists
 0093-0064	Proton Pump Inhibitors
@@ -995,14 +995,14 @@ Key	Value
 0093-0083	Calcium Channel Antagonists
 0093-0088	Dihydrofolate Reductase Inhibitors
 0093-0089	Dihydrofolate Reductase Inhibitors
-0093-0135	Adrenergic Beta1-antagonists
 0093-0135	Adrenergic Alpha-antagonists
 0093-0135	Adrenergic Beta2-antagonists
+0093-0135	Adrenergic Beta1-antagonists
 0093-0147	Cyclooxygenase Inhibitors
 0093-0148	Cyclooxygenase Inhibitors
 0093-0149	Cyclooxygenase Inhibitors
-0093-0199	Norepinephrine Uptake Inhibitors
 0093-0199	Serotonin Uptake Inhibitors
+0093-0199	Norepinephrine Uptake Inhibitors
 0093-0220	Androgen Receptor Antagonists
 0093-0233	Serotonin 3 Receptor Antagonists
 0093-0262	Corticosteroid Hormone Receptor Agonists
@@ -1039,9 +1039,9 @@ Key	Value
 0093-0787	Adrenergic Beta-antagonists
 0093-0819	Calcium Channel Antagonists
 0093-0892	Cyclooxygenase Inhibitors
+0093-0900	P-glycoprotein Inhibitors
 0093-0900	Cytochrome P450 3a5 Inhibitors
 0093-0900	Cytochrome P450 3a4 Inhibitors
-0093-0900	P-glycoprotein Inhibitors
 0093-0924	Cyclooxygenase Inhibitors
 0093-0926	Hydroxymethylglutaryl-coa Reductase Inhibitors
 0093-0928	Hydroxymethylglutaryl-coa Reductase Inhibitors
@@ -1128,17 +1128,17 @@ Key	Value
 0093-5378	Partial Opioid Agonists
 0093-5379	Partial Opioid Agonists
 0093-5385	Nucleoside Reverse Transcriptase Inhibitors
-0093-5501	Norepinephrine Uptake Inhibitors
 0093-5501	Dopamine Uptake Inhibitors
-0093-5502	Norepinephrine Uptake Inhibitors
+0093-5501	Norepinephrine Uptake Inhibitors
 0093-5502	Dopamine Uptake Inhibitors
+0093-5502	Norepinephrine Uptake Inhibitors
 0093-5503	Serotonin Uptake Inhibitors
 0093-5504	Serotonin Uptake Inhibitors
 0093-5505	Serotonin Uptake Inhibitors
 0093-5506	Serotonin Uptake Inhibitors
 0093-5507	Serotonin Uptake Inhibitors
-0093-5703	Norepinephrine Uptake Inhibitors
 0093-5703	Dopamine Uptake Inhibitors
+0093-5703	Norepinephrine Uptake Inhibitors
 0093-5850	Serotonin Uptake Inhibitors
 0093-5851	Serotonin Uptake Inhibitors
 0093-5852	Serotonin Uptake Inhibitors
@@ -1163,11 +1163,11 @@ Key	Value
 0093-7154	Hydroxymethylglutaryl-coa Reductase Inhibitors
 0093-7155	Hydroxymethylglutaryl-coa Reductase Inhibitors
 0093-7156	Hydroxymethylglutaryl-coa Reductase Inhibitors
+0093-7157	P-glycoprotein Inhibitors
 0093-7157	Cytochrome P450 3a4 Inhibitors
 0093-7157	Cytochrome P450 3a Inhibitors
-0093-7157	P-glycoprotein Inhibitors
-0093-7158	Cytochrome P450 3a Inhibitors
 0093-7158	Cytochrome P450 3a4 Inhibitors
+0093-7158	Cytochrome P450 3a Inhibitors
 0093-7158	P-glycoprotein Inhibitors
 0093-7167	Calcium Channel Antagonists
 0093-7168	Calcium Channel Antagonists
@@ -1180,19 +1180,19 @@ Key	Value
 0093-7224	Angiotensin-converting Enzyme Inhibitors
 0093-7234	Cyclooxygenase Inhibitors
 0093-7236	Serotonin 3 Receptor Antagonists
-0093-7244	P-glycoprotein Inhibitors
-0093-7244	Cytochrome P450 3a4 Inhibitors
 0093-7244	Cytochrome P450 3a Inhibitors
+0093-7244	Cytochrome P450 3a4 Inhibitors
+0093-7244	P-glycoprotein Inhibitors
 0093-7258	Dna Polymerase Inhibitors
 0093-7259	Dna Polymerase Inhibitors
 0093-7270	Hydroxymethylglutaryl-coa Reductase Inhibitors
 0093-7290	Selective Estrogen Receptor Modulators
-0093-7295	Adrenergic Beta2-antagonists
-0093-7295	Adrenergic Beta1-antagonists
 0093-7295	Adrenergic Alpha-antagonists
+0093-7295	Adrenergic Beta1-antagonists
+0093-7295	Adrenergic Beta2-antagonists
 0093-7296	Adrenergic Beta1-antagonists
-0093-7296	Adrenergic Alpha-antagonists
 0093-7296	Adrenergic Beta2-antagonists
+0093-7296	Adrenergic Alpha-antagonists
 0093-7299	Cyclooxygenase Inhibitors
 0093-7314	P2y12 Receptor Antagonists
 0093-7325	Angiotensin-converting Enzyme Inhibitors
@@ -1206,8 +1206,8 @@ Key	Value
 0093-7366	Angiotensin 2 Receptor Antagonists
 0093-7380	Serotonin Uptake Inhibitors
 0093-7380	Norepinephrine Uptake Inhibitors
-0093-7381	Serotonin Uptake Inhibitors
 0093-7381	Norepinephrine Uptake Inhibitors
+0093-7381	Serotonin Uptake Inhibitors
 0093-7382	Serotonin Uptake Inhibitors
 0093-7382	Norepinephrine Uptake Inhibitors
 0093-7383	Norepinephrine Uptake Inhibitors
@@ -1230,8 +1230,8 @@ Key	Value
 0093-7536	Aromatase Inhibitors
 0093-7542	Norepinephrine Uptake Inhibitors
 0093-7542	Serotonin Uptake Inhibitors
-0093-7543	Norepinephrine Uptake Inhibitors
 0093-7543	Serotonin Uptake Inhibitors
+0093-7543	Norepinephrine Uptake Inhibitors
 0093-7544	Serotonin Uptake Inhibitors
 0093-7544	Norepinephrine Uptake Inhibitors
 0093-7599	Alkylating Activity
@@ -1279,8 +1279,8 @@ Key	Value
 0113-0014	Histamine H1 Receptor Antagonists
 0113-0022	Histamine H2 Receptor Antagonists
 0113-0027	Histamine H1 Receptor Antagonists
-0113-0041	Uncompetitive Nmda Receptor Antagonists
 0113-0041	Sigma-1 Receptor Agonists
+0113-0041	Uncompetitive Nmda Receptor Antagonists
 0113-0047	Histamine H2 Receptor Antagonists
 0113-0050	Histamine H1 Receptor Antagonists
 0113-0052	Histamine H1 Receptor Antagonists
@@ -1291,8 +1291,8 @@ Key	Value
 0113-0074	Cyclooxygenase Inhibitors
 0113-0083	Cyclooxygenase Inhibitors
 0113-0094	Adrenergic Alpha1-agonists
-0113-0096	Uncompetitive Nmda Receptor Antagonists
 0113-0096	Sigma-1 Receptor Agonists
+0113-0096	Uncompetitive Nmda Receptor Antagonists
 0113-0117	Proton Pump Inhibitors
 0113-0131	Cyclooxygenase Inhibitors
 0113-0133	Adrenergic Alpha1-agonists
@@ -1316,22 +1316,22 @@ Key	Value
 0113-0272	Adrenergic Alpha1-agonists
 0113-0274	Cyclooxygenase Inhibitors
 0113-0277	Cyclooxygenase Inhibitors
-0113-0296	Uncompetitive Nmda Receptor Antagonists
 0113-0296	Sigma-1 Receptor Agonists
-0113-0299	Sigma-1 Receptor Agonists
+0113-0296	Uncompetitive Nmda Receptor Antagonists
 0113-0299	Uncompetitive Nmda Receptor Antagonists
+0113-0299	Sigma-1 Receptor Agonists
 0113-0306	Osmotic Activity
 0113-0308	Sigma-1 Receptor Agonists
 0113-0308	Uncompetitive Nmda Receptor Antagonists
 0113-0321	Phosphate Chelating Activity
-0113-0335	Uncompetitive Nmda Receptor Antagonists
 0113-0335	Sigma-1 Receptor Agonists
-0113-0345	Sigma-1 Receptor Agonists
+0113-0335	Uncompetitive Nmda Receptor Antagonists
 0113-0345	Uncompetitive Nmda Receptor Antagonists
+0113-0345	Sigma-1 Receptor Agonists
 0113-0355	Histamine H1 Receptor Antagonists
 0113-0358	Histamine H1 Receptor Antagonists
-0113-0359	Sigma-1 Receptor Agonists
 0113-0359	Uncompetitive Nmda Receptor Antagonists
+0113-0359	Sigma-1 Receptor Agonists
 0113-0368	Cyclooxygenase Inhibitors
 0113-0371	Sigma-1 Receptor Agonists
 0113-0371	Uncompetitive Nmda Receptor Antagonists
@@ -1340,23 +1340,23 @@ Key	Value
 0113-0379	Histamine H1 Receptor Antagonists
 0113-0381	Sigma-1 Receptor Agonists
 0113-0381	Uncompetitive Nmda Receptor Antagonists
-0113-0384	Uncompetitive Nmda Receptor Antagonists
 0113-0384	Sigma-1 Receptor Agonists
+0113-0384	Uncompetitive Nmda Receptor Antagonists
 0113-0393	Histamine H1 Receptor Antagonists
 0113-0400	Adrenergic Alpha1-agonists
-0113-0402	Sigma-1 Receptor Agonists
 0113-0402	Uncompetitive Nmda Receptor Antagonists
+0113-0402	Sigma-1 Receptor Agonists
 0113-0404	Histamine H1 Receptor Antagonists
 0113-0416	Cyclooxygenase Inhibitors
-0113-0419	Sigma-1 Receptor Agonists
 0113-0419	Uncompetitive Nmda Receptor Antagonists
+0113-0419	Sigma-1 Receptor Agonists
 0113-0425	Histamine H1 Receptor Antagonists
 0113-0430	Cyclooxygenase Inhibitors
 0113-0431	Histamine H1 Receptor Antagonists
 0113-0432	Adrenergic Alpha-agonists
 0113-0437	Histamine H1 Receptor Antagonists
-0113-0459	Uncompetitive Nmda Receptor Antagonists
 0113-0459	Sigma-1 Receptor Agonists
+0113-0459	Uncompetitive Nmda Receptor Antagonists
 0113-0461	Cyclooxygenase Inhibitors
 0113-0462	Histamine H1 Receptor Antagonists
 0113-0463	Histamine H1 Receptor Antagonists
@@ -1368,8 +1368,8 @@ Key	Value
 0113-0479	Histamine H1 Receptor Antagonists
 0113-0485	Phosphate Chelating Activity
 0113-0489	Phosphate Chelating Activity
-0113-0516	Sigma-1 Receptor Agonists
 0113-0516	Uncompetitive Nmda Receptor Antagonists
+0113-0516	Sigma-1 Receptor Agonists
 0113-0517	Cyclooxygenase Inhibitors
 0113-0535	Cyclooxygenase Inhibitors
 0113-0541	Corticosteroid Hormone Receptor Agonists
@@ -1382,8 +1382,8 @@ Key	Value
 0113-0579	Sigma-1 Receptor Agonists
 0113-0579	Uncompetitive Nmda Receptor Antagonists
 0113-0595	Phosphate Chelating Activity
-0113-0603	Sigma-1 Receptor Agonists
 0113-0603	Uncompetitive Nmda Receptor Antagonists
+0113-0603	Sigma-1 Receptor Agonists
 0113-0604	Cyclooxygenase Inhibitors
 0113-0615	Histamine H1 Receptor Antagonists
 0113-0622	Histamine H1 Receptor Antagonists
@@ -1395,8 +1395,8 @@ Key	Value
 0113-0660	Cyclooxygenase Inhibitors
 0113-0666	Uncompetitive Nmda Receptor Antagonists
 0113-0666	Sigma-1 Receptor Agonists
-0113-0668	Sigma-1 Receptor Agonists
 0113-0668	Uncompetitive Nmda Receptor Antagonists
+0113-0668	Sigma-1 Receptor Agonists
 0113-0678	Adrenergic Alpha1-agonists
 0113-0685	Cyclooxygenase Inhibitors
 0113-0698	Sigma-1 Receptor Agonists
@@ -1407,14 +1407,14 @@ Key	Value
 0113-0751	Histamine H1 Receptor Antagonists
 0113-0763	Sigma-1 Receptor Agonists
 0113-0763	Uncompetitive Nmda Receptor Antagonists
-0113-0799	Sigma-1 Receptor Agonists
 0113-0799	Uncompetitive Nmda Receptor Antagonists
+0113-0799	Sigma-1 Receptor Agonists
 0113-0818	Sigma-1 Receptor Agonists
 0113-0818	Uncompetitive Nmda Receptor Antagonists
 0113-0829	Histamine H1 Receptor Antagonists
 0113-0837	Histamine H1 Receptor Antagonists
-0113-0839	Uncompetitive Nmda Receptor Antagonists
 0113-0839	Sigma-1 Receptor Agonists
+0113-0839	Uncompetitive Nmda Receptor Antagonists
 0113-0852	Histamine H2 Receptor Antagonists
 0113-0872	Uncompetitive Nmda Receptor Antagonists
 0113-0872	Sigma-1 Receptor Agonists
@@ -1425,16 +1425,16 @@ Key	Value
 0113-0903	Histamine H1 Receptor Antagonists
 0113-0904	Phosphate Chelating Activity
 0113-0906	Adrenergic Alpha1-agonists
-0113-0908	Uncompetitive Nmda Receptor Antagonists
 0113-0908	Sigma-1 Receptor Agonists
+0113-0908	Uncompetitive Nmda Receptor Antagonists
 0113-0911	Cyclooxygenase Inhibitors
 0113-0915	Proton Pump Inhibitors
 0113-0915	Cytochrome P450 2c19 Inhibitors
 0113-0922	Sigma-1 Receptor Agonists
 0113-0922	Uncompetitive Nmda Receptor Antagonists
 0113-0923	Histamine H1 Receptor Antagonists
-0113-0934	Sigma-1 Receptor Agonists
 0113-0934	Uncompetitive Nmda Receptor Antagonists
+0113-0934	Sigma-1 Receptor Agonists
 0113-0950	Histamine H2 Receptor Antagonists
 0113-0958	Uncompetitive Nmda Receptor Antagonists
 0113-0958	Sigma-1 Receptor Agonists
@@ -1442,12 +1442,12 @@ Key	Value
 0113-0964	Histamine H1 Receptor Antagonists
 0113-0973	Corticosteroid Hormone Receptor Agonists
 0113-0974	Histamine H1 Receptor Antagonists
-0113-0977	Sigma-1 Receptor Agonists
 0113-0977	Uncompetitive Nmda Receptor Antagonists
-0113-0987	Sigma-1 Receptor Agonists
+0113-0977	Sigma-1 Receptor Agonists
 0113-0987	Uncompetitive Nmda Receptor Antagonists
-0113-0990	Uncompetitive Nmda Receptor Antagonists
+0113-0987	Sigma-1 Receptor Agonists
 0113-0990	Sigma-1 Receptor Agonists
+0113-0990	Uncompetitive Nmda Receptor Antagonists
 0113-0994	Sigma-1 Receptor Agonists
 0113-0994	Uncompetitive Nmda Receptor Antagonists
 0113-1165	Adrenergic Alpha-agonists
@@ -1464,12 +1464,12 @@ Key	Value
 0115-0511	Peroxisome Proliferator-activated Receptor Alpha Agonists
 0115-0522	Peroxisome Proliferator-activated Receptor Alpha Agonists
 0115-0533	Peroxisome Proliferator-activated Receptor Alpha Agonists
-0115-0671	Serotonin 1b Receptor Agonists
 0115-0671	Serotonin 1d Receptor Agonists
+0115-0671	Serotonin 1b Receptor Agonists
 0115-0672	Serotonin 1d Receptor Agonists
 0115-0672	Serotonin 1b Receptor Agonists
-0115-0691	Serotonin 1b Receptor Agonists
 0115-0691	Serotonin 1d Receptor Agonists
+0115-0691	Serotonin 1b Receptor Agonists
 0115-0692	Serotonin 1b Receptor Agonists
 0115-0692	Serotonin 1d Receptor Agonists
 0115-1120	Cholinesterase Inhibitors
@@ -1504,12 +1504,12 @@ Key	Value
 0115-5445	Dopamine Uptake Inhibitors
 0115-5511	Peroxisome Proliferator-activated Receptor Alpha Agonists
 0115-5522	Peroxisome Proliferator-activated Receptor Alpha Agonists
-0115-5911	Cholinergic Agonists
 0115-5911	Cholinergic Muscarinic Agonists
+0115-5911	Cholinergic Agonists
 0115-5922	Cholinergic Agonists
 0115-5922	Cholinergic Muscarinic Agonists
-0115-6811	Dopamine Uptake Inhibitors
 0115-6811	Norepinephrine Uptake Inhibitors
+0115-6811	Dopamine Uptake Inhibitors
 0115-7033	Corticosteroid Hormone Receptor Agonists
 0115-8211	Adrenergic Alpha-antagonists
 0115-9511	Cholinergic Muscarinic Agonists
@@ -1532,8 +1532,8 @@ Key	Value
 0121-0727	Histamine H2 Receptor Antagonists
 0121-0759	Corticosteroid Hormone Receptor Agonists
 0121-0772	Opioid Agonists
-0121-0809	Sigma-1 Receptor Agonists
 0121-0809	Uncompetitive Nmda Receptor Antagonists
+0121-0809	Sigma-1 Receptor Agonists
 0121-1576	Dopamine D2 Antagonists
 0121-4577	Acidifying Activity
 0121-4577	Osmotic Activity
@@ -1547,10 +1547,10 @@ Key	Value
 0121-4809	Sigma-1 Receptor Agonists
 0121-4809	Uncompetitive Nmda Receptor Antagonists
 0121-4811	Cholinergic Muscarinic Agonists
-0131-3265	Norepinephrine Uptake Inhibitors
 0131-3265	Serotonin Uptake Inhibitors
-0131-3266	Serotonin Uptake Inhibitors
+0131-3265	Norepinephrine Uptake Inhibitors
 0131-3266	Norepinephrine Uptake Inhibitors
+0131-3266	Serotonin Uptake Inhibitors
 0131-3267	Serotonin Uptake Inhibitors
 0131-3267	Norepinephrine Uptake Inhibitors
 0131-3268	Norepinephrine Uptake Inhibitors
@@ -1603,8 +1603,8 @@ Key	Value
 0143-9580	Serotonin Uptake Inhibitors
 0143-9581	Serotonin Uptake Inhibitors
 0143-9582	Serotonin Uptake Inhibitors
-0143-9638	Serotonin 1b Receptor Agonists
 0143-9638	Serotonin 1d Receptor Agonists
+0143-9638	Serotonin 1b Receptor Agonists
 0143-9649	Leukotriene Receptor Antagonists
 0143-9650	Leukotriene Receptor Antagonists
 0143-9651	Leukotriene Receptor Antagonists
@@ -1677,8 +1677,8 @@ Key	Value
 0168-0060	Corticosteroid Hormone Receptor Agonists
 0168-0064	Corticosteroid Hormone Receptor Agonists
 0168-0080	Corticosteroid Hormone Receptor Agonists
-0168-0099	P-glycoprotein Inhibitors
 0168-0099	Cytochrome P450 3a4 Inhibitors
+0168-0099	P-glycoprotein Inhibitors
 0168-0099	Cytochrome P450 3a5 Inhibitors
 0168-0134	Corticosteroid Hormone Receptor Agonists
 0168-0135	Corticosteroid Hormone Receptor Agonists
@@ -1759,10 +1759,10 @@ Key	Value
 0172-7313	Calcineurin Inhibitors
 0173-0135	Dopamine Uptake Inhibitors
 0173-0135	Norepinephrine Uptake Inhibitors
-0173-0177	Norepinephrine Uptake Inhibitors
 0173-0177	Dopamine Uptake Inhibitors
-0173-0178	Norepinephrine Uptake Inhibitors
+0173-0177	Norepinephrine Uptake Inhibitors
 0173-0178	Dopamine Uptake Inhibitors
+0173-0178	Norepinephrine Uptake Inhibitors
 0173-0388	Corticosteroid Hormone Receptor Agonists
 0173-0442	Serotonin 3 Receptor Antagonists
 0173-0446	Serotonin 3 Receptor Antagonists
@@ -1772,8 +1772,8 @@ Key	Value
 0173-0453	Corticosteroid Hormone Receptor Agonists
 0173-0470	Nucleoside Reverse Transcriptase Inhibitors
 0173-0471	Nucleoside Reverse Transcriptase Inhibitors
-0173-0478	Serotonin 1b Receptor Agonists
 0173-0478	Serotonin 1d Receptor Agonists
+0173-0478	Serotonin 1b Receptor Agonists
 0173-0479	Serotonin 1b Receptor Agonists
 0173-0479	Serotonin 1d Receptor Agonists
 0173-0489	Serotonin 3 Receptor Antagonists
@@ -1785,10 +1785,10 @@ Key	Value
 0173-0524	Serotonin 1d Receptor Agonists
 0173-0556	Dopamine Uptake Inhibitors
 0173-0556	Norepinephrine Uptake Inhibitors
-0173-0561	Serotonin 1d Receptor Agonists
 0173-0561	Serotonin 1b Receptor Agonists
-0173-0562	Serotonin 1b Receptor Agonists
+0173-0561	Serotonin 1d Receptor Agonists
 0173-0562	Serotonin 1d Receptor Agonists
+0173-0562	Serotonin 1b Receptor Agonists
 0173-0569	Serotonin 3 Receptor Antagonists
 0173-0570	Serotonin 3 Receptor Antagonists
 0173-0600	Corticosteroid Hormone Receptor Agonists
@@ -1809,14 +1809,14 @@ Key	Value
 0173-0718	Corticosteroid Hormone Receptor Agonists
 0173-0719	Corticosteroid Hormone Receptor Agonists
 0173-0720	Corticosteroid Hormone Receptor Agonists
-0173-0722	Dopamine Uptake Inhibitors
 0173-0722	Norepinephrine Uptake Inhibitors
+0173-0722	Dopamine Uptake Inhibitors
 0173-0735	Serotonin 1d Receptor Agonists
 0173-0735	Serotonin 1b Receptor Agonists
-0173-0736	Serotonin 1d Receptor Agonists
 0173-0736	Serotonin 1b Receptor Agonists
-0173-0737	Serotonin 1d Receptor Agonists
+0173-0736	Serotonin 1d Receptor Agonists
 0173-0737	Serotonin 1b Receptor Agonists
+0173-0737	Serotonin 1d Receptor Agonists
 0173-0739	Serotonin 1d Receptor Agonists
 0173-0739	Serotonin 1b Receptor Agonists
 0173-0750	Cyclooxygenase Inhibitors
@@ -1837,17 +1837,17 @@ Key	Value
 0173-0834	Peroxisome Proliferator-activated Receptor Activity
 0173-0835	Peroxisome Proliferator-activated Receptor Activity
 0173-0836	Peroxisome Proliferator-activated Receptor Activity
-0173-0846	Cytochrome P450 2b6 Inducers
-0173-0846	Cytochrome P450 2c8 Inducers
-0173-0846	Cytochrome P450 2c19 Inducers
 0173-0846	Cytochrome P450 3a4 Inducers
-0173-0846	Cytochrome P450 2c9 Inducers
+0173-0846	Cytochrome P450 2c8 Inducers
 0173-0846	Protein Kinase Inhibitors
-0173-0847	Cytochrome P450 3a4 Inducers
+0173-0846	Cytochrome P450 2b6 Inducers
+0173-0846	Cytochrome P450 2c19 Inducers
+0173-0846	Cytochrome P450 2c9 Inducers
+0173-0847	Cytochrome P450 2b6 Inducers
 0173-0847	Protein Kinase Inhibitors
+0173-0847	Cytochrome P450 3a4 Inducers
 0173-0847	Cytochrome P450 2c9 Inducers
 0173-0847	Cytochrome P450 2c19 Inducers
-0173-0847	Cytochrome P450 2b6 Inducers
 0173-0847	Cytochrome P450 2c8 Inducers
 0173-0848	Protein Kinase Inhibitors
 0173-0849	Protein Kinase Inhibitors
@@ -1861,8 +1861,8 @@ Key	Value
 0173-0874	Corticosteroid Hormone Receptor Agonists
 0173-0876	Corticosteroid Hormone Receptor Agonists
 0173-0945	Dna Polymerase Inhibitors
-0173-0947	Norepinephrine Uptake Inhibitors
 0173-0947	Dopamine Uptake Inhibitors
+0173-0947	Norepinephrine Uptake Inhibitors
 0173-0949	Dna Polymerase Inhibitors
 0173-0953	Dna Polymerase Inhibitors
 0173-0991	Dna Polymerase Inhibitors
@@ -1890,8 +1890,8 @@ Key	Value
 0179-0074	Estrogen Receptor Agonists
 0179-0075	Histamine Receptor Antagonists
 0179-0087	Nucleoside Reverse Transcriptase Inhibitors
-0179-0088	Cholinergic Muscarinic Antagonists
 0179-0088	Cholinergic Antagonists
+0179-0088	Cholinergic Muscarinic Antagonists
 0179-0096	Non-nucleoside Reverse Transcriptase Inhibitors
 0179-0113	Opioid Agonists
 0179-0115	Cyclooxygenase Inhibitors
@@ -1940,8 +1940,8 @@ Key	Value
 0185-0371	Serotonin Uptake Inhibitors
 0185-0372	Serotonin Uptake Inhibitors
 0185-0373	Serotonin Uptake Inhibitors
-0185-0410	Dopamine Uptake Inhibitors
 0185-0410	Norepinephrine Uptake Inhibitors
+0185-0410	Dopamine Uptake Inhibitors
 0185-0415	Dopamine Uptake Inhibitors
 0185-0415	Norepinephrine Uptake Inhibitors
 0185-0505	Angiotensin-converting Enzyme Inhibitors
@@ -1966,8 +1966,8 @@ Key	Value
 0185-0939	Bile-acid Binding Activity
 0185-0940	Bile-acid Binding Activity
 0185-1047	Cytochrome P450 2d6 Inhibitors
-0185-1111	Norepinephrine Uptake Inhibitors
 0185-1111	Dopamine Uptake Inhibitors
+0185-1111	Norepinephrine Uptake Inhibitors
 0185-4346	Cytochrome P450 2d6 Inhibitors
 0185-4400	Adrenergic Alpha2-agonists
 0185-7322	Adrenergic Beta2-agonists
@@ -1983,22 +1983,22 @@ Key	Value
 0186-0452	Calcium Channel Antagonists
 0186-0510	Proton Pump Inhibitors
 0186-0520	Proton Pump Inhibitors
-0186-0606	Cytochrome P450 2c19 Inhibitors
 0186-0606	Proton Pump Inhibitors
+0186-0606	Cytochrome P450 2c19 Inhibitors
 0186-0610	Proton Pump Inhibitors
 0186-0610	Cytochrome P450 2c19 Inhibitors
-0186-0625	Proton Pump Inhibitors
 0186-0625	Cytochrome P450 2c19 Inhibitors
+0186-0625	Proton Pump Inhibitors
 0186-0702	Corticosteroid Hormone Receptor Agonists
-0186-0742	Cytochrome P450 2c19 Inhibitors
 0186-0742	Proton Pump Inhibitors
+0186-0742	Cytochrome P450 2c19 Inhibitors
 0186-0743	Proton Pump Inhibitors
 0186-0743	Cytochrome P450 2c19 Inhibitors
-0186-0777	Cytochrome P450 3a5 Inhibitors
-0186-0777	P2y12 Receptor Antagonists
-0186-0777	Phenylalanine Hydroxylase Activators
-0186-0777	P-glycoprotein Inhibitors
 0186-0777	Cytochrome P450 3a4 Inhibitors
+0186-0777	P2y12 Receptor Antagonists
+0186-0777	Cytochrome P450 3a5 Inhibitors
+0186-0777	P-glycoprotein Inhibitors
+0186-0777	Phenylalanine Hydroxylase Activators
 0186-0916	Corticosteroid Hormone Receptor Agonists
 0186-0917	Corticosteroid Hormone Receptor Agonists
 0186-1070	Corticosteroid Hormone Receptor Agonists
@@ -2032,15 +2032,15 @@ Key	Value
 0187-0143	Angiotensin-converting Enzyme Inhibitors
 0187-0146	Angiotensin-converting Enzyme Inhibitors
 0187-0402	Photoabsorption
-0187-0453	Monoamine Oxidase Inhibitors
 0187-0453	Monoamine Oxidase-b Inhibitors
+0187-0453	Monoamine Oxidase Inhibitors
 0187-0500	Cholinergic Muscarinic Antagonists
 0187-0500	Cholinergic Antagonists
 0187-0651	Photoabsorption
 0187-0730	Dopamine Uptake Inhibitors
 0187-0730	Norepinephrine Uptake Inhibitors
-0187-0731	Norepinephrine Uptake Inhibitors
 0187-0731	Dopamine Uptake Inhibitors
+0187-0731	Norepinephrine Uptake Inhibitors
 0187-0771	Calcium Channel Antagonists
 0187-0772	Calcium Channel Antagonists
 0187-0792	Calcium Channel Antagonists
@@ -2116,17 +2116,17 @@ Key	Value
 0228-2779	Adrenergic Beta-antagonists
 0228-2780	Adrenergic Beta-antagonists
 0228-2781	Adrenergic Beta-antagonists
-0228-2801	Cholinergic Muscarinic Agonists
 0228-2801	Cholinergic Agonists
+0228-2801	Cholinergic Muscarinic Agonists
 0228-2803	Aldosterone Antagonists
-0228-2837	Cholinergic Agonists
 0228-2837	Cholinergic Muscarinic Agonists
+0228-2837	Cholinergic Agonists
 0228-2848	Serotonin Uptake Inhibitors
 0228-2849	Serotonin Uptake Inhibitors
 0228-2878	Full Opioid Agonists
 0228-2879	Full Opioid Agonists
-0228-2890	Serotonin Uptake Inhibitors
 0228-2890	Norepinephrine Uptake Inhibitors
+0228-2890	Serotonin Uptake Inhibitors
 0228-2891	Serotonin Uptake Inhibitors
 0228-2891	Norepinephrine Uptake Inhibitors
 0228-2892	Serotonin Uptake Inhibitors
@@ -2232,8 +2232,8 @@ Key	Value
 0310-0209	Serotonin 1b Receptor Agonists
 0310-0210	Serotonin 1d Receptor Agonists
 0310-0210	Serotonin 1b Receptor Agonists
-0310-0211	Serotonin 1b Receptor Agonists
 0310-0211	Serotonin 1d Receptor Agonists
+0310-0211	Serotonin 1b Receptor Agonists
 0310-0213	Serotonin 1d Receptor Agonists
 0310-0213	Serotonin 1b Receptor Agonists
 0310-0401	Leukotriene Receptor Antagonists
@@ -2241,8 +2241,8 @@ Key	Value
 0310-0411	Leukotriene Receptor Antagonists
 0310-0412	Leukotriene Receptor Antagonists
 0310-0482	Protein Kinase Inhibitors
-0310-0720	Estrogen Receptor Antagonists
 0310-0720	Selective Estrogen Receptor Modulators
+0310-0720	Estrogen Receptor Antagonists
 0310-0751	Phosphate Chelating Activity
 0310-0752	Phosphate Chelating Activity
 0310-0754	Phosphate Chelating Activity
@@ -2283,8 +2283,8 @@ Key	Value
 0363-0004	Histamine H1 Receptor Antagonists
 0363-0013	Adrenergic Alpha-agonists
 0363-0054	Adrenergic Alpha-agonists
-0363-0096	Uncompetitive Nmda Receptor Antagonists
 0363-0096	Sigma-1 Receptor Agonists
+0363-0096	Uncompetitive Nmda Receptor Antagonists
 0363-0131	Histamine H2 Receptor Antagonists
 0363-0168	Cyclooxygenase Inhibitors
 0363-0169	Cyclooxygenase Inhibitors
@@ -2344,9 +2344,9 @@ Key	Value
 0378-0243	Aldosterone Antagonists
 0378-0253	Dna Polymerase Inhibitors
 0378-0255	Adrenergic Beta2-agonists
-0378-0261	Cytochrome P450 3a5 Inhibitors
-0378-0261	P-glycoprotein Inhibitors
 0378-0261	Cytochrome P450 3a4 Inhibitors
+0378-0261	P-glycoprotein Inhibitors
+0378-0261	Cytochrome P450 3a5 Inhibitors
 0378-0274	Selective Estrogen Receptor Modulators
 0378-0302	Dna Polymerase Inhibitors
 0378-0313	Cyclooxygenase Inhibitors
@@ -2364,8 +2364,8 @@ Key	Value
 0378-0407	Serotonin Uptake Inhibitors
 0378-0412	Serotonin Uptake Inhibitors
 0378-0414	Serotonin Uptake Inhibitors
-0378-0415	Cholinergic Antagonists
 0378-0415	Cholinergic Muscarinic Antagonists
+0378-0415	Cholinergic Antagonists
 0378-0424	Adrenergic Beta-antagonists
 0378-0427	Cyclooxygenase Inhibitors
 0378-0434	Adrenergic Beta-antagonists
@@ -2560,16 +2560,16 @@ Key	Value
 0378-4122	Adrenergic Beta2-agonists
 0378-4124	Adrenergic Beta2-agonists
 0378-4151	Full Opioid Agonists
-0378-4260	Serotonin 1d Receptor Agonists
 0378-4260	Serotonin 1b Receptor Agonists
-0378-4261	Serotonin 1d Receptor Agonists
+0378-4260	Serotonin 1d Receptor Agonists
 0378-4261	Serotonin 1b Receptor Agonists
+0378-4261	Serotonin 1d Receptor Agonists
 0378-4275	Dna Polymerase Inhibitors
 0378-4276	Dna Polymerase Inhibitors
-0378-4450	Serotonin 1b Receptor Agonists
 0378-4450	Serotonin 1d Receptor Agonists
-0378-4451	Serotonin 1d Receptor Agonists
+0378-4450	Serotonin 1b Receptor Agonists
 0378-4451	Serotonin 1b Receptor Agonists
+0378-4451	Serotonin 1d Receptor Agonists
 0378-4490	Dna Polymerase Inhibitors
 0378-4491	Dna Polymerase Inhibitors
 0378-4492	Dna Polymerase Inhibitors
@@ -2607,10 +2607,10 @@ Key	Value
 0378-5208	Calcium Channel Antagonists
 0378-5209	Calcium Channel Antagonists
 0378-5210	Calcium Channel Antagonists
-0378-5211	Proton Pump Inhibitors
 0378-5211	Cytochrome P450 2c19 Inhibitors
-0378-5222	Cytochrome P450 2c19 Inhibitors
+0378-5211	Proton Pump Inhibitors
 0378-5222	Proton Pump Inhibitors
+0378-5222	Cytochrome P450 2c19 Inhibitors
 0378-5300	Histamine H2 Receptor Antagonists
 0378-5305	Gaba A Agonists
 0378-5310	Gaba A Agonists
@@ -2631,8 +2631,8 @@ Key	Value
 0378-5630	Serotonin 1b Receptor Agonists
 0378-5631	Serotonin 1b Receptor Agonists
 0378-5631	Serotonin 1d Receptor Agonists
-0378-5632	Serotonin 1b Receptor Agonists
 0378-5632	Serotonin 1d Receptor Agonists
+0378-5632	Serotonin 1b Receptor Agonists
 0378-5750	Cyclooxygenase Inhibitors
 0378-6034	Aromatase Inhibitors
 0378-6060	Calcium Channel Antagonists
@@ -2645,8 +2645,8 @@ Key	Value
 0378-6114	Full Opioid Agonists
 0378-6117	Cyclooxygenase Inhibitors
 0378-6120	Calcium Channel Antagonists
-0378-6150	Proton Pump Inhibitors
 0378-6150	Cytochrome P450 2c19 Inhibitors
+0378-6150	Proton Pump Inhibitors
 0378-6160	Adrenergic Beta-antagonists
 0378-6161	Calcium Channel Antagonists
 0378-6162	Calcium Channel Antagonists
@@ -2734,8 +2734,8 @@ Key	Value
 0378-8889	Nucleoside Reverse Transcriptase Inhibitors
 0378-9040	Cystine Disulfide Reduction
 0378-9045	Cystine Disulfide Reduction
-0378-9290	Monoamine Oxidase-b Inhibitors
 0378-9290	Monoamine Oxidase Inhibitors
+0378-9290	Monoamine Oxidase-b Inhibitors
 0378-9639	Partial Opioid Agonists
 0378-9639	Competitive Opioid Antagonists
 0378-9671	Adrenergic Beta2-agonists
@@ -2842,36 +2842,36 @@ Key	Value
 0409-1442	Adrenergic Beta-agonists
 0409-1443	Adrenergic Beta-agonists
 0409-1443	Adrenergic Alpha-agonists
-0409-1463	Partial Opioid Agonists
 0409-1463	Competitive Opioid Antagonists
-0409-1464	Competitive Opioid Antagonists
+0409-1463	Partial Opioid Agonists
 0409-1464	Partial Opioid Agonists
-0409-1465	Partial Opioid Agonists
+0409-1464	Competitive Opioid Antagonists
 0409-1465	Competitive Opioid Antagonists
-0409-1467	Competitive Opioid Antagonists
+0409-1465	Partial Opioid Agonists
 0409-1467	Partial Opioid Agonists
+0409-1467	Competitive Opioid Antagonists
 0409-1555	Osmotic Activity
-0409-1559	Adrenergic Beta-agonists
 0409-1559	Adrenergic Alpha-agonists
-0409-1560	Adrenergic Alpha-agonists
+0409-1559	Adrenergic Beta-agonists
 0409-1560	Adrenergic Beta-agonists
-0409-1582	Adrenergic Beta-agonists
+0409-1560	Adrenergic Alpha-agonists
 0409-1582	Adrenergic Alpha-agonists
+0409-1582	Adrenergic Beta-agonists
 0409-1587	Adrenergic Beta-agonists
 0409-1587	Adrenergic Alpha-agonists
-0409-1610	Adrenergic Alpha-agonists
 0409-1610	Adrenergic Beta-agonists
+0409-1610	Adrenergic Alpha-agonists
 0409-1623	Partial Opioid Agonists
 0409-1623	Competitive Opioid Antagonists
-0409-1626	Partial Opioid Agonists
 0409-1626	Competitive Opioid Antagonists
+0409-1626	Partial Opioid Agonists
 0409-1630	Cholinergic Muscarinic Antagonists
 0409-1630	Cholinergic Antagonists
 0409-1631	Phosphate Chelating Activity
 0409-1638	Adrenergic Alpha2-agonists
 0409-1660	Adrenergic Alpha2-agonists
-0409-1746	Adrenergic Beta-agonists
 0409-1746	Adrenergic Alpha-agonists
+0409-1746	Adrenergic Beta-agonists
 0409-1749	Adrenergic Alpha-agonists
 0409-1749	Adrenergic Beta-agonists
 0409-1752	Adrenergic Beta-agonists
@@ -2885,8 +2885,8 @@ Key	Value
 0409-1892	Full Opioid Agonists
 0409-1893	Full Opioid Agonists
 0409-1894	Full Opioid Agonists
-0409-1920	Partial Opioid Agonists
 0409-1920	Competitive Opioid Antagonists
+0409-1920	Partial Opioid Agonists
 0409-1932	Adenosine Receptor Agonists
 0409-1941	Partial Opioid Agonists
 0409-1941	Competitive Opioid Antagonists
@@ -2920,8 +2920,8 @@ Key	Value
 0409-3365	Full Opioid Agonists
 0409-3373	Dopamine Agonists
 0409-3374	Beta Lactamase Inhibitors
-0409-3375	Adrenergic Beta-agonists
 0409-3375	Adrenergic Alpha-agonists
+0409-3375	Adrenergic Beta-agonists
 0409-3378	Beta Lactamase Inhibitors
 0409-3379	Beta Lactamase Inhibitors
 0409-3383	Beta Lactamase Inhibitors
@@ -2946,14 +2946,14 @@ Key	Value
 0409-4755	Serotonin 3 Receptor Antagonists
 0409-4759	Serotonin 3 Receptor Antagonists
 0409-4856	Corticosteroid Hormone Receptor Agonists
-0409-4901	Adrenergic Beta-agonists
 0409-4901	Adrenergic Alpha-agonists
+0409-4901	Adrenergic Beta-agonists
 0409-4910	Cholinergic Antagonists
 0409-4910	Cholinergic Muscarinic Antagonists
-0409-4911	Cholinergic Muscarinic Antagonists
 0409-4911	Cholinergic Antagonists
-0409-4921	Adrenergic Beta-agonists
+0409-4911	Cholinergic Muscarinic Antagonists
 0409-4921	Adrenergic Alpha-agonists
+0409-4921	Adrenergic Beta-agonists
 0409-4928	Phosphate Chelating Activity
 0409-5779	Phosphate Chelating Activity
 0409-6028	Full Opioid Agonists
@@ -2963,8 +2963,8 @@ Key	Value
 0409-6179	Full Opioid Agonists
 0409-7111	Phosphate Chelating Activity
 0409-7113	Phosphate Chelating Activity
-0409-7241	Adrenergic Alpha-agonists
 0409-7241	Adrenergic Beta-agonists
+0409-7241	Adrenergic Alpha-agonists
 0409-7248	Osmotic Activity
 0409-7263	Adrenergic Alpha-agonists
 0409-7263	Adrenergic Beta-agonists
@@ -2983,8 +2983,8 @@ Key	Value
 0409-7982	Phosphate Chelating Activity
 0409-9093	Full Opioid Agonists
 0409-9094	Full Opioid Agonists
-0409-9629	Cholinergic Antagonists
 0409-9629	Cholinergic Muscarinic Antagonists
+0409-9629	Cholinergic Antagonists
 0409-9630	Cholinergic Antagonists
 0409-9630	Cholinergic Muscarinic Antagonists
 0409-9633	Calcium Channel Antagonists
@@ -3015,22 +3015,22 @@ Key	Value
 0456-1512	Serotonin Uptake Inhibitors
 0456-1525	Norepinephrine Uptake Inhibitors
 0456-1525	Serotonin Uptake Inhibitors
-0456-1550	Serotonin Uptake Inhibitors
 0456-1550	Norepinephrine Uptake Inhibitors
+0456-1550	Serotonin Uptake Inhibitors
 0456-2005	Serotonin Uptake Inhibitors
 0456-2010	Serotonin Uptake Inhibitors
 0456-2020	Serotonin Uptake Inhibitors
 0456-2101	Serotonin Uptake Inhibitors
 0456-2202	Serotonin Uptake Inhibitors
 0456-2202	Norepinephrine Uptake Inhibitors
-0456-2212	Serotonin Uptake Inhibitors
 0456-2212	Norepinephrine Uptake Inhibitors
-0456-2220	Norepinephrine Uptake Inhibitors
+0456-2212	Serotonin Uptake Inhibitors
 0456-2220	Serotonin Uptake Inhibitors
+0456-2220	Norepinephrine Uptake Inhibitors
 0456-2240	Norepinephrine Uptake Inhibitors
 0456-2240	Serotonin Uptake Inhibitors
-0456-2280	Norepinephrine Uptake Inhibitors
 0456-2280	Serotonin Uptake Inhibitors
+0456-2280	Norepinephrine Uptake Inhibitors
 0456-3200	Nmda Receptor Antagonists
 0456-3202	Nmda Receptor Antagonists
 0456-3205	Nmda Receptor Antagonists
@@ -3046,15 +3046,15 @@ Key	Value
 0456-4040	Serotonin Uptake Inhibitors
 0462-0263	Corticosteroid Hormone Receptor Agonists
 0462-0264	Corticosteroid Hormone Receptor Agonists
+0469-0125	Cytochrome P450 3a4 Inducers
 0469-0125	Cytochrome P450 2c9 Inducers
 0469-0125	Cytochrome P450 2c19 Inducers
-0469-0125	Cytochrome P450 3a4 Inducers
 0469-0125	Androgen Receptor Antagonists
 0469-0871	Adenosine Receptor Agonists
 0469-2601	Cytochrome P450 2d6 Inhibitors
 0469-2601	Adrenergic Beta3-agonists
-0469-2602	Cytochrome P450 2d6 Inhibitors
 0469-2602	Adrenergic Beta3-agonists
+0469-2602	Cytochrome P450 2d6 Inhibitors
 0469-6501	Adenosine Receptor Agonists
 0469-8234	Adenosine Receptor Agonists
 0472-0082	Dna Polymerase Inhibitors
@@ -3098,8 +3098,8 @@ Key	Value
 0485-0155	Histamine H1 Receptor Antagonists
 0485-0171	Histamine H1 Receptor Antagonists
 0485-0202	Adrenergic Alpha-agonists
-0485-0204	Uncompetitive Nmda Receptor Antagonists
 0485-0204	Sigma-1 Receptor Agonists
+0485-0204	Uncompetitive Nmda Receptor Antagonists
 0485-0206	Adrenergic Alpha-agonists
 0485-0208	Adrenergic Alpha1-agonists
 0485-0210	Adrenergic Alpha-agonists
@@ -3124,24 +3124,24 @@ Key	Value
 0517-0101	Cholinergic Antagonists
 0517-0101	Cholinergic Muscarinic Antagonists
 0517-0299	Adrenergic Alpha1-agonists
-0517-0401	Cholinergic Antagonists
 0517-0401	Cholinergic Muscarinic Antagonists
+0517-0401	Cholinergic Antagonists
 0517-0405	Adrenergic Alpha1-agonists
 0517-0720	Corticosteroid Hormone Receptor Agonists
 0517-0725	Partial Opioid Agonists
 0517-0730	Adrenergic Alpha2-agonists
 0517-0731	Adrenergic Alpha2-agonists
 0517-0735	Calcium Channel Antagonists
-0517-0785	Cholinergic Antagonists
 0517-0785	Histamine Receptor Antagonists
-0517-0805	Cholinergic Muscarinic Antagonists
+0517-0785	Cholinergic Antagonists
 0517-0805	Cholinergic Antagonists
+0517-0805	Cholinergic Muscarinic Antagonists
 0517-1010	Cholinergic Antagonists
 0517-1010	Cholinergic Muscarinic Antagonists
 0517-1071	Adrenergic Beta-agonists
 0517-1071	Adrenergic Alpha-agonists
-0517-1130	Adrenergic Alpha-agonists
 0517-1130	Adrenergic Beta-agonists
+0517-1130	Adrenergic Alpha-agonists
 0517-1355	Adrenergic Beta-antagonists
 0517-2000	Phosphate Chelating Activity
 0517-2020	Phosphate Chelating Activity
@@ -3168,10 +3168,10 @@ Key	Value
 0527-1050	Carbonic Anhydrase Inhibitors
 0527-1282	Cholinergic Antagonists
 0527-1312	Cyclooxygenase Inhibitors
-0527-1313	Cholinergic Agonists
 0527-1313	Cholinergic Muscarinic Agonists
-0527-1330	Gaba A Agonists
+0527-1313	Cholinergic Agonists
 0527-1330	Gaba B Agonists
+0527-1330	Gaba A Agonists
 0527-1337	Gaba B Agonists
 0527-1337	Gaba A Agonists
 0527-1353	Full Opioid Agonists
@@ -3180,8 +3180,8 @@ Key	Value
 0527-1368	Androgen Receptor Agonists
 0527-1369	Androgen Receptor Agonists
 0527-1392	Androgen Receptor Agonists
-0527-1407	Cholinergic Agonists
 0527-1407	Cholinergic Muscarinic Agonists
+0527-1407	Cholinergic Agonists
 0527-1425	Full Opioid Agonists
 0527-1426	Full Opioid Agonists
 0527-1552	Cyclooxygenase Inhibitors
@@ -3234,22 +3234,22 @@ Key	Value
 0536-5105	Corticosteroid Hormone Receptor Agonists
 0536-5108	Corticosteroid Hormone Receptor Agonists
 0548-1004	Phosphate Chelating Activity
-0548-1016	Adrenergic Beta-agonists
 0548-1016	Adrenergic Alpha-agonists
+0548-1016	Adrenergic Beta-agonists
 0548-1469	Opioid Antagonists
 0548-1911	Full Opioid Agonists
 0548-2004	Phosphate Chelating Activity
 0548-2016	Adrenergic Beta-agonists
 0548-2016	Adrenergic Alpha-agonists
 0548-3304	Phosphate Chelating Activity
-0548-3316	Adrenergic Beta-agonists
 0548-3316	Adrenergic Alpha-agonists
+0548-3316	Adrenergic Beta-agonists
 0548-3339	Cholinergic Muscarinic Antagonists
 0548-3339	Cholinergic Antagonists
 0548-3369	Opioid Antagonists
 0548-3391	Full Opioid Agonists
-0548-9061	Adrenergic Alpha-agonists
 0548-9061	Adrenergic Beta-agonists
+0548-9061	Adrenergic Alpha-agonists
 0555-0138	Cholinesterase Inhibitors
 0555-0139	Cholinesterase Inhibitors
 0555-0140	Cholinesterase Inhibitors
@@ -3341,10 +3341,10 @@ Key	Value
 0574-0159	Full Opioid Agonists
 0574-0193	Cyclooxygenase Inhibitors
 0574-0195	Cyclooxygenase Inhibitors
-0574-0214	Serotonin 1d Receptor Agonists
 0574-0214	Serotonin 1b Receptor Agonists
-0574-0215	Serotonin 1d Receptor Agonists
+0574-0214	Serotonin 1d Receptor Agonists
 0574-0215	Serotonin 1b Receptor Agonists
+0574-0215	Serotonin 1d Receptor Agonists
 0574-0240	Potassium Channel Antagonists
 0574-0241	Potassium Channel Antagonists
 0574-0242	Potassium Channel Antagonists
@@ -3392,8 +3392,8 @@ Key	Value
 0591-0387	Opioid Agonists
 0591-0388	Opioid Agonists
 0591-0395	Opioid Antagonists
-0591-0396	Partial Opioid Agonists
 0591-0396	Competitive Opioid Antagonists
+0591-0396	Partial Opioid Agonists
 0591-0397	Cyclooxygenase Inhibitors
 0591-0398	Cyclooxygenase Inhibitors
 0591-0404	Calcium Channel Antagonists
@@ -3488,8 +3488,8 @@ Key	Value
 0591-3294	Angiotensin 2 Receptor Antagonists
 0591-3331	Dopamine Uptake Inhibitors
 0591-3331	Norepinephrine Uptake Inhibitors
-0591-3332	Dopamine Uptake Inhibitors
 0591-3332	Norepinephrine Uptake Inhibitors
+0591-3332	Dopamine Uptake Inhibitors
 0591-3354	Potassium Channel Antagonists
 0591-3355	Potassium Channel Antagonists
 0591-3423	Histamine Receptor Antagonists
@@ -3508,14 +3508,14 @@ Key	Value
 0591-3508	Adrenergic Alpha2-agonists
 0591-3509	Adrenergic Alpha2-agonists
 0591-3510	Adrenergic Alpha2-agonists
-0591-3540	Dopamine Uptake Inhibitors
 0591-3540	Norepinephrine Uptake Inhibitors
-0591-3541	Dopamine Uptake Inhibitors
+0591-3540	Dopamine Uptake Inhibitors
 0591-3541	Norepinephrine Uptake Inhibitors
+0591-3541	Dopamine Uptake Inhibitors
 0591-3542	Dopamine Uptake Inhibitors
 0591-3542	Norepinephrine Uptake Inhibitors
-0591-3543	Dopamine Uptake Inhibitors
 0591-3543	Norepinephrine Uptake Inhibitors
+0591-3543	Dopamine Uptake Inhibitors
 0591-3546	Cyclooxygenase Inhibitors
 0591-3551	Cyclooxygenase Inhibitors
 0591-3562	Nucleic Acid Synthesis Inhibitors
@@ -3663,8 +3663,8 @@ Key	Value
 0603-1147	Corticosteroid Hormone Receptor Agonists
 0603-1161	Cholinergic Antagonists
 0603-1310	Histamine Receptor Antagonists
-0603-1330	Sigma-1 Receptor Agonists
 0603-1330	Uncompetitive Nmda Receptor Antagonists
+0603-1330	Sigma-1 Receptor Agonists
 0603-1422	Adrenergic Beta2-agonists
 0603-1520	Histamine H1 Receptor Antagonists
 0603-1586	Uncompetitive Nmda Receptor Antagonists
@@ -3678,16 +3678,16 @@ Key	Value
 0603-2110	Calcium Channel Antagonists
 0603-2115	Xanthine Oxidase Inhibitors
 0603-2116	Xanthine Oxidase Inhibitors
-0603-2406	Gaba A Agonists
 0603-2406	Gaba B Agonists
+0603-2406	Gaba A Agonists
 0603-2407	Gaba B Agonists
 0603-2407	Gaba A Agonists
-0603-2433	Cholinergic Antagonists
 0603-2433	Histamine Receptor Antagonists
-0603-2434	Cholinergic Antagonists
+0603-2433	Cholinergic Antagonists
 0603-2434	Histamine Receptor Antagonists
-0603-2435	Histamine Receptor Antagonists
+0603-2434	Cholinergic Antagonists
 0603-2435	Cholinergic Antagonists
+0603-2435	Histamine Receptor Antagonists
 0603-2548	Cyclooxygenase Inhibitors
 0603-2957	Adrenergic Alpha2-agonists
 0603-2958	Adrenergic Alpha2-agonists
@@ -3741,16 +3741,16 @@ Key	Value
 0603-5926	Angiotensin 2 Receptor Antagonists
 0603-5927	Angiotensin 2 Receptor Antagonists
 0603-5928	Angiotensin 2 Receptor Antagonists
-0603-6149	Norepinephrine Uptake Inhibitors
 0603-6149	Serotonin Uptake Inhibitors
+0603-6149	Norepinephrine Uptake Inhibitors
 0603-6150	Serotonin Uptake Inhibitors
 0603-6150	Norepinephrine Uptake Inhibitors
-0603-6151	Norepinephrine Uptake Inhibitors
 0603-6151	Serotonin Uptake Inhibitors
+0603-6151	Norepinephrine Uptake Inhibitors
 0603-6156	Norepinephrine Uptake Inhibitors
 0603-6156	Serotonin Uptake Inhibitors
-0603-6157	Norepinephrine Uptake Inhibitors
 0603-6157	Serotonin Uptake Inhibitors
+0603-6157	Norepinephrine Uptake Inhibitors
 0603-6468	Gaba A Agonists
 0603-6469	Gaba A Agonists
 0603-7039	Corticosteroid Hormone Receptor Agonists
@@ -3771,8 +3771,8 @@ Key	Value
 0641-0376	Histamine H1 Receptor Antagonists
 0641-2341	Full Opioid Agonists
 0641-2965	Adrenergic Beta-antagonists
-0641-6006	Cholinergic Antagonists
 0641-6006	Cholinergic Muscarinic Antagonists
+0641-6006	Cholinergic Antagonists
 0641-6013	Calcium Channel Antagonists
 0641-6014	Calcium Channel Antagonists
 0641-6015	Calcium Channel Antagonists
@@ -3892,8 +3892,8 @@ Key	Value
 0713-0640	Corticosteroid Hormone Receptor Agonists
 0713-0703	Opioid Agonists
 0713-0704	Opioid Agonists
-0781-1053	Norepinephrine Uptake Inhibitors
 0781-1053	Dopamine Uptake Inhibitors
+0781-1053	Norepinephrine Uptake Inhibitors
 0781-1064	Norepinephrine Uptake Inhibitors
 0781-1064	Dopamine Uptake Inhibitors
 0781-1078	Adrenergic Beta-antagonists
@@ -3932,8 +3932,8 @@ Key	Value
 0781-2193	Serotonin Uptake Inhibitors
 0781-2194	Serotonin Uptake Inhibitors
 0781-2195	Serotonin Uptake Inhibitors
-0781-2232	Proton Pump Inhibitors
 0781-2232	Cytochrome P450 2c19 Inhibitors
+0781-2232	Proton Pump Inhibitors
 0781-2233	Cytochrome P450 2c19 Inhibitors
 0781-2233	Proton Pump Inhibitors
 0781-2234	Cytochrome P450 2c19 Inhibitors
@@ -4004,8 +4004,8 @@ Key	Value
 0781-3172	Serotonin 1b Receptor Agonists
 0781-3173	Serotonin 1d Receptor Agonists
 0781-3173	Serotonin 1b Receptor Agonists
-0781-3174	Serotonin 1d Receptor Agonists
 0781-3174	Serotonin 1b Receptor Agonists
+0781-3174	Serotonin 1d Receptor Agonists
 0781-3204	Calcium Channel Antagonists
 0781-3243	Corticosteroid Hormone Receptor Agonists
 0781-3245	Corticosteroid Hormone Receptor Agonists
@@ -4029,18 +4029,18 @@ Key	Value
 0781-5208	Dna Polymerase Inhibitors
 0781-5209	Dna Polymerase Inhibitors
 0781-5220	Adrenergic Beta-antagonists
-0781-5221	Adrenergic Alpha-antagonists
 0781-5221	Adrenergic Beta2-antagonists
+0781-5221	Adrenergic Alpha-antagonists
 0781-5221	Adrenergic Beta1-antagonists
+0781-5222	Adrenergic Alpha-antagonists
 0781-5222	Adrenergic Beta1-antagonists
 0781-5222	Adrenergic Beta2-antagonists
-0781-5222	Adrenergic Alpha-antagonists
-0781-5223	Adrenergic Beta1-antagonists
 0781-5223	Adrenergic Beta2-antagonists
 0781-5223	Adrenergic Alpha-antagonists
+0781-5223	Adrenergic Beta1-antagonists
 0781-5224	Adrenergic Alpha-antagonists
-0781-5224	Adrenergic Beta2-antagonists
 0781-5224	Adrenergic Beta1-antagonists
+0781-5224	Adrenergic Beta2-antagonists
 0781-5225	Adrenergic Beta-antagonists
 0781-5226	Histamine H1 Receptor Antagonists
 0781-5229	Adrenergic Beta-antagonists
@@ -4073,8 +4073,8 @@ Key	Value
 0781-5420	Peroxisome Proliferator-activated Receptor Activity
 0781-5421	Peroxisome Proliferator-activated Receptor Activity
 0781-5422	Peroxisome Proliferator-activated Receptor Activity
-0781-5526	Serotonin 1d Receptor Agonists
 0781-5526	Serotonin 1b Receptor Agonists
+0781-5526	Serotonin 1d Receptor Agonists
 0781-5527	Serotonin 1b Receptor Agonists
 0781-5527	Serotonin 1d Receptor Agonists
 0781-5554	Leukotriene Receptor Antagonists
@@ -4116,12 +4116,12 @@ Key	Value
 0781-6087	Histamine H2 Receptor Antagonists
 0781-6523	Serotonin 1d Receptor Agonists
 0781-6523	Serotonin 1b Receptor Agonists
-0781-6524	Serotonin 1b Receptor Agonists
 0781-6524	Serotonin 1d Receptor Agonists
+0781-6524	Serotonin 1b Receptor Agonists
 0781-7074	Corticosteroid Hormone Receptor Agonists
+0781-7090	Cytochrome P450 3a4 Inhibitors
 0781-7090	P-glycoprotein Inhibitors
 0781-7090	Cytochrome P450 3a5 Inhibitors
-0781-7090	Cytochrome P450 3a4 Inhibitors
 0781-7106	Protein Synthesis Inhibitors
 0781-7137	Corticosteroid Hormone Receptor Agonists
 0781-7146	Adrenergic Beta2-agonists
@@ -4158,14 +4158,14 @@ Key	Value
 0832-0512	Cholinergic Muscarinic Agonists
 0832-0513	Cholinergic Muscarinic Agonists
 0832-1015	M2 Protein Inhibitors
-0832-1024	Gaba A Agonists
 0832-1024	Gaba B Agonists
+0832-1024	Gaba A Agonists
 0832-1025	Gaba B Agonists
 0832-1025	Gaba A Agonists
-0832-1080	Histamine Receptor Antagonists
 0832-1080	Cholinergic Antagonists
-0832-1081	Histamine Receptor Antagonists
+0832-1080	Histamine Receptor Antagonists
 0832-1081	Cholinergic Antagonists
+0832-1081	Histamine Receptor Antagonists
 0832-1082	Histamine Receptor Antagonists
 0832-1082	Cholinergic Antagonists
 0832-1120	Androgen Receptor Agonists
@@ -4212,8 +4212,8 @@ Key	Value
 0904-3006	Corticosteroid Hormone Receptor Agonists
 0904-3017	Corticosteroid Hormone Receptor Agonists
 0904-3141	Corticosteroid Hormone Receptor Agonists
-0904-3365	Gaba A Agonists
 0904-3365	Gaba B Agonists
+0904-3365	Gaba A Agonists
 0904-3379	Cyclooxygenase Inhibitors
 0904-4040	Cyclooxygenase Inhibitors
 0904-4274	Histamine H1 Receptor Antagonists
@@ -4226,12 +4226,12 @@ Key	Value
 0904-5125	Adrenergic Alpha-agonists
 0904-5135	Cyclooxygenase Inhibitors
 0904-5174	Histamine H1 Receptor Antagonists
-0904-5180	Sigma-1 Receptor Agonists
 0904-5180	Uncompetitive Nmda Receptor Antagonists
+0904-5180	Sigma-1 Receptor Agonists
 0904-5186	Cyclooxygenase Inhibitors
 0904-5187	Cyclooxygenase Inhibitors
-0904-5222	Gaba B Agonists
 0904-5222	Gaba A Agonists
+0904-5222	Gaba B Agonists
 0904-5229	Cyclooxygenase Inhibitors
 0904-5230	Cyclooxygenase Inhibitors
 0904-5304	Adrenergic Alpha1-agonists
@@ -4273,23 +4273,23 @@ Key	Value
 0904-5679	Serotonin Uptake Inhibitors
 0904-5684	Proton Pump Inhibitors
 0904-5733	Adrenergic Alpha1-agonists
-0904-5752	Sigma-1 Receptor Agonists
 0904-5752	Uncompetitive Nmda Receptor Antagonists
+0904-5752	Sigma-1 Receptor Agonists
 0904-5763	Uncompetitive Nmda Receptor Antagonists
 0904-5763	Sigma-1 Receptor Agonists
-0904-5764	Uncompetitive Nmda Receptor Antagonists
 0904-5764	Sigma-1 Receptor Agonists
+0904-5764	Uncompetitive Nmda Receptor Antagonists
 0904-5770	Uncompetitive Nmda Receptor Antagonists
 0904-5770	Sigma-1 Receptor Agonists
-0904-5776	Sigma-1 Receptor Agonists
 0904-5776	Uncompetitive Nmda Receptor Antagonists
+0904-5776	Sigma-1 Receptor Agonists
 0904-5777	Sigma-1 Receptor Agonists
 0904-5777	Uncompetitive Nmda Receptor Antagonists
 0904-5779	Phosphate Chelating Activity
 0904-5780	Histamine H2 Receptor Antagonists
 0904-5781	Adrenergic Alpha1-agonists
-0904-5782	Uncompetitive Nmda Receptor Antagonists
 0904-5782	Sigma-1 Receptor Agonists
+0904-5782	Uncompetitive Nmda Receptor Antagonists
 0904-5783	Adrenergic Alpha1-agonists
 0904-5784	Serotonin Uptake Inhibitors
 0904-5785	Serotonin Uptake Inhibitors
@@ -4345,15 +4345,15 @@ Key	Value
 0904-5999	Dopamine Agonists
 0904-6000	Dopamine Agonists
 0904-6012	Folic Acid Metabolism Inhibitors
-0904-6013	Sigma-1 Receptor Agonists
 0904-6013	Uncompetitive Nmda Receptor Antagonists
+0904-6013	Sigma-1 Receptor Agonists
 0904-6019	Androgen Receptor Antagonists
 0904-6025	Osmotic Activity
 0904-6033	Adrenergic Beta-antagonists
 0904-6034	Adrenergic Beta-antagonists
 0904-6041	Potassium Ion Exchange Activity
-0904-6046	Uncompetitive Nmda Receptor Antagonists
 0904-6046	Sigma-1 Receptor Agonists
+0904-6046	Uncompetitive Nmda Receptor Antagonists
 0904-6069	Cyclooxygenase Inhibitors
 0904-6080	Histamine H2 Receptor Antagonists
 0904-6082	Gaba A Agonists
@@ -4366,18 +4366,18 @@ Key	Value
 0904-6089	Serotonin Uptake Inhibitors
 0904-6093	Dopamine Uptake Inhibitors
 0904-6093	Norepinephrine Uptake Inhibitors
-0904-6096	Adrenergic Alpha-antagonists
-0904-6096	Adrenergic Beta1-antagonists
 0904-6096	Adrenergic Beta2-antagonists
-0904-6097	Adrenergic Alpha-antagonists
-0904-6097	Adrenergic Beta1-antagonists
+0904-6096	Adrenergic Beta1-antagonists
+0904-6096	Adrenergic Alpha-antagonists
 0904-6097	Adrenergic Beta2-antagonists
+0904-6097	Adrenergic Beta1-antagonists
+0904-6097	Adrenergic Alpha-antagonists
 0904-6098	Adrenergic Beta1-antagonists
-0904-6098	Adrenergic Alpha-antagonists
 0904-6098	Adrenergic Beta2-antagonists
-0904-6099	Adrenergic Beta1-antagonists
+0904-6098	Adrenergic Alpha-antagonists
 0904-6099	Adrenergic Beta2-antagonists
 0904-6099	Adrenergic Alpha-antagonists
+0904-6099	Adrenergic Beta1-antagonists
 0904-6100	Histamine H1 Receptor Antagonists
 0904-6109	Serotonin Uptake Inhibitors
 0904-6110	Serotonin Uptake Inhibitors
@@ -4393,8 +4393,8 @@ Key	Value
 0904-6126	Adrenergic Alpha-antagonists
 0904-6127	Adrenergic Alpha-antagonists
 0904-6128	Adrenergic Alpha-antagonists
-0904-6129	Dopamine Uptake Inhibitors
 0904-6129	Norepinephrine Uptake Inhibitors
+0904-6129	Dopamine Uptake Inhibitors
 0904-6135	Proton Pump Inhibitors
 0904-6140	Adrenergic Alpha-antagonists
 0904-6141	Adrenergic Alpha-antagonists
@@ -4431,15 +4431,15 @@ Key	Value
 0904-6216	Cyclooxygenase Inhibitors
 0904-6217	Cyclooxygenase Inhibitors
 0904-6229	Aromatase Inhibitors
-0904-6233	Sigma-1 Receptor Agonists
 0904-6233	Uncompetitive Nmda Receptor Antagonists
+0904-6233	Sigma-1 Receptor Agonists
 0904-6235	Proton Pump Inhibitors
 0904-6242	Cholinesterase Inhibitors
 0904-6243	Cholinesterase Inhibitors
-0904-6246	Serotonin Uptake Inhibitors
 0904-6246	Norepinephrine Uptake Inhibitors
-0904-6247	Norepinephrine Uptake Inhibitors
+0904-6246	Serotonin Uptake Inhibitors
 0904-6247	Serotonin Uptake Inhibitors
+0904-6247	Norepinephrine Uptake Inhibitors
 0904-6248	Norepinephrine Uptake Inhibitors
 0904-6248	Serotonin Uptake Inhibitors
 0904-6256	Opioid Agonists
@@ -4453,22 +4453,22 @@ Key	Value
 0904-6295	Cyclooxygenase Inhibitors
 0904-6296	Cyclooxygenase Inhibitors
 0904-6297	Cyclooxygenase Inhibitors
+0904-6300	Adrenergic Alpha-antagonists
 0904-6300	Adrenergic Beta1-antagonists
 0904-6300	Adrenergic Beta2-antagonists
-0904-6300	Adrenergic Alpha-antagonists
+0904-6301	Adrenergic Alpha-antagonists
 0904-6301	Adrenergic Beta1-antagonists
 0904-6301	Adrenergic Beta2-antagonists
-0904-6301	Adrenergic Alpha-antagonists
+0904-6302	Adrenergic Alpha-antagonists
 0904-6302	Adrenergic Beta1-antagonists
 0904-6302	Adrenergic Beta2-antagonists
-0904-6302	Adrenergic Alpha-antagonists
-0904-6303	Adrenergic Alpha-antagonists
 0904-6303	Adrenergic Beta2-antagonists
+0904-6303	Adrenergic Alpha-antagonists
 0904-6303	Adrenergic Beta1-antagonists
 0904-6310	Leukotriene Receptor Antagonists
 0904-6311	Histamine H1 Receptor Antagonists
-0904-6312	Uncompetitive Nmda Receptor Antagonists
 0904-6312	Sigma-1 Receptor Agonists
+0904-6312	Uncompetitive Nmda Receptor Antagonists
 0904-6314	Serotonin Uptake Inhibitors
 0904-6315	Serotonin Uptake Inhibitors
 0904-6319	Adrenergic Alpha1-agonists
@@ -4491,10 +4491,10 @@ Key	Value
 0904-6365	Full Opioid Agonists
 0904-6366	Serotonin Uptake Inhibitors
 0904-6366	Norepinephrine Uptake Inhibitors
-0904-6367	Serotonin Uptake Inhibitors
 0904-6367	Norepinephrine Uptake Inhibitors
-0904-6368	Norepinephrine Uptake Inhibitors
+0904-6367	Serotonin Uptake Inhibitors
 0904-6368	Serotonin Uptake Inhibitors
+0904-6368	Norepinephrine Uptake Inhibitors
 0904-6369	Calcium Channel Antagonists
 0904-6370	Calcium Channel Antagonists
 0904-6371	Calcium Channel Antagonists
@@ -4536,8 +4536,8 @@ Key	Value
 0941-0433	Phosphate Chelating Activity
 0941-0457	Phosphate Chelating Activity
 0941-0459	Phosphate Chelating Activity
-0942-0641	Calcium Chelating Activity
 0942-0641	Acidifying Activity
+0942-0641	Calcium Chelating Activity
 0955-1025	Histamine H1 Receptor Antagonists
 0955-1026	Histamine H1 Receptor Antagonists
 0955-1040	Angiotensin 2 Receptor Antagonists
@@ -4546,8 +4546,8 @@ Key	Value
 0955-1702	Gaba A Agonists
 0955-1703	Gaba A Agonists
 0955-1710	Corticosteroid Hormone Receptor Agonists
-0998-0203	Cholinergic Agonists
 0998-0203	Cholinergic Muscarinic Agonists
+0998-0203	Cholinergic Agonists
 0998-0204	Cholinergic Agonists
 0998-0204	Cholinergic Muscarinic Agonists
 0998-0206	Cholinergic Muscarinic Agonists
@@ -4613,18 +4613,18 @@ Key	Value
 10337-0395	Corticosteroid Hormone Receptor Agonists
 10337-0434	Corticosteroid Hormone Receptor Agonists
 10337-0803	Cyclooxygenase Inhibitors
-10370-0101	Norepinephrine Uptake Inhibitors
 10370-0101	Dopamine Uptake Inhibitors
-10370-0102	Norepinephrine Uptake Inhibitors
+10370-0101	Norepinephrine Uptake Inhibitors
 10370-0102	Dopamine Uptake Inhibitors
+10370-0102	Norepinephrine Uptake Inhibitors
 10370-0116	Gaba A Agonists
 10370-0117	Gaba A Agonists
-10370-0159	Dopamine Uptake Inhibitors
 10370-0159	Norepinephrine Uptake Inhibitors
+10370-0159	Dopamine Uptake Inhibitors
 10370-0160	Norepinephrine Uptake Inhibitors
 10370-0160	Dopamine Uptake Inhibitors
-10370-0161	Norepinephrine Uptake Inhibitors
 10370-0161	Dopamine Uptake Inhibitors
+10370-0161	Norepinephrine Uptake Inhibitors
 10370-0169	Adrenergic Alpha-antagonists
 10370-0175	Serotonin Uptake Inhibitors
 10370-0176	Serotonin Uptake Inhibitors
@@ -4679,20 +4679,20 @@ Key	Value
 11822-0013	Adrenergic Alpha-agonists
 11822-0025	Histamine H1 Receptor Antagonists
 11822-0054	Adrenergic Alpha-agonists
-11822-0056	Sigma-1 Receptor Agonists
 11822-0056	Uncompetitive Nmda Receptor Antagonists
+11822-0056	Sigma-1 Receptor Agonists
 11822-0299	Histamine H1 Receptor Antagonists
 11822-0527	Adrenergic Alpha1-agonists
-11822-0548	Sigma-1 Receptor Agonists
 11822-0548	Uncompetitive Nmda Receptor Antagonists
+11822-0548	Sigma-1 Receptor Agonists
 11980-0022	Corticosteroid Hormone Receptor Agonists
 11980-0174	Corticosteroid Hormone Receptor Agonists
 11980-0180	Corticosteroid Hormone Receptor Agonists
 11980-0211	Corticosteroid Hormone Receptor Agonists
 11980-0228	Corticosteroid Hormone Receptor Agonists
 11980-0801	Cyclooxygenase Inhibitors
-12090-0024	Sigma-1 Receptor Agonists
 12090-0024	Uncompetitive Nmda Receptor Antagonists
+12090-0024	Sigma-1 Receptor Agonists
 12496-0757	Partial Opioid Agonists
 12496-1202	Opioid Antagonists
 12496-1204	Opioid Antagonists
@@ -4729,18 +4729,18 @@ Key	Value
 13107-0062	Adrenergic Beta-antagonists
 13107-0063	Adrenergic Beta-antagonists
 13107-0064	Adrenergic Beta-antagonists
+13107-0142	Adrenergic Beta1-antagonists
 13107-0142	Adrenergic Beta2-antagonists
 13107-0142	Adrenergic Alpha-antagonists
-13107-0142	Adrenergic Beta1-antagonists
-13107-0143	Adrenergic Beta2-antagonists
-13107-0143	Adrenergic Alpha-antagonists
 13107-0143	Adrenergic Beta1-antagonists
+13107-0143	Adrenergic Alpha-antagonists
+13107-0143	Adrenergic Beta2-antagonists
 13107-0144	Adrenergic Beta1-antagonists
 13107-0144	Adrenergic Alpha-antagonists
 13107-0144	Adrenergic Beta2-antagonists
-13107-0145	Adrenergic Beta2-antagonists
-13107-0145	Adrenergic Beta1-antagonists
 13107-0145	Adrenergic Alpha-antagonists
+13107-0145	Adrenergic Beta1-antagonists
+13107-0145	Adrenergic Beta2-antagonists
 13107-0154	Serotonin Uptake Inhibitors
 13107-0155	Serotonin Uptake Inhibitors
 13107-0156	Serotonin Uptake Inhibitors
@@ -4762,8 +4762,8 @@ Key	Value
 13668-0009	Serotonin Uptake Inhibitors
 13668-0010	Serotonin Uptake Inhibitors
 13668-0011	Serotonin Uptake Inhibitors
-13668-0018	Serotonin Uptake Inhibitors
 13668-0018	Norepinephrine Uptake Inhibitors
+13668-0018	Serotonin Uptake Inhibitors
 13668-0019	Norepinephrine Uptake Inhibitors
 13668-0019	Serotonin Uptake Inhibitors
 13668-0020	Serotonin Uptake Inhibitors
@@ -4790,8 +4790,8 @@ Key	Value
 13668-0109	Norepinephrine Uptake Inhibitors
 13668-0110	Serotonin Uptake Inhibitors
 13668-0110	Norepinephrine Uptake Inhibitors
-13668-0111	Serotonin Uptake Inhibitors
 13668-0111	Norepinephrine Uptake Inhibitors
+13668-0111	Serotonin Uptake Inhibitors
 13668-0113	Angiotensin 2 Receptor Antagonists
 13668-0115	Angiotensin 2 Receptor Antagonists
 13668-0116	Angiotensin 2 Receptor Antagonists
@@ -4829,17 +4829,17 @@ Key	Value
 13811-0642	Dopamine Agonists
 13811-0643	Dopamine Agonists
 13811-0657	Opioid Agonists
-13811-0662	Norepinephrine Uptake Inhibitors
 13811-0662	Serotonin Uptake Inhibitors
-13811-0663	Serotonin Uptake Inhibitors
+13811-0662	Norepinephrine Uptake Inhibitors
 13811-0663	Norepinephrine Uptake Inhibitors
+13811-0663	Serotonin Uptake Inhibitors
 13811-0664	Serotonin Uptake Inhibitors
 13811-0664	Norepinephrine Uptake Inhibitors
 13811-0669	Adrenergic Beta-antagonists
 13811-0670	Adrenergic Beta-antagonists
 13811-0671	Adrenergic Beta-antagonists
-13811-0672	Serotonin Uptake Inhibitors
 13811-0672	Norepinephrine Uptake Inhibitors
+13811-0672	Serotonin Uptake Inhibitors
 13811-0673	Serotonin Uptake Inhibitors
 13811-0673	Norepinephrine Uptake Inhibitors
 13811-0674	Norepinephrine Uptake Inhibitors
@@ -4858,8 +4858,8 @@ Key	Value
 13925-0117	Phosphate Chelating Activity
 13925-0118	Phosphate Chelating Activity
 13925-0157	Corticosteroid Hormone Receptor Agonists
-13925-0158	Cholinergic Muscarinic Antagonists
 13925-0158	Cholinergic Antagonists
+13925-0158	Cholinergic Muscarinic Antagonists
 13925-0160	Corticosteroid Hormone Receptor Agonists
 13925-0163	Corticosteroid Hormone Receptor Agonists
 13925-0164	Corticosteroid Hormone Receptor Agonists
@@ -4900,8 +4900,8 @@ Key	Value
 15127-0340	Histamine H2 Receptor Antagonists
 15127-0370	Histamine H2 Receptor Antagonists
 15127-0385	Histamine H1 Receptor Antagonists
-15127-0471	Sigma-1 Receptor Agonists
 15127-0471	Uncompetitive Nmda Receptor Antagonists
+15127-0471	Sigma-1 Receptor Agonists
 15127-0594	Histamine H1 Receptor Antagonists
 15127-0595	Histamine H1 Receptor Antagonists
 15127-0711	Histamine H2 Receptor Antagonists
@@ -4940,8 +4940,8 @@ Key	Value
 15127-0980	Uncompetitive Nmda Receptor Antagonists
 15127-0984	Sigma-1 Receptor Agonists
 15127-0984	Uncompetitive Nmda Receptor Antagonists
-15127-0985	Uncompetitive Nmda Receptor Antagonists
 15127-0985	Sigma-1 Receptor Agonists
+15127-0985	Uncompetitive Nmda Receptor Antagonists
 15127-0989	Uncompetitive Nmda Receptor Antagonists
 15127-0989	Sigma-1 Receptor Agonists
 15584-0101	Non-nucleoside Reverse Transcriptase Inhibitors
@@ -4978,10 +4978,10 @@ Key	Value
 16252-0571	Angiotensin-converting Enzyme Inhibitors
 16252-0572	Angiotensin-converting Enzyme Inhibitors
 16252-0573	Angiotensin-converting Enzyme Inhibitors
-16252-0590	Serotonin 1d Receptor Agonists
 16252-0590	Serotonin 1b Receptor Agonists
-16252-0591	Serotonin 1d Receptor Agonists
+16252-0590	Serotonin 1d Receptor Agonists
 16252-0591	Serotonin 1b Receptor Agonists
+16252-0591	Serotonin 1d Receptor Agonists
 16252-0592	Serotonin 1d Receptor Agonists
 16252-0592	Serotonin 1b Receptor Agonists
 16477-0106	Adrenergic Alpha1-agonists
@@ -5030,10 +5030,10 @@ Key	Value
 16714-0042	Xanthine Oxidase Inhibitors
 16714-0061	Dopamine D2 Antagonists
 16714-0062	Dopamine D2 Antagonists
-16714-0071	Gaba A Agonists
 16714-0071	Gaba B Agonists
-16714-0072	Gaba B Agonists
+16714-0071	Gaba A Agonists
 16714-0072	Gaba A Agonists
+16714-0072	Gaba B Agonists
 16714-0081	Histamine Receptor Antagonists
 16714-0082	Histamine Receptor Antagonists
 16714-0083	Histamine Receptor Antagonists
@@ -5049,10 +5049,10 @@ Key	Value
 16714-0305	Dna Polymerase Inhibitors
 16714-0311	Norepinephrine Uptake Inhibitors
 16714-0311	Serotonin Uptake Inhibitors
-16714-0312	Serotonin Uptake Inhibitors
 16714-0312	Norepinephrine Uptake Inhibitors
-16714-0313	Norepinephrine Uptake Inhibitors
+16714-0312	Serotonin Uptake Inhibitors
 16714-0313	Serotonin Uptake Inhibitors
+16714-0313	Norepinephrine Uptake Inhibitors
 16714-0314	Serotonin Uptake Inhibitors
 16714-0314	Norepinephrine Uptake Inhibitors
 16714-0315	Serotonin Uptake Inhibitors
@@ -5078,17 +5078,17 @@ Key	Value
 16714-0419	Adrenergic Beta-antagonists
 16714-0420	Norepinephrine Uptake Inhibitors
 16714-0420	Serotonin Uptake Inhibitors
-16714-0421	Norepinephrine Uptake Inhibitors
 16714-0421	Serotonin Uptake Inhibitors
+16714-0421	Norepinephrine Uptake Inhibitors
 16714-0422	Norepinephrine Uptake Inhibitors
 16714-0422	Serotonin Uptake Inhibitors
 16714-0522	5-alpha Reductase Inhibitors
-16714-0531	Serotonin 1b Receptor Agonists
 16714-0531	Serotonin 1d Receptor Agonists
-16714-0532	Serotonin 1b Receptor Agonists
+16714-0531	Serotonin 1b Receptor Agonists
 16714-0532	Serotonin 1d Receptor Agonists
-16714-0533	Serotonin 1b Receptor Agonists
+16714-0532	Serotonin 1b Receptor Agonists
 16714-0533	Serotonin 1d Receptor Agonists
+16714-0533	Serotonin 1b Receptor Agonists
 16714-0551	Gaba A Agonists
 16714-0561	Gaba A Agonists
 16714-0581	Angiotensin 2 Receptor Antagonists
@@ -5180,8 +5180,8 @@ Key	Value
 17478-0207	Cyclooxygenase Inhibitors
 17478-0208	Cyclooxygenase Inhibitors
 17478-0209	Cyclooxygenase Inhibitors
-17478-0215	Cholinergic Antagonists
 17478-0215	Cholinergic Muscarinic Antagonists
+17478-0215	Cholinergic Antagonists
 17478-0250	Dyes
 17478-0253	Dyes
 17478-0420	Adrenergic Beta-antagonists
@@ -5241,8 +5241,8 @@ Key	Value
 23155-0048	Calcium Channel Antagonists
 23155-0049	Calcium Channel Antagonists
 23155-0050	Calcium Channel Antagonists
-23155-0054	Serotonin 1d Receptor Agonists
 23155-0054	Serotonin 1b Receptor Agonists
+23155-0054	Serotonin 1d Receptor Agonists
 23155-0055	Serotonin 1d Receptor Agonists
 23155-0055	Serotonin 1b Receptor Agonists
 23155-0060	Angiotensin-converting Enzyme Inhibitors
@@ -5282,14 +5282,14 @@ Key	Value
 23155-0240	Dopamine D2 Antagonists
 23155-0246	Serotonin Uptake Inhibitors
 23155-0246	Norepinephrine Uptake Inhibitors
-23155-0247	Serotonin Uptake Inhibitors
 23155-0247	Norepinephrine Uptake Inhibitors
+23155-0247	Serotonin Uptake Inhibitors
 23155-0248	Serotonin Uptake Inhibitors
 23155-0248	Norepinephrine Uptake Inhibitors
 23155-0249	Norepinephrine Uptake Inhibitors
 23155-0249	Serotonin Uptake Inhibitors
-23155-0250	Norepinephrine Uptake Inhibitors
 23155-0250	Serotonin Uptake Inhibitors
+23155-0250	Norepinephrine Uptake Inhibitors
 23155-0258	Adenosine Receptor Agonists
 23155-0291	Histamine H2 Receptor Antagonists
 23155-0292	Histamine H1 Receptor Antagonists
@@ -5357,8 +5357,8 @@ Key	Value
 24208-0720	Corticosteroid Hormone Receptor Agonists
 24208-0732	Dyes
 24208-0740	Adrenergic Alpha1-agonists
-24208-0750	Cholinergic Muscarinic Antagonists
 24208-0750	Cholinergic Antagonists
+24208-0750	Cholinergic Muscarinic Antagonists
 24208-0795	Corticosteroid Hormone Receptor Agonists
 24208-0825	Cholinergic Muscarinic Antagonists
 24208-0825	Cholinergic Antagonists
@@ -5368,19 +5368,19 @@ Key	Value
 24338-0200	Calcium Channel Antagonists
 24338-0416	Corticosteroid Hormone Receptor Agonists
 24338-0430	Corticosteroid Hormone Receptor Agonists
-24385-0005	Uncompetitive Nmda Receptor Antagonists
 24385-0005	Sigma-1 Receptor Agonists
+24385-0005	Uncompetitive Nmda Receptor Antagonists
 24385-0009	Cyclooxygenase Inhibitors
 24385-0021	Corticosteroid Hormone Receptor Agonists
-24385-0026	Uncompetitive Nmda Receptor Antagonists
 24385-0026	Sigma-1 Receptor Agonists
+24385-0026	Uncompetitive Nmda Receptor Antagonists
 24385-0028	Cyclooxygenase Inhibitors
 24385-0035	Sigma-1 Receptor Agonists
 24385-0035	Uncompetitive Nmda Receptor Antagonists
 24385-0036	Uncompetitive Nmda Receptor Antagonists
 24385-0036	Sigma-1 Receptor Agonists
-24385-0052	Uncompetitive Nmda Receptor Antagonists
 24385-0052	Sigma-1 Receptor Agonists
+24385-0052	Uncompetitive Nmda Receptor Antagonists
 24385-0054	Adrenergic Alpha-agonists
 24385-0058	Cyclooxygenase Inhibitors
 24385-0059	Cyclooxygenase Inhibitors
@@ -5388,22 +5388,22 @@ Key	Value
 24385-0066	Sigma-1 Receptor Agonists
 24385-0076	Histamine H1 Receptor Antagonists
 24385-0088	Histamine H1 Receptor Antagonists
-24385-0098	Uncompetitive Nmda Receptor Antagonists
 24385-0098	Sigma-1 Receptor Agonists
+24385-0098	Uncompetitive Nmda Receptor Antagonists
 24385-0111	Histamine H2 Receptor Antagonists
 24385-0135	Sigma-1 Receptor Agonists
 24385-0135	Uncompetitive Nmda Receptor Antagonists
 24385-0147	Histamine H1 Receptor Antagonists
-24385-0148	Sigma-1 Receptor Agonists
 24385-0148	Uncompetitive Nmda Receptor Antagonists
+24385-0148	Sigma-1 Receptor Agonists
 24385-0152	Histamine H1 Receptor Antagonists
 24385-0154	Histamine H1 Receptor Antagonists
 24385-0155	Uncompetitive Nmda Receptor Antagonists
 24385-0155	Sigma-1 Receptor Agonists
-24385-0156	Sigma-1 Receptor Agonists
 24385-0156	Uncompetitive Nmda Receptor Antagonists
-24385-0158	Sigma-1 Receptor Agonists
+24385-0156	Sigma-1 Receptor Agonists
 24385-0158	Uncompetitive Nmda Receptor Antagonists
+24385-0158	Sigma-1 Receptor Agonists
 24385-0159	Sigma-1 Receptor Agonists
 24385-0159	Uncompetitive Nmda Receptor Antagonists
 24385-0169	Adrenergic Alpha1-agonists
@@ -5411,12 +5411,12 @@ Key	Value
 24385-0188	Histamine H1 Receptor Antagonists
 24385-0190	Corticosteroid Hormone Receptor Agonists
 24385-0195	Histamine H1 Receptor Antagonists
-24385-0197	Sigma-1 Receptor Agonists
 24385-0197	Uncompetitive Nmda Receptor Antagonists
+24385-0197	Sigma-1 Receptor Agonists
 24385-0201	Phosphate Chelating Activity
 24385-0202	Phosphate Chelating Activity
-24385-0203	Sigma-1 Receptor Agonists
 24385-0203	Uncompetitive Nmda Receptor Antagonists
+24385-0203	Sigma-1 Receptor Agonists
 24385-0210	Histamine H1 Receptor Antagonists
 24385-0255	Histamine H2 Receptor Antagonists
 24385-0268	Histamine H2 Receptor Antagonists
@@ -5425,15 +5425,15 @@ Key	Value
 24385-0278	Cyclooxygenase Inhibitors
 24385-0283	Corticosteroid Hormone Receptor Agonists
 24385-0296	Histamine H2 Receptor Antagonists
-24385-0305	Sigma-1 Receptor Agonists
 24385-0305	Uncompetitive Nmda Receptor Antagonists
-24385-0316	Uncompetitive Nmda Receptor Antagonists
+24385-0305	Sigma-1 Receptor Agonists
 24385-0316	Sigma-1 Receptor Agonists
-24385-0322	Uncompetitive Nmda Receptor Antagonists
+24385-0316	Uncompetitive Nmda Receptor Antagonists
 24385-0322	Sigma-1 Receptor Agonists
+24385-0322	Uncompetitive Nmda Receptor Antagonists
 24385-0351	Adrenergic Alpha-agonists
-24385-0359	Sigma-1 Receptor Agonists
 24385-0359	Uncompetitive Nmda Receptor Antagonists
+24385-0359	Sigma-1 Receptor Agonists
 24385-0361	Cyclooxygenase Inhibitors
 24385-0364	Cyclooxygenase Inhibitors
 24385-0365	Cyclooxygenase Inhibitors
@@ -5451,8 +5451,8 @@ Key	Value
 24385-0432	Adrenergic Alpha-agonists
 24385-0435	Phosphate Chelating Activity
 24385-0437	Histamine H1 Receptor Antagonists
-24385-0461	Sigma-1 Receptor Agonists
 24385-0461	Uncompetitive Nmda Receptor Antagonists
+24385-0461	Sigma-1 Receptor Agonists
 24385-0462	Histamine H1 Receptor Antagonists
 24385-0463	Histamine H1 Receptor Antagonists
 24385-0465	Cyclooxygenase Inhibitors
@@ -5463,24 +5463,24 @@ Key	Value
 24385-0494	Histamine H1 Receptor Antagonists
 24385-0499	Cyclooxygenase Inhibitors
 24385-0517	Adrenergic Alpha1-agonists
-24385-0519	Uncompetitive Nmda Receptor Antagonists
 24385-0519	Sigma-1 Receptor Agonists
+24385-0519	Uncompetitive Nmda Receptor Antagonists
 24385-0535	Cyclooxygenase Inhibitors
 24385-0541	Cyclooxygenase Inhibitors
-24385-0542	Uncompetitive Nmda Receptor Antagonists
 24385-0542	Sigma-1 Receptor Agonists
+24385-0542	Uncompetitive Nmda Receptor Antagonists
 24385-0546	Cyclooxygenase Inhibitors
 24385-0549	Cyclooxygenase Inhibitors
 24385-0550	Cyclooxygenase Inhibitors
 24385-0554	Opioid Agonists
-24385-0578	Sigma-1 Receptor Agonists
 24385-0578	Uncompetitive Nmda Receptor Antagonists
+24385-0578	Sigma-1 Receptor Agonists
 24385-0603	Adrenergic Alpha1-agonists
 24385-0604	Cyclooxygenase Inhibitors
 24385-0623	Cyclooxygenase Inhibitors
 24385-0647	Cyclooxygenase Inhibitors
-24385-0904	Uncompetitive Nmda Receptor Antagonists
 24385-0904	Sigma-1 Receptor Agonists
+24385-0904	Uncompetitive Nmda Receptor Antagonists
 24385-0905	Cyclooxygenase Inhibitors
 24385-0924	Histamine H1 Receptor Antagonists
 24385-0925	Adrenergic Alpha1-agonists
@@ -5567,12 +5567,12 @@ Key	Value
 28595-0800	Sigma-1 Receptor Agonists
 28595-0800	Uncompetitive Nmda Receptor Antagonists
 28595-0803	Adrenergic Alpha1-agonists
-28595-0804	Sigma-1 Receptor Agonists
 28595-0804	Uncompetitive Nmda Receptor Antagonists
+28595-0804	Sigma-1 Receptor Agonists
 28595-0900	Adrenergic Alpha1-agonists
 28595-0905	Adrenergic Alpha1-agonists
-28595-0906	Uncompetitive Nmda Receptor Antagonists
 28595-0906	Sigma-1 Receptor Agonists
+28595-0906	Uncompetitive Nmda Receptor Antagonists
 29033-0012	Cyclooxygenase Inhibitors
 29033-0013	Cyclooxygenase Inhibitors
 29300-0124	Cyclooxygenase Inhibitors
@@ -5615,10 +5615,10 @@ Key	Value
 31722-0214	Serotonin Uptake Inhibitors
 31722-0218	Cholinergic Antagonists
 31722-0218	Histamine Receptor Antagonists
-31722-0219	Histamine Receptor Antagonists
 31722-0219	Cholinergic Antagonists
-31722-0220	Cholinergic Antagonists
+31722-0219	Histamine Receptor Antagonists
 31722-0220	Histamine Receptor Antagonists
+31722-0220	Cholinergic Antagonists
 31722-0237	Calcium Channel Antagonists
 31722-0238	Calcium Channel Antagonists
 31722-0239	Calcium Channel Antagonists
@@ -5734,8 +5734,8 @@ Key	Value
 36800-0022	Histamine H2 Receptor Antagonists
 36800-0027	Cyclooxygenase Inhibitors
 36800-0030	Cyclooxygenase Inhibitors
-36800-0041	Uncompetitive Nmda Receptor Antagonists
 36800-0041	Sigma-1 Receptor Agonists
+36800-0041	Uncompetitive Nmda Receptor Antagonists
 36800-0047	Histamine H2 Receptor Antagonists
 36800-0050	Histamine H1 Receptor Antagonists
 36800-0051	Corticosteroid Hormone Receptor Agonists
@@ -5746,8 +5746,8 @@ Key	Value
 36800-0074	Cyclooxygenase Inhibitors
 36800-0083	Cyclooxygenase Inhibitors
 36800-0094	Adrenergic Alpha1-agonists
-36800-0096	Sigma-1 Receptor Agonists
 36800-0096	Uncompetitive Nmda Receptor Antagonists
+36800-0096	Sigma-1 Receptor Agonists
 36800-0098	Adrenergic Alpha1-agonists
 36800-0099	Corticosteroid Hormone Receptor Agonists
 36800-0101	Adrenergic Alpha1-agonists
@@ -5760,8 +5760,8 @@ Key	Value
 36800-0143	Sigma-1 Receptor Agonists
 36800-0145	Adrenergic Alpha1-agonists
 36800-0147	Cyclooxygenase Inhibitors
-36800-0148	Sigma-1 Receptor Agonists
 36800-0148	Uncompetitive Nmda Receptor Antagonists
+36800-0148	Sigma-1 Receptor Agonists
 36800-0149	Uncompetitive Nmda Receptor Antagonists
 36800-0149	Sigma-1 Receptor Agonists
 36800-0151	Histamine H1 Receptor Antagonists
@@ -5778,8 +5778,8 @@ Key	Value
 36800-0198	Cyclooxygenase Inhibitors
 36800-0200	Histamine H1 Receptor Antagonists
 36800-0211	Histamine H1 Receptor Antagonists
-36800-0215	Uncompetitive Nmda Receptor Antagonists
 36800-0215	Sigma-1 Receptor Agonists
+36800-0215	Uncompetitive Nmda Receptor Antagonists
 36800-0216	Cyclooxygenase Inhibitors
 36800-0224	Opioid Agonists
 36800-0225	Histamine H1 Receptor Antagonists
@@ -5794,41 +5794,41 @@ Key	Value
 36800-0255	Cyclooxygenase Inhibitors
 36800-0256	Cyclooxygenase Inhibitors
 36800-0259	Cyclooxygenase Inhibitors
-36800-0265	Sigma-1 Receptor Agonists
 36800-0265	Uncompetitive Nmda Receptor Antagonists
+36800-0265	Sigma-1 Receptor Agonists
 36800-0271	Histamine H2 Receptor Antagonists
 36800-0272	Adrenergic Alpha1-agonists
 36800-0274	Cyclooxygenase Inhibitors
 36800-0277	Cyclooxygenase Inhibitors
 36800-0296	Uncompetitive Nmda Receptor Antagonists
 36800-0296	Sigma-1 Receptor Agonists
-36800-0300	Uncompetitive Nmda Receptor Antagonists
 36800-0300	Sigma-1 Receptor Agonists
+36800-0300	Uncompetitive Nmda Receptor Antagonists
 36800-0306	Osmotic Activity
-36800-0308	Sigma-1 Receptor Agonists
 36800-0308	Uncompetitive Nmda Receptor Antagonists
+36800-0308	Sigma-1 Receptor Agonists
 36800-0321	Phosphate Chelating Activity
-36800-0335	Uncompetitive Nmda Receptor Antagonists
 36800-0335	Sigma-1 Receptor Agonists
-36800-0345	Sigma-1 Receptor Agonists
+36800-0335	Uncompetitive Nmda Receptor Antagonists
 36800-0345	Uncompetitive Nmda Receptor Antagonists
+36800-0345	Sigma-1 Receptor Agonists
 36800-0358	Histamine H1 Receptor Antagonists
 36800-0359	Uncompetitive Nmda Receptor Antagonists
 36800-0359	Sigma-1 Receptor Agonists
 36800-0361	Histamine H1 Receptor Antagonists
 36800-0368	Cyclooxygenase Inhibitors
-36800-0371	Uncompetitive Nmda Receptor Antagonists
 36800-0371	Sigma-1 Receptor Agonists
+36800-0371	Uncompetitive Nmda Receptor Antagonists
 36800-0374	Cyclooxygenase Inhibitors
 36800-0379	Histamine H1 Receptor Antagonists
 36800-0390	Adrenergic Alpha1-agonists
 36800-0393	Histamine H1 Receptor Antagonists
 36800-0400	Adrenergic Alpha1-agonists
-36800-0402	Sigma-1 Receptor Agonists
 36800-0402	Uncompetitive Nmda Receptor Antagonists
+36800-0402	Sigma-1 Receptor Agonists
 36800-0417	Cyclooxygenase Inhibitors
-36800-0419	Sigma-1 Receptor Agonists
 36800-0419	Uncompetitive Nmda Receptor Antagonists
+36800-0419	Sigma-1 Receptor Agonists
 36800-0423	Cyclooxygenase Inhibitors
 36800-0425	Histamine H1 Receptor Antagonists
 36800-0430	Cyclooxygenase Inhibitors
@@ -5837,14 +5837,14 @@ Key	Value
 36800-0437	Histamine H1 Receptor Antagonists
 36800-0438	Histamine H1 Receptor Antagonists
 36800-0439	Histamine H1 Receptor Antagonists
-36800-0444	Sigma-1 Receptor Agonists
 36800-0444	Uncompetitive Nmda Receptor Antagonists
+36800-0444	Sigma-1 Receptor Agonists
 36800-0445	Histamine H1 Receptor Antagonists
 36800-0453	Uncompetitive Nmda Receptor Antagonists
 36800-0453	Sigma-1 Receptor Agonists
 36800-0458	Histamine H1 Receptor Antagonists
-36800-0459	Uncompetitive Nmda Receptor Antagonists
 36800-0459	Sigma-1 Receptor Agonists
+36800-0459	Uncompetitive Nmda Receptor Antagonists
 36800-0461	Cyclooxygenase Inhibitors
 36800-0462	Histamine H1 Receptor Antagonists
 36800-0463	Histamine H1 Receptor Antagonists
@@ -5859,12 +5859,12 @@ Key	Value
 36800-0489	Phosphate Chelating Activity
 36800-0490	Cyclooxygenase Inhibitors
 36800-0499	Adrenergic Alpha1-agonists
-36800-0503	Sigma-1 Receptor Agonists
 36800-0503	Uncompetitive Nmda Receptor Antagonists
+36800-0503	Sigma-1 Receptor Agonists
 36800-0506	Histamine H1 Receptor Antagonists
 36800-0507	Histamine H1 Receptor Antagonists
-36800-0516	Uncompetitive Nmda Receptor Antagonists
 36800-0516	Sigma-1 Receptor Agonists
+36800-0516	Uncompetitive Nmda Receptor Antagonists
 36800-0517	Cyclooxygenase Inhibitors
 36800-0520	Opioid Agonists
 36800-0522	Uncompetitive Nmda Receptor Antagonists
@@ -5873,8 +5873,8 @@ Key	Value
 36800-0540	Uncompetitive Nmda Receptor Antagonists
 36800-0540	Sigma-1 Receptor Agonists
 36800-0546	Phosphate Chelating Activity
-36800-0548	Uncompetitive Nmda Receptor Antagonists
 36800-0548	Sigma-1 Receptor Agonists
+36800-0548	Uncompetitive Nmda Receptor Antagonists
 36800-0552	Uncompetitive Nmda Receptor Antagonists
 36800-0552	Sigma-1 Receptor Agonists
 36800-0571	Histamine H1 Receptor Antagonists
@@ -5901,8 +5901,8 @@ Key	Value
 36800-0690	Histamine H1 Receptor Antagonists
 36800-0698	Sigma-1 Receptor Agonists
 36800-0698	Uncompetitive Nmda Receptor Antagonists
-36800-0700	Sigma-1 Receptor Agonists
 36800-0700	Uncompetitive Nmda Receptor Antagonists
+36800-0700	Sigma-1 Receptor Agonists
 36800-0703	Sigma-1 Receptor Agonists
 36800-0703	Uncompetitive Nmda Receptor Antagonists
 36800-0720	Histamine H1 Receptor Antagonists
@@ -5911,8 +5911,8 @@ Key	Value
 36800-0751	Histamine H1 Receptor Antagonists
 36800-0763	Uncompetitive Nmda Receptor Antagonists
 36800-0763	Sigma-1 Receptor Agonists
-36800-0799	Uncompetitive Nmda Receptor Antagonists
 36800-0799	Sigma-1 Receptor Agonists
+36800-0799	Uncompetitive Nmda Receptor Antagonists
 36800-0800	Histamine H1 Receptor Antagonists
 36800-0802	Adrenergic Alpha1-agonists
 36800-0810	Histamine H1 Receptor Antagonists
@@ -5937,8 +5937,8 @@ Key	Value
 36800-0923	Histamine H1 Receptor Antagonists
 36800-0935	Histamine H1 Receptor Antagonists
 36800-0950	Histamine H2 Receptor Antagonists
-36800-0958	Sigma-1 Receptor Agonists
 36800-0958	Uncompetitive Nmda Receptor Antagonists
+36800-0958	Sigma-1 Receptor Agonists
 36800-0964	Histamine H1 Receptor Antagonists
 36800-0970	Histamine H1 Receptor Antagonists
 36800-0974	Histamine H1 Receptor Antagonists
@@ -5946,49 +5946,49 @@ Key	Value
 36800-0977	Sigma-1 Receptor Agonists
 36800-0987	Uncompetitive Nmda Receptor Antagonists
 36800-0987	Sigma-1 Receptor Agonists
-36800-0990	Uncompetitive Nmda Receptor Antagonists
 36800-0990	Sigma-1 Receptor Agonists
+36800-0990	Uncompetitive Nmda Receptor Antagonists
 36800-0997	Adrenergic Alpha1-agonists
-36800-0998	Sigma-1 Receptor Agonists
 36800-0998	Uncompetitive Nmda Receptor Antagonists
+36800-0998	Sigma-1 Receptor Agonists
 37000-0406	Histamine H1 Receptor Antagonists
 37000-0407	Adrenergic Alpha1-agonists
 37000-0408	Adrenergic Alpha1-agonists
 37000-0455	Cytochrome P450 2c19 Inhibitors
 37000-0455	Proton Pump Inhibitors
-37000-0459	Cytochrome P450 2c19 Inhibitors
 37000-0459	Proton Pump Inhibitors
+37000-0459	Cytochrome P450 2c19 Inhibitors
 37000-0490	Phosphate Chelating Activity
 37000-0500	Histamine H1 Receptor Antagonists
 37000-0501	Histamine H1 Receptor Antagonists
 37000-0550	Uncompetitive Nmda Receptor Antagonists
 37000-0550	Sigma-1 Receptor Agonists
-37000-0555	Sigma-1 Receptor Agonists
 37000-0555	Uncompetitive Nmda Receptor Antagonists
+37000-0555	Sigma-1 Receptor Agonists
 37000-0556	Histamine H1 Receptor Antagonists
-37000-0557	Uncompetitive Nmda Receptor Antagonists
 37000-0557	Sigma-1 Receptor Agonists
+37000-0557	Uncompetitive Nmda Receptor Antagonists
 37000-0558	Uncompetitive Nmda Receptor Antagonists
 37000-0558	Sigma-1 Receptor Agonists
-37000-0565	Uncompetitive Nmda Receptor Antagonists
 37000-0565	Sigma-1 Receptor Agonists
+37000-0565	Uncompetitive Nmda Receptor Antagonists
 37000-0654	Uncompetitive Nmda Receptor Antagonists
 37000-0654	Sigma-1 Receptor Agonists
-37000-0690	Sigma-1 Receptor Agonists
 37000-0690	Uncompetitive Nmda Receptor Antagonists
+37000-0690	Sigma-1 Receptor Agonists
 37000-0699	Histamine H1 Receptor Antagonists
 37000-0807	Uncompetitive Nmda Receptor Antagonists
 37000-0807	Sigma-1 Receptor Agonists
-37000-0808	Sigma-1 Receptor Agonists
 37000-0808	Uncompetitive Nmda Receptor Antagonists
-37000-0809	Uncompetitive Nmda Receptor Antagonists
+37000-0808	Sigma-1 Receptor Agonists
 37000-0809	Sigma-1 Receptor Agonists
+37000-0809	Uncompetitive Nmda Receptor Antagonists
 37000-0810	Uncompetitive Nmda Receptor Antagonists
 37000-0810	Sigma-1 Receptor Agonists
 37000-0811	Sigma-1 Receptor Agonists
 37000-0811	Uncompetitive Nmda Receptor Antagonists
-37000-0812	Uncompetitive Nmda Receptor Antagonists
 37000-0812	Sigma-1 Receptor Agonists
+37000-0812	Uncompetitive Nmda Receptor Antagonists
 37000-0813	Sigma-1 Receptor Agonists
 37000-0813	Uncompetitive Nmda Receptor Antagonists
 37205-0060	Histamine H1 Receptor Antagonists
@@ -6040,8 +6040,8 @@ Key	Value
 37205-0483	Adrenergic Alpha1-agonists
 37205-0510	Cyclooxygenase Inhibitors
 37205-0531	Histamine H2 Receptor Antagonists
-37205-0538	Uncompetitive Nmda Receptor Antagonists
 37205-0538	Sigma-1 Receptor Agonists
+37205-0538	Uncompetitive Nmda Receptor Antagonists
 37205-0539	Histamine H1 Receptor Antagonists
 37205-0565	Histamine H1 Receptor Antagonists
 37205-0571	Adrenergic Alpha1-agonists
@@ -6049,17 +6049,17 @@ Key	Value
 37205-0584	Opioid Agonists
 37205-0586	Uncompetitive Nmda Receptor Antagonists
 37205-0586	Sigma-1 Receptor Agonists
-37205-0587	Uncompetitive Nmda Receptor Antagonists
 37205-0587	Sigma-1 Receptor Agonists
+37205-0587	Uncompetitive Nmda Receptor Antagonists
 37205-0591	Histamine H1 Receptor Antagonists
 37205-0603	Osmotic Activity
 37205-0605	Cyclooxygenase Inhibitors
-37205-0610	Sigma-1 Receptor Agonists
 37205-0610	Uncompetitive Nmda Receptor Antagonists
+37205-0610	Sigma-1 Receptor Agonists
 37205-0612	Osmotic Activity
 37205-0614	Histamine H2 Receptor Antagonists
-37205-0629	Sigma-1 Receptor Agonists
 37205-0629	Uncompetitive Nmda Receptor Antagonists
+37205-0629	Sigma-1 Receptor Agonists
 37205-0638	Histamine H1 Receptor Antagonists
 37205-0643	Cyclooxygenase Inhibitors
 37205-0646	Cyclooxygenase Inhibitors
@@ -6069,19 +6069,19 @@ Key	Value
 37205-0668	Cyclooxygenase Inhibitors
 37205-0670	Cyclooxygenase Inhibitors
 37205-0672	Histamine H1 Receptor Antagonists
-37205-0675	Sigma-1 Receptor Agonists
 37205-0675	Uncompetitive Nmda Receptor Antagonists
+37205-0675	Sigma-1 Receptor Agonists
 37205-0677	Histamine H1 Receptor Antagonists
-37205-0678	Sigma-1 Receptor Agonists
 37205-0678	Uncompetitive Nmda Receptor Antagonists
+37205-0678	Sigma-1 Receptor Agonists
 37205-0679	Histamine H1 Receptor Antagonists
 37205-0680	Phosphate Chelating Activity
 37205-0681	Phosphate Chelating Activity
 37205-0682	Histamine H2 Receptor Antagonists
 37205-0686	Sigma-1 Receptor Agonists
 37205-0686	Uncompetitive Nmda Receptor Antagonists
-37205-0695	Sigma-1 Receptor Agonists
 37205-0695	Uncompetitive Nmda Receptor Antagonists
+37205-0695	Sigma-1 Receptor Agonists
 37205-0696	Uncompetitive Nmda Receptor Antagonists
 37205-0696	Sigma-1 Receptor Agonists
 37205-0697	Uncompetitive Nmda Receptor Antagonists
@@ -6097,8 +6097,8 @@ Key	Value
 37205-0708	Cyclooxygenase Inhibitors
 37205-0709	Uncompetitive Nmda Receptor Antagonists
 37205-0709	Sigma-1 Receptor Agonists
-37205-0712	Uncompetitive Nmda Receptor Antagonists
 37205-0712	Sigma-1 Receptor Agonists
+37205-0712	Uncompetitive Nmda Receptor Antagonists
 37205-0715	Adrenergic Alpha1-agonists
 37205-0719	Uncompetitive Nmda Receptor Antagonists
 37205-0719	Sigma-1 Receptor Agonists
@@ -6106,14 +6106,14 @@ Key	Value
 37205-0742	Histamine H1 Receptor Antagonists
 37205-0743	Histamine H1 Receptor Antagonists
 37205-0744	Cyclooxygenase Inhibitors
-37205-0756	Sigma-1 Receptor Agonists
 37205-0756	Uncompetitive Nmda Receptor Antagonists
+37205-0756	Sigma-1 Receptor Agonists
 37205-0757	Cyclooxygenase Inhibitors
 37205-0759	Histamine H1 Receptor Antagonists
-37205-0779	Uncompetitive Nmda Receptor Antagonists
 37205-0779	Sigma-1 Receptor Agonists
-37205-0781	Uncompetitive Nmda Receptor Antagonists
+37205-0779	Uncompetitive Nmda Receptor Antagonists
 37205-0781	Sigma-1 Receptor Agonists
+37205-0781	Uncompetitive Nmda Receptor Antagonists
 37205-0819	Histamine H1 Receptor Antagonists
 37205-0820	Histamine H1 Receptor Antagonists
 37205-0825	Histamine H1 Receptor Antagonists
@@ -6121,14 +6121,14 @@ Key	Value
 37205-0827	Histamine H1 Receptor Antagonists
 37205-0828	Sigma-1 Receptor Agonists
 37205-0828	Uncompetitive Nmda Receptor Antagonists
-37205-0837	Cytochrome P450 2c19 Inhibitors
 37205-0837	Proton Pump Inhibitors
+37205-0837	Cytochrome P450 2c19 Inhibitors
 37205-0844	Histamine H2 Receptor Antagonists
 37205-0845	Histamine H2 Receptor Antagonists
 37205-0848	Cyclooxygenase Inhibitors
 37205-0850	Histamine H1 Receptor Antagonists
-37205-0851	Uncompetitive Nmda Receptor Antagonists
 37205-0851	Sigma-1 Receptor Agonists
+37205-0851	Uncompetitive Nmda Receptor Antagonists
 37205-0852	Cyclooxygenase Inhibitors
 37205-0854	Cyclooxygenase Inhibitors
 37205-0855	Histamine H1 Receptor Antagonists
@@ -6143,8 +6143,8 @@ Key	Value
 37205-0959	Uncompetitive Nmda Receptor Antagonists
 37205-0969	Uncompetitive Nmda Receptor Antagonists
 37205-0969	Sigma-1 Receptor Agonists
-37205-0970	Sigma-1 Receptor Agonists
 37205-0970	Uncompetitive Nmda Receptor Antagonists
+37205-0970	Sigma-1 Receptor Agonists
 37205-0993	Sigma-1 Receptor Agonists
 37205-0993	Uncompetitive Nmda Receptor Antagonists
 37205-0994	Uncompetitive Nmda Receptor Antagonists
@@ -6191,20 +6191,20 @@ Key	Value
 42023-0110	Estrogen Receptor Agonists
 42023-0111	Estrogen Receptor Agonists
 42023-0112	Estrogen Receptor Agonists
-42023-0121	Serotonin 1b Receptor Agonists
 42023-0121	Serotonin 1d Receptor Agonists
+42023-0121	Serotonin 1b Receptor Agonists
 42023-0134	Estrogen Receptor Agonists
 42023-0135	Estrogen Receptor Agonists
 42023-0136	Estrogen Receptor Agonists
 42023-0146	Adrenergic Alpha2-agonists
-42023-0159	Adrenergic Alpha-agonists
 42023-0159	Adrenergic Beta-agonists
+42023-0159	Adrenergic Alpha-agonists
 42023-0168	Adrenergic Beta-agonists
 42023-0168	Adrenergic Alpha-agonists
-42043-0130	Serotonin 1d Receptor Agonists
 42043-0130	Serotonin 1b Receptor Agonists
-42043-0131	Serotonin 1d Receptor Agonists
+42043-0130	Serotonin 1d Receptor Agonists
 42043-0131	Serotonin 1b Receptor Agonists
+42043-0131	Serotonin 1d Receptor Agonists
 42043-0150	Cholinesterase Inhibitors
 42043-0170	Peroxisome Proliferator-activated Receptor Alpha Agonists
 42043-0171	Peroxisome Proliferator-activated Receptor Alpha Agonists
@@ -6285,10 +6285,10 @@ Key	Value
 42998-0974	Histamine H2 Receptor Antagonists
 43199-0021	Corticosteroid Hormone Receptor Agonists
 43199-0031	Corticosteroid Hormone Receptor Agonists
-43376-0104	Serotonin 1b Receptor Agonists
 43376-0104	Serotonin 1d Receptor Agonists
-43376-0106	Serotonin 1d Receptor Agonists
+43376-0104	Serotonin 1b Receptor Agonists
 43376-0106	Serotonin 1b Receptor Agonists
+43376-0106	Serotonin 1d Receptor Agonists
 43376-0210	Opioid Agonists
 43376-0215	Opioid Agonists
 43376-0220	Opioid Agonists
@@ -6304,8 +6304,8 @@ Key	Value
 43386-0360	Monoamine Oxidase Inhibitors
 43386-0440	Calcium Channel Antagonists
 43386-0500	Histamine H2 Receptor Antagonists
-43386-0670	Competitive Opioid Antagonists
 43386-0670	Partial Opioid Agonists
+43386-0670	Competitive Opioid Antagonists
 43386-0680	Opioid Antagonists
 43386-0710	Angiotensin-converting Enzyme Inhibitors
 43386-0711	Angiotensin-converting Enzyme Inhibitors
@@ -6328,12 +6328,12 @@ Key	Value
 43538-0501	Protein Synthesis Inhibitors
 43538-0520	Protein Synthesis Inhibitors
 43538-0521	Protein Synthesis Inhibitors
+43538-0530	Cytochrome P450 3a4 Inhibitors
 43538-0530	P-glycoprotein Inhibitors
 43538-0530	Cytochrome P450 3a5 Inhibitors
-43538-0530	Cytochrome P450 3a4 Inhibitors
-43538-0531	P-glycoprotein Inhibitors
 43538-0531	Cytochrome P450 3a5 Inhibitors
 43538-0531	Cytochrome P450 3a4 Inhibitors
+43538-0531	P-glycoprotein Inhibitors
 43538-0900	Corticosteroid Hormone Receptor Agonists
 43538-0901	Corticosteroid Hormone Receptor Agonists
 43538-0910	Corticosteroid Hormone Receptor Agonists
@@ -6342,18 +6342,18 @@ Key	Value
 43538-0921	Corticosteroid Hormone Receptor Agonists
 43538-0940	Corticosteroid Hormone Receptor Agonists
 43538-0950	Corticosteroid Hormone Receptor Agonists
+43547-0254	Adrenergic Beta1-antagonists
 43547-0254	Adrenergic Beta2-antagonists
 43547-0254	Adrenergic Alpha-antagonists
-43547-0254	Adrenergic Beta1-antagonists
-43547-0255	Adrenergic Beta1-antagonists
-43547-0255	Adrenergic Alpha-antagonists
 43547-0255	Adrenergic Beta2-antagonists
-43547-0256	Adrenergic Alpha-antagonists
+43547-0255	Adrenergic Alpha-antagonists
+43547-0255	Adrenergic Beta1-antagonists
 43547-0256	Adrenergic Beta1-antagonists
 43547-0256	Adrenergic Beta2-antagonists
+43547-0256	Adrenergic Alpha-antagonists
+43547-0257	Adrenergic Beta1-antagonists
 43547-0257	Adrenergic Beta2-antagonists
 43547-0257	Adrenergic Alpha-antagonists
-43547-0257	Adrenergic Beta1-antagonists
 43547-0258	Nucleic Acid Synthesis Inhibitors
 43547-0259	Nucleic Acid Synthesis Inhibitors
 43547-0268	Dopamine Agonists
@@ -6425,8 +6425,8 @@ Key	Value
 43772-0024	Phosphate Chelating Activity
 43772-0032	Phosphate Chelating Activity
 43772-0037	Phosphate Chelating Activity
-43772-0039	Adrenergic Alpha-agonists
 43772-0039	Adrenergic Beta-agonists
+43772-0039	Adrenergic Alpha-agonists
 43853-0006	Phosphate Chelating Activity
 43857-0009	Phosphate Chelating Activity
 43857-0013	Ammonium Ion Binding Activity
@@ -6454,12 +6454,12 @@ Key	Value
 44183-0203	Sigma-1 Receptor Agonists
 44183-0203	Uncompetitive Nmda Receptor Antagonists
 44183-0208	Adrenergic Alpha1-agonists
-44183-0210	Sigma-1 Receptor Agonists
 44183-0210	Uncompetitive Nmda Receptor Antagonists
+44183-0210	Sigma-1 Receptor Agonists
 44183-0220	Sigma-1 Receptor Agonists
 44183-0220	Uncompetitive Nmda Receptor Antagonists
-44183-0311	Uncompetitive Nmda Receptor Antagonists
 44183-0311	Sigma-1 Receptor Agonists
+44183-0311	Uncompetitive Nmda Receptor Antagonists
 44183-0313	Sigma-1 Receptor Agonists
 44183-0313	Uncompetitive Nmda Receptor Antagonists
 44183-0507	Corticosteroid Hormone Receptor Agonists
@@ -6468,8 +6468,8 @@ Key	Value
 44183-0514	Adrenergic Alpha1-agonists
 44183-0550	Histamine H1 Receptor Antagonists
 44183-0604	Histamine H1 Receptor Antagonists
-44183-0880	Serotonin Uptake Inhibitors
 44183-0880	Norepinephrine Uptake Inhibitors
+44183-0880	Serotonin Uptake Inhibitors
 44183-0890	Serotonin Uptake Inhibitors
 44183-0890	Norepinephrine Uptake Inhibitors
 44224-0007	Histamine H1 Receptor Antagonists
@@ -6536,14 +6536,14 @@ Key	Value
 45802-0423	Corticosteroid Hormone Receptor Agonists
 45802-0425	Histamine H1 Receptor Antagonists
 45802-0432	Adrenergic Alpha-agonists
-45802-0433	Sigma-1 Receptor Agonists
 45802-0433	Uncompetitive Nmda Receptor Antagonists
+45802-0433	Sigma-1 Receptor Agonists
 45802-0437	Corticosteroid Hormone Receptor Agonists
 45802-0438	Corticosteroid Hormone Receptor Agonists
 45802-0441	Corticosteroid Hormone Receptor Agonists
 45802-0455	Corticosteroid Hormone Receptor Agonists
-45802-0465	Cytochrome P450 3a5 Inhibitors
 45802-0465	P-glycoprotein Inhibitors
+45802-0465	Cytochrome P450 3a5 Inhibitors
 45802-0465	Cytochrome P450 3a4 Inhibitors
 45802-0472	Corticosteroid Hormone Receptor Agonists
 45802-0490	Cyclooxygenase Inhibitors
@@ -6558,8 +6558,8 @@ Key	Value
 45802-0680	Histamine H1 Receptor Antagonists
 45802-0721	Histamine H1 Receptor Antagonists
 45802-0868	Osmotic Activity
-45802-0888	Proton Pump Inhibitors
 45802-0888	Cytochrome P450 2c19 Inhibitors
+45802-0888	Proton Pump Inhibitors
 45802-0897	Cyclooxygenase Inhibitors
 45802-0919	Histamine H1 Receptor Antagonists
 45802-0925	Corticosteroid Hormone Receptor Agonists
@@ -6579,8 +6579,8 @@ Key	Value
 45963-0412	Corticosteroid Hormone Receptor Agonists
 45963-0438	Osmotic Activity
 45963-0438	Acidifying Activity
-45963-0439	Acidifying Activity
 45963-0439	Osmotic Activity
+45963-0439	Acidifying Activity
 45963-0460	Proton Pump Inhibitors
 45963-0461	Proton Pump Inhibitors
 45963-0500	5-alpha Reductase Inhibitors
@@ -6599,12 +6599,12 @@ Key	Value
 45963-0811	Cyclooxygenase Inhibitors
 46122-0004	Adrenergic Alpha1-agonists
 46122-0006	Adrenergic Alpha1-agonists
-46122-0008	Sigma-1 Receptor Agonists
 46122-0008	Uncompetitive Nmda Receptor Antagonists
+46122-0008	Sigma-1 Receptor Agonists
 46122-0010	Cyclooxygenase Inhibitors
 46122-0014	Osmotic Activity
-46122-0017	Uncompetitive Nmda Receptor Antagonists
 46122-0017	Sigma-1 Receptor Agonists
+46122-0017	Uncompetitive Nmda Receptor Antagonists
 46122-0020	Histamine H1 Receptor Antagonists
 46122-0022	Uncompetitive Nmda Receptor Antagonists
 46122-0022	Sigma-1 Receptor Agonists
@@ -6618,8 +6618,8 @@ Key	Value
 46122-0038	Cyclooxygenase Inhibitors
 46122-0040	Histamine H1 Receptor Antagonists
 46122-0041	Histamine H2 Receptor Antagonists
-46122-0058	Uncompetitive Nmda Receptor Antagonists
 46122-0058	Sigma-1 Receptor Agonists
+46122-0058	Uncompetitive Nmda Receptor Antagonists
 46122-0101	Histamine H1 Receptor Antagonists
 46122-0103	Adrenergic Alpha1-agonists
 46122-0104	Cyclooxygenase Inhibitors
@@ -6629,12 +6629,12 @@ Key	Value
 46122-0111	Opioid Agonists
 46122-0134	Histamine H1 Receptor Antagonists
 46122-0135	Adrenergic Alpha1-agonists
-46122-0136	Sigma-1 Receptor Agonists
 46122-0136	Uncompetitive Nmda Receptor Antagonists
-46122-0138	Uncompetitive Nmda Receptor Antagonists
+46122-0136	Sigma-1 Receptor Agonists
 46122-0138	Sigma-1 Receptor Agonists
-46122-0139	Uncompetitive Nmda Receptor Antagonists
+46122-0138	Uncompetitive Nmda Receptor Antagonists
 46122-0139	Sigma-1 Receptor Agonists
+46122-0139	Uncompetitive Nmda Receptor Antagonists
 46122-0141	Uncompetitive Nmda Receptor Antagonists
 46122-0141	Sigma-1 Receptor Agonists
 46122-0142	Sigma-1 Receptor Agonists
@@ -6654,8 +6654,8 @@ Key	Value
 46122-0183	Uncompetitive Nmda Receptor Antagonists
 46122-0184	Sigma-1 Receptor Agonists
 46122-0184	Uncompetitive Nmda Receptor Antagonists
-46122-0192	Sigma-1 Receptor Agonists
 46122-0192	Uncompetitive Nmda Receptor Antagonists
+46122-0192	Sigma-1 Receptor Agonists
 46122-0193	Uncompetitive Nmda Receptor Antagonists
 46122-0193	Sigma-1 Receptor Agonists
 46122-0194	Adrenergic Alpha1-agonists
@@ -6667,12 +6667,12 @@ Key	Value
 46122-0206	Adrenergic Alpha-agonists
 46122-0207	Opioid Agonists
 46122-0208	Histamine H1 Receptor Antagonists
-46122-0215	Sigma-1 Receptor Agonists
 46122-0215	Uncompetitive Nmda Receptor Antagonists
-46122-0217	Sigma-1 Receptor Agonists
+46122-0215	Sigma-1 Receptor Agonists
 46122-0217	Uncompetitive Nmda Receptor Antagonists
-46122-0218	Uncompetitive Nmda Receptor Antagonists
+46122-0217	Sigma-1 Receptor Agonists
 46122-0218	Sigma-1 Receptor Agonists
+46122-0218	Uncompetitive Nmda Receptor Antagonists
 46122-0219	Sigma-1 Receptor Agonists
 46122-0219	Uncompetitive Nmda Receptor Antagonists
 46122-0223	Histamine H2 Receptor Antagonists
@@ -6686,8 +6686,8 @@ Key	Value
 46122-0235	Sigma-1 Receptor Agonists
 46122-0235	Uncompetitive Nmda Receptor Antagonists
 46122-0241	Opioid Agonists
-46122-0245	Uncompetitive Nmda Receptor Antagonists
 46122-0245	Sigma-1 Receptor Agonists
+46122-0245	Uncompetitive Nmda Receptor Antagonists
 46122-0248	Cyclooxygenase Inhibitors
 46122-0259	Histamine H1 Receptor Antagonists
 46122-0260	Phosphate Chelating Activity
@@ -6733,13 +6733,13 @@ Key	Value
 47335-0154	Nucleic Acid Synthesis Inhibitors
 47335-0175	Histamine H1 Receptor Antagonists
 47335-0203	Catechol O-methyltransferase Inhibitors
-47335-0276	Serotonin 1b Receptor Agonists
 47335-0276	Serotonin 1d Receptor Agonists
+47335-0276	Serotonin 1b Receptor Agonists
 47335-0326	Opioid Antagonists
 47335-0343	Histamine H1 Receptor Antagonists
 47335-0344	Histamine H1 Receptor Antagonists
-47335-0381	Serotonin Uptake Inhibitors
 47335-0381	Norepinephrine Uptake Inhibitors
+47335-0381	Serotonin Uptake Inhibitors
 47335-0382	Serotonin Uptake Inhibitors
 47335-0382	Norepinephrine Uptake Inhibitors
 47335-0383	Serotonin Uptake Inhibitors
@@ -6764,8 +6764,8 @@ Key	Value
 47335-0736	Dopamine Uptake Inhibitors
 47335-0737	Dopamine Uptake Inhibitors
 47335-0737	Norepinephrine Uptake Inhibitors
-47335-0738	Norepinephrine Uptake Inhibitors
 47335-0738	Dopamine Uptake Inhibitors
+47335-0738	Norepinephrine Uptake Inhibitors
 47335-0747	Serotonin Uptake Inhibitors
 47335-0747	Norepinephrine Uptake Inhibitors
 47335-0779	Histamine H1 Receptor Antagonists
@@ -6833,24 +6833,24 @@ Key	Value
 49230-0643	Phosphate Chelating Activity
 49230-0645	Phosphate Chelating Activity
 49304-0003	Phosphate Chelating Activity
-49304-0009	Cholinergic Muscarinic Antagonists
 49304-0009	Cholinergic Antagonists
+49304-0009	Cholinergic Muscarinic Antagonists
 49348-0001	Cyclooxygenase Inhibitors
 49348-0002	Histamine H1 Receptor Antagonists
-49348-0017	Sigma-1 Receptor Agonists
 49348-0017	Uncompetitive Nmda Receptor Antagonists
+49348-0017	Sigma-1 Receptor Agonists
 49348-0024	Adrenergic Alpha-agonists
 49348-0025	Histamine H1 Receptor Antagonists
 49348-0026	Histamine H2 Receptor Antagonists
 49348-0044	Histamine H1 Receptor Antagonists
 49348-0045	Histamine H1 Receptor Antagonists
 49348-0055	Phosphate Chelating Activity
-49348-0061	Sigma-1 Receptor Agonists
 49348-0061	Uncompetitive Nmda Receptor Antagonists
+49348-0061	Sigma-1 Receptor Agonists
 49348-0074	Histamine H1 Receptor Antagonists
 49348-0078	Histamine H1 Receptor Antagonists
-49348-0080	Uncompetitive Nmda Receptor Antagonists
 49348-0080	Sigma-1 Receptor Agonists
+49348-0080	Uncompetitive Nmda Receptor Antagonists
 49348-0083	Uncompetitive Nmda Receptor Antagonists
 49348-0083	Sigma-1 Receptor Agonists
 49348-0097	Cyclooxygenase Inhibitors
@@ -6879,8 +6879,8 @@ Key	Value
 49348-0280	Phosphate Chelating Activity
 49348-0301	Proton Pump Inhibitors
 49348-0306	Cyclooxygenase Inhibitors
-49348-0315	Uncompetitive Nmda Receptor Antagonists
 49348-0315	Sigma-1 Receptor Agonists
+49348-0315	Uncompetitive Nmda Receptor Antagonists
 49348-0326	Histamine H1 Receptor Antagonists
 49348-0349	Histamine H1 Receptor Antagonists
 49348-0361	Adrenergic Alpha-agonists
@@ -6907,8 +6907,8 @@ Key	Value
 49348-0522	Corticosteroid Hormone Receptor Agonists
 49348-0524	Adrenergic Alpha1-agonists
 49348-0529	Opioid Agonists
-49348-0540	Sigma-1 Receptor Agonists
 49348-0540	Uncompetitive Nmda Receptor Antagonists
+49348-0540	Sigma-1 Receptor Agonists
 49348-0543	Adrenergic Alpha-agonists
 49348-0561	Phosphate Chelating Activity
 49348-0568	Cyclooxygenase Inhibitors
@@ -6928,23 +6928,23 @@ Key	Value
 49348-0733	Histamine H2 Receptor Antagonists
 49348-0737	Uncompetitive Nmda Receptor Antagonists
 49348-0737	Sigma-1 Receptor Agonists
-49348-0738	Sigma-1 Receptor Agonists
 49348-0738	Uncompetitive Nmda Receptor Antagonists
+49348-0738	Sigma-1 Receptor Agonists
 49348-0741	Uncompetitive Nmda Receptor Antagonists
 49348-0741	Sigma-1 Receptor Agonists
 49348-0742	Uncompetitive Nmda Receptor Antagonists
 49348-0742	Sigma-1 Receptor Agonists
-49348-0743	Uncompetitive Nmda Receptor Antagonists
 49348-0743	Sigma-1 Receptor Agonists
+49348-0743	Uncompetitive Nmda Receptor Antagonists
 49348-0752	Opioid Agonists
-49348-0753	Uncompetitive Nmda Receptor Antagonists
 49348-0753	Sigma-1 Receptor Agonists
+49348-0753	Uncompetitive Nmda Receptor Antagonists
 49348-0756	Cyclooxygenase Inhibitors
 49348-0757	Cyclooxygenase Inhibitors
 49348-0759	Phosphate Chelating Activity
 49348-0774	Adrenergic Alpha1-agonists
-49348-0775	Uncompetitive Nmda Receptor Antagonists
 49348-0775	Sigma-1 Receptor Agonists
+49348-0775	Uncompetitive Nmda Receptor Antagonists
 49348-0776	Adrenergic Alpha1-agonists
 49348-0777	Adrenergic Alpha1-agonists
 49348-0778	Histamine H1 Receptor Antagonists
@@ -6954,15 +6954,15 @@ Key	Value
 49348-0817	Histamine H2 Receptor Antagonists
 49348-0819	Cyclooxygenase Inhibitors
 49348-0820	Cyclooxygenase Inhibitors
-49348-0828	Uncompetitive Nmda Receptor Antagonists
 49348-0828	Sigma-1 Receptor Agonists
+49348-0828	Uncompetitive Nmda Receptor Antagonists
 49348-0840	Sigma-1 Receptor Agonists
 49348-0840	Uncompetitive Nmda Receptor Antagonists
 49348-0841	Uncompetitive Nmda Receptor Antagonists
 49348-0841	Sigma-1 Receptor Agonists
 49348-0843	Histamine H1 Receptor Antagonists
-49348-0845	Uncompetitive Nmda Receptor Antagonists
 49348-0845	Sigma-1 Receptor Agonists
+49348-0845	Uncompetitive Nmda Receptor Antagonists
 49348-0846	Proton Pump Inhibitors
 49348-0846	Cytochrome P450 2c19 Inhibitors
 49348-0847	Histamine H1 Receptor Antagonists
@@ -7008,8 +7008,8 @@ Key	Value
 49483-0061	Histamine H1 Receptor Antagonists
 49483-0234	Adrenergic Alpha1-agonists
 49483-0242	Histamine H1 Receptor Antagonists
-49483-0280	Sigma-1 Receptor Agonists
 49483-0280	Uncompetitive Nmda Receptor Antagonists
+49483-0280	Sigma-1 Receptor Agonists
 49483-0328	Cyclooxygenase Inhibitors
 49483-0329	Histamine H1 Receptor Antagonists
 49483-0330	Cyclooxygenase Inhibitors
@@ -7022,23 +7022,23 @@ Key	Value
 49483-0382	Cyclooxygenase Inhibitors
 49483-0387	Cyclooxygenase Inhibitors
 49483-0390	Cyclooxygenase Inhibitors
-49502-0420	Monoamine Oxidase Inhibitors
 49502-0420	Monoamine Oxidase-b Inhibitors
-49502-0500	Adrenergic Alpha-agonists
+49502-0420	Monoamine Oxidase Inhibitors
 49502-0500	Adrenergic Beta-agonists
-49502-0501	Adrenergic Beta-agonists
+49502-0500	Adrenergic Alpha-agonists
 49502-0501	Adrenergic Alpha-agonists
+49502-0501	Adrenergic Beta-agonists
 49502-0605	Adrenergic Beta2-agonists
 49502-0672	Adrenergic Beta2-agonists
-49502-0900	Monoamine Oxidase Inhibitors
 49502-0900	Monoamine Oxidase-b Inhibitors
+49502-0900	Monoamine Oxidase Inhibitors
 49502-0901	Monoamine Oxidase-b Inhibitors
 49502-0901	Monoamine Oxidase Inhibitors
 49502-0902	Monoamine Oxidase-b Inhibitors
 49502-0902	Monoamine Oxidase Inhibitors
 49702-0202	Nucleoside Reverse Transcriptase Inhibitors
-49702-0207	Cytochrome P450 3a4 Inhibitors
 49702-0207	Hiv Protease Inhibitors
+49702-0207	Cytochrome P450 3a4 Inhibitors
 49702-0208	Cytochrome P450 3a4 Inhibitors
 49702-0208	Hiv Protease Inhibitors
 49702-0209	Non-nucleoside Reverse Transcriptase Inhibitors
@@ -7081,10 +7081,10 @@ Key	Value
 49884-0304	Leukotriene Receptor Antagonists
 49884-0374	Norepinephrine Uptake Inhibitors
 49884-0374	Serotonin Uptake Inhibitors
-49884-0375	Serotonin Uptake Inhibitors
 49884-0375	Norepinephrine Uptake Inhibitors
-49884-0397	Proton Pump Inhibitors
+49884-0375	Serotonin Uptake Inhibitors
 49884-0397	Cytochrome P450 2c19 Inhibitors
+49884-0397	Proton Pump Inhibitors
 49884-0404	Adrenergic Beta-antagonists
 49884-0405	Adrenergic Beta-antagonists
 49884-0406	Adrenergic Beta-antagonists
@@ -7161,18 +7161,18 @@ Key	Value
 49884-0985	Potassium Channel Antagonists
 49908-0150	Corticosteroid Hormone Receptor Agonists
 49909-0005	Serotonin Uptake Inhibitors
-49909-0010	Dopamine Uptake Inhibitors
 49909-0010	Norepinephrine Uptake Inhibitors
+49909-0010	Dopamine Uptake Inhibitors
 50111-0323	Cholinergic Muscarinic Agonists
 50111-0324	Cholinergic Muscarinic Agonists
 50111-0325	Cholinergic Muscarinic Agonists
 50111-0326	Cholinergic Muscarinic Agonists
 50111-0393	Cholinergic Antagonists
 50111-0393	Histamine Receptor Antagonists
-50111-0394	Histamine Receptor Antagonists
 50111-0394	Cholinergic Antagonists
-50111-0395	Histamine Receptor Antagonists
+50111-0394	Histamine Receptor Antagonists
 50111-0395	Cholinergic Antagonists
+50111-0395	Histamine Receptor Antagonists
 50111-0456	Cholinergic Muscarinic Antagonists
 50111-0647	Serotonin Uptake Inhibitors
 50111-0648	Serotonin Uptake Inhibitors
@@ -7192,8 +7192,8 @@ Key	Value
 50242-0053	Cd20-directed Antibody Interactions
 50242-0060	Vascular Endothelial Growth Factor Receptor Inhibitors
 50242-0060	Vascular Endothelial Growth Factor-directed Antibody Interactions
-50242-0061	Vascular Endothelial Growth Factor Receptor Inhibitors
 50242-0061	Vascular Endothelial Growth Factor-directed Antibody Interactions
+50242-0061	Vascular Endothelial Growth Factor Receptor Inhibitors
 50242-0062	Protein Kinase Inhibitors
 50242-0063	Protein Kinase Inhibitors
 50242-0064	Protein Kinase Inhibitors
@@ -7213,8 +7213,8 @@ Key	Value
 50383-0043	Cholinergic Muscarinic Agonists
 50383-0050	Histamine H2 Receptor Antagonists
 50383-0051	Histamine H2 Receptor Antagonists
-50383-0062	Uncompetitive Nmda Receptor Antagonists
 50383-0062	Sigma-1 Receptor Agonists
+50383-0062	Uncompetitive Nmda Receptor Antagonists
 50383-0232	Carbonic Anhydrase Inhibitors
 50383-0233	Carbonic Anhydrase Inhibitors
 50383-0249	Cyclooxygenase Inhibitors
@@ -7286,8 +7286,8 @@ Key	Value
 50458-0192	Estrogen Receptor Agonists
 50458-0210	Serotonin 1d Receptor Agonists
 50458-0210	Serotonin 1b Receptor Agonists
-50458-0211	Serotonin 1b Receptor Agonists
 50458-0211	Serotonin 1d Receptor Agonists
+50458-0211	Serotonin 1b Receptor Agonists
 50458-0220	P-glycoprotein Inhibitors
 50458-0220	Cytochrome P450 3a4 Inhibitors
 50458-0220	Cytochrome P450 3a5 Inhibitors
@@ -7308,8 +7308,8 @@ Key	Value
 50458-0657	Full Opioid Agonists
 50458-0659	Full Opioid Agonists
 50458-0680	Cytochrome P450 3a4 Inhibitors
-50458-0680	P-glycoprotein Inhibitors
 50458-0680	Cytochrome P450 3a5 Inhibitors
+50458-0680	P-glycoprotein Inhibitors
 50458-0817	Opioid Agonists
 50458-0820	Opioid Agonists
 50458-0830	Opioid Agonists
@@ -7349,8 +7349,8 @@ Key	Value
 50991-0214	Sigma-1 Receptor Agonists
 50991-0214	Uncompetitive Nmda Receptor Antagonists
 50991-0216	Adrenergic Alpha1-agonists
-50991-0220	Uncompetitive Nmda Receptor Antagonists
 50991-0220	Sigma-1 Receptor Agonists
+50991-0220	Uncompetitive Nmda Receptor Antagonists
 50991-0320	Histamine H1 Receptor Antagonists
 50991-0405	Histamine H1 Receptor Antagonists
 50991-0510	Uncompetitive Nmda Receptor Antagonists
@@ -7359,13 +7359,13 @@ Key	Value
 50991-0583	Uncompetitive Nmda Receptor Antagonists
 50991-0583	Sigma-1 Receptor Agonists
 50991-0597	Adrenergic Alpha-agonists
-50991-0598	Sigma-1 Receptor Agonists
 50991-0598	Uncompetitive Nmda Receptor Antagonists
+50991-0598	Sigma-1 Receptor Agonists
 50991-0607	Histamine H1 Receptor Antagonists
 50991-0716	Adrenergic Alpha1-agonists
 50991-0723	Adrenergic Alpha1-agonists
-50991-0730	Sigma-1 Receptor Agonists
 50991-0730	Uncompetitive Nmda Receptor Antagonists
+50991-0730	Sigma-1 Receptor Agonists
 50991-0782	Adrenergic Alpha1-agonists
 50991-0814	Sigma-1 Receptor Agonists
 50991-0814	Uncompetitive Nmda Receptor Antagonists
@@ -7374,8 +7374,8 @@ Key	Value
 51079-0007	Cytochrome P450 2c19 Inhibitors
 51079-0020	Corticosteroid Hormone Receptor Agonists
 51079-0027	Cytochrome P450 2d6 Inhibitors
-51079-0047	Dopamine Uptake Inhibitors
 51079-0047	Norepinephrine Uptake Inhibitors
+51079-0047	Dopamine Uptake Inhibitors
 51079-0051	Proton Pump Inhibitors
 51079-0062	Potassium Channel Antagonists
 51079-0067	Cholinergic Antagonists
@@ -7442,11 +7442,11 @@ Key	Value
 51079-0466	Cyclooxygenase Inhibitors
 51079-0467	Calcium Channel Antagonists
 51079-0468	Calcium Channel Antagonists
-51079-0480	Norepinephrine Uptake Inhibitors
 51079-0480	Serotonin Uptake Inhibitors
+51079-0480	Norepinephrine Uptake Inhibitors
 51079-0481	M2 Protein Inhibitors
-51079-0482	Norepinephrine Uptake Inhibitors
 51079-0482	Serotonin Uptake Inhibitors
+51079-0482	Norepinephrine Uptake Inhibitors
 51079-0510	Nucleic Acid Synthesis Inhibitors
 51079-0513	Peroxisome Proliferator-activated Receptor Activity
 51079-0514	Peroxisome Proliferator-activated Receptor Activity
@@ -7646,8 +7646,8 @@ Key	Value
 51672-1296	Corticosteroid Hormone Receptor Agonists
 51672-1297	Corticosteroid Hormone Receptor Agonists
 51672-1298	Cytochrome P450 3a4 Inhibitors
-51672-1298	P-glycoprotein Inhibitors
 51672-1298	Cytochrome P450 3a5 Inhibitors
+51672-1298	P-glycoprotein Inhibitors
 51672-1306	Corticosteroid Hormone Receptor Agonists
 51672-1309	Corticosteroid Hormone Receptor Agonists
 51672-1310	Corticosteroid Hormone Receptor Agonists
@@ -7678,8 +7678,8 @@ Key	Value
 51672-2097	Histamine H1 Receptor Antagonists
 51672-2102	Histamine H1 Receptor Antagonists
 51672-2106	Histamine H1 Receptor Antagonists
-51672-2112	Uncompetitive Nmda Receptor Antagonists
 51672-2112	Sigma-1 Receptor Agonists
+51672-2112	Uncompetitive Nmda Receptor Antagonists
 51672-2113	Histamine H1 Receptor Antagonists
 51672-3003	Corticosteroid Hormone Receptor Agonists
 51672-3004	Corticosteroid Hormone Receptor Agonists
@@ -7772,12 +7772,12 @@ Key	Value
 51991-0710	Peroxisome Proliferator-activated Receptor Activity
 51991-0728	Corticosteroid Hormone Receptor Agonists
 51991-0735	Serotonin 3 Receptor Antagonists
-51991-0746	Norepinephrine Uptake Inhibitors
 51991-0746	Serotonin Uptake Inhibitors
-51991-0747	Norepinephrine Uptake Inhibitors
+51991-0746	Norepinephrine Uptake Inhibitors
 51991-0747	Serotonin Uptake Inhibitors
-51991-0748	Norepinephrine Uptake Inhibitors
+51991-0747	Norepinephrine Uptake Inhibitors
 51991-0748	Serotonin Uptake Inhibitors
+51991-0748	Norepinephrine Uptake Inhibitors
 51991-0759	Aromatase Inhibitors
 51991-0771	Proton Pump Inhibitors
 51991-0772	Proton Pump Inhibitors
@@ -7789,14 +7789,14 @@ Key	Value
 51991-0818	Adrenergic Beta-antagonists
 51991-0819	Adrenergic Beta-antagonists
 51991-0820	Adrenergic Beta-antagonists
-51991-0836	Histamine H1 Receptor Antagonists
 51991-0836	Adrenergic Agonists
+51991-0836	Histamine H1 Receptor Antagonists
 51991-0837	Histamine H1 Receptor Antagonists
 52054-0330	Dihydrofolate Reductase Inhibitors
 52054-0803	Adrenergic Alpha-agonists
 52054-0803	Adrenergic Beta-agonists
-52054-0804	Adrenergic Alpha-agonists
 52054-0804	Adrenergic Beta-agonists
+52054-0804	Adrenergic Alpha-agonists
 52124-0007	Corticosteroid Hormone Receptor Agonists
 52124-0009	Cyclooxygenase Inhibitors
 52244-0010	Prostaglandin Receptor Agonists
@@ -7944,11 +7944,11 @@ Key	Value
 53746-0617	Full Opioid Agonists
 53746-0955	Proton Pump Inhibitors
 53746-0957	Proton Pump Inhibitors
-53808-0218	Adrenergic Beta1-antagonists
 53808-0218	Adrenergic Alpha-antagonists
+53808-0218	Adrenergic Beta1-antagonists
 53808-0218	Adrenergic Beta2-antagonists
-53808-0219	Adrenergic Alpha-antagonists
 53808-0219	Adrenergic Beta1-antagonists
+53808-0219	Adrenergic Alpha-antagonists
 53808-0219	Adrenergic Beta2-antagonists
 53808-0221	Adrenergic Alpha-antagonists
 53808-0221	Adrenergic Beta2-antagonists
@@ -7958,8 +7958,8 @@ Key	Value
 53808-0230	Adrenergic Alpha2-agonists
 53808-0245	Nucleoside Reverse Transcriptase Inhibitors
 53808-0246	Nucleoside Reverse Transcriptase Inhibitors
-53808-0281	Cytochrome P450 3a4 Inhibitors
 53808-0281	Hiv Protease Inhibitors
+53808-0281	Cytochrome P450 3a4 Inhibitors
 53808-0338	Aldosterone Antagonists
 53808-0350	Serotonin Uptake Inhibitors
 53808-0536	Hydroxymethylglutaryl-coa Reductase Inhibitors
@@ -8043,8 +8043,8 @@ Key	Value
 54458-0990	Serotonin Uptake Inhibitors
 54482-0020	Cystine Disulfide Reduction
 54482-0053	Alkylating Activity
-54505-0101	Adrenergic Beta-agonists
 54505-0101	Adrenergic Alpha-agonists
+54505-0101	Adrenergic Beta-agonists
 54505-0102	Adrenergic Alpha-agonists
 54505-0102	Adrenergic Beta-agonists
 54505-0331	Corticosteroid Hormone Receptor Agonists
@@ -8065,17 +8065,17 @@ Key	Value
 54838-0105	Uncompetitive Nmda Receptor Antagonists
 54838-0115	Histamine H1 Receptor Antagonists
 54838-0125	Adrenergic Alpha-agonists
-54838-0133	Sigma-1 Receptor Agonists
 54838-0133	Uncompetitive Nmda Receptor Antagonists
+54838-0133	Sigma-1 Receptor Agonists
 54838-0135	Histamine H1 Receptor Antagonists
 54838-0136	Uncompetitive Nmda Receptor Antagonists
 54838-0136	Sigma-1 Receptor Agonists
-54838-0139	Uncompetitive Nmda Receptor Antagonists
 54838-0139	Sigma-1 Receptor Agonists
+54838-0139	Uncompetitive Nmda Receptor Antagonists
 54838-0140	Uncompetitive Nmda Receptor Antagonists
 54838-0140	Sigma-1 Receptor Agonists
-54838-0147	Sigma-1 Receptor Agonists
 54838-0147	Uncompetitive Nmda Receptor Antagonists
+54838-0147	Sigma-1 Receptor Agonists
 54838-0154	Histamine H1 Receptor Antagonists
 54838-0209	Uncompetitive Nmda Receptor Antagonists
 54838-0209	Sigma-1 Receptor Agonists
@@ -8093,17 +8093,17 @@ Key	Value
 54838-0572	Histamine H1 Receptor Antagonists
 54859-0502	Uncompetitive Nmda Receptor Antagonists
 54859-0502	Sigma-1 Receptor Agonists
-54859-0505	Uncompetitive Nmda Receptor Antagonists
 54859-0505	Sigma-1 Receptor Agonists
+54859-0505	Uncompetitive Nmda Receptor Antagonists
 54859-0520	Adrenergic Alpha-agonists
-54859-0544	Sigma-1 Receptor Agonists
 54859-0544	Uncompetitive Nmda Receptor Antagonists
+54859-0544	Sigma-1 Receptor Agonists
 54859-0602	Adrenergic Alpha-agonists
 54859-0603	Uncompetitive Nmda Receptor Antagonists
 54859-0603	Sigma-1 Receptor Agonists
 54859-0702	Adrenergic Alpha-agonists
-54859-0801	Sigma-1 Receptor Agonists
 54859-0801	Uncompetitive Nmda Receptor Antagonists
+54859-0801	Sigma-1 Receptor Agonists
 54859-0802	Adrenergic Alpha-agonists
 54868-0032	Cholinergic Muscarinic Antagonists
 54868-0032	Cholinergic Antagonists
@@ -8154,8 +8154,8 @@ Key	Value
 55111-0153	Serotonin 3 Receptor Antagonists
 55111-0154	Serotonin 3 Receptor Antagonists
 55111-0156	Serotonin 3 Receptor Antagonists
-55111-0157	Proton Pump Inhibitors
 55111-0157	Cytochrome P450 2c19 Inhibitors
+55111-0157	Proton Pump Inhibitors
 55111-0158	Proton Pump Inhibitors
 55111-0158	Cytochrome P450 2c19 Inhibitors
 55111-0159	Proton Pump Inhibitors
@@ -8172,16 +8172,16 @@ Key	Value
 55111-0230	Hydroxymethylglutaryl-coa Reductase Inhibitors
 55111-0231	Hydroxymethylglutaryl-coa Reductase Inhibitors
 55111-0252	Adrenergic Beta2-antagonists
-55111-0252	Adrenergic Beta1-antagonists
 55111-0252	Adrenergic Alpha-antagonists
-55111-0253	Adrenergic Beta2-antagonists
+55111-0252	Adrenergic Beta1-antagonists
 55111-0253	Adrenergic Alpha-antagonists
+55111-0253	Adrenergic Beta2-antagonists
 55111-0253	Adrenergic Beta1-antagonists
 55111-0254	Adrenergic Alpha-antagonists
 55111-0254	Adrenergic Beta1-antagonists
 55111-0254	Adrenergic Beta2-antagonists
-55111-0255	Adrenergic Beta2-antagonists
 55111-0255	Adrenergic Alpha-antagonists
+55111-0255	Adrenergic Beta2-antagonists
 55111-0255	Adrenergic Beta1-antagonists
 55111-0268	Hydroxymethylglutaryl-coa Reductase Inhibitors
 55111-0269	Calcium Channel Antagonists
@@ -8192,8 +8192,8 @@ Key	Value
 55111-0274	Hydroxymethylglutaryl-coa Reductase Inhibitors
 55111-0282	Histamine H1 Receptor Antagonists
 55111-0284	Serotonin Uptake Inhibitors
-55111-0291	Serotonin 1d Receptor Agonists
 55111-0291	Serotonin 1b Receptor Agonists
+55111-0291	Serotonin 1d Receptor Agonists
 55111-0292	Serotonin 1d Receptor Agonists
 55111-0292	Serotonin 1b Receptor Agonists
 55111-0293	Serotonin 1b Receptor Agonists
@@ -8221,8 +8221,8 @@ Key	Value
 55111-0368	Cyclooxygenase Inhibitors
 55111-0372	Phosphodiesterase 5 Inhibitors
 55111-0396	Histamine H2 Receptor Antagonists
-55111-0397	Cytochrome P450 2c19 Inhibitors
 55111-0397	Proton Pump Inhibitors
+55111-0397	Cytochrome P450 2c19 Inhibitors
 55111-0398	Proton Pump Inhibitors
 55111-0399	Proton Pump Inhibitors
 55111-0404	Histamine H2 Receptor Antagonists
@@ -8230,10 +8230,10 @@ Key	Value
 55111-0439	Angiotensin-converting Enzyme Inhibitors
 55111-0440	Angiotensin-converting Enzyme Inhibitors
 55111-0441	Angiotensin-converting Enzyme Inhibitors
-55111-0453	Norepinephrine Uptake Inhibitors
 55111-0453	Serotonin Uptake Inhibitors
-55111-0454	Serotonin Uptake Inhibitors
+55111-0453	Norepinephrine Uptake Inhibitors
 55111-0454	Norepinephrine Uptake Inhibitors
+55111-0454	Serotonin Uptake Inhibitors
 55111-0455	Serotonin Uptake Inhibitors
 55111-0455	Norepinephrine Uptake Inhibitors
 55111-0466	Adrenergic Beta-antagonists
@@ -8246,10 +8246,10 @@ Key	Value
 55111-0545	Norepinephrine Uptake Inhibitors
 55111-0546	Serotonin Uptake Inhibitors
 55111-0546	Norepinephrine Uptake Inhibitors
-55111-0547	Serotonin Uptake Inhibitors
 55111-0547	Norepinephrine Uptake Inhibitors
-55111-0548	Serotonin Uptake Inhibitors
+55111-0547	Serotonin Uptake Inhibitors
 55111-0548	Norepinephrine Uptake Inhibitors
+55111-0548	Serotonin Uptake Inhibitors
 55111-0549	Serotonin Uptake Inhibitors
 55111-0549	Norepinephrine Uptake Inhibitors
 55111-0551	Histamine H1 Receptor Antagonists
@@ -8264,12 +8264,12 @@ Key	Value
 55111-0593	Leukotriene Receptor Antagonists
 55111-0594	Leukotriene Receptor Antagonists
 55111-0602	Histamine H2 Receptor Antagonists
-55111-0608	Norepinephrine Uptake Inhibitors
 55111-0608	Serotonin Uptake Inhibitors
+55111-0608	Norepinephrine Uptake Inhibitors
 55111-0609	Serotonin Uptake Inhibitors
 55111-0609	Norepinephrine Uptake Inhibitors
-55111-0610	Serotonin Uptake Inhibitors
 55111-0610	Norepinephrine Uptake Inhibitors
+55111-0610	Serotonin Uptake Inhibitors
 55111-0621	Angiotensin-converting Enzyme Inhibitors
 55111-0622	Angiotensin-converting Enzyme Inhibitors
 55111-0623	Angiotensin-converting Enzyme Inhibitors
@@ -8342,21 +8342,21 @@ Key	Value
 55513-0073	Increased Calcium-sensing Receptor Sensitivity
 55513-0074	Increased Calcium-sensing Receptor Sensitivity
 55513-0075	Increased Calcium-sensing Receptor Sensitivity
-55513-0221	Thrombopoietin Receptor Interactions
 55513-0221	Thrombopoietin Receptor Agonists
+55513-0221	Thrombopoietin Receptor Interactions
 55513-0222	Thrombopoietin Receptor Agonists
 55513-0222	Thrombopoietin Receptor Interactions
 55513-0730	Rank Ligand Blocking Activity
 55526-0004	Phosphate Chelating Activity
-55566-9300	Calcium Chelating Activity
 55566-9300	Acidifying Activity
+55566-9300	Calcium Chelating Activity
 55566-9700	Calcium Chelating Activity
 55566-9700	Acidifying Activity
-55856-0003	Adrenergic Alpha-agonists
 55856-0003	Adrenergic Beta-agonists
+55856-0003	Adrenergic Alpha-agonists
 57237-0014	Adrenergic Alpha-antagonists
-57237-0017	Serotonin Uptake Inhibitors
 57237-0017	Norepinephrine Uptake Inhibitors
+57237-0017	Serotonin Uptake Inhibitors
 57237-0018	Norepinephrine Uptake Inhibitors
 57237-0018	Serotonin Uptake Inhibitors
 57237-0019	Norepinephrine Uptake Inhibitors
@@ -8365,9 +8365,9 @@ Key	Value
 57237-0027	Angiotensin-converting Enzyme Inhibitors
 57237-0042	Dna Polymerase Inhibitors
 57237-0043	Dna Polymerase Inhibitors
+57237-0044	P-glycoprotein Inhibitors
 57237-0044	Cytochrome P450 3a4 Inhibitors
 57237-0044	Cytochrome P450 3a Inhibitors
-57237-0044	P-glycoprotein Inhibitors
 57237-0045	Cytochrome P450 3a4 Inhibitors
 57237-0045	Cytochrome P450 3a Inhibitors
 57237-0045	P-glycoprotein Inhibitors
@@ -8393,12 +8393,12 @@ Key	Value
 57237-0108	Calcium Channel Antagonists
 57237-0109	Calcium Channel Antagonists
 57237-0110	Calcium Channel Antagonists
-57520-0025	Adrenergic Beta-agonists
 57520-0025	Adrenergic Alpha-agonists
+57520-0025	Adrenergic Beta-agonists
 57520-0037	Acetylcholine Release Inhibitors
 57520-0054	Androgen Receptor Agonists
-57520-0062	Cholinergic Antagonists
 57520-0062	Cholinergic Muscarinic Antagonists
+57520-0062	Cholinergic Antagonists
 57520-0066	Cyclooxygenase Inhibitors
 57520-0131	Phosphate Chelating Activity
 57520-0143	Corticosteroid Hormone Receptor Agonists
@@ -8446,19 +8446,19 @@ Key	Value
 57664-0210	Dopamine Agonists
 57664-0223	Full Opioid Agonists
 57664-0224	Full Opioid Agonists
-57664-0242	Adrenergic Beta2-antagonists
-57664-0242	Adrenergic Alpha-antagonists
 57664-0242	Adrenergic Beta1-antagonists
-57664-0244	Adrenergic Beta2-antagonists
+57664-0242	Adrenergic Alpha-antagonists
+57664-0242	Adrenergic Beta2-antagonists
 57664-0244	Adrenergic Beta1-antagonists
+57664-0244	Adrenergic Beta2-antagonists
 57664-0244	Adrenergic Alpha-antagonists
+57664-0245	Adrenergic Beta2-antagonists
 57664-0245	Adrenergic Beta1-antagonists
 57664-0245	Adrenergic Alpha-antagonists
-57664-0245	Adrenergic Beta2-antagonists
 57664-0246	Histamine H1 Receptor Antagonists
+57664-0247	Adrenergic Beta2-antagonists
 57664-0247	Adrenergic Alpha-antagonists
 57664-0247	Adrenergic Beta1-antagonists
-57664-0247	Adrenergic Beta2-antagonists
 57664-0263	Histamine H1 Receptor Antagonists
 57664-0280	Opioid Agonists
 57664-0281	Opioid Agonists
@@ -8548,18 +8548,18 @@ Key	Value
 58605-0401	Uncompetitive Nmda Receptor Antagonists
 58605-0401	Sigma-1 Receptor Agonists
 58605-0422	Adrenergic Alpha1-agonists
-58605-0423	Uncompetitive Nmda Receptor Antagonists
 58605-0423	Sigma-1 Receptor Agonists
+58605-0423	Uncompetitive Nmda Receptor Antagonists
 58657-0100	Phosphate Chelating Activity
 58657-0105	Phosphate Chelating Activity
 58657-0420	Cholinergic Muscarinic Antagonists
 58657-0420	Cholinergic Antagonists
-58657-0421	Cholinergic Antagonists
 58657-0421	Cholinergic Muscarinic Antagonists
+58657-0421	Cholinergic Antagonists
 58809-0407	Adrenergic Alpha-agonists
 58809-0536	Adrenergic Alpha1-agonists
-58809-0555	Sigma-1 Receptor Agonists
 58809-0555	Uncompetitive Nmda Receptor Antagonists
+58809-0555	Sigma-1 Receptor Agonists
 58809-0578	Adrenergic Alpha-agonists
 58809-0729	Adrenergic Alpha1-agonists
 58809-0829	Phosphate Chelating Activity
@@ -8647,13 +8647,13 @@ Key	Value
 59630-0992	Full Opioid Agonists
 59630-0993	Full Opioid Agonists
 59630-0994	Full Opioid Agonists
-59676-0101	Cd3-directed Antibody Interactions
 59676-0101	Cd3 Receptor Antagonists
+59676-0101	Cd3-directed Antibody Interactions
 59676-0225	Organic Anion Transporting Polypeptide 1b3 Inhibitors
-59676-0225	Cytochrome P450 3a4 Inhibitors
-59676-0225	Hcv Ns3/4a Protease Inhibitors
-59676-0225	Organic Anion Transporting Polypeptide 1b1 Inhibitors
 59676-0225	P-glycoprotein Inhibitors
+59676-0225	Hcv Ns3/4a Protease Inhibitors
+59676-0225	Cytochrome P450 3a4 Inhibitors
+59676-0225	Organic Anion Transporting Polypeptide 1b1 Inhibitors
 59676-0278	Non-nucleoside Reverse Transcriptase Inhibitors
 59676-0561	Hiv Protease Inhibitors
 59676-0562	Hiv Protease Inhibitors
@@ -8681,10 +8681,10 @@ Key	Value
 59746-0286	Histamine H1 Receptor Antagonists
 59746-0315	Norepinephrine Uptake Inhibitors
 59746-0315	Dopamine Uptake Inhibitors
-59746-0316	Dopamine Uptake Inhibitors
 59746-0316	Norepinephrine Uptake Inhibitors
-59746-0317	Norepinephrine Uptake Inhibitors
+59746-0316	Dopamine Uptake Inhibitors
 59746-0317	Dopamine Uptake Inhibitors
+59746-0317	Norepinephrine Uptake Inhibitors
 59746-0324	Dna Polymerase Inhibitors
 59746-0325	Dna Polymerase Inhibitors
 59746-0329	Cholinesterase Inhibitors
@@ -8740,8 +8740,8 @@ Key	Value
 59762-1001	Mtor Inhibitors
 59762-1002	Mtor Inhibitors
 59762-1003	Mtor Inhibitors
-59762-1061	Cholinergic Muscarinic Antagonists
 59762-1061	Cholinergic Antagonists
+59762-1061	Cholinergic Muscarinic Antagonists
 59762-1258	Adrenergic Beta-antagonists
 59762-1261	Adrenergic Beta-antagonists
 59762-1300	Adrenergic Beta-antagonists
@@ -8760,8 +8760,8 @@ Key	Value
 59762-1850	Serotonin 1b Receptor Agonists
 59762-1851	Serotonin 1d Receptor Agonists
 59762-1851	Serotonin 1b Receptor Agonists
-59762-1852	Serotonin 1d Receptor Agonists
 59762-1852	Serotonin 1b Receptor Agonists
+59762-1852	Serotonin 1d Receptor Agonists
 59762-2310	Adrenergic Alpha-antagonists
 59762-2320	Adrenergic Alpha-antagonists
 59762-2340	Adrenergic Alpha-antagonists
@@ -8803,8 +8803,8 @@ Key	Value
 60258-0876	Histamine H1 Receptor Antagonists
 60258-0890	Cyclooxygenase Inhibitors
 60432-0007	Histamine H2 Receptor Antagonists
-60432-0037	Osmotic Activity
 60432-0037	Acidifying Activity
+60432-0037	Osmotic Activity
 60432-0038	Osmotic Activity
 60432-0038	Acidifying Activity
 60432-0092	Cholinergic Muscarinic Antagonists
@@ -8824,8 +8824,8 @@ Key	Value
 60432-0604	Uncompetitive Nmda Receptor Antagonists
 60432-0604	Sigma-1 Receptor Agonists
 60432-0622	Dopamine D2 Antagonists
-60432-0837	Sigma-1 Receptor Agonists
 60432-0837	Uncompetitive Nmda Receptor Antagonists
+60432-0837	Sigma-1 Receptor Agonists
 60505-0007	Calcium Channel Antagonists
 60505-0008	Calcium Channel Antagonists
 60505-0009	Calcium Channel Antagonists
@@ -8866,10 +8866,10 @@ Key	Value
 60505-0145	Proton Pump Inhibitors
 60505-0146	Cytochrome P450 2c19 Inhibitors
 60505-0146	Proton Pump Inhibitors
-60505-0157	Norepinephrine Uptake Inhibitors
 60505-0157	Dopamine Uptake Inhibitors
-60505-0158	Norepinephrine Uptake Inhibitors
+60505-0157	Norepinephrine Uptake Inhibitors
 60505-0158	Dopamine Uptake Inhibitors
+60505-0158	Norepinephrine Uptake Inhibitors
 60505-0164	Serotonin Uptake Inhibitors
 60505-0165	Serotonin Uptake Inhibitors
 60505-0166	Serotonin Uptake Inhibitors
@@ -8898,8 +8898,8 @@ Key	Value
 60505-0399	Cyclooxygenase Inhibitors
 60505-0402	Serotonin Uptake Inhibitors
 60505-0501	Interferon Inducers
-60505-0562	Osmotic Activity
 60505-0562	Acidifying Activity
+60505-0562	Osmotic Activity
 60505-0570	Cyclooxygenase Inhibitors
 60505-0578	Histamine H1 Receptor Antagonists
 60505-0584	Adrenergic Agonists
@@ -8940,21 +8940,21 @@ Key	Value
 60505-2606	Adrenergic Beta2-antagonists
 60505-2606	Adrenergic Alpha-antagonists
 60505-2606	Adrenergic Beta1-antagonists
-60505-2607	Adrenergic Beta2-antagonists
-60505-2607	Adrenergic Alpha-antagonists
 60505-2607	Adrenergic Beta1-antagonists
+60505-2607	Adrenergic Alpha-antagonists
+60505-2607	Adrenergic Beta2-antagonists
 60505-2608	Adrenergic Beta1-antagonists
 60505-2608	Adrenergic Beta2-antagonists
 60505-2608	Adrenergic Alpha-antagonists
+60505-2609	Adrenergic Beta2-antagonists
 60505-2609	Adrenergic Beta1-antagonists
 60505-2609	Adrenergic Alpha-antagonists
-60505-2609	Adrenergic Beta2-antagonists
-60505-2615	P-glycoprotein Inhibitors
 60505-2615	Cytochrome P450 3a4 Inhibitors
 60505-2615	Cytochrome P450 3a Inhibitors
-60505-2616	Cytochrome P450 3a4 Inhibitors
-60505-2616	Cytochrome P450 3a Inhibitors
+60505-2615	P-glycoprotein Inhibitors
 60505-2616	P-glycoprotein Inhibitors
+60505-2616	Cytochrome P450 3a Inhibitors
+60505-2616	Cytochrome P450 3a4 Inhibitors
 60505-2633	Histamine H1 Receptor Antagonists
 60505-2642	Androgen Receptor Antagonists
 60505-2644	Full Opioid Agonists
@@ -9017,8 +9017,8 @@ Key	Value
 60505-3409	Angiotensin-converting Enzyme Inhibitors
 60505-3410	Angiotensin-converting Enzyme Inhibitors
 60505-3411	Angiotensin-converting Enzyme Inhibitors
-60505-3438	Monoamine Oxidase Inhibitors
 60505-3438	Monoamine Oxidase-b Inhibitors
+60505-3438	Monoamine Oxidase Inhibitors
 60505-3454	Cholinergic Muscarinic Antagonists
 60505-3527	Cholinergic Muscarinic Antagonists
 60505-3528	Cholinergic Muscarinic Antagonists
@@ -9039,17 +9039,17 @@ Key	Value
 60505-3673	Serotonin Uptake Inhibitors
 60505-3674	Serotonin Uptake Inhibitors
 60505-3675	Serotonin Uptake Inhibitors
-60505-3693	Serotonin 1d Receptor Agonists
 60505-3693	Serotonin 1b Receptor Agonists
-60505-3694	Serotonin 1b Receptor Agonists
+60505-3693	Serotonin 1d Receptor Agonists
 60505-3694	Serotonin 1d Receptor Agonists
+60505-3694	Serotonin 1b Receptor Agonists
 60505-3718	Serotonin 1b Receptor Agonists
 60505-3718	Serotonin 1d Receptor Agonists
 60505-3719	Serotonin 1d Receptor Agonists
 60505-3719	Serotonin 1b Receptor Agonists
 60505-3788	Non-nucleoside Reverse Transcriptase Inhibitors
-60505-3952	Proton Pump Inhibitors
 60505-3952	Cytochrome P450 2c19 Inhibitors
+60505-3952	Proton Pump Inhibitors
 60505-3992	P2y12 Receptor Antagonists
 60505-4058	Non-nucleoside Reverse Transcriptase Inhibitors
 60505-5306	Dna Polymerase Inhibitors
@@ -9133,17 +9133,17 @@ Key	Value
 61314-0144	Adrenergic Alpha-agonists
 61314-0203	Cholinergic Muscarinic Agonists
 61314-0203	Cholinergic Agonists
-61314-0204	Cholinergic Agonists
 61314-0204	Cholinergic Muscarinic Agonists
-61314-0206	Cholinergic Agonists
+61314-0204	Cholinergic Agonists
 61314-0206	Cholinergic Muscarinic Agonists
+61314-0206	Cholinergic Agonists
 61314-0229	Adrenergic Beta-antagonists
 61314-0238	Adrenergic Beta-antagonists
 61314-0245	Adrenergic Beta-antagonists
 61314-0294	Corticosteroid Hormone Receptor Agonists
 61314-0297	Corticosteroid Hormone Receptor Agonists
-61314-0303	Cholinergic Muscarinic Antagonists
 61314-0303	Cholinergic Antagonists
+61314-0303	Cholinergic Muscarinic Antagonists
 61314-0308	Histamine H1 Receptor Antagonists
 61314-0320	Histamine H1 Receptor Antagonists
 61314-0342	Adrenergic Alpha1-agonists
@@ -9206,8 +9206,8 @@ Key	Value
 61958-0701	Nucleoside Reverse Transcriptase Inhibitors
 61958-1101	Nucleoside Reverse Transcriptase Inhibitors
 61958-1201	Hiv Integrase Inhibitors
-61958-1801	P-glycoprotein Inhibitors
 61958-1801	Breast Cancer Resistance Protein Inhibitors
+61958-1801	P-glycoprotein Inhibitors
 61971-0115	Dihydrofolate Reductase Inhibitors
 61971-0120	Dihydrofolate Reductase Inhibitors
 62011-0003	Cyclooxygenase Inhibitors
@@ -9238,27 +9238,27 @@ Key	Value
 62011-0057	Histamine H1 Receptor Antagonists
 62011-0058	Histamine H1 Receptor Antagonists
 62011-0059	Histamine H1 Receptor Antagonists
-62011-0061	Uncompetitive Nmda Receptor Antagonists
 62011-0061	Sigma-1 Receptor Agonists
+62011-0061	Uncompetitive Nmda Receptor Antagonists
 62011-0062	Adrenergic Alpha1-agonists
-62011-0063	Sigma-1 Receptor Agonists
 62011-0063	Uncompetitive Nmda Receptor Antagonists
+62011-0063	Sigma-1 Receptor Agonists
 62011-0065	Uncompetitive Nmda Receptor Antagonists
 62011-0065	Sigma-1 Receptor Agonists
-62011-0066	Sigma-1 Receptor Agonists
 62011-0066	Uncompetitive Nmda Receptor Antagonists
+62011-0066	Sigma-1 Receptor Agonists
 62011-0067	Histamine H1 Receptor Antagonists
 62011-0068	Histamine H1 Receptor Antagonists
 62011-0070	Cyclooxygenase Inhibitors
 62011-0071	Adrenergic Alpha-agonists
 62011-0077	Adrenergic Alpha1-agonists
 62011-0078	Adrenergic Alpha-agonists
-62011-0082	Uncompetitive Nmda Receptor Antagonists
 62011-0082	Sigma-1 Receptor Agonists
+62011-0082	Uncompetitive Nmda Receptor Antagonists
 62011-0083	Uncompetitive Nmda Receptor Antagonists
 62011-0083	Sigma-1 Receptor Agonists
-62011-0084	Uncompetitive Nmda Receptor Antagonists
 62011-0084	Sigma-1 Receptor Agonists
+62011-0084	Uncompetitive Nmda Receptor Antagonists
 62011-0085	Adrenergic Alpha1-agonists
 62011-0087	Adrenergic Alpha-agonists
 62011-0090	Uncompetitive Nmda Receptor Antagonists
@@ -9285,18 +9285,18 @@ Key	Value
 62011-0157	Cytochrome P450 2c19 Inhibitors
 62011-0158	Opioid Agonists
 62011-0168	Proton Pump Inhibitors
-62011-0176	Sigma-1 Receptor Agonists
 62011-0176	Uncompetitive Nmda Receptor Antagonists
+62011-0176	Sigma-1 Receptor Agonists
 62011-0180	Histamine H1 Receptor Antagonists
 62011-0182	Phosphate Chelating Activity
 62011-0185	Cyclooxygenase Inhibitors
 62011-0186	Histamine H1 Receptor Antagonists
 62011-0193	Uncompetitive Nmda Receptor Antagonists
 62011-0193	Sigma-1 Receptor Agonists
-62011-0194	Uncompetitive Nmda Receptor Antagonists
 62011-0194	Sigma-1 Receptor Agonists
-62011-0195	Uncompetitive Nmda Receptor Antagonists
+62011-0194	Uncompetitive Nmda Receptor Antagonists
 62011-0195	Sigma-1 Receptor Agonists
+62011-0195	Uncompetitive Nmda Receptor Antagonists
 62011-0197	Histamine H1 Receptor Antagonists
 62011-0198	Sigma-1 Receptor Agonists
 62011-0198	Uncompetitive Nmda Receptor Antagonists
@@ -9304,8 +9304,8 @@ Key	Value
 62011-0204	Cyclooxygenase Inhibitors
 62011-0205	Histamine H1 Receptor Antagonists
 62011-0210	Histamine H1 Receptor Antagonists
-62011-0211	Uncompetitive Nmda Receptor Antagonists
 62011-0211	Sigma-1 Receptor Agonists
+62011-0211	Uncompetitive Nmda Receptor Antagonists
 62011-0212	Cyclooxygenase Inhibitors
 62011-0213	Cyclooxygenase Inhibitors
 62011-0214	Cyclooxygenase Inhibitors
@@ -9336,10 +9336,10 @@ Key	Value
 62037-0600	Calcium Channel Antagonists
 62037-0610	Proton Pump Inhibitors
 62037-0610	Cytochrome P450 2c19 Inhibitors
-62037-0620	Cytochrome P450 2c19 Inhibitors
 62037-0620	Proton Pump Inhibitors
-62037-0640	Proton Pump Inhibitors
+62037-0620	Cytochrome P450 2c19 Inhibitors
 62037-0640	Cytochrome P450 2c19 Inhibitors
+62037-0640	Proton Pump Inhibitors
 62037-0690	Calcium Channel Antagonists
 62037-0691	Calcium Channel Antagonists
 62037-0692	Calcium Channel Antagonists
@@ -9358,10 +9358,10 @@ Key	Value
 62037-0831	Adrenergic Beta-antagonists
 62037-0832	Adrenergic Beta-antagonists
 62037-0833	Adrenergic Beta-antagonists
-62175-0114	Proton Pump Inhibitors
 62175-0114	Cytochrome P450 2c19 Inhibitors
-62175-0118	Cytochrome P450 2c19 Inhibitors
+62175-0114	Proton Pump Inhibitors
 62175-0118	Proton Pump Inhibitors
+62175-0118	Cytochrome P450 2c19 Inhibitors
 62175-0136	Proton Pump Inhibitors
 62175-0136	Cytochrome P450 2c19 Inhibitors
 62175-0180	Proton Pump Inhibitors
@@ -9490,10 +9490,10 @@ Key	Value
 62756-0519	Dopa Decarboxylase Inhibitors
 62756-0520	Serotonin 1d Receptor Agonists
 62756-0520	Serotonin 1b Receptor Agonists
-62756-0521	Serotonin 1b Receptor Agonists
 62756-0521	Serotonin 1d Receptor Agonists
-62756-0522	Serotonin 1b Receptor Agonists
+62756-0521	Serotonin 1b Receptor Agonists
 62756-0522	Serotonin 1d Receptor Agonists
+62756-0522	Serotonin 1b Receptor Agonists
 62756-0523	Histamine H1 Receptor Antagonists
 62756-0542	Histamine H1 Receptor Antagonists
 62756-0543	Histamine H1 Receptor Antagonists
@@ -9513,16 +9513,16 @@ Key	Value
 62856-0278	Ampa Receptor Antagonists
 62856-0280	Ampa Receptor Antagonists
 62856-0282	Ampa Receptor Antagonists
-62856-0529	Cytochrome P450 2d6 Inhibitors
 62856-0529	Serotonin 2c Receptor Agonists
+62856-0529	Cytochrome P450 2d6 Inhibitors
 62856-0600	Nucleic Acid Synthesis Inhibitors
-62856-0705	Cholinergic Muscarinic Agonists
 62856-0705	Cholinergic Agonists
-62856-0775	Cholinergic Agonists
+62856-0705	Cholinergic Muscarinic Agonists
 62856-0775	Cholinergic Muscarinic Agonists
+62856-0775	Cholinergic Agonists
+62856-0796	P-glycoprotein Inhibitors
 62856-0796	Neurokinin 1 Antagonists
 62856-0796	Cytochrome P450 3a4 Inhibitors
-62856-0796	P-glycoprotein Inhibitors
 62856-0796	Breast Cancer Resistance Protein Inhibitors
 62856-0797	Serotonin 3 Receptor Antagonists
 62856-0798	Serotonin 3 Receptor Antagonists
@@ -9534,10 +9534,10 @@ Key	Value
 63020-0049	Proteasome Inhibitors
 63044-0153	Phosphate Chelating Activity
 63044-0154	Phosphate Chelating Activity
-63304-0097	Serotonin 1b Receptor Agonists
 63304-0097	Serotonin 1d Receptor Agonists
-63304-0098	Serotonin 1b Receptor Agonists
+63304-0097	Serotonin 1b Receptor Agonists
 63304-0098	Serotonin 1d Receptor Agonists
+63304-0098	Serotonin 1b Receptor Agonists
 63304-0099	Serotonin 1d Receptor Agonists
 63304-0099	Serotonin 1b Receptor Agonists
 63304-0128	Cholinesterase Inhibitors
@@ -9558,8 +9558,8 @@ Key	Value
 63304-0168	Serotonin Uptake Inhibitors
 63304-0191	Serotonin Uptake Inhibitors
 63304-0191	Norepinephrine Uptake Inhibitors
-63304-0192	Norepinephrine Uptake Inhibitors
 63304-0192	Serotonin Uptake Inhibitors
+63304-0192	Norepinephrine Uptake Inhibitors
 63304-0254	Peroxisome Proliferator-activated Receptor Activity
 63304-0255	Peroxisome Proliferator-activated Receptor Activity
 63304-0261	Peroxisome Proliferator-activated Receptor Activity
@@ -9615,10 +9615,10 @@ Key	Value
 63304-0637	Dna Polymerase Inhibitors
 63304-0652	Dna Polymerase Inhibitors
 63304-0725	Cytochrome P450 3a Inhibitors
-63304-0725	P-glycoprotein Inhibitors
 63304-0725	Cytochrome P450 3a4 Inhibitors
-63304-0726	Cytochrome P450 3a4 Inhibitors
+63304-0725	P-glycoprotein Inhibitors
 63304-0726	P-glycoprotein Inhibitors
+63304-0726	Cytochrome P450 3a4 Inhibitors
 63304-0726	Cytochrome P450 3a Inhibitors
 63304-0736	Angiotensin-converting Enzyme Inhibitors
 63304-0737	Angiotensin-converting Enzyme Inhibitors
@@ -9703,20 +9703,20 @@ Key	Value
 63323-0383	Cholinesterase Inhibitors
 63323-0405	Adrenergic Alpha2-agonists
 63323-0427	Adrenergic Alpha2-agonists
-63323-0460	Adrenergic Beta-agonists
 63323-0460	Adrenergic Alpha-agonists
-63323-0461	Adrenergic Alpha-agonists
+63323-0460	Adrenergic Beta-agonists
 63323-0461	Adrenergic Beta-agonists
-63323-0462	Adrenergic Beta-agonists
+63323-0461	Adrenergic Alpha-agonists
 63323-0462	Adrenergic Alpha-agonists
-63323-0463	Adrenergic Alpha-agonists
+63323-0462	Adrenergic Beta-agonists
 63323-0463	Adrenergic Beta-agonists
-63323-0464	Adrenergic Alpha-agonists
+63323-0463	Adrenergic Alpha-agonists
 63323-0464	Adrenergic Beta-agonists
+63323-0464	Adrenergic Alpha-agonists
 63323-0465	Adrenergic Alpha-agonists
 63323-0465	Adrenergic Beta-agonists
-63323-0466	Adrenergic Beta-agonists
 63323-0466	Adrenergic Alpha-agonists
+63323-0466	Adrenergic Beta-agonists
 63323-0467	Adrenergic Alpha-agonists
 63323-0467	Adrenergic Beta-agonists
 63323-0468	Adrenergic Alpha-agonists
@@ -9834,8 +9834,8 @@ Key	Value
 63739-0285	Calcium Channel Antagonists
 63739-0291	Phosphate Chelating Activity
 63739-0325	Histamine H2 Receptor Antagonists
-63739-0358	Proton Pump Inhibitors
 63739-0358	Cytochrome P450 2c19 Inhibitors
+63739-0358	Proton Pump Inhibitors
 63739-0366	Adrenergic Beta-antagonists
 63739-0388	Histamine H2 Receptor Antagonists
 63739-0416	Aldosterone Antagonists
@@ -9856,15 +9856,15 @@ Key	Value
 63739-0452	Calcium Channel Antagonists
 63739-0454	Adrenergic Beta-antagonists
 63739-0455	Opioid Agonists
-63739-0456	Adrenergic Beta-agonists
 63739-0456	Adrenergic Alpha-agonists
+63739-0456	Adrenergic Beta-agonists
 63739-0463	Opioid Antagonists
 63739-0466	Competitive Opioid Antagonists
 63739-0466	Partial Opioid Agonists
-63739-0467	Adrenergic Alpha-agonists
 63739-0467	Adrenergic Beta-agonists
-63739-0468	Adrenergic Beta-agonists
+63739-0467	Adrenergic Alpha-agonists
 63739-0468	Adrenergic Alpha-agonists
+63739-0468	Adrenergic Beta-agonists
 63739-0472	Cyclooxygenase Inhibitors
 63739-0475	Adrenergic Alpha-agonists
 63739-0475	Adrenergic Beta-agonists
@@ -9882,8 +9882,8 @@ Key	Value
 63739-0493	Serotonin Uptake Inhibitors
 63739-0494	Serotonin Uptake Inhibitors
 63739-0495	5-alpha Reductase Inhibitors
-63739-0512	Norepinephrine Uptake Inhibitors
 63739-0512	Serotonin Uptake Inhibitors
+63739-0512	Norepinephrine Uptake Inhibitors
 63739-0513	Angiotensin 2 Receptor Antagonists
 63739-0514	Angiotensin 2 Receptor Antagonists
 63739-0515	Angiotensin 2 Receptor Antagonists
@@ -9895,8 +9895,8 @@ Key	Value
 63739-0528	Angiotensin 2 Receptor Antagonists
 63739-0529	Angiotensin 2 Receptor Antagonists
 63739-0532	Opioid Agonists
-63739-0538	Acidifying Activity
 63739-0538	Osmotic Activity
+63739-0538	Acidifying Activity
 63739-0544	Aldosterone Antagonists
 63739-0545	Aldosterone Antagonists
 63739-0548	Cholinergic Muscarinic Antagonists
@@ -9935,13 +9935,13 @@ Key	Value
 63824-0010	Sigma-1 Receptor Agonists
 63824-0014	Sigma-1 Receptor Agonists
 63824-0014	Uncompetitive Nmda Receptor Antagonists
-63824-0015	Uncompetitive Nmda Receptor Antagonists
 63824-0015	Sigma-1 Receptor Agonists
+63824-0015	Uncompetitive Nmda Receptor Antagonists
 63824-0016	Adrenergic Alpha1-agonists
 63824-0017	Uncompetitive Nmda Receptor Antagonists
 63824-0017	Sigma-1 Receptor Agonists
-63824-0018	Sigma-1 Receptor Agonists
 63824-0018	Uncompetitive Nmda Receptor Antagonists
+63824-0018	Sigma-1 Receptor Agonists
 63824-0019	Sigma-1 Receptor Agonists
 63824-0019	Uncompetitive Nmda Receptor Antagonists
 63824-0020	Uncompetitive Nmda Receptor Antagonists
@@ -9950,25 +9950,25 @@ Key	Value
 63824-0056	Uncompetitive Nmda Receptor Antagonists
 63824-0056	Sigma-1 Receptor Agonists
 63824-0057	Adrenergic Alpha-agonists
-63824-0072	Sigma-1 Receptor Agonists
 63824-0072	Uncompetitive Nmda Receptor Antagonists
+63824-0072	Sigma-1 Receptor Agonists
 63824-0110	Histamine H1 Receptor Antagonists
-63824-0112	Sigma-1 Receptor Agonists
 63824-0112	Uncompetitive Nmda Receptor Antagonists
-63824-0160	Sigma-1 Receptor Agonists
+63824-0112	Sigma-1 Receptor Agonists
 63824-0160	Uncompetitive Nmda Receptor Antagonists
-63824-0161	Uncompetitive Nmda Receptor Antagonists
+63824-0160	Sigma-1 Receptor Agonists
 63824-0161	Sigma-1 Receptor Agonists
-63824-0163	Uncompetitive Nmda Receptor Antagonists
+63824-0161	Uncompetitive Nmda Receptor Antagonists
 63824-0163	Sigma-1 Receptor Agonists
+63824-0163	Uncompetitive Nmda Receptor Antagonists
 63824-0164	Uncompetitive Nmda Receptor Antagonists
 63824-0164	Sigma-1 Receptor Agonists
-63824-0172	Uncompetitive Nmda Receptor Antagonists
 63824-0172	Sigma-1 Receptor Agonists
+63824-0172	Uncompetitive Nmda Receptor Antagonists
 63824-0176	Sigma-1 Receptor Agonists
 63824-0176	Uncompetitive Nmda Receptor Antagonists
-63824-0182	Sigma-1 Receptor Agonists
 63824-0182	Uncompetitive Nmda Receptor Antagonists
+63824-0182	Sigma-1 Receptor Agonists
 63824-0183	Sigma-1 Receptor Agonists
 63824-0183	Uncompetitive Nmda Receptor Antagonists
 63824-0184	Histamine H1 Receptor Antagonists
@@ -9977,10 +9977,10 @@ Key	Value
 63824-0186	Uncompetitive Nmda Receptor Antagonists
 63824-0187	Histamine H1 Receptor Antagonists
 63824-0190	Adrenergic Alpha1-agonists
-63824-0191	Sigma-1 Receptor Agonists
 63824-0191	Uncompetitive Nmda Receptor Antagonists
-63824-0192	Uncompetitive Nmda Receptor Antagonists
+63824-0191	Sigma-1 Receptor Agonists
 63824-0192	Sigma-1 Receptor Agonists
+63824-0192	Uncompetitive Nmda Receptor Antagonists
 63824-0193	Uncompetitive Nmda Receptor Antagonists
 63824-0193	Sigma-1 Receptor Agonists
 63824-0196	Uncompetitive Nmda Receptor Antagonists
@@ -9991,16 +9991,16 @@ Key	Value
 63824-0212	Histamine H1 Receptor Antagonists
 63824-0213	Sigma-1 Receptor Agonists
 63824-0213	Uncompetitive Nmda Receptor Antagonists
-63824-0214	Uncompetitive Nmda Receptor Antagonists
 63824-0214	Sigma-1 Receptor Agonists
-63824-0215	Uncompetitive Nmda Receptor Antagonists
+63824-0214	Uncompetitive Nmda Receptor Antagonists
 63824-0215	Sigma-1 Receptor Agonists
+63824-0215	Uncompetitive Nmda Receptor Antagonists
 63824-0216	Uncompetitive Nmda Receptor Antagonists
 63824-0216	Sigma-1 Receptor Agonists
 63824-0231	Sigma-1 Receptor Agonists
 63824-0231	Uncompetitive Nmda Receptor Antagonists
-63824-0232	Sigma-1 Receptor Agonists
 63824-0232	Uncompetitive Nmda Receptor Antagonists
+63824-0232	Sigma-1 Receptor Agonists
 63824-0233	Histamine H1 Receptor Antagonists
 63824-0256	Sigma-1 Receptor Agonists
 63824-0256	Uncompetitive Nmda Receptor Antagonists
@@ -10009,19 +10009,19 @@ Key	Value
 63824-0262	Histamine H1 Receptor Antagonists
 63824-0271	Sigma-1 Receptor Agonists
 63824-0271	Uncompetitive Nmda Receptor Antagonists
-63824-0274	Uncompetitive Nmda Receptor Antagonists
 63824-0274	Sigma-1 Receptor Agonists
+63824-0274	Uncompetitive Nmda Receptor Antagonists
 63824-0277	Adrenergic Alpha1-agonists
-63824-0278	Sigma-1 Receptor Agonists
 63824-0278	Uncompetitive Nmda Receptor Antagonists
+63824-0278	Sigma-1 Receptor Agonists
 63824-0279	Uncompetitive Nmda Receptor Antagonists
 63824-0279	Sigma-1 Receptor Agonists
 63824-0281	Uncompetitive Nmda Receptor Antagonists
 63824-0281	Sigma-1 Receptor Agonists
-63824-0282	Sigma-1 Receptor Agonists
 63824-0282	Uncompetitive Nmda Receptor Antagonists
-63824-0283	Sigma-1 Receptor Agonists
+63824-0282	Sigma-1 Receptor Agonists
 63824-0283	Uncompetitive Nmda Receptor Antagonists
+63824-0283	Sigma-1 Receptor Agonists
 63824-0284	Adrenergic Alpha1-agonists
 63824-0286	Sigma-1 Receptor Agonists
 63824-0286	Uncompetitive Nmda Receptor Antagonists
@@ -10042,10 +10042,10 @@ Key	Value
 63868-0067	Uncompetitive Nmda Receptor Antagonists
 63868-0067	Sigma-1 Receptor Agonists
 63868-0068	Histamine H1 Receptor Antagonists
-63868-0069	Uncompetitive Nmda Receptor Antagonists
 63868-0069	Sigma-1 Receptor Agonists
-63868-0070	Uncompetitive Nmda Receptor Antagonists
+63868-0069	Uncompetitive Nmda Receptor Antagonists
 63868-0070	Sigma-1 Receptor Agonists
+63868-0070	Uncompetitive Nmda Receptor Antagonists
 63868-0076	Cyclooxygenase Inhibitors
 63868-0090	Histamine H1 Receptor Antagonists
 63868-0093	Histamine H1 Receptor Antagonists
@@ -10063,15 +10063,15 @@ Key	Value
 63868-0159	Histamine H1 Receptor Antagonists
 63868-0170	Cytochrome P450 2c19 Inhibitors
 63868-0170	Proton Pump Inhibitors
-63868-0177	Cytochrome P450 2c19 Inhibitors
 63868-0177	Proton Pump Inhibitors
+63868-0177	Cytochrome P450 2c19 Inhibitors
 63868-0200	Corticosteroid Hormone Receptor Agonists
 63868-0201	Adrenergic Alpha1-agonists
 63868-0202	Corticosteroid Hormone Receptor Agonists
 63868-0218	Histamine H1 Receptor Antagonists
 63868-0228	Cyclooxygenase Inhibitors
-63868-0244	Uncompetitive Nmda Receptor Antagonists
 63868-0244	Sigma-1 Receptor Agonists
+63868-0244	Uncompetitive Nmda Receptor Antagonists
 63868-0246	Adrenergic Alpha1-agonists
 63868-0247	Sigma-1 Receptor Agonists
 63868-0247	Uncompetitive Nmda Receptor Antagonists
@@ -10080,13 +10080,13 @@ Key	Value
 63868-0354	Cyclooxygenase Inhibitors
 63868-0363	Cyclooxygenase Inhibitors
 63868-0368	Histamine H1 Receptor Antagonists
-63868-0369	Uncompetitive Nmda Receptor Antagonists
 63868-0369	Sigma-1 Receptor Agonists
+63868-0369	Uncompetitive Nmda Receptor Antagonists
 63868-0370	Histamine H1 Receptor Antagonists
 63868-0384	Sigma-1 Receptor Agonists
 63868-0384	Uncompetitive Nmda Receptor Antagonists
-63868-0386	Uncompetitive Nmda Receptor Antagonists
 63868-0386	Sigma-1 Receptor Agonists
+63868-0386	Uncompetitive Nmda Receptor Antagonists
 63868-0453	Cyclooxygenase Inhibitors
 63868-0485	Cyclooxygenase Inhibitors
 63868-0486	Histamine H2 Receptor Antagonists
@@ -10107,15 +10107,15 @@ Key	Value
 63868-0764	Histamine H1 Receptor Antagonists
 63868-0765	Adrenergic Alpha1-agonists
 63868-0773	Cyclooxygenase Inhibitors
-63868-0803	Sigma-1 Receptor Agonists
 63868-0803	Uncompetitive Nmda Receptor Antagonists
-63868-0807	Uncompetitive Nmda Receptor Antagonists
+63868-0803	Sigma-1 Receptor Agonists
 63868-0807	Sigma-1 Receptor Agonists
+63868-0807	Uncompetitive Nmda Receptor Antagonists
 63868-0823	Histamine H1 Receptor Antagonists
-63868-0855	Uncompetitive Nmda Receptor Antagonists
 63868-0855	Sigma-1 Receptor Agonists
-63868-0868	Sigma-1 Receptor Agonists
+63868-0855	Uncompetitive Nmda Receptor Antagonists
 63868-0868	Uncompetitive Nmda Receptor Antagonists
+63868-0868	Sigma-1 Receptor Agonists
 63868-0898	Cyclooxygenase Inhibitors
 63868-0947	Histamine H1 Receptor Antagonists
 63868-0951	Adrenergic Alpha1-agonists
@@ -10128,8 +10128,8 @@ Key	Value
 64125-0136	Cholinergic Antagonists
 64125-0137	Histamine Receptor Antagonists
 64125-0137	Cholinergic Antagonists
-64125-0138	Histamine Receptor Antagonists
 64125-0138	Cholinergic Antagonists
+64125-0138	Histamine Receptor Antagonists
 64249-0002	Phosphate Chelating Activity
 64376-0128	Nucleoside Reverse Transcriptase Inhibitors
 64376-0129	Nucleoside Reverse Transcriptase Inhibitors
@@ -10140,8 +10140,8 @@ Key	Value
 64376-0612	Histamine H1 Receptor Antagonists
 64376-0655	Thyroid Hormone Synthesis Inhibitors
 64376-0656	Thyroid Hormone Synthesis Inhibitors
-64376-0657	Uncompetitive Nmda Receptor Antagonists
 64376-0657	Sigma-1 Receptor Agonists
+64376-0657	Uncompetitive Nmda Receptor Antagonists
 64376-0816	Phosphate Chelating Activity
 64380-0715	Cyclooxygenase Inhibitors
 64380-0716	Cyclooxygenase Inhibitors
@@ -10169,17 +10169,17 @@ Key	Value
 64455-0993	Dna Polymerase Inhibitors
 64455-0994	Dna Polymerase Inhibitors
 64525-0548	Histamine H1 Receptor Antagonists
-64525-0555	Sigma-1 Receptor Agonists
 64525-0555	Uncompetitive Nmda Receptor Antagonists
+64525-0555	Sigma-1 Receptor Agonists
 64543-0044	Adrenergic Alpha1-agonists
 64543-0097	Histamine H1 Receptor Antagonists
 64543-0105	Histamine H1 Receptor Antagonists
 64578-0062	Phosphate Chelating Activity
-64578-0065	Calcium Chelating Activity
 64578-0065	Acidifying Activity
+64578-0065	Calcium Chelating Activity
 64578-0067	Cyclooxygenase Inhibitors
-64578-0085	Acidifying Activity
 64578-0085	Calcium Chelating Activity
+64578-0085	Acidifying Activity
 64578-0087	Phosphate Chelating Activity
 64578-0088	Adenosine Receptor Agonists
 64597-0301	Sigma-1 Receptor Agonists
@@ -10192,14 +10192,14 @@ Key	Value
 64661-0091	Histamine H1 Receptor Antagonists
 64661-0092	Histamine H1 Receptor Antagonists
 64661-0711	Phosphate Chelating Activity
-64679-0101	Norepinephrine Uptake Inhibitors
 64679-0101	Dopamine Uptake Inhibitors
+64679-0101	Norepinephrine Uptake Inhibitors
 64679-0102	Dopamine Uptake Inhibitors
 64679-0102	Norepinephrine Uptake Inhibitors
 64679-0105	Norepinephrine Uptake Inhibitors
 64679-0105	Dopamine Uptake Inhibitors
-64679-0107	Norepinephrine Uptake Inhibitors
 64679-0107	Dopamine Uptake Inhibitors
+64679-0107	Norepinephrine Uptake Inhibitors
 64679-0140	Proton Pump Inhibitors
 64679-0152	Dna Polymerase Inhibitors
 64679-0153	Dna Polymerase Inhibitors
@@ -10242,16 +10242,16 @@ Key	Value
 64679-0711	Catechol O-methyltransferase Inhibitors
 64679-0714	Gaba A Agonists
 64679-0715	Gaba A Agonists
-64679-0716	Norepinephrine Uptake Inhibitors
 64679-0716	Serotonin Uptake Inhibitors
-64679-0717	Norepinephrine Uptake Inhibitors
+64679-0716	Norepinephrine Uptake Inhibitors
 64679-0717	Serotonin Uptake Inhibitors
-64679-0718	Serotonin Uptake Inhibitors
+64679-0717	Norepinephrine Uptake Inhibitors
 64679-0718	Norepinephrine Uptake Inhibitors
+64679-0718	Serotonin Uptake Inhibitors
 64679-0726	Serotonin 3 Receptor Antagonists
 64679-0727	Serotonin 3 Receptor Antagonists
-64679-0728	Serotonin 1b Receptor Agonists
 64679-0728	Serotonin 1d Receptor Agonists
+64679-0728	Serotonin 1b Receptor Agonists
 64679-0734	Adrenergic Beta-antagonists
 64679-0735	Adrenergic Beta-antagonists
 64679-0736	Adrenergic Beta-antagonists
@@ -10288,9 +10288,9 @@ Key	Value
 64679-0926	Angiotensin-converting Enzyme Inhibitors
 64679-0936	Histamine H2 Receptor Antagonists
 64679-0937	Histamine H2 Receptor Antagonists
-64679-0949	Cytochrome P450 3a Inhibitors
 64679-0949	P-glycoprotein Inhibitors
 64679-0949	Cytochrome P450 3a4 Inhibitors
+64679-0949	Cytochrome P450 3a Inhibitors
 64679-0954	P-glycoprotein Inhibitors
 64679-0954	Cytochrome P450 3a4 Inhibitors
 64679-0954	Cytochrome P450 3a Inhibitors
@@ -10310,8 +10310,8 @@ Key	Value
 64720-0143	Histamine Receptor Antagonists
 64720-0144	Cholinergic Antagonists
 64720-0144	Histamine Receptor Antagonists
-64720-0145	Cholinergic Antagonists
 64720-0145	Histamine Receptor Antagonists
+64720-0145	Cholinergic Antagonists
 64720-0158	Phosphodiesterase 3 Inhibitors
 64720-0159	Phosphodiesterase 3 Inhibitors
 64720-0198	Serotonin 3 Receptor Antagonists
@@ -10350,16 +10350,16 @@ Key	Value
 64764-0890	Dopamine Uptake Inhibitors
 64764-0890	Norepinephrine Uptake Inhibitors
 64764-0918	Xanthine Oxidase Inhibitors
-64896-0671	Serotonin 1b Receptor Agonists
 64896-0671	Serotonin 1d Receptor Agonists
+64896-0671	Serotonin 1b Receptor Agonists
 64896-0672	Serotonin 1b Receptor Agonists
 64896-0672	Serotonin 1d Receptor Agonists
 64896-0681	Serotonin 1b Receptor Agonists
 64896-0681	Serotonin 1d Receptor Agonists
-64896-0682	Serotonin 1b Receptor Agonists
 64896-0682	Serotonin 1d Receptor Agonists
-64896-0691	Serotonin 1b Receptor Agonists
+64896-0682	Serotonin 1b Receptor Agonists
 64896-0691	Serotonin 1d Receptor Agonists
+64896-0691	Serotonin 1b Receptor Agonists
 64896-0692	Serotonin 1d Receptor Agonists
 64896-0692	Serotonin 1b Receptor Agonists
 64950-0340	Opioid Agonists
@@ -10410,14 +10410,14 @@ Key	Value
 65162-0194	Cyclooxygenase Inhibitors
 65162-0207	Full Opioid Agonists
 65162-0209	Non-nucleoside Reverse Transcriptase Inhibitors
-65162-0300	Norepinephrine Uptake Inhibitors
 65162-0300	Serotonin Uptake Inhibitors
+65162-0300	Norepinephrine Uptake Inhibitors
 65162-0302	Norepinephrine Uptake Inhibitors
 65162-0302	Serotonin Uptake Inhibitors
-65162-0305	Norepinephrine Uptake Inhibitors
 65162-0305	Serotonin Uptake Inhibitors
-65162-0306	Serotonin Uptake Inhibitors
+65162-0305	Norepinephrine Uptake Inhibitors
 65162-0306	Norepinephrine Uptake Inhibitors
+65162-0306	Serotonin Uptake Inhibitors
 65162-0307	Serotonin Uptake Inhibitors
 65162-0307	Norepinephrine Uptake Inhibitors
 65162-0351	Phosphodiesterase 5 Inhibitors
@@ -10464,22 +10464,22 @@ Key	Value
 65162-0835	Dna Polymerase Inhibitors
 65162-0955	Proton Pump Inhibitors
 65162-0957	Proton Pump Inhibitors
-65224-0537	Sigma-1 Receptor Agonists
 65224-0537	Uncompetitive Nmda Receptor Antagonists
+65224-0537	Sigma-1 Receptor Agonists
 65224-0539	Adrenergic Alpha-agonists
 65224-0545	Histamine H1 Receptor Antagonists
 65224-0550	Adrenergic Alpha1-agonists
 65224-0557	Adrenergic Alpha-agonists
 65224-0560	Sigma-1 Receptor Agonists
 65224-0560	Uncompetitive Nmda Receptor Antagonists
-65224-0615	Sigma-1 Receptor Agonists
 65224-0615	Uncompetitive Nmda Receptor Antagonists
+65224-0615	Sigma-1 Receptor Agonists
 65224-0618	Sigma-1 Receptor Agonists
 65224-0618	Uncompetitive Nmda Receptor Antagonists
 65224-0880	Norepinephrine Uptake Inhibitors
 65224-0880	Serotonin Uptake Inhibitors
-65224-0890	Norepinephrine Uptake Inhibitors
 65224-0890	Serotonin Uptake Inhibitors
+65224-0890	Norepinephrine Uptake Inhibitors
 65293-0001	Thrombin Inhibitors
 65293-0005	Calcium Channel Antagonists
 65293-0373	Serotonin 3 Receptor Antagonists
@@ -10496,10 +10496,10 @@ Key	Value
 65580-0251	Corticosteroid Hormone Receptor Agonists
 65580-0301	Norepinephrine Uptake Inhibitors
 65580-0301	Serotonin Uptake Inhibitors
-65580-0302	Serotonin Uptake Inhibitors
 65580-0302	Norepinephrine Uptake Inhibitors
-65580-0303	Serotonin Uptake Inhibitors
+65580-0302	Serotonin Uptake Inhibitors
 65580-0303	Norepinephrine Uptake Inhibitors
+65580-0303	Serotonin Uptake Inhibitors
 65580-0304	Norepinephrine Uptake Inhibitors
 65580-0304	Serotonin Uptake Inhibitors
 65597-0101	Angiotensin 2 Receptor Antagonists
@@ -10570,19 +10570,19 @@ Key	Value
 65862-0142	Adrenergic Beta2-antagonists
 65862-0142	Adrenergic Alpha-antagonists
 65862-0142	Adrenergic Beta1-antagonists
-65862-0143	Adrenergic Beta1-antagonists
 65862-0143	Adrenergic Alpha-antagonists
 65862-0143	Adrenergic Beta2-antagonists
-65862-0144	Adrenergic Beta2-antagonists
+65862-0143	Adrenergic Beta1-antagonists
 65862-0144	Adrenergic Alpha-antagonists
 65862-0144	Adrenergic Beta1-antagonists
-65862-0145	Adrenergic Alpha-antagonists
-65862-0145	Adrenergic Beta2-antagonists
+65862-0144	Adrenergic Beta2-antagonists
 65862-0145	Adrenergic Beta1-antagonists
-65862-0146	Serotonin 1d Receptor Agonists
+65862-0145	Adrenergic Beta2-antagonists
+65862-0145	Adrenergic Alpha-antagonists
 65862-0146	Serotonin 1b Receptor Agonists
-65862-0147	Serotonin 1b Receptor Agonists
+65862-0146	Serotonin 1d Receptor Agonists
 65862-0147	Serotonin 1d Receptor Agonists
+65862-0147	Serotonin 1b Receptor Agonists
 65862-0148	Serotonin 1d Receptor Agonists
 65862-0148	Serotonin 1b Receptor Agonists
 65862-0149	5-alpha Reductase Inhibitors
@@ -10629,10 +10629,10 @@ Key	Value
 65862-0404	Norepinephrine Uptake Inhibitors
 65862-0405	Norepinephrine Uptake Inhibitors
 65862-0405	Serotonin Uptake Inhibitors
-65862-0406	Serotonin Uptake Inhibitors
 65862-0406	Norepinephrine Uptake Inhibitors
-65862-0407	Norepinephrine Uptake Inhibitors
+65862-0406	Serotonin Uptake Inhibitors
 65862-0407	Serotonin Uptake Inhibitors
+65862-0407	Norepinephrine Uptake Inhibitors
 65862-0408	Serotonin Uptake Inhibitors
 65862-0408	Norepinephrine Uptake Inhibitors
 65862-0419	Dihydrofolate Reductase Inhibitors
@@ -10646,8 +10646,8 @@ Key	Value
 65862-0451	Serotonin Uptake Inhibitors
 65862-0452	Norepinephrine Uptake Inhibitors
 65862-0452	Serotonin Uptake Inhibitors
-65862-0453	Serotonin Uptake Inhibitors
 65862-0453	Norepinephrine Uptake Inhibitors
+65862-0453	Serotonin Uptake Inhibitors
 65862-0458	Cholinesterase Inhibitors
 65862-0459	Cholinesterase Inhibitors
 65862-0460	Cholinesterase Inhibitors
@@ -10706,8 +10706,8 @@ Key	Value
 65862-0674	Calcium Channel Antagonists
 65862-0675	Calcium Channel Antagonists
 65862-0686	5-alpha Reductase Inhibitors
-65862-0697	Serotonin Uptake Inhibitors
 65862-0697	Norepinephrine Uptake Inhibitors
+65862-0697	Serotonin Uptake Inhibitors
 65862-0927	5-alpha Reductase Inhibitors
 66220-0160	Antidiuretic Hormone Antagonists
 66220-0207	Reduction Activity
@@ -10715,8 +10715,8 @@ Key	Value
 66220-0287	Cyclooxygenase Inhibitors
 66220-0719	Acidifying Activity
 66220-0719	Osmotic Activity
-66220-0729	Acidifying Activity
 66220-0729	Osmotic Activity
+66220-0729	Acidifying Activity
 66273-0002	Melanin Synthesis Inhibitors
 66273-0003	Melanin Synthesis Inhibitors
 66273-0004	Melanin Synthesis Inhibitors
@@ -10747,8 +10747,8 @@ Key	Value
 66689-0033	Full Opioid Agonists
 66689-0038	Osmotic Activity
 66689-0038	Acidifying Activity
-66689-0039	Acidifying Activity
 66689-0039	Osmotic Activity
+66689-0039	Acidifying Activity
 66689-0401	Full Opioid Agonists
 66689-0403	Full Opioid Agonists
 66689-0694	Full Opioid Agonists
@@ -10785,14 +10785,14 @@ Key	Value
 66993-0022	Adrenergic Beta2-agonists
 66993-0023	Adrenergic Beta2-agonists
 66993-0024	Corticosteroid Hormone Receptor Agonists
-66993-0075	Norepinephrine Uptake Inhibitors
 66993-0075	Serotonin Uptake Inhibitors
+66993-0075	Norepinephrine Uptake Inhibitors
 66993-0076	Serotonin Uptake Inhibitors
 66993-0076	Norepinephrine Uptake Inhibitors
-66993-0077	Norepinephrine Uptake Inhibitors
 66993-0077	Serotonin Uptake Inhibitors
-66993-0165	Cytochrome P450 3a4 Inhibitors
+66993-0077	Norepinephrine Uptake Inhibitors
 66993-0165	P-glycoprotein Interactions
+66993-0165	Cytochrome P450 3a4 Inhibitors
 66993-0175	Carbonic Anhydrase Inhibitors
 66993-0190	Carbonic Anhydrase Inhibitors
 66993-0412	Cytochrome P450 2c19 Inhibitors
@@ -10809,8 +10809,8 @@ Key	Value
 66993-0537	Histamine H1 Receptor Antagonists
 66993-0662	Serotonin Uptake Inhibitors
 66993-0662	Norepinephrine Uptake Inhibitors
-66993-0663	Norepinephrine Uptake Inhibitors
 66993-0663	Serotonin Uptake Inhibitors
+66993-0663	Norepinephrine Uptake Inhibitors
 66993-0664	Norepinephrine Uptake Inhibitors
 66993-0664	Serotonin Uptake Inhibitors
 66993-0880	Corticosteroid Hormone Receptor Agonists
@@ -10834,8 +10834,8 @@ Key	Value
 67253-0382	Adrenergic Alpha-antagonists
 67253-0383	Adrenergic Alpha-antagonists
 67253-0580	Folic Acid Metabolism Inhibitors
-67253-0700	Monoamine Oxidase Inhibitors
 67253-0700	Monoamine Oxidase-b Inhibitors
+67253-0700	Monoamine Oxidase Inhibitors
 67253-0940	Full Opioid Agonists
 67253-0941	Full Opioid Agonists
 67253-0942	Full Opioid Agonists
@@ -10922,8 +10922,8 @@ Key	Value
 67510-0056	Adrenergic Alpha1-agonists
 67510-0064	Osmotic Activity
 67510-0065	Corticosteroid Hormone Receptor Agonists
-67510-0527	Sigma-1 Receptor Agonists
 67510-0527	Uncompetitive Nmda Receptor Antagonists
+67510-0527	Sigma-1 Receptor Agonists
 67767-0117	Norepinephrine Uptake Inhibitors
 67767-0117	Dopamine Uptake Inhibitors
 67767-0133	Dopamine Uptake Inhibitors
@@ -10934,8 +10934,8 @@ Key	Value
 67767-0141	Norepinephrine Uptake Inhibitors
 67767-0142	Norepinephrine Uptake Inhibitors
 67767-0142	Dopamine Uptake Inhibitors
-67767-0171	Norepinephrine Uptake Inhibitors
 67767-0171	Dopamine Uptake Inhibitors
+67767-0171	Norepinephrine Uptake Inhibitors
 67857-0700	Adrenergic Beta-antagonists
 67857-0701	Adrenergic Beta-antagonists
 67857-0705	Adrenergic Alpha2-agonists
@@ -10974,29 +10974,29 @@ Key	Value
 68001-0133	Calcium Channel Antagonists
 68001-0134	Calcium Channel Antagonists
 68001-0135	Calcium Channel Antagonists
-68001-0151	Adrenergic Beta2-antagonists
 68001-0151	Adrenergic Beta1-antagonists
 68001-0151	Adrenergic Alpha-antagonists
-68001-0152	Adrenergic Alpha-antagonists
+68001-0151	Adrenergic Beta2-antagonists
 68001-0152	Adrenergic Beta2-antagonists
+68001-0152	Adrenergic Alpha-antagonists
 68001-0152	Adrenergic Beta1-antagonists
-68001-0153	Adrenergic Beta2-antagonists
 68001-0153	Adrenergic Alpha-antagonists
 68001-0153	Adrenergic Beta1-antagonists
-68001-0154	Adrenergic Alpha-antagonists
+68001-0153	Adrenergic Beta2-antagonists
 68001-0154	Adrenergic Beta1-antagonists
 68001-0154	Adrenergic Beta2-antagonists
+68001-0154	Adrenergic Alpha-antagonists
 68001-0155	Aromatase Inhibitors
 68001-0156	Serotonin Uptake Inhibitors
 68001-0156	Norepinephrine Uptake Inhibitors
 68001-0157	Serotonin Uptake Inhibitors
 68001-0157	Norepinephrine Uptake Inhibitors
-68001-0158	Serotonin Uptake Inhibitors
 68001-0158	Norepinephrine Uptake Inhibitors
+68001-0158	Serotonin Uptake Inhibitors
 68001-0159	Norepinephrine Uptake Inhibitors
 68001-0159	Serotonin Uptake Inhibitors
-68001-0160	Norepinephrine Uptake Inhibitors
 68001-0160	Serotonin Uptake Inhibitors
+68001-0160	Norepinephrine Uptake Inhibitors
 68001-0171	Dopa Decarboxylase Inhibitors
 68001-0172	Dopa Decarboxylase Inhibitors
 68001-0176	Phosphodiesterase 5 Inhibitors
@@ -11007,8 +11007,8 @@ Key	Value
 68001-0195	Serotonin Uptake Inhibitors
 68001-0196	Serotonin Uptake Inhibitors
 68001-0197	Serotonin Uptake Inhibitors
-68001-0198	Dopamine Uptake Inhibitors
 68001-0198	Norepinephrine Uptake Inhibitors
+68001-0198	Dopamine Uptake Inhibitors
 68001-0199	Norepinephrine Uptake Inhibitors
 68001-0199	Dopamine Uptake Inhibitors
 68001-0200	Cyclooxygenase Inhibitors
@@ -11026,8 +11026,8 @@ Key	Value
 68001-0228	Cholinergic Muscarinic Antagonists
 68001-0231	Cyclooxygenase Inhibitors
 68001-0232	Cyclooxygenase Inhibitors
-68001-0236	Norepinephrine Uptake Inhibitors
 68001-0236	Dopamine Uptake Inhibitors
+68001-0236	Norepinephrine Uptake Inhibitors
 68001-0237	Adrenergic Alpha2-agonists
 68001-0238	Adrenergic Alpha2-agonists
 68001-0239	Adrenergic Alpha2-agonists
@@ -11036,24 +11036,24 @@ Key	Value
 68001-0248	Leukotriene Receptor Antagonists
 68001-0249	Serotonin 1b Receptor Agonists
 68001-0249	Serotonin 1d Receptor Agonists
-68001-0250	Serotonin 1b Receptor Agonists
 68001-0250	Serotonin 1d Receptor Agonists
-68001-0255	Serotonin Uptake Inhibitors
+68001-0250	Serotonin 1b Receptor Agonists
 68001-0255	Norepinephrine Uptake Inhibitors
+68001-0255	Serotonin Uptake Inhibitors
 68001-0256	Norepinephrine Uptake Inhibitors
 68001-0256	Serotonin Uptake Inhibitors
 68001-0257	Serotonin Uptake Inhibitors
 68001-0257	Norepinephrine Uptake Inhibitors
 68001-0260	Angiotensin-converting Enzyme Inhibitors
 68001-0265	Topoisomerase Inhibitors
-68012-0052	Cytochrome P450 2c19 Inhibitors
 68012-0052	Proton Pump Inhibitors
+68012-0052	Cytochrome P450 2c19 Inhibitors
 68012-0054	Cytochrome P450 2c19 Inhibitors
 68012-0054	Proton Pump Inhibitors
 68012-0102	Cytochrome P450 2c19 Inhibitors
 68012-0102	Proton Pump Inhibitors
-68012-0104	Cytochrome P450 2c19 Inhibitors
 68012-0104	Proton Pump Inhibitors
+68012-0104	Cytochrome P450 2c19 Inhibitors
 68012-0309	Corticosteroid Hormone Receptor Agonists
 68012-0490	Peroxisome Proliferator-activated Receptor Alpha Agonists
 68012-0495	Peroxisome Proliferator-activated Receptor Alpha Agonists
@@ -11069,8 +11069,8 @@ Key	Value
 68047-0120	Histamine H1 Receptor Antagonists
 68047-0129	Uncompetitive Nmda Receptor Antagonists
 68047-0129	Sigma-1 Receptor Agonists
-68047-0143	Uncompetitive Nmda Receptor Antagonists
 68047-0143	Sigma-1 Receptor Agonists
+68047-0143	Uncompetitive Nmda Receptor Antagonists
 68047-0149	Histamine H1 Receptor Antagonists
 68047-0155	Sigma-1 Receptor Agonists
 68047-0155	Uncompetitive Nmda Receptor Antagonists
@@ -11143,28 +11143,28 @@ Key	Value
 68084-0236	Beta Lactamase Inhibitors
 68084-0240	Adrenergic Alpha-agonists
 68084-0241	Adrenergic Alpha-agonists
-68084-0251	Norepinephrine Uptake Inhibitors
 68084-0251	Dopamine Uptake Inhibitors
-68084-0252	Norepinephrine Uptake Inhibitors
+68084-0251	Norepinephrine Uptake Inhibitors
 68084-0252	Dopamine Uptake Inhibitors
+68084-0252	Norepinephrine Uptake Inhibitors
 68084-0253	Histamine Receptor Antagonists
 68084-0254	Histamine Receptor Antagonists
 68084-0255	Histamine Receptor Antagonists
 68084-0258	Calcium Channel Antagonists
 68084-0259	Calcium Channel Antagonists
 68084-0260	Calcium Channel Antagonists
-68084-0261	Adrenergic Alpha-antagonists
 68084-0261	Adrenergic Beta1-antagonists
+68084-0261	Adrenergic Alpha-antagonists
 68084-0261	Adrenergic Beta2-antagonists
 68084-0262	Adrenergic Beta1-antagonists
 68084-0262	Adrenergic Beta2-antagonists
 68084-0262	Adrenergic Alpha-antagonists
 68084-0263	Adrenergic Beta1-antagonists
-68084-0263	Adrenergic Alpha-antagonists
 68084-0263	Adrenergic Beta2-antagonists
-68084-0264	Adrenergic Beta2-antagonists
-68084-0264	Adrenergic Beta1-antagonists
+68084-0263	Adrenergic Alpha-antagonists
 68084-0264	Adrenergic Alpha-antagonists
+68084-0264	Adrenergic Beta1-antagonists
+68084-0264	Adrenergic Beta2-antagonists
 68084-0266	Angiotensin-converting Enzyme Inhibitors
 68084-0267	Angiotensin-converting Enzyme Inhibitors
 68084-0268	Angiotensin-converting Enzyme Inhibitors
@@ -11196,12 +11196,12 @@ Key	Value
 68084-0331	Norepinephrine Uptake Inhibitors
 68084-0332	Dopamine Agonists
 68084-0333	Cyclooxygenase Inhibitors
-68084-0339	Serotonin 1b Receptor Agonists
 68084-0339	Serotonin 1d Receptor Agonists
-68084-0340	Serotonin 1d Receptor Agonists
+68084-0339	Serotonin 1b Receptor Agonists
 68084-0340	Serotonin 1b Receptor Agonists
-68084-0341	Serotonin 1b Receptor Agonists
+68084-0340	Serotonin 1d Receptor Agonists
 68084-0341	Serotonin 1d Receptor Agonists
+68084-0341	Serotonin 1b Receptor Agonists
 68084-0346	Angiotensin 2 Receptor Antagonists
 68084-0347	Angiotensin 2 Receptor Antagonists
 68084-0348	Angiotensin 2 Receptor Antagonists
@@ -11218,8 +11218,8 @@ Key	Value
 68084-0381	Cholinergic Antagonists
 68084-0388	Cholinergic Antagonists
 68084-0388	Histamine Receptor Antagonists
-68084-0389	Cholinergic Antagonists
 68084-0389	Histamine Receptor Antagonists
+68084-0389	Cholinergic Antagonists
 68084-0390	Angiotensin-converting Enzyme Inhibitors
 68084-0391	Angiotensin-converting Enzyme Inhibitors
 68084-0392	Angiotensin-converting Enzyme Inhibitors
@@ -11236,8 +11236,8 @@ Key	Value
 68084-0431	Nucleoside Reverse Transcriptase Inhibitors
 68084-0432	Nucleoside Reverse Transcriptase Inhibitors
 68084-0437	Cytochrome P450 3a Inhibitors
-68084-0437	P-glycoprotein Inhibitors
 68084-0437	Cytochrome P450 3a4 Inhibitors
+68084-0437	P-glycoprotein Inhibitors
 68084-0440	Dopamine Agonists
 68084-0448	Aromatase Inhibitors
 68084-0456	Adrenergic Beta-antagonists
@@ -11252,18 +11252,18 @@ Key	Value
 68084-0469	Corticosteroid Hormone Receptor Agonists
 68084-0470	Dopamine Uptake Inhibitors
 68084-0470	Norepinephrine Uptake Inhibitors
-68084-0471	Norepinephrine Uptake Inhibitors
 68084-0471	Dopamine Uptake Inhibitors
+68084-0471	Norepinephrine Uptake Inhibitors
 68084-0472	Full Opioid Agonists
 68084-0473	Peroxisome Proliferator-activated Receptor Alpha Agonists
 68084-0477	Cholinesterase Inhibitors
 68084-0478	Cholinesterase Inhibitors
 68084-0479	Phosphate Chelating Activity
 68084-0480	Cholinergic Muscarinic Antagonists
-68084-0484	Norepinephrine Uptake Inhibitors
 68084-0484	Serotonin Uptake Inhibitors
-68084-0485	Norepinephrine Uptake Inhibitors
+68084-0484	Norepinephrine Uptake Inhibitors
 68084-0485	Serotonin Uptake Inhibitors
+68084-0485	Norepinephrine Uptake Inhibitors
 68084-0486	Serotonin Uptake Inhibitors
 68084-0486	Norepinephrine Uptake Inhibitors
 68084-0487	Adrenergic Beta-antagonists
@@ -11285,11 +11285,11 @@ Key	Value
 68084-0537	P2y12 Receptor Antagonists
 68084-0541	Carbonic Anhydrase Inhibitors
 68084-0542	Cyclooxygenase Inhibitors
-68084-0552	Cytochrome P450 3a5 Inhibitors
-68084-0552	P-glycoprotein Inhibitors
 68084-0552	Cytochrome P450 3a4 Inhibitors
-68084-0555	Proton Pump Inhibitors
+68084-0552	P-glycoprotein Inhibitors
+68084-0552	Cytochrome P450 3a5 Inhibitors
 68084-0555	Cytochrome P450 2c19 Inhibitors
+68084-0555	Proton Pump Inhibitors
 68084-0558	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68084-0559	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68084-0560	Hydroxymethylglutaryl-coa Reductase Inhibitors
@@ -11303,8 +11303,8 @@ Key	Value
 68084-0596	Proton Pump Inhibitors
 68084-0597	Calcium Channel Antagonists
 68084-0598	Calcium Channel Antagonists
-68084-0599	Gaba A Agonists
 68084-0599	Gaba B Agonists
+68084-0599	Gaba A Agonists
 68084-0600	Gaba B Agonists
 68084-0600	Gaba A Agonists
 68084-0603	Calcium Channel Antagonists
@@ -11332,9 +11332,9 @@ Key	Value
 68084-0643	Proton Pump Inhibitors
 68084-0644	Angiotensin 2 Receptor Antagonists
 68084-0649	Peroxisome Proliferator-activated Receptor Activity
+68084-0651	Cytochrome P450 3a Inhibitors
 68084-0651	P-glycoprotein Inhibitors
 68084-0651	Cytochrome P450 3a4 Inhibitors
-68084-0651	Cytochrome P450 3a Inhibitors
 68084-0652	Peroxisome Proliferator-activated Receptor Activity
 68084-0657	Proton Pump Inhibitors
 68084-0658	Cyclooxygenase Inhibitors
@@ -11343,16 +11343,16 @@ Key	Value
 68084-0665	Calcium Channel Antagonists
 68084-0666	Adrenergic Beta-antagonists
 68084-0674	Calcium Channel Antagonists
-68084-0675	Serotonin Uptake Inhibitors
 68084-0675	Norepinephrine Uptake Inhibitors
+68084-0675	Serotonin Uptake Inhibitors
 68084-0682	Calcium Channel Antagonists
-68084-0683	Serotonin Uptake Inhibitors
 68084-0683	Norepinephrine Uptake Inhibitors
+68084-0683	Serotonin Uptake Inhibitors
 68084-0692	Norepinephrine Uptake Inhibitors
 68084-0692	Serotonin Uptake Inhibitors
 68084-0696	Adrenergic Beta-antagonists
-68084-0698	Norepinephrine Uptake Inhibitors
 68084-0698	Serotonin Uptake Inhibitors
+68084-0698	Norepinephrine Uptake Inhibitors
 68084-0699	Full Opioid Agonists
 68084-0703	Cyclooxygenase Inhibitors
 68084-0707	Adrenergic Beta-antagonists
@@ -11424,10 +11424,10 @@ Key	Value
 68180-0237	Angiotensin-converting Enzyme Inhibitors
 68180-0284	Nucleoside Reverse Transcriptase Inhibitors
 68180-0286	Nucleoside Reverse Transcriptase Inhibitors
-68180-0294	Serotonin Uptake Inhibitors
 68180-0294	Norepinephrine Uptake Inhibitors
-68180-0295	Serotonin Uptake Inhibitors
+68180-0294	Serotonin Uptake Inhibitors
 68180-0295	Norepinephrine Uptake Inhibitors
+68180-0295	Serotonin Uptake Inhibitors
 68180-0296	Norepinephrine Uptake Inhibitors
 68180-0296	Serotonin Uptake Inhibitors
 68180-0351	Serotonin Uptake Inhibitors
@@ -11508,23 +11508,23 @@ Key	Value
 68308-0505	Full Opioid Agonists
 68382-0001	Serotonin Uptake Inhibitors
 68382-0003	Nucleic Acid Synthesis Inhibitors
-68382-0018	Serotonin Uptake Inhibitors
 68382-0018	Norepinephrine Uptake Inhibitors
+68382-0018	Serotonin Uptake Inhibitors
 68382-0019	Norepinephrine Uptake Inhibitors
 68382-0019	Serotonin Uptake Inhibitors
-68382-0020	Norepinephrine Uptake Inhibitors
 68382-0020	Serotonin Uptake Inhibitors
+68382-0020	Norepinephrine Uptake Inhibitors
 68382-0021	Norepinephrine Uptake Inhibitors
 68382-0021	Serotonin Uptake Inhibitors
 68382-0022	Adrenergic Beta-antagonists
 68382-0023	Adrenergic Beta-antagonists
 68382-0024	Adrenergic Beta-antagonists
-68382-0034	Norepinephrine Uptake Inhibitors
 68382-0034	Serotonin Uptake Inhibitors
-68382-0035	Serotonin Uptake Inhibitors
+68382-0034	Norepinephrine Uptake Inhibitors
 68382-0035	Norepinephrine Uptake Inhibitors
-68382-0036	Norepinephrine Uptake Inhibitors
+68382-0035	Serotonin Uptake Inhibitors
 68382-0036	Serotonin Uptake Inhibitors
+68382-0036	Norepinephrine Uptake Inhibitors
 68382-0050	Cyclooxygenase Inhibitors
 68382-0051	Cyclooxygenase Inhibitors
 68382-0052	Vitamin K Inhibitors
@@ -11545,18 +11545,18 @@ Key	Value
 68382-0071	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68382-0072	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68382-0073	Hydroxymethylglutaryl-coa Reductase Inhibitors
-68382-0092	Adrenergic Beta2-antagonists
 68382-0092	Adrenergic Beta1-antagonists
+68382-0092	Adrenergic Beta2-antagonists
 68382-0092	Adrenergic Alpha-antagonists
-68382-0093	Adrenergic Beta2-antagonists
 68382-0093	Adrenergic Beta1-antagonists
+68382-0093	Adrenergic Beta2-antagonists
 68382-0093	Adrenergic Alpha-antagonists
-68382-0094	Adrenergic Beta2-antagonists
-68382-0094	Adrenergic Alpha-antagonists
 68382-0094	Adrenergic Beta1-antagonists
-68382-0095	Adrenergic Beta1-antagonists
-68382-0095	Adrenergic Alpha-antagonists
+68382-0094	Adrenergic Alpha-antagonists
+68382-0094	Adrenergic Beta2-antagonists
 68382-0095	Adrenergic Beta2-antagonists
+68382-0095	Adrenergic Alpha-antagonists
+68382-0095	Adrenergic Beta1-antagonists
 68382-0097	Serotonin Uptake Inhibitors
 68382-0098	Serotonin Uptake Inhibitors
 68382-0099	Serotonin Uptake Inhibitors
@@ -11605,46 +11605,46 @@ Key	Value
 68382-0344	Dopamine Agonists
 68382-0354	Dopamine Uptake Inhibitors
 68382-0354	Norepinephrine Uptake Inhibitors
-68382-0385	Norepinephrine Uptake Inhibitors
 68382-0385	Serotonin Uptake Inhibitors
+68382-0385	Norepinephrine Uptake Inhibitors
 68382-0386	Serotonin Uptake Inhibitors
 68382-0386	Norepinephrine Uptake Inhibitors
-68382-0387	Norepinephrine Uptake Inhibitors
 68382-0387	Serotonin Uptake Inhibitors
-68382-0411	Proton Pump Inhibitors
+68382-0387	Norepinephrine Uptake Inhibitors
 68382-0411	Cytochrome P450 2c19 Inhibitors
-68382-0412	Cytochrome P450 2c19 Inhibitors
+68382-0411	Proton Pump Inhibitors
 68382-0412	Proton Pump Inhibitors
+68382-0412	Cytochrome P450 2c19 Inhibitors
 68382-0422	Histamine H2 Receptor Antagonists
 68382-0423	Histamine H2 Receptor Antagonists
 68382-0444	Histamine H2 Receptor Antagonists
 68382-0471	Angiotensin 2 Receptor Antagonists
 68382-0472	Angiotensin 2 Receptor Antagonists
 68382-0473	Angiotensin 2 Receptor Antagonists
-68382-0500	Cytochrome P450 2c19 Inhibitors
 68382-0500	Proton Pump Inhibitors
+68382-0500	Cytochrome P450 2c19 Inhibitors
 68382-0520	Mtor Inhibitors
 68382-0543	Proton Pump Inhibitors
 68382-0544	Proton Pump Inhibitors
 68382-0715	Serotonin 1d Receptor Agonists
 68382-0715	Serotonin 1b Receptor Agonists
-68382-0717	Serotonin 1b Receptor Agonists
 68382-0717	Serotonin 1d Receptor Agonists
-68382-0761	P-glycoprotein Inhibitors
+68382-0717	Serotonin 1b Receptor Agonists
 68382-0761	Cytochrome P450 3a Inhibitors
 68382-0761	Cytochrome P450 3a4 Inhibitors
+68382-0761	P-glycoprotein Inhibitors
 68382-0762	Cytochrome P450 3a Inhibitors
 68382-0762	P-glycoprotein Inhibitors
 68382-0762	Cytochrome P450 3a4 Inhibitors
-68382-0763	Cytochrome P450 3a Inhibitors
 68382-0763	P-glycoprotein Inhibitors
 68382-0763	Cytochrome P450 3a4 Inhibitors
-68382-0764	Cytochrome P450 3a4 Inhibitors
+68382-0763	Cytochrome P450 3a Inhibitors
 68382-0764	P-glycoprotein Inhibitors
 68382-0764	Cytochrome P450 3a Inhibitors
+68382-0764	Cytochrome P450 3a4 Inhibitors
+68382-0765	Cytochrome P450 3a4 Inhibitors
 68382-0765	Cytochrome P450 3a Inhibitors
 68382-0765	P-glycoprotein Inhibitors
-68382-0765	Cytochrome P450 3a4 Inhibitors
 68382-0791	Dna Polymerase Inhibitors
 68382-0792	Dna Polymerase Inhibitors
 68382-0793	Full Opioid Agonists
@@ -11662,18 +11662,18 @@ Key	Value
 68462-0141	Cyclooxygenase Inhibitors
 68462-0157	Serotonin 3 Receptor Antagonists
 68462-0158	Serotonin 3 Receptor Antagonists
+68462-0162	Adrenergic Alpha-antagonists
 68462-0162	Adrenergic Beta2-antagonists
 68462-0162	Adrenergic Beta1-antagonists
-68462-0162	Adrenergic Alpha-antagonists
-68462-0163	Adrenergic Beta2-antagonists
-68462-0163	Adrenergic Alpha-antagonists
 68462-0163	Adrenergic Beta1-antagonists
-68462-0164	Adrenergic Beta1-antagonists
+68462-0163	Adrenergic Alpha-antagonists
+68462-0163	Adrenergic Beta2-antagonists
 68462-0164	Adrenergic Alpha-antagonists
 68462-0164	Adrenergic Beta2-antagonists
-68462-0165	Adrenergic Beta2-antagonists
-68462-0165	Adrenergic Beta1-antagonists
+68462-0164	Adrenergic Beta1-antagonists
 68462-0165	Adrenergic Alpha-antagonists
+68462-0165	Adrenergic Beta1-antagonists
+68462-0165	Adrenergic Beta2-antagonists
 68462-0178	Cyclooxygenase Inhibitors
 68462-0179	Cyclooxygenase Inhibitors
 68462-0180	Rna Synthetase Inhibitors
@@ -11737,8 +11737,8 @@ Key	Value
 68462-0464	Corticosteroid Hormone Receptor Agonists
 68462-0497	Serotonin 1b Receptor Agonists
 68462-0497	Serotonin 1d Receptor Agonists
-68462-0498	Serotonin 1b Receptor Agonists
 68462-0498	Serotonin 1d Receptor Agonists
+68462-0498	Serotonin 1b Receptor Agonists
 68462-0499	Serotonin 1d Receptor Agonists
 68462-0499	Serotonin 1b Receptor Agonists
 68462-0500	Serotonin 1d Receptor Agonists
@@ -11776,11 +11776,11 @@ Key	Value
 68645-0320	Cytochrome P450 2c19 Inhibitors
 68645-0320	Proton Pump Inhibitors
 68645-0350	Adrenergic Beta1-antagonists
-68645-0350	Adrenergic Beta2-antagonists
 68645-0350	Adrenergic Alpha-antagonists
+68645-0350	Adrenergic Beta2-antagonists
 68645-0351	Adrenergic Beta1-antagonists
-68645-0351	Adrenergic Beta2-antagonists
 68645-0351	Adrenergic Alpha-antagonists
+68645-0351	Adrenergic Beta2-antagonists
 68645-0400	Proton Pump Inhibitors
 68645-0401	Proton Pump Inhibitors
 68645-0402	Phosphate Chelating Activity
@@ -11817,14 +11817,14 @@ Key	Value
 68645-0465	Adrenergic Alpha-antagonists
 68645-0466	Leukotriene Receptor Antagonists
 68645-0467	Serotonin Uptake Inhibitors
-68645-0468	Adrenergic Alpha-antagonists
-68645-0468	Adrenergic Beta1-antagonists
 68645-0468	Adrenergic Beta2-antagonists
+68645-0468	Adrenergic Beta1-antagonists
+68645-0468	Adrenergic Alpha-antagonists
 68645-0470	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68645-0471	Hydroxymethylglutaryl-coa Reductase Inhibitors
 68645-0472	Hydroxymethylglutaryl-coa Reductase Inhibitors
-68645-0473	Cytochrome P450 2c19 Inhibitors
 68645-0473	Proton Pump Inhibitors
+68645-0473	Cytochrome P450 2c19 Inhibitors
 68645-0474	Cyclooxygenase Inhibitors
 68645-0475	Cyclooxygenase Inhibitors
 68645-0476	Cyclooxygenase Inhibitors
@@ -11891,8 +11891,8 @@ Key	Value
 68968-6675	Estrogen Receptor Agonists
 68968-9075	Serotonin Uptake Inhibitors
 69036-0110	Adrenergic Alpha-agonists
-69036-0120	Uncompetitive Nmda Receptor Antagonists
 69036-0120	Sigma-1 Receptor Agonists
+69036-0120	Uncompetitive Nmda Receptor Antagonists
 69036-0130	Adrenergic Alpha-agonists
 69097-0126	Calcium Channel Antagonists
 69097-0127	Calcium Channel Antagonists
@@ -11962,15 +11962,15 @@ Key	Value
 76329-3304	Phosphate Chelating Activity
 76329-3316	Adrenergic Alpha-agonists
 76329-3316	Adrenergic Beta-agonists
-76329-3339	Cholinergic Muscarinic Antagonists
 76329-3339	Cholinergic Antagonists
+76329-3339	Cholinergic Muscarinic Antagonists
 76329-3369	Opioid Antagonists
 76329-9061	Adrenergic Beta-agonists
 76329-9061	Adrenergic Alpha-agonists
 76385-0100	Cholinergic Antagonists
 76385-0101	Cholinergic Antagonists
-76385-0103	Cholinergic Antagonists
 76385-0103	Histamine Receptor Antagonists
+76385-0103	Cholinergic Antagonists
 76385-0104	Histamine Receptor Antagonists
 76385-0104	Cholinergic Antagonists
 76385-0105	Cholinergic Antagonists

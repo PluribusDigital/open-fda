@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	name
 0002-1200	Florbetapir F 18
 0002-1407	Quinidine Gluconate
 0002-3227	Atomoxetine Hydrochloride
@@ -2401,8 +2401,8 @@ Key	Value
 0113-0165	Pseudoephedrine Sulfate, Loratadine
 0113-0166	Ibuprofen
 0113-0170	Nicotine Polacrilex
-0113-0173	Piperonyl Butoxide, Pyrethrum Extract Shampoo
 0113-0173	Piperonyl Butoxide, Pyrethrum Extract
+0113-0173	Piperonyl Butoxide, Pyrethrum Extract Shampoo
 0113-0175	Acetaminophen
 0113-0176	Cetirizine Hcl, Pseudoephedrine HCL
 0113-0179	Calcium Carbonate
@@ -5616,8 +5616,8 @@ Key	Value
 0409-2775	Milrinone Lactate
 0409-2776	Milrinone Lactate
 0409-2987	Ampicillin Sodium AND Sulbactam Sodium
-0409-2988	Ampicillin AND Sulbactam
 0409-2988	Ampicillin Sodium AND Sulbactam Sodium
+0409-2988	Ampicillin AND Sulbactam
 0409-2998	Ampicillin Sodium AND Sulbactam Sodium
 0409-2998	Ampicillin AND Sulbactam
 0409-3024	Sodium Nitroprusside
@@ -14062,20 +14062,20 @@ Key	Value
 49221-0025	Air
 49230-0188	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0188	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
-49230-0191	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0191	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
-49230-0194	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
+49230-0191	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0194	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
-49230-0197	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
+49230-0194	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0197	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
-49230-0200	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
+49230-0197	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0200	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
+49230-0200	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0203	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0203	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0206	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0206	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
-49230-0209	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0209	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
+49230-0209	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0212	Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride
 49230-0212	Dextrose Monohydrate, Sodium Chloride, Calcium Chloride, Magnesium Chloride, Sodium Lactate
 49230-0300	Sodium Chloride
@@ -19652,8 +19652,8 @@ Key	Value
 61703-0418	Vitamin A Palmitate
 61703-0421	Ascorbic Acid, Retinol, Ergocalciferol, Thiamine Hydrochloride, Riboflavin 5-phosphate Sodium, Pyridoxine Hydrochloride, Niacinamide, Dexpanthenol, .alpha.-tocopherol Acetate, Dl-, Biotin, Folic Acid, Cyanocobalamin, AND Phytonadione
 61703-0422	Retinol, Ergocalciferol, .alpha.-tocopherol Acetate, Dl-, Phytonadione, Ascorbic Acid, Niacinamide, Riboflavin 5-phosphate Sodium, Thiamine Hydrochloride, Pyridoxine Hydrochloride, Dexpanthenol, Biotin, Folic Acid, AND Cyanocobalamin
-61703-0423	Retinol, Ergocalciferol, .alpha.-tocopherol Acetate, Dl-, Ascorbic Acid, Niacinamide, Riboflavin 5-phosphate Sodium, Thiamine Hydrochloride, Pyridoxine Hydrochloride, Dexpanthenol, Biotin, Folic Acid, AND Cyanocobalamin
 61703-0423	Retinol, Ergocalciferol, Ascorbic Acid, Niacinamide, Thiamine, Biotin, Folic Acid, Cyanocobalamin, .alpha.-tocopherol Acetate, Dl-, Riboflavin 5-phosphate Sodium, Pyridoxine Hydrochloride, AND Dexpanthenol
+61703-0423	Retinol, Ergocalciferol, .alpha.-tocopherol Acetate, Dl-, Ascorbic Acid, Niacinamide, Riboflavin 5-phosphate Sodium, Thiamine Hydrochloride, Pyridoxine Hydrochloride, Dexpanthenol, Biotin, Folic Acid, AND Cyanocobalamin
 61748-0012	Pyrazinamide
 61748-0013	Isoniazid
 61748-0015	Rifampin
@@ -20464,8 +20464,8 @@ Key	Value
 63323-0086	Potassium Phosphate, Monobasic AND Potassium Phosphate, Dibasic
 63323-0088	Sodium Chloride
 63323-0101	Doxorubicin Hydrochloride
-63323-0102	Gemcitabine Hydrochloride
 63323-0102	Gemcitabine
+63323-0102	Gemcitabine Hydrochloride
 63323-0103	Cisplatin
 63323-0104	Etoposide
 63323-0105	Acyclovir Sodium
@@ -20536,8 +20536,8 @@ Key	Value
 63323-0283	Mepivacaine Hydrochloride
 63323-0284	Vancomycin Hydrochloride
 63323-0285	Ropivacaine Hydrochloride
-63323-0286	Ropivacaine Hydrochloride Monohydrate
 63323-0286	Ropivacaine Hydrochloride
+63323-0286	Ropivacaine Hydrochloride Monohydrate
 63323-0287	Ropivacaine Hydrochloride
 63323-0288	Ropivacaine Hydrochloride
 63323-0289	Lidocaine
@@ -20659,13 +20659,13 @@ Key	Value
 63323-0489	Lidocaine Hydrochloride,epinephrine Bitartrate
 63323-0490	Lidocaine Hydrochloride
 63323-0491	Lidocaine Hydrochloride,epinephrine Bitartrate
-63323-0492	Lidocaine Hydrochloride,epinephrine Bitartrate
 63323-0492	Lidocaine Hydrochloride
+63323-0492	Lidocaine Hydrochloride,epinephrine Bitartrate
 63323-0493	Lidocaine Hydrochloride
 63323-0494	Valproate Sodium
 63323-0495	Lidocaine Hydrochloride,epinephrine Bitartrate
-63323-0496	Lidocaine Hydrochloride,epinephrine Bitartrate
 63323-0496	Lidocaine Hydrochloride
+63323-0496	Lidocaine Hydrochloride,epinephrine Bitartrate
 63323-0497	Lidocaine Hydrochloride
 63323-0498	Lidocaine Hydrochloride
 63323-0506	Dexamethasone Sodium Phosphate
@@ -22715,8 +22715,8 @@ Key	Value
 67015-0003	Titanium Dioxide, Zinc Oxide
 67015-0004	Salicylic Acid
 67112-0101	Ascorbic Acid, Cholecalciferol, Dl-.alpha.-tocopherol Acetate, Thiamine Hydrochloride, Riboflavin, Niacinamide, Pyridoxine Hydrochloride, Folic Acid, Cyanocobalamin, Calcium Carbonate, Ferrous Fumarat
-67112-0401	Fish Oil, Doconexent, Icosapent, Thiamine Mononitrate, Riboflavin, Inositol Niacinate, Pyridoxine Hydrochloride, Cyanocobalamin, Folic Acid, Ascorbic Acid, Cholecalciferol, D-alpha-tocopherol, Biotin,
 67112-0401	Multivitamin/mineral
+67112-0401	Fish Oil, Doconexent, Icosapent, Thiamine Mononitrate, Riboflavin, Inositol Niacinate, Pyridoxine Hydrochloride, Cyanocobalamin, Folic Acid, Ascorbic Acid, Cholecalciferol, D-alpha-tocopherol, Biotin,
 67112-0501	Essential Fatty Acids, Multivitamins, Minerals
 67225-0002	Sodium Fluoride
 67225-0003	Sodium Fluoride
@@ -24744,8 +24744,8 @@ Key	Value
 76439-0141	Losartan Potassium
 76439-0142	Losartan Potassium
 76439-0201	Folic Acid, Pyridoxine Hydrochloride AND Cyanocobalamin
-76439-0205	Levomefolate Calcium
 76439-0205	Levomefolate Calcium, Pyridoxal 5-phosphate, AND Methylcobalamin
+76439-0205	Levomefolate Calcium
 76439-0206	Levomefolate Calcium
 76439-0207	Levomefolate Calcium, Riboflavin, Cyanocobalamin, AND Pyridoxine
 76439-0208	Levomefolate Calcium, Methylcobalamin AND Acetylcysteine

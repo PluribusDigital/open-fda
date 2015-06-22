@@ -1,4 +1,4 @@
-Key	Value
+product_ndc	text
 0005-2500	Active ingredient (in each caplet) Purpose Calcium polycarbophil 625 mg equivalent to 500 mg polycarbophil Bulk-forming laxative
 0023-0240	Active ingredients Mineral Oil 42.5% and White Petrolatum 57.3%
 0023-0312	Active ingredients Mineral Oil 42.5% White Petrolatum 56.8%
@@ -117,8 +117,8 @@ Key	Value
 0067-4860	Active ingredient Nicotine, 14mg delivered over 24 hours
 0067-4870	Active ingredient Nicotine, 21mg delivered over 24 hours
 0067-4990	Active Ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
-0067-4990	Active Ingredient Step 2 Nicotine, 14 mg delivered over 24 hours
 0067-4990	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours
+0067-4990	Active Ingredient Step 2 Nicotine, 14 mg delivered over 24 hours
 0067-5000	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours Active ingredient Step 2 Nicotine, 14 mg delivered over 24 hours Active ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
 0067-5010	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours Active ingredient Step 2 Nicotine, 14 mg delivered over 24 hours Active ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
 0067-5020	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours Active ingredient Step 2 Nicotine, 14 mg delivered over 24 hours Active ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
@@ -126,9 +126,9 @@ Key	Value
 0067-5070	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours
 0067-5070	Active Ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
 0067-5070	Active Ingredient Step 2 Nicotine, 14 mg delivered over 24 hours
-0067-5080	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours
 0067-5080	Active Ingredient Step 3 Nicotine, 7 mg delivered over 24 hours
 0067-5080	Active Ingredient Step 2 Nicotine, 14 mg delivered over 24 hours
+0067-5080	Active ingredient Step 1 Nicotine, 21 mg delivered over 24 hours
 0067-5124	Active ingredient Nicotine, 7 mg delivered over 24 hours
 0067-5125	Active ingredient Nicotine, 14 mg delivered over 24 hours
 0067-5126	Active ingredient Nicotine, 21 mg delivered over 24 hours
@@ -182,9 +182,9 @@ Key	Value
 0067-7916	Active ingredient (in each packet) Acetaminophen, 650 mg Pheniramine maleate, 20 mg Phenylephrine hydrochloride, 10 mg
 0067-7918	Active ingredient Acetaminophen, 650 mg Diphenhydramine HCl, 25 mg Phenylephrine HCl, 10 mg
 0067-8100	Active ingredient Terbinafine hydrochloride 1%
-0067-8103	Active Ingredient Caffeine 65 mg
 0067-8103	Active Ingredient Aspirin 250 mg (NSAID*) *nonsteroidal anti-inflammatory drug
 0067-8103	Active ingredient Acetaminophen 250 mg
+0067-8103	Active Ingredient Caffeine 65 mg
 0067-8104	Active ingredients (in each caplet) Acetaminophen 250 mg Aspirin 250 mg (NSAID*) Caffeine 65 mg *nonsteroidal anti-inflammatory drug
 0067-8105	Active ingredient (in each 5 mL, 1 teaspoonful) Dextromethorphan HBr 5 mg Phenylephrine HCl 2.5 mg
 0067-8106	Active ingredient Diphenhydramine HCl 6.25 mg Phenylephrine HCl 2.5 mg
@@ -236,8 +236,8 @@ Key	Value
 0113-0081	Active ingredients Miconazole nitrate (200 mg in each suppository) Miconazole nitrate 2% (external cream)
 0113-0083	Active ingredient (in each caplet) Ibuprofen, USP 200 mg (NSAID)* Pseudoephedrine HCl, USP 30 mg *nonsteroidal anti-inflammatory drug
 0113-0084	Active ingredients (in each gram) Bacitracin zinc equivalent to 400 units bacitracin Neomycin sulfate equivalent to 3.5 mg of neomycin base Polymyxin B 5,000 units as polymyxin B sulfate
-0113-0090	Active ingredients for DAYTIME (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 0113-0090	Active ingredients for NIGHTTIME (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
+0113-0090	Active ingredients for DAYTIME (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 0113-0094	Active ingredient (in each tablet) Phenylephrine hydrochloride 10 mg
 0113-0096	Active ingredients (in each packet) Acetaminophen 650 mg Dextromethorphan hydrobromide 20 mg Phenylephrine hydrochloride 10 mg
 0113-0105	Active ingredient (in each 5 mL = 1 teaspoon) Acetaminophen 160 mg
@@ -360,8 +360,8 @@ Key	Value
 0113-0544	Active ingredient (in each caplet) Acetaminophen 650 mg
 0113-0546	Active ingredients (in each chewable tablet) Famotidine 10 mg Calcium carbonate 800 mg Magnesium hydroxide 165 mg
 0113-0548	Active ingredients (in each caplet) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
-0113-0567	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 0113-0567	Active ingredients (in each 30 mL dose cup) - Nighttime Acetaminophen 650 mg Dextromethorphan HBr 30 mg Doxylamine succinate 12.5 mg Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
+0113-0567	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 0113-0571	Active ingredient (in each tablet) Fexofenadine HCl 180 mg
 0113-0578	Active ingredients (in each 10 mL) Dextromethorphan HBr, USP 20 mg Guaifenesin, USP 200 mg
 0113-0579	Active ingredients (in each caplet) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
@@ -490,8 +490,8 @@ Key	Value
 0132-0106	Active Ingredient (in each tablespoon) Docusate Sodium 50 mg
 0132-0185	Active Ingredient (in each 5.4 mL average delivered dose) Glycerin 5.4 g.................Hyperosmotic Laxative
 0132-0190	Active Ingredient (in each 2.7 mL average delivered dose) Glycerin 2.8 g.................Hyperosmotic Laxative
-0132-0201	Active Ingredient (in each 118-mL delivered dose) Monobasic Sodium Phosphate 19 g.................Saline LaxativeDibasic Sodium Phosphate 7 g........................Saline Laxative
 0132-0201	Active Ingredient (in each 197-mL delivered dose) Monobasic Sodium Phosphate 19 g.................Saline LaxativeDibasic Sodium Phosphate 7 g........................Saline Laxative
+0132-0201	Active Ingredient (in each 118-mL delivered dose) Monobasic Sodium Phosphate 19 g.................Saline LaxativeDibasic Sodium Phosphate 7 g........................Saline Laxative
 0132-0202	Active Ingredient (in each 59-mL delivered dose) Monobasic Sodium Phosphate 9.5 g.................Saline LaxativeDibasic Sodium Phosphate 3.5 g........................Saline Laxative
 0132-0208	Active Ingredient (in each softgel) Simethicone 180mg
 0132-0211	Active Ingredient (in each softgel) Simethicone 250mg
@@ -508,16 +508,16 @@ Key	Value
 0132-8743	Active Ingredient (in each bottle when mixed with packet) Povidone-Iodine 0.3%...............Antimicrobial
 0135-0057	Active Ingredient (in each tablet) Diphenhydramine HCl 25 mg
 0135-0057	Active Ingredient (in each caplet) Diphenhydramine HCl 50 mg
-0135-0058	Active Ingredient (in each caplet) Diphenhydramine HCl 50 mg
 0135-0058	Active Ingredient (in each tablet) Diphenhydramine HCl 25 mg
+0135-0058	Active Ingredient (in each caplet) Diphenhydramine HCl 50 mg
 0135-0070	Active ingredient (per tablet) Calcium Carbonate USP 500 mg
 0135-0071	Active ingredient (per tablet) Calcium Carbonate USP 500 mg
 0135-0074	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
 0135-0076	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
-0135-0077	Active ingredients (in each caplet) Caffeine 200mg
 0135-0077	Active ingredients (in each tablet) Caffeine 200mg
-0135-0078	Active ingredients (in each tablet) Caffeine 200mg
+0135-0077	Active ingredients (in each caplet) Caffeine 200mg
 0135-0078	Active ingredients (in each caplet) Caffeine 200mg
+0135-0078	Active ingredients (in each tablet) Caffeine 200mg
 0135-0089	Active ingredient Citrucel® Sugar Free (in each rounded tablespoon) Methylcellulose (a non-allergenic fiber) 2g
 0135-0089	Active ingredient CITRUCEL® Orange (in each heaping tablespoon) Methylcellulose (a non-allergenic fiber) 2g
 0135-0090	Active ingredient Citrucel® Sugar Free (in each rounded tablespoon) Methylcellulose (a non-allergenic fiber) 2g
@@ -525,8 +525,8 @@ Key	Value
 0135-0091	Active ingredient Carbamide peroxide 6.5% non USP* *pH differs from USP specifications
 0135-0094	Active ingredient (in each 15mL tablespoonful) Regular Strength Aluminum hydroxide 95mg Magnesium carbonate 358mg
 0135-0094	Active ingredient (in each 5mL teaspoonful) Extra Strength Aluminum hydroxide 254mg Magnesium carbonate 237.5mg
-0135-0095	Active ingredient (in each 15mL tablespoonful) Regular Strength Aluminum hydroxide 95mg Magnesium carbonate 358mg
 0135-0095	Active ingredient (in each 5mL teaspoonful) Extra Strength Aluminum hydroxide 254mg Magnesium carbonate 237.5mg
+0135-0095	Active ingredient (in each 15mL tablespoonful) Regular Strength Aluminum hydroxide 95mg Magnesium carbonate 358mg
 0135-0096	Active ingredients (in each tablet) (Regular Strength) Dried aluminum hydroxide gel 80mg Magnesium trisilicate 14.2mg
 0135-0096	Active ingredients (in each tablet) (Extra Strength) Aluminum hydroxide 160mg Magnesium carbonate 105mg
 0135-0098	Active ingredients (in each tablet) (Extra Strength) Aluminum hydroxide 160mg Magnesium carbonate 105mg
@@ -537,17 +537,17 @@ Key	Value
 0135-0129	Active ingredient Sodium monofluorophosphate (0.15% w/v fluoride ion)
 0135-0130	Active ingredient Sodium monofluorophosphate (0.15% w/v fluoride ion)
 0135-0132	Active ingredient Potassium nitrate (5%) Sodium fluoride (0.15 w/v fluoride ion)
-0135-0135	Active ingredient (in each caplet) Acetaminophen 500 mg
 0135-0135	Active ingredient (in each tablet) Acetaminophen 500 mg
+0135-0135	Active ingredient (in each caplet) Acetaminophen 500 mg
 0135-0136	Active ingredient (in each caplet) Acetaminophen 500 mg
 0135-0136	Active ingredient (in each tablet) Acetaminophen 500 mg
 0135-0138	Active ingredient (in each 5mL) Acetaminophen 160 mg
 0135-0139	Active ingredient (in each 5 mL) Acetaminophen 160 mg
 0135-0140	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
-0135-0145	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
 0135-0145	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
-0135-0145	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
+0135-0145	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
 0135-0145	Active ingredient (in each patch)(clear) Nicotine, 7 mg delivered over 24 hours
+0135-0145	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
 0135-0148	Active ingredient (in each tablet) Cimetidine 200 mg
 0135-0150	Active ingredients (in each caplet) Acetaminophen 500 mg Diphenhydramine HCl 25 mg
 0135-0154	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
@@ -558,17 +558,17 @@ Key	Value
 0135-0180	Active ingredient (per tablet) Calcium Carbonate USP 1000 mg
 0135-0181	Active ingredient (per tablet) Calcium Carbonate USP 1000 mg
 0135-0194	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
-0135-0194	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
-0135-0194	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
 0135-0194	Active ingredient (in each patch)(clear) Nicotine, 7 mg delivered over 24 hours
-0135-0195	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
+0135-0194	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
+0135-0194	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
 0135-0195	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
-0135-0195	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
 0135-0195	Active ingredient (in each patch)(clear) Nicotine, 7 mg delivered over 24 hours
-0135-0196	Active ingredient (in each patch)(clear) Nicotine, 7 mg delivered over 24 hours
-0135-0196	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
-0135-0196	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
+0135-0195	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
+0135-0195	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
 0135-0196	Active ingredient (in each patch)(clear) Nicotine, 14 mg delivered over 24 hours
+0135-0196	Active ingredient (in each patch)(clear) Nicotine, 21 mg delivered over 24 hours
+0135-0196	Active ingredient (in each patch)(clear) Nicotine, 7 mg delivered over 24 hours
+0135-0196	Active ingrdient (in each patch)(opaque) Nicotine, 21 mg delivered over 24 hours
 0135-0199	Active ingredient (in each caplet) Methylcellulose (a non-allergenic fiber) 500mg
 0135-0200	Active ingredient Docosanol 10%
 0135-0201	Active ingredient Sodium fluoride (0.15% w/v fluoride ion)
@@ -586,8 +586,8 @@ Key	Value
 0135-0245	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
 0135-0246	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
 0135-0429	Active ingredient (in each softgel) Simethicone 180 mg
-0135-0430	Active ingredients (in each tablet) (Extra Strength) Aluminum hydroxide 160mg Magnesium carbonate 105mg
 0135-0430	Active ingredients (in each tablet) (Regular Strength) Dried aluminum hydroxide gel 80mg Magnesium trisilicate 14.2mg
+0135-0430	Active ingredients (in each tablet) (Extra Strength) Aluminum hydroxide 160mg Magnesium carbonate 105mg
 0135-0432	Active ingredient Sodium fluoride (0.15% w/v fluoride ion)
 0135-0435	Active ingredient Sodium fluoride (0.15% w/v fluoride ion)
 0135-0442	Active ingredient Sodium monofluorophosphate (0.15% w/v fluoride ion)
@@ -622,22 +622,22 @@ Key	Value
 0135-0510	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0511	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0511	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
-0135-0512	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
 0135-0512	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
+0135-0512	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
 0135-0513	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
 0135-0513	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0514	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0514	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
-0135-0515	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0515	Active ingredient (in each lozenge) (4mg) Nicotine polacrilex, 4mg
+0135-0515	Active ingredient (in each lozenge) (2mg) Nicotine polacrilex, 2mg
 0135-0518	Active ingredients Potassium nitrate (5%) Sodium fluoride (0.15 w/v fluoride ion)
 0135-0519	Active ingredients Potassium nitrate (5%) Sodium fluoride (0.15 w/v fluoride ion)
 0135-0521	Active ingredient (per tablet) Calcium Carbonate USP 750 mg
 0135-0522	Active ingredient (per tablet) Calcium carbonate USP 500mg
 0135-0523	Active ingredient Sodium fluoride (0.15% w/v fluoride ion)
 0135-0524	Active ingredient Sodium fluoride (0.15% w/v fluoride ion)
-0135-0525	Active ingredients (Original Flavor) Potassium nitrate (5%)* Sodium fluoride (0.13% w/v fluoride ion)
 0135-0525	Active ingredients Potassium nitrate (5%)* Sodium fluoride (0.15% w/v fluoride ion)
+0135-0525	Active ingredients (Original Flavor) Potassium nitrate (5%)* Sodium fluoride (0.13% w/v fluoride ion)
 0135-0526	Active ingredients Potassium nitrate (5%)* Sodium fluoride (0.15% w/v fluoride ion)
 0135-0526	Active ingredients (Original Flavor) Potassium nitrate (5%)* Sodium fluoride (0.13% w/v fluoride ion)
 0135-0527	Active ingredients Potassium nitrate (5%)* Sodium fluoride (0.15% w/v fluoride ion)
@@ -674,29 +674,29 @@ Key	Value
 0135-0569	Active ingredient (in each chew) Calcium carbonate USP 1177 mg
 0135-0572	Active ingredient Stannous fluoride 0.454% (0.15%w/v fluoride ion)
 0135-0573	Active ingredient Stannous fluoride 0.454% (0.15%w/v fluoride ion)
-0135-0574	Active ingredient (in each 5mL teaspoonful) Extra Strength Aluminum hydroxide 254mg Magnesium carbonate 237.5mg
 0135-0574	Active ingredient (in each 15mL tablespoonful) Regular Strength Aluminum hydroxide 95mg Magnesium carbonate 358mg
+0135-0574	Active ingredient (in each 5mL teaspoonful) Extra Strength Aluminum hydroxide 254mg Magnesium carbonate 237.5mg
 0145-0628	Active ingredient Camphor 0.5% Menthol 0.5%
 0145-0630	Active ingredient Pramoxine hydrochloride 1%
-0145-0982	Active ingredient (Maximum Strength) Benzoyl peroxide 10%
 0145-0982	Active ingredient (Regular Strength) Benzoyl peroxide 5%
-0145-0983	Active ingredient (Regular Strength) Benzoyl peroxide 5%
+0145-0982	Active ingredient (Maximum Strength) Benzoyl peroxide 10%
 0145-0983	Active ingredient (Maximum Strength) Benzoyl peroxide 10%
-0145-0985	Active ingredient (3%) Benzoyl peroxide 3%
-0145-0985	Active ingredient (4%) Benzoyl peroxide 4%
+0145-0983	Active ingredient (Regular Strength) Benzoyl peroxide 5%
 0145-0985	Active Ingredient (10%) Benzoyl peroxide 10%
+0145-0985	Active ingredient (4%) Benzoyl peroxide 4%
+0145-0985	Active ingredient (3%) Benzoyl peroxide 3%
 0145-0986	Active ingredient Pyrithione zinc 2%
 0145-1501	Active ingredient Miconazole nitrate 2%
 0145-1506	Active ingredient Miconazole nitrate 2%
 0145-2651	Active Ingredient (10%) Benzoyl peroxide 10%
-0145-2651	Active ingredient (4%) Benzoyl peroxide 4%
 0145-2651	Active ingredient (3%) Benzoyl peroxide 3%
-0145-2660	Active Ingredient (10%) Benzoyl peroxide 10%
-0145-2660	Active ingredient (3%) Benzoyl peroxide 3%
+0145-2651	Active ingredient (4%) Benzoyl peroxide 4%
 0145-2660	Active ingredient (4%) Benzoyl peroxide 4%
+0145-2660	Active ingredient (3%) Benzoyl peroxide 3%
+0145-2660	Active Ingredient (10%) Benzoyl peroxide 10%
 0145-2661	Active ingredient (4%) Benzoyl peroxide 4%
-0145-2661	Active Ingredient (10%) Benzoyl peroxide 10%
 0145-2661	Active ingredient (3%) Benzoyl peroxide 3%
+0145-2661	Active Ingredient (10%) Benzoyl peroxide 10%
 0168-0011	Active Ingredient (in each gram): Bacitracin Zinc (equal to 500 bacitracin units)
 0168-0012	Active ingredients (in each gram) Neomycin Sulfate (5 mg equivalent to 3.5 mg neomycin base) Polymyxin B Sulfate (equal to 5,000 polymyxin B units) Bacitracin Zinc (equal to 400 bacitracin units)
 0168-0014	Active Ingredient: Hydrocortisone 5 mg
@@ -734,8 +734,8 @@ Key	Value
 0187-1610	Active ingredient Benzoyl Peroxide 2.5% w/v
 0187-1611	Active ingredient Benzoyl Peroxide 2.5% w/v
 0187-1611	Active Ingredient Benzoyl Peroxide 10% w/v
-0187-1612	Active ingredient Benzoyl Peroxide 3% w/v
 0187-1612	Active ingredient Salicylic Acid 1.5% w/v
+0187-1612	Active ingredient Benzoyl Peroxide 3% w/v
 0187-1613	Active ingredient Benzoyl Peroxide 2.5% w/v
 0187-1616	Active ingredient Benzoyl Peroxide 10% w/v
 0187-1617	Active ingredient Benzoyl Peroxide 5% w/v
@@ -769,8 +769,8 @@ Key	Value
 0224-0500	Active Ingredient (in each caplet) Calcium polycarbophil 625 mg equivalent to 500 mg polycarbophil
 0224-1801	Active Ingredients (in each teaspoon) Psyllium Hydrophilic Mucilloid 6g
 0224-1822	Active ingredient (in each teaspoon) Psyllium Hydrophilic Mucilloid 3.4 g
-0224-1841	KONSYL Orange Flavor Psyllium Fiber - Original Texture
 0224-1841	Active Ingredient (in each tablespoon) Psyllium Hydrophilic Mucilloid 3.4 g
+0224-1841	KONSYL Orange Flavor Psyllium Fiber - Original Texture
 0224-1847	Active ingredient (in each capsule) Psyllium husk approx. 20 mg
 0224-1852	Active Ingredient (in each tablespoon) Psyllium Hydrophilic Mucilloid 3.4 g
 0224-1855	Active Ingredient (in each teaspoon) Psyllium Hydrophilic Mucilloid 3.5 g
@@ -835,9 +835,9 @@ Key	Value
 0363-0884	Active ingredient (in each 5 mL teaspoonful) Cetirizine HCl 5 mg
 0363-0955	Active ingredient (in each fluid ounce) Permethrin 280 mg (1%)
 0363-0998	Active ingredient Mineral oil 14% Petrolatum 71.9% Phenylephrine HCl 0.25% Shark liver oil 3.0%
+0372-0004	Active Ingredient (in each 5 mL. tsp. teaspoon) Pheniramine Maleate USP 4 mg
 0372-0004	Active Ingredient (in each 5 mL. tsp. teaspoon) Acetaminophen USP 160 mg
 0372-0004	Active Ingredient (in each 5 mL. tsp. teaspoon) Phenylephrine HCI USP 4 mg
-0372-0004	Active Ingredient (in each 5 mL. tsp. teaspoon) Pheniramine Maleate USP 4 mg
 0372-0006	Active Ingredient : (in each 5 mL. tsp. teaspoon ) Guaifenesin 100mg
 0378-0781	Active ingredient (in each tablet) Fexofenadine hydrochloride USP, 30 mg
 0378-0782	Active ingredient (in each tablet) Fexofenadine hydrochloride USP, 30 mg
@@ -1005,43 +1005,43 @@ Key	Value
 0536-5894	Active ingredient (in each patch) Nicotine, 7 mg delivered over 24 hours
 0536-5895	Active ingredient (in each patch) Nicotine, 14 mg delivered over 24 hours
 0536-5896	Active ingredient Step Two (in each patch) Nicotine, 14 mg delivered over 24 hours
-0536-5896	Active ingredient Step One (in each patch) Nicotine, 21 mg delivered over 24 hours
 0536-5896	Active ingredient Step Three (in each patch) Nicotine, 7 mg delivered over 24 hours
+0536-5896	Active ingredient Step One (in each patch) Nicotine, 21 mg delivered over 24 hours
 0536-5904	Active ingredient (in each tablet) Sennosides 8.6mg
 0536-6237	Active ingredient Hypromellose 0.4%
 0536-6550	Active ingredient Mineral oil 15% White petrolatum 83%
 0536-7415	Active ingredient (in each 118 mL delivered dose) Sodium Phosphate (Monobasic 19 g and Dibasic 7 g)
 0573-0133	Active ingredient (in each tablet) Ibuprofen 200 mg (provided as ibuprofen sodium 256 mg) (NSAID)nonsteroidal anti-inflammatory drug
 0573-0134	Active ingredient (in each tablet) Ibuprofen 200 mg (provided as ibuprofen sodium 256 mg) (NSAID)nonsteroidal anti-inflammatory drug
-0573-0150	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0150	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0150	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0150	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0150	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0151	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0151	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0151	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0151	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0151	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0154	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0154	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0154	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0154	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0154	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0160	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0160	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0160	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0160	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0160	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0161	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0161	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0161	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0161	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0161	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0161	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0164	ACTIVE INGREDIENTS (IN EACH CAPLET) Diphenhydramine citrate 38 mg Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0165	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0165	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0165	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0165	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0165	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0166	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0166	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-0573-0166	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0165	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0166	Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0166	Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0166	Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0166	ACTIVE INGREDIENT Advil Tablets (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Caplets (in each caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug Advil Gel Caplets (in each gel caplet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0167	ACTIVE INGREDIENTS (IN EACH CAPSULE) Diphenhydramine hydrochloride 25 mg Solubilized ibuprofen equal to 200 mg ibuprofen (NSAID)* (present as the free acid and potassium salt) *nonsteroidal anti-inflammatory drug
 0573-0168	ACTIVE INGREDIENT (IN EACH BROWN OVAL CAPSULE) Solubilized ibuprofen equal to 200 mg ibuprofen (NSAID)* (present as the free acid and potassium salt) *nonsteroidal anti-inflammatory drug
 0573-0169	ACTIVE INGREDIENT (IN EACH CAPSULE) Solubilized ibuprofen equal to 200 mg ibuprofen (NSAID)* (present as the free acid and potassium salt) *nonsteroidal anti-inflammatory drug
@@ -1056,27 +1056,27 @@ Key	Value
 0573-0188	ACTIVE INGREDIENTS (IN EACH CAPLET) Chlorpheniramine maleate 2 mg Ibuprofen 200 mg (NSAID)* Pseudoephedrine HCl 30 mg *nonsteroidal anti-inflammatory drug
 0573-0196	Active ingredients (in each tablet) Purposes Chlorpheniramine maleate 4 mg Antihistamine Ibuprofen 200 mg (NSAID)nonsteroidal anti-inflammatory drug Pain reliever/Fever reducer Phenylephrine HCl 10 mg Nasal decongestant
 0573-0207	ACTIVE INGREDIENT (IN EACH 5 ML) Ibuprofen 100 mg (NSAID)* *nonsteroidal anti-inflammatory drug
+0573-0213	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0213	Anbesol Jr. Gel Benzocaine 10%
 0573-0213	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0213	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
-0573-0213	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0215	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0215	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
-0573-0215	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0215	Anbesol Jr. Gel Benzocaine 10%
+0573-0215	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0216	ACTIVE INGREDIENT Benzocaine 7.5%
-0573-0218	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0218	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
+0573-0218	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0218	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0218	Anbesol Jr. Gel Benzocaine 10%
-0573-0223	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
-0573-0223	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
-0573-0223	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0223	Anbesol Jr. Gel Benzocaine 10%
-0573-0225	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
+0573-0223	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
+0573-0223	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
+0573-0223	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
+0573-0225	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0225	ACTIVE INGREDIENT Anbesol Regular Strength Liquid and Gel Benzocaine 10% Anbesol Jr. Gel Benzocaine 10% Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
 0573-0225	Anbesol Jr. Gel Benzocaine 10%
-0573-0225	Anbesol Maximum Strength Liquid and Gel Benzocaine 20%
+0573-0225	Anbesol Regular Strength Liquid and Gel Benzocaine 10%
 0573-0232	ACTIVE INGREDIENT (IN EACH 5 ML) Ibuprofen 100 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 0573-0246	ACTIVE INGREDIENTS Allantoin 1% Benzocaine 20% Camphor 3% White petrolatum 64.9%
 0573-0290	ACTIVE INGREDIENT (IN EACH 5 ML) Ibuprofen 100 mg (NSAID)* *nonsteroidal anti-inflammatory drug
@@ -1377,8 +1377,8 @@ Key	Value
 0904-5843	Active ingredient Purpose Petrolatum 53.4% Skin Protectant Lanolin 15.5% Skin Protectant
 0904-5847	Active Ingredients Acetaminophen 500 mg
 0904-5852	Active ingredient (in each tablet) Cetirizine HCl 10 mg
-0904-5857	Drug Fact
 0904-5857	Active ingredient Trolamine Salicylate 10%
+0904-5857	Drug Fact
 0904-5869	Active Ingredient (in each tablet) Docusate Sodium 100mg
 0904-5874	Active Ingredients Acetaminophen 160 mg Chlorpheniramine maleate 1 mg Dextromethorphan HBr 5 mg
 0904-5875	Active Ingredients Dextromethorphan HBr USP 15 mg
@@ -1500,42 +1500,42 @@ Key	Value
 10742-0009	Active ingredient Eugenol 85%
 10827-0003	Active Ingredient Ethyl Alcohol (62%)
 11509-0003	Active Ingredients (in each lozenge) Menthol 4.5 mg
-11509-0011	Active Ingredients (in each lozenge) Menthol 2.1 mg
-11509-0011	Active Ingredients (in each lozenge) Menthol 3.6 mg
-11509-0011	Active Ingredients (in each lozenge) Menthol 4.0 mg
-11509-0011	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
 11509-0011	Active Ingredients (in each lozenge) Menthol 2.6 mg
-11509-0012	Active Ingredients (in each lozenge) Menthol 4.0 mg
-11509-0012	Active Ingredients (in each lozenge) Menthol 3.6 mg
+11509-0011	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
+11509-0011	Active Ingredients (in each lozenge) Menthol 3.6 mg
+11509-0011	Active Ingredients (in each lozenge) Menthol 2.1 mg
+11509-0011	Active Ingredients (in each lozenge) Menthol 4.0 mg
 11509-0012	Active Ingredients (in each lozenge) Menthol 2.6 mg
+11509-0012	Active Ingredients (in each lozenge) Menthol 3.6 mg
+11509-0012	Active Ingredients (in each lozenge) Menthol 4.0 mg
 11509-0012	Active Ingredients (in each lozenge) Menthol 2.1 mg
 11509-0012	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
-11509-0013	Active Ingredients (in each lozenge) Menthol 3.6 mg
-11509-0013	Active Ingredients (in each lozenge) Menthol 2.1 mg
 11509-0013	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
 11509-0013	Active Ingredients (in each lozenge) Menthol 4.0 mg
 11509-0013	Active Ingredients (in each lozenge) Menthol 2.6 mg
-11509-0014	Active Ingredients (in each lozenge) Menthol 4.0 mg
+11509-0013	Active Ingredients (in each lozenge) Menthol 2.1 mg
+11509-0013	Active Ingredients (in each lozenge) Menthol 3.6 mg
 11509-0014	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
 11509-0014	Active Ingredients (in each lozenge) Menthol 2.6 mg
 11509-0014	Active Ingredients (in each lozenge) Menthol 2.1 mg
 11509-0014	Active Ingredients (in each lozenge) Menthol 3.6 mg
+11509-0014	Active Ingredients (in each lozenge) Menthol 4.0 mg
 11509-0025	Activ e Ingredients (in each lozenge) Benzocaine 6.0 mg
-11509-0031	Active Ingredients (in each lozenge) Menthol 2.6 mg
+11509-0031	Active Ingredients (in each lozenge) Menthol 3.6 mg
 11509-0031	Active Ingredients (in each lozenge) Menthol 4.0 mg
 11509-0031	Active Ingredients (in each lozenge) Benzocaine 15.0 mg
 11509-0031	Active Ingredients (in each lozenge) Menthol 2.1 mg
-11509-0031	Active Ingredients (in each lozenge) Menthol 3.6 mg
-11509-0054	Active Ingredients Benzocaine 5.0%
+11509-0031	Active Ingredients (in each lozenge) Menthol 2.6 mg
 11509-0054	Active Ingredients Glycerin 33.0%
+11509-0054	Active Ingredients Benzocaine 5.0%
 11523-0096	Active ingredients Purpose Lanolin 15.5% Diaper rash ointment Petrolatum 53.4% Skin Protectant
 11523-0259	Active ingredient Topical starch 83.7%
 11523-0430	Active ingredient Lidocaine hydrochloride 0.5%
 11523-0777	Active ingredient Tolnaftate 1%
 11701-0018	Active ingredients Triclosan, 0.3%
 11701-0020	Active ingredient Benzethonium Chloride 0.1%
-11701-0025	Active ingredient 60% v/v Alcohol Denat
 11701-0025	Active ingredient Ethyl Alcohol 60% v/v
+11701-0025	Active ingredient 60% v/v Alcohol Denat
 11701-0038	Active ingredient Miconazole Nitrate, 2%
 11701-0045	Active ingredient Miconazole Nitrate, 2%
 11701-0046	Active ingredients Zinc Oxide, 12% Dimethicone, 1 %
@@ -1704,8 +1704,8 @@ Key	Value
 15127-0895	Active ingredients (in each immediate-release tablet) Guaifenesin 400 mg Pseudoephedrine HCl 40 mg
 15127-0898	Active ingredients (in each gelcap) Acetaminophen 500 mg Diphenhydramine HCl 25 mg
 15127-0900	Active ingredient (in each 5 mL = 1 teaspoon) Ibuprofen 100 mg (NSAID)* *nonsteroidal anti-inflammatory drug
-15127-0901	Active ingredients (in each liquid cap) DAYTIME Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 15127-0901	Active ingredients (in each liquid cap) NIGHTTIME Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
+15127-0901	Active ingredients (in each liquid cap) DAYTIME Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 15127-0905	Active ingredient (in each tablet) Ibuprofen USP, 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 15127-0907	Active ingredient (in each orange caplet) Ibuprofen USP, 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 15127-0909	ACTIVE INGREDIENT (IN EACH CAPLET) Cetirizine HCl, USP 10 mg
@@ -1713,8 +1713,8 @@ Key	Value
 15127-0925	Active Ingredients Dextromethorphan HBr USP 15 mg
 15127-0927	Cold Multi-Symptom Daytime Active ingredients (in each caplet) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 15127-0927	Cold Multi-Symptom Nighttime Active ingredients (in each caplet) Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
-15127-0933	Active ingredients (in each caplet) Sinus Congestion & Pain NIGHTTIME Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
 15127-0933	Active ingredient (in each caplet) Sinus Congestion & Pain DAYTIME Acetaminophen 325 mg Phenylephrine HCl 5 mg
+15127-0933	Active ingredients (in each caplet) Sinus Congestion & Pain NIGHTTIME Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
 15127-0938	Active ingredients (in each caplet) Acetaminophen 500 mg Caffeine 60 mg Pyrilamine maleate 15 mg
 15127-0940	Active ingredients Guaifenesin, USP 100 mg
 15127-0943	Active ingredients Dextromethorphan HBr, USP 10 mg Guaifenesin, USP 100 mg Phenylephrine HCI, USP 5 mg
@@ -1919,8 +1919,8 @@ Key	Value
 24385-0404	Active Ingredient Sennosides 8.6 mg
 24385-0405	Active ingredient (in each tablet) Acetaminophen 500 mg
 24385-0407	Active Ingredient Liquefied Phenol
-24385-0407	Active Ingredient Calamine 8%
 24385-0407	Active Ingredient Zinc Oxide 8%
+24385-0407	Active Ingredient Calamine 8%
 24385-0413	active Ingredients Calamine 8% Zinc Oxide 8%
 24385-0421	ACTIVE INGREDIENT Phenylephrine HCI, 0.25% Witch Hazel, 50%
 24385-0428	Active ingredient (in each softgel) Simethicone 125 mg
@@ -1931,8 +1931,8 @@ Key	Value
 24385-0435	Active Ingredient (in each softgel) Docusate Calcium 240 mg Purpose Stool softener
 24385-0436	Active Ingredient (in each softgel) Docusate Sodium 100 mg Purpose Stool softener
 24385-0437	Active ingredient (in each caplet) Acetaminophen 500 mg Diphenhydramine HCl 25 mg
-24385-0439	Active Ingredient Pramoxine HCl 1%
 24385-0439	Active Ingredient Zinc Acetate 0.1%
+24385-0439	Active Ingredient Pramoxine HCl 1%
 24385-0441	Active ingredient (in each tablet) Doxylamine succinate 25 mg
 24385-0443	Active ingredient (in each softgel) Docusate Sodium 250 mg Purpose Stool softener
 24385-0460	Active ingredient (in each softgel) Simethicone 180 mg
@@ -1986,20 +1986,20 @@ Key	Value
 24385-0676	Active ingredient Undecylenic Acid, 25% w/v
 24385-0677	Active ingredient Capsaicin 0.1%
 24385-0685	Active Ingredient Mineral Oil
-24385-0803	Active Ingredient: Purpose Isopropyl Alcohol, 70% v/v............... Antiseptic
 24385-0803	ACTIVE INGREDIENTS: Benzalkonium Chloride 0.13% Lidocaine HCL 0.5%
 24385-0803	Active Ingredient: Purpose: Benzocaine, 6% w/v.................. Topical Anesthetic SD alcohol, 60% w/v.................. Antiseptic
 24385-0803	Enter section text here
-24385-0803	Active Ingredient: Purpose Benzalkonium Chloride 0.40%.......... First Aid Antiseptic
+24385-0803	Active Ingredient: Purpose Isopropyl Alcohol, 70% v/v............... Antiseptic
 24385-0803	Active Ingredient: Purified Water USP...q.s.
-24385-0804	Active Ingredient: Purpose: Benzocaine, 6% w/v.................. Topical Anesthetic SD alcohol, 60% w/v.................. Antiseptic
-24385-0804	Active Ingredient: Purpose Benzalkonium Chloride 0.40%.......... First Aid Antiseptic
+24385-0803	Active Ingredient: Purpose Benzalkonium Chloride 0.40%.......... First Aid Antiseptic
+24385-0804	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
+24385-0804	Active Ingredient: Purified Water USP...q.s.
 24385-0804	Active Ingredient: Ethyl Alcohol 62 percent
+24385-0804	Active Ingredient: Purpose: Benzocaine, 6% w/v.................. Topical Anesthetic SD alcohol, 60% w/v.................. Antiseptic
 24385-0804	Active Ingredient: Purpose Isopropyl Alcohol, 70% v/v............... Antiseptic
 24385-0804	Active ingredient (in each tablet) Purpose Aspirin 81 mg (NSAID*). . . . . . . . . . . . . Analgesic/Antipyretic *nonsteroidal anti-inflammatory drug
+24385-0804	Active Ingredient: Purpose Benzalkonium Chloride 0.40%.......... First Aid Antiseptic
 24385-0804	ACTIVE INGREDIENTS: Benzalkonium Chloride 0.13% Lidocaine HCL 0.5%
-24385-0804	Active Ingredient: Purified Water USP...q.s.
-24385-0804	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
 24385-0807	Active ingredient Magnesium Sulfate USP (epsom salt)
 24385-0903	Active ingredient (in each tablet) Bisacodyl USP 5 mg
 24385-0904	Active ingredients (in each 10 mL) Dextromethorphan HBr, USP 20 mg Guaifenesin, USP 200 mg Phenylephrine HCl, USP 10 mg
@@ -2013,8 +2013,8 @@ Key	Value
 24385-0959	Active ingredient (in each caplet) - Daytime Acetaminophen 325 mg Phenylephrine HCl 5 mg
 24385-0959	Active ingredient (in each caplet) - Nighttime Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
 24385-0961	Active ingredient (in each tablet) Chlorpheniramine maleate 4 mg Phenylephrine HCl 10 mg
-24385-0962	Active ingredient (in each caplet) (Nighttime) Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 24385-0962	Active ingredient (in each caplet) (Daytime) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
+24385-0962	Active ingredient (in each caplet) (Nighttime) Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 24385-0963	Active ingredient (in each caplet) (NIGHT) Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 24385-0963	Active ingredient (in each caplet) (DAY) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 24385-0975	Active ingredient (in each lozenge) Nicotine polacrilex, 2 mg (nicotine)
@@ -2023,8 +2023,8 @@ Key	Value
 24385-0982	ACTIVE INGREDIENTS Benzocaine 6% Isopropyl alcohol 70% v/v
 24385-0984	Active ingredients (in each 5 mL = 1 teaspoon) Acetaminophen 160 mg Chlorpheniramine maleate 1 mg Dextromethorphan HBr 5 mg Phenylephrine HCl 2.5 mg
 24385-0986	Active ingredient (in each 5 mL = 1 teaspoon) Acetaminophen 160 mg Dextromethorphan HBr 5 mg
-24385-0987	Active ingredient (in each caplet) (For Pain Relief PM) Acetaminophen 500 mg Diphenhydramine HCl 25 mg
 24385-0987	Active ingredient (in each caplet) (For Pain Relief) Acetaminophen 500 mg
+24385-0987	Active ingredient (in each caplet) (For Pain Relief PM) Acetaminophen 500 mg Diphenhydramine HCl 25 mg
 24385-0988	Active ingredient (in each packet) Acetaminophen 650 mg Phenylephrine hydrochloride 10 mg
 24385-0998	Active ingredient (in each tablet) Cetirizine HCl 10 mg
 24509-0055	ACTIVE INGREDIENTS ZINC OXIDE 19.00 %, OCTINOXATE (ETHYLHEXYL METHOXYCINNAMATE) 7.50 %
@@ -2040,8 +2040,8 @@ Key	Value
 26509-0007	Active Ingredient Dimethicone 1.25 percent
 26509-0007	Active ingredient Alcohol 67 percent
 26509-0009	Active Ingredient Dimethicone 1.25 percent
-27808-0001	ACTIVE INGREDIENT(in each 5 mL) Cetirizine Hydrochloride 5 mg
 27808-0001	ACTIVE INGREDIENT Active ingredient in each 5 mL teaspoonful Cetirizine Hydrochloride 5 mg
+27808-0001	ACTIVE INGREDIENT(in each 5 mL) Cetirizine Hydrochloride 5 mg
 27808-0007	ACTIVE INGREDIENT (in each 1.25 mL) Ibuprofen 50 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 28595-0300	Active Ingredients Purpose Each tablet contains: Brompheniramine Maleate 4 mg Antihistamine Phenylephrine HCl 10 mg Nasal Decongestant
 28595-0780	Active ingredients (in each tablet) Purpose Acetaminophen 325 mg Pain Reliever Pyrilamine Maleate 25 mg Antihistamine
@@ -2119,9 +2119,9 @@ Key	Value
 36800-0083	Active ingredient (in each caplet) Ibuprofen, USP 200 mg (NSAID)* Pseudoephedrine HCl, USP 30 mg *nonsteroidal anti-inflammatory drug
 36800-0086	Active ingredient (in each tablet) Bisacodyl 5 mg
 36800-0089	Active ingredient (each gram contains) Bacitracin Zinc 500 units
+36800-0090	Active ingredients for Nighttime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 36800-0090	Active ingredients for DAYTIME (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0090	Active ingredient for Daytime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
-36800-0090	Active ingredients for Nighttime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 36800-0090	Active ingredients for NIGHTTIME (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 36800-0091	Active ingredient Menthol 0.15%
 36800-0092	Active ingredient (in each 5 mL teaspoonful) Loratadine 5 mg
@@ -2363,10 +2363,10 @@ Key	Value
 36800-0550	Active ingredient (in each softgel) Simethicone 125 mg
 36800-0552	Active ingredient (in each 5 mL) Dextromethorphan polistirex equivalent to 30 mg dextromethorphan hydrobromide, USP
 36800-0557	Active ingredient (in each 5 mL = 1 teaspoonful) Acetaminophen 160 mg
+36800-0567	Active ingredients for Daytime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
+36800-0567	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0567	Active ingredients (in each 30 mL dose cup) - Nighttime Acetaminophen 650 mg Dextromethorphan HBr 30 mg Doxylamine succinate 12.5 mg
 36800-0567	Active ingredients for Nighttime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
-36800-0567	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
-36800-0567	Active ingredients for Daytime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0571	Active ingredient (in each tablet) Fexofenadine HCl 180 mg
 36800-0578	Active ingredients (in each 10 mL) Dextromethorphan HBr, USP 20 mg Guaifenesin, USP 200 mg
 36800-0579	Active ingredient (in each rectal suppository) Acetaminophen 120 mg
@@ -2374,8 +2374,8 @@ Key	Value
 36800-0588	Active ingredients (in each 5 mL = 1 teaspoonful) Aluminum hydroxide (equiv. to dried gel, USP) 400 mg Magnesium hydroxide 400 mg Simethicone 40 mg
 36800-0590	Active ingredient (in each 5 mL) Acetaminophen 160 mg
 36800-0595	Active ingredient (in each tablet) Calcium carbonate USP 1,000mg
-36800-0597	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
 36800-0597	Active ingredients (in each 30 mL dose cup) - Nighttime Acetaminophen 650 mg Dextromethorphan HBr 20 mg Doxylamine succinate 12.5 mg Phenylephrine HCl 10 mg
+36800-0597	Active ingredients (in each 15 mL tablespoon) - Daytime Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
 36800-0602	Active ingredient Active ingredient Magnesium sulfate USP ( Heptahydrate) 100%
 36800-0603	Active ingredients (in each 15 mL tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
 36800-0604	Active ingredient (in each tablet) Ibuprofen 200 mg (NSAID)* *nonsteroidal anti-inflammatory drug
@@ -2406,10 +2406,10 @@ Key	Value
 36800-0703	Active ingredients (in each 15 mL = 1 tablespoon) Acetaminophen 500 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 36800-0720	Active ingredient (in each capsule) Diphenhydramine HCl 25 mg
 36800-0724	ACTIVE INGREDIENTS (IN EACH TABLET) Loratadine, USP 10 mg Pseudoephedrine sulfate, USP 240 mg
-36800-0733	Active ingredients for Daytime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0733	Active ingredients - Daytime (in each 15 mL tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0733	Active ingredients - Nighttime (in each 30 mL dose cup) Acetaminophen 650 mg Dextromethorphan HBr 30 mg Doxylamine succinate 12.5 mg
 36800-0733	Active ingredients for Nighttime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
+36800-0733	Active ingredients for Daytime (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0734	Active ingredient (in each lozenge) Nicotine polacrilex, 2 mg (nicotine)
 36800-0737	Active ingredients Miconazole nitrate 1200 mg (in vaginal insert) Miconazole nitrate 2% (external cream)
 36800-0742	Active ingredient (in each capsule) Naproxen sodium 220 mg (naproxen 200 mg) (NSAID)* *nonsteroidal anti-inflammatory drug
@@ -2437,8 +2437,8 @@ Key	Value
 36800-0872	Active ingredients (in each 30 mL dose cup) Acetaminophen 650 mg Dextromethorphan HBr 30 mg Doxylamine succinate 12.5 mg
 36800-0873	Active ingredient (in each lozenge) Nicotine polacrilex, 4 mg (nicotine)
 36800-0882	Active ingredient (in each 0.3 mL) Simethicone 20 mg
-36800-0886	Active ingredient (in each caplet) - Nighttime Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
 36800-0886	Active ingredient (in each caplet) - Daytime Acetaminophen 325 mg Phenylephrine HCl 5 mg
+36800-0886	Active ingredient (in each caplet) - Nighttime Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
 36800-0896	Active ingredients Polyethylene glycol 400 0.4% Propylene glycol 0.3%
 36800-0897	Active ingredient (in each 5 mL = 1 teaspoonful) Ibuprofen 100 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 36800-0901	Active ingredients (in each 15 mL = 1 tablespoon) Acetaminophen 500 mg Dextromethorphan HBr 15 mg
@@ -2452,11 +2452,11 @@ Key	Value
 36800-0917	Active ingredient (in each caplet) Acetaminophen 500 mg
 36800-0922	Active ingredients (in each caplet) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
 36800-0923	Active ingredient Ketotifen (0.025%) (equivalent to ketotifen fumarate 0.035%)
-36800-0926	Active ingredient (in each 15 mL tablespoon) (for Daytime) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0926	Active ingredient (in each 15 mL tablespoon) (for Nighttime) Acetaminophen 500 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
+36800-0926	Active ingredient (in each 15 mL tablespoon) (for Daytime) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 36800-0935	Active ingredient (in each caplet) Acetaminophen 325 mg Chlorpheniramine maleate 2 mg Phenylephrine HCl 5 mg
-36800-0936	Active ingredients (in each caplet) – SINUS RELIEF Night Acetaminophen 325 mg Diphenhydramine HCl 25 mg Phenylephrine HCl 5 mg
 36800-0936	Active ingredients (in each caplet) – SINUS RELIEF Day Acetaminophen 325 mg Guaifenesin 200 mg Phenylephrine HCl 5 mg
+36800-0936	Active ingredients (in each caplet) – SINUS RELIEF Night Acetaminophen 325 mg Diphenhydramine HCl 25 mg Phenylephrine HCl 5 mg
 36800-0941	Active ingredients Eucalyptol 0.092% Menthol 0.042% Methyl salicylate 0.060% Thymol 0.064%
 36800-0942	Active ingredients Benzalkonium chloride 0.13%
 36800-0944	Active ingredient Glycerin 14.4% Phenylephrine HCl 0.25% Pramoxine HCl 1% White petrolatum 15%
@@ -2556,8 +2556,8 @@ Key	Value
 37000-0102	Active ingredient Pyrithione zinc 1%
 37000-0103	Active ingredient Aluminum zirconium tetrachlorohydrex Gly 19% (anhydrous)
 37000-0104	Active ingredient Aluminum zirconium trichlorohydrex Gly 20% (anhydrous)
-37000-0106	Active ingredient Pyrithione zinc 0.5%
 37000-0106	Active ingredient Pyrithione zinc 1%
+37000-0106	Active ingredient Pyrithione zinc 0.5%
 37000-0107	Active ingredient Aluminum zirconium octachlorohydrex Gly 16% anhydrous
 37000-0108	Active ingredient Pyrithione zinc 0.5%
 37000-0108	Active ingredient Pyrithione zinc 1%
@@ -2568,8 +2568,8 @@ Key	Value
 37000-0113	Active ingredient Aluminum zirconium octachlorohydrex Gly 16% (anhydrous)
 37000-0114	Active ingredient Pyrithione zinc 1%
 37000-0114	Active ingredient Pyrithione zinc 0.5%
-37000-0115	Active ingredient Pyrithione zinc 0.5%
 37000-0115	Active ingredient Pyrithione zinc 1%
+37000-0115	Active ingredient Pyrithione zinc 0.5%
 37000-0116	Active ingredient Aluminum zirconium octachlorohydrex Gly 16% (anhydrous)
 37000-0117	Active ingredient Aluminum zirconium tetrachlorohydrex Gly 19% (anhydrous)
 37000-0118	Active ingredient Aluminum zirconium octachlorohydrex Gly 16% (anhydrous)
@@ -2833,8 +2833,8 @@ Key	Value
 37000-0696	Active ingredient Sodium fluoride 0.243%
 37000-0697	Active ingredient Stannous fluoride 0.454% (0.16% w/v fluoride ion)
 37000-0698	Active ingredient Sodium fluoride 0.243%
-37000-0699	Active ingredients (in each 30 mL dose cup) Purpose Acetaminophen 650 mg Pain reliever/fever reducer Chlorpheniramine maleate 4 mg Antihistamine Dextromethorphan HBr 30 mg Cough suppressant
 37000-0699	Active ingredients (in each 15 ml TBSP) Purpose Acetaminophen 325 mg Pain reliever/fever reducer Chlorpheniramine maleate 2 mg Antihistamine Dextromethorphan HBr 15 mg Cough suppressant
+37000-0699	Active ingredients (in each 30 mL dose cup) Purpose Acetaminophen 650 mg Pain reliever/fever reducer Chlorpheniramine maleate 4 mg Antihistamine Dextromethorphan HBr 30 mg Cough suppressant
 37000-0700	Active ingredient Salicylic Acid 2%
 37000-0701	Active ingredient Sulfur 10%
 37000-0703	Active ingredients Purpose Avobenzone 3.0% Sunscreen Homosalate 5.0% Sunscreen Octisalate 5.0% Sunscreen Octocrylene 2.6% Sunscreen
@@ -3301,28 +3301,28 @@ Key	Value
 40046-0069	Active Ingredients Purpose Octinoxate 7.40% Sunscreen Octisalate 4.00% Sunscreen Zinc Oxide 3.30% Sunscreen Oxybenzone 2.50% Sunscreen Titanium Dioxide 1.10% Sunscreen
 40046-0071	Active Ingredients Purpose Octinoxate 2.40% Sunscreen Titanium Dioxide 2.30% Sunscreen
 41167-0031	Active ingredient Hydrocortisone 1%
-41167-0035	Active Ingredient : Hydrocortisone 1%
 41167-0035	Active Ingredient: Hydrocortisone 1%
+41167-0035	Active Ingredient : Hydrocortisone 1%
 41167-0036	Active Ingredient: Hydrocortisone 1%
 41167-0036	Active Ingredient : Hydrocortisone 1%
-41167-0039	Active Ingredient: Hydrocortisone 1%
 41167-0039	Active Ingredient : Hydrocortisone 1%
+41167-0039	Active Ingredient: Hydrocortisone 1%
 41167-0053	Active Ingredient Benzocaine 20%
 41167-0066	Active ingredient (in each 30 mL dose) Diphenhydramine HCI 50 mg
 41167-0085	Active ingredients Camphor 4% Menthol 16%
-41167-0087	Active ingredient Menthol 10% Methyl salicylate 30%
 41167-0087	Active ingredient Menthol 7.6% Methyl salicylate 29%
-41167-0088	Active ingredient Menthol 10% Methyl salicylate 30%
+41167-0087	Active ingredient Menthol 10% Methyl salicylate 30%
 41167-0088	Active ingredient Menthol 7.6% Methyl salicylate 29%
-41167-0089	Active ingredient Menthol 7.6% Methyl salicylate 29%
+41167-0088	Active ingredient Menthol 10% Methyl salicylate 30%
 41167-0089	Active ingredient Menthol 10% Methyl salicylate 30%
+41167-0089	Active ingredient Menthol 7.6% Methyl salicylate 29%
 41167-0093	Active ingredient Menthol 7.5%
 41167-0095	Active Ingredient Menthol 16%
-41167-0105	Active Ingredient : Hydrocortisone 1%
 41167-0105	Active Ingredient: Hydrocortisone 1%
+41167-0105	Active Ingredient : Hydrocortisone 1%
 41167-0172	Active ingredient Menthol (to deliver 1% concentration)
-41167-0339	Active Ingredient: Hydrocortisone 1%
 41167-0339	Active Ingredient : Hydrocortisone 1%
+41167-0339	Active Ingredient: Hydrocortisone 1%
 41167-0574	Active ingredient Menthol 10%
 42195-0210	Active Ingredients (per tablet) Purpose Phenylephrine Hydrochloride 10 mg Nasal Decongestant Pyrilamine Maleate 25 mg Antihistamine
 42221-0001	Active ingredients Avobenzone (2%) Octinoxate (6%)
@@ -3589,8 +3589,8 @@ Key	Value
 44911-0009	ACTIVE INGREDIENTS: Filix mas 3X, Granatum 3X, Juglans regia 3X, Rhamnus purshiana 3X, Absinthium 15X, Aesculus hippocastanum 15X, Arsenicum album 15X, Baptisia tinctoria 15X, Cina 15X, Cuprum metallicum 15X, Ipecacuanha 15X, Lycopodium clavatum 15X, Mercurius vivus 15X, Nux vomica 15X, Pulsatilla 15X, Ratanhia 15X, Rhus toxicodendron 15X, Sabadilla 15X, Santoninum 15X, Silicea 15X, Spigelia anthelmia 15X, Teucrium marum 15X.
 44911-0013	ACTIVE INGREDIENTS: Quercetin 6X, 12X, 30X, 12C, 30C.
 44911-0023	ACTIVE INGREDIENTS Apis Mellifica 30X, Arsenicum Album 30X, Belladonna 30X, Chamomilla 30X, Echinacea 30X, Lachesis Mutus 30X, Mercurius Solubilis 30X, Pulsatilla 30X, Pyrogenium 30X, Rhus Toxicodendron 30X, Silicea 30X.
-44911-0024	Active Ingredients ACTIVE INGREDIENTS: Echinacea 3X, Tabebuia impetiginosa 3X, Abies nigra 12X, Lycopodium clavatum 12X, Nux vomica 12X, Phosphorus 12X, Pulsatilla 12X, Sepia 12X, Skatolum 15X, Candida albicans 30X.
 44911-0024	ACTIVE INGREDIENTS Echinacea 3X, Tabebuia Impetiginosa 3X, Abies Nigra 12X, Lycopodium Clavatum 12X, Nux Vomica 12X, Phosphorus 12X, Pulsatilla 12X, Sepia 12X, Skatolum 15X, Candida Albicans 30X.
+44911-0024	Active Ingredients ACTIVE INGREDIENTS: Echinacea 3X, Tabebuia impetiginosa 3X, Abies nigra 12X, Lycopodium clavatum 12X, Nux vomica 12X, Phosphorus 12X, Pulsatilla 12X, Sepia 12X, Skatolum 15X, Candida albicans 30X.
 44911-0025	ACTIVE INGREDIENTS: Acetylcholine chloride 6X, 12X, 30X, 12C, 30C.
 44911-0029	ACTIVE INGREDIENTS: Gentiana lutea 3X, Sambucus nigra 3X, Arsenicum album 12X, Kali bichromicum 12X, Lycopodium clavatum 12X, Phosphorus 12X, Pulsatilla 12X, Bismuthum carbonicum 15X.
 44911-0031	ACTIVE INGREDIENTS: Allium sativum 3X, Berberis vulgaris 3X, Fucus vesiculosus 3X, Phytolacca decandra 3X, Argentum metallicum 12X, Aurum metallicum 12X, Calcarea fluorica 12X, Calcarea phosphorica 12X, Iodium 12X, Mercurius solubilis 12X, Niccolum metallicum 12X, Platinum metallicum 12X, Silicea 12X, Zincum metallicum 12X.
@@ -4081,8 +4081,8 @@ Key	Value
 49348-0742	Active ingredient (in each 15 mL tablespoon) Acetaminophen 500 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 49348-0743	Active ingredient (in each 15 mL tablespoon) Acetaminophen 500 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
 49348-0744	Active ingredient (in each 5 mL = 1 teaspoonful) Aluminum hydroxide (equiv. to dried gel, USP) 400 mg Magnesium hydroxide 400 mg Simethicone 40 mg
-49348-0752	Active Ingredient (in each capsule) Loperamide HCI 2 mg
 49348-0752	Drug Facts
+49348-0752	Active Ingredient (in each capsule) Loperamide HCI 2 mg
 49348-0753	Active ingredient (in each 15 ml tablespoon) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 49348-0756	Active ingredient (in each tablet) Aspirin 81 mg (NSAID)* *nonsteroidal anti-inflammatory drug
 49348-0757	Active ingredient (in each tablet) Aspirin 81 mg (NSAID)* *nonsteroidal anti-inflammatory drug
@@ -4292,8 +4292,8 @@ Key	Value
 50484-0305	ACTIVE INGREDIENTS Benzethonium chloride 0.13%
 50484-0315	ACTIVE INGREDIENTS Petrolatum 98.789%
 50484-0316	ACTIVE INGREDIENTS Petrolatum 98.789%
-50484-0343	ACTIVE INGREDIENTS Petrolatum 98.789%
 50484-0343	ACTIVE INGREDIENTS Benzethonium chloride 0.13%
+50484-0343	ACTIVE INGREDIENTS Petrolatum 98.789%
 50813-0002	ACTIVE INGREDIENTS: Apis Mellifica 30X, Arsenicum Album 30X, Belladonna 30X, Chamomilla 30X, Echinacea 30X, Lachesis Mutus 30X, Mercurius Solubilis 30X, Pulsatilla 30X, Pyrogenium 30X, Rhus Toxicodendron 30X, Silicea 30X.
 50813-0003	ACTIVE INGREDIENTS: Echinacea 3X, Hydrastis Canadensis 3X, Lomatium 3X, Aconitum Napellus 12X, Arsenicum Album 12X, Belladonna 12X, Eupatorium Perfoliatum 12X, Gelsemium Sempervirens 12X, Lachesis Mutus 12X, Rhus Toxicodendron 12X Pyrogenium 30X.
 50813-0004	ACTIVE INGREDIENTS: Candida Albicans 6X, 12X, 30X, 60X 100X, 200X, 500X
@@ -4334,11 +4334,11 @@ Key	Value
 50991-0119	Drug Facts Active ingredients (in each 5 mL teaspoonful) Chlorcyclizine Hydrochloride 9.375 mg Codeine Phosphate 10 mg (WARNING: May be habit forming) Purpose Antihistamine Antitussive
 50991-0212	Active ingredients (in each tablet) Guaifenesin 380mg Pseudoephedrine HCl 60 mg
 50991-0214	Active ingredients Dextromethorphan HBr 20mg Guaifenesin 380mg Pseudoephedrine HCl 60mg
-50991-0216	Active ingredients (in each tablet) Doxylamine Succinate 7.5mg
 50991-0216	Active ingredients (in each tablet) Phenylephrine HCl 10 mg
+50991-0216	Active ingredients (in each tablet) Doxylamine Succinate 7.5mg
 50991-0220	Active ingredients (in each 5 mL teaspoonful) Dextromethorphan HBr 10 mg Phenylephrine HCI 5 mg Thonzylamine HCl 25 mg
-50991-0222	Active ingredient 6.25 mg Thonzylamine HCl per 1 mL
 50991-0222	Active ingredients 6.25 mg Chlophedianol HCl per 1 mL
+50991-0222	Active ingredient 6.25 mg Thonzylamine HCl per 1 mL
 50991-0320	Drug Facts Active ingredients (in each 5 mL teaspoonful) Dextromethorphan Hydrobromide, USP...............................15 mg Phenylephrine Hydrochloride, USP........................................5 mg Chlorpheniramine Maleate, USP............................................2 mg
 50991-0323	Active Ingredients (each tablet contains) Folic Acid Cyanocobalamin (Vitamin B-12)
 50991-0510	Active Ingredients Acetaminophen 500 mg Dextromethorphan HBr 20 mg Guaifenesin 200 mg Pseudoephedrine HCl 60 mg
@@ -4468,21 +4468,21 @@ Key	Value
 52124-0008	Active Ingredient Active Ingredient: Purpose: Benzocaine, 6% w/v SD alcohol, 60% w/v
 52124-0009	Active Ingredient (in each tablet) Ibuprofen USP (NSAID*) 200mg *nonsteroidal anti-inflammatory drug
 52124-0113	Active Ingredient: Ethyl Alcohol 62 percent
-52124-0113	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
-52124-0113	Active ingredient (in each tablet) Purpose Ibuprofen USP (NSAID*) 200mg . . . . . . . . . . . .Pain reliever/fever reducer *nonsteroidal anti-inflammatory drug
-52124-0113	Genuine Hand Sanitizer Instant Gel Antiseptic Handwash with Vitamin E and Aloe Kills 99.9 percent of germs Without Water Active Ingredient: Ethyl Alcohol 62 percent Net Wt 0.9g (1/32 oz) Manufactured in China For Genuine First Aid.
-52124-0113	Active Ingredient: Purified Water USP...q.s.
-52124-0113	Active Ingredient (in each tablet) Purpose Aspirin (NSAID*) 325 mg............................... Pain Reliever / fever reducer *nonsteroidal anti-inflammatory drug
-52124-0113	Active Ingredient: Purpose: Benzocaine, 6% w/v.................. Topical Anesthetic SD alcohol, 60% w/v.................. Antiseptic
-52124-0113	Active Ingredient (in each tablet) Purpose Acetaminophen 325 mg ............. Analgesic/antipyretic
-52124-0113	ACTIVE INGREDIENTS: Benzalkonium Chloride 0.13% Lidocaine HCL 0.5%
 52124-0113	Active Ingredient: Purpose Isopropyl Alcohol, 70% v/v............... Antiseptic
+52124-0113	ACTIVE INGREDIENTS: Benzalkonium Chloride 0.13% Lidocaine HCL 0.5%
+52124-0113	Active Ingredient (in each tablet) Purpose Aspirin (NSAID*) 325 mg............................... Pain Reliever / fever reducer *nonsteroidal anti-inflammatory drug
+52124-0113	Active Ingredient: Purified Water USP...q.s.
 52124-0113	Active Ingredient: Purpose Benzalkonium Chloride 0.40%.......... First Aid Antiseptic
+52124-0113	Active ingredient (in each tablet) Purpose Ibuprofen USP (NSAID*) 200mg . . . . . . . . . . . .Pain reliever/fever reducer *nonsteroidal anti-inflammatory drug
+52124-0113	Active Ingredient (in each tablet) Purpose Acetaminophen 325 mg ............. Analgesic/antipyretic
+52124-0113	Active Ingredient: Purpose: Benzocaine, 6% w/v.................. Topical Anesthetic SD alcohol, 60% w/v.................. Antiseptic
+52124-0113	Genuine Hand Sanitizer Instant Gel Antiseptic Handwash with Vitamin E and Aloe Kills 99.9 percent of germs Without Water Active Ingredient: Ethyl Alcohol 62 percent Net Wt 0.9g (1/32 oz) Manufactured in China For Genuine First Aid.
+52124-0113	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
 52124-0115	Active Ingredient: Purpose Benzalkonium Chloride 0.40%... First Aid Antiseptic
-52124-0115	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
 52124-0115	Active Ingredient: Ethyl Alcohol 62 %
-52124-0116	Active Ingredient: Purpose Benzalkonium Chloride 0.40%... First Aid Antiseptic
+52124-0115	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
 52124-0116	Active Ingredients: Benzalkonium Chloride 0.13% Lidocaine HCL 0.5%
+52124-0116	Active Ingredient: Purpose Benzalkonium Chloride 0.40%... First Aid Antiseptic
 52124-0116	Active Ingredient: .........Bacitracin Zinc 400 units Neomycin Sulfate 5mg ( equivalent to 3.5 mg Neomycin base) Polymyxin B Sulfate 5000 units
 52380-0005	70% Isopropyl Alcohol
 52380-0013	Active Ingredient Hydrogen Peroxide USP 3% Purpose Antiseptic
@@ -4698,14 +4698,14 @@ Key	Value
 54838-0145	Active Ingredient: Acetaminophen 80 mg (in each 0.8 mL)
 54838-0154	Active Ingredient: Diphenhydramine hydrochloride 12.5 mg (in each 5 mL(teaspoonful)(TSP))
 54838-0209	Active Ingredient: Guaifenesin 100 mg (in each 5 mL (teaspoon)(TSP)) Active Ingredient: Dextromethorphan Hydrobromide 10 mg (in each 5 mL (teaspoon)(TSP))
-54838-0552	Drug Facts Active ingredient (in each 5 mL (teaspoonful(tsp)): Cetirizine HCl 5 mg Purpose: Antihistamine
 54838-0552	Drug Facts Active ingredient (in each 5 mL (teaspoonful)): Cetirizine HCl 5 mg Purpose: Antihistamine
-54838-0554	Active Ingredient: Loratadine 5 mg (in each 5 mL(teaspoonful(tsp)))
+54838-0552	Drug Facts Active ingredient (in each 5 mL (teaspoonful(tsp)): Cetirizine HCl 5 mg Purpose: Antihistamine
 54838-0554	Active Ingredient: Loratadine 5 mg (in each 5 mL(teaspoonful)(TSP))
+54838-0554	Active Ingredient: Loratadine 5 mg (in each 5 mL(teaspoonful(tsp)))
 54838-0558	Active Ingredient: Loratadine 5 mg (in each 5 mL(teaspoonful)(TSP))
 54838-0558	Active Ingredient: Loratadine 5 mg (in each 5 mL(teaspoonful(tsp)))
-54838-0559	Drug Facts Active ingredient (in each 5 mL (teaspoonful(tsp)): Cetirizine HCl 5 mg Purpose: Antihistamine
 54838-0559	Drug Facts Active ingredient (in each 5 mL (teaspoonful)): Cetirizine HCl 5 mg Purpose: Antihistamine
+54838-0559	Drug Facts Active ingredient (in each 5 mL (teaspoonful(tsp)): Cetirizine HCl 5 mg Purpose: Antihistamine
 54859-0110	Active Ingredients (in each caplet) Purpose Acetaminophen ............................. 500 mg .......... Analgesic Phenyltoloxamine Citrate ............... 30 mg ............ Hay fever relief
 54859-0120	Active Ingredients Purpose Pramozine HCl .... 1% ............ Anesthetic/Analgesic Zinc Oxide .........0.4% ............ Skin Protectant Calamine ...........0.4% ............ Skin Protectant
 54859-0502	Active Ingredients(in each 5 ml tsp.) Purpose Dextromethorphan HBr........15mg..................................................Cough Suppressant Guaifenesin........................200mg................................................Expectorant Pseudoephedrine HCl..........30mg..................................................Nasal Decongestant
@@ -4875,8 +4875,8 @@ Key	Value
 58232-0225	Active Ingredients Purpose Avobenzone (2.5%) Sunscreen Homosalate (8%) Sunscreen Octocrylene (2.5%) Sunscreen
 58232-0406	Active ingredient Hydrocortisone 1% (as hydrocortisone acetate)
 58232-0517	Active ingredients Purpose Avobenzone 3% Sunscreen Homosalate 10% Sunscreen Octisalate 5% Sunscreen Octocrylene 2.4% Sunscreen Oxybenzone 5% Sunscreen
-58232-0527	Active Ingredients Colloidal oatmeal (100% )
 58232-0527	Active Ingredients Colloidal oatmeal (1%)
+58232-0527	Active Ingredients Colloidal oatmeal (100% )
 58232-0603	Active ingredients Avobenzone (3%), Homosalate (12%), Octisalate (5%), Octocrylene (1.7%), Oxybenzone (3%)
 58232-0637	Active ingredients Avobenzone (3%), Homosalate (8%), Octisalate (4%), Octocrylene (8%), Oxybenzone (5%)
 58232-0641	Active ingredients Purpose Homosalate (5%) Sunscreen Octinoxate (7.5%) Sunscreen Octisalate (5%) Sunscreen Oxybenzone (2%) Sunscreen
@@ -4912,8 +4912,8 @@ Key	Value
 58605-0401	Active Ingredients (in each immediate-release tablet) Purpose Dextromethorphan HBr 20 mg Antitussive Guaifenesin 400 mg Expectorant
 58605-0422	Active Ingredients (in each immediate-release tablet) Purpose Guaifenesin 400 mg Expectorant Phenylephrine HCl 10 mg Nasal Decongestant
 58605-0423	Active Ingredients (in each immediate-release tablet) Purpose Dextromethorphan HBr 20 mg Antitussive Guaifenesin 400 mg Expectorant Phenylephrine HCl 10 mg Nasal Decongestant
-58657-0500	Active ingredient (in each teaspoonful (5 mL)) Guaifenesin USP 100 mg
 58657-0500	Active ingredient (in each teaspoonful (5 mL)) Codeine Phosphate USP 10 mg
+58657-0500	Active ingredient (in each teaspoonful (5 mL)) Guaifenesin USP 100 mg
 58809-0350	Active ingredients (in each 15 mL (TBSP)) Purpose Chlophedianol HCl 25 mg Cough Suppressant Pyrilamine Maleate 50 mg Antihistamine
 58809-0407	Drug Facts Active ingredients Chlophedianol Hydrochoride 12.5 mg Guaifenesin 200 mg Pseudoephedrine Hydrochloride 30 mg
 58809-0501	Active ingredients (in each mL) Triprolidine HCl 0.625 mg
@@ -5249,8 +5249,8 @@ Key	Value
 62011-0112	ACTIVE INGREDIENT (in each fluid ounce) Permethrin 280 mg (1%)
 62011-0114	Active Ingredients Calamine 8% and Zinc Oxide 8%
 62011-0117	Active ingredient Iodine 2%
-62011-0117	Active ingredient Sodium Iodide 2.4%
 62011-0117	Active ingredient Alcohol 47%
+62011-0117	Active ingredient Sodium Iodide 2.4%
 62011-0118	Active Ingredient Povidone-Iodine 10% (Equivalent to 1% titrable iodine)
 62011-0119	Active ingredients Piperonyl butoxide 4% Pyrethrum extract (equivalent to 0.33% pyrethrins)
 62011-0120	Active ingredients (in each tablet) Loratadine 5 mg Pseudoephedrine sulfate 120 mg
@@ -5472,8 +5472,8 @@ Key	Value
 63824-0284	Active ingredients (in each 5 mL) Purposes Guaifenesin 100 mg Expectorant Phenylephrine HCl 2.5 mg Nasal decongestant
 63824-0285	Active ingredient (in each 5 mL) Guaifenesin 100 mg
 63824-0286	Active ingredients (in each 5 mL) Purposes Dextromethorphan HBr 5 mg Cough suppressant Guaifenesin 100 mg Expectorant
-63824-0287	Active ingredients (in each 10 mL) Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 12.5 mg Antihistamine/cough suppressant Phenylephrine HCl 5 mg Nasal decongestant
 63824-0287	Active ingredients (in each 5 mL) Purposes Dextromethorphan HBr 5 mg Cough suppressant Guaifenesin 100 mg Expectorant Phenylephrine HCl 2.5 mg Nasal decongestant
+63824-0287	Active ingredients (in each 10 mL) Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 12.5 mg Antihistamine/cough suppressant Phenylephrine HCl 5 mg Nasal decongestant
 63824-0301	Active ingredients Purpose Resorcinol 2% Acne medication Sulfur 8% Acne medication
 63824-0302	Active ingredient Benzoyl peroxide 10%
 63824-0303	Active ingredient Benzoyl peroxide 10%
@@ -5515,9 +5515,9 @@ Key	Value
 63824-0351	Active ingredient Salicylic acid 2%
 63824-0352	Active Ingredient Salicylic Acid 2%
 63824-0353	Active Ingredient Salicylic acid 2%
-63824-0354	Active ingredient Salicylic acid 2.0%
 63824-0354	Active Ingredient Benzoyl Peroxide 10%
 63824-0354	Active Ingredient Salicylic Acid 0.5%
+63824-0354	Active ingredient Salicylic acid 2.0%
 63824-0360	Active ingredient Salicylic Acid 2%
 63824-0361	Active ingredients Salicylic Acid 2%
 63824-0362	Active ingredient Salicylic acid 2%
@@ -5535,9 +5535,9 @@ Key	Value
 63824-0411	Active ingredient Salicylic acid 2%
 63824-0412	Active ingredient Salicylic acid 2%
 63824-0413	Active ingredient Salicylic acid 2%
-63824-0414	Active Ingredient Benzoyl peroxide 10%
 63824-0414	Active Ingredient Salicylic acid 0.5%
 63824-0414	Active Ingredient Salicylic acid 2%
+63824-0414	Active Ingredient Benzoyl peroxide 10%
 63824-0415	Active ingredient Salicylic acid 2%
 63824-0416	Active ingredient Salicylic acid 2%
 63824-0417	Active ingredient Salicylic acid 2%
@@ -5577,10 +5577,10 @@ Key	Value
 63824-0526	Active ingredients (in each 20 mL) Purposes Mucinex FAST-MAX NIGHT TIME Cold & Flu Acetaminophen 650 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine/cough suppressant Phenylephrine HCl 10 mg Nasal decongestant
 63824-0528	Active ingredients (in each 20 mL) Mucinex FAST-MAX Day Time Severe Congestion & Cough Purposes Dextromethorphan HBr 20 mg Cough suppressant Guaifenesin 400 mg Expectorant Phenylephrine HCl 10 mg Nasal decongestant Active ingredients (in each 20 mL) Purposes Mucinex FAST-MAX Night Time Cold & Flu Acetaminophen 650 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine/cough suppressant Phenylephrine HCl 10 mg Nasal decongestant
 63824-0550	Active ingredients (in each caplet) Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine Phenylephrine HCl 5 mg Nasal decongestant
-63824-0551	Active ingredients (in each caplet) Purposes Mucinex FAST-MAX DAY TIME Severe Cold Acetaminophen 325 mg Pain reliever/fever reducer Dextromethorphan HBr 10 mg Cough suppressant Guaifenesin 200 mg Expectorant Phenylephrine HCl 5 mg Nasal decongestant
 63824-0551	Active ingredients (in each caplet) Purposes Mucinex FAST-MAX NIGHT TIME Cold & Flu Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine Phenylephrine HCl 5 mg Nasal decongestant
-63824-0555	Active ingredients (in each caplet) Mucinex FAST-MAX NIGHT TIME Cold & Flu Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine Phenylephrine HCl 5 mg Nasal decongestant
+63824-0551	Active ingredients (in each caplet) Purposes Mucinex FAST-MAX DAY TIME Severe Cold Acetaminophen 325 mg Pain reliever/fever reducer Dextromethorphan HBr 10 mg Cough suppressant Guaifenesin 200 mg Expectorant Phenylephrine HCl 5 mg Nasal decongestant
 63824-0555	Active ingredients (in each caplet) Mucinex FAST-MAX DAY TIME Severe Congestion & Cough Purposes Dextromethorphan HBr 10 mg Cough suppressant Guaifenesin 200 mg Expectorant Phenylephrine HCl 5 mg Nasal decongestant
+63824-0555	Active ingredients (in each caplet) Mucinex FAST-MAX NIGHT TIME Cold & Flu Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 25 mg Antihistamine Phenylephrine HCl 5 mg Nasal decongestant
 63824-0600	Active ingredients (in each 10 mL) Purposes Acetaminophen 325 mg Pain reliever/fever reducer Diphenhydramine HCl 12.5 mg Antihistamine/cough suppressant Phenylephrine HCl 5 mg Nasal decongestant
 63824-0710	Active ingredients (in each lozenge) Purpose Benzocaine 15 mg Oral pain reliever Menthol 3.6 mg Oral pain reliever
 63824-0711	Active ingredients (in each lozenge) Purpose Benzocaine 15 mg Oral pain reliever Menthol 3.6 mg Oral pain reliever
@@ -5617,8 +5617,8 @@ Key	Value
 63824-0926	Active ingredient (in each tablet) Fexofenadine HCl USP, 180 mg
 63868-0002	Active ingredient (in each dose) Polyethylene Glycol 3350, 17g (cap filled to the top)
 63868-0008	Active ingredient (in each capsule) Lansoprazole 15 mg
-63868-0011	Active ingredients in Daytime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 63868-0011	Active ingredients in Nighttime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 15 mg Doxylamine succinate 6.25 mg
+63868-0011	Active ingredients in Daytime (in each softgel) Acetaminophen 325 mg Dextromethorphan HBr 10 mg Phenylephrine HCl 5 mg
 63868-0012	Active Ingredient Menthol 5.0%
 63868-0013	Active ingredient Menthol 2.5%
 63868-0014	Active ingredient (in each softgel) Diphenhydramine HCl 25 mg
@@ -5933,8 +5933,8 @@ Key	Value
 67510-0378	Active Ingredients Octyl Methoxycinnamate 6% Titanium Dioxide 8.5%
 67510-0487	Active Ingredient Ethyl Alcohol 62%
 67510-0527	Active ingredients (in each 5mL tsp) Dextromethorphan HBr, USP 10mg Guaifenesin, USP 100mg
-67618-0100	Active ingredient (in each capsule): Docusate sodium 50 mg
 67618-0100	Active ingredient (in each capsule): Docusate sodium 100 mg
+67618-0100	Active ingredient (in each capsule): Docusate sodium 50 mg
 67618-0101	Active ingredient (in each capsule): Docusate sodium 100 mg
 67618-0101	Active ingredient (in each capsule): Docusate sodium 50 mg
 67618-0106	Active ingredients (in each tablet) Docusate sodium 50 mg Sennosides 8.6 mg
