@@ -5,7 +5,7 @@
   <p ng-repeat="recall in drug.recall_list">
     {{recall.report_date | humanizeFdaDate}}
     <span class="text-{{UTIL.classifyRecall(recall.classification)}}">({{recall.classification}}): </span>
-    <a href="{{url_fda_enforcement_report(recall)}}">{{recall.reason_for_recall}}</a>
+    <a href="http://www.accessdata.fda.gov/scripts/enforcement/enforce_rpt-Product-Tabs.cfm?action=select&recall_number={{recall.recall_number}}&w={{recall.report_date | dmyDate }}&lang=eng">{{recall.reason_for_recall}}</a>
     (qty.: {{recall.product_quantity}})
   </p>
 
