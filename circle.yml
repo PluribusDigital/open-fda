@@ -21,6 +21,10 @@ dependencies:
 database:
   post:
     - bundle exec rake db:seed
+      environment:
+        RAILS_ENV=test
+        RACK_ENV=test
+
 
 test:
   override:
