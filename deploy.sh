@@ -1,6 +1,6 @@
 #! /bin/bash
 
-$SHA1=$1
+SHA1=$1
 POSTGRES_PASSWORD=$2
 DOCKERRUN_FILE=Dockerrun.aws.json
 
