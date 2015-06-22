@@ -8,7 +8,7 @@ dependencies:
   pre:
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
-    - python setup.py develop
+    - sudo apt-get install nodejs; sudo apt-get install nodejs-legacy
     
   post:
     - bundle exec rake bower:install
