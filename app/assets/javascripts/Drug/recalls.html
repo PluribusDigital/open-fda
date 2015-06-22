@@ -3,8 +3,12 @@
   <p ng-show="drug.recall_list.length==0"><em>None Found</em></p>
 
   <p ng-repeat="recall in drug.recall_list">
-    <em>{{recall.report_date}} ({{recall.classification}}): </em>
-    {{recall.reason_for_recall}}
+    {{UTIL.parseDate(recall.report_date) | date:'yyyy-MM-dd'}}
+    <span class="text-{{UTIL.classifyRecall(recall.classification)}}">({{recall.classification}}): </span>
+    <a href="{{url_fda_enforcement_report(recall)}}">{{recall.reason_for_recall}}</a>
+    (qty.: {{recall.product_quantity}})
+
+
   </p>
 
 </panel>

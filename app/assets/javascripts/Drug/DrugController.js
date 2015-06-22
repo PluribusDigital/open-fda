@@ -55,4 +55,14 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
     $scope.getDetail();
   }
 
+  // link to FDA's recall details
+  $scope.url_fda_enforcement_report = function( recall ) {
+    var id = recall.recall_number,
+        report_date = $scope.UTIL.parseDate(recall.report_date);
+
+    return "http://www.accessdata.fda.gov/scripts/enforcement/enforce_rpt-Product-Tabs.cfm?action=select&recall_number="+id+"&w="+report_date+"&lang=eng"
+
+  }
+
+
 }]);
