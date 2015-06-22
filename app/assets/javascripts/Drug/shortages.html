@@ -1,0 +1,14 @@
+<panel panel-title="Shortages/Discontinuations" 
+  panel-class='warning' expand="true" ng-show="drug.shortages.length>0">
+
+  <p ng-show="drug.shortages.length==0"><em>None Found</em></p>
+
+  <ul>
+    <li ng-repeat="shortage in drug.shortages">
+      <a href="{{shortage.link}}">
+        <strong>{{shortage.status}}</strong>: {{shortage.name}}
+      </a>
+    </li>
+  </ul>
+
+</panel>

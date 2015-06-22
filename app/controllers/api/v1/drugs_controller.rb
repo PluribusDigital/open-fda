@@ -27,6 +27,7 @@ module API::V1
         .delete_if{|e|e["brand_name"][0]==brand_name} : []
       drug["recall_list"] = FdaEnforcementService.search_product_ndc params[:id]
       drug["medication_guide"] = FdaMedicationGuideService.find(brand_name) || {}
+      drug["shortages"] = FdaShortageService.search_by_generic_name(generic_name).map{|e|e.data} || []
       render json: drug
     end 
 

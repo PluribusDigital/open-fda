@@ -13,10 +13,9 @@ class FdaMedicationGuideService < ServiceCache
 
   def self.scrape_data 
     agent = Mechanize.new
-    login_page = agent.get page_url
-    items = login_page.search("td ul li")
-    # items[0].children
-    obj = items.map{|i| {
+    target_page = agent.get page_url
+    items = target_page.search("td ul li")
+    items.map{|i| {
       brand_name: i.search("a").first.text,
       link: base_url + i.search("a").first[:href],
       generic_name: i.text[ regex[:generic], 1 ],

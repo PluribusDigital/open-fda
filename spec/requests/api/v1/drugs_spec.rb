@@ -40,12 +40,44 @@ RSpec.describe "Drugs API" do
 
   describe "show" do 
 
-    it 'should provide a single object for a known drug' do
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(response).to be_success 
-      expect(json["error"]).to_not be_present
-      expect(json["openfda"]).to be_present
-    end
+    describe "valid (lipitor) ndc" do 
+
+      before :each do 
+        get "/api/v1/drugs/#{@lipitor_ndc}"
+        @response = response
+        @json = json
+      end
+
+      it 'should provide a single object for a known drug' do
+        expect(@response).to be_success 
+        expect(@json["error"]).to_not be_present
+        expect(@json["openfda"]).to be_present
+      end
+
+      it 'should layer on event statistics' do 
+        expect(@response).to be_success 
+        expect(@json["event_data"]).to be_present
+        expect(@json["event_data"][0]["term"] ).to be_a  String
+        expect(@json["event_data"][0]["count"]).to be_an Integer
+      end
+
+      it 'should layer on NADAC, generics, and other data' do 
+        # this has more than one assertion to avoid excess API calls
+        expect(@response).to be_success 
+        expect(@json["nadac"]).to be_an Array
+        expect(@json["generics_list"]).to be_an Array
+        expect(@json["recall_list"]).to be_an Array
+        expect(@json["medication_guide"]).to be_a Hash
+        expect(@json["shortages"]).to be_an Array
+      end
+
+      it 'should show streamlined field set for same pharma_class data' do 
+        expect(@json["same_class_list"]).to be_an Array
+        expect(@json["same_class_list"][0]["product_ndc"]).to be_present
+        expect(@json["same_class_list"][0]["application_number"]).to_not be_present
+      end
+
+    end # valid ndc
 
     it 'should find no record and provides error for fake ndc' do
       fake_ndc = "9999-2343433422-2343434234234234235555"
@@ -53,46 +85,6 @@ RSpec.describe "Drugs API" do
       expect(json["error"]).to be_present
     end
 
-    it 'should layer on event statistics' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(response).to be_success 
-      expect(json["event_data"]).to be_present
-      expect(json["event_data"][0]["term"] ).to be_a  String
-      expect(json["event_data"][0]["count"]).to be_an Integer
-    end
-
-    it 'should layer on NADAC price data' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(response).to be_success 
-      expect(json["nadac"]).to be_an Array
-    end
-
-    it 'should layer on generics data' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(json["generics_list"]).to be_an Array
-    end
-
-    it 'should layer on same pharma_class data' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(json["same_class_list"]).to be_an Array
-    end
-
-    it 'should layer on same recall data' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(json["recall_list"]).to be_an Array
-    end
-
-    it "should layer on medication guide data" do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(json["medication_guide"]).to be_a Hash
-    end
-
-    it 'should show streamlined field set for same pharma_class data' do 
-      get "/api/v1/drugs/#{@lipitor_ndc}"
-      expect(json["same_class_list"][0]["product_ndc"]).to be_present
-      expect(json["same_class_list"][0]["application_number"]).to_not be_present
-    end
-
-  end
+  end # show
 
 end

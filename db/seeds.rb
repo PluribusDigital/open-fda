@@ -12,3 +12,6 @@ NadacService.read_workbook
 
 # Medication Guide links & data 
 FdaMedicationGuideService.import_data
+
+# Shortage/Discontinuation data
+FdaShortageService.import_data
