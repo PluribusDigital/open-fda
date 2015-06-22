@@ -19,8 +19,10 @@ dependencies:
     # - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then docker commit postgres cjcassatt/openfda-postgres; fi
 
 database:
-  post:
-    - bundle exec rake db:seed
+  override:
+    - export RAILS_ENV="test"
+    - export RACK_ENV="test"
+    - bundle exec rake db:setup
 
 test:
   override:
