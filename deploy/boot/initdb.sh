@@ -1,2 +1,4 @@
 #!/bin/sh
-/home/app/webapp bundle exec db:setup > /tmp/openfda_boot.log 2>&1
+export RAILS_ENV=demo
+cd /home/app/webapp
+bundle exec rake db:setup

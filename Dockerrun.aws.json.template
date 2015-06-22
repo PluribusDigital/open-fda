@@ -3,7 +3,7 @@
   "authentication": {
     "bucket": "open-fda",
     "key": "dockercfg"
-  }
+  },
   "containerDefinitions": [
     {
       "name": "postgres",

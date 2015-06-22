@@ -4,8 +4,9 @@ FROM phusion/passenger-ruby21:0.9.15
 ENV HOME /root
 
 #   Initialize database as part of container startup
-# RUN mkdir -p /etc/my_init.d
-# ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
+RUN mkdir -p /etc/my_init.d
+ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
+RUN chmod +x /etc/my_init.d/initdb.sh
 
 #   Use baseimage-docker's init process.
 CMD ["/sbin/my_init"]
