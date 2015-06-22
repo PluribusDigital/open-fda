@@ -10,11 +10,13 @@ class Feature():
     - The tuples are unique within the feature
     - A key may have one or more values
     """
-    def __init__(self, field):
+    def __init__(self, path):
         '''
-        `field` will be the field that is extracted from the input. 
+        `path` will be the path to the field that is extracted from the input. 
+        `name` will look for `object['name']`
+        `person.name` will look for `object['person']['name']`
         '''
-        self.field = field
+        self.fields = path.split('.')
         self.data = set()
 
     # -------------------------------------------------------------------------
@@ -23,15 +25,17 @@ class Feature():
         ''' 
         `key` is the field that is considered the primary key for the system
         '''
-        if self.field not in object:
-            return
+        node = object
+        for field in self.fields:
+            if field not in node:
+                return
+            node = node[field]
 
-        value = object[self.field]
-        if isinstance(value, list):
-            for x in value:
+        if isinstance(node, list):
+            for x in node:
                 self.data.add((key, x))
         else:
-            self.data.add((key, value))
+            self.data.add((key, node))
 
     # -------------------------------------------------------------------------
 

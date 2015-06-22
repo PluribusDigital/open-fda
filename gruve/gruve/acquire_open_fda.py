@@ -27,7 +27,9 @@ class AcquireOpenFda():
     # -------------------------------------------------------------------------
 
     def acquire_labels(self):
-        ''' Retrieve the full set of drug labeling data from the FDA
+        ''' Retrieve the full set of drug labeling data from the FDA.
+        Since the FDA data set is limited to 5000 records, partition on the 
+        'labeler' code of the product NDC
         '''
         # get the list of labelers (minus some missing ones)
         fileName = io.relativeToAbsolute('../../data/product_ndc.txt')
@@ -42,13 +44,5 @@ class AcquireOpenFda():
         base = 'https://api.fda.gov/drug/label.json?search=openfda.product_ndc:'
         for labeler in sorted(labelers):
             url = base + '%04d' % int(labeler)
-            data = cache.get(url)
-#            print(labeler, ' = ', len(data))
-        
-# -----------------------------------------------------------------------------
-# Main
-# -----------------------------------------------------------------------------
-
-if __name__ == '__main__':
-    y = AcquireOpenFda()
-    y.acquire_labels()
+            for record in cache.get(url):
+                yield record

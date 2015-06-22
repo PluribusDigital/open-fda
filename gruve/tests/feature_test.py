@@ -36,14 +36,19 @@ class TestFeature(unittest.TestCase):
         target.accumulate(1, {'x': 'hello'})
         self.assertEqual(1, len(target.data))
 
+    def test_accumulate_subfields(self):
+        target = gruve.Feature('x.y.z')
+        target.accumulate(1, {'x': {'y': {'z': 'hello'}}})
+        self.assertEqual(1, len(target.data))
+
     def test_openFDA_subset(self):
         fileName = os.path.join(os.path.dirname(__file__), 'labels.json')
         with open(fileName, 'r') as f:
             records = json.load(f)
 
-        target = gruve.Feature('route')
+        target = gruve.Feature('openfda.route')
         for record in records:
-            target.accumulate(record['id'], record['openfda'])
+            target.accumulate(record['id'], record)
         self.assertEqual(86, len(target.data))
 
 if __name__ == '__main__':
