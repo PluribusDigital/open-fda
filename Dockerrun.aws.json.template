@@ -32,9 +32,6 @@
           "containerPort": 80
         }
       ],
-      "command": [
-        "cd /home/app/webapp && bundle exec rake db:setup"
-      ],
       "links": [
         "postgres"
       ]
