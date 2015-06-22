@@ -21,14 +21,13 @@ dependencies:
 database:
   post:
     - bundle exec rake db:seed
-      environment:
-        RAILS_ENV=test
-        RACK_ENV=test
-
 
 test:
   override:
     - bundle exec rspec
+        environment:
+          RAILS_ENV: test
+          RACK_ENV: test
 
 #deployment:
 #  demo:
