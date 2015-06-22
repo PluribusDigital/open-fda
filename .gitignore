@@ -32,6 +32,7 @@
 **/*.egg-info/
 *.pyc
 
+/gruve/cache
 /gruve/data
 
 # Vagrant ignores

@@ -1,9 +1,7 @@
 import os
 import sys
-import json
-import time
-import requests
-from gruve import io
+import csv
+from gruve import io, OpenFdaProxy, WebServiceCache
 
 class AcquireOpenFda():
     def __init__(self):
@@ -28,60 +26,24 @@ class AcquireOpenFda():
 
     # -------------------------------------------------------------------------
 
-    def slurp(self, url, maxCallsPerSecond=4, maxRecords=-1, step=100, start=0):
-        ''' Retrieves a full set of data from an API
-        '''
-        if not self.api_key:
-            raise StopIteration
-
-        # The URL parameters
-        params = {'api_key' : self.api_key,
-                  'limit' : step,
-                  'skip' : start}
-
-        while True:
-            print('Calling', url, params['skip'])
-            r = requests.get(url, params=params)
-            data = json.loads(r.text)
-
-            if not data or 'results' not in data:
-                print('Unable to load records', r.status_code, file=sys.stderr)
-                if 'error' in data:
-                    print(data['error'], file=sys.stderr)
-                raise StopIteration
-
-            yield data['results']
-
-            if maxRecords == -1:
-                maxRecords = int(data['meta']['results']['total'])
-            params['skip'] = params['skip'] + step
-
-            if params['skip'] >= maxRecords:
-                raise StopIteration
-
-            time.sleep(1/maxCallsPerSecond)  
-
-    # -------------------------------------------------------------------------
-
     def acquire_labels(self):
         ''' Retrieve the full set of drug labeling data from the FDA
-            and save it to a local file 
         '''
-        data = []
-        url = 'https://api.fda.gov/drug/label.json'
+        # get the list of labelers (minus some missing ones)
+        fileName = io.relativeToAbsolute('../../data/product_ndc.txt')
+        with open(fileName) as f:
+            labelers = {x['labeler'] 
+                        for x in csv.DictReader(f, dialect=csv.excel_tab)
+                        if x['labeler'] not in ['49158', '60687', '62107',
+                                                '62542', '69235']}
 
-        # reassemble the chunks
-        for i,chunk in enumerate(self.slurp(url)):
-            data.extend(chunk)
-
-            # dump the progress so far
-            fileName = io.relativeToAbsolute(r'../data/labels'+str(i*100)+'.json')
-            with open(fileName, 'w', encoding='utf-8') as f:
-                json.dump(data, f, indent=2)
-        
-        # QA Check
-        ids = {x['set_id'] for x in data}
-        print(len(data), len(ids))
+        proxy = OpenFdaProxy(self.api_key)
+        cache = WebServiceCache(proxy)
+        base = 'https://api.fda.gov/drug/label.json?search=openfda.product_ndc:'
+        for labeler in sorted(labelers):
+            url = base + '%04d' % int(labeler)
+            data = cache.get(url)
+#            print(labeler, ' = ', len(data))
         
 # -----------------------------------------------------------------------------
 # Main
