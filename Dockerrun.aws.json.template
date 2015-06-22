@@ -1,5 +1,9 @@
 {
   "AWSEBDockerrunVersion": 2,
+  "authentication": {
+    "bucket": "open-fda",
+    "key": "dockercfg"
+  },
   "volumes": [
     {
       "name": "postgres-logs",

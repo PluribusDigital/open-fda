@@ -3,7 +3,7 @@
 SHA1=$1
 DEPLOY_ENVIRONMENT=$2
 POSTGRES_PASSWORD=$3
-$DOCKERRUN_FILE=Dockerrun.aws.json
+DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy image to Docker Hub (always tag with "latest")
 docker push cjcassatt/openfda:$SHA1

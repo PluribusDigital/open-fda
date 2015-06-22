@@ -12,7 +12,7 @@ dependencies:
     - bundle exec rake bower:install
     # build docker image
     - docker info
-    - docker build -t cjcassatt/openfda .
+    - docker build -t cjcassatt/openfda:$CIRCLE_SHA1 .
 
 #database:
 #  post:
