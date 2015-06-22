@@ -21,7 +21,8 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
   };
 
   $scope.onSelect = function (item, model, label) {
-      $scope.selectedDrug = item;
+      // $scope.selectedDrug = item;
+      $scope.navigateToDrug(item.product_ndc)
   };
 
   // fetch details for a given drug
