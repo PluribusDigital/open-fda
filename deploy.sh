@@ -5,13 +5,13 @@ POSTGRES_PASSWORD=$2
 DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy image to Docker Hub
-docker push cjcassatt/openfda
+docker push cjcassatt/openfda:$SHA1
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
 # variable substitutions
-sed "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
+sed "s/<TAG>/$SHA1/" < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
 zip $DOCKERRUN_FILE.zip $DOCKERRUN_FILE

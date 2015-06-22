@@ -15,7 +15,7 @@
         },
         {
           "name": "POSTGRES_PASSWORD",
-          "value": "<POSTGRES_PASSWORD>"
+          "value": "password"
         }
       ],
       "essential": true,
@@ -23,7 +23,7 @@
     },
     {
       "name": "openfda",
-      "image": "cjcassatt/openfda",
+      "image": "cjcassatt/openfda:<TAG>",
       "essential": true,
       "memory": 512,
       "portMappings": [
