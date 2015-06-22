@@ -35,17 +35,15 @@ ADD deploy/nginx/webapp.conf /etc/nginx/sites-enabled/webapp.conf
 ADD deploy/nginx/rails-env.conf /etc/nginx/main.d/rails-env.conf
 
 #   Run Bundle in a cache efficient way
-#WORKDIR /tmp
-#ADD Gemfile /tmp/
-#ADD Gemfile.lock /tmp/
-#RUN bundle install
+WORKDIR /tmp
+ADD Gemfile /tmp/
+ADD Gemfile.lock /tmp/
+RUN bundle install
 
 #   Add the rails app
 RUN mkdir /home/app/webapp
 ADD . /home/app/webapp
 RUN chmod -R 0777 /home/app/webapp
-WORKDIR /home/app/webapp
-RUN bundle install
 
 #   Install npm
 WORKDIR /home/app/webapp
