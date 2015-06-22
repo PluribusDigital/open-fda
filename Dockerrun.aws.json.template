@@ -3,21 +3,7 @@
   "authentication": {
     "bucket": "open-fda",
     "key": "dockercfg"
-  },
-  "volumes": [
-    {
-      "name": "postgres-logs",
-      "host": {
-        "sourcePath": "/var/app/current/postgres-logs"
-      }
-    },
-    {
-      "name": "openfda-logs",
-      "host": {
-        "sourcePath": "/var/app/current/openfda-logs"
-      }
-    } 
-  ],
+  }
   "containerDefinitions": [
     {
       "name": "postgres",
@@ -25,7 +11,7 @@
       "environment": [
         {
           "name": "POSTGRES_USER",
-          "value": "openfda_<deploy_environment>"
+          "value": "openfda_demo"
         },
         {
           "name": "POSTGRES_PASSWORD",
@@ -33,18 +19,11 @@
         }
       ],
       "essential": true,
-      "memory": 1024,
-      "mountPoints": [
-        {
-          "sourceVolume": "posgres",
-          "containerPath": "/var/log",
-          "readOnly": true
-        }
-      ]
+      "memory": 1024
     },
     {
       "name": "openfda",
-      "image": "cjcassatt/openfda:<TAG>",
+      "image": "cjcassatt/openfda",
       "essential": true,
       "memory": 512,
       "portMappings": [
@@ -54,17 +33,10 @@
         }
       ],
       "command": [
-        "cd /home/app/webapp && bundle exec rake:setup"
+        "cd /home/app/webapp && bundle exec rake db:setup"
       ],
       "links": [
         "postgres"
-      ],
-      "mountPoints": [
-        {
-          "sourceVolume": "openfda",
-          "containerPath": "/var/logs",
-          "readOnly": true
-        }
       ]
     }
   ]
