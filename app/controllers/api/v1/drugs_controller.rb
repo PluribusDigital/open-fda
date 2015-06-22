@@ -20,9 +20,10 @@ module API::V1
       drug["nadac"] = NadacService.pricing_per_brand_name(brand_name)
       # Layer on events data
       drug["event_data"] = FdaEventService.event_count_by_reaction(brand_name)['results']
-      drug["generics_list"] = Drug.where(nonproprietary_name: generic_name)
-        .map{|e|e.proprietary_name}
-        .uniq.delete_if{|e|e==brand_name}
+      drug["generics_list"] = Drug.where('lower(nonproprietary_name) LIKE ?',"%#{generic_name.downcase}%")
+        .map{|e|{proprietary_name:e.proprietary_name,product_ndc:e.product_ndc}}
+        .uniq{|e|e[:proprietary_name]}
+        .delete_if{|e|e[:proprietary_name]==brand_name}
       drug["same_class_list"] = pharm_class ? FdaLabelService.search_by_class(pharm_class)
         .delete_if{|e|e["brand_name"][0]==brand_name} : []
       drug["recall_list"] = FdaEnforcementService.search_product_ndc params[:id]

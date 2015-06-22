@@ -1,7 +1,11 @@
 <panel panel-title="Alternative Drugs" panel-class='default' expand="true">
   <h4>Generic Alternatives</h4>
   <ul>
-    <li ng-repeat="gen in drug.generics_list">{{gen}}</li>
+    <li ng-repeat="gen in drug.generics_list">
+      <a href="#/drug/{{gen.product_ndc}}">
+        {{gen.proprietary_name}}
+      </a>
+    </li>
   </ul>
   <p ng-show="drug.generics_list.length==0"><em>None Found</em></p>
   <h4>

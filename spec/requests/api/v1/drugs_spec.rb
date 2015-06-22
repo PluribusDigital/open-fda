@@ -3,7 +3,7 @@ require 'spec_helper'
 RSpec.describe "Drugs API" do
 
   before :each do 
-    @lipitor_ndc = "0071-0156"
+    @lipitor_ndc = "0071-0157"
     Drug.create(proprietary_name: 'Prozac',    product_ndc: '16590-843')
     Drug.create(proprietary_name: 'Viagra',    product_ndc: '55289-524')
     Drug.create(proprietary_name: 'Atripla',   product_ndc: '24236-292')
@@ -43,6 +43,7 @@ RSpec.describe "Drugs API" do
     describe "valid (lipitor) ndc" do 
 
       before :each do 
+        Drug.create(proprietary_name: "Amlodipine Besylate and Atorvastatin Calcium", nonproprietary_name: "ATORVASTATIN CALCIUM", product_ndc: "43598-0318")
         get "/api/v1/drugs/#{@lipitor_ndc}"
         @response = response
         @json = json
@@ -66,6 +67,7 @@ RSpec.describe "Drugs API" do
         expect(@response).to be_success 
         expect(@json["nadac"]).to be_an Array
         expect(@json["generics_list"]).to be_an Array
+        expect(@json["generics_list"].first).to be_a Hash
         expect(@json["recall_list"]).to be_an Array
         expect(@json["medication_guide"]).to be_a Hash
         expect(@json["shortages"]).to be_an Array
