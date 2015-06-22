@@ -1,24 +1,62 @@
+import re
 import os
 import sys
 import csv
-from gruve import io, AcquireOpenFda, Feature, ProductNdc
+from operator import itemgetter
+from gruve import io, AcquireOpenFda, Feature, ProductNdc, BuildNdcWhiteList
 
 class ExtractOpenFdaFeatures():
     def __init__(self):
         self.source = AcquireOpenFda()
-        self.features = [Feature('openfda.manufacturer_name'),
-                         Feature('openfda.pharm_class_cs'),
-                         Feature('openfda.pharm_class_epc'),
-                         Feature('openfda.pharm_class_moa'),
-                         Feature('openfda.pharm_class_pe'),
-                         Feature('openfda.product_type'),
-                         Feature('openfda.route'),
-                         Feature('openfda.substance_name'),
-                         Feature('openfda.brand_name'),
-                         Feature('openfda.generic_name'),
-                         Feature('active_ingredient'),
-                         Feature('inactive_ingredient')
+        self.whiteList = BuildNdcWhiteList()
+        self.features = [{'feature':Feature('openfda.manufacturer_name'),
+                          'transform': []},
+                         {'feature':Feature('openfda.pharm_class_cs'),
+                          'transform': [self.whiteList.title,
+                                        self.trimPharmClassCs]},
+                         {'feature':Feature('openfda.pharm_class_epc'),
+                          'transform': [self.whiteList.title, 
+                                        self.trimPharmClass3]},
+                         {'feature':Feature('openfda.pharm_class_moa'),
+                          'transform': [self.whiteList.title,
+                                        self.trimPharmClass3]},
+                         {'feature':Feature('openfda.pharm_class_pe'),
+                          'transform': [self.whiteList.title,
+                                        self.trimPharmClass2]},
+                         {'feature':Feature('openfda.product_type'),
+                          'transform': []},
+                         {'feature':Feature('openfda.route'),
+                          'transform': []},
+                         {'feature':Feature('openfda.substance_name'),
+                          'transform': [self.titleCaseIgnoreSmall]},
+                         {'feature':Feature('openfda.brand_name'),
+                          'transform': [self.titleCaseIgnoreSmall]},
+                         {'feature':Feature('openfda.generic_name'),
+                          'transform': [self.titleCaseIgnoreSmall]},
+                         {'feature':Feature('active_ingredient'),
+                          'transform': []},
+                         {'feature':Feature('inactive_ingredient'),
+                          'transform': []}
                         ]
+
+    # -------------------------------------------------------------------------
+
+    def trimPharmClassCs(self, s):
+        execute = '[chemical/ingredient]' in s
+        return s[:-22] if execute else s
+
+    def trimPharmClass2(self, s):
+        return s[:-5] if s[-1] == ']' else s
+
+    def trimPharmClass3(self, s):
+        return s[:-6] if s[-1] == ']' else s
+
+    def titleCaseIgnoreSmall(self, s):
+        word_list = re.split(' ', s)
+        final = [word_list[0].capitalize()]
+        for word in word_list[1:]:
+            final.append(word if len(word) < 4 else word.capitalize())
+        return " ".join(final)
 
     # -------------------------------------------------------------------------
 
@@ -32,14 +70,22 @@ class ExtractOpenFdaFeatures():
                 for entry in record['openfda']['product_ndc']:
                     ndc = ProductNdc.parse(entry)
                     id = ndc.format()
-                    for feature in self.features:
-                        feature.accumulate(id, record)
+                    for op in self.features:
+                        op['feature'].accumulate(id, record)
         
-        print('Writing Raw Features')
-        for feature in self.features:
+        print('Writing Features')
+        for op in self.features:
+            feature = op['feature']
             baseName = '-'.join(feature.fields)
             fileName = io.relativeToAbsolute('../../data/'+baseName+'.txt')
-            feature.save(fileName)
+
+            with open(fileName, 'w', encoding='utf-8') as f:
+                print('Key\tValue', file=f)
+                for pair in sorted(feature.data, key=itemgetter(0)):
+                    value = pair[1]
+                    for fn in op['transform']:
+                        value = fn(value)
+                    print(pair[0],value,sep='\t',file=f)
 
 # -----------------------------------------------------------------------------
 # Main
