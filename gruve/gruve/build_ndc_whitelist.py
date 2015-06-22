@@ -1,7 +1,7 @@
 import sys
 import csv
 import re
-from gruve import io
+from gruve import io, ProductNdc, PackageNdc
 
 class BuildNdcWhiteList():
     '''
@@ -13,29 +13,14 @@ class BuildNdcWhiteList():
 
     # -------------------------------------------------------------------------
 
-    def parsePackageNDC(self, ndc):
-        labeler = ndc[:-6]
-        if labeler[:2] == '00':
-            labeler = labeler[1:]
-
-        return {'package_code' : ndc[-2:],
-                'product_code' : ndc[-6:-2],
-                'labeler' : labeler}
-
-    def formatProductNDC(self, parsed):
-        return parsed['labeler'] + '-' + parsed['product_code']
-
-    def formatPackageNDC(self, parsed):
-        return self.formatProductNDC(parsed) + '-' + parsed['package_code']
-
     def map_nadac(self, x):
-        parsedNDC = self.parsePackageNDC(x['NDC'])
+        ndc = PackageNdc.parse_nadac(x['NDC'])
         return {'description': x['NDC Description'],
-                'package_code' : parsedNDC['package_code'],
-                'product_code' : parsedNDC['product_code'],
-                'labeler' : parsedNDC['labeler'],
-                'package_ndc': self.formatPackageNDC(parsedNDC),
-                'product_ndc': self.formatProductNDC(parsedNDC),
+                'package_code' : ndc.packageCode,
+                'product_code' : ndc.productCode,
+                'labeler' : ndc.labeler,
+                'package_ndc': ndc.format(),
+                'product_ndc': ndc.format_product(),
                 'price_per_unit': x['NADAC Per Unit'],
                 'unit': x['Pricing Unit']
                 }
@@ -62,13 +47,8 @@ class BuildNdcWhiteList():
         return " ".join(final)
 
     def map_fda(self, x):
-        # the FDA dataset mis-parses some 11 digit NDCs
-        ndc = x['PRODUCTNDC']
-        codes = ndc.split('-')
-        if len(codes[0]) == 5 and len(codes[1]) < 4:
-            ndc = codes[0] + '-0' + codes[1]
-
-        return {'product_ndc': ndc,
+        ndc = ProductNdc.parse(x['PRODUCTNDC'])
+        return {'product_ndc': ndc.format(),
                 'proprietary_name': self.title(x['PROPRIETARYNAME']),
                 'nonproprietary_name': self.title(x['NONPROPRIETARYNAME']),
                 'dea_schedule': x['DEASCHEDULE']
