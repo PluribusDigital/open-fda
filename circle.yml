@@ -12,7 +12,7 @@ dependencies:
     - bundle exec rake bower:install
     # build docker image
     - docker info
-    - docker build -t cjcassatt/openfda:$CIRCLE_SHA1 .
+    #- docker build -t cjcassatt/openfda:$CIRCLE_SHA1 .
     # run docker containers
     # - docker run --name postgres -e POSTGRES_USER=$POSGRES_USER -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -d posgtres
     # - docker run --link postgres:postgres -it -d -p --name openfda cjcassat/openfda:$CIRCLE_SHA1
@@ -23,13 +23,13 @@ test:
   override:
     - bundle exec rspec
 
-deployment:
+#deployment:
 #  demo:
 #    branch: master
 #    commands:
 #      - bundle exec cap demo deploy
-  elasticbeanstalk:
-    branch: master
-    commands:
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-    - bash deploy.sh $CIRCLE_SHA1 $POSTGRES_PASSWORD
+#  elasticbeanstalk:
+#    branch: master
+#    commands:
+#    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+#    - bash deploy.sh $CIRCLE_SHA1 $POSTGRES_PASSWORD
