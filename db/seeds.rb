@@ -9,3 +9,6 @@ end
 
 # Pricing data
 NadacService.read_workbook
+
+# Medication Guide links & data 
+FdaMedicationGuideService.import_data

@@ -26,6 +26,7 @@ module API::V1
       drug["same_class_list"] = pharm_class ? FdaLabelService.search_by_class(pharm_class)
         .delete_if{|e|e["brand_name"][0]==brand_name} : []
       drug["recall_list"] = FdaEnforcementService.search_product_ndc params[:id]
+      drug["medication_guide"] = FdaMedicationGuideService.find(brand_name) || {}
       render json: drug
     end 
 

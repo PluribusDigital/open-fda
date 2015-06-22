@@ -1,5 +1,9 @@
 class ServiceCache < ActiveRecord::Base
 
+  def self.all_records
+    self.base_where_clause
+  end
+
   def self.find(key)
     match = self.base_where_clause.where(key:key).limit(1)
     return match.present? ? match.first.data : nil

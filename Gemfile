@@ -15,6 +15,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # HTTParty to interact with external REST APIs
 gem 'httparty'
+# Enable screen scraping via mechanize
+gem 'mechanize'
 # Be able to read/write MS Excel (.xlsx) files
 gem 'rubyXL'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
