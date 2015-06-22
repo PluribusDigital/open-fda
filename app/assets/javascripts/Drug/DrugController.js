@@ -49,6 +49,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
 
   // if we have a drug ID via the route, use that
   if ($routeParams.product_ndc) {
+    $scope.drugLoading = true;
     $scope.selectedDrug.product_ndc = $routeParams.product_ndc;
     $scope.getDetail();
   }

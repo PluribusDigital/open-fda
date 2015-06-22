@@ -23,7 +23,7 @@ private
     # then normalize to zero padded 3 digits (i.e. xxxxx-0006 becomes xxxxx-006)
     labeler, product_code = ndc.split("-")
     if labeler.length == 5 && product_code.to_i < 1000
-      return labeler + "-" + product_code.rjust(3,'0') # rjust does zero pad to 3 digits
+      return labeler + "-" + product_code.to_i.to_s.rjust(3,'0') # rjust does zero pad to 3 digits
     else
       return ndc
     end

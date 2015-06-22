@@ -22,6 +22,8 @@ RSpec.describe FdaLabelService do
       it "should add a zero padding to product code" do 
         ndc = "55289-038"
         expect( FdaLabelService.find_by_product_ndc(ndc)["openfda"]["brand_name"] ).to be_present
+        ndc = "63868-0089"
+        expect( FdaLabelService.find_by_product_ndc(ndc)["openfda"]["brand_name"] ).to be_present
       end
 
     end # normalize
