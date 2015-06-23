@@ -1,9 +1,6 @@
 #! /bin/bash
 
-SHA1=$1
-POSTGRES_USER=$2
-POSTGRES_PASSWORD=$3
-BUILD_POSTGRES_IMAGE=$4
+SHA1=$CIRCLE_SHA1
 DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy web image to Docker Hub

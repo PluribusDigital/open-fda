@@ -15,7 +15,7 @@ dependencies:
 
   post:
     - bundle exec rake bower:install
-    - bash docker_build.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD $BUILD_POSTGRES_IMAGE:
+    - bash docker_build.sh:
         timeout:1800
 
 # skipping seed temporarily
@@ -43,4 +43,4 @@ deployment:
     branch: master
     commands:
     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - bash docker_deploy.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD $BUILD_POSTGRES_IMAGE
+    - bash docker_deploy.sh
