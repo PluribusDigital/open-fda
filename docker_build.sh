@@ -14,4 +14,8 @@ then
  
   # create image
   docker commit postgres stsilabs/openfda-postgres
+
+  # push to hub
+  docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
+  docker push stsilabs/openfda-postgres
 fi

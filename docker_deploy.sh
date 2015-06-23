@@ -7,7 +7,10 @@ DOCKERRUN_FILE=Dockerrun.aws.json
 docker push stsilabs/openfda:$SHA1
 
 # Optionally deploy postgres image
-if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then docker commit postgres stsilabs/openfda-postgres; fi
+#if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
+#then 
+#  docker push stsilabs/openfda-postgres
+#fi
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
