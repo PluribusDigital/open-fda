@@ -13,7 +13,7 @@ then
   docker run --link openfda-postgres:postgres -p 80:80 -e "RAILS_ENV=demo" --name openfda-web stsilabs/openfda-web:$SHA1 bundle exec rake db:setup
  
   # create image
-  docker commit postgres stsilabs/openfda-postgres
+  docker commit openfda-postgres stsilabs/openfda-postgres
 
   # push to hub
   docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
