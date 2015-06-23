@@ -1,55 +1,59 @@
 <panel panel-title="Reported Adverse Events" panel-class='default' expand="true">
 
+  <p class="text-muted">Represents serious adverse events (those resulting in death, a life threatening condition, hospitalization, disability, etc.)</p>
+
   <table class="table">
-      <tbody>
-        <tr ng-repeat="datum in drug.event_data">
-          <th>{{datum.term}}</th>
-          <td>
-            <a href="" ng-click="drillOnEvent(datum.term)">
-            {{datum.count}}
-            </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <p ng-show="drug.event_data.length==0"><em>None Found</em></p>
+    <tbody>
+      <tr ng-repeat="datum in drug.event_data">
+        <th>{{datum.term}}</th>
+        <td>
+          <a href="" ng-click="drillOnEvent(datum.term)">
+          {{datum.count}}
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <p ng-show="drug.event_data.length==0"><em>None Found</em></p>
+
+  <hr>
+
+  <p class="text-muted pull-right">Limited to 10 results</p>
+  <h3>Events Detail</h3>      
+        
+  <table class="table" ng-show="eventsDetail.length > 0">
+    <thead>
+      <tr>
+        <th>Date Received</th>
+        <th>Patient Reactions</th>
+        <th>
+          Patient Drugs<br>
+          <span class="text-muted"><em>* = suspect drug</em></span>
+        </th>
+        <th>Patient Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="event in eventsDetail">
+        <td>
+          {{event.receivedate | humanizeFdaDate}}</td>
+        <td>
+          <div ng-repeat="reaction in event.patient.reaction">
+            {{reaction.reactionmeddrapt}}
+          </div>
+        </td>
+        <td>
+          <div ng-repeat="pdrug in event.patient.drug">
+            {{pdrug.medicinalproduct}}<span ng-show="pdrug.drugcharacterization==1">*</span>
+          </div>
+        </td>
+        <td>
+          <div ng-show="event.patient.patientsex">{{event.patient.patientsex | sexToString }}</div>
+          <div ng-show="event.patient.patientweight">{{event.patient.patientweight | kgToLbs }}</div>
+          <div ng-show="event.patient.patientonsetage">{{event.patient.patientonsetage | ageToYrs:event.patient.patientonsetageunit }}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 </panel>
-
-<script type="text/ng-template" id="myModalContent.html">
-    <div class="modal-header">
-        <h3 class="modal-title">Detail</h3>
-    </div>
-    <div class="modal-body">
-        
-      <table class="table" ng-show="events.length > 0">
-        <thead>
-          <tr>
-            <th>Date Received</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="event in eventsDrillDown">
-            <td>{{event.receivedate}}</td>
-            <td>
-              <div ng-repeat="reaction in event.patient.reaction">
-              {{reaction.reactionmeddrapt}}
-              </div>
-            </td>
-            <td>
-              <div ng-repeat="pdrug in event.patient.drug">
-              {{pdrug.medicinalproduct}}
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div><!-- modal body -->
-    <div class="modal-footer">
-        <button class="btn btn-primary" ng-click="ok()">OK</button>
-        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-    </div>
-</script>
