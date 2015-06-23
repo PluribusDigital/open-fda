@@ -2,13 +2,14 @@ import sys
 import time
 import json
 import requests
+from gruve import io
 
 class OpenFdaProxy():
     """
     Encapsulates calling the OpenFDA Web Service
     """
-    def __init__(self, api_key):
-        self.api_key = api_key
+    def __init__(self):
+        self.api_key = io.getApiKey('OPENFDA_API_KEY')
         self.maxCallsPerSecond = 4
         self.step = 100
         self.status_code = 0
