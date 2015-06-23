@@ -15,7 +15,7 @@ dependencies:
 
   post:
     - bundle exec rake bower:install
-    - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then bash docker_build.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD; fi:
+    - bash docker_build.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD $BUILD_POSTGRES_IMAGE:
         timeout:1800
 
 # skipping seed temporarily
