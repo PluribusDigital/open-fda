@@ -1,4 +1,5 @@
 #! /bin/bash
+set -e
 
 SHA1=$CIRCLE_SHA1
 DOCKERRUN_FILE=Dockerrun.aws.json
