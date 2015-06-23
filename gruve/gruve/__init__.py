@@ -10,3 +10,4 @@ from gruve.acquire_open_fda import *
 
 from gruve.build_ndc_whitelist import *
 from gruve.extract_open_fda_features import *
+from gruve.build_drug_canon import *
