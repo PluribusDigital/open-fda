@@ -26,7 +26,7 @@
       "image": "stsilabs/openfda-web:<TAG>",
       "environment": [
         {
-          "name": "RAILS_ENV"
+          "name": "RAILS_ENV",
           "value": "demo"
         }
       ]
