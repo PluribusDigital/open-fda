@@ -29,7 +29,7 @@
           "name": "RAILS_ENV",
           "value": "demo"
         }
-      ]
+      ],
       "essential": true,
       "memory": 512,
       "portMappings": [
