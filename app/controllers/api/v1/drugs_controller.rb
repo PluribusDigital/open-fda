@@ -3,9 +3,14 @@ module API::V1
     
     def index
       q = params[:q] || ""
+      clause = 'lower(proprietary_name) LIKE ?',"#{q.downcase}%"
+      drugs_start_with = q.present? ? Drug.select('DISTINCT ON (proprietary_name) product_ndc, proprietary_name, nonproprietary_name')
+        .where(clause).limit(10) : []
+      matched_names = drugs_start_with.map{|d|d.proprietary_name}
       clause = 'lower(proprietary_name) LIKE ?',"%#{q.downcase}%"
-      @drugs = q.present? ? Drug.select('DISTINCT ON (proprietary_name) product_ndc, proprietary_name, nonproprietary_name')
-        .where(clause).limit(100) : []
+      drugs_like = q.present? ? Drug.select('DISTINCT ON (proprietary_name) product_ndc, proprietary_name, nonproprietary_name')
+        .where(clause).limit(10-matched_names.length) : []
+      @drugs = drugs_start_with + drugs_like.select{|d|!matched_names.include? d.proprietary_name}
     end
 
     def show

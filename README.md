@@ -1,5 +1,5 @@
-# hello
-Provides the starting point for STSI prototypes
+# OpenFDA
+
 
 ## Requirements
 Prior to installation, you need the basics:
@@ -29,12 +29,12 @@ Prior to installation, you need the basics:
 ## Dev Stack
 We use the following open source components (as well as additional plug-ins and modules)
  * PostgreSQL - Database
+ * Python - ETL, specifically transformation-heavy
  * Ruby on Rails - Back End Web Application Framework
  * Bootstrap - HTML/CSS framework
  * AngularJS - Rich Client JavaScript Application Framework
  * Bootstrap.js - JavaScript widgets (as Angular Directives)
  * d3js - Charting & Visualization tools
- * Swagger - API documentation
 We generally follow the style and conventions laid out in the http://angular-rails.com/ online book. 
 
 
@@ -42,9 +42,12 @@ We generally follow the style and conventions laid out in the http://angular-rai
  * Ruby on Rails - Namespaced controllers
  * jbuilder - robust templating
  * rspec request specs - integration testing of entire back end
+ * Swagger - API documentation
+
 
 ## DevOps Stack
  * New Relic
+ * CircleCI
 
 Note: AWS vs. Heroku
 
