@@ -26,9 +26,9 @@ dependencies:
 #          RAILS_ENV: test
 #          RACK_ENV: test
 
-#test:
-#  override:
-#    - echo "skipping tests temporarily"
+test:
+  override:
+    - echo "skipping tests temporarily"
 #    - bundle exec rspec:
 #        environment:
 #          RAILS_ENV: test
