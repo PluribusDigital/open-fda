@@ -10,15 +10,12 @@ RSpec.describe "Events API" do
 
   describe "getting list of events" do 
 
-    it 'sends a list of events with a valid (and popular) ndc' do
+    it 'sends a list of events, with a subset of fields, with a valid (and popular) ndc' do
       get "/api/v1/events?product_ndc=#{@ndc}"
       expect(response).to be_success 
       expect(json["error"]).to_not be_present
       expect(json["results"].length).to eq 10 
-    end
-
-    it 'only returns a subset of fields (not all openFDA fields)' do
-      get "/api/v1/events?product_ndc=#{@ndc}"
+      # additional assertions to avoid excess API calls
       expect(json["results"].first["receivedate"]).to be_present
       expect(json["results"].first["serious"]).to be_present
       expect(json["results"].first["transmissiondateformat"]).to_not be_present
@@ -47,7 +44,6 @@ RSpec.describe "Events API" do
       get "/api/v1/events?brand_name=#{@brand_name}&term=#{bad_term}"
       expect(json["error"]).to be_present
     end
-
 
   end
 

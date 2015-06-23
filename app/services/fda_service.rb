@@ -6,8 +6,9 @@ class FdaService
   
   def self.search(q)
     url = base_path + "?api_key=#{api_key}&limit=10&search=" + q.to_s
-    url = URI::encode(url)
-    self.get(url)
+    result = self.get URI::encode(url) 
+    raise "API Rate Limit Exceeded" if result['error'] && result['error']['code'] == 'OVER_RATE_LIMIT'
+    return result
   end
 
 private 

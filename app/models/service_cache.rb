@@ -9,7 +9,7 @@ class ServiceCache < ActiveRecord::Base
     return match.present? ? match.first.data : nil
   end
 
-  def self.destroy(key)
+  def self.delete_cache(key)
     self.base_where_clause.where(key:key).limit(1).first.destroy
   end
 

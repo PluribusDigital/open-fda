@@ -31,7 +31,7 @@ RSpec.describe ServiceCache do
 
   end # saving
 
-  describe "finding" do
+  describe "finding and destroying" do
 
     before :each do 
       FruitService.write_cache  "apple",       {name: 'apple',       color:'red',      size:'medium'}
@@ -69,14 +69,24 @@ RSpec.describe ServiceCache do
 
     end
 
+    describe "destroying" do 
+
+      it "should remove a record that exists" do 
+        expect{
+          FruitService.delete_cache('apple')
+        }.to change{ServiceCache.count}.by(-1)
+      end
+
+      it "should raise an error for a record that doesn't exist" do 
+        expect{
+          FruitService.delete_cache('horse')
+        }.to raise_error
+      end
+
+    end # destroying
+
   end # finding
 
-  describe "destroying" do 
 
-    it "should remove a record that exists" 
-
-    it "should raise an error for a record that doesn't exist"
-
-  end # destroying
 
 end
