@@ -87,9 +87,9 @@ class BuildDrugCanon():
             if tuple in canon:
                 # consume because multiple package codes map to this key
                 canon.remove(tuple) 
-                row['is_canon'] = True
+                row['is_canon'] = 'true'
             else:
-                row['is_canon'] = False
+                row['is_canon'] = 'false'
 
         tempName = io.relativeToAbsolute('../../data/product_ndc_canon.txt')
         io.saveAsTabbedText(records, '../../data/product_ndc_canon.txt')
