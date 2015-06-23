@@ -8,15 +8,21 @@ dependencies:
   pre:
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
-    # install nodejs
-    - sudo apt-get install nodejs
+    # nodejs-legacy fails, why do we need this?
     # - sudo apt-get install nodejs-legacy
     # python setup
     - cd gruve && python setup.py develop
-    
+
   post:
     - bundle exec rake bower:install
-    - bash docker_build.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD $BUILD_POSTGRES_IMAGE
+    - docker info
+    # build web image
+    - docker build -t stsilabs/openfda-web:$CIRCLE_SHA1 .
+    # run docker containers
+    - docker run --name openfda-postgres -e POSTGRES_USER=$POSTGRES_USER -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -d postgres:9.4
+    - docker run --link openfda-postgres:postgres -p 80:80 -e "RAILS_ENV=demo" --name openfda-web stsilabs/openfda-web:$SHA1 bundle exec rake db:setup
+    #build postgres image   
+    - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then docker commit postgres stsilabs/openfda-postgres; fi
 
 # skipping seed temporarily
 #database:
