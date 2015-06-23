@@ -5,7 +5,7 @@ module API::V1
       q = params[:q] || ""
       clause = 'lower(proprietary_name) LIKE ?',"%#{q.downcase}%"
       @drugs = q.present? ? Drug.select('DISTINCT ON (proprietary_name) product_ndc, proprietary_name, nonproprietary_name')
-        .where(clause).limit(100) : []
+        .where(clause).limit(10) : []
     end
 
     def show
