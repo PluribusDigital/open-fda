@@ -8,3 +8,14 @@
 .text-pharm-class {  
   color: #31708f;
 }
+
+/* Trim long paragraphs with ellispis */
+.trim-info {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+  line-height: 15px;
+  position: relative;
+}
