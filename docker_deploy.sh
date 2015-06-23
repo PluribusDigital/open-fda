@@ -1,24 +1,17 @@
 #! /bin/bash
 
 SHA1=$1
-POSTGRES_USER=$2
-POSTGRES_PASSWORD=$3
-
+POSTGRES_PASSWORD=$2
 DOCKERRUN_FILE=Dockerrun.aws.json
 
-# Deploy images to Docker Hub
-docker push stsilabs/openfda-web:$SHA1
-
-if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
-then
-  docker commit openfda-postgres stsilabs/openfda-postgres
-fi
+# Deploy image to Docker Hub
+docker push cjcassatt/openfda:$SHA1
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
 # variable substitutions
-sed -e "s/<TAG>/$SHA1/" -e "s/<POSTGRES_USER>/$POSTGRES_USER/" -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
+sed "s/<TAG>/$SHA1/" < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
 zip $DOCKERRUN_FILE.zip $DOCKERRUN_FILE
