@@ -3,23 +3,15 @@ FROM phusion/passenger-ruby21:0.9.15
 #   Set correct environment variables.
 ENV HOME /root
 
-#   Initialize database as part of container startup
+#   Load startup scripts
 RUN mkdir -p /etc/my_init.d
 ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
 RUN chmod +x /etc/my_init.d/initdb.sh
+ADD deploy/boot/load_secrets.sh /etc/my_init.d/load_secrets.sh
+RUN chmod +x /etc/my_init.d/load_secrets.sh
 
 #   Use baseimage-docker's init process.
 CMD ["/sbin/my_init"]
-
-#   Build system and git.
-#   NOTE  - passenger docker documentation incorrectly lists "pb_build" as the build directory
-#RUN /build/utilities.sh
-#   Ruby support.
-#RUN /build/ruby2.1.sh
-#   Python support.
-#RUN /build/python.sh
-#   Node.js and Meteor support.
-#RUN /build/nodejs.sh
 
 #   Expose Nginx HTTP service
 EXPOSE 80
@@ -34,6 +26,13 @@ RUN rm /etc/nginx/sites-available/default
 ADD deploy/nginx/webapp.conf /etc/nginx/sites-enabled/webapp.conf
 ADD deploy/nginx/rails-env.conf /etc/nginx/main.d/rails-env.conf
 
+#   Install AWS tools
+RUN apt-get update
+RUN apt-get install zip -y
+RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+RUN unzip awscli-bundle.zip
+RUN ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+
 #   Run Bundle in a cache efficient way
 WORKDIR /tmp
 ADD Gemfile /tmp/
@@ -44,6 +43,11 @@ RUN bundle install
 RUN mkdir /home/app/webapp
 ADD . /home/app/webapp
 RUN chmod -R 0777 /home/app/webapp
+
+#   Run python setup
+RUN apt-get -y -q install python3-setuptools
+WORKDIR /home/app/webapp/gruve
+RUN python3 setup.py develop
 
 #   Install npm
 WORKDIR /home/app/webapp
