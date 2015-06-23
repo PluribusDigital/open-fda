@@ -1,4 +1,6 @@
 #! /bin/bash   
+set -e
+
 SHA1=$CIRCLE_SHA1
 
 docker info
