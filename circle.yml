@@ -15,7 +15,7 @@ dependencies:
 
   post:
     - bundle exec rake bower:install
-    - bash docker_build.sh:
+    - bash docker_build.sh :
         timeout:1800
 
 # skipping seed temporarily
