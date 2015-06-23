@@ -4,6 +4,7 @@
   <div ng-show="drug">
     <em class="text-muted">{{drug.openfda.product_type[0] | lowercase }}</em>
       <p class="lead">{{drug.indications_and_usage[0] | indicationShort }}</p>
+      <p>{{drug.stop_use[0]}}</p>
 </div>
 
 
