@@ -70,6 +70,7 @@ class BuildNdcWhiteList():
             if row['product_ndc'] in fda_info:
                 info = fda_info[row['product_ndc']]
                 row.update(info)
+                row.update({'is_canon' : False})
             else:
                 print(row['product_ndc'], 'not matched in FDA data set', 
                       file=sys.stderr)
@@ -81,19 +82,8 @@ class BuildNdcWhiteList():
         # load the FDA info as a dictionary
         fda_info = {x['product_ndc']: x for x in self.acquire_fda_ndc() }
 
-        outFileName = io.relativeToAbsolute('../../data/product_ndc.txt')
-        columns = []
-
-        # output the join as it processes
-        with open(outFileName, 'w') as f:
-            for row in self.join(fda_info):
-                if not columns:
-                    columns = sorted(row.keys())
-                    print('\t'.join(columns), file=f)
-
-                for col in columns:
-                    print(row[col] if col in row else '', end='\t', file=f)
-                print('', file=f)
+        # output the join
+        io.saveAsTabbedText(self.join(fda_info), '../../data/product_ndc.txt')
 
 # -----------------------------------------------------------------------------
 # Main

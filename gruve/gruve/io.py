@@ -1,5 +1,6 @@
 import os
 import sys
+import csv
 
 def relativeToAbsolute(path):
     # where is this script?
@@ -7,6 +8,8 @@ def relativeToAbsolute(path):
 
     # get the expected paths
     return os.path.join(thisScriptDir, path)
+
+# -----------------------------------------------------------------------------
 
 def apiKeys():
     '''
@@ -33,3 +36,25 @@ def getApiKey(name):
     assert len(keys) == 1
     return keys[0]
 
+# -----------------------------------------------------------------------------
+
+def saveAsTabbedText(iterator, relativeFileName):
+    '''
+    The rows of `iterator` are saved to `relativeFileName`
+    Note: `csv.DictWriter` is not used because it outputs too many newlines
+    Also, this allows for changing to write in Unicode format, which `DictWriter`
+    does not handle well.
+    '''
+    outFileName = relativeToAbsolute(relativeFileName)
+    columns = []
+
+    # output the join as it processes
+    with open(outFileName, 'w') as f:
+        for row in iterator:
+            if not columns:
+                columns = sorted(row.keys())
+                print('\t'.join(columns), file=f)
+
+            for col in columns:
+                print(row[col] if col in row else '', end='\t', file=f)
+            print('', file=f)

@@ -19,19 +19,29 @@ class BuildDrugCanon():
                 brand = self.sourceNames.title(x)
                 for y in label['openfda']['product_ndc']:
                     ndc = ProductNdc.parse(y).format()
-                    yield {'proprietary_name': brand,
-                           'product_ndc' : ndc,
-                           'size' : len(asString)}
+                    yield {'proprietary_name': brand, 
+                           'ndc':ndc, 
+                           'size':len(asString)}
 
-    def _reduce(self, tuples):
-        if len(tuples) < 1:
+    def _reduce(self, dicts):
+        if len(dicts) < 1:
             return None
 
-        best = tuples[0]
-        for i in range(1, len(tuples)):
-            if best[1] < tuples[i][1]:
-                best = tuples[i]
+        best = dicts[0]
+        for i in range(1, len(dicts)):
+            if best['size'] < dicts[i]['size']:
+                best = dicts[i]
         return best
+
+    # -------------------------------------------------------------------------
+
+    def _mapLabels(self):
+        '''
+        A generator function that internally calls the map function for each label
+        '''
+        for record in self.sourceLabels.acquire_labels():
+            for node in self._map(record):
+                yield node
 
     def _reduceToCanon(self, partitions):
         '''
@@ -40,46 +50,54 @@ class BuildDrugCanon():
         for name in sorted(partitions):
             result = self._reduce(partitions[name])
             if result:
-                yield {'proprietary_name': name,
-                       'product_ndc' : result[0]}
+                yield (name, result['ndc'])
 
     # -------------------------------------------------------------------------
 
     def build(self):
         ''' 
-        Use the size of a record in the FDA data set to determine which product
+        Use the size of a record in the FDA data set to determine which package
         NDC is considered _the_ representitive for the same proprietary name
         '''
-        print('Acquiring Names')
-        fileName = io.relativeToAbsolute('../../data/product_ndc.txt')
-        with open(fileName) as f:
-            partitions = {x['proprietary_name']: [] 
-                          for x in csv.DictReader(f, dialect=csv.excel_tab)}
+        print('Loading White List')
+        whiteListFileName = io.relativeToAbsolute('../../data/product_ndc.txt')
+        records = []
+        with open(whiteListFileName) as f:
+            for row in csv.DictReader(f, dialect=csv.excel_tab):
+                # for some reason a weird 'None' column appears
+                records.append({k:v for k,v in row.items() if k})
+
+        partitions = {x['proprietary_name']: [] for x in records}
+        products = {x['product_ndc'] for x in records if x['proprietary_name']}
 
         print('Mapping Labels')
-        for record in self.sourceLabels.acquire_labels():
-            for node in self._map(record):
-                nameKey = node['proprietary_name']
-                if nameKey not in partitions:
-                    pass #print(nameKey, 'not in white list', file=sys.stderr)
-                else:
-                    partitions[nameKey].append((node['product_ndc'], 
-                                                node['size']))
+        for node in self._mapLabels():
+            nameKey = node['proprietary_name']
+            prodKey = node['ndc']
+            if nameKey in partitions and prodKey in products:
+                partitions[nameKey].append(node)
 
         print('Reducing to Canon')
         outFileName = io.relativeToAbsolute('../../data/canon_drugs.txt')
-        columns = []
+        canon = {x for x in self._reduceToCanon(partitions)}
 
-        # output the join as it processes
-        with open(outFileName, 'w') as f:
-            for row in self._reduceToCanon(partitions):
-                if not columns:
-                    columns = sorted(row.keys())
-                    print('\t'.join(columns), file=f)
+        print('Updating NDC Whitelist')
+        for row in records:
+            tuple = (row['proprietary_name'], row['product_ndc'])
+            if tuple in canon:
+                # consume because multiple package codes map to this key
+                canon.remove(tuple) 
+                row['is_canon'] = True
+            else:
+                row['is_canon'] = False
 
-                for col in columns:
-                    print(row[col] if col in row else '', end='\t', file=f)
-                print('', file=f)
+        tempName = io.relativeToAbsolute('../../data/product_ndc_canon.txt')
+        io.saveAsTabbedText(records, '../../data/product_ndc_canon.txt')
+
+        # no errors, rename
+        os.remove(whiteListFileName)
+        os.rename(tempName, whiteListFileName)
+        
 
 # -----------------------------------------------------------------------------
 # Main
