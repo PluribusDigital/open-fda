@@ -12,11 +12,10 @@ dependencies:
     # - sudo apt-get install nodejs-legacy
     # python setup
     - cd gruve && python setup.py develop
-
   post:
-    - bundle exec rake bower:install
     - echo "hello":
         timeout:1800
+    - bundle exec rake bower:install
 
 # skipping seed temporarily
 #database:
@@ -25,7 +24,6 @@ dependencies:
 #        environment:
 #          RAILS_ENV: test
 #          RACK_ENV: test
-
 test:
   override:
     - echo "skipping tests temporarily"
