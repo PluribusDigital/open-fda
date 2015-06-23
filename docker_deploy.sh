@@ -4,7 +4,7 @@ SHA1=$CIRCLE_SHA1
 DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy web image to Docker Hub
-docker push stsilabs/openfda:$SHA1
+docker push stsilabs/openfda-web:$SHA1
 
 # Optionally deploy postgres image
 #if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
