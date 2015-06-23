@@ -1,18 +1,17 @@
 #! /bin/bash
+set -e
 
-SHA1=$1
-POSTGRES_USER=$2
-POSTGRES_PASSWORD=$3
-
+SHA1=$CIRCLE_SHA1
 DOCKERRUN_FILE=Dockerrun.aws.json
 
-# Deploy images to Docker Hub
+# Deploy web image to Docker Hub
 docker push stsilabs/openfda-web:$SHA1
 
-if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
-then
-  docker commit openfda-postgres stsilabs/openfda-postgres
-fi
+# Optionally deploy postgres image
+#if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
+#then 
+#  docker push stsilabs/openfda-postgres
+#fi
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda

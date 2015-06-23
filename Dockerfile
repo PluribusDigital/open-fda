@@ -52,6 +52,10 @@ RUN npm install
 #   Install bower
 RUN bundle exec rake bower:install['--allow-root']
 
+#   Python setup
+#WORKDIR /home/app/webapp/gruve
+#RUN python3 setup.py develop
+
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

@@ -7,23 +7,29 @@
   "containerDefinitions": [
     {
       "name": "postgres",
-      "image": "postgres:9.4",
+      "image": "stsilabs/openfda-postgres",
       "environment": [
         {
           "name": "POSTGRES_USER",
-          "value": "openfda_demo"
+          "value": "<POSTGRES_USER>"
         },
         {
           "name": "POSTGRES_PASSWORD",
-          "value": "password"
+          "value": "<POSTGRES_PASSWORD>"
         }
       ],
       "essential": true,
       "memory": 1024
     },
     {
-      "name": "openfda",
-      "image": "cjcassatt/openfda:<TAG>",
+      "name": "openfda-web",
+      "image": "stsilabs/openfda-web:<TAG>",
+      "environment": [
+        {
+          "name": "RAILS_ENV"
+          "value": "demo"
+        }
+      ]
       "essential": true,
       "memory": 512,
       "portMappings": [
