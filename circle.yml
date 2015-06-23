@@ -15,13 +15,8 @@ dependencies:
 
   post:
     - bundle exec rake bower:install
-    - docker info
-    # build web image
-    - docker build -t stsilabs/openfda-web:$CIRCLE_SHA1 .
-    # run docker containers
-    - docker run --name openfda-postgres -e POSTGRES_USER=$POSTGRES_USER -e POSTGRES_PASSWORD=$POSTGRES_PASSWORD -d postgres:9.4
-    - docker run --link openfda-postgres:postgres -p 80:80 -e "RAILS_ENV=demo" --name openfda-web stsilabs/openfda-web:$CIRCLE_SHA1 bundle exec rake db:setup:
-        timeout: 1200
+    - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then bash docker_build.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD; fi:
+        timeout:1800
 
 # skipping seed temporarily
 #database:
@@ -48,10 +43,4 @@ deployment:
     branch: master
     commands:
     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - bash docker_deploy.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD
-
-teardown:
-  pre:
-    - docker stop openfda-postgres
-    - docker rm openfda-postgres
-    - docker rm openfda-web
+    - bash docker_deploy.sh $CIRCLE_SHA1 $POSTGRES_USER $POSTGRES_PASSWORD $BUILD_POSTGRES_IMAGE
