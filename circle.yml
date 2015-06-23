@@ -34,7 +34,7 @@ dependencies:
 #          RAILS_ENV: test
 #          RACK_ENV: test
 
-#deployment:
+deployment:
 #  demo:
 #    branch: master
 #    commands:

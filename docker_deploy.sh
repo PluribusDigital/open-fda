@@ -12,12 +12,6 @@ then
   docker push stsilabs/openfda-postgres
 fi
 
-# Optionally deploy postgres image
-#if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
-#then 
-#  docker push stsilabs/openfda-postgres
-#fi
-
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
