@@ -62,7 +62,7 @@ app.filter('ageToYrs', function() {
 app.filter('indicationShort', function () {
   return function (item) {
     if (item) {
-      return item.split('. ')[0].replace(/^[0-9\s]*/, '').toLowerCase();
+      return item.split(/\s*[.•]\s*/)[0].replace(/^[0-9\s]*/, '').toLowerCase();
     }
   };
 });
