@@ -7,6 +7,9 @@ DOCKERRUN_FILE=Dockerrun.aws.json
 # Deploy image to Docker Hub
 docker push cjcassatt/openfda:$SHA1
 
+docker commit postgres stsilabs/openfda-postgres
+docker push stsilabs/openfda-postgres
+
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
