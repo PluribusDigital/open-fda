@@ -19,28 +19,28 @@ dependencies:
         timeout: 1800
 
 # skipping seed temporarily
-database:
-  post:
-    - bundle exec rake db:seed:
-        environment:
-          RAILS_ENV: test
-          RACK_ENV: test
+#database:
+#  post:
+#    - bundle exec rake db:seed:
+#        environment:
+#          RAILS_ENV: test
+#          RACK_ENV: test
 
-test:
-  override:
-    - echo "skipping tests temporarily"
-    - bundle exec rspec:
-        environment:
-          RAILS_ENV: test
-          RACK_ENV: test
+#test:
+#  override:
+#    - echo "skipping tests temporarily"
+#    - bundle exec rspec:
+#        environment:
+#          RAILS_ENV: test
+#          RACK_ENV: test
 
 #deployment:
 #  demo:
 #    branch: master
 #    commands:
 #      - bundle exec cap demo deploy
-#  elasticbeanstalk:
-#    branch: master
-#    commands:
-#    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-#    - bash docker_deploy.sh
+  elasticbeanstalk:
+    branch: master
+    commands:
+    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - bash docker_deploy.sh
