@@ -15,7 +15,7 @@ dependencies:
 
   post:
     - bundle exec rake bower:install
-    - if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]; then bash docker_build.sh; fi:
+    - bash docker_build.sh:
         timeout: 1800
 
 # skipping seed temporarily
