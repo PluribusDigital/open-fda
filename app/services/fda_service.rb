@@ -13,7 +13,7 @@ class FdaService
 private 
 
   def self.api_key 
-    ENV['FDA_API_KEY']
+    ENV['OPENFDA_API_KEY']
   end
 
   def self.normalize_product_ndc(ndc)
