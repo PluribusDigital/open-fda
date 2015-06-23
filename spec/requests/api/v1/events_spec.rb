@@ -17,6 +17,13 @@ RSpec.describe "Events API" do
       expect(json["results"].length).to eq 10 
     end
 
+    it 'only returns a subset of fields (not all openFDA fields)' do
+      get "/api/v1/events?product_ndc=#{@ndc}"
+      expect(json["results"].first["receivedate"]).to be_present
+      expect(json["results"].first["serious"]).to be_present
+      expect(json["results"].first["transmissiondateformat"]).to_not be_present
+    end
+
     it 'finds no events for a fake ndc' do
       fake_ndc = "9999-2343433422-2343434234234234235555"
       get "/api/v1/events?product_ndc=#{fake_ndc}"

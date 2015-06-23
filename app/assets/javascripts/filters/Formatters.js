@@ -31,7 +31,12 @@ app.filter('sexToString', function() {
 
 app.filter('kgToLbs', function() {
   return function(weightKg) {
-    return Math.round(Number(weightKg)*2.2) + " lbs";
+    var num = Math.round(Number(weightKg)*2.2);
+    if ( isNaN(num) ) {
+      return null;
+    } else {
+      return num + " lbs";
+    }
   };
 });
 
@@ -45,7 +50,12 @@ app.filter('ageToYrs', function() {
       '804':365.0,
       '805':0
     };
-    return Math.round(Number(age)*lookup_multiplier[ageUnit]) + " yrs";
+    var num = Math.round(Number(age)*lookup_multiplier[ageUnit]);
+    if ( isNaN(num) ) {
+      return null;
+    } else {
+      return num + " yrs";
+    }
   };
 });
 

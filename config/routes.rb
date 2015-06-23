@@ -3,10 +3,10 @@ Rails.application.routes.draw do
   root 'home#index'
 
   # route to API docs
-  get 'api', to: redirect('/swagger/dist/index.html')
+  get 'apidocs', to: redirect('/swagger/dist/index.html#!/default/')
   
   # namespace APIs w/ version
-  namespace :api do
+  namespace :api, defaults: {format: :json} do
     namespace :v1 do
       resources :drugs, only:  [:index, :show]
       resources :events, only: [:index]

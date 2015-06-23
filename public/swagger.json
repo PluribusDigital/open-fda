@@ -1,44 +1,46 @@
 {
     "swagger": "2.0",
     "info": {
-        "version": "0.0.1",
-        "title": "Hello"
+        "version": "1.0.0",
+        "title": "Open FDA Drug Explorer"
     },
     "paths": {
-        "/greetings": {
+        "/api/v1/drugs": {
             "get": {
-                "description": "Give you a nice salutation",
+                "description": "Gets `Drug` objects based on  [Open FDA](https://open.fda.gov/) and related data.\n",
                 "parameters": [
                     {
-                        "name": "language",
+                        "name": "q",
                         "in": "query",
-                        "description": "i18n code for language, default to english",
-                        "required": false,
-                        "type": "string",
-                        "format": "string"
+                        "description": "Search query string to support typeahead search",
+                        "required": true,
+                        "type": "string"
                     }
                 ],
                 "responses": {
                     "200": {
                         "description": "Successful response",
                         "schema": {
-                            "title": "Data",
+                            "title": "results",
                             "type": "object",
                             "properties": {
                                 "meta": {
-                                    "type": "string"
+                                    "result_count": "number"
                                 },
-                                "greetings": {
-                                    "title": "ArrayOfGreetings",
+                                "results": {
+                                    "title": "ArrayOfResults",
                                     "type": "array",
                                     "items": {
-                                        "title": "Greeting",
+                                        "title": "Drug",
                                         "type": "object",
                                         "properties": {
-                                            "id": {
-                                                "type": "double"
+                                            "product_ndc": {
+                                                "type": "string"
                                             },
-                                            "phrase": {
+                                            "proprietary_name": {
+                                                "type": "string"
+                                            },
+                                            "nonproprietary_name": {
                                                 "type": "string"
                                             }
                                         }
