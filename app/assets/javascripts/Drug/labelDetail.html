@@ -1,3 +1,8 @@
-<panel panel-title="Label Details" panel-class='default' expand="false">
+<panel panel-title="Label Details" panel-class='default' expand="true">
+<!-- Do I need this for drug label info? -->
+  <p class="lead" ng-show="drug.length==0"><em>None Found</em></p>
+  <p class="lead" ng-show="drug">{{drug.indications_and_usage[0] | indicationShort }}
+  </p>
+
 
 </panel>

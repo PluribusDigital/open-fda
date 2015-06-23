@@ -17,3 +17,10 @@ app.filter('dmyDate', function() {
     return m + d + y;
   };
 });
+
+app.filter('indicationShort', function () {
+  return function (item) {
+    // Need to remove leading all caps words.
+    return item.split('. ')[0];
+  };
+});
