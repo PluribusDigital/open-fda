@@ -32,7 +32,7 @@ test:
        environment:
          RAILS_ENV: test
          RACK_ENV: test
-   - rake teaspoon
+   - bundle exec rake teaspoon
    - cd gruve && python setup.py test
 
 deployment:
