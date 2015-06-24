@@ -26,8 +26,9 @@ dependencies:
 #          RAILS_ENV: test
 #          RACK_ENV: test
 
-#test:
-#  override:
+test:
+  override:
+    - echo "tests disabled"
 #   - bundle exec rspec -t smoke:
 #       environment:
 #         RAILS_ENV: test
