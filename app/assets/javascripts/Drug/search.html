@@ -1,7 +1,7 @@
 <script type="text/ng-template" id="typeaheadTemplate.html">
   <a> 
   <!-- Put the query value and fix the formatting -->
-    <span class="em quick-search-result">{{match.model.proprietary_name | typeaheadHighlight: 'via'   }}</span>
+    <span class="em quick-search-result" ng-bind-html="match.model.proprietary_name | typeaheadHighlight:query">{{match.model.proprietary_name | typeaheadHighlight:query   }}</span>
     <span class="small">({{match.model.nonproprietary_name}})</span>
   </a>
 </script>

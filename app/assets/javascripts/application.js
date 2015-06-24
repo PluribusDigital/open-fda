@@ -15,6 +15,7 @@
 //= require_tree ./templates
 //= require angular-route/angular-route
 //= require angular-resource/angular-resource
+//= require angular-sanitize/angular-sanitize
 //= require angular-flash/dist/angular-flash
 //= require angular-bootstrap/ui-bootstrap-tpls
 

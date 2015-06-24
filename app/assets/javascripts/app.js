@@ -1,5 +1,5 @@
 var app = angular.module('openFDA', [
-    'templates', 'ngRoute', 'ngResource', 'directives', 'angular-flash.service',
+    'templates', 'ngRoute', 'ngResource', 'ngSanitize', 'directives', 'angular-flash.service',
     'angular-flash.flash-alert-directive', 'ui.bootstrap'
 ]);
 

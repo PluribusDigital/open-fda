@@ -1,5 +1,5 @@
-app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location', 
-  function ($scope, $http, $routeParams, $location) {
+app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location', '$sanitize', 
+  function ($scope, $http, $routeParams, $location, $sanitize) {
 
   window.DrugControllerScope = $scope; // debugging hook TODO: remove
   $scope.selectedDrug = {}
