@@ -26,10 +26,14 @@
   fill: rgb(31, 119, 180);
 }
 
-.bar-term { 
+.bar:hover { 
+  fill: rgb(61, 149, 210);
+}
+
+.bar-label { 
   fill: #eeeeee; /* not 'color' because it is a SVG element */
 }
 
-.bar-count { 
+.bar-value { 
   fill: #000000; /* not 'color' because it is a SVG element */
 }

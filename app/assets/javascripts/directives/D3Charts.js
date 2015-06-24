@@ -1,5 +1,10 @@
 app.controller('D3BarController', function ($scope) {
-    $scope.event_data = [];
+    $scope.data = [];
+
+    /************************************************************************************************
+     * HTML Properties
+     */
+    $scope.domContainer = null;
 
     /************************************************************************************************
      * Graph Properties
@@ -39,57 +44,62 @@ app.controller('D3BarController', function ($scope) {
     * Main Methods
     */
 
-    $scope.resizeGraph = function () {
-        var bbox = d3.select("#viewPort").node().parentNode.getBoundingClientRect();
-        var width = bbox.width;
-        var height = ($scope.event_data.length == 0) ? bbox.height : $scope.event_data.length * $scope.BAR_HEIGHT;
+    $scope.renderGraph = function () {
+        var container = d3.select($scope.node);
+        var node = container.node();
+        var width = node.clientWidth;
+        var height = ($scope.data.length == 0) ? node.clientHeight : $scope.data.length * $scope.BAR_HEIGHT;
 
+        // 'scale' = The size of the viewport/window
         $scope.xScale.range([0, width - $scope.MAX_COUNT_MARGIN]);
         $scope.yScale.rangeRoundBands([0, height], 0.2);
 
         $scope.xAxis.scale($scope.xScale);
         $scope.yAxis.scale($scope.yScale);
 
-        $scope.svg = d3.select("#viewPort")
-                       .attr("width", width)
-                       .attr("height", height);
-    }
+        // 'domain' = The values to display in the viewport/window
+        $scope.xScale.domain([0, d3.max($scope.data, function (d) { return d.count; })]);
+        $scope.yScale.domain($scope.data.map(function (d) { return d.term; }));
 
-    $scope.updateGraph = function (data) {
-        $scope.event_data = data;
+        // Start building the chart
+        var svg = container.select("svg")
+                           .attr("width", width)
+                           .attr("height", height);
 
-        $scope.resizeGraph();
+        // Remove the old elements
+        svg.selectAll("*").remove();
 
-        $scope.svg.selectAll("*").remove();
+        // Start the enumeration/bind of the data
+        var inserts = svg.append("g")
+                         .selectAll(".bar")
+                         .data($scope.data)
+                         .enter();
 
-        $scope.xScale.domain([0, d3.max(data, function (d) { return d.count; })]);
-        $scope.yScale.domain(data.map(function (d) { return d.term; }));
-
-        var inserts = $scope.svg.append("g")
-                                .selectAll(".bar")
-                                .data(data)
-                                .enter();
-
+        // Draw the bars
         inserts.append("rect")
                .attr("class", "bar")
                .attr("x", $scope.barX)
                .attr("y", $scope.barY)
                .attr("width", $scope.barWidth)
                .attr("height", $scope.barHeight)
+               //.on('mouseover', $scope.barTip.show)
+               //.on('mouseout', $scope.barTip.hide)
                .on("click", $scope.onClick);
 
         var yOffset = $scope.yScale.rangeBand() - 4;
 
+        // Draw the label inside the bars
         inserts.append("text")
-               .attr("class", "bar-term")
+               .attr("class", "bar-label")
                .text(function (d) { return d.term; })
                .attr("x", $scope.barX)
                .attr("y", $scope.barY)
                .attr("transform", "translate(3," + yOffset + ")")
                .on("click", $scope.onClick);
 
+        // Draw the value at the edge of the bar
         inserts.append("text")
-               .attr("class", "bar-count")
+               .attr("class", "bar-value")
                .text(function (d) { return d.count; })
                .attr("x", $scope.barWidth)
                .attr("y", $scope.barY)
@@ -105,7 +115,8 @@ app.controller('D3BarController', function ($scope) {
         if (data == null)
             return;
 
-        $scope.updateGraph(data);
+        $scope.data = data;
+        $scope.renderGraph();
     };
 
     $scope.onClick = function (d) {
@@ -114,17 +125,29 @@ app.controller('D3BarController', function ($scope) {
 });
 
 
-app.directive('barchart', function () {
+app.directive('barchart', function ($window) {
     var chart = {
         restrict: 'EA',
         scope: {
             series: "=",
             clickTarget: "&"
         },
-//        template: '<table class="table"><tbody><tr ng-repeat="datum in event_data"><th>{{datum.term}}</th><td><a href="" ng-click="onClick(datum.term)">{{datum.count}}</a></td></tr></tbody></table>',
-        template: '<svg id="viewPort"></svg>',
+        template: '<svg id="bar_{{$id}}"></svg>',
         controller: 'D3BarController',
         link: function (scope, element, attrs) {
+            // Bind this scope to its container in the DOM
+            scope.node = element[0];
+
+            // Resize when the window does
+            window.onresize = function () {
+                scope.$apply();
+            };
+            scope.$watch(function () {
+                return angular.element($window)[0].innerWidth;
+            }, function () {
+                scope.renderGraph();
+            });
+
             // watch for the value to bind
             scope.$watch('series', function (newValue, oldValue) {
                 if (newValue)
