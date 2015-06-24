@@ -5,8 +5,8 @@ ENV HOME /root
 
 #   Load startup scripts
 RUN mkdir -p /etc/my_init.d
-ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
-RUN chmod +x /etc/my_init.d/initdb.sh
+#ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
+#RUN chmod +x /etc/my_init.d/initdb.sh
 ADD deploy/boot/load_secrets.sh /etc/my_init.d/load_secrets.sh
 RUN chmod +x /etc/my_init.d/load_secrets.sh
 
