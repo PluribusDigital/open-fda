@@ -9,14 +9,18 @@ docker push stsilabs/openfda-web:$CIRCLE_SHA1
 # Deploy postgres image to Docker Hub
 if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
 then
-  docker push stsilabs/openfda-postgres
+  docker push stsilabs/openfda-postgres:$OPENFDA_POSTGRES_VERSION
 fi
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
 # variable substitutions
-sed -e "s/<TAG>/$CIRCLE_SHA1/" -e "s/<POSTGRES_USER>/$POSTGRES_USER/" -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
+sed -e "s/<TAG>/$CIRCLE_SHA1/" \
+    -e "s/<POSTGRES_USER>/$POSTGRES_USER/" \
+    -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
+    -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
+    < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
 zip $DOCKERRUN_FILE.zip $DOCKERRUN_FILE
