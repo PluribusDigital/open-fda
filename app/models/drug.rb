@@ -48,7 +48,11 @@ class Drug < ActiveRecord::Base
   end
 
   def unique_routes
-    routes.pluck(:route)
+    routes.pluck(:route).uniq
+  end
+
+  def unique_product_types
+    product_types.pluck(:type_name).uniq
   end
 
 end
