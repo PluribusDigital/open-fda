@@ -19,3 +19,17 @@
   line-height: 15px;
   position: relative;
 }
+
+/* SVG - Bar chart directives */
+
+.bar { 
+  fill: rgb(31, 119, 180);
+}
+
+.bar-term { 
+  fill: #eeeeee; /* not 'color' because it is a SVG element */
+}
+
+.bar-count { 
+  fill: #000000; /* not 'color' because it is a SVG element */
+}
