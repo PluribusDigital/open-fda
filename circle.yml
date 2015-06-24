@@ -33,6 +33,7 @@ test:
 #        environment:
 #          RAILS_ENV: test
 #          RACK_ENV: test
+#    - rake teaspoon
 
 deployment:
 #  demo:
