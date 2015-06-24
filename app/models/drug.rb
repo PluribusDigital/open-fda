@@ -6,6 +6,7 @@ class Drug < ActiveRecord::Base
   has_many :pharma_class_physiologics, foreign_key: 'product_ndc', primary_key: 'product_ndc'
   has_many :product_types,             foreign_key: 'product_ndc', primary_key: 'product_ndc'
   has_many :substances,                foreign_key: 'product_ndc', primary_key: 'product_ndc'  
+  has_many :routes,                    foreign_key: 'product_ndc', primary_key: 'product_ndc'  
 
   def self.canonical
     self.where(is_canon:true)
@@ -46,4 +47,35 @@ class Drug < ActiveRecord::Base
     return pclasses
   end
 
+  def unique_routes
+    routes.pluck(:route).uniq || []
+  end
+
+  def unique_substances
+    substances.pluck(:name).uniq || []
+  end
+
+  def unique_manufacturers
+    manufacturers.pluck(:name).uniq || []
+  end
+
+  def unique_product_types
+    product_types.pluck(:type_name).uniq || []
+  end
+
+  def associated_ndcs
+    Drug.includes(:manufacturers)
+      .where(proprietary_name:proprietary_name)
+      .order('product_ndc, package_ndc ASC')
+      .map{|d| { 
+        product_ndc:d.product_ndc,
+        package_ndc:d.package_ndc,
+        description:d.description,
+        price_per_unit:d.price_per_unit,
+        unit:d.unit,
+        manufacturer:d.manufacturers.first ? d.manufacturers.first.name : nil
+      } }
+  end
+
 end
+

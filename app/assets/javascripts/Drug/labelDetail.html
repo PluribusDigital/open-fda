@@ -2,10 +2,10 @@
 <!-- Do I need this for drug label info? -->
   <p class="lead" ng-show="drug.length==0"><em>None Found</em></p>
   <div ng-show="drug">
-    <em class="text-muted">{{drug.openfda.product_type[0] | lowercase }}</em>
+    <em class="text-muted">{{drug.product_type.join(', ') | lowercase }}</em>
       <p class="lead text-capitalize">{{drug.label.indications_and_usage[0] | indicationShort}}</p>
       <p>{{drug.stop_use[0]}}</p>
-      <p><span class="text-muted">Routes of Administration:</span> {{drug.label.openfda.route.join(', ')}}</p>
+      <p><span class="text-muted">Routes of Administration:</span> {{drug.routes.join(', ')}}</p>
       <p>
       <!-- If true show icon for each -->
       <span class="text-muted">Label noting interactions with:</span>
