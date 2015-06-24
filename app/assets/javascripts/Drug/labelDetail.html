@@ -3,7 +3,7 @@
   <p class="lead" ng-show="drug.length==0"><em>None Found</em></p>
   <div ng-show="drug">
     <em class="text-muted">{{drug.openfda.product_type[0] | lowercase }}</em>
-      <p class="lead text-capitalize">{{drug.indications_and_usage[0] | indicationShort }}</p>
+      <p class="lead text-capitalize">{{drug.indications_and_usage[0] | indicationShort}}</p>
       <p>{{drug.stop_use[0]}}</p>
       <p><span class="text-muted">Routes of Administration:</span> {{drug.openfda.route.join(', ')}}</p>
       <p>

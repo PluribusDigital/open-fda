@@ -1,6 +1,7 @@
 <script type="text/ng-template" id="typeaheadTemplate.html">
   <a> 
-    <span class="h5 quick-search-result">{{match.model.proprietary_name}}</span>
+  <!-- Put the query value and fix the formatting -->
+    <span class="em quick-search-result">{{match.model.proprietary_name | typeaheadHighlight: 'via'   }}</span>
     <span class="small">({{match.model.nonproprietary_name}})</span>
   </a>
 </script>
