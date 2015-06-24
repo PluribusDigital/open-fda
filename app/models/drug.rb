@@ -59,6 +59,10 @@ class Drug < ActiveRecord::Base
     manufacturers.pluck(:name).uniq || []
   end
 
+  def unique_product_types
+    product_types.pluck(:type_name).uniq || []
+  end
+
   def associated_ndcs
     Drug.includes(:manufacturers)
       .where(proprietary_name:proprietary_name)
