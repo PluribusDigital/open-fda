@@ -3,21 +3,21 @@
   <p class="lead" ng-show="drug.length==0"><em>None Found</em></p>
   <div ng-show="drug">
     <em class="text-muted">{{drug.openfda.product_type[0] | lowercase }}</em>
-      <p class="lead text-capitalize">{{drug.indications_and_usage[0] | indicationShort}}</p>
+      <p class="lead text-capitalize">{{drug.label.indications_and_usage[0] | indicationShort}}</p>
       <p>{{drug.stop_use[0]}}</p>
-      <p><span class="text-muted">Routes of Administration:</span> {{drug.openfda.route.join(', ')}}</p>
+      <p><span class="text-muted">Routes of Administration:</span> {{drug.label.openfda.route.join(', ')}}</p>
       <p>
       <!-- If true show icon for each -->
       <span class="text-muted">Label noting interactions with:</span>
-      {{drug.drug_interactions.join("\n").includes("alcohol")}}
-      {{drug.drug_interactions.join("\n").includes("grapefruit")}}
-      {{drug.drug_interactions.join("\n").includes("caffeine")}}
+      {{drug.label.drug_interactions.join("\n").includes("alcohol")}}
+      {{drug.label.drug_interactions.join("\n").includes("grapefruit")}}
+      {{drug.label.drug_interactions.join("\n").includes("caffeine")}}
       </p>
-      <p class="trim-info" tooltip="{{drug.pediatric_use.join('\n')}}">
-      {{drug.pediatric_use.join("\n")}}
+      <p class="trim-info" tooltip="{{drug.label.pediatric_use.join('\n')}}">
+      {{drug.label.pediatric_use.join("\n")}}
       </p>
-      <p class="trim-info" tooltip="{{drug.pediatric_use.join('\n')}}">
-      {{drug.pregnancy.join("\n")}}
+      <p class="trim-info" tooltip="{{drug.label.pediatric_use.join('\n')}}">
+      {{drug.label.pregnancy.join("\n")}}
       </p>
 </div>
 
