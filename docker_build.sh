@@ -14,5 +14,6 @@ then
   # create image
   docker commit openfda-postgres stsilabs/openfda-postgres:$OPENFDA_POSTGRES_VERSION
   docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
+  docker ps
   docker push stsilabs/openfda-postgres:$OPENFDA_POSTGRES_VERSION
 fi
