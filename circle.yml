@@ -28,12 +28,11 @@ dependencies:
 
 test:
   override:
-    - echo "skipping tests temporarily"
-#    - bundle exec rspec:
-#        environment:
-#          RAILS_ENV: test
-#          RACK_ENV: test
-#    - rake teaspoon
+   - bundle exec rspec -t smoke:
+       environment:
+         RAILS_ENV: test
+         RACK_ENV: test
+   - rake teaspoon
 
 deployment:
   elasticbeanstalk:

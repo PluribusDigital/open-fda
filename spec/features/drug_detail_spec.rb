@@ -8,7 +8,7 @@ feature "Drug Detail", js: true do
     setup_drug_data
   end
 
-  scenario "basic information" do
+  scenario "basic information", smoke:true do
     visit "/#/drug/#{@viagra.product_ndc}"
     expect(page).to have_content "Viagra"
     # Generic Name
@@ -17,14 +17,14 @@ feature "Drug Detail", js: true do
     expect(page).to have_content "PRURITUS"
   end # typeahead
 
-  scenario "info on recalls" do
+  scenario "info on recalls", smoke:true do
     visit "/#/drug/#{@viagra.product_ndc}" 
     expect(page).to have_content "Recalls: 0"
     visit "/#/drug/#{@advilpm.product_ndc}" 
     expect(page).to have_content "Recalls: 1"
   end # typeahead
 
-  scenario "links to alternative drugs" do
+  scenario "links to alternative drugs", smoke:true do
     visit "/#/drug/#{@viagra.product_ndc}" 
     first(:link, "Revatio").click
     expect(page).to have_content "Revatio"
