@@ -73,6 +73,7 @@ RSpec.describe "Drugs API" do
         expect(@json["label"]).to be_a Hash
         expect(@json["label"]["storage_and_handling"]).to_not be_present
         expect(@json["routes"]).to be_an Array 
+        expect(@json["substances"]).to be_an Array 
       end
 
       it 'should show streamlined field set for same pharma_class data' do 
