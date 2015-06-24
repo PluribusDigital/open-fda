@@ -28,6 +28,10 @@
         {
           "name": "RAILS_ENV",
           "value": "demo"
+        },
+        {
+          "name": "OPENFDA_API_KEY",
+          "value": "<OPENFDA_API_KEY>"
         }
       ],
       "essential": true,
