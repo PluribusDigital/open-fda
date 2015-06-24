@@ -26,6 +26,9 @@ gem 'angular-rails-templates', '~> 0.1.3'
 
 gem 'newrelic_rpm'
 
+# Manage environment variables in .env file
+gem 'dotenv-rails'
+
 group :production, :staging do
   gem "rails_12factor"
   gem "rails_stdout_logging"
@@ -47,7 +50,6 @@ group :test, :development do
   gem "teaspoon-jasmine"
   gem "poltergeist"
   gem "phantomjs"
-  gem 'dotenv-rails'
   gem "pry"
 end
 

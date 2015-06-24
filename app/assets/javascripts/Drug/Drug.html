@@ -3,14 +3,16 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3">
-        <h1>{{drug.openfda.brand_name[0]}}</h1>
+        <h1>{{drug.proprietary_name}}</h1>
       </div>
       <div class="col-sm-3">
         <div class="subhead">
-          <strong class="text-generic">{{drug.openfda.generic_name[0]}}</strong><br>
-          <span class="text-pharm-class" ng-show="drug.openfda.pharm_class_epc.length > 0">
-          {{drug.openfda.pharm_class_epc.join(",")}}
-          </span>
+          <div><strong class="text-generic">{{drug.nonproprietary_name}}</strong></div>
+          <div>
+            <div class="text-pharm-class" ng-repeat="pclass in drug.pharma_classes" ng-show="pclass.type=='establisheds'">
+              {{pclass.class_name}}
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-sm-6">

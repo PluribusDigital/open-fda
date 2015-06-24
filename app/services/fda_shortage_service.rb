@@ -16,7 +16,7 @@ class FdaShortageService < ServiceCache
   end
 
   def self.search_by_generic_name(name)
-    where_key_value_like('name',name)
+    where_key_value_like('name',name).map{|e|e.data}
   end
 
   def self.scrape_data 

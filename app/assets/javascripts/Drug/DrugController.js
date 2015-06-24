@@ -36,7 +36,7 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
 
   // fetch event details for table
   $scope.drillOnEvent = function (term) {
-    var brand = $scope.drug.openfda.brand_name;
+    var brand = $scope.drug.proprietary_name;
     $http.get('/api/v1/events?brand_name='+brand+'&term='+term , {}
     ).then(function(response){
       $scope.eventsDetail = response.data.results;

@@ -1,4 +1,5 @@
 <panel panel-title="Alternative Drugs" panel-class='default' expand="true">
+  
   <h4>Generic Alternatives</h4>
   <ul>
     <li ng-repeat="gen in drug.generics_list">
@@ -8,16 +9,19 @@
     </li>
   </ul>
   <p ng-show="drug.generics_list.length==0"><em>None Found</em></p>
-  <h4>
-    Drugs of Same Class 
-    <br><em class="text-pharm-class">{{drug.openfda.pharm_class_epc[0]}}</em>
-  </h4>
-  <ul>
-    <li ng-repeat="same_class in drug.same_class_list">
-      <strong><a href="" ng-click="navigateToDrug(same_class.product_ndc[0])">{{same_class.brand_name[0]}}</a></strong>
-      <span class="text-generic">{{same_class.generic_name[0]}}</span>
-    </li>
-  </ul>
+  
+  <hr>
+  <h4>Drugs of Same Class</h4>
+  <div ng-repeat="pclass in drug.pharma_classes" ng-show="pclass.type=='establisheds'">
+    <strong>{{pclass.class_name}}</strong>
+    <ul>
+      <li ng-repeat="pdrug in pclass.drugs">
+        <strong><a href="" ng-click="navigateToDrug(pdrug.product_ndc)">{{pdrug.proprietary_name}}</a></strong>
+        <span class="text-generic">{{pdrug.nonproprietary_name}}</span>
+      </li>
+    </ul>
+  </div>
+
   <p ng-show="drug.same_class_list.length==0"><em>None Found</em></p>
 </panel>
 

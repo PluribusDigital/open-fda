@@ -1,4 +1,5 @@
 json.meta do
+  json.partial! 'api/v1/shared/common_meta' 
   json.result_count @events.count
 end
 json.results do
