@@ -2,20 +2,8 @@
 
   <p class="text-muted">Represents serious adverse events (those resulting in death, a life threatening condition, hospitalization, disability, etc.)</p>
 
+  <div barChart series="drug.event_data" click-target="drillOnEvent"></div>
   <p ng-show="!drug.event_data.length"><em>None Found</em></p>
-
-  <table class="table">
-    <tbody>
-      <tr ng-repeat="datum in drug.event_data">
-        <th>{{datum.term}}</th>
-        <td>
-          <a href="" ng-click="drillOnEvent(datum.term)">
-          {{datum.count}}
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
   
   <div ng-show="eventsDetail.length > 0">
     <hr>
