@@ -10,6 +10,10 @@ RSpec.describe "Events API" do
 
   describe "getting list of events" do 
 
+    before :each do 
+      sleep(0.3) # avoid API rate limit
+    end
+
     it 'sends a list of events, with a subset of fields, with a valid (and popular) ndc' do
       get "/api/v1/events?product_ndc=#{@ndc}"
       expect(response).to be_success 

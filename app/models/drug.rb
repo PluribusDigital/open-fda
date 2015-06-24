@@ -6,6 +6,7 @@ class Drug < ActiveRecord::Base
   has_many :pharma_class_physiologics, foreign_key: 'product_ndc', primary_key: 'product_ndc'
   has_many :product_types,             foreign_key: 'product_ndc', primary_key: 'product_ndc'
   has_many :substances,                foreign_key: 'product_ndc', primary_key: 'product_ndc'  
+  has_many :routes,                    foreign_key: 'product_ndc', primary_key: 'product_ndc'  
 
   def self.canonical
     self.where(is_canon:true)
@@ -44,6 +45,10 @@ class Drug < ActiveRecord::Base
       pclasses = pclasses + matches.map{|e| {type:class_type,class_name:e.class_name,drugs:e.drugs_in_class} }
     end
     return pclasses
+  end
+
+  def unique_routes
+    routes.pluck(:route)
   end
 
 end

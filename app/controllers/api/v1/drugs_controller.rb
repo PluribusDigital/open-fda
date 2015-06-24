@@ -25,6 +25,7 @@ module API::V1
       drug_object[:recall_list] = FdaEnforcementService.search_product_ndc(drug.product_ndc)
       drug_object[:medication_guide] = FdaMedicationGuideService.find(drug.proprietary_name) || {}
       drug_object[:shortages] = FdaShortageService.search_by_generic_name(drug.nonproprietary_name) || []
+      drug_object[:routes] = drug.unique_routes
       return render json:drug_object
     end 
 

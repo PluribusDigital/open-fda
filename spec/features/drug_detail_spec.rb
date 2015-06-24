@@ -6,6 +6,7 @@ feature "Drug Detail", js: true do
 
   before :each do 
     setup_drug_data
+    sleep(0.5) # avoid API rate limit
   end
 
   scenario "basic information", smoke:true do

@@ -6,6 +6,7 @@ RSpec.describe FdaLabelService do
 
     before :each do 
       @lipitor_ndc = "0071-0156"
+      sleep(0.3) # avoid API rate limit
     end
 
     it "should return a result for a specific ndc" do 
