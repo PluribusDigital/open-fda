@@ -33,6 +33,7 @@ test:
          RAILS_ENV: test
          RACK_ENV: test
    - rake teaspoon
+   - cd gruve && python setup.py test
 
 deployment:
   elasticbeanstalk:
