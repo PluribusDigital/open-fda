@@ -48,7 +48,29 @@ class Drug < ActiveRecord::Base
   end
 
   def unique_routes
-    routes.pluck(:route)
+    routes.pluck(:route).uniq || []
+  end
+
+  def unique_substances
+    substances.pluck(:name).uniq || []
+  end
+
+  def unique_manufacturers
+    manufacturers.pluck(:name).uniq || []
+  end
+
+  def associated_ndcs
+    Drug.includes(:manufacturers)
+      .where(proprietary_name:proprietary_name)
+      .order('product_ndc, package_ndc ASC')
+      .map{|d| { 
+        product_ndc:d.product_ndc,
+        package_ndc:d.package_ndc,
+        description:d.description,
+        price_per_unit:d.price_per_unit,
+        unit:d.unit,
+        manufacturer:d.manufacturers.first ? d.manufacturers.first.name : nil
+      } }
   end
 
 end
