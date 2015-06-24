@@ -1,6 +1,6 @@
 module API::V1
   class DrugsController < ApplicationController
-    
+
     def index
       # cleanse the query parameter value
       q = params[:q] || ""
@@ -30,11 +30,6 @@ module API::V1
       drug_object[:manufacturers] = drug.unique_manufacturers
       drug_object[:associated_ndcs] = drug.associated_ndcs
       drug_object[:product_type] = drug.unique_product_types
-      return render json:drug_object
-    end 
-
-  end
-end
       return render json:drug_object
     end 
 
