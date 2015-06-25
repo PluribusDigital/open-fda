@@ -44,9 +44,15 @@ private
   end
 
   def self.write_cache(key,data)
+    # Disable SQL Logging 
+    logger = ActiveRecord::Base.logger
+    ActiveRecord::Base.logger = nil
+    # Write
     cache = ServiceCache.find_or_initialize_by(service:self.new.class.to_s,key:key)
     cache.data = cache.data || {}
     cache.update(data: cache.data.merge(data) )
+    # Reenable SQL Logging
+    ActiveRecord::Base.logger = logger
   end
 
   def self.parse_data(datablob)

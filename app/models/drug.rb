@@ -37,6 +37,10 @@ class Drug < ActiveRecord::Base
       .delete_if{|e|e[:proprietary_name].downcase==proprietary_name.downcase}
   end
 
+  def node_generics
+    generics.map{|g| {name:g[:proprietary_name], product_ndc:g[:product_ndc]} }
+  end
+
   def pharma_classes 
     pclasses = []
     class_types = %w(chemicals establisheds methods physiologics)
