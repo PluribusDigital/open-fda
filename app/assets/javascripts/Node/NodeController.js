@@ -3,6 +3,7 @@ app.controller("NodeController", ['$scope', '$http', '$routeParams', '$location'
 
   window.NodeControllerScope = $scope; // debugging hook TODO: remove
 
+  $scope.treeData=[];
 
   $scope.getNode = function () {
     // label data

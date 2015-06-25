@@ -12,11 +12,10 @@ app.controller('D3TreeController', function ($scope) {
     * Main Methods
     */
 
-  $scope.drawViz = function(){
 
     $scope.m = [20, 120, 20, 120];
-    $scope.w = 800 - $scope.m[1] - $scope.m[3];
-    $scope.h = 1200 - $scope.m[0] - $scope.m[2];
+    $scope.w = 1280 - $scope.m[1] - $scope.m[3];
+    $scope.h = 800 - $scope.m[0] - $scope.m[2];
     $scope.i = 0;
 
     $scope.tree = d3.layout.tree()
@@ -25,12 +24,15 @@ app.controller('D3TreeController', function ($scope) {
     $scope.diagonal = d3.svg.diagonal()
       .projection(function(d) { return [d.y, d.x]; });
 
+
+
+  $scope.drawViz = function(){
+
     $scope.vis = d3.select($scope.node).append("svg:svg")
       .attr("width", $scope.w + $scope.m[1] + $scope.m[3])
       .attr("height", $scope.h + $scope.m[0] + $scope.m[2])
       .append("svg:g")
       .attr("transform", "translate(" + $scope.m[3] + "," + $scope.m[0] + ")");
-
 
     $scope.root = $scope.data
     $scope.root.x0 = $scope.h / 2;
@@ -43,11 +45,6 @@ app.controller('D3TreeController', function ($scope) {
         toggle(d);
       }
     }
-
-    // Initialize the display to show a few nodes.
-    console.log($scope.root);
-    // $scope.root.children.forEach($scope.toggleAll);
-    
 
 
     $scope.update = function(source) {
@@ -161,7 +158,7 @@ app.controller('D3TreeController', function ($scope) {
 // EVENTS
 // ------
     $scope.onModelLoaded = function (data) {
-        if (data == null)
+        if (data == null || data == [])
             return;
         $scope.data = data;
         $scope.drawViz();
