@@ -57,8 +57,8 @@ RSpec.describe "Drugs API" do
       it 'should layer on event statistics' do 
         expect(@response).to be_success 
         expect(@json["event_data"]).to be_present
-        expect(@json["event_data"][0]["term"] ).to be_a  String
-        expect(@json["event_data"][0]["count"]).to be_an Integer
+        expect(@json["event_data"][0]["label"] ).to be_a  String
+        expect(@json["event_data"][0]["value"]).to be_an Integer
       end
 
       it 'should layer on NADAC, generics, and other data' do 
