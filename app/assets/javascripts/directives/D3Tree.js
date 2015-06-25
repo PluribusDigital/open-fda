@@ -1,65 +1,50 @@
 app.controller('D3TreeController', function ($scope) {
-    window.D3TreeControllerScope = $scope;
-    $scope.data = [];
+  window.D3TreeControllerScope = $scope;
 
-    /************************************************************************************************
-     * HTML Members
-     */
-    $scope.domContainer = null;
+  $scope.data = [];
 
-    
-    /************************************************************************************************
-    * Main Methods
-    */
+  /************************************************************************************************
+   * HTML Members
+   */
+  // $scope.domContainer = null;
+
+  /************************************************************************************************
+  * Main Methods
+  */
+
+  // set up dimensions
+  var m = [20, 120, 20, 120];
+  var w = 1280 - m[1] - m[3];
+  var h =  800 - m[0] - m[2];
+  var i = 0;
+
+  var tree = d3.layout.tree()
+    .size([h, w]);
+
+  var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
 
 
-    $scope.m = [20, 120, 20, 120];
-    $scope.w = 1280 - $scope.m[1] - $scope.m[3];
-    $scope.h = 800 - $scope.m[0] - $scope.m[2];
-    $scope.i = 0;
-
-    $scope.tree = d3.layout.tree()
-      .size([$scope.h, $scope.w]);
-
-    $scope.diagonal = d3.svg.diagonal()
-      .projection(function(d) { return [d.y, d.x]; });
-
-
-
-  $scope.drawViz = function(){
-
-    $scope.vis = d3.select($scope.node).append("svg:svg")
-      .attr("width", $scope.w + $scope.m[1] + $scope.m[3])
-      .attr("height", $scope.h + $scope.m[0] + $scope.m[2])
+     $scope.vis = d3.select($scope.node).append("svg:svg")
+      .attr("width", w + m[1] + m[3])
+      .attr("height", h + m[0] + m[2])
       .append("svg:g")
-      .attr("transform", "translate(" + $scope.m[3] + "," + $scope.m[0] + ")");
-
-    $scope.root = $scope.data
-    $scope.root.x0 = $scope.h / 2;
-    $scope.root.y0 = 0;
+      .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 
-    $scope.toggleAll = function (d) {
-      if (d.children) {
-        d.children.forEach($scope.toggleAll);
-        toggle(d);
-      }
-    }
-
-
-    $scope.update = function(source) {
+$scope.update = function(source) {
 
       var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
       // Compute the new tree layout.
-      var nodes = $scope.tree.nodes($scope.root).reverse();
+      var nodes = tree.nodes(root).reverse();
 
       // Normalize for fixed-depth.
       nodes.forEach(function(d) { d.y = d.depth * 180; });
 
       // Update the nodes…
       var node = $scope.vis.selectAll("g.node")
-          .data(nodes, function(d) { return d.id || (d.id = ++$scope.i); });
+          .data(nodes, function(d) { return d.id || (d.id = ++i); });
 
       // Enter any new nodes at the parent's previous position.
       var nodeEnter = node.enter().append("svg:g")
@@ -104,30 +89,30 @@ app.controller('D3TreeController', function ($scope) {
 
       // Update the links…
       var link = $scope.vis.selectAll("path.link")
-          .data($scope.tree.links(nodes), function(d) { return d.target.id; });
+          .data(tree.links(nodes), function(d) { return d.target.id; });
 
       // Enter any new links at the parent's previous position.
       link.enter().insert("svg:path", "g")
           .attr("class", "link")
           .attr("d", function(d) {
             var o = {x: source.x0, y: source.y0};
-            return $scope.diagonal({source: o, target: o});
+            return diagonal({source: o, target: o});
           })
         .transition()
           .duration(duration)
-          .attr("d", $scope.diagonal);
+          .attr("d", diagonal);
 
       // Transition links to their new position.
       link.transition()
           .duration(duration)
-          .attr("d", $scope.diagonal);
+          .attr("d", diagonal);
 
       // Transition exiting nodes to the parent's new position.
       link.exit().transition()
           .duration(duration)
           .attr("d", function(d) {
             var o = {x: source.x, y: source.y};
-            return $scope.diagonal({source: o, target: o});
+            return diagonal({source: o, target: o});
           })
           .remove();
 
@@ -138,7 +123,26 @@ app.controller('D3TreeController', function ($scope) {
       });
     } // update
 
-    $scope.update($scope.root);
+  $scope.drawViz = function(){
+
+
+
+    var root = $scope.data
+    root.x0 = h / 2;
+    root.y0 = 0;
+
+
+    $scope.toggleAll = function (d) {
+      if (d.children) {
+        d.children.forEach($scope.toggleAll);
+        toggle(d);
+      }
+    }
+
+
+    
+
+    $scope.update(root);
 
     // Toggle children.
     function toggle(d) {
@@ -151,7 +155,7 @@ app.controller('D3TreeController', function ($scope) {
       }
     }
 
-  }
+  } // drawViz
 
 
 // ------

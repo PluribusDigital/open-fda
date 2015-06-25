@@ -42,15 +42,7 @@ U = {
     }
     return unique;
   }
-
-  ,ellipsizeAfter: function (string,chars) {
-    if (string.length > chars) {
-      return string.substring(0,chars) + "...";
-    } else {
-      return string;
-    }
-  }
-
+  
   ,removeCaseInsensitive: function (string,stringToRemove) {
     // find the start position if the offending string 
     var n = string.toLowerCase().search(stringToRemove.toLowerCase());

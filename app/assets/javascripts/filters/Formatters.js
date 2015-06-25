@@ -67,7 +67,6 @@ app.filter('indicationShort', function () {
     // find first sentence
     item = item.split(/\s*[.•]\s*/)[0].replace(/^[0-9\s]*/, '').toLowerCase();
     // if it's still too long, ellipsize
-    item = U.ellipsizeAfter(item,300);
     return item
   };
 });
