@@ -14,6 +14,8 @@ dependencies:
     - cd gruve && python setup.py develop
 
   post:
+    # load .env from s3
+    - aws s3 cp s3://open-fda/.env .env
     - bundle exec rake bower:install
     - bash docker_build.sh:
         timeout: 1800
