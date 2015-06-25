@@ -11,8 +11,13 @@
 
             // These methods encapsulate API calls
             index: function (brand, symptom, success) {
-                $http.get('/api/v1/events?brand_name=' + brand + '&term=' + symptom, {}
-                ).then(function (response) { success(response.data); }, this.error);
+                $http.get('/api/v1/events', {
+                    params: {
+                        brand_name: brand,
+                        term: symptom
+                    }
+                })
+                .then(function (response) { success(response.data); }, this.error);
             }
 
         };

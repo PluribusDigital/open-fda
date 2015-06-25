@@ -21,7 +21,8 @@
                     params: {
                         q: val
                     }
-                }).then(this.searchSuccess, this.error);
+                })
+                .then(this.searchSuccess, this.error);
             },
 
             getDetails: function (product_ndc, success) {
