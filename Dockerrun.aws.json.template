@@ -32,6 +32,10 @@
         {
           "name": "OPENFDA_API_KEY",
           "value": "<OPENFDA_API_KEY>"
+        },
+        {
+          "name": "NEW_RELIC_KEY",
+          "value": "<NEW_RELIC_KEY>"
         }
       ],
       "essential": true,
