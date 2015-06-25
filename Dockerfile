@@ -35,7 +35,7 @@ RUN ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 WORKDIR /tmp
 ADD Gemfile /tmp/
 ADD Gemfile.lock /tmp/
-RUN bundle install
+RUN bundle install --without development test
 
 #   Add the rails app
 RUN mkdir /home/app/webapp
