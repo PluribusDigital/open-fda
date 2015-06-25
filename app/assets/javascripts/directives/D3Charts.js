@@ -2,9 +2,15 @@ app.controller('D3BarController', function ($scope) {
     $scope.data = [];
 
     /************************************************************************************************
-     * HTML Properties
+     * HTML Members
      */
     $scope.domContainer = null;
+
+    $scope.textWidth = function (text) {
+        var div = d3.select($scope.node).select('span');
+        div.text(text);
+        return div.node().clientWidth;
+    };
 
     /************************************************************************************************
      * Graph Properties
@@ -40,9 +46,39 @@ app.controller('D3BarController', function ($scope) {
         return $scope.yScale.rangeBand();
     };
 
+    $scope.barLabel = function (d) {
+        return d.term;
+    };
+
+    $scope.barValue = function (d) {
+        return d.count;
+    };
+
+    $scope.barLabelClipped = function (d) {
+        label = $scope.barLabel(d);
+        clipAt = $scope.barWidth(d);
+        fullWidth = $scope.textWidth(label);
+        while (fullWidth > clipAt && label != "...") {
+            label = label.slice(0, -4) + "...";
+            fullWidth = $scope.textWidth(label);
+        }
+
+        return label;
+    };
+
+    $scope.barToolTip = function (d) {
+        return d.term + ' : ' + d.count;
+    };
+
     /************************************************************************************************
     * Main Methods
     */
+
+    $scope.postCreateElement = function (selection) {
+        selection.on("click", $scope.onClick)
+                 .append("title")
+                 .text($scope.barToolTip);
+    }
 
     $scope.renderGraph = function () {
         var container = d3.select($scope.node);
@@ -82,29 +118,27 @@ app.controller('D3BarController', function ($scope) {
                .attr("y", $scope.barY)
                .attr("width", $scope.barWidth)
                .attr("height", $scope.barHeight)
-               //.on('mouseover', $scope.barTip.show)
-               //.on('mouseout', $scope.barTip.hide)
-               .on("click", $scope.onClick);
+               .call($scope.postCreateElement);               
 
         var yOffset = $scope.yScale.rangeBand() - 4;
 
         // Draw the label inside the bars
         inserts.append("text")
                .attr("class", "bar-label")
-               .text(function (d) { return d.term; })
+               .text($scope.barLabelClipped)
                .attr("x", $scope.barX)
                .attr("y", $scope.barY)
                .attr("transform", "translate(3," + yOffset + ")")
-               .on("click", $scope.onClick);
+               .call($scope.postCreateElement);
 
         // Draw the value at the edge of the bar
         inserts.append("text")
                .attr("class", "bar-value")
-               .text(function (d) { return d.count; })
+               .text($scope.barValue)
                .attr("x", $scope.barWidth)
                .attr("y", $scope.barY)
                .attr("transform", "translate(2," + yOffset + ")")
-               .on("click", $scope.onClick);
+               .call($scope.postCreateElement);
     };
 
     /************************************************************************************************
@@ -132,7 +166,7 @@ app.directive('barchart', function ($window) {
             series: "=",
             clickTarget: "&"
         },
-        template: '<svg id="bar_{{$id}}"></svg>',
+        template: '<div style="position: relative;"><svg id="bar_{{$id}}"></svg><span class="bar-label" style="visibility: hidden; position: absolute; top: 0; left: 0;">measure strings here!</span></div>',
         controller: 'D3BarController',
         link: function (scope, element, attrs) {
             // Bind this scope to its container in the DOM
