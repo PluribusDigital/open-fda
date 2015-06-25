@@ -7,10 +7,10 @@ DOCKERRUN_FILE=Dockerrun.aws.json
 docker push stsilabs/openfda-web:$CIRCLE_SHA1
 
 # Deploy postgres image to Docker Hub
-#if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
-#then
-#  docker push stsilabs/openfda-postgres:$OPENFDA_POSTGRES_VERSION
-#fi
+if [ "$BUILD_POSTGRES_IMAGE" = "true"  ]
+then
+  docker push stsilabs/openfda-postgres:$OPENFDA_POSTGRES_VERSION
+fi
 
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
@@ -21,7 +21,7 @@ sed -e "s/<TAG>/$CIRCLE_SHA1/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
     -e "s/<OPENFDA_API_KEY>/$OPENFDA_API_KEY/" \
-    -s "s/<NEW_RELIC_KEY>/$NEW_RELIC_KEY/" \
+    -e "s/<NEW_RELIC_KEY>/$NEW_RELIC_KEY/" \
     < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
