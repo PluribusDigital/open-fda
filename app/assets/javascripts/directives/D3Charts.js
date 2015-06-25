@@ -35,11 +35,11 @@ app.controller('D3BarController', function ($scope) {
     };
 
     $scope.barY = function (d) {
-        return $scope.yScale(d.term);
+        return $scope.yScale(d.label);
     };
 
     $scope.barWidth = function (d) {
-        return $scope.xScale(d.count);
+        return $scope.xScale(d.value);
     }
 
     $scope.barHeight = function (d) {
@@ -47,11 +47,11 @@ app.controller('D3BarController', function ($scope) {
     };
 
     $scope.barLabel = function (d) {
-        return d.term;
+        return d.label;
     };
 
     $scope.barValue = function (d) {
-        return d.count;
+        return d.value;
     };
 
     $scope.barLabelClipped = function (d) {
@@ -67,7 +67,7 @@ app.controller('D3BarController', function ($scope) {
     };
 
     $scope.barToolTip = function (d) {
-        return d.term + ' : ' + d.count;
+        return d.label + ' : ' + d.value;
     };
 
     /************************************************************************************************
@@ -94,8 +94,8 @@ app.controller('D3BarController', function ($scope) {
         $scope.yAxis.scale($scope.yScale);
 
         // 'domain' = The values to display in the viewport/window
-        $scope.xScale.domain([0, d3.max($scope.data, function (d) { return d.count; })]);
-        $scope.yScale.domain($scope.data.map(function (d) { return d.term; }));
+        $scope.xScale.domain([0, d3.max($scope.data, function (d) { return d.value; })]);
+        $scope.yScale.domain($scope.data.map(function (d) { return d.label; }));
 
         // Start building the chart
         var svg = container.select("svg")
@@ -154,7 +154,7 @@ app.controller('D3BarController', function ($scope) {
     };
 
     $scope.onClick = function (d) {
-        $scope.clickTarget()(d.term);
+        $scope.clickTarget()(d.label);
     }
 });
 
