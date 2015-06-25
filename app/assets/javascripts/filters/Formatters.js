@@ -61,8 +61,13 @@ app.filter('ageToYrs', function() {
 
 app.filter('indicationShort', function () {
   return function (item) {
-    if (item) {
-      return item.split(/\s*[.•]\s*/)[0].replace(/^[0-9\s]*/, '').toLowerCase();
-    }
+    if (!item) { item = "";} 
+    // strip out common intro
+    item = U.removeCaseInsensitive(item,"Indications And Usage");
+    // find first sentence
+    item = item.split(/\s*[.•]\s*/)[0].replace(/^[0-9\s]*/, '').toLowerCase();
+    // if it's still too long, ellipsize
+    item = U.ellipsizeAfter(item,300);
+    return item
   };
 });

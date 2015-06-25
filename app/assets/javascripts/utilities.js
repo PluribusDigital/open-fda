@@ -43,4 +43,24 @@ U = {
     return unique;
   }
 
+  ,ellipsizeAfter: function (string,chars) {
+    if (string.length > chars) {
+      return string.substring(0,chars) + "...";
+    } else {
+      return string;
+    }
+  }
+
+  ,removeCaseInsensitive: function (string,stringToRemove) {
+    // find the start position if the offending string 
+    var n = string.toLowerCase().search(stringToRemove.toLowerCase());
+    // if it is found, remove it
+    if (n > -1) {
+      beginning = string.substring(0,n); // everything before the offending bit
+      end = string.substring(n+stringToRemove.length); // everything after
+      string = beginning + end;
+    }
+    return string;
+  }
+
 }

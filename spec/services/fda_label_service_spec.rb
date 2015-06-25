@@ -29,6 +29,16 @@ RSpec.describe FdaLabelService do
 
     end # normalize
 
+    describe "caching" do 
+
+      # it "should send an http request" do
+      #   binding.pry
+      #   FdaLabelService.find_by_product_ndc(@lipitor_ndc)
+      #   expect{Net::HTTP}.to receive(:request_get)
+      # end 
+
+    end
+
   end # find by product ndc"
 
 

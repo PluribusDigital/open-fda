@@ -9,6 +9,12 @@ class FdaService
     result = self.get URI::encode(url) 
     raise "API Rate Limit Exceeded" if result['error'] && result['error']['code'] == 'OVER_RATE_LIMIT'
     return result
+    #### TODO #### Plop in caching logic
+     # create method to store cache timeframe (e.g. 1 week)
+     # method to clean cache (stuff older than 1 week)
+     # store using url as key
+     # test getting objects back the same as in live call
+       # write first, then read what you just wrote and serve that up the chain
   end
 
 private 
