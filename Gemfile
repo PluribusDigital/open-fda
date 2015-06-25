@@ -51,6 +51,7 @@ group :test, :development do
   gem "poltergeist"
   gem "phantomjs"
   gem "pry"
+  gem "webmock" # test/mock http calls to external APIs
 end
 
 # Windows

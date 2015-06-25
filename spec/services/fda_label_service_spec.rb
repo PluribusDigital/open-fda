@@ -2,10 +2,15 @@ require 'spec_helper'
 
 RSpec.describe FdaLabelService do
 
+  before :each do 
+    @lipitor_ndc = "0071-0156"
+    @zinc_ndc    = "0168-0062" 
+  end
+
   describe "find by product ndc" do 
 
     before :each do 
-      @lipitor_ndc = "0071-0156"
+      # WebMock.disable! # we want to test real requests here
       sleep(0.3) # avoid API rate limit
     end
 
@@ -29,17 +34,35 @@ RSpec.describe FdaLabelService do
 
     end # normalize
 
-    describe "caching" do 
+  end # find by product ndc"
 
-      # it "should send an http request" do
-      #   binding.pry
-      #   FdaLabelService.find_by_product_ndc(@lipitor_ndc)
-      #   expect{Net::HTTP}.to receive(:request_get)
-      # end 
+  describe "caching" do 
 
+    before :each do 
+      @api_regex=/.*fda.gov*/
     end
 
-  end # find by product ndc"
+    it "should cache first request of a type" do 
+      expect{
+        FdaLabelService.find_by_product_ndc(@lipitor_ndc)
+      }.to change{ServiceCache.count}.by(1)
+      expect(WebMock).to have_requested(:any, @api_regex)
+    end
+
+    it "should send an http request on first request, but not duplicate" do
+      first_result = FdaLabelService.find_by_product_ndc(@lipitor_ndc)
+      expect(WebMock).to have_requested(:any, @api_regex).once
+      # should cache the above and serve it next time (below)
+      second_result = FdaLabelService.find_by_product_ndc(@lipitor_ndc)
+      expect(WebMock).to have_requested(:any, @api_regex).once
+      # both results should have the same data
+      expect(first_result).to eq second_result
+      # but then should do a live call for a new NDC
+      third_result = FdaLabelService.find_by_product_ndc(@zinc_ndc)
+      expect(WebMock).to have_requested(:any, @api_regex).twice
+    end 
+
+  end # caching
 
 
 end
