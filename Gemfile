@@ -41,17 +41,19 @@ group :development do
   gem 'spring'
 end
 
-group :test, :development do
+group :test do 
+  gem "webmock" # test/mock http calls to external APIs
   gem 'rspec-rails', '~> 3.0.0'
-  gem 'cucumber-rails', :require => false
   gem "capybara"
   gem "database_cleaner"
   gem "selenium-webdriver"
   gem "teaspoon-jasmine"
   gem "poltergeist"
   gem "phantomjs"
+end
+
+group :test, :development do
   gem "pry"
-  gem "webmock" # test/mock http calls to external APIs
 end
 
 # Windows
