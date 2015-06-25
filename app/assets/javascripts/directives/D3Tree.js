@@ -15,7 +15,7 @@ app.controller('D3TreeController', function ($scope) {
   // set up dimensions
   var m = [20, 120, 20, 120];
   var w = 1280 - m[1] - m[3];
-  var h =  800 - m[0] - m[2];
+  var h =  300 - m[0] - m[2];
   var i = 0;
 
   var tree = d3.layout.tree()
@@ -24,6 +24,9 @@ app.controller('D3TreeController', function ($scope) {
   var diagonal = d3.svg.diagonal()
     .projection(function(d) { return [d.y, d.x]; });
 
+  $scope.drawViz = function(){
+
+    d3.select($scope.node).selectAll("*").remove();
 
      $scope.vis = d3.select($scope.node).append("svg:svg")
       .attr("width", w + m[1] + m[3])
@@ -32,7 +35,7 @@ app.controller('D3TreeController', function ($scope) {
       .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
 
-$scope.update = function(source) {
+    $scope.update = function(source) {
 
       var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
@@ -76,16 +79,16 @@ $scope.update = function(source) {
           .style("fill-opacity", 1);
 
       // Transition exiting nodes to the parent's new position.
-      var nodeExit = node.exit().transition()
-          .duration(duration)
-          .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
-          .remove();
+      // var nodeExit = node.exit().transition()
+      //     .duration(duration)
+      //     .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      //     .remove();
 
-      nodeExit.select("circle")
-          .attr("r", 1e-6);
+      // nodeExit.select("circle")
+      //     .attr("r", 1e-6);
 
-      nodeExit.select("text")
-          .style("fill-opacity", 1e-6);
+      // nodeExit.select("text")
+      //     .style("fill-opacity", 1e-6);
 
       // Update the links…
       var link = $scope.vis.selectAll("path.link")
@@ -108,13 +111,13 @@ $scope.update = function(source) {
           .attr("d", diagonal);
 
       // Transition exiting nodes to the parent's new position.
-      link.exit().transition()
-          .duration(duration)
-          .attr("d", function(d) {
-            var o = {x: source.x, y: source.y};
-            return diagonal({source: o, target: o});
-          })
-          .remove();
+      // link.exit().transition()
+      //     .duration(duration)
+      //     .attr("d", function(d) {
+      //       var o = {x: source.x, y: source.y};
+      //       return diagonal({source: o, target: o});
+      //     })
+      //     .remove();
 
       // Stash the old positions for transition.
       nodes.forEach(function(d) {
@@ -123,7 +126,6 @@ $scope.update = function(source) {
       });
     } // update
 
-  $scope.drawViz = function(){
 
 
 
@@ -162,7 +164,7 @@ $scope.update = function(source) {
 // EVENTS
 // ------
     $scope.onModelLoaded = function (data) {
-        if (data == null || data == [])
+        if (data == null || data === [])
             return;
         $scope.data = data;
         $scope.drawViz();
