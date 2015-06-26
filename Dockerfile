@@ -31,16 +31,14 @@ RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.
 RUN unzip awscli-bundle.zip
 RUN ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
-#   Run Bundle in a cache efficient way
-WORKDIR /tmp
-ADD Gemfile /tmp/
-ADD Gemfile.lock /tmp/
-RUN bundle install --without development test
-
 #   Add the rails app
 RUN mkdir -p /home/app/webapp
 ADD . /home/app/webapp
 RUN chmod -R 0777 /home/app/webapp
+
+#   Run Bundle in a cache efficient way
+WORKDIR /home/app/webapp
+RUN bundle install --without development test
 
 #   Run python setup
 RUN apt-get -y -q install python3-setuptools
