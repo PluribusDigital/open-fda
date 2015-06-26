@@ -1,4 +1,4 @@
-<panel panel-title="Alternative Drugs" panel-class='default' expand="true">
+<panel panel-title="Alternative Drugs" panel-class='default' expand="false">
   
   <h4>Generic Alternatives</h4>
   <ul>
@@ -25,23 +25,3 @@
   <p ng-show="drug.same_class_list.length==0"><em>None Found</em></p>
 </panel>
 
-<panel panel-title="Pricing Information" panel-class='default' expand="true">
-  <p ng-show="drug.nadac.length==0"><em>None Found</em></p>
-  <table ng-show="drug.nadac.length>0" class="table">
-    <thead>
-      <tr>
-        <th>Packaging</th>
-        <th class="text-right">Price/Unit</th>
-        <th class="text-right">Unit</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr ng-repeat="price in drug.nadac">
-        <td>{{price.ndc_description}}</td>
-        <td class="text-right">{{price.nadac_per_unit | currency}}</td>
-        <td class="text-right">{{price.pricing_unit}}</td>
-      </tr>
-    </tbody>
-  </table>
-  <small>Source: <a href="http://www.medicaid.gov/Medicaid-CHIP-Program-Information/By-Topics/Benefits/Prescription-Drugs/Pharmacy-Pricing.html">Medicaid National Average Drug Acquisition Cost (NADAC)</a></small>
-</panel>

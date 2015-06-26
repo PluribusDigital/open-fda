@@ -1,0 +1,13 @@
+<panel panel-title="Summary" panel-class='default' expand="true">
+  <p class="text-capitalize">{{drug.label.indications_and_usage[0] | indicationShort}}</p>
+  <p>{{drug.stop_use[0]}}</p>
+  <p><span class="text-muted">Route:</span> {{drug.routes.join(', ')}}</p>
+  <p>
+  <!-- If true show icon for each TODO -->
+    <span class="text-muted">Label noting interactions with:</span>
+    {{drug.label.drug_interactions.join("\n").includes("alcohol")}}
+    {{drug.label.drug_interactions.join("\n").includes("grapefruit")}}
+    {{drug.label.drug_interactions.join("\n").includes("caffeine")}}
+  </p>
+  <a href="#labelDetail">Full detail</a>
+</panel>

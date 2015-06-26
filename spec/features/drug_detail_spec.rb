@@ -27,7 +27,9 @@ feature "Drug Detail", js: true do
 
   scenario "links to alternative drugs", smoke:true do
     visit "/#/drug/#{@viagra.product_ndc}" 
-    first(:link, "Revatio").click
+    alts_panel = page.find('panel[panel-title="Alternative Drugs"]')
+    alts_panel.find('span.glyphicon-plus-sign').click
+    alts_panel.first(:link, "Revatio").click
     expect(page).to have_content "Revatio"
   end # typeahead
 

@@ -35,15 +35,17 @@
   </div>
 
   <div class="row" ng-show="drug">
-    <div class="col-md-6">
-      <div><ng-include src="'Drug/guide.html'"></div>
-      <div><ng-include src="'Drug/labelDetail.html'"></div>
+    <div class="col-md-9">
       <div><ng-include src="'Drug/adverseEvents.html'"></div>
+      <div><ng-include src="'Drug/labelDetail.html'"></div>
+      <div><ng-include src="'Drug/alternatives.html'"></div>
+      <div><ng-include src="'Drug/pricing.html'"></div>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
       <div><ng-include src="'Drug/recalls.html'"></div>
       <div><ng-include src="'Drug/shortages.html'"></div>
-      <div><ng-include src="'Drug/alternatives.html'"></div>
+      <div><ng-include src="'Drug/guide.html'"></div>
+      <div><ng-include src="'Drug/summary.html'"></div>
     </div>
   </div>
 

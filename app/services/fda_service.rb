@@ -8,8 +8,8 @@ class FdaService < ServiceCache
     1.day
   end
   
-  def self.search(q)
-    url = URI::encode( base_path + "?api_key=#{api_key}&limit=10&search=" + q.to_s )
+  def self.search(q,limit=10)
+    url = URI::encode( base_path + "?api_key=#{api_key}&limit=#{limit}&search=" + q.to_s )
     # Does an existing cache match the URL? If so, use that, else do a live API call
     return cache_exists?(url) ? find(url) : live_search(url)
     #### TODO #### Plop in caching logic
