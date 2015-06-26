@@ -72,3 +72,13 @@ app.filter('indicationShort', function () {
     return item
   };
 });
+
+app.filter('indicationLong', function () {
+  return function (item) {
+    if (!item) { item = "";} 
+    // strip out common intro 
+    item = U.removeCaseInsensitive(item,"Indications And Usage");
+    // find first sentence
+    return item
+  };
+});

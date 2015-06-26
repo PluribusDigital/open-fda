@@ -3,7 +3,7 @@
 <!-- Do I need this for drug label info? -->
   <div ng-show="drug.label.indications_and_usage[0]">
     <h4>Indications and Usage</h4>
-    <p>{{drug.label.indications_and_usage[0]}}</p>
+    <p>{{drug.label.indications_and_usage[0] | indicationLong}}</p>
   </div>
   <div ng-show="drug.stop_use[0]">
     <h4>Stop Use</h4>
