@@ -1,8 +1,8 @@
 <panel panel-title="Summary" panel-class='default' expand="true">
   <p class="text-capitalize">{{drug.label.indications_and_usage[0] | indicationShort}}</p>
   <p>{{drug.stop_use[0]}}</p>
-  <p><span class="text-muted">Route:</span> {{drug.routes.join(', ')}}</p>
-  <p>
+  <p ng-show="drug.routes"><span class="text-muted">Route:</span> {{drug.routes.join(', ')}}</p>
+  <p ng-show="drug.label.drug_interactions">
   <!-- If true show icon for each TODO -->
     <span class="text-muted">Label noting interactions with:</span>
     {{drug.label.drug_interactions.join("\n").includes("alcohol")}}

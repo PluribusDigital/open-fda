@@ -10,7 +10,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :drugs, only:  [:index, :show]
       resources :events, only: [:index]
-      get 'node/drug/:id', to:'node#drug'
+      get 'node/drug/:product_ndc', to:'node#drug'
+      get 'node/substance/:substance_name', to:'node#substance'
+      get 'node/manufacturer/:manufacturer_name', to:'node#manufacturer'
     end
   end
   

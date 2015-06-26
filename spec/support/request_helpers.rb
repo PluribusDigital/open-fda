@@ -1,10 +1,12 @@
 module Requests
+
   module JsonHelpers
     def json
       @json ||= JSON.parse(response.body)
     end
   end
-  module DrugHelpers
+
+  module DrugHelpers # TODO move to fixture or factory
     def setup_drug_data
       @prozac  = Drug.create(is_canon:true, proprietary_name:'Prozac',  product_ndc:'16590-843', nonproprietary_name:'gen1')
       @viagra  = Drug.create(is_canon:true, proprietary_name:'Viagra',  product_ndc:'0069-4200', nonproprietary_name:'SILDENAFIL CITRATE')
@@ -16,6 +18,11 @@ module Requests
       PharmaClassEstablished.create(class_name:'abc EST',product_ndc:'0069-4200')
       PharmaClassMethod.create(class_name:'abc MTH',product_ndc:'0069-4200')
       PharmaClassPhysiologic.create(class_name:'abc PH',product_ndc:'0069-4200')
+      Substance.create(name:'flubber',product_ndc:@prozac.product_ndc)
+      Substance.create(name:'flubber',product_ndc:@viagra.product_ndc)
+      Manufacturer.create(name:'ronco',product_ndc:@prozac.product_ndc)
+      Manufacturer.create(name:'ronco',product_ndc:@viagra.product_ndc)
     end
   end
+
 end
