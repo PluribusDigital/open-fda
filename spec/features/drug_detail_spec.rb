@@ -9,7 +9,7 @@ feature "Drug Detail", js: true do
     sleep(5) # avoid API rate limit
   end
 
-  scenario "basic information" do
+  scenario "basic information" do, smoke:true do
     visit "/#/drug/#{@viagra.product_ndc}"
     expect(page).to have_content "Viagra"
     # Generic Name
@@ -25,7 +25,7 @@ feature "Drug Detail", js: true do
     expect(page).to have_content "Recalls: 1"
   end # typeahead
 
-  scenario "links to alternative drugs", smoke:true do
+  scenario "links to alternative drugs"
     visit "/#/drug/#{@viagra.product_ndc}"
     expect(page).to have_content "Viagra" 
     alts_panel = page.find('panel[panel-title="Alternative Drugs"]')
