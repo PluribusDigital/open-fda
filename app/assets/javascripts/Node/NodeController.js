@@ -5,19 +5,27 @@ app.controller("NodeController", ['$scope', '$http', '$routeParams', '$location'
 
   $scope.treeData=[];
 
-  $scope.getNode = function () {
+  $scope.getDrugNode = function (ndc) {
     // label data
-    $http.get('/api/v1/node/drug/0069-4190' , {}
+    $http.get('/api/v1/node/drug/'+ndc , {}
     ).then(function(response){
       $scope.treeData = response.data;
       return true;
     });
   }
 
-  $scope.drillOnNode = function () {
-    console.log("drill");
+  $scope.drillOnNode = function (d) {
+    console.log(">> drill baby, drill!");
+    console.log(d);
+    // fetch node data based on type
+    if (d.type=="Drug") {
+       $scope.getDrugNode(d.identifier||d.product_ndc);
+    }
   }
 
-  $scope.getNode();
+  // if we have a type & ID via the route, use that
+  if ($routeParams.type && $routeParams.identifier) {
+    $scope.drillOnNode({type:$routeParams.type,identifier:$routeParams.identifier});
+  }
 
 }]);

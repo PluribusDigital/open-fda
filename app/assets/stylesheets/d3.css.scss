@@ -1,3 +1,5 @@
+/* SVG - Tree directives */
+
 .node circle {
   cursor: pointer;
   fill: #fff;
@@ -13,4 +15,33 @@ path.link {
   fill: none;
   stroke: #ccc;
   stroke-width: 1.5px;
+}
+
+.primary, .drillable {
+  font-weight:bold;
+}
+
+.drillable {
+  fill: #33f;
+  cursor:pointer;
+}
+
+
+
+
+/* SVG - Bar chart directives */
+.bar { 
+  fill: rgb(31, 119, 180);
+}
+
+.bar:hover { 
+  fill: rgb(61, 149, 210);
+}
+
+.bar-label { 
+  fill: #eeeeee; /* not 'color' because it is a SVG element */
+}
+
+.bar-value { 
+  fill: #000000; /* not 'color' because it is a SVG element */
 }
