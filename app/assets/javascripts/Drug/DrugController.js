@@ -3,7 +3,8 @@ function ($scope, $routeParams, $location, $sanitize, drugService, eventService)
 
   window.DrugControllerScope = $scope; // debugging hook TODO: remove
   $scope.selectedDrug = {}
-  $scope.drug, $scope.events = null;
+  $scope.drug = null,
+  $scope.eventsDetail = null;
   $scope.selectedLabel = null;
   $scope.searchPlaceholder = "enter drug name (e.g. Lipitor)";
 
@@ -37,14 +38,6 @@ function ($scope, $routeParams, $location, $sanitize, drugService, eventService)
   // navigate among drugs
   $scope.navigateToDrug = function(product_ndc) {
     return $location.path("/drug/" + product_ndc);
-  }
-
-  // build link to FDA's recall details
-  // TODO - looks like this is no longer used: DELETE if so
-  $scope.url_fda_enforcement_report = function( recall ) {
-    var id = recall.recall_number,
-        report_date = $scope.UTIL.parseDate(recall.report_date);
-    return "http://www.accessdata.fda.gov/scripts/enforcement/enforce_rpt-Product-Tabs.cfm?action=select&recall_number="+id+"&w="+report_date+"&lang=eng"
   }
 
   // if we have a drug ID via the route, use that

@@ -1,25 +1,73 @@
-describe("DrugController", function() {
-  var ctrl, scope, http, routeParams, location, setupController;
-  scope = null;
-  ctrl = null;
-  location = null;
-  routeParams = null;
-  setupController = function(keywords) {
-    return inject(function($location, $routeParams, $rootScope, $controller) {
-      scope = $rootScope.$new();
-      location = $location;
-      routeParams = $routeParams;
-      return ctrl = $controller('DrugController', {
-        $scope: scope,
-        $location: location
-      });
-    });
-  };
-  beforeEach(module("openFDA"));
-  beforeEach(setupController());
+describe("DrugController", function () {
+    var scope, DrugServiceMock, EventServiceMock, target;
 
-  return it('defaults to no drug', function() {
-    return expect(scope.selectedDrug).toEqualData({});
-  });
-  
+    beforeEach(module("openFDA"));
+
+    // Mock the services
+    beforeEach(function () {
+        DrugServiceMock = {
+            typeAheadSearch: function (val) {
+                return { 'results': [{ 'name': 'x' }] };
+            },
+
+            getDetails: function (product_ndc, success) {
+                success({ 'proprietary_name': 'xyz' });
+            }
+        };
+
+        EventServiceMock = {
+            index: function (brand, symptom, success) {
+                success({ 'results': [] });
+            }
+        };
+
+        module(function ($provide) {
+            $provide.value('DrugService', DrugServiceMock);
+            $provide.value('EventService', EventServiceMock);
+        });
+
+        spyOn(DrugServiceMock, 'getDetails').and.callThrough();
+        spyOn(EventServiceMock, 'index').and.callThrough();
+    });
+
+    describe('with no routeParams', function () {
+        beforeEach(inject(function ($rootScope, $controller) {
+            scope = $rootScope.$new();
+            target = $controller('DrugController', {
+                $scope: scope,
+                $routeParams: {}
+            });
+        }));
+
+        it('defaults to no drug', function () {
+            expect(scope.selectedDrug).toEqualData({});
+            expect(scope.drug).toBeNull();
+            expect(scope.eventsDetail).toBeNull();
+        });
+    });
+
+    describe('with a product NDC in the routeParams', function () {
+        var location = null;
+
+        beforeEach(inject(function ($rootScope, $controller, $location) {
+            scope = $rootScope.$new();
+            location = $location;
+            target = $controller('DrugController', {
+                $scope: scope,
+                $routeParams: {'product_ndc' : '0001-0001'}
+            });
+        }));
+
+        it('gets details and events', function () {
+            expect(scope.drug).not.toBeNull();
+            expect(scope.eventsDetail).not.toBeNull();
+            expect(DrugServiceMock.getDetails).toHaveBeenCalledWith('0001-0001', jasmine.any(Function));
+            expect(EventServiceMock.index).toHaveBeenCalledWith('xyz', '', jasmine.any(Function));
+        });
+
+        it('navigates to other drugs', function () {
+            scope.navigateToDrug('0002-0002');
+            expect(location.$$url).toEqual('/drug/0002-0002');
+        });
+    });
 });
