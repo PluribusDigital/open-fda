@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :drugs, only:  [:index, :show]
       resources :events, only: [:index]
+      get 'node/drug/:id', to:'node#drug'
     end
   end
   

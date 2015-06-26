@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 class FruitService < ServiceCache
+  def self.cache_timeframe
+    1.day
+  end
 end
 class VeggieService < ServiceCache
 end
@@ -86,6 +89,25 @@ RSpec.describe ServiceCache do
     end # destroying
 
   end # finding
+
+  describe "cleaning cache" do 
+
+    it "should clean the cache for old records" do 
+      FruitService.write_cache "apple",{name: 'apple', color:'red', size:'medium'}
+      ServiceCache.last.update_attributes(updated_at: 2.days.ago)
+      expect{
+        FruitService.clean_cache
+      }.to change{FruitService.all_records.count}.by(-1)
+    end
+
+    it "should not clean new records" do 
+      FruitService.write_cache "apple",{name: 'apple', color:'red', size:'medium'}
+      expect{
+        FruitService.clean_cache
+      }.to_not change{FruitService.all_records.count}
+    end
+
+  end
 
 
 

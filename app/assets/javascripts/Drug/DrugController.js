@@ -1,5 +1,5 @@
-app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location', '$sanitize', 
-  function ($scope, $http, $routeParams, $location, $sanitize) {
+app.controller("DrugController", ['$scope', '$routeParams', '$location', '$sanitize', 'DrugService', 'EventService',
+function ($scope, $routeParams, $location, $sanitize, drugService, eventService) {
 
   window.DrugControllerScope = $scope; // debugging hook TODO: remove
   $scope.selectedDrug = {}
@@ -8,16 +8,8 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
   $scope.searchPlaceholder = "enter drug name (e.g. Lipitor)";
 
   // typeahead search
-  $scope.searchDrugs = function(val) {
-    return $http.get('/api/v1/drugs.json', {
-      params: {
-        q: val
-      }
-    }).then(function(response){
-      return response.data.results.map(function(item){
-        return item;
-      });
-    });
+  $scope.searchDrugs = function (val) {
+      return drugService.typeAheadSearch(val);
   };
   $scope.onSelect = function (item, model, label) {
     $scope.navigateToDrug(item.product_ndc)
@@ -25,23 +17,21 @@ app.controller("DrugController", ['$scope', '$http', '$routeParams', '$location'
 
   // fetch details for a given drug
   $scope.getDetail = function () {
-    // label data
-    $http.get('/api/v1/drugs/' + $scope.selectedDrug.product_ndc , {}
-    ).then(function(response){
-      $scope.drug = response.data;
+      drugService.getDetails($scope.selectedDrug.product_ndc, $scope.onDetailsLoaded);
+  }
+
+  $scope.onDetailsLoaded = function(data){
+      $scope.drug = data;
       $scope.drillOnEvent(''); // get a sampling of recent events
-      return true;
-    });
   }
 
   // fetch event details for table
   $scope.drillOnEvent = function (term) {
-    var brand = $scope.drug.proprietary_name;
-    $http.get('/api/v1/events?brand_name='+brand+'&term='+term , {}
-    ).then(function(response){
-      $scope.eventsDetail = response.data.results;
-      return true;
-    });
+      eventService.index($scope.drug.proprietary_name, term, $scope.onEventsLoaded);
+  }
+
+  $scope.onEventsLoaded = function (data) {
+      $scope.eventsDetail = data.results;
   }
 
   // navigate among drugs

@@ -14,6 +14,24 @@ class FdaEventService < FdaService
     search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\""
   end
 
+  def self.age_breakdown_brand_term(brand_name,term='')
+    result = []
+    age_ranges = [
+      [0,17.9],
+      [18,55]
+    ]
+    age_ranges.each do |range|
+      base_string = "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\""
+      age_string  ="+AND+patient.patientonsetage:[#{range[0].to_s}+TO+#{range[1].to_s}]&count=patient.patientsex"
+      result << {
+        age_min: range[0],
+        age_max: range[1],
+        data: search_serious(base_string+age_string)
+      }
+    end
+    return result
+  end
+
   def self.event_count_by_reaction(brand_name, from_date=2.years.ago)
     search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"&count=patient.reaction.reactionmeddrapt.exact"
   end

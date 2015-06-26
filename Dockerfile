@@ -22,7 +22,7 @@ ADD deploy/nginx/rails-env.conf /etc/nginx/main.d/rails-env.conf
 WORKDIR /tmp
 ADD Gemfile /tmp/
 ADD Gemfile.lock /tmp/
-RUN bundle install
+RUN bundle install --without development test
 
 #   Add the rails app
 RUN mkdir /home/app/webapp

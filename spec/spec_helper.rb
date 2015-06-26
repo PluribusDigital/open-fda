@@ -3,9 +3,10 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'capybara/rails'
 require 'capybara/poltergeist'
+require 'webmock/rspec'
 Capybara.javascript_driver = :poltergeist
-
 Capybara.default_wait_time = 10
+WebMock.allow_net_connect!
 
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 

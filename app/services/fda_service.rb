@@ -1,13 +1,25 @@
-class FdaService
+class FdaService < ServiceCache
   # Base Class to DRY up FDA service classes
 
   include HTTParty
   base_uri 'https://api.fda.gov/'
+
+  def self.cache_timeframe
+    1.day
+  end
   
   def self.search(q)
-    url = base_path + "?api_key=#{api_key}&limit=10&search=" + q.to_s
-    result = self.get URI::encode(url) 
+    url = URI::encode( base_path + "?api_key=#{api_key}&limit=10&search=" + q.to_s )
+    # Does an existing cache match the URL? If so, use that, else do a live API call
+    return cache_exists?(url) ? find(url) : live_search(url)
+    #### TODO #### Plop in caching logic
+     # method to clean cache (stuff older than 1 week)
+  end
+
+  def self.live_search(url)
+    result = self.get url
     raise "API Rate Limit Exceeded" if result['error'] && result['error']['code'] == 'OVER_RATE_LIMIT'
+    write_cache url, result
     return result
   end
 
