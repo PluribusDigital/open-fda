@@ -6,8 +6,7 @@ machine:
 
 dependencies:
   pre:
-    - docker rm $(docker ps -a -q)
-    - docker rmi $(docker images -q)
+    - docker rmi stsilabs/openfda-web
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
     # nodejs-legacy fails, why do we need this?
