@@ -3,9 +3,6 @@ set -e
 
 docker info
 
-docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
-
 # build web image
 docker build -t stsilabs/openfda-web:$CIRCLE_SHA1 .
     
