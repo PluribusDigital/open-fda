@@ -36,7 +36,7 @@ RUN mkdir -p /home/app/webapp
 ADD . /home/app/webapp
 RUN chmod -R 0777 /home/app/webapp
 
-#   Run Bundle in a cache efficient way
+#   Run Bundle
 WORKDIR /home/app/webapp
 RUN bundle install --without development test
 
