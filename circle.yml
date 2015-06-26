@@ -7,7 +7,8 @@ machine:
 dependencies:
   pre:
     # build docker images
-    - bash docker_build.sh
+    - bash docker_build.sh:
+        timeout: 1800
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
     # nodejs-legacy fails, why do we need this?
@@ -19,7 +20,6 @@ dependencies:
     # load .env from s3
     - aws s3 cp s3://open-fda/.env .env
     - bundle exec rake bower:install
-        timeout: 1800
 
 # skipping seed temporarily
 #database:
