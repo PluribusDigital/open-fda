@@ -49,6 +49,15 @@
   position: relative;
 }
 
+.quick-search-brand, .quick-search-generic {
+    /* Too much text should be represented as ellipses */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+	display: inline-block;
+}
+
 /* ------------------
         Viz 
 ------------------ */
