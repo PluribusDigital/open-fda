@@ -6,6 +6,7 @@ module API::V1
     end
 
     def manufacturer
+      raise params[:foo]
       @manufacturer = Manufacturer.find_by_name(params[:manufacturer_name])
       @drugs = Drug.canonical
         .joins( :manufacturers )
