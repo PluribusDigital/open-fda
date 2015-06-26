@@ -1,5 +1,11 @@
 <div class="container viz" role="main">
-  <h1 class="compact">Visual Explorer</h1>
+  <h1 class="compact">
+    Visual Explorer &gt;
+    <small>
+    {{focusNode.type}} &gt;
+    {{focusNode.name}}
+    </small>
+  </h1>
 
   <div tree-chart class="tree-container" series="treeData" drill-on-node="drillOnNode"></div>
   

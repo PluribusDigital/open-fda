@@ -4,20 +4,21 @@ app.controller("NodeController", ['$scope', '$http', '$routeParams', '$location'
   window.NodeControllerScope = $scope; // debugging hook TODO: remove
 
   $scope.treeData=[];
+  $scope.focusNode={};
 
   $scope.getNode = function (node) {
     // label data
     $http.get('/api/v1/node/'+node.type.toLowerCase()+'/'+node.identifier , {}
     ).then(function(response){
       $scope.treeData = response.data;
+      $scope.focusNode.name = $scope.treeData.name;
       return true;
     });
   }
 
   $scope.drillOnNode = function (node) {
-    console.log(">> drill baby, drill!");
-    console.log(node);
     // fetch node data based on type
+    $scope.focusNode = node;
     $scope.getNode(node);
   }
 
