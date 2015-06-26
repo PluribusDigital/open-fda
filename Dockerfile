@@ -25,7 +25,7 @@ ADD Gemfile.lock /tmp/
 RUN bundle install --without development test
 
 #   Add the rails app
-RUN mkdir /home/app/webapp
+RUN mkdir -p /home/app/webapp
 ADD . /home/app/webapp
 RUN chmod -R 0777 /home/app/webapp
 
