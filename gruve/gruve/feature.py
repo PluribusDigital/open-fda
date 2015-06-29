@@ -2,7 +2,6 @@ import os
 import sys
 import json
 import csv
-from gruve import io
 
 class Feature():
     """

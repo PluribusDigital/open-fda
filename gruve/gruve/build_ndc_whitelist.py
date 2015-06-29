@@ -78,7 +78,7 @@ class BuildNdcWhiteList():
 
     # -------------------------------------------------------------------------
 
-    def execute(self):
+    def build(self):
         # load the FDA info as a dictionary
         fda_info = {x['product_ndc']: x for x in self.acquire_fda_ndc() }
 
@@ -91,6 +91,6 @@ class BuildNdcWhiteList():
 
 if __name__ == '__main__':
     y = BuildNdcWhiteList()
-    y.execute()
+    y.build()
 
 
