@@ -3,28 +3,29 @@
 
     beforeEach(module("openFDA"));
 
-    // Mock the services
-    beforeEach(function () {
+    // Create the target
+    beforeEach(inject(function ($rootScope, $controller, $location, $q) {
+        // Mock the service
         DrugServiceMock = {
             typeAheadSearch: function (val) {
-                return { 'results': [{ 'name': 'x' }] };
+                var result = [{ 'name': 'x' }];
+                if (val == 'asdf')
+                    result = [];
+
+                var deferred = $q.defer();
+                deferred.resolve(result);
+                return deferred.promise;
             }
         };
 
-        module(function ($provide) {
-            $provide.value('DrugService', DrugServiceMock);
-        });
-
-        spyOn(DrugServiceMock, 'typeAheadSearch').and.callThrough();
-    });
-
-    // Create the target
-    beforeEach(inject(function ($rootScope, $controller, $location) {
         scope = $rootScope.$new();
         location = $location;
         target = $controller('SearchController', {
-            $scope: scope
+            $scope: scope,
+            DrugService: DrugServiceMock
         });
+
+        spyOn(DrugServiceMock, 'typeAheadSearch').and.callThrough();
     }));
 
     it('has defaults for every instance variable', function () {
@@ -48,9 +49,21 @@
     });
 
     it('calls the drug service to get a list of drugs', function () {
-        var actual = scope.searchDrugs('was');
-        expect(actual).not.toBeNull();
-        expect(DrugServiceMock.typeAheadSearch).toHaveBeenCalledWith('was');
+        scope.searchDrugs('was').then(function (result) {
+            expect(result).not.toBeNull();
+            expect(result.length).toEqual(1);
+            expect(scope.noRecords).toEqual(false);
+            expect(DrugServiceMock.typeAheadSearch).toHaveBeenCalledWith('was');
+        });
+    });
+
+    it('sets a flag when the list of drugs are empty', function () {
+        scope.searchDrugs('asdf').then(function (result) {
+            expect(result).not.toBeNull();
+            expect(result.length).toEqual(0);
+            expect(scope.noRecords).toEqual(true);
+            expect(DrugServiceMock.typeAheadSearch).toHaveBeenCalledWith('asdf');
+        });
     });
 
     it('navigates to a details page by default', function () {

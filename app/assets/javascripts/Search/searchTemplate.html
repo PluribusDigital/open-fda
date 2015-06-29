@@ -1,4 +1,4 @@
-<form>
+<form style="position: relative;">
     <div class="input-group" ng-hide="hide">
       <input type="text" class="form-control" name="quickSearch" id="quickSearch"
         placeholder="{{searchPlaceholder}}" 
@@ -12,4 +12,7 @@
           type="submit" ng-click="getDetail()" style="padding-top:7px;">Go!</button>
       </span>
     </div><!-- /input-group -->
+    <div class="search-no-records" ng-show="noRecords">
+        No Matches Found
+    </div>
 </form>

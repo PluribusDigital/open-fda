@@ -58,6 +58,10 @@ ul.alternative-list li{
   position: relative;
 }
 
+/* ------------------
+        Search 
+------------------ */
+
 .quick-search-brand, .quick-search-generic {
     /* Too much text should be represented as ellipses */
     white-space: nowrap;
@@ -67,6 +71,38 @@ ul.alternative-list li{
 	display: inline-block;
 }
 
+.search-no-records {
+	position: absolute;
+	background: rgb(252, 253, 198);
+	border: 1px solid rgb(255, 128, 128);
+	font-style: italic;
+	bottom: -40px;
+	left: 0;
+	padding: 7px;
+}
+.search-no-records:after, .search-no-records:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.search-no-records:after {
+	border-color: rgba(255, 128, 128, 0);
+	border-bottom-color: rgb(255, 128, 128);
+	border-width: 5px;
+	margin-left: -5px;
+}
+.search-no-records:before {
+	border-color: rgba(252, 253, 198, 0);
+	border-bottom-color: rgb(252, 253, 198);
+	border-width: 6px;
+	margin-left: -6px;
+}
 /* ------------------
         Viz 
 ------------------ */
