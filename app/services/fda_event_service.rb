@@ -5,12 +5,6 @@ class FdaEventService < FdaService
     '/drug/event.json'
   end
 
-  # TODO Delete?
-  # def self.search_product_ndc(ndc)
-  #   ndc = normalize_product_ndc(ndc)
-  #   search_serious 'patient.drug.openfda.product_ndc:"' + ndc + '"'
-  # end
-
   def self.search_brand_term(brand_name,term='')
     result = search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\"", 99
     result["age_breakdown"] = event_age_calcs(result)

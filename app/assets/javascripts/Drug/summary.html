@@ -3,11 +3,19 @@
   <p>{{drug.stop_use[0]}}</p>
   <p ng-show="drug.routes"><span class="text-muted">Route:</span> {{drug.routes.join(', ')}}</p>
   <p ng-show="drug.label.drug_interactions">
-  <!-- If true show icon for each TODO -->
     <span class="text-muted">Label noting interactions with:</span>
-    {{drug.label.drug_interactions.join("\n").includes("alcohol")}}
-    {{drug.label.drug_interactions.join("\n").includes("grapefruit")}}
-    {{drug.label.drug_interactions.join("\n").includes("caffeine")}}
+    <div class="text-warning" ng-show="drug.label.drug_interactions.join('\n').toLowerCase().includes('alcohol')">
+      <span class="fa fa-glass" title="Alcohol" alt="Alcohol"></span>
+      Alcohol
+    </div>
+    <div class="text-warning" ng-show="drug.label.drug_interactions.join('\n').toLowerCase().includes('grapefruit')">
+      <span class="fa fa-lemon-o" title="Grapefruit" alt="Grapefruit"></span>
+      Grapefruit
+    </div>
+    <div class="text-warning" ng-show="drug.label.drug_interactions.join('\n').toLowerCase().includes('caffeine')">
+      <span class="fa fa-coffee" title="Caffeine" alt="Caffeine"></span>
+      Caffeine
+    </div>
   </p>
   <a href="" ng-click="scrollTo('labelDetailPanel')">Full detail</a>
 </panel>
