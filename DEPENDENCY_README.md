@@ -17,7 +17,7 @@
  * Docs: http://bower.io/
  * Docs: https://github.com/rharriso/bower-rails
 
-## Python - ETL Depedencies
+## Python - ETL Dependencies
  * `/gruve/setup.py` defines dependencies (i.e. requests)
  * To install packages:
    1. `cd gruve` 
