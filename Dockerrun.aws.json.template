@@ -7,7 +7,7 @@
   "containerDefinitions": [
     {
       "name": "postgres",
-      "image": "stsilabs/openfda-postgres:<OPENFDA_POSTGRES_VERSION>",
+      "image": "postgres",
       "environment": [
         {
           "name": "POSTGRES_USER",
