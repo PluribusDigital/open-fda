@@ -19,7 +19,7 @@ json.results do
     end 
   end # event details
   json.age_breakdown do 
-    json.array!(@age_breakdown) do |row|
+    json.array!(@event_details["age_breakdown"]) do |row|
       json.extract! row, :age_min, :age_max, :data
     end
   end
