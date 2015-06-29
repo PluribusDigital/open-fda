@@ -1,5 +1,13 @@
 {
   "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "postgres-data",
+      "host": {
+        "sourcePath": "/var/lib/postgresql/data"
+      }
+    }
+  ],
   "authentication": {
     "bucket": "open-fda",
     "key": "dockercfg"
@@ -19,7 +27,14 @@
         }
       ],
       "essential": true,
-      "memory": 1536
+      "memory": 1536,
+      "mountPoints": [
+        {
+          "sourceVolume": "postgres-data",
+          "containerPath": "/var/lib/postgresql/data",
+          "readOnly": true
+        }
+      ]
     },
     {
       "name": "openfda-web",
