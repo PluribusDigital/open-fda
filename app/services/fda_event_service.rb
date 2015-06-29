@@ -41,7 +41,7 @@ class FdaEventService < FdaService
       "_missing_:reportduplicate",
       additional_query_string
     ] 
-    self.search search_phrases.join("+AND+")
+    self.search search_phrases.join("+AND+"), 99
   end
 
   private
