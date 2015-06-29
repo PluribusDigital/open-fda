@@ -45,6 +45,7 @@ end
 group :test do 
   gem "webmock" # test/mock http calls to external APIs
   gem "phantomjs"
+  gem 'simplecov', :require => false # test coverage metrics
 end
 
 group :test, :development do

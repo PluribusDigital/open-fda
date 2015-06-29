@@ -25,6 +25,9 @@
 /tmp
 *.err
 
+# Test coverage metrics
+coverage
+
 # Don't store api keys in source control
 .env
 
