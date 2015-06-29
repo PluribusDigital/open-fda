@@ -1,9 +1,18 @@
 /*
+Primary Color:
+8DAB7C  708066  436F28  B9D5A9  C1D5B5
+Complementary Color:
+B4828E  876B71  752A3C  D9ADB7  D9B8C0
+*/
+
+
+
+/*
  * Custom Headlines (i.e. drug title area)
  */
 
 .headline {
-  background-color: #6f5499;
+  background-color: #436f28;
   margin-top: -20px;
   margin-bottom: 10px;
   margin-left: 0px;
@@ -73,12 +82,13 @@ ul.alternative-list li{
 
 .search-no-records {
 	position: absolute;
-	background: rgb(252, 253, 198);
-	border: 1px solid rgb(255, 128, 128);
+	background: #752A3C;
+	border: 1px solid #D9ADB7;
 	font-style: italic;
 	bottom: -40px;
 	left: 0;
 	padding: 7px;
+  color: #fff
 }
 .search-no-records:after, .search-no-records:before {
 	bottom: 100%;
@@ -93,13 +103,13 @@ ul.alternative-list li{
 
 .search-no-records:after {
 	border-color: rgba(255, 128, 128, 0);
-	border-bottom-color: rgb(255, 128, 128);
+	border-bottom-color: #752A3C;
 	border-width: 5px;
 	margin-left: -5px;
 }
 .search-no-records:before {
 	border-color: rgba(252, 253, 198, 0);
-	border-bottom-color: rgb(252, 253, 198);
+	border-bottom-color: #D9ADB7;
 	border-width: 6px;
 	margin-left: -6px;
 }

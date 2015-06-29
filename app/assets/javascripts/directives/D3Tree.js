@@ -65,7 +65,7 @@ app.controller('D3TreeController', function ($scope) {
 
       nodeEnter.append("svg:circle")
           .attr("r", 1e-6)
-          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
+          .attr("class", function(d) { return d._children ? "node-collapsed" : "node-expanded"; })
           .on("click", function(d) { $scope.toggle(d,source); $scope.update(d); });
 
       nodeEnter.append("svg:text")
@@ -84,7 +84,7 @@ app.controller('D3TreeController', function ($scope) {
 
       nodeUpdate.select("circle")
           .attr("r", 6.5)
-          .style("fill", function(d) { return d._children ? "#99f" : "#fff"; });
+          .attr("class", function(d) { return d._children ? "node-collapsed" : "node-expanded"; })
 
       nodeUpdate.select("text")
           .style("fill-opacity", 1);

@@ -3,7 +3,7 @@
 .node circle {
   cursor: pointer;
   fill: #fff;
-  stroke: steelblue;
+  stroke: #8DAB7C;
   stroke-width: 1.5px;
 }
 
@@ -11,9 +11,16 @@
   font-size: 11px;
 }
 
+.node .node-collapsed {
+  fill: #eee;
+}
+.node .node-expanded {
+  fill: #8DAB7C;
+}
+
 path.link {
   fill: none;
-  stroke: #ccc;
+  stroke: #8DAB7C;
   stroke-width: 1.5px;
 }
 
@@ -22,11 +29,9 @@ path.link {
 }
 
 .drillable {
-  fill: #33f;
+  fill: #436f28;
   cursor:pointer;
 }
-
-
 
 
 /* SVG - Bar chart directives */
