@@ -16,9 +16,6 @@ module API::V1
     def substance
       name = unescape_trailing_period(params[:substance_name])
       @substance = Substance.find_by_name(name)
-      @drugs = Drug.canonical
-        .joins( :substances )
-        .where( 'substances.name' => @substance.name )
     end  
 
   end
