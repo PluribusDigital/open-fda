@@ -9,6 +9,9 @@
   </em></p>
   <p ng-show="!drug.event_data.length"><em>None Found</em></p>
   
+  {{eventQualData}}
+  <div donut-chart chartdata="eventQualData" ng-show="eventQualData.values.length > 0"></div>
+
   <div ng-show="eventsDetail.event_details.length > 0">
     <hr>
     <p class="text-muted pull-right">Limited to 10 results</p>
