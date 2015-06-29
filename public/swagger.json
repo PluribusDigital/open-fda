@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "version": "1.0.0",
-        "title": "Open FDA Drug Explorer"
+        "title": "Drug Explorer API"
     },
     "paths": {
         "/api/v1/drugs": {
