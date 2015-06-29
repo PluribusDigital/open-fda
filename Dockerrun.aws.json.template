@@ -19,7 +19,7 @@
         }
       ],
       "essential": true,
-      "memory": 1024
+      "memory": 1536
     },
     {
       "name": "openfda-web",
@@ -39,7 +39,7 @@
         }
       ],
       "essential": true,
-      "memory": 512,
+      "memory": 1536,
       "portMappings": [
         {
           "hostPort": 80,
