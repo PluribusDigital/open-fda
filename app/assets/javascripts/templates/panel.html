@@ -1,10 +1,10 @@
 <div class="panel panel-{{panelClass}}" style="{{style}}">
   <div class="panel-heading">
     <div class="pull-left" style="padding-right:1em;">
-      <span ng-show="expand" ng-click="expand=false" class="glyphicon glyphicon-minus-sign"></span> 
-      <span ng-hide="expand" ng-click="expand=true" class="glyphicon glyphicon-plus-sign"></span> 
+      <span ng-show="expand" ng-click="expand=false" class="text-muted fa fa-minus-square"></span> 
+      <span ng-hide="expand" ng-click="expand=true" class="text-muted fa fa-plus-square"></span> 
     </div>
-    <span ng-show="panelIcon" class="pull-right glyphicon glyphicon-{{panelIcon}}"></span>
+    <span ng-show="panelIcon" class="pull-right fa fa-{{panelIcon}}"></span>
     <h3 class="panel-title">{{panelTitle}}</h3>
   </div>
   <div class="panel-body" ng-show="expand">
