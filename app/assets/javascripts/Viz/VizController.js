@@ -1,20 +1,16 @@
-app.controller("VizController", ['$scope', '$http', '$routeParams', '$location', '$sanitize', 
-  function ($scope, $http, $routeParams, $location, $sanitize) {
+app.controller("VizController", ['$scope', '$http', '$routeParams', '$location', '$sanitize', 'NodeService',
+  function ($scope, $http, $routeParams, $location, $sanitize, nodeService) {
 
   $scope.treeData=[];
   $scope.focusNode={};
 
   $scope.getNode = function (node) {
-    // label data
-    var ident = node.identifier;
-    // manually escape any periods
-    ident = U.replaceAll(ident,".","-*-");
-    $http.get('/api/v1/node/'+node.type.toLowerCase()+'/'+ident , {}
-    ).then(function(response){
-      $scope.treeData = response.data;
+      nodeService.getDetails(node.type, node.identifier, $scope.onNodeLoaded);
+  }
+
+  $scope.onNodeLoaded = function (data) {
+      $scope.treeData = data;
       $scope.focusNode.name = $scope.treeData.name;
-      return true;
-    });
   }
 
   $scope.drillOnNode = function (node) {

@@ -21,6 +21,9 @@ app.config([
     }).when('/viz/:type/:identifier', {
         templateUrl: "Viz/Viz.html",
         controller: 'VizController'
+    }).when('/viz/', {
+        templateUrl: "Drug/Drug.html",
+        controller: 'DrugController'
     });
 }
 ]);
