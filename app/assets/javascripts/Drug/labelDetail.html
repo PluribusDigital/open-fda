@@ -1,23 +1,28 @@
-<panel panel-title="Label Details" panel-class='default' expand="true">
+<a name="labelDetail"></a>
+<panel panel-title="Label Details" panel-class='default' expand="false">
 <!-- Do I need this for drug label info? -->
-  <p class="lead" ng-show="drug.length==0"><em>None Found</em></p>
-  <div ng-show="drug">
-    <em class="text-muted">{{drug.product_type.join(', ') | lowercase }}</em>
-      <p class="lead text-capitalize">{{drug.label.indications_and_usage[0] | indicationShort}}</p>
-      <p>{{drug.stop_use[0]}}</p>
-      <p><span class="text-muted">Routes of Administration:</span> {{drug.routes.join(', ')}}</p>
-      <p>
-      <!-- If true show icon for each -->
-      <span class="text-muted">Label noting interactions with:</span>
-      {{drug.label.drug_interactions.join("\n").includes("alcohol")}}
-      {{drug.label.drug_interactions.join("\n").includes("grapefruit")}}
-      {{drug.label.drug_interactions.join("\n").includes("caffeine")}}
-      </p>
-      <p class="trim-info" tooltip="{{drug.label.pediatric_use.join('\n')}}">
-      {{drug.label.pediatric_use.join("\n")}}
-      </p>
-      <p class="trim-info" tooltip="{{drug.label.pediatric_use.join('\n')}}">
-      {{drug.label.pregnancy.join("\n")}}
-      </p>
+  <div ng-show="drug.label.indications_and_usage[0]">
+    <h4>Indications and Usage</h4>
+    <p>{{drug.label.indications_and_usage[0] | indicationLong}}</p>
+  </div>
+  <div ng-show="drug.stop_use[0]">
+    <h4>Stop Use</h4>
+    <p>{{drug.stop_use[0]}}</p>
+  </div>
+  <div ng-show="drug.routes.length">
+    <h4>Routes of Administration</h4>
+    <p>{{drug.routes.join(', ')}}</p>
+  </div>
+  <div ng-show="drug.label.drug_interactions">
+    <h4>Interactions</h4>
+    <p>{{drug.label.drug_interactions.join("\n")}}</p>
+  </div>
+  <div ng-show="drug.label.pediatric_use">
+    <h4>Pediatric Use</h4>
+    <p>{{drug.label.pediatric_use.join("\n")}}</p>
+  </div>
+  <div ng-show="drug.label.pregnancy">
+    <h4>Pregnancy</h4>
+    <p>{{drug.label.pregnancy.join("\n")}}</p>
   </div>
 </panel>

@@ -13,10 +13,11 @@ app.controller('D3TreeController', function ($scope) {
   */
 
   // set up dimensions
-  var m = [20, 120, 20, 120];
+  var m = [0, 50, 0, 200]; // margins [top, right, bottom, left]
   var w = 1280 - m[1] - m[3];
-  var h =  300 - m[0] - m[2];
+  var h =  500 - m[0] - m[2];
   var i = 0;
+  var labelMax = 30; // longest size for text labels
 
   var tree = d3.layout.tree()
     .size([h, w]);
@@ -26,18 +27,31 @@ app.controller('D3TreeController', function ($scope) {
 
   $scope.drawViz = function(){
 
+    // get rid of any old svg (previous draws)
     d3.select($scope.node).selectAll("*").remove();
 
-     $scope.vis = d3.select($scope.node).append("svg:svg")
+    $scope.vis = d3.select($scope.node).append("svg:svg")
       .attr("width", w + m[1] + m[3])
       .attr("height", h + m[0] + m[2])
       .append("svg:g")
       .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-
     $scope.update = function(source) {
 
       var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+      var makeLabel = function(d) {
+        var label;
+        if (d.type) {
+          label = d.type+": "+d.name;
+        } else {
+          label =  d.name; 
+        }
+        if (label.length > labelMax) {
+          label = label.substring(0,labelMax) + "...";
+        }
+        return label;
+      }
 
       // Compute the new tree layout.
       var nodes = tree.nodes(root).reverse();
@@ -52,19 +66,21 @@ app.controller('D3TreeController', function ($scope) {
       // Enter any new nodes at the parent's previous position.
       var nodeEnter = node.enter().append("svg:g")
           .attr("class", "node")
-          .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-          .on("click", function(d) { toggle(d); $scope.update(d); });
+          .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; });
 
       nodeEnter.append("svg:circle")
           .attr("r", 1e-6)
-          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; })
+          .on("click", function(d) { $scope.toggle(d); $scope.update(d); });
 
       nodeEnter.append("svg:text")
           .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
           .attr("dy", ".35em")
           .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-          .text(function(d) { return d.name; })
-          .style("fill-opacity", 1e-6);
+          .attr("class", function(d){ if (d.drillable) {return "drillable";} })
+          .text(function(d) { return makeLabel(d); } )
+          .style("fill-opacity", 1e-6)
+          .on("click", function(d) { $scope.navToNode(d); });
 
       // Transition nodes to their new position.
       var nodeUpdate = node.transition()
@@ -72,8 +88,8 @@ app.controller('D3TreeController', function ($scope) {
           .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
 
       nodeUpdate.select("circle")
-          .attr("r", 4.5)
-          .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+          .attr("r", 6.5)
+          .style("fill", function(d) { return d._children ? "#99f" : "#fff"; });
 
       nodeUpdate.select("text")
           .style("fill-opacity", 1);
@@ -126,35 +142,42 @@ app.controller('D3TreeController', function ($scope) {
       });
     } // update
 
-
-
-
-    var root = $scope.data
-    root.x0 = h / 2;
+    root = $scope.data
+    root.x0 = h / 10;
     root.y0 = 0;
 
-
-    $scope.toggleAll = function (d) {
-      if (d.children) {
-        d.children.forEach($scope.toggleAll);
-        toggle(d);
-      }
-    }
-
-
-    
-
-    $scope.update(root);
-
     // Toggle children.
-    function toggle(d) {
+    $scope.toggle = function (d) {
+      console.log("f:toggle");
+      console.log(d);
       if (d.children) {
+        console.log("f:toggle:if:children");
+        console.log(d.children);
         d._children = d.children;
         d.children = null;
       } else {
+        console.log("f:toggle:if:_children")
         d.children = d._children;
         d._children = null;
       }
+      console.log(d);
+    }
+
+    $scope.toggleAll = function (d) {
+      console.log("f:toggleAll");
+      console.log(d);
+      if (d.children) {
+        d.children.forEach($scope.toggleAll);
+        $scope.toggle(d);
+      }
+    }
+
+    // Initialize the display to show a few nodes.
+    if (root && root.name) {
+      root.children.forEach($scope.toggleAll);
+      root.children.forEach($scope.toggle);
+      // $scope.toggle(root.children[0]);
+      $scope.update(root);
     }
 
   } // drawViz
@@ -170,8 +193,14 @@ app.controller('D3TreeController', function ($scope) {
         $scope.drawViz();
     };
 
-    $scope.onClick = function (d) {
-        $scope.clickTarget()(d.label);
+    // $scope.onClick = function (d) {
+    //   console.log("f:onCLick")
+    //     $scope.clickTarget(d.label);
+    // }
+    $scope.navToNode = function(d){
+      console.log("f:navToNode");
+      console.log(d);
+      $scope.drillOnNode()(d);
     }
 });
 
@@ -181,7 +210,7 @@ app.directive('treeChart', function ($window) {
         restrict: 'EA',
         scope: {
             series: "=",
-            clickTarget: "&"
+            drillOnNode: "&"
         },
         template: '<div style="position: relative;"><svg id="tree_{{$id}}"></svg></div>',
         controller: 'D3TreeController',

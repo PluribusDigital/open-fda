@@ -12,7 +12,7 @@ json.results do
         json.qualification event['primarysource']['qualification'] if event['primarysource']
       end
       if event['patient']
-        json.patient do 
+        json.patient do # TODO -> Extract partials
           json.patientsex event['patient']['patientsex']
           json.patientweight event['patient']['patientweight']
           json.patientonsetage event['patient']['patientonsetage']

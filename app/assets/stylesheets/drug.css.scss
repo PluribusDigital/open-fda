@@ -1,4 +1,33 @@
+/*
+ * Custom Headlines (i.e. drug title area)
+ */
 
+.headline {
+  background-color: #6f5499;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.headline h1 {
+  margin-top: 10px;
+  color: #fff;
+}
+.headline .subhead {
+  text-align: right;
+  vertical-align:middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.headline .text-generic {
+  color: #ddd;
+}
+.headline .text-pharm-class {
+  color: #ddd;
+}
+.headline .search {
+  margin-top:10px;
+}
 
 
 /* consistent coloring for generic & class text */
@@ -20,20 +49,28 @@
   position: relative;
 }
 
-/* SVG - Bar chart directives */
+.quick-search-brand, .quick-search-generic {
+    /* Too much text should be represented as ellipses */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
-.bar { 
-  fill: rgb(31, 119, 180);
+	display: inline-block;
 }
 
-.bar:hover { 
-  fill: rgb(61, 149, 210);
-}
+/* ------------------
+        Viz 
+------------------ */
 
-.bar-label { 
-  fill: #eeeeee; /* not 'color' because it is a SVG element */
+/* Headings */
+h1.compact {
+  margin-top:0px;
+  margin-bottom:5pm;
 }
-
-.bar-value { 
-  fill: #000000; /* not 'color' because it is a SVG element */
+.container.viz {
+  margin-top:-10px;
+}
+.tree-container{
+  margin-left:-20px;
+  margin-right:-20px;
 }

@@ -31,10 +31,10 @@ dependencies:
 
 test:
   override:
-   - bundle exec rspec -t smoke:
-       environment:
-         RAILS_ENV: test
-         RACK_ENV: test
+   - bundle exec rspec -t smoke
+  #     environment:
+  #       RAILS_ENV: test
+  #       RACK_ENV: test
    - bundle exec rake teaspoon
    - cd gruve && python setup.py test
 

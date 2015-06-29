@@ -25,36 +25,6 @@ body {
   margin-top: 0;
 }
 
-/*
- * Custom Headlines (i.e. drug title area)
- */
-
-.headline {
-  background-color: #6f5499;
-  margin-top: -20px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.headline h1 {
-  margin-top: 10px;
-  color: #fff;
-}
-.headline .subhead {
-  text-align: right;
-  vertical-align:middle;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.headline .text-generic {
-  color: #ddd;
-}
-.headline .text-pharm-class {
-  color: #ddd;
-}
-.headline .search {
-  margin-top:10px;
-}
 
 @font-face {
   font-family: 'Glyphicons Halflings';

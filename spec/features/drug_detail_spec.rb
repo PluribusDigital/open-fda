@@ -18,16 +18,19 @@ feature "Drug Detail", js: true do
     expect(page).to have_content "PRURITUS"
   end # typeahead
 
-  scenario "info on recalls", smoke:true do
+  scenario "info on recalls" do
     visit "/#/drug/#{@viagra.product_ndc}" 
     expect(page).to have_content "Recalls: 0"
     visit "/#/drug/#{@advilpm.product_ndc}" 
     expect(page).to have_content "Recalls: 1"
   end # typeahead
 
-  scenario "links to alternative drugs", smoke:true do
-    visit "/#/drug/#{@viagra.product_ndc}" 
-    first(:link, "Revatio").click
+  scenario "links to alternative drugs" do
+    visit "/#/drug/#{@viagra.product_ndc}"
+    expect(page).to have_content "Viagra" 
+    alts_panel = page.find('panel[panel-title="Alternative Drugs"]')
+    alts_panel.find('span.glyphicon-plus-sign').click
+    alts_panel.first(:link, "Revatio").click
     expect(page).to have_content "Revatio"
   end # typeahead
 

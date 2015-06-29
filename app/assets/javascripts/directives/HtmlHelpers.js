@@ -5,6 +5,7 @@ app.directive('panel',function() {
     scope: {
       panelTitle: '@',
       panelClass: '@',
+      panelIcon: '@',
       expand: '@',
       style: '@'
     },

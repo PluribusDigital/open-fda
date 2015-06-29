@@ -29,16 +29,11 @@ class Drug < ActiveRecord::Base
 
   def generics
     # grab other drugs w/ same generic (nonproprietary_name)
-    # make it unique, and don't include yourself
+    # don't include yourself
     return [] unless nonproprietary_name
-    Drug.canonical.where( 'lower(nonproprietary_name) LIKE ?' , "%#{nonproprietary_name.downcase}%" )
-      .map{|e|{proprietary_name:e.proprietary_name,product_ndc:e.product_ndc}}
-      .uniq{|e|e[:proprietary_name]}
-      .delete_if{|e|e[:proprietary_name].downcase==proprietary_name.downcase}
-  end
-
-  def node_generics
-    generics.map{|g| {name:g[:proprietary_name], product_ndc:g[:product_ndc]} }
+    Drug.canonical
+      .where( 'lower(nonproprietary_name) LIKE ?' , "%#{nonproprietary_name.downcase}%" )
+      .where('lower(proprietary_name) != ?' , proprietary_name.downcase )
   end
 
   def pharma_classes 

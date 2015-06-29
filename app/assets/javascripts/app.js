@@ -18,7 +18,7 @@ app.config([
     }).when('/about', {
         templateUrl: "About/About.html",
         controller: 'AboutController'
-    }).when('/viz', {
+    }).when('/viz/:type/:identifier', {
         templateUrl: "Node/Node.html",
         controller: 'NodeController'
     });

@@ -1,0 +1,15 @@
+<form>
+    <div class="input-group" ng-hide="hide">
+      <input type="text" class="form-control" name="quickSearch" id="quickSearch"
+        placeholder="{{searchPlaceholder}}" 
+        ng-model="selectedLabel" 
+        typeahead="drug as drug.proprietary_name for drug in searchDrugs($viewValue)" 
+        typeahead-loading="loadingSearchResults"
+        typeahead-template-url="Search/typeAheadTemplate.html"
+        typeahead-on-select="onSelect($item, $model, $label)" >
+      <span class="input-group-btn">
+        <button class="btn btn-default" 
+          type="submit" ng-click="getDetail()" style="padding-top:7px;">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+</form>
