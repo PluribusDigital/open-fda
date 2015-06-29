@@ -15,10 +15,10 @@ RSpec.describe "Events API" do
     end
 
     it 'sends a list of events, with a subset of fields, with a valid (and popular) brand name' do
-      get "/api/v1/events?brand_name=#{@brand_name}"
+      get "/api/v1/events?brand_name=#{@brand_name}&term="
       expect(response).to be_success 
       expect(json["error"]).to_not be_present
-      expect(json["results"]["event_details"].length).to eq 10 
+      expect(json["results"]["event_details"].length).to be > 9
       # additional assertions to avoid excess API calls
       expect(json["results"]["event_details"].first["receivedate"]).to be_present
       expect(json["results"]["event_details"].first["serious"]).to be_present
@@ -28,7 +28,7 @@ RSpec.describe "Events API" do
     it 'finds events using a popular brand_name and term' do 
       get "/api/v1/events?brand_name=#{@brand_name}&term=#{@term}"
       expect(json["error"]).to_not be_present
-      expect(json["results"]["event_details"].length).to eq 10 
+      expect(json["results"]["event_details"].length).to be > 9 
     end
 
     it 'finds no events for a bad brand' do 

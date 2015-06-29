@@ -19,9 +19,12 @@ json.results do
     end 
   end # event details
   json.age_breakdown do
+    if @event_details["age_breakdown"]
       json.extract! @event_details["age_breakdown"], :male, :female
+    end
   end
   json.qualification_breakdown do
+    if @event_details["qualification_breakdown"]
       json.extract! @event_details["qualification_breakdown"],
         :unknown,
         :physician,
@@ -29,5 +32,6 @@ json.results do
         :other_health_professional,
         :lawyer,
         :consumer_or_non_health_professional
+    end
   end
 end

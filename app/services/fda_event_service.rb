@@ -7,8 +7,10 @@ class FdaEventService < FdaService
 
   def self.search_brand_term(brand_name,term='')
     result = search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\"", 99
-    result["age_breakdown"] = event_age_calcs(result)
-    result["qualification_breakdown"] = event_qualification_calcs(result)
+    if result["results"]
+      result["age_breakdown"] = event_age_calcs(result)
+      result["qualification_breakdown"] = event_qualification_calcs(result)
+    end
     return result
   end
 
@@ -44,7 +46,6 @@ class FdaEventService < FdaService
     # initialize hashes
     h = Hash.new{|h,k| h[k]=[]}
     group_event_by_gender_and_age = Hash.new
-
     # pull out events with gender and ages e.g., [ {1 => 65}, {2 => 18} ...]
     arr = events["results"].map {|e| Hash[e["patient"]["patientsex"],e["patient"]["patientonsetage"].to_i]}
     # group event patientonsetage by sex

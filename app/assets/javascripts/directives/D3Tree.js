@@ -1,3 +1,4 @@
+// D3 code patterned after http://mbostock.github.io/d3/talk/20111018/tree.html
 app.controller('D3TreeController', function ($scope) {
   window.D3TreeControllerScope = $scope;
 

@@ -1,3 +1,4 @@
+// D3 code patterned after http://jsfiddle.net/MX7JC/9/
 app.controller('D3DonutChartController', function ($scope) {
   
   $scope.drawChart = function() {
@@ -5,11 +6,9 @@ app.controller('D3DonutChartController', function ($scope) {
 
       var data = { label: $scope.data.title, pct: $scope.data.values }
       var labels = $scope.data.labels;
-      console.log("draw, data:");
-      console.log(data);
 
-      var w = 320,                       // width and height, natch
-          h = 320,
+      var w = 300,                       // width and height, natch
+          h = 300,
           r = Math.min(w, h) / 2,        // arc radius
           dur = 750,                     // duration, in milliseconds
           color = d3.scale.category10(),
@@ -97,7 +96,6 @@ app.controller('D3DonutChartController', function ($scope) {
 // EVENTS
 // ------
     $scope.onModelLoaded = function (data) {
-        console.log('f:onModelLoaded')
         if (data == null || data === [])
             return;
         $scope.data = data;
@@ -111,7 +109,7 @@ app.directive('donutChart', function ($window) {
     var chart = {
         restrict: 'EA',
         scope: {
-            chartdata: "="
+            chartData: "="
         },
         template: '<div style="position: relative;"><svg id="donut_chart_{{$id}}"></svg></div>',
         controller: 'D3DonutChartController',
@@ -130,8 +128,7 @@ app.directive('donutChart', function ($window) {
             // });
 
             // watch for the value to bind
-            scope.$watch('chartdata', function (newValue, oldValue) {
-                console.log('f:watchChartData');
+            scope.$watch('chartData', function (newValue, oldValue) {
                 if (newValue)
                     scope.onModelLoaded(newValue);
             });

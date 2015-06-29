@@ -2,6 +2,9 @@
 
   <p class="text-muted">Represents serious adverse events (those resulting in death, a life threatening condition, hospitalization, disability, etc.) in the last 2 years</p>
   <div barChart series="drug.event_data" click-target="drillOnEvent"></div>
+  
+  <a name="eventDetail" id="eventDetail"></a>
+
   <p ng-show="drug.event_data.length" class="text-muted"><em>
     <span class="fa fa-arrow-up"></span>
     Click on a bar above to see detail below
@@ -9,12 +12,24 @@
   </em></p>
   <p ng-show="!drug.event_data.length"><em>None Found</em></p>
   
-  <div donut-chart chartdata="eventQualData" ng-show="eventQualData.values.length > 0"></div>
+  
+  <div class="row">
+    <div class="col-sm-6 text-center" ng-show="eventQualData.values.length > 0">
+      <h4>Gender-Age Breakdown<br><small>{{eventTerm}}</small></h4>
+      <div double-bar-chart chart-data="eventQualData" ></div>
+    </div>
+    <div class="col-sm-6 text-center" ng-show="eventQualData.values.length > 0">
+      <h4>Source Qualification Breakdown<br><small>{{eventTerm}}</small></h4>
+      <div donut-chart chart-data="eventQualData" ></div>
+    </div>
+  </div>
+  
+  
 
   <div ng-show="eventsDetail.event_details.length > 0">
     <hr>
     <p class="text-muted pull-right">Limited to 10 results</p>
-    <h3>Events Detail</h3>      
+    <h3>Events Detail <small>{{eventTerm}}</small></h3>      
           
     <table class="table table-condensed" >
       <thead>
