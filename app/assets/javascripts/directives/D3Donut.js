@@ -3,7 +3,7 @@ app.controller('D3DonutChartController', function ($scope) {
   $scope.drawChart = function() {
 
 
-      var data = { label: 'Qualification', pct: $scope.data.values }
+      var data = { label: $scope.data.title, pct: $scope.data.values }
       var labels = $scope.data.labels;
       console.log("draw, data:");
       console.log(data);

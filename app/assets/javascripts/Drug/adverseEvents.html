@@ -9,7 +9,6 @@
   </em></p>
   <p ng-show="!drug.event_data.length"><em>None Found</em></p>
   
-  {{eventQualData}}
   <div donut-chart chartdata="eventQualData" ng-show="eventQualData.values.length > 0"></div>
 
   <div ng-show="eventsDetail.event_details.length > 0">
