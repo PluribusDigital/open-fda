@@ -7,7 +7,7 @@
     "paths": {
         "/api/v1/drugs": {
             "get": {
-                "description": "Gets `Drug` objects based on  [Open FDA](https://open.fda.gov/) and related data.\n",
+                "description": "Supports type-ahead search, accepting a query and returning summary results about matching drugs.",
                 "parameters": [
                     {
                         "name": "q",
@@ -17,35 +17,163 @@
                         "type": "string"
                     }
                 ],
+                "tags": [
+                    "Drugs"
+                ],
                 "responses": {
                     "200": {
                         "description": "Successful response",
                         "schema": {
-                            "title": "results",
                             "type": "object",
-                            "properties": {
-                                "meta": {
-                                    "result_count": "number"
-                                },
-                                "results": {
-                                    "title": "ArrayOfResults",
-                                    "type": "array",
-                                    "items": {
-                                        "title": "Drug",
-                                        "type": "object",
-                                        "properties": {
-                                            "product_ndc": {
-                                                "type": "string"
-                                            },
-                                            "proprietary_name": {
-                                                "type": "string"
-                                            },
-                                            "nonproprietary_name": {
-                                                "type": "string"
-                                            }
-                                        }
-                                    }
-                                }
+                            "additionalProperties": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/drugs/{ndc}": {
+            "get": {
+                "description": "Gets full detail of a drug.\n",
+                "parameters": [
+                    {
+                        "name": "ndc",
+                        "in": "path",
+                        "description": "product NDC code (e.g. '0071-0156')",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Drugs"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/events": {
+            "get": {
+                "description": "Supports getting detail on adverse event cases for one drug and one type of event/patient reaction.",
+                "parameters": [
+                    {
+                        "name": "brand_name",
+                        "in": "query",
+                        "description": "Brand name (a.k.a. proprietary name) of a drug (e.g. 'Lipitor')",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "term",
+                        "in": "query",
+                        "description": "Adverse event patient reaction term (e.g. 'HEADACHE')",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Adverse Events"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/node/drug/{ndc}": {
+            "get": {
+                "description": "Provides a listing of relationships between a drug and various other entities. This supports the visual explorer.",
+                "parameters": [
+                    {
+                        "name": "ndc",
+                        "in": "path",
+                        "description": "product NDC code (e.g. '0071-0156')",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Node Explorer"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/node/manufacturer/{name}": {
+            "get": {
+                "description": "Provides a listing of relationships between a manufacturer and other entities (drugs). This supports the visual explorer.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Manufacturer name (e.g. 'Parke-Davis Div of Pfizer Inc'). Must be an exact name (not a search).",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Node Explorer"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/v1/node/substance/{name}": {
+            "get": {
+                "description": "Provides a listing of relationships between a substance and various other entities (drugs). This supports the visual explorer.",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Substance name (e.g. 'Atorvastatin Calcium Trihydrate'). Must be an exact name (not a search).",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "tags": [
+                    "Node Explorer"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "integer"
                             }
                         }
                     }
