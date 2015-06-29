@@ -7,10 +7,8 @@ app.controller("VizController", ['$scope', '$http', '$routeParams', '$location',
   $scope.getNode = function (node) {
     // label data
     var ident = node.identifier;
-    // manually escape any trailing periods
-    if ( ident.substring(ident.length-1,ident.length) === "." ) {
-      ident = ident.substring(0,ident.length-1)+"-*-";
-    }
+    // manually escape any periods
+    ident = U.replaceAll(ident,".","-*-");
     $http.get('/api/v1/node/'+node.type.toLowerCase()+'/'+ident , {}
     ).then(function(response){
       $scope.treeData = response.data;

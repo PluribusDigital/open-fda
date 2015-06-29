@@ -12,9 +12,8 @@ module API::V1
       # find the drug
       drug  = Drug.canonical.find_by_product_ndc(params[:id])
       # return error code if drug not found
-      unless drug  
-        return render json: {"error"=>{"code"=>"NOT_FOUND", "message"=>"No matches found!"}} 
-      end
+      @error = { code: "NOT_FOUND", message: "No matches found!" } unless drug
+      return render template:'api/v1/shared/error' if @error
       # build up the object to be served, starting with core drug attributes
       drug_object = drug.core_attributes
       drug_object[:label] = FdaLabelService.find_by_product_ndc(drug.product_ndc)

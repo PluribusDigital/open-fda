@@ -43,6 +43,10 @@ U = {
     return unique;
   }
   
+  ,replaceAll: function(str, find, replace) {
+    return str.replace(new RegExp("["+find+"]", 'g'), replace);
+  }
+
   ,replaceCaseInsensitive: function (string,target,replaceWith) {
     // find the start position if the offending string 
     var n = string.toLowerCase().search(target.toLowerCase());

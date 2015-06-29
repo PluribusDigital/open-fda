@@ -1,11 +1,8 @@
 module ApplicationHelper
-  def unescape_trailing_period(param)
-      # url encoding doesn't work well w/ a trailing period
+  def unescape_periods(param)
+      # url encoding doesn't work well w/ periods
       # rails router thinks it is a file type designator
       escaped_period = "-*-"
-      if param.class == String && param[-3..-1] == escaped_period
-        param = param[0..-4] + "."
-      end
-      return param
+      return param.gsub(escaped_period,".")
     end  
 end

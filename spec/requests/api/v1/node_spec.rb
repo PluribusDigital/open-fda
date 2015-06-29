@@ -20,6 +20,12 @@ RSpec.describe "Node API" do
       expect(json["children"]).to be_an Array
     end
 
+    it 'finds no items for a bad identifier, and returns an error message' do 
+      bad_id = "DJFKDJFKDJLSKJFLSDKJFLSDKFDKFJ"
+      get "/api/v1/node/drug/#{bad_id}"
+      expect(json["error"]).to be_present
+    end
+
   end # drug
 
 
@@ -35,6 +41,12 @@ RSpec.describe "Node API" do
       expect(json["children"]).to be_an Array
     end
 
+    it 'finds no items for a bad identifier, and returns an error message' do 
+      bad_id = "DJFKDJFKDJLSKJFLSDKJFLSDKFDKFJ"
+      get "/api/v1/node/substance/#{bad_id}"
+      expect(json["error"]).to be_present
+    end
+
   end # manufacturer
 
   describe "manufacturer-centered node" do 
@@ -48,6 +60,12 @@ RSpec.describe "Node API" do
       get "/api/v1/node/manufacturer/ronco"
       expect(json["children"]).to be_an Array
     end
+
+    it 'finds no items for a bad identifier, and returns an error message' do 
+      bad_id = "DJFKDJFKDJLSKJFLSDKJFLSDKFDKFJ"
+      get "/api/v1/node/manufacturer/#{bad_id}"
+      expect(json["error"]).to be_present
+    end    
 
   end # manufacturer
 
