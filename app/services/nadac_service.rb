@@ -30,16 +30,6 @@ class NadacService < ServiceCache
     return true
   end
 
-  def self.pricing_per_ndc_list(package_ndc_list)
-    # TODO - determine if we need this method
-    result = []
-    package_ndc_list.each do |package_ndc|
-      nadac  = self.find(package_ndc)
-      result << nadac[:data].select{|k,v| fields_to_send.include? k } if nadac
-    end
-    return result.uniq
-  end
-
   def self.pricing_per_brand_name(brand_name)
     self.where_key_value_like("ndc_description", brand_name)
       .map{|e|e[:data].select{|k,v| fields_to_send.include? k }}

@@ -27,7 +27,7 @@
 
             getDetails: function (product_ndc, success) {
                 $http.get('/api/v1/drugs/' + product_ndc, {})
-                     .then(function (response) { success(response.data); }, this.error);
+                     .then(function (response) { success(response.data.results[0]); }, this.error);
             }
 
         };

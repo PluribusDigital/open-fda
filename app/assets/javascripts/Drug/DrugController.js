@@ -1,7 +1,8 @@
-app.controller("DrugController", ['$scope', '$routeParams', '$location', 'DrugService', 'EventService',
-function ($scope, $routeParams, $location, drugService, eventService) {
+app.controller("DrugController", ['$scope', '$routeParams', '$location', '$anchorScroll', 'DrugService', 'EventService',
+function ($scope, $routeParams, $location, $anchorScroll, drugService, eventService) {
     $scope.selectedDrug = {}
     $scope.drug = null;
+    $scope.eventTerm = null;
     $scope.eventsDetail = null;
 
     // fetch details for a given drug
@@ -11,17 +12,24 @@ function ($scope, $routeParams, $location, drugService, eventService) {
 
     $scope.onDetailsLoaded = function (data) {
         $scope.drug = data;
-        $scope.drillOnEvent(''); // get a sampling of recent events
+        // $scope.drillOnEvent(''); // get a sampling of recent events
     }
 
     // fetch event details for table
     $scope.drillOnEvent = function (term) {
+        $scope.eventTerm = term;
         eventService.index($scope.drug.proprietary_name, term, $scope.onEventsLoaded);
     }
 
     $scope.onEventsLoaded = function (data) {
         $scope.eventsDetail = data.results;
     }
+
+    // replacement for normal HTML anchor links (<a href="#foo">)
+    $scope.scrollTo = function(id) {
+      $location.hash(id);
+      $anchorScroll();
+   }
 
     // navigate among drugs
     $scope.navigateToDrug = function (product_ndc) {

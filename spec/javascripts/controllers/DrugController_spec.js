@@ -58,16 +58,22 @@ describe("DrugController", function () {
             });
         }));
 
-        it('gets details and events', function () {
+        it('gets details, but not events on initial load', function () {
             expect(scope.drug).not.toBeNull();
-            expect(scope.eventsDetail).not.toBeNull();
+            expect(scope.eventsDetail).toBeNull();
             expect(DrugServiceMock.getDetails).toHaveBeenCalledWith('0001-0001', jasmine.any(Function));
-            expect(EventServiceMock.index).toHaveBeenCalledWith('xyz', '', jasmine.any(Function));
         });
 
         it('navigates to other drugs', function () {
             scope.navigateToDrug('0002-0002');
             expect(location.$$url).toEqual('/drug/0002-0002');
         });
+
+        it('drills down on event details', function () {
+            scope.drillOnEvent('VOMITING');
+            expect(scope.eventsDetail).not.toBeNull();
+            expect(EventServiceMock.index).toHaveBeenCalledWith('xyz', 'VOMITING', jasmine.any(Function));
+        });
+
     });
 });

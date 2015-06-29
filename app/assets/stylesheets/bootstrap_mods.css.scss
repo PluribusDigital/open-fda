@@ -25,6 +25,18 @@ body {
   margin-top: 0;
 }
 
+/* Jumbotron should retain some minimal padding on small screen */
+.jumbotron {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 
 @font-face {
   font-family: 'Glyphicons Halflings';

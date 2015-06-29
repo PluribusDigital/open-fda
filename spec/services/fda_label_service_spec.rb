@@ -10,7 +10,6 @@ RSpec.describe FdaLabelService do
   describe "find by product ndc" do 
 
     before :each do 
-      # WebMock.disable! # we want to test real requests here
       sleep(0.3) # avoid API rate limit
     end
 

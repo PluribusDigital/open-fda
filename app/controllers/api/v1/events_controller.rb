@@ -2,7 +2,8 @@ module API::V1
   class EventsController < ApplicationController
     
     def index
-      if params[:product_ndc]
+      params[:term] = params[:term] || ''
+      if params[:product_ndc] # TODO Remove if?
         @event_details = FdaEventService.search_product_ndc(params[:product_ndc].to_s) 
       elsif params[:brand_name] && params[:term]
         @event_details = FdaEventService.search_brand_term(params[:brand_name].to_s, params[:term].to_s) 

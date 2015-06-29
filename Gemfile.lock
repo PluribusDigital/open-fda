@@ -74,6 +74,8 @@ GEM
     execjs (2.2.2)
     ffi (1.9.6)
     ffi (1.9.6-x86-mingw32)
+    font-awesome-rails (4.3.0.0)
+      railties (>= 3.2, < 5.0)
     globalid (0.3.0)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -249,6 +251,7 @@ DEPENDENCIES
   capybara
   database_cleaner
   dotenv-rails
+  font-awesome-rails
   httparty
   jbuilder (~> 2.0)
   mechanize

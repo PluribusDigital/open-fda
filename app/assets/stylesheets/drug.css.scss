@@ -18,24 +18,33 @@
   vertical-align:middle;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-.headline .text-generic {
-  color: #ddd;
-}
-.headline .text-pharm-class {
   color: #ddd;
 }
 .headline .search {
   margin-top:10px;
 }
-
-
-/* consistent coloring for generic & class text */
-.text-generic { 
-  color: #337ab7;
+.headline-button {
+    margin-top: 10px;
+  margin-bottom: 10px;
 }
-.text-pharm-class {  
-  color: #31708f;
+
+
+table.table-borderless tbody tr td, table.table-borderless tbody tr th {
+  border: 0px;
+} 
+
+ul.alternative-list, ul.generic-list {
+  padding-left:0px;
+}
+ul.alternative-list li, ul.generic-list li {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0.5em;
+}
+ul.alternative-list li{
+  line-height: 0.9em;
 }
 
 /* Trim long paragraphs with ellispis */
@@ -44,7 +53,7 @@
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;  
+  white-space: nowrap;
   line-height: 15px;
   position: relative;
 }

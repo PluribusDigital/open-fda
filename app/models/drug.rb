@@ -7,6 +7,8 @@ class Drug < ActiveRecord::Base
   has_many :product_types,             foreign_key: 'product_ndc', primary_key: 'product_ndc'
   has_many :substances,                foreign_key: 'product_ndc', primary_key: 'product_ndc'  
   has_many :routes,                    foreign_key: 'product_ndc', primary_key: 'product_ndc'  
+  has_many :products, class_name: "Drug", foreign_key: 'product_ndc', primary_key: 'product_ndc'
+  belongs_to :canonical_drug, -> { where is_canon:true }, class_name: "Drug", foreign_key: 'product_ndc', primary_key: 'product_ndc'
 
   def self.canonical
     self.where(is_canon:true)
@@ -33,7 +35,8 @@ class Drug < ActiveRecord::Base
     return [] unless nonproprietary_name
     Drug.canonical
       .where( 'lower(nonproprietary_name) LIKE ?' , "%#{nonproprietary_name.downcase}%" )
-      .where('lower(proprietary_name) != ?' , proprietary_name.downcase )
+      .where( 'lower(proprietary_name) != ?' , proprietary_name.downcase )
+      .order( :proprietary_name)
   end
 
   def pharma_classes 
@@ -41,7 +44,9 @@ class Drug < ActiveRecord::Base
     class_types = %w(chemicals establisheds methods physiologics)
     class_types.each do |class_type|
       matches = self.send("pharma_class_#{class_type}")
-      pclasses = pclasses + matches.map{|e| {type:class_type,class_name:e.class_name,drugs:e.drugs_in_class} }
+      pclasses = pclasses + matches.map{|e| 
+        {type:class_type,class_name:e.class_name,drugs:e.drugs_in_class} 
+      }
     end
     return pclasses
   end
@@ -55,7 +60,10 @@ class Drug < ActiveRecord::Base
   end
 
   def unique_manufacturers
-    manufacturers.pluck(:name).uniq || []
+    Drug.joins(:manufacturers)
+      .where(proprietary_name:self.proprietary_name)
+      .order('manufacturers.name')
+      .pluck('manufacturers.name').uniq || []
   end
 
   def unique_product_types

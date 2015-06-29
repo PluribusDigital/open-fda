@@ -1,8 +1,12 @@
-<panel panel-title="Reported Adverse Events" panel-class='default' expand="true">
+<panel panel-title="Reported Adverse Events" panel-class='default' expand="{{drug.event_data.length > 0}}">
 
-  <p class="text-muted">Represents serious adverse events (those resulting in death, a life threatening condition, hospitalization, disability, etc.)</p>
-
+  <p class="text-muted">Represents serious adverse events (those resulting in death, a life threatening condition, hospitalization, disability, etc.) in the last 2 years</p>
   <div barChart series="drug.event_data" click-target="drillOnEvent"></div>
+  <p ng-show="drug.event_data.length" class="text-muted"><em>
+    <span class="fa fa-arrow-up"></span>
+    Click on a bar above to see detail below
+    <span class="fa fa-arrow-down"></span>
+  </em></p>
   <p ng-show="!drug.event_data.length"><em>None Found</em></p>
   
   <div ng-show="eventsDetail.event_details.length > 0">
@@ -10,7 +14,7 @@
     <p class="text-muted pull-right">Limited to 10 results</p>
     <h3>Events Detail</h3>      
           
-    <table class="table" >
+    <table class="table table-condensed" >
       <thead>
         <tr>
           <th>Date Received</th>
@@ -27,14 +31,10 @@
           <td>
             {{event.receivedate | humanizeFdaDate}}</td>
           <td>
-            <div ng-repeat="reaction in event.patient.reaction">
-              {{reaction.reactionmeddrapt}}
-            </div>
+            <div ng-bind-html="event.patient.reaction | eventTableReactions: eventTerm"></div>
           </td>
           <td>
-            <div ng-repeat="pdrug in event.patient.drug">
-              {{pdrug.medicinalproduct}}<span ng-show="pdrug.drugcharacterization==1">*</span>
-            </div>
+            <div ng-bind-html="event.patient.drug | eventTableDrugs: drug.proprietary_name "></div>
           </td>
           <td>
             <div ng-show="event.patient.patientsex">{{event.patient.patientsex | sexToString }}</div>

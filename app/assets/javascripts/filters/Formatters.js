@@ -63,13 +63,13 @@ app.filter('indicationShort', function () {
   return function (item) {
     if (!item) { item = "";} 
     // strip out common intro 
-    item = U.removeCaseInsensitive(item,"Indications And Usage");
+    item = U.replaceCaseInsensitive(item,"Indications And Usage","");
     // find first sentence
     item = item.split(/\s*[.•]\s*/)[0].replace(/^[0-9\s]*/, '').toLowerCase();
     // cut short long text
     item = U.ellipsizeAfter(item,200);
     // if it's still too long, ellipsize
-    return item
+    return item;
   };
 });
 
@@ -77,8 +77,32 @@ app.filter('indicationLong', function () {
   return function (item) {
     if (!item) { item = "";} 
     // strip out common intro 
-    item = U.removeCaseInsensitive(item,"Indications And Usage");
+    item = U.replaceCaseInsensitive(item,"Indications And Usage","");
     // find first sentence
-    return item
+    return item;
+  };
+});
+
+app.filter('eventTableDrugs', function () {
+  return function (drugsArray, textToHighlight) {
+    names = drugsArray.map(function(d){
+      if (d.drugcharacterization==="1") {
+        return "<strong>"+d.medicinalproduct+"*</strong>";
+      } else {
+        return d.medicinalproduct;
+      }
+    });
+    namesString = names.join(", ");
+    return U.surroundSubstringWith( namesString, textToHighlight, '<mark>', '</mark>' );
+  };
+});
+
+app.filter('eventTableReactions', function () {
+  return function (reactionsArray, textToHighlight) {
+    terms = reactionsArray.map(function(r){
+        return r.reactionmeddrapt;
+    });
+    termsString = terms.join(", ");
+    return U.surroundSubstringWith( termsString, textToHighlight, '<mark>', '</mark>' );
   };
 });

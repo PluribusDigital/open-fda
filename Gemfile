@@ -23,6 +23,7 @@ gem 'rubyXL'
 gem 'jbuilder', '~> 2.0'
 
 gem 'angular-rails-templates', '~> 0.1.3'
+gem "font-awesome-rails"
 
 gem 'newrelic_rpm'
 

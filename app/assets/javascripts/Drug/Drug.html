@@ -2,18 +2,21 @@
 <div class="headline" ng-show="drug">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <h1>{{drug.proprietary_name}}</h1>
       </div>
-      <div class="col-sm-6">
-        <div class="subhead">
-          <div><strong class="text-generic">{{drug.nonproprietary_name}}</strong></div>
-          <div>
-            <div class="text-pharm-class" ng-repeat="pclass in drug.pharma_classes" ng-show="pclass.type=='establisheds'">
-              {{pclass.class_name}}
-            </div>
-          </div>
+      <div class="col-sm-5 subhead">
+        <div><strong>{{drug.nonproprietary_name}}</strong></div>
+        <div ng-repeat="pclass in drug.pharma_classes" ng-show="pclass.type=='establisheds'">
+          {{pclass.class_name}}
         </div>
+      </div>
+      <div class="col-sm-2 text-right">
+        <a ng-href="#/viz/Drug/{{drug.product_ndc}}"
+          class="btn btn-default headline-button">
+          <span class="fa fa-sitemap"></span>
+          Visual Explorer
+        </a>
       </div>
     </div> <!-- row -->
   </div> <!-- container -->
@@ -22,6 +25,9 @@
 <div class="container theme-showcase" role="main">
 
   <div class="row" ng-show="!drug && !drugLoading">
+    <div class="col-md-4 pull-right">
+      <div><ng-include src="'About/disclaimer.html'"></div>
+    </div>
     <div class="col-md-8">
       <div search-box></div>
       <br>
@@ -33,7 +39,6 @@
     <div class="col-md-9">
       <div><ng-include src="'Drug/adverseEvents.html'"></div>
       <div><ng-include src="'Drug/labelDetail.html'"></div>
-      <div><ng-include src="'Drug/alternatives.html'"></div>
       <div><ng-include src="'Drug/pricing.html'"></div>
     </div>
     <div class="col-md-3">
@@ -41,6 +46,7 @@
       <div><ng-include src="'Drug/shortages.html'"></div>
       <div><ng-include src="'Drug/guide.html'"></div>
       <div><ng-include src="'Drug/summary.html'"></div>
+      <div><ng-include src="'Drug/alternatives.html'"></div>
     </div>
   </div>
 

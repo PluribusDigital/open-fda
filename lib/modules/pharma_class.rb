@@ -3,6 +3,7 @@ module PharmaClass
   def drugs_in_class
     # grab drug detail for classmates
     Drug.canonical.where(product_ndc:ndcs_in_class)
+      .order(:proprietary_name)
       .select(:product_ndc,:proprietary_name,:nonproprietary_name)
   end
 

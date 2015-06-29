@@ -1,0 +1,25 @@
+<div class="headline">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10">
+        <h1>
+          Visual Explorer
+          <small ng-show="focusNode.type" class="subhead">&gt; {{focusNode.type}}</small>
+          <small ng-show="focusNode.name" class="subhead">&gt; {{focusNode.name}}</small>
+        </h1>
+      </div>
+      <div class="col-sm-2 text-right">
+        <a ng-href="#/drug/{{focusNode.identifier}}" ng-show="focusNode.type==='Drug'"
+          class="btn btn-default headline-button">
+          <span class="fa fa-file-text-o"></span>
+          Drug Detail
+        </a>
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</div> <!-- headline -->
+
+<div class="container viz" role="main">
+  <div tree-chart class="tree-container" series="treeData" drill-on-node="drillOnNode"></div> 
+  <p class="text-muted">Click on shaded nodes (circles) to expand the tree. Click on blue text to re-center the tree.</p>
+</div>

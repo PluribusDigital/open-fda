@@ -12,26 +12,8 @@ json.results do
         json.qualification event['primarysource']['qualification'] if event['primarysource']
       end
       if event['patient']
-        json.patient do # TODO -> Extract partials
-          json.patientsex event['patient']['patientsex']
-          json.patientweight event['patient']['patientweight']
-          json.patientonsetage event['patient']['patientonsetage']
-          json.patientonsetageunit event['patient']['patientonsetageunit']
-          if event['patient']['reaction']
-            json.reaction do 
-              json.array! event['patient']['reaction'] do |reaction|
-                json.reactionmeddrapt reaction['reactionmeddrapt']
-              end
-            end
-          end
-          if event['patient']['drug']
-            json.drug do 
-              json.array! event['patient']['drug'] do |drug|
-                json.medicinalproduct drug['medicinalproduct']
-                json.drugcharacterization drug['drugcharacterization']
-              end
-            end
-          end
+        json.patient do 
+          json.partial! 'api/v1/events/patient', patient:event['patient']
         end # patient
       end # if patient
     end 

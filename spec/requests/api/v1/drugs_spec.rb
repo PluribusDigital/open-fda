@@ -51,36 +51,36 @@ RSpec.describe "Drugs API" do
       it 'should provide a single object for a known drug' do
         expect(@response).to be_success 
         expect(@json["error"]).to_not be_present
-        expect(@json["proprietary_name"]).to be_present
+        expect(@json["results"][0]["proprietary_name"]).to be_present
       end
 
       it 'should layer on event statistics' do 
         expect(@response).to be_success 
-        expect(@json["event_data"]).to be_present
-        expect(@json["event_data"][0]["label"] ).to be_a  String
-        expect(@json["event_data"][0]["value"]).to be_an Integer
+        expect(@json["results"][0]["event_data"]).to be_present
+        expect(@json["results"][0]["event_data"][0]["label"] ).to be_a  String
+        expect(@json["results"][0]["event_data"][0]["value"]).to be_an Integer
       end
 
       it 'should layer on NADAC, generics, and other data' do 
         # this has more than one assertion to avoid excess API calls
         expect(@response).to be_success 
-        expect(@json["nadac"]).to be_an Array
-        expect(@json["generics_list"]).to be_an Array
-        expect(@json["generics_list"].first).to be_a Hash
-        expect(@json["recall_list"]).to be_an Array
-        expect(@json["medication_guide"]).to be_a Hash
-        expect(@json["shortages"]).to be_an Array
-        expect(@json["label"]).to be_a Hash
-        expect(@json["label"]["storage_and_handling"]).to_not be_present
-        expect(@json["routes"]).to be_an Array 
-        expect(@json["substances"]).to be_an Array 
+        expect(@json["results"][0]["nadac"]).to be_an Array
+        expect(@json["results"][0]["generics_list"]).to be_an Array
+        expect(@json["results"][0]["generics_list"].first).to be_a Hash
+        expect(@json["results"][0]["recall_list"]).to be_an Array
+        expect(@json["results"][0]["medication_guide"]).to be_a Hash
+        expect(@json["results"][0]["shortages"]).to be_an Array
+        expect(@json["results"][0]["label"]).to be_a Hash
+        expect(@json["results"][0]["label"]["storage_and_handling"]).to_not be_present
+        expect(@json["results"][0]["routes"]).to be_an Array 
+        expect(@json["results"][0]["substances"]).to be_an Array 
       end
 
       it 'should show streamlined field set for same pharma_class data' do 
-        expect(@json["pharma_classes"]).to be_an Array
-        expect(@json["pharma_classes"][0]["type"]).to be_present
-        expect(@json["pharma_classes"][0]["drugs"]).to be_an Array
-        expect(@json["pharma_classes"][0]["type"]).to be_present
+        expect(@json["results"][0]["pharma_classes"]).to be_an Array
+        expect(@json["results"][0]["pharma_classes"][0]["type"]).to be_present
+        expect(@json["results"][0]["pharma_classes"][0]["drugs"]).to be_an Array
+        expect(@json["results"][0]["pharma_classes"][0]["type"]).to be_present
       end
 
     end # valid ndc

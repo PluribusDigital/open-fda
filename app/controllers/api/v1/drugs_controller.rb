@@ -19,10 +19,10 @@ module API::V1
       drug_object = drug.core_attributes
       drug_object[:label] = FdaLabelService.find_by_product_ndc(drug.product_ndc)
       drug_object[:nadac] = NadacService.pricing_per_brand_name(drug.proprietary_name)
-      drug_object[:event_data] = FdaEventService.event_count_by_reaction(drug.proprietary_name)['results']
-        .map{|r|{label:r["term"],value:r["count"]}}
+      drug_object[:event_data] = FdaEventService.event_count_by_reaction(drug.proprietary_name)
+        .map{|r|{label:r["term"],value:r["count"]}} 
       drug_object[:generics_list] = drug.generics
-        .map{|e|{proprietary_name:e.proprietary_name,product_ndc:e.product_ndc}}
+        .map{|e|{proprietary_name:e.proprietary_name,product_ndc:e.product_ndc}} 
       drug_object[:pharma_classes] = drug.pharma_classes
       drug_object[:recall_list] = FdaEnforcementService.search_product_ndc(drug.product_ndc)
       drug_object[:medication_guide] = FdaMedicationGuideService.find(drug.proprietary_name) || {}
@@ -32,7 +32,7 @@ module API::V1
       drug_object[:manufacturers] = drug.unique_manufacturers
       drug_object[:associated_ndcs] = drug.associated_ndcs
       drug_object[:product_type] = drug.unique_product_types
-      return render json:drug_object
+      @drug_result = {results:[drug_object]}
     end 
 
   end

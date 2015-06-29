@@ -20,13 +20,11 @@ function ($rootScope, $scope, $location, DrugService) {
         } else {
             return $location.path("/drug/" + item.product_ndc);    
         }
-        
     };
 
     $scope.onNewLocation = function (newValue, oldValue) {
         $scope.currentPath = newValue;
         $scope.shortPath   = newValue.split('/').slice(0,2).join("/");
-        console.log($scope.currentPath);
         if( $scope.hideOnHome || null )
             $scope.hide = ($scope.currentPath == '/')
     };

@@ -46,7 +46,7 @@
 
     it('supports getting drug details', function () {
         url = '/api/v1/drugs/0904-5818';
-        httpBackend.whenGET(url).respond({ 'name': 'x' });
+        httpBackend.whenGET(url).respond({meta:{},results:[{ 'name': 'x' }]});
 
         var success = function (data) {
             expect(data).not.toBeNull();
