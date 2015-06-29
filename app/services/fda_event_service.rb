@@ -12,7 +12,7 @@ class FdaEventService < FdaService
   # end
 
   def self.search_brand_term(brand_name,term='')
-    result = search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\""
+    result = search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"+AND+patient.reaction.reactionmeddrapt:\"#{term}\"", 99
     result["age_breakdown"] = event_age_calcs(result)
     result["qualification_breakdown"] = event_qualification_calcs(result)
     return result
@@ -34,14 +34,14 @@ class FdaEventService < FdaService
     return "receivedate:[#{from}+TO+#{to}]"
   end
 
-  def self.search_serious(additional_query_string)
+  def self.search_serious(additional_query_string, limit = 10)
     # find events where a given drug is a suspect in a serious outcome
     search_phrases = [
       "serious:1",
       "_missing_:reportduplicate",
       additional_query_string
     ] 
-    self.search search_phrases.join("+AND+"), 99
+    self.search search_phrases.join("+AND+"), limit
   end
 
   private
