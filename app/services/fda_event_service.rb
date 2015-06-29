@@ -88,7 +88,7 @@ class FdaEventService < FdaService
       qualification[quals[event["primarysource"]["qualification"].to_i].parameterize.underscore.to_sym] += 1
     end
     quals.each do |k,sym|
-      qualification[sym.parameterize.to_sym] = qualification[sym.parameterize.underscore.to_sym] || 0
+      qualification[sym.parameterize.underscore.to_sym] = qualification[sym.parameterize.underscore.to_sym] || 0
     end
     return qualification
   end
