@@ -4,7 +4,7 @@ json.meta do
 end
 json.results do
   json.event_details do 
-    json.array!(@event_details) do |event|
+    json.array!(@event_details["results"]) do |event|
       json.receivedate event['receivedate']
       json.serious event['serious']
       json.reportduplicate event['reportduplicate']
@@ -18,9 +18,16 @@ json.results do
       end # if patient
     end 
   end # event details
-  json.age_breakdown do 
-    json.array!(@event_details["age_breakdown"]) do |row|
-      json.extract! row, :age_min, :age_max, :data
-    end
+  json.age_breakdown do
+      json.extract! @event_details["age_breakdown"], :male, :female
+  end
+  json.qualification_breakdown do
+      json.extract! @event_details["qualification_breakdown"],
+        :unknown,
+        :physician,
+        :pharmacist,
+        :other_health_professional,
+        :lawyer,
+        :consumer_or_non_health_professional
   end
 end
