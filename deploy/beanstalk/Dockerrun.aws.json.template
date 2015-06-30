@@ -16,6 +16,7 @@
     {
       "name": "postgres",
       "image": "postgres:9.4",
+      "command" : ["<DB_INIT_COMMAND>"]
       "environment": [
         {
           "name": "POSTGRES_USER",

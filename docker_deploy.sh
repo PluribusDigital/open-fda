@@ -13,6 +13,13 @@ then
   docker push stsilabs/openfda-web:latest
 fi
 
+if [ "$SEED_DB" = "true"  ]
+then
+  DB_INIT_COMMAND = "bundle exec db:setup"
+else
+  DB_INIT_COMMAND = "bundle exec db:migrate"
+fi
+
 # Create new Elastic Beanstalk version
 EB_BUCKET=open-fda
 
@@ -24,6 +31,7 @@ sed -e "s/<TAG>/$CIRCLE_BUILD_NUM/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
     -e "s/<OPENFDA_API_KEY>/$OPENFDA_API_KEY/" \
     -e "s/<NEW_RELIC_KEY>/$NEW_RELIC_KEY/" \
+    -e "s/<DB_INIT_COMMAND>/$DB_INIT_COMMAND/"
     < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
