@@ -59,7 +59,9 @@ app.controller('D3DonutChartController', function ($scope) {
           .attr("class", "arcLabel")
           .attr("transform", function(d) {return "translate(" + arc.centroid(d) + ")"; })
           .attr("text-anchor", "middle")
-          .text(function(d, i) {return labels[i]; });
+          .text(function(d, i) {
+            return d.value > 0 ? labels[i] : "";
+          });
 
       // --------- "PAY NO ATTENTION TO THE MAN BEHIND THE CURTAIN" ---------
 
@@ -116,16 +118,6 @@ app.directive('donutChart', function ($window) {
         link: function (scope, element, attrs) {
             // Bind this scope to its container in the DOM
             scope.node = element[0];
-
-            // Resize when the window does
-            // window.onresize = function () {
-            //     scope.$apply();
-            // };
-            // scope.$watch(function () {
-            //     return angular.element($window)[0].innerWidth;
-            // }, function () {
-            //     scope.drawChart();
-            // });
 
             // watch for the value to bind
             scope.$watch('chartData', function (newValue, oldValue) {

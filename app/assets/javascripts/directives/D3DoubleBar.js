@@ -13,7 +13,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
       right: 20,
       bottom: 0,
       left: 20,
-      middle: 28
+      middle: 35
     };
         
     // the width of each side of the chart

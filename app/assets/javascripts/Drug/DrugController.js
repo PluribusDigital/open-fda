@@ -4,7 +4,7 @@ function ($scope, $routeParams, $location, $anchorScroll, drugService, eventServ
     $scope.drug = null;
     $scope.eventTerm = null;
     $scope.eventsDetail = null;
-    $scope.eventQualLabels = ["physician", "pharmacist", "other health", "lawyer", "consumer"];
+    $scope.eventQualLabels = ["MD", "rph", "other", "atty", "cons", "unk"];
     $scope.eventQualData = {labels:[],values:[],title:''};
     $scope.eventAgeData = {title: '', data:[]};
 

@@ -3,6 +3,23 @@
   fill: #fff;
 }
 
+/* SVG - Doublebar */
+
+.axis line,
+.axis path, {
+  shape-rendering: crispEdges;
+  fill: transparent;
+  stroke: #555;
+}
+.axis text {
+  font-size: 0.8em;
+}
+
+.bar.right {
+  fill: lightpink;
+}
+
+
 /* SVG - Tree directives */
 
 .node circle {
