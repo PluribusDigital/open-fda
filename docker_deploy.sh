@@ -23,7 +23,7 @@ sed -e "s/<TAG>/$CIRCLE_BUILD_NUM/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
     -e "s/<OPENFDA_API_KEY>/$OPENFDA_API_KEY/" \
-    -e "s/<NEW_RELIC_KEY>/$NEW_RELIC_KEY/" 
+    -e "s/<NEW_RELIC_KEY>/$NEW_RELIC_KEY/" \
     < $DOCKERRUN_FILE.template > $DOCKERRUN_FILE
 
 # elastic beanstalk requires application source to be zipped
