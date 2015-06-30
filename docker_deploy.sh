@@ -10,6 +10,7 @@ if [ "$DOCKER_IMAGE_LATEST" = "true"  ]
 then
   # Tag as latest and push again
   docker tag stsilabs/openfda-web:$CIRCLE_BUILD_NUM stsilabs/openfda-web:latest
+  docker push stsilabs/openfda-web:latest
 fi
 
 # Create new Elastic Beanstalk version

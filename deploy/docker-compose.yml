@@ -1,17 +1,17 @@
-openfda-postgres:
+postgres:
   image: postgres:9.4
   ports:
     - "5432"
   environment:
     POSTGRES_USER: openfda_demo
-	  POSTGRES_PASSWORD: $POSTGRES_PASSWORD
-openfda-web:
+    POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+web:
   image: stsilabs/openfda-web
   ports:
     - "80:80"
   links:
-    - openfda-postgres:postgres
+    - postgres:postgres
   environment:
     RAILS_ENV: demo
-    OPENFDA_API_KEY: $OPENFDA_API_KEY
-	  NEW_RELIC_KEY: $NEW_RELIC_KEY
+    OPENFDA_API_KEY: $OPENFDA_API_KEK
+    NEW_RELIC_KEY: $NEW_RELIC_KEY
