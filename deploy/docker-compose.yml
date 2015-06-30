@@ -7,11 +7,12 @@ postgres:
     POSTGRES_PASSWORD: $POSTGRES_PASSWORD
 web:
   image: stsilabs/openfda-web
+  command: bundle exec rake db:setup
   ports:
     - "80:80"
   links:
     - postgres:postgres
   environment:
     RAILS_ENV: demo
-    OPENFDA_API_KEY: $OPENFDA_API_KEK
+    OPENFDA_API_KEY: $OPENFDA_API_KEY
     NEW_RELIC_KEY: $NEW_RELIC_KEY
