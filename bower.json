@@ -3,7 +3,7 @@
 // manage with `rake bower:install`
 {
   "name": "openfda",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "authors": [
     "Ben Morris",
 	  "Jeff Farley",

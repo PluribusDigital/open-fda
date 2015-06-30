@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150623181955) do
+ActiveRecord::Schema.define(version: 20150630183525) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,12 +34,19 @@ ActiveRecord::Schema.define(version: 20150623181955) do
     t.boolean  "is_canon"
   end
 
+  add_index "drugs", ["is_canon"], name: "index_drugs_on_is_canon", using: :btree
+  add_index "drugs", ["nonproprietary_name"], name: "index_drugs_on_nonproprietary_name", using: :btree
+  add_index "drugs", ["product_ndc"], name: "index_drugs_on_product_ndc", using: :btree
+  add_index "drugs", ["proprietary_name"], name: "index_drugs_on_proprietary_name", using: :btree
+
   create_table "manufacturers", force: :cascade do |t|
     t.string   "product_ndc"
     t.string   "name"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "manufacturers", ["name"], name: "index_manufacturers_on_name", using: :btree
 
   create_table "pharma_class_chemicals", force: :cascade do |t|
     t.string   "product_ndc"
@@ -54,6 +61,8 @@ ActiveRecord::Schema.define(version: 20150623181955) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "pharma_class_establisheds", ["product_ndc"], name: "index_pharma_class_establisheds_on_product_ndc", using: :btree
 
   create_table "pharma_class_methods", force: :cascade do |t|
     t.string   "product_ndc"
@@ -83,6 +92,8 @@ ActiveRecord::Schema.define(version: 20150623181955) do
     t.datetime "updated_at",  null: false
   end
 
+  add_index "routes", ["product_ndc"], name: "index_routes_on_product_ndc", using: :btree
+
   create_table "service_caches", force: :cascade do |t|
     t.string   "service"
     t.string   "key"
@@ -91,11 +102,16 @@ ActiveRecord::Schema.define(version: 20150623181955) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "service_caches", ["key"], name: "index_service_caches_on_key", using: :btree
+  add_index "service_caches", ["service"], name: "index_service_caches_on_service", using: :btree
+
   create_table "substances", force: :cascade do |t|
     t.string   "product_ndc"
     t.string   "name"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
+
+  add_index "substances", ["name"], name: "index_substances_on_name", using: :btree
 
 end
