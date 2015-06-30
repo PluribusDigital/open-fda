@@ -21,7 +21,8 @@ function ($rootScope, $scope, $location, DrugService) {
 
     $scope.onSelect = function (item, model, label) {
         $scope.reset();
-        if ($scope.shortPath=="/viz") {
+        $location.hash(null);
+        if ($scope.shortPath == "/viz") {
             return $location.path("/viz/Drug/" + item.product_ndc);    
         } else {
             return $location.path("/drug/" + item.product_ndc);    

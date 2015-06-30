@@ -1,5 +1,5 @@
-app.controller("DrugController", ['$scope', '$routeParams', '$location', '$anchorScroll', 'DrugService', 'EventService',
-function ($scope, $routeParams, $location, $anchorScroll, drugService, eventService) {
+app.controller("DrugController", ['$scope', '$routeParams', '$location', '$anchorScroll', '$timeout', 'DrugService', 'EventService',
+function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService, eventService) {
     $scope.selectedDrug = {}
     $scope.drug = null;
     $scope.eventTerm = null;
@@ -47,19 +47,23 @@ function ($scope, $routeParams, $location, $anchorScroll, drugService, eventServ
                 data: data.results.age_breakdown
             }
         }
-        // scroll down the page
-        $scope.scrollTo('eventDetail');
-        
+
+        // scroll down the page (after it has time to render)
+        // TODO:  implement when it works smoothly 
+        // $scope.scrollTo('eventDetail');
     }
 
     // replacement for normal HTML anchor links (<a href="#foo">)
     $scope.scrollTo = function(id) {
-      $location.hash(id);
-      $anchorScroll();
+        $location.hash(id);
+        $timeout(function () {
+            $anchorScroll();
+        }, 400); // 400 milliseconds is responsive for people, but plenty of time after the page has rendered
    }
 
     // navigate among drugs
     $scope.navigateToDrug = function (product_ndc) {
+        $location.hash(null);
         return $location.path("/drug/" + product_ndc);
     }
 
