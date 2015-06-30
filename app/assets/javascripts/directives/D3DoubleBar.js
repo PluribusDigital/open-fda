@@ -4,16 +4,18 @@ app.controller('D3DoubleBarChartController', function ($scope) {
   $scope.drawChart = function() {
 
     // SET UP DIMENSIONS
-    var w = 400,
+    var container = d3.select($scope.node);
+    var node = container.node();
+    var w = node.clientWidth,
         h = 300;
         
     // margin.middle is distance from center line to each y-axis
     var margin = {
-      top: 0,
-      right: 20,
-      bottom: 0,
-      left: 20,
-      middle: 35
+      top:     0,
+      right:   20,
+      bottom:  20,
+      left:    20,
+      middle:  35
     };
         
     // the width of each side of the chart
@@ -90,13 +92,28 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     var xAxisRight = d3.svg.axis()
       .scale(xScale)
       .orient('bottom')
-      .tickFormat(d3.format('%'));
+      .ticks(0)
+      .tickFormat('');
+
+    svg.append("text")
+      .attr("class", "xleft label")
+      .attr("text-anchor", "end")
+      .attr("x", 1*w/5 )
+      .attr("y", h + margin.bottom)
+      .text("Male");
 
     var xAxisLeft = d3.svg.axis()
       // REVERSE THE X-AXIS SCALE ON THE LEFT SIDE BY REVERSING THE RANGE
       .scale(xScale.copy().range([pointA, 0]))
       .orient('bottom')
-      .tickFormat(d3.format('%'));
+      .ticks(0)
+      .tickFormat('');
+
+    svg.append("text")
+      .attr("class", "xright label")
+      .attr("x", 4*w/5 )
+      .attr("y", h + margin.bottom)
+      .text("Female");
 
     // MAKE GROUPS FOR EACH SIDE OF CHART
     // scale(-1,1) is used to reverse the left side so the bars grow left instead of right
