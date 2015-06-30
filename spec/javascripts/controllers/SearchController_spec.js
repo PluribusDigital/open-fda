@@ -30,7 +30,6 @@
 
     it('has defaults for every instance variable', function () {
         expect(scope.currentPath).toEqual('/');
-        expect(scope.shortPath).toEqual('/');
         expect(scope.hide).toEqual(false);
         expect(scope.selectedLabel).toBeNull();
         expect(scope.searchPlaceholder).toEqual('enter drug name (e.g. Lipitor)');
@@ -39,7 +38,6 @@
     it('tracks the current path', function () {
         scope.onNewLocation('/x/y/z', '/someOtherPath');
         expect(scope.currentPath).toEqual('/x/y/z');
-        expect(scope.shortPath).toEqual('/x');
     });
 
     it('does not hide on the front page by default', function () {
@@ -75,7 +73,7 @@
     describe('when on a visualization page', function () {
         beforeEach(function () {
             scope.selectedLabel = 'some value';
-            scope.shortPath = '/viz';
+            location.path('/viz/Drug/0001-0001');
         });
 
         it('navigates to another visualization page', function () {
@@ -86,13 +84,14 @@
 
         afterEach(function () {
             expect(scope.selectedLabel).toBeNull();
+            expect(location.hash()).toEqual('');
         });
     });
 
     describe('when on a details page', function () {
         beforeEach(function () {
             scope.selectedLabel = 'some value';
-            scope.shortPath = '/drug';
+            location.url('/drug/0001-0001#label-details');
         });
 
         it('navigates to a details page', function () {
@@ -103,6 +102,7 @@
 
         afterEach(function () {
             expect(scope.selectedLabel).toBeNull();
+            expect(location.hash()).toEqual('');
         });
     });
 

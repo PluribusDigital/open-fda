@@ -1,7 +1,6 @@
 ﻿app.controller("SearchController", 
 function ($rootScope, $scope, $location, DrugService) {
     $scope.currentPath = '/';
-    $scope.shortPath = '/';
     $scope.hide = false;
     $scope.noRecords = false;
 
@@ -22,7 +21,9 @@ function ($rootScope, $scope, $location, DrugService) {
     $scope.onSelect = function (item, model, label) {
         $scope.reset();
         $location.hash(null);
-        if ($scope.shortPath == "/viz") {
+
+        var shortPath = $location.path().split('/').slice(0, 2).join("/");
+        if (shortPath == "/viz") {
             return $location.path("/viz/Drug/" + item.product_ndc);    
         } else {
             return $location.path("/drug/" + item.product_ndc);    
@@ -31,7 +32,6 @@ function ($rootScope, $scope, $location, DrugService) {
 
     $scope.onNewLocation = function (newValue, oldValue) {
         $scope.currentPath = newValue;
-        $scope.shortPath   = newValue.split('/').slice(0,2).join("/");
         if( $scope.hideOnHome || null )
             $scope.hide = ($scope.currentPath == '/')
         $scope.reset();
