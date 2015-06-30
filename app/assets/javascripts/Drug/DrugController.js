@@ -6,6 +6,7 @@ function ($scope, $routeParams, $location, $anchorScroll, drugService, eventServ
     $scope.eventsDetail = null;
     $scope.eventQualLabels = ["physician", "pharmacist", "other health", "lawyer", "consumer"];
     $scope.eventQualData = {labels:[],values:[],title:''};
+    $scope.eventAgeData = {title: '', data:[]};
 
     // fetch details for a given drug
     $scope.getDetail = function () {
@@ -39,6 +40,13 @@ function ($scope, $routeParams, $location, $anchorScroll, drugService, eventServ
                     data.results.qualification_breakdown.consumer_or_non_health_professional
                 ]
             }
+        }
+        if (data.results.age_breakdown) {
+            $scope.eventAgeData = {
+                title: 'Onset Age and Gender',
+                data: data.results.age_breakdown
+            }
+          console.log("made it to drug controller");
         }
         // scroll down the page
         $scope.scrollTo('eventDetail');

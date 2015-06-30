@@ -13,9 +13,9 @@
   
   <!-- drill-down charts -->
   <div class="row">
-    <div class="col-sm-6 text-center" ng-show="eventQualData.values.length > 0">
+    <div class="col-sm-6 text-center" ng-show="eventAgeData.data.length > 0">
       <h4>Gender-Age Breakdown<br><small>{{eventTerm}}</small></h4>
-      <div double-bar-chart chart-data="eventQualData" ></div>
+      <div double-bar-chart chart-data="eventAgeData" ></div>
     </div>
     <div class="col-sm-6 text-center" ng-show="eventQualData.values.length > 0">
       <h4>Source Qualification Breakdown<br><small>{{eventTerm}}</small></h4>

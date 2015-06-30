@@ -25,22 +25,13 @@ app.controller('D3DoubleBarChartController', function ($scope) {
 
     // some contrived data
     // TODO replace with data from $scope.data.x
-    var exampleData = [
-      {group: '0-9', male: 10, female: 12},
-      {group: '10-19', male: 14, female: 15},
-      {group: '20-29', male: 15, female: 18},
-      {group: '30-39', male: 18, female: 18},
-      {group: '40-49', male: 21, female: 22},
-      {group: '50-59', male: 19, female: 24},
-      {group: '60-69', male: 15, female: 14},
-      {group: '70-79', male: 8, female: 10},
-      {group: '80-89', male: 4, female: 5},
-      {group: '90-99', male: 2, female: 3},
-      {group: '100-109', male: 1, female: 1},
+    console.log($scope.data);
+    var chartData = [
+      $scope.data
     ];
 
     // GET THE TOTAL POPULATION SIZE AND CREATE A FUNCTION FOR RETURNING THE PERCENTAGE
-    var totalPopulation = d3.sum(exampleData, function(d) { return d.male + d.female; }),
+    var totalPopulation = d3.sum(chartData, function(d) { return d.male + d.female + d.unknown; }),
         percentage = function(d) { return d / totalPopulation; };
       
     // CREATE SVG
@@ -57,8 +48,8 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     // find the maximum data value on either side
     //  since this will be shared by both of the x-axes
     var maxValue = Math.max(
-      d3.max(exampleData, function(d) { return percentage(d.male); }),
-      d3.max(exampleData, function(d) { return percentage(d.female); })
+      d3.max( chartData, function(d) { return percentage(d.male); }),
+      d3.max( chartData, function(d) { return percentage(d.female); })
     );
 
     // SET UP SCALES
@@ -79,7 +70,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
       .range([0, regionWidth]);
 
     var yScale = d3.scale.ordinal()
-      .domain(exampleData.map(function(d) { return d.group; }))
+      .domain(chartData.map(function(d) { return d.group; }))
       .rangeRoundBands([h,0], 0.1);
 
 
@@ -139,7 +130,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
 
     // DRAW BARS
     leftBarGroup.selectAll('.bar.left')
-      .data(exampleData)
+      .data(chartData)
       .enter().append('rect')
         .attr('class', 'bar left')
         .attr('x', 0)
@@ -148,7 +139,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
         .attr('height', yScale.rangeBand());
 
     rightBarGroup.selectAll('.bar.right')
-      .data(exampleData)
+      .data(chartData)
       .enter().append('rect')
         .attr('class', 'bar right')
         .attr('x', 0)
@@ -188,6 +179,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
 
 
 app.directive('doubleBarChart', function ($window) {
+  console.log('made it to double bar');
     var chart = {
         restrict: 'EA',
         scope: {
