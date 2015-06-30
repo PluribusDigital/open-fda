@@ -25,10 +25,10 @@ app.controller('D3DoubleBarChartController', function ($scope) {
 
     // some contrived data
     // TODO replace with data from $scope.data.x
+    console.log('assigning data');
     console.log($scope.data);
-    var chartData = [
-      $scope.data
-    ];
+
+    var chartData = $scope.data.data;
 
     // GET THE TOTAL POPULATION SIZE AND CREATE A FUNCTION FOR RETURNING THE PERCENTAGE
     var totalPopulation = d3.sum(chartData, function(d) { return d.male + d.female + d.unknown; }),
@@ -153,14 +153,6 @@ app.controller('D3DoubleBarChartController', function ($scope) {
       return 'translate(' + x + ',' + y + ')';
     }
 
-
-      // get rid of any old svg (previous draws)
-      // d3.select($scope.node).selectAll("*").remove();
-
-      // var svg = d3.select($scope.node).append("svg:svg")
-      //     .attr("width", w).attr("height", h);
-
-
   } // drawChart
 
 
@@ -172,14 +164,13 @@ app.controller('D3DoubleBarChartController', function ($scope) {
         if (data == null || data === [])
             return;
         $scope.data = data;
-        if ($scope.data.values)
+        if ($scope.data.data)
           $scope.drawChart();
     };
 });
 
 
 app.directive('doubleBarChart', function ($window) {
-  console.log('made it to double bar');
     var chart = {
         restrict: 'EA',
         scope: {

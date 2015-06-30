@@ -46,7 +46,6 @@ function ($scope, $routeParams, $location, $anchorScroll, drugService, eventServ
                 title: 'Onset Age and Gender',
                 data: data.results.age_breakdown
             }
-          console.log("made it to drug controller");
         }
         // scroll down the page
         $scope.scrollTo('eventDetail');
