@@ -15,7 +15,7 @@
   "containerDefinitions": [
     {
       "name": "postgres",
-      "image": "postgres",
+      "image": "postgres:9.4",
       "environment": [
         {
           "name": "POSTGRES_USER",
