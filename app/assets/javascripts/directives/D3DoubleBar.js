@@ -1,5 +1,13 @@
 // D3 code patterned after http://jsbin.com/jalex/1/edit?js,output
 app.controller('D3DoubleBarChartController', function ($scope) {
+ 
+  $scope.barToolTipMale = function (d) {
+      return d.group + ' years : ' + d.male + " males, " + d.unknown + " unknown."  ;
+  };
+
+  $scope.barToolTipFemale = function (d) {
+      return d.group + ' years : ' + d.female + " females. ";
+  };
   
   $scope.drawChart = function() {
 
@@ -24,11 +32,6 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     // these are the x-coordinates of the y-axes
     var pointA = regionWidth,
         pointB = w - regionWidth;
-
-    // some contrived data
-    // TODO replace with data from $scope.data.x
-    console.log('assigning data');
-    console.log($scope.data);
 
     var chartData = $scope.data.data;
 
@@ -149,21 +152,25 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     leftBarGroup.selectAll('.bar.left')
       .data(chartData)
       .enter().append('rect')
-        .attr('class', 'bar left')
-        .attr('x', 0)
-        .attr('y', function(d) { return yScale(d.group); })
-        .attr('width', function(d) { return xScale(percentage(d.male)); })
-        .attr('height', yScale.rangeBand());
+      .attr('class', 'bar left')
+      .attr('x', 0)
+      .attr('y', function(d) { return yScale(d.group); })
+      .attr('width', function(d) { return xScale(percentage(d.male)); })
+      .attr('height', yScale.rangeBand())
+      .append("title")
+      .text($scope.barToolTipMale);
+
 
     rightBarGroup.selectAll('.bar.right')
       .data(chartData)
       .enter().append('rect')
-        .attr('class', 'bar right')
-        .attr('x', 0)
-        .attr('y', function(d) { return yScale(d.group); })
-        .attr('width', function(d) { return xScale(percentage(d.female)); })
-        .attr('height', yScale.rangeBand());
-
+      .attr('class', 'bar right')
+      .attr('x', 0)
+      .attr('y', function(d) { return yScale(d.group); })
+      .attr('width', function(d) { return xScale(percentage(d.female)); })
+      .attr('height', yScale.rangeBand())
+      .append("title")
+      .text($scope.barToolTipFemale);
 
     // string concatenation for translations
     function translation(x,y) {

@@ -17,11 +17,14 @@
 
 .bar.right {
   fill: lightpink;
+  &:hover {
+    fill: mistyrose;
+}
+
 }
 
 .xleft.label,
 .xright.label {
-
   color: gray;
 }
 
