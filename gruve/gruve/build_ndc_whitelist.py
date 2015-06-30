@@ -5,15 +5,19 @@ from gruve import io, ProductNdc, PackageNdc
 
 class BuildNdcWhiteList():
     '''
-    Limits the list of Product and Package NDC's to be what is in the Medicare
-    cost speradsheet
+    Limits the list of Product and Package NDC's to match records in the 
+    Medicare cost speradsheet
     '''
     def __init__(self):
         self.titleExceptions = ['and']
 
+    def __str__(self):
+        return 'Build NDC White List'
     # -------------------------------------------------------------------------
 
     def map_nadac(self, x):
+        ''' Projects an element from a record in the Medicare cost spreadsheet.
+        '''
         ndc = PackageNdc.parse_nadac(x['NDC'])
         return {'description': x['NDC Description'],
                 'package_code' : ndc.packageCode,
@@ -26,7 +30,9 @@ class BuildNdcWhiteList():
                 }
 
     def acquire_nadac(self):
-        # Source is http://www.medicaid.gov/Medicaid-CHIP-Program-Information/By-Topics/Benefits/Prescription-Drugs/Pharmacy-Pricing.html
+        ''' Loads the records from the Medicare cost spreadsheet.
+        Source: [http://www.medicaid.gov/Medicaid-CHIP-Program-Information/By-Topics/Benefits/Prescription-Drugs/Pharmacy-Pricing.html]
+        '''
         fileName = io.relativeToAbsolute('../../data/NADAC 20150617.txt')
         with open(fileName) as f:
             for row in csv.DictReader(f, dialect=csv.excel_tab):
@@ -35,7 +41,7 @@ class BuildNdcWhiteList():
     # -------------------------------------------------------------------------
 
     def title(self, s):
-        ''' Normalize the proprietary and non-proprietary names 
+        ''' Normalize the proprietary and non-proprietary names.
         Inspiration: [http://stackoverflow.com/questions/3728655/python-titlecase-a-string-with-exceptions]
         '''
         word_list = re.split(' ', s)
@@ -47,6 +53,8 @@ class BuildNdcWhiteList():
         return " ".join(final)
 
     def map_fda(self, x):
+        ''' Project an element from the FDA product list
+        '''
         ndc = ProductNdc.parse(x['PRODUCTNDC'])
         return {'product_ndc': ndc.format(),
                 'proprietary_name': self.title(x['PROPRIETARYNAME']),
@@ -55,7 +63,9 @@ class BuildNdcWhiteList():
                 }
 
     def acquire_fda_ndc(self):
-        # Source is http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm
+        ''' Loads records from the FDA product list.
+        Source: [http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm]
+        ''' 
         fileName = io.relativeToAbsolute('../../data/FDA Product NDC 20150618.txt')
         with open(fileName) as f:
             for row in csv.DictReader(f, dialect=csv.excel_tab):
@@ -78,11 +88,13 @@ class BuildNdcWhiteList():
 
     # -------------------------------------------------------------------------
 
-    def build(self):
-        # load the FDA info as a dictionary
+    def run(self):
+        ''' Perform an inner join between the Medicare and FDA spreadsheets
+        '''
+        print('Load the FDA info as a dictionary')
         fda_info = {x['product_ndc']: x for x in self.acquire_fda_ndc() }
 
-        # output the join
+        print('Join to the Medicare spreadsheet and save')
         io.saveAsTabbedText(self.join(fda_info), '../../data/product_ndc.txt')
 
 # -----------------------------------------------------------------------------
@@ -91,6 +103,6 @@ class BuildNdcWhiteList():
 
 if __name__ == '__main__':
     y = BuildNdcWhiteList()
-    y.build()
+    y.run()
 
 

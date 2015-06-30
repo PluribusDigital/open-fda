@@ -16,6 +16,10 @@ class CleanAndConformManufacturers():
         self.targetFileName = io.relativeToAbsolute('../../data/cleaned-manufacturer_name.txt')
         self.groups = defaultdict(list)
     
+
+    def __str__(self):
+        return 'Clean and Conform Manufacturers'
+
     # -------------------------------------------------------------------------
     # Monad-like functions for partitioning
     # 
@@ -62,9 +66,8 @@ class CleanAndConformManufacturers():
     # -------------------------------------------------------------------------
 
     def _map(self, x):
-        '''
-        Extend the manufacturer record to include the labeler value from the 
-        product NDC and the partition key to use
+        ''' Extend the manufacturer record to include the labeler value from 
+        the product NDC and the partition key to use
         '''
         ndc = ProductNdc.parse(x['product_ndc'])
         partition = x['name']
@@ -78,14 +81,15 @@ class CleanAndConformManufacturers():
                 }
 
     def _acquire(self):
+        ''' A generator that loads the Manufacturers feature
+        '''
         with open(self.sourceFileName, 'r', encoding='utf-8') as f:
             for row in csv.DictReader(f, dialect=csv.excel_tab):
                 yield self._map(row)
 
     def _reduce(self, dicts):
-        '''
-        Reduce the manufacturer's name to the longest.
-        Multiple values are returned if the starting character is different
+        ''' Reduce the manufacturer's name to the longest.
+        One value is returned for each partition.
         '''
         bestNames = defaultdict(str)
         for i in range(0, len(dicts)):
@@ -100,8 +104,7 @@ class CleanAndConformManufacturers():
         return self._clean(bestNames)
 
     def _clean(self, dict):
-        '''
-        Use monad-like functions to clean the strings
+        ''' Use monad-like functions to clean the strings
         '''
         for k in dict:
             value = dict[k]
@@ -114,6 +117,8 @@ class CleanAndConformManufacturers():
         return dict
 
     def _save(self):
+        ''' Save the updated Manufacturers feature
+        '''
         with open(self.targetFileName, 'w', encoding='utf-8') as f:
             print('product_ndc', 'name', sep='\t', file=f)
             for k in sorted(self.groups):
@@ -122,9 +127,9 @@ class CleanAndConformManufacturers():
 
     # -------------------------------------------------------------------------
 
-    def process(self):
-        ''' 
-        Make a key-value map of certain attributes in the Open FDA dataset
+    def run(self):
+        ''' Clean and conform the Manufacturers feature to reduce the 
+        trivial variations in the dataset
         '''
         print('Building Map')
         for manu in self._acquire():
@@ -150,4 +155,4 @@ class CleanAndConformManufacturers():
 
 if __name__ == '__main__':
     y = CleanAndConformManufacturers()
-    y.process()
+    y.run()

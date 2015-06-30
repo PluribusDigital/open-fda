@@ -6,52 +6,63 @@ from operator import itemgetter
 from gruve import io, AcquireOpenFda, Feature, ProductNdc, BuildNdcWhiteList
 
 class ExtractOpenFdaFeatures():
+    ''' Extract attributes from the OpenFDA label data set and perform some
+    initial cleaning of the data
+    '''
     def __init__(self):
         self.source = AcquireOpenFda()
         self.whiteList = BuildNdcWhiteList()
-        self.features = [{'feature':Feature('openfda.manufacturer_name'),
-                          'column': 'name',
-                          'transform': []},
-                         {'feature':Feature('openfda.pharm_class_cs'),
-                          'column': 'class_name',
-                          'transform': [self.whiteList.title,
-                                        self.trimPharmClassCs]},
-                         {'feature':Feature('openfda.pharm_class_epc'),
-                          'column': 'class_name',
-                          'transform': [self.whiteList.title, 
-                                        self.trimPharmClass3]},
-                         {'feature':Feature('openfda.pharm_class_moa'),
-                          'column': 'class_name',
-                          'transform': [self.whiteList.title,
-                                        self.trimPharmClass3]},
-                         {'feature':Feature('openfda.pharm_class_pe'),
-                          'column': 'class_name',
-                          'transform': [self.whiteList.title,
-                                        self.trimPharmClass2]},
-                         {'feature':Feature('openfda.product_type'),
-                          'column': 'type_name',
-                          'transform': [self.titleCaseIgnoreSmall]},
-                         {'feature':Feature('openfda.route'),
-                          'column': 'route',
-                          'transform': [self.whiteList.title]},
-                         {'feature':Feature('openfda.substance_name'),
-                          'column': 'name',
-                          'transform': [self.titleCaseIgnoreSmall]},
-                         {'feature':Feature('openfda.brand_name'),
-                          'column': 'name',
-                          'transform': [self.titleCaseIgnoreSmall]},
-                         {'feature':Feature('openfda.generic_name'),
-                          'column': 'name',
-                          'transform': [self.titleCaseIgnoreSmall]},
-                         {'feature':Feature('active_ingredient'),
-                          'column': 'text',
-                          'transform': []},
-                         {'feature':Feature('inactive_ingredient'),
-                          'column': 'text',
-                          'transform': []}
-                        ]
+        self.features = self._buildFeatureSet()
+
+    def __str__(self):
+        return 'Extract Features from OpenFDA Labels'
 
     # -------------------------------------------------------------------------
+    
+    def _buildFeatureSet(self):
+        ''' Create the list of features to extract
+        '''
+        return [{'feature':Feature('openfda.manufacturer_name'), 
+                 'column': 'name',
+                 'transform': []},
+                {'feature':Feature('openfda.pharm_class_cs'),
+                 'column': 'class_name',
+                 'transform': [self.whiteList.title, self.trimPharmClassCs]},
+                {'feature':Feature('openfda.pharm_class_epc'),
+                 'column': 'class_name',
+                 'transform': [self.whiteList.title, self.trimPharmClass3]},
+                {'feature':Feature('openfda.pharm_class_moa'),
+                 'column': 'class_name',
+                 'transform': [self.whiteList.title, self.trimPharmClass3]},
+                {'feature':Feature('openfda.pharm_class_pe'),
+                 'column': 'class_name',
+                 'transform': [self.whiteList.title, self.trimPharmClass2]},
+                {'feature':Feature('openfda.product_type'),
+                 'column': 'type_name',
+                 'transform': [self.titleCaseIgnoreSmall]},
+                {'feature':Feature('openfda.route'),
+                 'column': 'route',
+                 'transform': [self.whiteList.title]},
+                {'feature':Feature('openfda.substance_name'),
+                 'column': 'name',
+                 'transform': [self.titleCaseIgnoreSmall]},
+                {'feature':Feature('openfda.brand_name'),
+                 'column': 'name',
+                 'transform': [self.titleCaseIgnoreSmall]},
+                {'feature':Feature('openfda.generic_name'),
+                 'column': 'name',
+                 'transform': [self.titleCaseIgnoreSmall]},
+                {'feature':Feature('active_ingredient'),
+                 'column': 'text',
+                 'transform': []},
+                {'feature':Feature('inactive_ingredient'),
+                 'column': 'text',
+                 'transform': []}
+                 ]
+
+    # -------------------------------------------------------------------------
+    # Monad-like functions for processing strings
+    # 
 
     def trimPharmClassCs(self, s):
         execute = '[chemical/ingredient]' in s
@@ -72,7 +83,7 @@ class ExtractOpenFdaFeatures():
 
     # -------------------------------------------------------------------------
 
-    def extract(self):
+    def run(self):
         ''' 
         Make a key-value map of certain attributes in the Open FDA dataset
         '''
@@ -93,7 +104,7 @@ class ExtractOpenFdaFeatures():
 
             with open(fileName, 'w', encoding='utf-8') as f:
                 print('product_ndc', op['column'], sep='\t', file=f)
-                for pair in sorted(feature.data, key=itemgetter(0)):
+                for pair in sorted(feature.data, key=itemgetter(0, 1)):
                     value = pair[1]
                     for fn in op['transform']:
                         value = fn(value)
@@ -105,4 +116,4 @@ class ExtractOpenFdaFeatures():
 
 if __name__ == '__main__':
     y = ExtractOpenFdaFeatures()
-    y.extract()
+    y.run()

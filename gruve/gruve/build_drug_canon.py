@@ -5,13 +5,21 @@ import csv
 from gruve import io, AcquireOpenFda, ProductNdc, BuildNdcWhiteList
 
 class BuildDrugCanon():
+    ''' Determine which package or product NDC is considered _the_ 
+    representitive for the same proprietary name
+    '''
     def __init__(self):
         self.sourceNames = BuildNdcWhiteList()
         self.sourceLabels = AcquireOpenFda()
 
+    def __str__(self):
+        return 'Determine Canonical Drugs'
     # -------------------------------------------------------------------------
 
     def _map(self, label):
+        ''' A generator function that produces multiple elements from each 
+        OpenFDA record
+        '''
         if ('openfda' in label and 'product_ndc' in label['openfda'] and
             'brand_name' in label['openfda']):
             asString = json.dumps(label)
@@ -24,6 +32,8 @@ class BuildDrugCanon():
                            'size':len(asString)}
 
     def _reduce(self, dicts):
+        ''' Selects the "best" element from a list  
+        '''
         if len(dicts) < 1:
             return None
 
@@ -36,16 +46,14 @@ class BuildDrugCanon():
     # -------------------------------------------------------------------------
 
     def _mapLabels(self):
-        '''
-        A generator function that internally calls the map function for each label
+        ''' A generator function that internally calls `map` for each label
         '''
         for record in self.sourceLabels.acquire_labels():
             for node in self._map(record):
                 yield node
 
     def _reduceToCanon(self, partitions):
-        '''
-        A generator that internally calls the reduce function on each entry
+        ''' A generator that internally calls `reduce` for each entry
         '''
         for name in sorted(partitions):
             result = self._reduce(partitions[name])
@@ -54,10 +62,10 @@ class BuildDrugCanon():
 
     # -------------------------------------------------------------------------
 
-    def build(self):
-        ''' 
-        Use the size of a record in the FDA data set to determine which package
-        NDC is considered _the_ representitive for the same proprietary name
+    def run(self):
+        ''' Use the size of a record in the FDA data set to determine which 
+        package or product NDC is considered _the_ representitive for the same
+        proprietary name
         '''
         print('Loading White List')
         whiteListFileName = io.relativeToAbsolute('../../data/product_ndc.txt')
@@ -91,6 +99,7 @@ class BuildDrugCanon():
             else:
                 row['is_canon'] = 'false'
 
+        print('Saving')
         tempName = io.relativeToAbsolute('../../data/product_ndc_canon.txt')
         io.saveAsTabbedText(records, '../../data/product_ndc_canon.txt')
 
@@ -98,11 +107,10 @@ class BuildDrugCanon():
         os.remove(whiteListFileName)
         os.rename(tempName, whiteListFileName)
         
-
 # -----------------------------------------------------------------------------
 # Main
 # -----------------------------------------------------------------------------
 
 if __name__ == '__main__':
     y = BuildDrugCanon()
-    y.build()
+    y.run()
