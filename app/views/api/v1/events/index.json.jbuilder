@@ -20,7 +20,9 @@ json.results do
   end # event details
   json.age_breakdown do
     if @event_details["age_breakdown"]
-      json.extract! @event_details["age_breakdown"], :male, :female
+        json.array!(@event_details["age_breakdown"]) do |row|
+         json.extract! row, :group, :male, :female, :unknown
+        end
     end
   end
   json.qualification_breakdown do

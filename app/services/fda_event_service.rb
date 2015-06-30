@@ -45,30 +45,31 @@ class FdaEventService < FdaService
   private
 
   def self.event_age_calcs(events)
-    # initialize hashes
-    h = Hash.new{|h,k| h[k]=[]}
-    group_event_by_gender_and_age = Hash.new
-    # pull out events with gender and ages e.g., [ {1 => 65}, {2 => 18} ...]
-    arr = events["results"].map {|e| Hash[e["patient"]["patientsex"],e["patient"]["patientonsetage"].to_i]}
-    # group event patientonsetage by sex
-    arr.map(&:to_a).flatten(1).each{|v| h[v[0]] << v[1]}
-    # set age bins
-    age_ranges = [
-      0..17.9,
-      18..59.9,
-      60..110
+    genders = { "1"=>:male, "2"=>:female, "0"=>:unknown }
+    ageData = [
+      {group: 'unknown',  male: 0,  female: 0, unknown: 0},
+      {group: '1-18',     male: 0,  female: 0, unknown: 0},
+      {group: '18-60',    male: 0,  female: 0, unknown: 0},
+      {group: '60-100',   male: 0,  female: 0, unknown: 0}
     ]
-    # group all ages by gender then age group
-    ["0", "1", "2"].each do |sex|
-      group_event_by_gender_and_age[sex] = h[sex].group_by { |v| age_ranges.find { |r| r.cover? v } }
-      group_event_by_gender_and_age[sex][:r0to17p9  ] = group_event_by_gender_and_age[sex].delete 0..17.9
-      group_event_by_gender_and_age[sex][:r18to59p9 ] = group_event_by_gender_and_age[sex].delete 18..59.9
-      group_event_by_gender_and_age[sex][:r60plus   ] = group_event_by_gender_and_age[sex].delete 60..110
+
+    events["results"].each do |e|
+
+      case e["patient"]["patientonsetage"].to_i
+        when 0
+          ageData.find { |el| el[:group]== 'unknown'}[genders[e["patient"]["patientsex"]]] += 1
+        when 0...18
+          ageData.find { |el| el[:group]== '1-18'}[genders[e["patient"]["patientsex"]]] += 1
+        when 18..59
+          ageData.find { |el| el[:group]== '18-60'}[genders[e["patient"]["patientsex"]]] +=1
+        when 60..Float::INFINITY
+          ageData.find { |el| el[:group]== '60-100'}[genders[e["patient"]["patientsex"]]] += 1
+        else
+          ageData.find { |el| el[:group]== 'unknown'}[genders[e["patient"]["patientsex"]]] += 1
+      end
     end
-    group_event_by_gender_and_age[:unknown] = group_event_by_gender_and_age.delete "0"
-    group_event_by_gender_and_age[:male]    = group_event_by_gender_and_age.delete "1"
-    group_event_by_gender_and_age[:female]  = group_event_by_gender_and_age.delete "2"
-    return group_event_by_gender_and_age
+    # group all ages by gender then age group
+    return ageData
   end
 
   def self.event_qualification_calcs(events)
