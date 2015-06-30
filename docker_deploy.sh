@@ -15,9 +15,9 @@ fi
 
 if [ "$SEED_DB" = "true"  ]
 then
-  DB_INIT_COMMAND = "bundle exec rake db:setup"
+  DB_INIT_COMMAND="bundle exec rake db:setup"
 else
-  DB_INIT_COMMAND = "bundle exec rake db:migrate"
+  DB_INIT_COMMAND="bundle exec rake db:migrate"
 fi
 
 # Create new Elastic Beanstalk version
