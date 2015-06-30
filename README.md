@@ -1,5 +1,6 @@
 # OpenFDA
 
+# Setup
 
 ## Requirements
 Prior to installation, you need the basics:
@@ -26,6 +27,11 @@ Prior to installation, you need the basics:
 Note: if you have multiple versions, you may need to specify python 3.x 
 (i.e. `sudo python3.4 setup.py develop`)
 
+## Running Tests
+
+* rspec `bundle exec rspec` (ruby unit tests, request specs, full stack feature specs)
+* python `cd gruve then sudo python3.4 setup.py test` (unit tests for ETL scripts) - note: other python 3.x versions can be specified
+* javascript `bundle exec rake teaspoon` (angular unit tests)
 
 # Approach
 
