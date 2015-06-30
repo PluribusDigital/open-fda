@@ -8,7 +8,7 @@ dependencies:
   pre:
     # build docker image
     - docker info
-    - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .
+    - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .:
         timeout: 1800
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
@@ -33,9 +33,6 @@ dependencies:
 test:
   override:
    - bundle exec rspec -t smoke
-  #     environment:
-  #       RAILS_ENV: test
-  #       RACK_ENV: test
    - bundle exec rake teaspoon
    - cd gruve && python setup.py test
 
