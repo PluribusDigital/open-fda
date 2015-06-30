@@ -32,7 +32,7 @@
         {
           "sourceVolume": "postgres-data",
           "containerPath": "/var/lib/postgresql/data",
-          "readOnly": true
+          "readOnly": false
         }
       ]
     },
