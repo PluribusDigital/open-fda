@@ -5,7 +5,7 @@ ENV HOME /root
 
 #   Load startup scripts
 RUN mkdir -p /etc/my_init.d
-ADD deploy/boot/initdb.sh /etc/my_init.d/initdb.sh
+ADD deploy/init/initdb.sh /etc/my_init.d/initdb.sh
 RUN chmod +x /etc/my_init.d/initdb.sh
 
 #   Use baseimage-docker's init process.

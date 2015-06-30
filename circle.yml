@@ -6,12 +6,13 @@ machine:
 
 dependencies:
   pre:
-    # build docker images
-    - bash docker_build.sh:
+    # build docker image
+    - docker info
+    - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .
         timeout: 1800
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
-    # nodejs-legacy fails, why do we need this?
+    # nodejs-legacy fails
     # - sudo apt-get install nodejs-legacy
     # python setup
     - cd gruve && python setup.py develop
