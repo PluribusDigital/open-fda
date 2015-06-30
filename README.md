@@ -21,7 +21,10 @@ Prior to installation, you need the basics:
 ## Python Setup (one-time)
 1. Install Python 3.x
 2. Open a command line and navigate to the gruve directory
-3. `python setup.py develop`
+3. `python setup.py develop` (or `sudo python setup.py develop`)
+
+Note: if you have multiple versions, you may need to specify python 3.x 
+(i.e. `sudo python3.4 setup.py develop`)
 
 
 # Approach

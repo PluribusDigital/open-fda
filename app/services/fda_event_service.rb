@@ -91,8 +91,4 @@ class FdaEventService < FdaService
     return qualification
   end
 
-
-
-
-
 end
