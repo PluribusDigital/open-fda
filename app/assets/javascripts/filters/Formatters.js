@@ -18,6 +18,17 @@ app.filter('dmyDate', function() {
   };
 });
 
+app.filter('twoLineDate', function() {
+  return function(dateString) {
+    var y,m,d;
+    var months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    y = dateString.substring(0,4);
+    m = Number(dateString.substring(4,6));
+    d = dateString.substring(6,8);
+    return months[m] + " " + d + "<br>" + y;
+  };
+});
+
 app.filter('sexToString', function() {
   return function(code) {
     var lookup = {

@@ -10,12 +10,12 @@ class NadacService < ServiceCache
     puts "Victory is Ours!"
   end
 
-  def self.parse_worksheet(worksheet)
+  def self.parse_worksheet(worksheet_data)
     consecutive_nil_rows = 0
-    header_row = worksheet[3].select{|e|e.present?}.map{|e|e.parameterize.underscore}
+    header_row = worksheet_data[3].select{|e|e.present?}.map{|e|e.parameterize.underscore}
     row_index = 4 
     while consecutive_nil_rows < 10 do 
-      row         = worksheet[row_index]
+      row         = worksheet_data[row_index]
       ndc         = row[1].to_s if row 
       is_data_row = row && ndc && ndc.present?
       if is_data_row

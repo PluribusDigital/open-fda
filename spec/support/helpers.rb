@@ -1,4 +1,4 @@
-module Requests
+module Helpers
 
   module JsonHelpers
     def json
@@ -6,8 +6,11 @@ module Requests
     end
   end
 
-  module DrugHelpers # TODO move to fixture or factory
+  module DrugHelpers 
     def setup_drug_data
+      # NOTE: At this point, the strucutre of the app's data is relatively simple.
+      # This shortcut for data setup seems right-sized at the moment.
+      # Factories may be a better approach if needs expand in the future.
       @prozac  = Drug.create(is_canon:true, proprietary_name:'Prozac',  product_ndc:'16590-843', nonproprietary_name:'gen1')
       @viagra  = Drug.create(is_canon:true, proprietary_name:'Viagra',  product_ndc:'0069-4200', nonproprietary_name:'SILDENAFIL CITRATE')
       @cialis  = Drug.create(is_canon:true, proprietary_name:'Cialis',  product_ndc:'0002-4464', nonproprietary_name:'gen3')

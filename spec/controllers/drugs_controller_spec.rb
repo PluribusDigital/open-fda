@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe API::V1::DrugsController do
 
-  include Requests::DrugHelpers
+  include Helpers::DrugHelpers
 
   before :each do 
     setup_drug_data
@@ -22,14 +22,12 @@ RSpec.describe API::V1::DrugsController do
     end
 
     it "should handle empty results from any given external API" do 
-      WebMock.disable_net_connect!
       stub_request(:any, @api_regex)
         .to_return(:status => 200, :headers => {}, :body => '{
           error: { code: "NOT_FOUND", message: "No matches found!"}
         }')
       get :show, :id => @viagra.product_ndc, :format => :json
       expect(response.status).to eq(200)
-      WebMock.allow_net_connect!
     end
 
     it "should handle empty results for generics" do 

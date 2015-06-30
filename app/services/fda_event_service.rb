@@ -37,7 +37,9 @@ class FdaEventService < FdaService
       "_missing_:reportduplicate",
       additional_query_string
     ] 
-    self.search search_phrases.join("+AND+"), limit
+    search_result = self.search(search_phrases.join("+AND+"),limit)
+    search_result["results"].sort! { |x,y| y['receivedate'] <=> x['receivedate'] } if search_result["results"]
+    return search_result
   end
 
   private

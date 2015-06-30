@@ -2,7 +2,7 @@ require 'spec_helper.rb'
 
 feature "Drug Detail", js: true do
 
-  include Requests::DrugHelpers
+  include Helpers::DrugHelpers
 
   before :each do 
     setup_drug_data

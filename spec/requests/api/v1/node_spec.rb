@@ -2,7 +2,7 @@ require 'spec_helper'
 
 RSpec.describe "Node API" do
 
-  include Requests::DrugHelpers
+  include Helpers::DrugHelpers
 
   before :each do 
     setup_drug_data
