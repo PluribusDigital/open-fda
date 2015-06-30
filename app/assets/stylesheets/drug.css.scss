@@ -11,32 +11,62 @@ B4828E  876B71  752A3C  D9ADB7  D9B8C0
  * Custom Headlines (i.e. drug title area)
  */
 
-.headline {
-  background-color: #436f28;
-  margin-top: -20px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.headline h1 {
-  margin-top: 10px;
-  color: #fff;
-}
-.headline .subhead {
-  text-align: right;
-  vertical-align:middle;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #ddd;
-}
-.headline .search {
-  margin-top:10px;
-}
-.headline-button {
-    margin-top: 10px;
-  margin-bottom: 10px;
+@media (max-width: 767px) {
+	.headline {
+	  background-color: #436f28;
+	  margin-top: -20px;
+	  margin-bottom: 0px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	}
+	.headline h1 {
+	  color: #fff;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	  display: block;
+	  font-size: large;
+	}
+	.headline .subhead {
+	  text-align: right;
+	  vertical-align:middle;
+	  color: #ddd;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
+	  overflow: hidden;
+	  display: block;
+	  font-size: smaller;
+	}
+	.headline-button {
+	  margin-top: 3px;
+	  margin-bottom: 3px;
+	}
 }
 
+@media (min-width: 768px) {
+	.headline {
+	  background-color: #436f28;
+	  margin-top: -20px;
+	  margin-bottom: 10px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	}
+	.headline h1 {
+	  margin-top: 10px;
+	  color: #fff;
+	}
+	.headline .subhead {
+	  text-align: right;
+	  vertical-align:middle;
+	  margin-top: 10px;
+	  margin-bottom: 10px;
+	  color: #ddd;
+	}
+	.headline-button {
+      margin-top: 10px;
+      margin-bottom: 10px;
+	}
+}
 
 table.table-borderless tbody tr td, table.table-borderless tbody tr th {
   border: 0px;
