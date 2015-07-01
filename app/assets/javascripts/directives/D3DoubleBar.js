@@ -112,6 +112,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
       .ticks(0)
       .tickFormat('');
 
+    // add right axes label
     svg.append("text")
       .attr("class", "xright label")
       .attr("x", 4*w/5 )
@@ -171,6 +172,17 @@ app.controller('D3DoubleBarChartController', function ($scope) {
       .attr('height', yScale.rangeBand())
       .append("title")
       .text($scope.barToolTipFemale);
+
+    // add labels to right axes
+    svg.append("g")
+      .selectAll(".bar.right")
+      .data(chartData)
+      .enter()
+      .append("text")
+      .attr("x",  function(d) { return xScale(percentage(d.female));})
+      .attr("y", function(d) { return yScale(d.group); })
+      .attr("transform", "translate(2," + 35 + ")")
+      .text(function(d) { return d.female; });
 
     // string concatenation for translations
     function translation(x,y) {
