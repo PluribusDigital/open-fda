@@ -11,6 +11,9 @@
 # use install instead
 /node_modules
 
+# merge artifacts
+*.orig
+
 # ignore Visual Studio project files
 *.sln
 *.suo

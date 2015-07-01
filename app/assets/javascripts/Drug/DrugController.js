@@ -4,8 +4,8 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
     $scope.drug = null;
     $scope.eventTerm = null;
     $scope.eventsDetail = null;
-    $scope.eventQualLabels = ["MD", "rph", "other", "atty", "cons", "unk"];
-    $scope.eventQualData = {labels:[],values:[],title:''};
+    $scope.eventQualLabels = [ "unk", "MD", "rph", "other", "atty", "cons"];
+    $scope.eventQualData = {labels:[],values:[],title:'', key_strings:[]};
     $scope.eventAgeData = {title: '', data:[]};
 
     // fetch details for a given drug
@@ -38,7 +38,8 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
                     data.results.qualification_breakdown.other_health_professional,
                     data.results.qualification_breakdown.lawyer,
                     data.results.qualification_breakdown.consumer_or_non_health_professional
-                ]
+                ],
+                key_strings: Object.keys(data.results.qualification_breakdown)
             }
         }
         if (data.results.age_breakdown) {
