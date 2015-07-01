@@ -38,7 +38,7 @@
     },
     {
       "name": "openfda-web",
-      "image": "stsilabs/openfda-web:<TAG>"
+      "image": "stsilabs/openfda-web:<TAG>",
       "environment": [
         {
           "name": "RAILS_ENV",
