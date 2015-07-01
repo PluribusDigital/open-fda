@@ -10,7 +10,7 @@ GSA Schedule 70 Contract Number: **GS-35F-0347J**
 [drugexplorer.stsiinc.com](http:// drugexplorer.stsiinc.com/)
 
 # Setup
-[/docs/setup.md]( /docs/setup.md) has instructions to install & run the prototype.
+[/doc/setup.md]( /docs/setup.md) has instructions to install & run the prototype.
 
 # Approach
 
