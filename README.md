@@ -5,6 +5,7 @@
 ## Requirements
 Prior to installation, you need the basics:
 * ruby 2.1.5
+* python 3.x
 * bundler
 * PhantomJS 
   * See http://phantomjs.org/download.html
@@ -20,9 +21,8 @@ Prior to installation, you need the basics:
 3. `rake bower:install`
 
 ## Python Setup (one-time)
-1. Install Python 3.x
-2. Open a command line and navigate to the gruve directory
-3. `python setup.py develop` (or `sudo python setup.py develop`)
+1. `cd gruve`
+2. `python setup.py develop` (or `sudo python setup.py develop`)
 
 Note: if you have multiple versions, you may need to specify python 3.x 
 (i.e. `sudo python3.4 setup.py develop`)
