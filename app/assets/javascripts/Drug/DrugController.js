@@ -7,6 +7,7 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
     $scope.eventQualLabels = [ "unk", "MD", "rph", "other", "atty", "cons"];
     $scope.eventQualData = {labels:[],values:[],title:'', key_strings:[]};
     $scope.eventAgeData = {title: '', data:[]};
+    $scope.showBreakdown = false;
 
     // fetch details for a given drug
     $scope.getDetail = function () {
@@ -15,7 +16,6 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
 
     $scope.onDetailsLoaded = function (data) {
         $scope.drug = data;
-        // $scope.drillOnEvent(''); // get a sampling of recent events
     }
 
     // fetch event details for table
@@ -48,6 +48,11 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
                 data: data.results.age_breakdown
             }
         }
+
+        // Only show the breakdown if there are more than one records
+        // ...otherwise what is there to break down?
+        var sum = ($scope.eventQualData) ? $scope.eventQualData.values.reduce(function(a,b){return a+b}) : 0;
+        $scope.showBreakdown = (sum > 1);
 
         // scroll down the page (after it has time to render)
         // TODO:  implement when it works smoothly 

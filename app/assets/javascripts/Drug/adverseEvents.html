@@ -13,11 +13,11 @@
   
   <!-- drill-down charts -->
   <div class="row">
-    <div class="col-sm-6 text-center" ng-show="eventAgeData.data.length > 0">
+    <div class="col-sm-6 text-center" ng-show="showBreakdown">
       <h4>Gender-Age Breakdown<br><small>{{eventTerm}}</small></h4>
       <div double-bar-chart chart-data="eventAgeData" ></div>
     </div>
-    <div class="col-sm-6 text-center" ng-show="eventQualData.values.length > 0">
+    <div class="col-sm-6 text-center" ng-show="showBreakdown">
       <h4>Source Qualification Breakdown<br><small>{{eventTerm}}</small></h4>
       <div donut-chart chart-data="eventQualData" ></div>
     </div>
@@ -40,7 +40,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="event in eventsDetail.event_details">
+        <tr ng-repeat="event in eventsDetail.event_details | orderBy: 'receivedate':true">
           <td ng-bind-html="event.receivedate | twoLineDate"></td>
           <td ng-bind-html="event.patient.reaction | eventTableReactions: eventTerm"></td>
           <td ng-bind-html="event.patient.drug | eventTableDrugs: drug.proprietary_name "></td>
