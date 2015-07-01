@@ -10,6 +10,9 @@ app.controller('D3DoubleBarChartController', function ($scope) {
   };
   
   $scope.drawChart = function() {
+    // NOT READY TO DRAW
+    if (!$scope.data)
+        return;
 
     // SET UP DIMENSIONS
     var container = d3.select($scope.node);
@@ -33,7 +36,7 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     var pointA = regionWidth,
         pointB = w - regionWidth;
 
-    var chartData = $scope.data.data;
+    var chartData = $scope.data;
 
     // GET THE TOTAL POPULATION SIZE AND CREATE A FUNCTION FOR RETURNING THE PERCENTAGE
     var totalPopulation = d3.sum(chartData, function(d) { return d.male + d.female + d.unknown; }),
@@ -212,9 +215,8 @@ app.controller('D3DoubleBarChartController', function ($scope) {
     $scope.onModelLoaded = function (data) {
         if (data == null || data === [])
             return;
-        $scope.data = data;
-        if ($scope.data.data)
-          $scope.drawChart();
+        $scope.data = data.data;
+        $scope.drawChart();
     };
 });
 
@@ -231,15 +233,15 @@ app.directive('doubleBarChart', function ($window) {
             // Bind this scope to its container in the DOM
             scope.node = element[0];
 
-            // Resize when the window does
-            // window.onresize = function () {
-            //     scope.$apply();
-            // };
-            // scope.$watch(function () {
-            //     return angular.element($window)[0].innerWidth;
-            // }, function () {
-            //     scope.drawChart();
-            // });
+             // Resize when the window does
+             window.onresize = function () {
+                 scope.$apply();
+             };
+             scope.$watch(function () {
+                 return angular.element($window)[0].innerWidth;
+             }, function () {
+                 scope.drawChart();
+             });
 
             // watch for the value to bind
             scope.$watch('chartData', function (newValue, oldValue) {

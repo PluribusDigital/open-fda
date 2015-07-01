@@ -15,13 +15,17 @@
   font-size: 0.8em;
 }
 
-.bar.right {
-  fill: lightpink;
+.bar.left {
+  fill: #ff7f0e;
   &:hover {
-    fill: mistyrose;
-}
+    fill: #ffbb78;
+}}
 
-}
+.bar.right {
+  fill: #2ca02c;
+  &:hover {
+    fill: #98df8a;
+}}
 
 .xleft.label,
 .xright.label {
