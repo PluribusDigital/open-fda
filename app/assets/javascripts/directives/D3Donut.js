@@ -1,6 +1,6 @@
 // D3 code patterned after http://jsfiddle.net/MX7JC/9/
 app.controller('D3DonutChartController', function ($scope) {
-  
+
   $scope.drawChart = function() {
 
 
@@ -50,7 +50,12 @@ app.controller('D3DonutChartController', function ($scope) {
           .attr("stroke-width", 0.5)
           .attr("fill", function(d, i) {return color(i);})
           .attr("d", arc)
-          .each(function(d) {this._current = d});
+          .append("title")
+          .text(function(d,i) {
+            return $scope.data.key_strings[i] +" : "+ $scope.data.values[i] +
+            " events";
+          })
+          .each(function(d) {this._current = d;});
 
       // DRAW SLICE LABELS
       var sliceLabel = label_group.selectAll("text")
