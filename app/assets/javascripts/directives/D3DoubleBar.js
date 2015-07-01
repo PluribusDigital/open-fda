@@ -175,14 +175,27 @@ app.controller('D3DoubleBarChartController', function ($scope) {
 
     // add labels to right axes
     svg.append("g")
-      .selectAll(".bar.right")
+      .selectAll("bar right")
       .data(chartData)
       .enter()
       .append("text")
-      .attr("x",  function(d) { return xScale(percentage(d.female));})
+      .attr("class", "bar-value")
+      .attr("x",  function(d) { return xScale(percentage(d.female)) + pointB;})
       .attr("y", function(d) { return yScale(d.group); })
       .attr("transform", "translate(2," + 35 + ")")
       .text(function(d) { return d.female; });
+
+    // add labels to left axes
+    svg.append("g")
+      .selectAll("bar left")
+      .data(chartData)
+      .enter()
+      .append("text")
+      .attr("class", "bar-value")
+      .attr("x",  function(d) { return pointA - xScale(percentage(d.male))- margin.left;})
+      .attr("y", function(d) { return yScale(d.group); })
+      .attr("transform", "translate(2," + 35 + ")")
+      .text(function(d) { return d.male; });
 
     // string concatenation for translations
     function translation(x,y) {
