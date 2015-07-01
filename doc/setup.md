@@ -14,11 +14,14 @@ Prior to installation, you need the basics:
   * `sudo apt-get install nodejs` and `sudo apt-get install nodejs-legacy`
 
 ## Installation
-*Windows Users should perform the following steps using the Git Shell*
 
 1. `npm install`
 2. `rake db:reset`
 3. `rake bower:install`
+
+*Windows Users should perform the following steps using the Git Shell*
+
+*Additional notes on dependency managmenet are in [doc/dependency_management.md](doc/dependency_management.md)*
 
 ## Python Setup (one-time)
 1. `cd gruve`
@@ -32,3 +35,6 @@ Note: if you have multiple versions, you may need to specify python 3.x
 * rspec `bundle exec rspec` (ruby unit tests, request specs, full stack feature specs)
 * python `cd gruve then sudo python3.4 setup.py test` (unit tests for ETL scripts) - note: other python 3.x versions can be specified
 * javascript `bundle exec rake teaspoon` (angular unit tests)
+
+## Docker Containers
+TODO 

@@ -1,9 +1,21 @@
-# OpenFDA
 
+# Administrative 
+This prototype was created in response to the GSA's Request for Quotation for Agile Delivery Services (SOL#).
+
+Company Name: **Solution Technology Systems, Inc. (STSI)**
+
+GSA Schedule 70 Contract Number: **GS-35F-0347J** 
+
+# Live Prototype
+[drugexplorer.stsiinc.com](http:// drugexplorer.stsiinc.com/)
+
+# Setup
+[/doc/setup.md]( /docs/setup.md) has instructions to install & run the prototype.
 
 # Approach
 
 ## Dev Stack
+
 We use the following open source components (as well as additional plug-ins and modules)
  * PostgreSQL - Database
  * Python - ETL, specifically transformation-heavy
@@ -49,6 +61,8 @@ As in any project, we adjust the approach and prioritize tasking around the most
 
 ### Application Stack: Accelerated Starting Point
 When we build prototypes for clients, it is foolish to start with a blank slate. We start with a shell project based largely on the [angular-rails](http://angular-rails.com/) book. The app uses a set of modern components including Ruby on Rails, AngularJS, Cucumber, and CoffeeScript. Bower manages front-end dependencies, and the Rails asset pipeline packages and serves front-end code.
+
+![Solution Overview](/doc/solution/application_overview.png?raw=true)
 
 ### Infrastructure: Rapid Time-to-Demo
 In the alpha phase, we get the most return on effort by creating application functionality. We need the ability to deploy efficiently, but the deployment platform is not critical. Therefore, we defer some of the deployment scripting work by leveraging Heroku for the time being, and focus the fastest time-to-demo possible. This is compatible with later scripting (e.g. via Chef/Puppet) deployments to other infrastructure such as AWS or in-house.
