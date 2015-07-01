@@ -1,45 +1,45 @@
-machine:
-  python:
-    version: 3.4.2
-  services:
-    - docker
+# machine:
+#   python:
+#     version: 3.4.2
+#   services:
+#     - docker
 
-dependencies:
-  pre:
-    # build docker image
-    - docker info
-    - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .:
-        timeout: 1800
-    # install aws command line tools for elasticbean stalk deployment
-    - pip install awscli
-    # nodejs-legacy fails
-    # - sudo apt-get install nodejs-legacy
-    # python setup
-    - cd gruve && python setup.py develop
+# dependencies:
+#   pre:
+#     # build docker image
+#     - docker info
+#     - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .:
+#         timeout: 1800
+#     # install aws command line tools for elasticbean stalk deployment
+#     - pip install awscli
+#     # nodejs-legacy fails
+#     # - sudo apt-get install nodejs-legacy
+#     # python setup
+#     - cd gruve && python setup.py develop
 
-  post:
-    # load .env from s3
-    - aws s3 cp s3://open-fda/.env .env
-    - bundle exec rake bower:install
+#   post:
+#     # load .env from s3
+#     - aws s3 cp s3://open-fda/.env .env
+#     - bundle exec rake bower:install
 
-# skipping seed temporarily
-#database:
-#  post:
-#    - bundle exec rake db:seed:
-#        environment:
-#          RAILS_ENV: test
-#          RACK_ENV: test
+# # skipping seed temporarily
+# #database:
+# #  post:
+# #    - bundle exec rake db:seed:
+# #        environment:
+# #          RAILS_ENV: test
+# #          RACK_ENV: test
 
-test:
-  override:
-   - bundle exec rspec -t smoke
-   - bundle exec rake teaspoon
-   - cd gruve && python setup.py test
+# test:
+#   override:
+#    - bundle exec rspec -t smoke
+#    - bundle exec rake teaspoon
+#    - cd gruve && python setup.py test
 
-deployment:
-  elasticbeanstalk:
-    branch: master
-    commands:
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
-    - bash docker_deploy.sh:
-        timeout: 1800
+# deployment:
+#   elasticbeanstalk:
+#     branch: master
+#     commands:
+#     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASSWORD
+#     - bash docker_deploy.sh:
+#         timeout: 1800
