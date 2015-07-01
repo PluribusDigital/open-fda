@@ -51,7 +51,9 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
 
         // Only show the breakdown if there are more than one records
         // ...otherwise what is there to break down?
-        var sum = ($scope.eventQualData) ? $scope.eventQualData.values.reduce(function(a,b){return a+b}) : 0;
+        var sum = ($scope.eventQualData && $scope.eventQualData.values.length > 0)
+            ? $scope.eventQualData.values.reduce(function (a, b) { return a + b })
+            : 0;
         $scope.showBreakdown = (sum > 1);
 
         // scroll down the page (after it has time to render)
