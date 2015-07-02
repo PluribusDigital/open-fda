@@ -8,7 +8,7 @@ GSA Schedule 70 Contract Number: **GS-35F-0347J**
 
 [Licence](LICENSE.md)
 # Live Prototype
-[drugexplorer.stsiinc.com](http:// drugexplorer.stsiinc.com/)
+[rxexplore.com](http://rxexplore.com/)
 # Setup
 [setup.md](/doc/setup.md) has instructions to install & run the prototype.
 # Approach
@@ -45,9 +45,8 @@ We had 2-3 compressed standup meetings each day to stay coordinated on the tight
 
 We limited working hours to a sustainable pace (8 hour days). Our [punch card]( /graphs/punch-card) shows this, with the exception of some DevOps work that was done late – in part for personal preference, and in part to not disrupt the CI process.
 ### Collaboration Tools
-* **Git/GitHub**: manages source code. 
-* **Slack**: corporate chat tool, which integrates with GitHub, Trello, CircleCI, New Relic, etc. for unified notifications. 
 * **Trello**: manage feature backlog/tasking. 
+* **Slack**: corporate chat tool, which integrates with GitHub, Trello, CircleCI, New Relic, etc. for unified notifications. 
 
 ## Technical Solution
 We used STSI’s [hello]( https://github.com/STSILABS/hello) project as a starting point framework. With extensive data transformation, we added python ETL scripts.
