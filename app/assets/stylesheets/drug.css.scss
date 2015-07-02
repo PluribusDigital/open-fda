@@ -103,12 +103,20 @@ ul.alternative-list li{
 ------------------ */
 
 .quick-search-brand, .quick-search-generic {
-    /* Too much text should be represented as ellipses */
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  /* Too much text should be represented as ellipses */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
 
-	display: inline-block;
+.quick-search-brand {
+  max-width: 80%;
+  min-width: 20%;
+}
+
+.quick-search-generic {
+  min-width: 20%;
 }
 
 .search-no-records {

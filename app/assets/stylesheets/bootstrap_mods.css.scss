@@ -29,11 +29,19 @@ body {
 
 /* Typeahead wrap */
 
+.typeahead-container li {
+  padding-right: 5%;
+}
+
 a.search-result{
   overflow: hidden;
   display: inline-block;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.typeahead-container ul.dropdown-menu {
+  width: 100%;
 }
 
 /*
