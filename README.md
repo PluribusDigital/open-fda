@@ -10,7 +10,7 @@ GSA Schedule 70 Contract Number: **GS-35F-0347J**
 # Live Prototype
 [drugexplorer.stsiinc.com](http:// drugexplorer.stsiinc.com/)
 # Setup
-[setup.md]( /docs/setup.md) has instructions to install & run the prototype.
+[setup.md](/docs/setup.md) has instructions to install & run the prototype.
 # Approach
 
 Staff at STSI developed the **RxExplore** prototype primarily based on openFDA data. There was lots of *great data*, with meaningful *connections* between data elements. However, the *connections were not apparent or easily accessible*.
