@@ -21,7 +21,7 @@ class FdaEventService < FdaService
 
   def self.event_count_by_reaction(brand_name, from_date=2.years.ago)
     r = search_serious "#{query_date_range}+AND+patient.drug.openfda.brand_name:\"#{brand_name}\"&count=patient.reaction.reactionmeddrapt.exact", 99
-    r["results"] = r["results"][0..9]
+    r['results'] = r['results'][0..9] if r['results']
     return r['results'] || []
   end
 
