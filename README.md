@@ -10,7 +10,7 @@ GSA Schedule 70 Contract Number: **GS-35F-0347J**
 # Live Prototype
 [drugexplorer.stsiinc.com](http:// drugexplorer.stsiinc.com/)
 # Setup
-[/doc/setup.md]( /docs/setup.md) has instructions to install & run the prototype.
+[setup.md]( /docs/setup.md) has instructions to install & run the prototype.
 # Approach
 
 Staff at STSI developed the **RxExplore** prototype primarily based on openFDA data. There was lots of *great data*, with meaningful *connections* between data elements. However, the *connections were not apparent or easily accessible*.
@@ -24,14 +24,14 @@ We mirrored the Discovery-Beta phases of the [18F/UK.gov]( https://18f.gsa.gov/d
 **Discovery**: 
 On Wednesday (Day 1), we brainstormed the solution, bouncing between mind-maping possible customer/value propositions, developing customer personas, testing data availability by playing with API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas). The goal was to settle on a value proposition and high-level solution.
 
+![Discovery Process](/doc/solution/discovery.png?raw=true) 
  
-
-** Alpha **: 
+**Alpha**: 
 By Thursday, we started wiring up the prototype. At day’s end we had our first demo with our stand-in customer (from the office). We used that feedback to prioritize backlog items and shape the solution design. 
 
-_**The Vision Materializes…”** ~ With feedback on Thursday and Friday, we had started to crystallize on a vision of “connections”. From both a technical and UX standpoint, current data was theoretically connected, but those connections were not explicit. We set our vision on showing **connections across drugs**_
+_**The Vision Materializes...** ~ With feedback on Thursday and Friday, we had started to crystallize on a vision of “connections”. From both a technical and UX standpoint, current data was theoretically connected, but those connections were not explicit. We set our vision on showing **connections across drugs**_
 
-** Beta **: 
+**Beta**: 
 With the direction set, and a solid feature backlog, we started the real engineering. We worked to integrate data sources, and bring those together in a cohesive application that could be launched.
 
 ### Team Dynamic
@@ -77,7 +77,7 @@ We streamline development with a solid DevOps pipeline.  Developers modify the a
 
 If all steps pass, CircleCI deploys the docker image. AWS Elastic Beanstalk listens for new docker images with the appropriate label, and installs the new image – bringing in application secrets from an S3 bucket.
 
-![Solution Overview](/doc/solution/devops.png?raw=true)
+![DevOps Overview](/doc/solution/devops.png?raw=true)
 
 
 
