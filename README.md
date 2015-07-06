@@ -1,4 +1,4 @@
-Live Prototype URL: [RxExplore.com](http://rxexplore.com/) | [Licence](LICENSE.md)
+Live Prototype URL: [RxExplore.com](http://rxexplore.com/) | [License](LICENSE.md)
 
 # Setup
 
@@ -20,14 +20,14 @@ This prototype is about exposing those connections in two big ways:
 We mirrored the Discovery-Beta phases of the [18F/UK.gov](https://18f.gsa.gov/dashboard/stages/) model:
 
 **Discovery**: 
-On Wednesday (Day 1), we brainstormed the solution, bouncing between mind-maping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas). We settled on a value proposition and high-level solution.
+On Wednesday (Day 1), we brainstormed the solution, bouncing between mind-mapping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas). We settled on a value proposition and high-level solution.
 
 ![Discovery Process](/doc/solution/discovery.png?raw=true) 
  
 **Alpha**: 
-By Thursday, we started building the prototype. At day’s end we had our first demo with our stand-in customer. We used that feedback to prioritize backlog items and shape the solution design. 
+By Thursday, we started building the prototype. At day’s end, we had our first demo with our stand-in customer. We used that feedback to prioritize backlog items and shape the solution design. 
 
-_**The Vision Crystlizes...** ~ With feedback on Thursday and Friday, we settled on a vision of “connections”. From both a technical and UX standpoint, current data was theoretically connected, but those connections were not explicit. We set our vision on showing **connections across drugs**._
+_**The Vision Crystalizes...** ~ With feedback on Thursday and Friday, we settled on a vision of “connections”. From both a technical and UX standpoint, current data was theoretically connected, but those connections were not explicit. We set our vision on showing **connections across drugs**._
 
 **Beta**: 
 With the direction set, and a solid feature backlog, we started the real engineering. We integrated data sources, bringing them together in a cohesive, public-ready application.
@@ -43,7 +43,7 @@ The team consisted of 4 staff, 2 fulltime and 2 part-time. There were areas of l
 
 We had 2-3 compressed standup meetings each day to stay coordinated, and reprioritized the backlog daily. 
 
-We limited working hours to a sustainable pace (8 hour days). Our [punch card](https://github.com/STSILABS/open-fda/graphs/punch-card) shows this, with the exception of some DevOps work that was done late (in part for personal preference, and in part to not disrupt the development process).
+We limited working hours to a sustainable pace (8 hour days). Our [punch card](https://github.com/STSILABS/open-fda/graphs/punch-card) shows this, with the exception of some DevOps work that was done late (in part for personal preference and in part not to disrupt the development process).
 
 ### Collaboration Tools
 * **Trello**: backlog/tasking. 
@@ -63,11 +63,11 @@ The below diagram provides an overview of the major parts of the application. St
 
 ![Solution Overview](/doc/solution/application_overview.png?raw=true)
 
-We were able to rapidly create this prototype, in large part because of the many high-quality, freely available open source components available. See [THANKS.md](THANKS.md) for more.
+We were able to create this prototype rapidly, in large part because of the many high-quality, freely available open source components available. See [THANKS.md](THANKS.md) for more.
 
 ## Deployment & DevOps Stack
  
-We streamline development with a DevOps pipeline, pictured below. Developers modify the app locally and push to GitHub (source control/configuration management). A push triggers CircleCI to grab the code and execute per the `circle.yml` file. CircleCI builds a server from the `Dockerfile`, then installs dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). CircleCI finally runs tests. 
+We streamline development with a DevOps pipeline, pictured below. Developers modify the app locally and push to GitHub (source control/configuration management). A push triggers CircleCI to grab the code and execute per the `circle.yml` file. CircleCI builds a server from the `Dockerfile`, and then installs dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). CircleCI finally runs tests. 
 
 If all steps pass, CircleCI deploys the docker image. AWS Elastic Beanstalk listens for new docker images with the appropriate label, and installs the new image – bringing in application secrets from an S3 bucket.
 
