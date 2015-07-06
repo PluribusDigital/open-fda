@@ -4,7 +4,7 @@ set -e
 DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy web image to Docker Hub
-docker push stsilabs/openfda-web:$CIRCLE_BUILD_NUM
+docker push stsilabs/openfda-web:eval
 
 if [ "$DOCKER_IMAGE_LATEST" = "true"  ]
 then
