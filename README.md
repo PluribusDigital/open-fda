@@ -32,7 +32,7 @@ _**The Vision Crystlizes...** ~ With feedback on Thursday and Friday, we settled
 **Beta**: 
 With the direction set, and a solid feature backlog, we started the real engineering. We integrated data sources, bringing them together in a cohesive, public-ready application.
 
-![Beta Development Process](/doc/solution/development_wb.png?raw=true) 
+![Beta Development Process](/doc/solution/development_whiteboard.png?raw=true) 
 
 ### Team Dynamic
 The team consisted of 4 staff, 2 fulltime and 2 part-time. There were areas of leadership, but most contributed across the board:
@@ -43,7 +43,7 @@ The team consisted of 4 staff, 2 fulltime and 2 part-time. There were areas of l
 
 We had 2-3 compressed standup meetings each day to stay coordinated, and reprioritized the backlog daily. 
 
-We limited working hours to a sustainable pace (8 hour days). Our [punch card](/graphs/punch-card) shows this, with the exception of some DevOps work that was done late (in part for personal preference, and in part to not disrupt the development process).
+We limited working hours to a sustainable pace (8 hour days). Our [punch card](https://github.com/STSILABS/open-fda/graphs/punch-card) shows this, with the exception of some DevOps work that was done late (in part for personal preference, and in part to not disrupt the development process).
 
 ### Collaboration Tools
 * **Trello**: backlog/tasking. 
@@ -59,7 +59,7 @@ The below diagram provides an overview of the major parts of the application. St
 * Serve backend API and frontend assets via Ruby on Rails application
     * _Calls to api.fda.gov are cached in an hstore (key/value) field, minimizing processing delays and reducing load on the API_
 * Provide a rich client experience, built on AngularJS along with D3js directives for visualizations
-* Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). _See [testing](/doc/testing.md)._
+* Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). _See [testing strategy](/doc/testing.md)._
 
 ![Solution Overview](/doc/solution/application_overview.png?raw=true)
 
@@ -67,7 +67,7 @@ We were able to rapidly create this prototype, in large part because of the many
 
 ## Deployment & DevOps Stack
  
-We streamline development with a DevOps pipeline, pictured below. Developers modify the app locally and push to GitHub (source control/configuration management). A push triggers CircleCI to grab the code and execute per the `circle.yml` file. CircleCI builds a server from the Dockerfile, then installs dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). CircleCI finally runs tests. 
+We streamline development with a DevOps pipeline, pictured below. Developers modify the app locally and push to GitHub (source control/configuration management). A push triggers CircleCI to grab the code and execute per the `circle.yml` file. CircleCI builds a server from the `Dockerfile`, then installs dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). CircleCI finally runs tests. 
 
 If all steps pass, CircleCI deploys the docker image. AWS Elastic Beanstalk listens for new docker images with the appropriate label, and installs the new image – bringing in application secrets from an S3 bucket.
 
