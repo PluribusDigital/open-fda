@@ -55,10 +55,6 @@ function ($scope, $routeParams, $location, $timeout, drugService, eventService) 
             ? $scope.eventQualData.values.reduce(function (a, b) { return a + b })
             : 0;
         $scope.showBreakdown = (sum > 1);
-
-        // scroll down the page (after it has time to render)
-        // TODO:  implement when it works smoothly 
-        // $scope.scrollTo('eventDetail');
     }
 
     // navigate among drugs

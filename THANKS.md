@@ -9,5 +9,7 @@ We were able to rapidly create this prototype, in large part because of the many
 * [Ruby on Rails](http://rubyonrails.org/) - back-end web application framework built on the Ruby programming language
 * [Python](http://www.python.org/) - flexible programming language used here to import and transform data
 * [PostgreSQL](http://www.postgresql.org/) - database
+* [Docker](https://www.docker.com/) - container
+* [NGINX](http://nginx.org/) - web server
 
 We generally follow the style and conventions laid out in the (very well done) [Angular Rails](http://angular-rails.com/) online book by David Bryant Copeland.
