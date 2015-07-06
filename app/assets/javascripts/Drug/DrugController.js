@@ -55,19 +55,7 @@ function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService,
             ? $scope.eventQualData.values.reduce(function (a, b) { return a + b })
             : 0;
         $scope.showBreakdown = (sum > 1);
-
-        // scroll down the page (after it has time to render)
-        // TODO:  implement when it works smoothly 
-        // $scope.scrollTo('eventDetail');
     }
-
-    // replacement for normal HTML anchor links (<a href="#foo">)
-    $scope.scrollTo = function(id) {
-        $location.hash(id);
-        $timeout(function () {
-            $anchorScroll();
-        }, 400); // 400 milliseconds is responsive for people, but plenty of time after the page has rendered
-   }
 
     // navigate among drugs
     $scope.navigateToDrug = function (product_ndc) {
