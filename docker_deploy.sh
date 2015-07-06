@@ -9,8 +9,8 @@ docker push stsilabs/openfda-web:$CIRCLE_BUILD_NUM
 if [ "$DOCKER_IMAGE_LATEST" = "true"  ]
 then
   # Tag as latest and push again
-  docker tag stsilabs/openfda-web:$CIRCLE_BUILD_NUM stsilabs/openfda-web:latest
-  docker push stsilabs/openfda-web:latest
+  docker tag stsilabs/openfda-web:$CIRCLE_BUILD_NUM stsilabs/openfda-web:eval
+  docker push stsilabs/openfda-web:eval
 fi
 
 # Create new Elastic Beanstalk version
@@ -18,7 +18,7 @@ EB_BUCKET=open-fda
 
 cd deploy/beanstalk
 # variable substitutions
-sed -e "s/<TAG>/latest/" \
+sed -e "s/<TAG>/eval/" \
     -e "s/<POSTGRES_USER>/$POSTGRES_USER/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
