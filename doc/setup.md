@@ -40,5 +40,8 @@ Note: if you have multiple versions, you may need to specify python 3.x
 This application can be deployed using the stsilabs/openfda-web docker image from dockerhub as well as the official standard postgres image (see https://registry.hub.docker.com/u/stsilabs/openfda-web/ and https://registry.hub.docker.com/_/postgres/). Deployments performed using this approach require only that the host server or service has Docker and Docker Compose installed.  
 
 * Install Docker and Docker Compose on the host machine (see https://docs.docker.com/compose/install/).
+* Setup environment variables
+  1. `export OPENFDA_API_KEY=your-openfda-api-key`
+  2. `export POSTGRES_PASSWORD=your-postgres-password`
 * From the project root, launch Docker containers `docker-compose up`
 * It takes several minutes for the application to seed its database.  During the seeding process no data will be available when accessing the site. Subsequent launches of the application via docker compose will re-use this data so re-seeding is not necessary.
