@@ -67,11 +67,16 @@ We were able to create this prototype rapidly, in large part because of the many
 
 ## Deployment & DevOps Stack
  
-We streamline development with a DevOps pipeline, pictured below. Developers modify the app locally and push to GitHub (source control/configuration management). A push triggers CircleCI to grab the code and execute per the `circle.yml` file. CircleCI builds a server from the `Dockerfile`, and then installs dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). CircleCI finally runs tests. 
+We streamline development with a DevOps pipeline, pictured below. 
 
-If all steps pass, CircleCI deploys the docker image. AWS Elastic Beanstalk listens for new docker images with the appropriate label, and installs the new image – bringing in application secrets from an S3 bucket.
-
-New Relic supports continuous monitoring, tracking performance issues, errors, etc.
+1. Developers modify the app locally and push to GitHub (source control/configuration management). 
+2. A push triggers CircleCI to grab the code and execute steps per the `circle.yml` file.  This includes:
+  1. Building a server from the `Dockerfile`
+  2. Installing all dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). 
+  3. Running all tests.
+3. If all steps pass, CircleCI deploys the docker image. 
+4. AWS Elastic Beanstalk listens for new docker images with the appropriate label and installs the new image – bringing in application secrets from an S3 bucket.
+5. New Relic supports continuous monitoring, tracking performance issues, errors, etc.
 
 ![DevOps Overview](/doc/solution/devops.png?raw=true)
 
