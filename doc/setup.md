@@ -43,5 +43,5 @@ This application can be deployed using the stsilabs/openfda-web docker image fro
 * Setup environment variables
   1. `export OPENFDA_API_KEY=your-openfda-api-key`
   2. `export POSTGRES_PASSWORD=your-postgres-password`
-* From the project root, launch Docker containers `docker-compose up`
-* It takes several minutes for the application to seed its database.  During the seeding process no data will be available when accessing the site. Subsequent launches of the application via docker compose will re-use this data so re-seeding is not necessary.
+* From the project root, launch Docker containers `docker-compose up -d`
+* It takes several minutes for the application to seed its database.  During the seeding process the site will be  inaccessible.
