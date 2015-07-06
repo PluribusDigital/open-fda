@@ -72,7 +72,7 @@ We streamline development with a DevOps pipeline, pictured below.
 1. Developers modify the app locally and push to GitHub (source control/configuration management). 
 2. A push triggers CircleCI to grab the code and execute steps per the `circle.yml` file.  This includes:
   1. Building a server from the `Dockerfile`
-  2. Installing all dependencies (see [doc/dependency_management](doc/ dependency_management.md) ). 
+  2. Installing all dependencies (see [doc/dependency_management](doc/dependency_management.md) ). 
   3. Running all tests.
 3. If all steps pass, CircleCI deploys the docker image. 
 4. AWS Elastic Beanstalk listens for new docker images with the appropriate label and installs the new image – bringing in application secrets from an S3 bucket.
