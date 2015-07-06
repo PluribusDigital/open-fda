@@ -7,7 +7,6 @@ postgres:
     POSTGRES_PASSWORD: $POSTGRES_PASSWORD
 web:
   image: stsilabs/openfda-web:eval
-  command: bundle exec rake db:setup
   ports:
     - "80:80"
   links:
