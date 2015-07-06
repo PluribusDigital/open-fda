@@ -20,7 +20,7 @@ This prototype is about exposing those connections in two big ways:
 We mirrored the Discovery-Beta phases of the [18F/UK.gov](https://18f.gsa.gov/dashboard/stages/) model:
 
 **Discovery**: 
-On Wednesday (Day 1), we brainstormed the solution, bouncing between mind-mapping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas). We settled on a value proposition and high-level solution.
+On Wednesday (Day 1), we brainstormed the solution. As a Development Pool submission, we wanted at least a minimal set of [UX artifacts](https://github.com/STSILABS/open-fda/tree/eval/doc/design_artifacts) to guide us. Brainstorming bounced between mind-mapping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas).  We settled on a value proposition and high-level solution.
 
 ![Discovery Process](/doc/solution/discovery.png?raw=true) 
  
@@ -35,11 +35,11 @@ With the direction set, and a solid feature backlog, we started the real enginee
 ![Beta Development Process](/doc/solution/development_whiteboard.png?raw=true) 
 
 ### Team Dynamic
-The team consisted of 4 staff, 2 fulltime and 2 part-time. There were areas of leadership, but most contributed across the board:
-* _Lead/Developer_ – Full responsibility and authority to marshal resources, and accountability for creating a great product; led backend coding.
-* _Architect/Developer_ – Owned overall solution quality; wrote frontend and backend code.
-* _DevOps Lead_ – Led DevOps/CI solution, established environments, etc.
-* _Frontend Developer_ – Designed user-facing pages; developed just-enough UX artifacts; analyzed source data.
+The team consisted of 4 staff, 2 fulltime and 2 part-time for approximately 10 working days. There were areas of leadership, but most contributed across the board:
+* _Lead/Backend Web Developer_ – Full responsibility and authority to marshal resources, and accountability for creating a great product; led backend coding.
+* _Technical Architect_ – Owned overall solution quality; wrote frontend and backend code.
+* _DevOps Engineer_ – Led DevOps/CI solution, established environments, etc.
+* _Frontend Web Developer_ – Designed user-facing pages; developed UX artifacts; analyzed source data.
 
 We had 2-3 compressed standup meetings each day to stay coordinated, and reprioritized the backlog daily. 
 
