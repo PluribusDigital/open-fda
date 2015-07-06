@@ -19,7 +19,11 @@ EB_BUCKET=open-fda
 
 cd deploy/beanstalk
 # variable substitutions
+<<<<<<< HEAD
 sed -e "s/<TAG>/$OPENFDA_TAG/" \
+=======
+sed -e "s/<TAG>/latest/" \
+>>>>>>> Tag and deploy "latest" in dockerhub
     -e "s/<POSTGRES_USER>/$POSTGRES_USER/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
