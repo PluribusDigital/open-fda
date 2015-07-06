@@ -21,7 +21,7 @@ Prior to installation, you need the basics:
 
 *Windows Users should perform the following steps using the Git Shell*
 
-*Additional notes on dependency managmenet are in [/doc/dependency_management.md](doc/dependency_management.md)*
+*Additional notes on dependency managmenet are in [doc/dependency_management.md](/doc/dependency_management.md)*
 
 ## Python Setup (one-time)
 1. `cd gruve`
