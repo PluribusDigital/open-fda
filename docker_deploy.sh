@@ -9,7 +9,7 @@ docker push stsilabs/openfda-web:$CIRCLE_BUILD_NUM
 if [ "$DOCKER_IMAGE_LATEST" = "true"  ]
 then
   # Tag as latest and push again
-  docker tag stsilabs/openfda-web:$CIRCLE_BUILD_NUM stsilabs/openfda-web:eval
+  docker tag stsilabs/openfda-web:eval stsilabs/openfda-web:eval
   docker push stsilabs/openfda-web:eval
 fi
 
