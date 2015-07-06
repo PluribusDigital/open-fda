@@ -1,5 +1,5 @@
-app.controller("DrugController", ['$scope', '$routeParams', '$location', '$anchorScroll', '$timeout', 'DrugService', 'EventService',
-function ($scope, $routeParams, $location, $anchorScroll, $timeout, drugService, eventService) {
+app.controller("DrugController", ['$scope', '$routeParams', '$location', '$timeout', 'DrugService', 'EventService',
+function ($scope, $routeParams, $location, $timeout, drugService, eventService) {
     $scope.selectedDrug = {}
     $scope.drug = null;
     $scope.eventTerm = null;

@@ -3,12 +3,13 @@ var app = angular.module('openFDA', [
     'angular-flash.flash-alert-directive', 'ui.bootstrap'
 ]);
 
-app.config([
-'$routeProvider', 'flashProvider', function ($routeProvider, flashProvider) {
+app.config(function ($routeProvider, $locationProvider, flashProvider) {
     flashProvider.errorClassnames.push("alert-danger");
     flashProvider.warnClassnames.push("alert-warning");
     flashProvider.infoClassnames.push("alert-info");
     flashProvider.successClassnames.push("alert-success");
+//    $locationProvider.html5Mode(true).hashPrefix('!');
+
     return $routeProvider.when('/', {
         templateUrl: "Drug/Drug.html",
         controller: 'DrugController'
@@ -25,8 +26,7 @@ app.config([
         templateUrl: "Drug/Drug.html",
         controller: 'DrugController'
     });
-}
-]);
+});
 
 app.run(function($rootScope) {
 
