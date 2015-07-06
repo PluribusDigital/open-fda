@@ -18,7 +18,7 @@ EB_BUCKET=open-fda
 
 cd deploy/beanstalk
 # variable substitutions
-sed -e "s/<TAG>/$CIRCLE_BUILD_NUM/" \
+sed -e "s/<TAG>/latest/" \
     -e "s/<POSTGRES_USER>/$POSTGRES_USER/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
