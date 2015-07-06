@@ -76,7 +76,7 @@ We streamline development with a DevOps pipeline, pictured below.
   3. Building the database
   4. Running all tests.
 3. If all steps pass, CircleCI deploys the docker image. 
-4. AWS Elastic Beanstalk listens for new docker images with the appropriate label and installs the new image – bringing in application secrets from an S3 bucket.
+4. CircleCI pushes a new application to AWS Elastic Beanstalk referencing the newly built docker image.  Beanstalk launches the application – bringing in application secrets from an S3 bucket.
 5. New Relic supports continuous monitoring, tracking performance issues, errors, etc.
 
 
