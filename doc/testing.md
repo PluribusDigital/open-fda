@@ -2,7 +2,7 @@
 
 Testing is a key part of our development process which allows us to maintain a rapid development pace over time. We cover meaningful internal functionality via unit tests, and cover the 3 primary system boundary points (see also below diagram): 1) consuming data from other APIs; 2) the web api between the frontend and backend; and 3) the user experience via the browser.
 
-*Python Unit Tests:* Our python ETL scripts are unit tested using Python's unittest framework. 
+*Python Unit Tests:* The foundational classes for the ETL operations are unit tested using Python's unittest framework. 
 
 *Ruby Unit Tests:* We test class behavior using rspec. We do not test frameworks. For example, vanilla Rails controllers or ActiveRecord models are not unit tested. (But controllers and the entire backend stack are covered in API integration specs).
 
