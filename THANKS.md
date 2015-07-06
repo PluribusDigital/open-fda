@@ -13,3 +13,5 @@ We were able to rapidly create this prototype, in large part because of the many
 * [NGINX](http://nginx.org/) - web server
 
 We generally follow the style and conventions laid out in the (very well done) [Angular Rails](http://angular-rails.com/) online book by David Bryant Copeland.
+
+Of course, there are many more code libraries and modules that we made use of. The best source to see these is really the respective package management files (`Gemfile`, `bower.json`, `package.npm`, and `gruve/setup.py`).
