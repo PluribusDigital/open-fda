@@ -73,10 +73,12 @@ We streamline development with a DevOps pipeline, pictured below.
 2. A push triggers CircleCI to grab the code and execute steps per the `circle.yml` file.  This includes:
   1. Building a server from the `Dockerfile`
   2. Installing all dependencies (see [doc/dependency_management](doc/dependency_management.md) ). 
-  3. Running all tests.
+  3. Building the database
+  4. Running all tests.
 3. If all steps pass, CircleCI deploys the docker image. 
 4. AWS Elastic Beanstalk listens for new docker images with the appropriate label and installs the new image – bringing in application secrets from an S3 bucket.
 5. New Relic supports continuous monitoring, tracking performance issues, errors, etc.
+
 
 ![DevOps Overview](/doc/solution/devops.png?raw=true)
 
