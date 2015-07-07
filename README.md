@@ -60,15 +60,15 @@ All associated documentation is in the `/doc/` directory.
 
 ## Technical Solution
 
-We used STSI’s [hello]( https://github.com/STSILABS/hello) project, a shell  app we use for prototyping. We added on python ETL scripts to build maps between data elements, and other technical elements as neccessary.
+We used STSI’s [hello]( https://github.com/STSILABS/hello) project, a shell  app we use for prototyping. We added on python ETL scripts to build maps between data elements, and other technical elements as necessary.
 
 The below diagram provides an overview of the major parts of the application. Starting bottom-left:
 * Import external data via batch processes – simple processes done in Ruby, and complex transformations done in Python scripts.
 * Store data using PostgreSQL tables managed by Rails/ActiveRecord migrations.
-* Serve backend API and frontend assets via Ruby on Rails application
-    * _Calls to api.fda.gov are cached in an hstore (key/value) field, minimizing processing delays and reducing load on the API_
-    * _Other screen-scraped or imported data (drug shortages, etc.) are also stored in the same style hstore field_
-* Provide a rich client experience, built on AngularJS along with D3js directives for visualizations
+* Serve backend API and frontend assets via Ruby on Rails application.
+    * _Calls to api.fda.gov are cached in an hstore (key/value) field, minimizing processing delays and reducing load on the API_.
+    * _Other screen-scraped or imported data (drug shortages, etc.) are also stored in the same style hstore field_.
+* Provide a rich client experience, built on AngularJS along with D3js directives for visualizations.
 * Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). 
     * _See [testing strategy](/doc/testing.md) for more._
 
@@ -82,12 +82,12 @@ We streamline development with a DevOps pipeline, pictured below.
 
 1. Developers modify the app locally and push to GitHub (source control/configuration management). 
 2. A push triggers CircleCI to grab the code and execute steps per the `circle.yml` file.  This includes:
-  1. Building a server from the `Dockerfile`
-  2. Installing all dependencies (see [doc/dependency_management](doc/dependency_management.md) ). 
-  3. Building the database
+  1. Building a server from the `Dockerfile`;
+  2. Installing all dependencies (see [doc/dependency_management](doc/dependency_management.md) );
+  3. Building the database; and
   4. Running all tests.
-3. If all steps pass, CircleCI deploys the docker image. 
-4. CircleCI pushes a new application to AWS Elastic Beanstalk referencing the newly built docker image.  Beanstalk launches the application – bringing in application secrets from an S3 bucket.
+3. If all steps pass, CircleCI deploys the Docker image. 
+4. CircleCI pushes a new application to AWS Elastic Beanstalk referencing the newly built Docker image.  Beanstalk launches the application – bringing in application secrets from an S3 bucket.
 5. New Relic supports continuous monitoring, tracking performance issues, errors, etc.
 6. Alerts are sent via Slack and/or email to notify developers of issues.
 
