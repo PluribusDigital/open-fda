@@ -1,16 +1,17 @@
 #! /bin/bash
 set -e
+OPENFDA_TAG=eval
 
 DOCKERRUN_FILE=Dockerrun.aws.json
 
 # Deploy web image to Docker Hub
-docker push stsilabs/openfda-web:eval
+docker push stsilabs/openfda-web:$OPENFDA_TAG
 
 if [ "$DOCKER_IMAGE_LATEST" = "true"  ]
 then
   # Tag as latest and push again
-  docker tag stsilabs/openfda-web:$CIRCLE_BUILD_NUM stsilabs/openfda-web:eval
-  docker push stsilabs/openfda-web:eval
+  docker tag stsilabs/openfda-web:$ stsilabs/openfda-web:$OPENFDA_TAG
+  docker push stsilabs/openfda-web:$OPENFDA_TAG
 fi
 
 # Create new Elastic Beanstalk version
@@ -18,7 +19,7 @@ EB_BUCKET=open-fda
 
 cd deploy/beanstalk
 # variable substitutions
-sed -e "s/<TAG>/eval/" \
+sed -e "s/<TAG>/$OPENFDA_TAG/" \
     -e "s/<POSTGRES_USER>/$POSTGRES_USER/" \
     -e "s/<OPENFDA_POSTGRES_VERSION>/$OPENFDA_POSTGRES_VERSION/" \
     -e "s/<POSTGRES_PASSWORD>/$POSTGRES_PASSWORD/" \
