@@ -2,7 +2,7 @@
 
 Live Prototype URL: [RxExplore.com](http://rxexplore.com/) 
 
-Evaluation Branch: please use the [eval](https://github.com/STSILABS/open-fda/tree/eval) branch for BPA evaluation purposes.
+Please use the [eval](https://github.com/STSILABS/open-fda/tree/eval) branch for BPA evaluation purposes.
 
 [License](LICENSE.md)
 
@@ -14,7 +14,7 @@ Evaluation Branch: please use the [eval](https://github.com/STSILABS/open-fda/tr
 
 **RxExplore** is primarily based on openFDA data - which has *great data*. However, *connections were not apparent or easily accessible*. This prototype is about exposing those connections in two big ways:
 
-1. **Combining** information about any given drug into a comprehensive detail page, including data from openFDA and other government sources.
+1. **Combining** information about any given drug into a comprehensive detail page, merging data from multiple government sources.
 
 2.	**Exploring** connections through a tree visualization.
 
@@ -26,7 +26,7 @@ _See the [prototype's About page](http://www.rxexplore.com/#/about) for more._
 We mirrored the Discovery-Beta phases of the [18F/UK.gov](https://18f.gsa.gov/dashboard/stages/) model:
 
 **Discovery**: 
-On Wednesday (Day 1), we brainstormed the solution. As a Development Pool submission, we wanted at least a minimal set of [UX artifacts](https://github.com/STSILABS/open-fda/tree/eval/doc/design_artifacts) to guide us. Brainstorming bounced between mind-mapping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas).  We settled on a value proposition and high-level solution.
+On Wednesday (Day 1), we brainstormed the solution. As a Development Pool submission, we wanted at least some [UX artifacts](https://github.com/STSILABS/open-fda/tree/eval/doc/design_artifacts) to guide us. Brainstorming bounced between mind-mapping possible customer/value propositions, developing customer personas, testing ideas against API queries, and some customer validation (we interviewed two pharmacists for feedback on initial ideas).  We settled on a value proposition and high-level solution.
 
 ![Discovery Process](/doc/solution/discovery.png?raw=true) 
  
@@ -56,11 +56,11 @@ We limited working hours to a sustainable pace (8 hour days). Our [punch card](h
 * **Slack**: corporate chat tool, integrated with GitHub, Trello, CircleCI, New Relic, etc. for unified notifications. 
 
 ### More...
-We have placed all associated documentation within the `/doc/` directory.
+All associated documentation is in the `/doc/` directory.
 
 ## Technical Solution
 
-We used STSI’s [hello]( https://github.com/STSILABS/hello) project, a kind of boilerplate app we use for prototyping. We added on python ETL scripts to build maps between data elements, and other technical elements as neccessary.
+We used STSI’s [hello]( https://github.com/STSILABS/hello) project, a shell  app we use for prototyping. We added on python ETL scripts to build maps between data elements, and other technical elements as neccessary.
 
 The below diagram provides an overview of the major parts of the application. Starting bottom-left:
 * Import external data via batch processes – simple processes done in Ruby, and complex transformations done in Python scripts.
@@ -70,7 +70,7 @@ The below diagram provides an overview of the major parts of the application. St
     * _Other screen-scraped or imported data (drug shortages, etc.) are also stored in the same style hstore field_
 * Provide a rich client experience, built on AngularJS along with D3js directives for visualizations
 * Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). 
-    * _See [testing strategy](/doc/testing.md) for more detail._
+    * _See [testing strategy](/doc/testing.md) for more._
 
 ![Solution Overview](/doc/solution/application_overview.png?raw=true)
 
