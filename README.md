@@ -6,13 +6,13 @@ Live Prototype URL: [RxExplore.com](http://rxexplore.com/) | [License](LICENSE.m
 
 # Approach
 
-**RxExplore** is primarily based on openFDA data - which has *great data*, with meaningful *connections* between data elements. However, *connections were not apparent or easily accessible*.
-
-This prototype is about exposing those connections in two big ways:
+**RxExplore** is primarily based on openFDA data - which has *great data*. However, *connections were not apparent or easily accessible*. This prototype is about exposing those connections in two big ways:
 
 1. **Combining** information about any given drug into a comprehensive detail page, including data from openFDA and other government sources.
 
 2.	**Exploring** connections through a tree visualization.
+
+_See the [prototype's About page](http://www.rxexplore.com/#/about) for more._
 
 ## Process
 
@@ -51,15 +51,17 @@ We limited working hours to a sustainable pace (8 hour days). Our [punch card](h
 
 ## Technical Solution
 
-We used STSI’s [hello]( https://github.com/STSILABS/hello) project as a starting point framework. We added python ETL scripts to build maps between data elements.
+We used STSI’s [hello]( https://github.com/STSILABS/hello) project, a kind of boilerplate app we use for prototyping. We added on python ETL scripts to build maps between data elements, and other technical elements as neccessary.
 
 The below diagram provides an overview of the major parts of the application. Starting bottom-left:
 * Import external data via batch processes – simple processes done in Ruby, and complex transformations done in Python scripts.
 * Store data using PostgreSQL tables managed by Rails/ActiveRecord migrations.
 * Serve backend API and frontend assets via Ruby on Rails application
     * _Calls to api.fda.gov are cached in an hstore (key/value) field, minimizing processing delays and reducing load on the API_
+    * _Other screen-scraped or imported data (drug shortages, etc.) are also stored in the same style hstore field_
 * Provide a rich client experience, built on AngularJS along with D3js directives for visualizations
-* Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). _See [testing strategy](/doc/testing.md)._
+* Cover modules with unit tests, and provide integration testing around key interfaces (browser, internal RxExplore API, consumed APIs). 
+    * _See [testing strategy](/doc/testing.md) for more detail._
 
 ![Solution Overview](/doc/solution/application_overview.png?raw=true)
 
@@ -78,14 +80,6 @@ We streamline development with a DevOps pipeline, pictured below.
 3. If all steps pass, CircleCI deploys the docker image. 
 4. CircleCI pushes a new application to AWS Elastic Beanstalk referencing the newly built docker image.  Beanstalk launches the application – bringing in application secrets from an S3 bucket.
 5. New Relic supports continuous monitoring, tracking performance issues, errors, etc.
-
+6. Alerts are sent via Slack and/or email to notify developers of issues.
 
 ![DevOps Overview](/doc/solution/devops.png?raw=true)
-
-
-
-
-
-
-
-
