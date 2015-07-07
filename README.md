@@ -1,4 +1,10 @@
-Live Prototype URL: [RxExplore.com](http://rxexplore.com/) | [License](LICENSE.md)
+
+
+Live Prototype URL: [RxExplore.com](http://rxexplore.com/) 
+
+Evaluation Branch: please use the [eval](https://github.com/STSILABS/open-fda/tree/eval) branch for BPA evaluation purposes.
+
+[License](LICENSE.md)
 
 # Setup
 
@@ -48,6 +54,9 @@ We limited working hours to a sustainable pace (8 hour days). Our [punch card](h
 ### Collaboration Tools
 * **Trello**: backlog/tasking. 
 * **Slack**: corporate chat tool, integrated with GitHub, Trello, CircleCI, New Relic, etc. for unified notifications. 
+
+### More...
+We have placed all associated documentation within the `/doc/` directory.
 
 ## Technical Solution
 
