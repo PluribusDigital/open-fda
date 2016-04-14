@@ -8,7 +8,7 @@ dependencies:
   pre:
     # build docker image
     - docker info
-    - docker build -t stsilabs/openfda-web:eval .:
+    - docker build -t stsilabs/openfda-web:$CIRCLE_BUILD_NUM .:
         timeout: 1800
     # install aws command line tools for elasticbean stalk deployment
     - pip install awscli
