@@ -15,7 +15,7 @@ feature "Drug Detail", js: true do
     # Generic Name
     expect(page).to have_content "SILDENAFIL CITRATE"
     # Effects 
-    expect(page).to have_content "PRURITUS"
+    expect(page).to have_content "MYOCARDIAL"
   end # typeahead
 
   scenario "info on recalls" do
