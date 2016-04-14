@@ -27,6 +27,7 @@ ADD deploy/nginx/rails-env.conf /etc/nginx/main.d/rails-env.conf
 #   Install AWS tools
 RUN apt-get update
 RUN apt-get install zip -y
+RUN apt-get install --reinstall ca-certificates
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
 RUN unzip awscli-bundle.zip
 RUN ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
